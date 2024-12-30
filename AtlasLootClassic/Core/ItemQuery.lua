@@ -7,7 +7,7 @@ local pairs = pairs
 
 -- WoW
 local CreateFrame = CreateFrame
-local GetItemInfo, GetItemStats = GetItemInfo, GetItemStats
+local GetItemInfo, GetItemStats = C_Item.GetItemInfo, GetItemStats
 local GetTime = GetTime
 
 -- //\\

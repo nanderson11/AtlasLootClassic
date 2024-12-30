@@ -7,9 +7,7 @@ local GetAlTooltip = AtlasLoot.Tooltip.GetTooltip
 local Profession = AtlasLoot.Data.Profession
 
 --lua
-local str_match = string.match
-local GetSpellInfo, GetSpellTexture = GetSpellInfo, GetSpellTexture
-local GetTradeskillLink = AtlasLoot.TooltipScan.GetTradeskillLink
+local GetSpellInfo = GetSpellInfo
 
 local ProfClickHandler = nil
 
@@ -101,14 +99,14 @@ function Prof.OnMouseAction(button, mouseButton)
 		if button.SpellID then
 			AtlasLoot.Button:AddChatLink(Profession.GetChatLink(button.SpellID))
 		elseif button.ItemID and button.type ~= "secButton" then
-			local itemInfo, itemLink = GetItemInfo(button.ItemID)
+			local itemInfo, itemLink = C_Item.GetItemInfo(button.ItemID)
 			AtlasLoot.Button:AddChatLink(itemLink)
 		end
 	elseif mouseButton == "WoWHeadLink" then
 		AtlasLoot.Button:OpenWoWHeadLink(button, "spell", button.SpellID)
 	elseif mouseButton == "DressUp" then
 		if button.ItemID then
-			local itemInfo, itemLink = GetItemInfo(button.ItemID)
+			local itemInfo, itemLink = C_Item.GetItemInfo(button.ItemID)
 			if itemLink then
 				DressUpItemLink(itemLink)
 			end
@@ -130,7 +128,7 @@ function Prof.Refresh(button)
 		button.ItemID = Profession.GetCreatedItemID(button.SpellID)
 		button.filterItemID = button.ItemID
 		if button.ItemID then
-			itemName, _, itemQuality, _, _, _, _, _, _, itemTexture = GetItemInfo(button.ItemID)
+			itemName, _, itemQuality, _, _, _, _, _, _, itemTexture = C_Item.GetItemInfo(button.ItemID)
 			if not itemName then
 				ItemQuery:Add(button)
 				return false

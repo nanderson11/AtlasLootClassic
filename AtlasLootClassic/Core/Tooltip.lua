@@ -136,7 +136,7 @@ local function OnTooltipSetItem_Hook(self)
 			self:AddDoubleLine(AL["ItemID:"], format(WHITE_TEXT, item))
 		end
 		if AtlasLoot.db.showItemLvlInTT then
-			local itemName, itemLink, itemQuality, itemLevel = GetItemInfo(item)
+			local itemName, itemLink, itemQuality, itemLevel = C_Item.GetItemInfo(item)
 			if itemLevel and itemLevel > 0 then
 				self:AddDoubleLine(AL["Item level:"], format(WHITE_TEXT, itemLevel))
 			end

@@ -15,9 +15,8 @@ local next, pairs, tblconcat, tblsort = _G.next, _G.pairs, _G.table.concat, _G.t
 local format, strsub, strmatch, strgmatch, strsplit = _G.format, _G.strsub, _G.strmatch, _G.gmatch, _G.strsplit
 
 -- WoW
-local GetItemInfo = _G.GetItemInfo
+local GetItemInfo = C_Item.GetItemInfo
 local GetServerTime = _G.GetServerTime
-local GetItemInfoInstant = _G.GetItemInfoInstant
 local RETRIEVING_ITEM_INFO = _G["RETRIEVING_ITEM_INFO"]
 local ItemExist = _G.C_Item.DoesItemExistByID
 
@@ -224,7 +223,7 @@ local function PopulateListBiS(db, dest)
         end
     end
     -- Outfitter sets
-    local _, pluginOutfitter = GetAddOnInfo("Outfitter")
+    local _, pluginOutfitter = C_AddOns.GetAddOnInfo("Outfitter")
     if pluginOutfitter then
         if Outfitter and Outfitter.Settings and Outfitter.Settings.Outfits then
             -- Check outfitter equip sets

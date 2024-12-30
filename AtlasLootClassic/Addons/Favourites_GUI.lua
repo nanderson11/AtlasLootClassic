@@ -18,8 +18,7 @@ local pairs = _G.pairs
 local format = _G.format
 
 -- WoW
-local GetItemQuality, GetItemIcon, GetItemInfoInstant, ItemExist = _G.C_Item.GetItemQualityByID, _G.C_Item.GetItemIconByID, _G.GetItemInfoInstant, _G.C_Item.DoesItemExistByID
-local GetItemCount = _G.GetItemCount
+local GetItemQuality, GetItemIcon, GetItemInfoInstant, ItemExist = _G.C_Item.GetItemQualityByID, _G.C_Item.GetItemIconByID, _G.C_Item.GetItemInfoInstant, _G.C_Item.DoesItemExistByID
 
 -- AL
 local GetAlTooltip = AtlasLoot.Tooltip.GetTooltip
@@ -858,7 +857,7 @@ end
 
 function GUI:OnItemNoteChange(itemId, note)
     self.popupNoteId = itemId
-    local itemName, itemLink = GetItemInfo(itemId)
+    local itemName, itemLink = C_Item.GetItemInfo(itemId)
     local itemNote = Favourites:GetItemNote(itemId)
     local popup = StaticPopup_Show("ATLASLOOT_FAVOURITE_NOTE_POPUP", itemLink)
     popup.editBox:SetText(itemNote or "")

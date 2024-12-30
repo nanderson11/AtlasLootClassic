@@ -6,7 +6,7 @@ local string = string
 local type, tonumber, pairs = type, tonumber, pairs
 local str_split = string.split
 -- WoW
-local GetCurrencyInfo, GetItemInfo, GetItemCount, GetItemIcon = C_CurrencyInfo.GetCurrencyInfo, GetItemInfo, GetItemCount, GetItemIcon
+local GetCurrencyInfo, GetItemInfo, GetItemCount, GetItemIcon = C_CurrencyInfo.GetCurrencyInfo, C_Item.GetItemInfo, C_Item.GetItemCount, C_Item.GetItemIconByID
 -- ----------------------------------------------------------------------------
 -- AddOn namespace.
 -- ----------------------------------------------------------------------------
@@ -18,7 +18,6 @@ local AL = AtlasLoot.Locales
 local ItemButtonType = AtlasLoot.Button:GetType("Item")
 
 local FIRST_RUN = true
-local ITEMS_NOT_FOUND = true
 
 local STRING_SPLIT_OR = "-"
 local STRING_DELIMITER_OR = "|r; "

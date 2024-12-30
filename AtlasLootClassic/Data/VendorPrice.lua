@@ -13,7 +13,7 @@ local PRICE_INFO_LIST = {
     ["NecroticRune"] 	= { itemID = 22484 }, -- Necrotic Rune
 
 	-- others
-	["money"] 			= { func = GetCoinTextureString },
+	["money"] 			= { func = C_CurrencyInfo.GetCoinTextureString },
 
 	--- BC
 	["holydust"] = { itemID = 29735 }, -- Holy Dust (Aldor)
@@ -977,7 +977,7 @@ end
 local VendorLockList = {}
 local SourcesAddon
 local UnitGUID, GetMerchantNumItems, GetMerchantItemID, GetMerchantItemCostInfo, GetMerchantItemCostItem, GetItemInfoInstant =
-      UnitGUID, GetMerchantNumItems, GetMerchantItemID, GetMerchantItemCostInfo, GetMerchantItemCostItem, GetItemInfoInstant
+      UnitGUID, GetMerchantNumItems, GetMerchantItemID, GetMerchantItemCostInfo, GetMerchantItemCostItem, C_Item.GetItemInfoInstant
 
 local function GetNpcIDFromGuid(guid)
 	local npcID = select(6,strsplit("-",guid))

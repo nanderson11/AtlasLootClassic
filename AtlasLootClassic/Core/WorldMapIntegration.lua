@@ -7,7 +7,7 @@ local pairs, select = _G.pairs, _G.select
 -- Libraries
 
 -- WoW
-local GetAddOnInfo, GetAddOnEnableState, UnitName, GetRealmName = _G.GetAddOnInfo, _G.GetAddOnEnableState, _G.UnitName, _G.GetRealmName
+local GetAddOnInfo, GetAddOnEnableState, UnitName, GetRealmName = C_AddOns.GetAddOnInfo, C_AddOns.GetAddOnEnableState, _G.UnitName, _G.GetRealmName
 -- ----------------------------------------------------------------------------
 -- AddOn namespace.
 -- ----------------------------------------------------------------------------
@@ -23,7 +23,7 @@ local profile
 local function checkAddonStatus(addonName)
 	if not addonName then return nil end
 	local loadable = select(4, GetAddOnInfo(addonName))
-	local enabled = GetAddOnEnableState(UnitName("player"), addonName)
+	local enabled = GetAddOnEnableState(addonName, UnitName("player"))
 	if (enabled > 0 and loadable) then
 		return true
 	else

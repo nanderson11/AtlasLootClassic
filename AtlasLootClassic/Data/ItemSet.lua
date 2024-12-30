@@ -11,7 +11,6 @@ local IMAGE_PATH = ALPrivate.ICONS_PATH
 local GetItemSetInfo = GetItemSetInfo
 
 -- lua
-local assert, type = _G.assert, _G.type
 local format = _G.string.format
 
 -- WoW

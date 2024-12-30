@@ -18,7 +18,7 @@ local format = format
 local str_split = string.split
 
 -- WoW
-local GetCurrencyInfo, GetItemIcon = C_CurrencyInfo.GetCurrencyInfo, GetItemIcon
+local GetCurrencyInfo, GetItemIcon = C_CurrencyInfo.GetCurrencyInfo, C_Item.GetItemIconByID
 
 -- AtlasLoot
 local PRICE_INFO = VendorPrice.GetPriceInfoList()
@@ -29,7 +29,6 @@ local TOKEN_NUMBER_DUMMY = AtlasLoot.Data.Token.GetTokenDummyNumberRange()
 
 -- locals
 local TT_F = "%s |cFF00ccff%s|r"
-local WHITE_TEXT = "|cffffffff%s|r"
 local DUMMY_ICON = "Interface\\Icons\\INV_Misc_QuestionMark"
 local TEXTURE_ICON_F, TEXTURE_ICON_FN, ATLAS_ICON_F = "|T%s:0|t ", "|T%d:0|t ", "|A:%s:0:0|a "
 local TT_F_PRICE_T, TT_F_PRICE_TN = "|T%s:0|t|cFFffffff%s|r", "|T%d:0|t|cFFffffff%s|r"
@@ -39,19 +38,19 @@ local ICON_TEXTURE = {
     [1]  = format(ATLAS_ICON_F, "ParagonReputation_Bag"),   -- Loot
     [2]  = format(ATLAS_ICON_F, "QuestNormal"),             -- Quest
     [3]  = format(ATLAS_ICON_F, "Auctioneer"),              -- Buy
-	[4]  = format(TEXTURE_ICON_F, GetSpellTexture(3273)),   -- First Aid
-	[5]  = format(TEXTURE_ICON_F, GetSpellTexture(2018)),   -- Blacksmithing
-	[6]  = format(TEXTURE_ICON_F, GetSpellTexture(2108)),   -- Leatherworking
-	[7]  = format(TEXTURE_ICON_F, GetSpellTexture(2259)),   -- Alchemy
-	[8]  = format(TEXTURE_ICON_F, GetSpellTexture(2366)),   -- Herbalism
-	[9]  = format(TEXTURE_ICON_F, GetSpellTexture(2550)),   -- Cooking
-	[10] = format(TEXTURE_ICON_F, GetSpellTexture(2575)),   -- Mining
-	[11] = format(TEXTURE_ICON_F, GetSpellTexture(3908)),   -- Tailoring
-	[12] = format(TEXTURE_ICON_F, GetSpellTexture(4036)),   -- Engineering
-	[13] = format(TEXTURE_ICON_F, GetSpellTexture(7411)),   -- Enchanting
-	[14] = format(TEXTURE_ICON_F, GetSpellTexture(7732)),   -- Fishing
-    [15] = format(TEXTURE_ICON_F, GetSpellTexture(8618)),   -- Skinning
-    [16] = format(TEXTURE_ICON_F, GetSpellTexture(2842)),   -- Rogue: Poisons
+	[4]  = format(TEXTURE_ICON_F, C_Spell.GetSpellTexture(3273)),   -- First Aid
+	[5]  = format(TEXTURE_ICON_F, C_Spell.GetSpellTexture(2018)),   -- Blacksmithing
+	[6]  = format(TEXTURE_ICON_F, C_Spell.GetSpellTexture(2108)),   -- Leatherworking
+	[7]  = format(TEXTURE_ICON_F, C_Spell.GetSpellTexture(2259)),   -- Alchemy
+	[8]  = format(TEXTURE_ICON_F, C_Spell.GetSpellTexture(2366)),   -- Herbalism
+	[9]  = format(TEXTURE_ICON_F, C_Spell.GetSpellTexture(2550)),   -- Cooking
+	[10] = format(TEXTURE_ICON_F, C_Spell.GetSpellTexture(2575)),   -- Mining
+	[11] = format(TEXTURE_ICON_F, C_Spell.GetSpellTexture(3908)),   -- Tailoring
+	[12] = format(TEXTURE_ICON_F, C_Spell.GetSpellTexture(4036)),   -- Engineering
+	[13] = format(TEXTURE_ICON_F, C_Spell.GetSpellTexture(7411)),   -- Enchanting
+	[14] = format(TEXTURE_ICON_F, C_Spell.GetSpellTexture(7732)),   -- Fishing
+    [15] = format(TEXTURE_ICON_F, C_Spell.GetSpellTexture(8618)),   -- Skinning
+    [16] = format(TEXTURE_ICON_F, C_Spell.GetSpellTexture(2842)),   -- Rogue: Poisons
     [17] = format(TEXTURE_ICON_F, 134071),                  -- Jewelcrafting
     [18] = format(TEXTURE_ICON_F, 237171),                  -- Inscription
 }

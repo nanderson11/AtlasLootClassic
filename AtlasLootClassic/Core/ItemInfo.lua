@@ -340,14 +340,14 @@ local function Init()
 	}
 	for iC = 0, #LOC_DATA do
 		local class = LOC_DATA[iC]
-		local className = GetItemClassInfo(iC)
+		local className = C_Item.GetItemClassInfo(iC)
 
 		--NewLocData.en[class.__name] = className
 		NewLocData.loc[className] = class.__name
 
 		for isC = 0, #class do
 			local subClass = class[isC]
-			local name = GetItemSubClassInfo(iC,isC)
+			local name = C_Item.GetItemSubClassInfo(iC,isC)
 			if not NewLocData[subClass] then
 				--NewLocData.en[class.__name..subClass] = name
 				NewLocData.loc[className..name] = subClass

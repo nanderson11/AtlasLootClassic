@@ -56,11 +56,11 @@ function AC.OnMouseAction(button, mouseButton)
     elseif mouseButton == "ChatLink" then
         AtlasLoot.Button:AddChatLink(GetAchievementLink(button.AcID) or "achievement:"..button.AcID)
 	elseif mouseButton == "GoTo" then
-		if not IsAddOnLoaded("Blizzard_AchievementUI") then
-			LoadAddOn("Blizzard_AchievementUI")
+		if not C_AddOns.IsAddOnLoaded("Blizzard_AchievementUI") then
+			C_AddOns.LoadAddOn("Blizzard_AchievementUI")
 		end
 		ShowUIPanel(_G.AchievementFrame)
-		_G.AchievementFrame_SelectAchievement(button.AcID)
+		AchievementFrame_SelectAchievement(button.AcID)
 	end
 end
 

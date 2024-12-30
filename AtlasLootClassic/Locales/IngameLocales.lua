@@ -9,7 +9,7 @@ local rawget = _G.rawget
 
 -- WoW
 local GetSpellInfo = GetSpellInfo
-local GetItemClassInfo, GetItemSubClassInfo = GetItemClassInfo, GetItemSubClassInfo
+local GetItemClassInfo, GetItemSubClassInfo = C_Item.GetItemClassInfo, C_Item.GetItemSubClassInfo
 
 -- ----------------------------------------------------------------------------
 -- AddOn namespace.

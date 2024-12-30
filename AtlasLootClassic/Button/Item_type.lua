@@ -25,8 +25,7 @@ local next, wipe, tab_remove = _G.next, _G.wipe, _G.table.remove
 local format, split, sfind, slower = _G.string.format, _G.string.split, _G.string.find, _G.string.lower
 
 -- WoW
-local GetItemInfo, IsEquippableItem, GetItemInfoInstant = _G.GetItemInfo, _G.IsEquippableItem, _G.GetItemInfoInstant
-local LOOT_BORDER_BY_QUALITY = _G["LOOT_BORDER_BY_QUALITY"]
+local GetItemInfo, IsEquippableItem, GetItemInfoInstant = C_Item.GetItemInfo, C_Item.IsEquippableItem, C_Item.GetItemInfoInstant
 
 -- AL
 local GetAlTooltip = AtlasLoot.Tooltip.GetTooltip
@@ -35,7 +34,6 @@ local GetItemString = AtlasLoot.ItemString.Create
 
 local ITEM_COLORS = {}
 local DUMMY_ITEM_ICON = "Interface\\Icons\\INV_Misc_QuestionMark"
-local SET_ITEM = "|cff00ff00"..AL["Set item"]..":|r "
 local WHITE_TEXT = "|cffffffff%s|r"
 local ITEM_DESC_EXTRA_SEP = "%s | %s"
 
