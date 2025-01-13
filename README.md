@@ -1,16 +1,8 @@
 # AtlasLootClassic
 
-[![Build Status](https://github.com/Hoizame/AtlasLootClassic/workflows/CI/badge.svg)](https://github.com/Hoizame/AtlasLootClassic/actions?workflow=CI)[![AtlasLootClassic Discord](https://img.shields.io/badge/discord-atlaslootclassic-7289DA)](https://discord.gg/vMUwzPc)
+[![AtlasLootClassic Discord](https://img.shields.io/badge/discord-atlaslootclassic-7289DA)](https://discord.gg/vMUwzPc)
 
 AtlasLootClassic is an UI mod allowing for loot tables of bosses to be browsed whenever needed within the game.
-
-## Download
-
-[Curseforge](https://www.curseforge.com/wow/addons/atlaslootclassic)
-
-[WoWInterface](https://www.wowinterface.com/downloads/info25185-AtlasLootClassic.html)
-
-[WagoAddons](https://addons.wago.io/addons/atlaslootclassic)
 
 ## Features
 
@@ -33,8 +25,6 @@ AtlasLootClassic is an UI mod allowing for loot tables of bosses to be browsed w
 * Import and export your lists
 * A GUI that let you plan your gear and shows a indicator if you already own an item
 
-![image](https://media.forgecdn.net/attachments/260/125/atlasloot-fav-gui.png)![image](https://media.forgecdn.net/attachments/260/931/atlasloot-fav-tt.png)
-
 ## Favourites import/export format
 
 `(type):(id):(note)` while the `:(note)` part is optional
@@ -45,8 +35,4 @@ This currently only supports items and notes
 
 ## Maps
 
-[Atlas Classic WoW](https://www.curseforge.com/wow/addons/atlas-classicwow)
 
-[Atlas Burning Crusade](https://www.curseforge.com/wow/addons/atlas-burningcrusade)
-
-[Atlas Wrath of the Lich King](https://www.curseforge.com/wow/addons/atlas-wrathofthelichking)

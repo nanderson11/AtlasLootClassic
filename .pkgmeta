@@ -1,31 +1,16 @@
 package-as: AtlasLootClassic
 
 manual-changelog:
- filename: CHANGELOG.md
- markup-type: markdown
-
-enable-nolib-creation: no
-
-externals:
- AtlasLootClassic/Libs/CallbackHandler-1.0: https://repos.wowace.com/wow/callbackhandler/trunk/CallbackHandler-1.0
- AtlasLootClassic/Libs/LibStub: https://repos.wowace.com/wow/libstub/trunk
- AtlasLootClassic/Libs/LibSharedMedia-3.0: https://repos.wowace.com/wow/libsharedmedia-3-0/trunk/LibSharedMedia-3.0
- AtlasLootClassic/Libs/LibDBIcon-1.0: https://repos.wowace.com/wow/libdbicon-1-0/trunk/LibDBIcon-1.0
- AtlasLootClassic/Libs/AceDB-3.0: https://repos.wowace.com/wow/ace3/trunk/AceDB-3.0
- AtlasLootClassic/Libs/AceComm-3.0: https://repos.curseforge.com/wow/ace3/trunk/AceComm-3.0
- AtlasLootClassic_Options/Libs/AceConfig-3.0: https://repos.wowace.com/wow/ace3/trunk/AceConfig-3.0
- AtlasLootClassic_Options/Libs/AceGUI-3.0: https://repos.wowace.com/wow/ace3/trunk/AceGUI-3.0
- AtlasLootClassic_Options/Libs/AceDBOptions-3.0: https://repos.wowace.com/wow/ace3/trunk/AceDBOptions-3.0
- AtlasLootClassic_Options/Libs/AceGUI-3.0-SharedMediaWidgets: https://repos.wowace.com/wow/ace-gui-3-0-shared-media-widgets/trunk/AceGUI-3.0-SharedMediaWidgets
+  filename: RECENT_CHANGES.md
+  markup-type: markdown
 
 # Ignore takes place before folder's moving takes place
 ignore:
- - babelfish.lua
- - cf_translations.sh
- - AtlasLootClassic/Images/PSD
- - AtlasLootClassic/Addons/tmpl.lua
- - AtlasLootClassic_DungeonsAndRaids/droprate_override.lua
- - README.md
+  - RECENT_CHANGES.md
+  - AtlasLootClassic/Images/PSD
+  - AtlasLootClassic/Addons/tmpl.lua
+  - AtlasLootClassic_DungeonsAndRaids/droprate_override.lua
+  - README.md
 
 move-folders:
  AtlasLootClassic/AtlasLootClassic: AtlasLootClassic

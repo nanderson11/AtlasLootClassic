@@ -1,17 +1,9 @@
-<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
-..\FrameXML\UI.xsd">
-
-<!--@no-lib-strip@-->
-<Script file="Libs\LibStub\LibStub.lua"/>
-<Include file="Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml"/>
-<Include file="Libs\AceDB-3.0\AceDB-3.0.xml"/>
-<Include file="Libs\AceComm-3.0\AceComm-3.0.xml"/>
-<!--@end-no-lib-strip@-->
-<Script file="Libs\LibDataBroker-1.1\LibDataBroker-1.1.lua"/>
-<!--@no-lib-strip@-->
-<Script file="Libs\LibSharedMedia-3.0\LibSharedMedia-3.0.lua"/>
-<Script file="Libs\LibDBIcon-1.0\LibDBIcon-1.0.lua"/>
-<!--@end-no-lib-strip@-->
-<!--@do-not-package@-->
-<!--@end-do-not-package@-->
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ https://raw.githubusercontent.com/Meorawr/wow-ui-schema/main/UI.xsd">
+	<Script file="Libs\LibStub\LibStub.lua"/>
+	<Include file="Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml"/>
+	<Include file="Libs\AceDB-3.0\AceDB-3.0.xml"/>
+	<Include file="Libs\AceComm-3.0\AceComm-3.0.xml"/>
+	<Script file="Libs\LibDataBroker-1.1\LibDataBroker-1.1.lua"/>
+	<Script file="Libs\LibSharedMedia-3.0\LibSharedMedia-3.0.lua"/>
+	<Script file="Libs\LibDBIcon-1.0\LibDBIcon-1.0.lua"/>
 </Ui>

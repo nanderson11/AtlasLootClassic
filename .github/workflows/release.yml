@@ -1,0 +1,28 @@
+name: Release Addon
+
+on:
+  push:
+    tags:
+      - '**'
+
+env:
+  CF_API_KEY: ${{ secrets.CF_API_KEY }}
+  GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Clone project
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: kemayo/actions-recent-changelog@v1
+        with:
+          input: AtlasLootClassic/CHANGELOG.md
+          output: RECENT_CHANGES.md
+
+      - name: Package and release
+        uses: BigWigsMods/packager@v2
