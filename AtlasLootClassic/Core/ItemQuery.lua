@@ -7,6 +7,7 @@ local pairs = pairs
 
 -- WoW
 local CreateFrame = CreateFrame
+---@diagnostic disable-next-line: deprecated
 local GetItemInfo, GetItemStats = C_Item.GetItemInfo, GetItemStats
 local GetTime = GetTime
 
@@ -18,7 +19,7 @@ local Proto = {}
 
 
 function Proto.OnEvent(frame, event)
-	if event == "GET_ITEM_INFO_RECEIVED" then	-- arg1 is itemID maybe change this later..
+	if event == "GET_ITEM_INFO_RECEIVED" then -- arg1 is itemID maybe change this later..
 		local self = frame.obj
 		for i = 1, self.NumItemInfoItems do
 			if self.itemInfoList[i] and GetItemInfo(self.itemInfoList[i]) then
@@ -40,7 +41,7 @@ function Proto.OnEvent(frame, event)
 end
 
 function Proto.OnUpdate(frame)
-	if not frame.lastUpdate or ( GetTime() - frame.lastUpdate > SPAM_PROTECT) then
+	if not frame.lastUpdate or (GetTime() - frame.lastUpdate > SPAM_PROTECT) then
 		local self = frame.obj
 		for i = 1, self.NumItemStatsItems do
 			if self.itemStatsList[i] and GetItemStats(self.itemStatsList[i]) then
@@ -117,7 +118,7 @@ function ItemQuery:Create(tab)
 	tab = tab or {}
 
 	-- Add protos
-	for k,v in pairs(Proto) do
+	for k, v in pairs(Proto) do
 		tab[k] = v
 	end
 

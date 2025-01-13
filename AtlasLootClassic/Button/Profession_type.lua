@@ -30,10 +30,10 @@ AtlasLoot.ClickHandler:Add(
 		},
 	},
 	{
-		{ "ChatLink", 		AL["Chat Link"], 			AL["Add profession link into chat"] },
-		{ "DressUp", 		AL["Dress up"], 			AL["Shows the item in the Dressing room"] },
-		{ "ShowExtraItems", AL["Show extra items"], 	AL["Shows extra items (tokens,mats)"] },
-		{ "WoWHeadLink", 	AL["Show WowHead link"], 	AL["Shows a copyable link for WoWHead"] },
+		{ "ChatLink",       AL["Chat Link"],         AL["Add profession link into chat"] },
+		{ "DressUp",        AL["Dress up"],          AL["Shows the item in the Dressing room"] },
+		{ "ShowExtraItems", AL["Show extra items"],  AL["Shows extra items (tokens,mats)"] },
+		{ "WoWHeadLink",    AL["Show WowHead link"], AL["Shows a copyable link for WoWHead"] },
 	}
 )
 
@@ -42,8 +42,8 @@ function Prof.OnSet(button, second)
 		ProfClickHandler = AtlasLoot.ClickHandler:GetHandler("Profession")
 
 		-- create item colors
-		for i=0,7 do
-			local _, _, _, itemQuality = GetItemQualityColor(i)
+		for i = 0, 7 do
+			local _, _, _, itemQuality = C_Item.GetItemQualityColor(i)
 			ITEM_COLORS[i] = itemQuality
 		end
 	end
@@ -170,11 +170,10 @@ function Prof.Refresh(button)
 		--Profession.GetPhaseTextureForSpellID(spellID)
 		button.icon:SetTexture(itemTexture or Profession.GetIcon(button.SpellID) or spellTexture)
 	end
-
 end
 
 --[[
 function Prof.GetStringContent(str)
 	return {str_match(str, "(%w+):(%d+)")}
 end
-]]--
+]] --

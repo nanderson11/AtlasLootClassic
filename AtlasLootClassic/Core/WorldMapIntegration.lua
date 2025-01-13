@@ -3,7 +3,7 @@
 -- ----------------------------------------------------------------------------
 -- Functions
 local _G = getfenv(0)
-local pairs, select = _G.pairs, _G.select
+local select = _G.select
 -- Libraries
 
 -- WoW
@@ -82,7 +82,6 @@ local function AdjustOtherWorldMapButton(adjust)
 			end
 		end
 	end
-
 end
 
 local function ButtonBinding()
@@ -93,7 +92,7 @@ local function ButtonBinding()
 		button:SetHeight(32)
 
 		--button:SetPoint("TOPRIGHT", WorldMapFrameSizeDownButton, -24, 0, "TOPRIGHT")
-		button:SetPoint("LEFT", WorldMapFrame.BorderFrame.MaximizeMinimizeFrame, -24, 0, "RIGHT")
+		button:SetPoint("LEFT", WorldMapFrame.BorderFrame.MaximizeMinimizeFrame, -24, 0)
 		button:SetNormalTexture("Interface\\AddOns\\AtlasLoot\\Images\\AtlasLootButton-Up")
 		button:SetHighlightTexture("Interface\\Buttons\\UI-Common-MouseHilight", "ADD")
 
@@ -121,6 +120,7 @@ function WorldMap.Init()
 		button:Hide()
 	end
 end
+
 AtlasLoot:AddInitFunc(WorldMap.Init)
 
 function WorldMap.ToggleButtonOnChange()
@@ -171,7 +171,7 @@ function WorldMap.Button_OnEnter(self)
 	--if owner and type(owner) == "table" then
 	--	tooltip:SetOwner(owner[1], owner[2], owner[3], owner[4])
 	--else
-		tooltip:SetOwner(self, "ANCHOR_RIGHT", -(self:GetWidth() * 0.5), 5)
+	tooltip:SetOwner(self, "ANCHOR_RIGHT", -(self:GetWidth() * 0.5), 5)
 	--end
 	tooltip:AddLine(AL["Click to open AtlasLoot window"])
 	tooltip:Show()
@@ -187,4 +187,3 @@ function WorldMap.Button_OnClick(self, button)
 	end
 	ToggleFrame(WorldMapFrame)
 end
-

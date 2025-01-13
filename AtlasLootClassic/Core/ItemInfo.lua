@@ -6,7 +6,6 @@ local AL = AtlasLoot.Locales
 local IngameLocales = AtlasLoot.IngameLocales
 
 local type, rawset, rawget, setmetatable = type, rawset, rawget, setmetatable
--- local GetAuctionItemClasses, GetAuctionItemSubClasses = GetAuctionItemClasses, GetAuctionItemSubClasses
 
 local LOC_DATA = {
 	[0] = {
@@ -132,36 +131,36 @@ local LOC_DATA = {
 
 local ITEM_DESC_INFO = {
 	["slot"] = {
-		[""] = "",
-		["INVTYPE_RANGEDRIGHT"] 		= "",
-		["INVTYPE_SHIELD"] 				= _G["INVTYPE_SHIELD"],
-		["INVTYPE_RANGED"] 				= "",
-		["INVTYPE_WEAPON"] 				= "",
-		["INVTYPE_2HWEAPON"] 			= "",
-		["INVTYPE_WRIST"]				= _G["INVTYPE_WRIST"],
-		["INVTYPE_TRINKET"]				= _G["INVTYPE_TRINKET"],
-		["INVTYPE_ROBE"]				= _G["INVTYPE_ROBE"],
-		["INVTYPE_CLOAK"]				= _G["INVTYPE_CLOAK"],
-		["INVTYPE_HEAD"]				= _G["INVTYPE_HEAD"],
-		["INVTYPE_HOLDABLE"]			= _G["INVTYPE_HOLDABLE"],
-		["INVTYPE_CHEST"]				= _G["INVTYPE_CHEST"],
-		["INVTYPE_NECK"]				= _G["INVTYPE_NECK"],
-		["INVTYPE_TABARD"]				= _G["INVTYPE_TABARD"],
-		["INVTYPE_LEGS"]				= _G["INVTYPE_LEGS"],
-		["INVTYPE_HAND"]				= _G["INVTYPE_HAND"],
-		["INVTYPE_WAIST"]				= _G["INVTYPE_WAIST"],
-		["INVTYPE_FEET"]				= _G["INVTYPE_FEET"],
-		["INVTYPE_SHOULDER"]			= _G["INVTYPE_SHOULDER"],
-		["INVTYPE_FINGER"]				= _G["INVTYPE_FINGER"],
-		["INVTYPE_BAG"]					= _G["INVTYPE_BAG"],
-		["INVTYPE_AMMO"]				= _G["INVTYPE_AMMO"],
-		["INVTYPE_BODY"]				= _G["INVTYPE_BODY"], -- Shirt
-		["INVTYPE_QUIVER"]				= _G["INVTYPE_QUIVER"],
-		["INVTYPE_RELIC"]				= _G["INVTYPE_RELIC"],
-		["INVTYPE_THROWN"]				= _G["INVTYPE_THROWN"],
-		["INVTYPE_WEAPONMAINHAND"] 		= _G["INVTYPE_WEAPONMAINHAND"],
-		["INVTYPE_WEAPONMAINHAND_PET"]	= _G["INVTYPE_WEAPONMAINHAND_PET"],	-- "Main Attack"
-		["INVTYPE_WEAPONOFFHAND"]		= _G["INVTYPE_WEAPONOFFHAND"],
+		[""]                           = "",
+		["INVTYPE_RANGEDRIGHT"]        = "",
+		["INVTYPE_SHIELD"]             = _G["INVTYPE_SHIELD"],
+		["INVTYPE_RANGED"]             = "",
+		["INVTYPE_WEAPON"]             = "",
+		["INVTYPE_2HWEAPON"]           = "",
+		["INVTYPE_WRIST"]              = _G["INVTYPE_WRIST"],
+		["INVTYPE_TRINKET"]            = _G["INVTYPE_TRINKET"],
+		["INVTYPE_ROBE"]               = _G["INVTYPE_ROBE"],
+		["INVTYPE_CLOAK"]              = _G["INVTYPE_CLOAK"],
+		["INVTYPE_HEAD"]               = _G["INVTYPE_HEAD"],
+		["INVTYPE_HOLDABLE"]           = _G["INVTYPE_HOLDABLE"],
+		["INVTYPE_CHEST"]              = _G["INVTYPE_CHEST"],
+		["INVTYPE_NECK"]               = _G["INVTYPE_NECK"],
+		["INVTYPE_TABARD"]             = _G["INVTYPE_TABARD"],
+		["INVTYPE_LEGS"]               = _G["INVTYPE_LEGS"],
+		["INVTYPE_HAND"]               = _G["INVTYPE_HAND"],
+		["INVTYPE_WAIST"]              = _G["INVTYPE_WAIST"],
+		["INVTYPE_FEET"]               = _G["INVTYPE_FEET"],
+		["INVTYPE_SHOULDER"]           = _G["INVTYPE_SHOULDER"],
+		["INVTYPE_FINGER"]             = _G["INVTYPE_FINGER"],
+		["INVTYPE_BAG"]                = _G["INVTYPE_BAG"],
+		["INVTYPE_AMMO"]               = _G["INVTYPE_AMMO"],
+		["INVTYPE_BODY"]               = _G["INVTYPE_BODY"], -- Shirt
+		["INVTYPE_QUIVER"]             = _G["INVTYPE_QUIVER"],
+		["INVTYPE_RELIC"]              = _G["INVTYPE_RELIC"],
+		["INVTYPE_THROWN"]             = _G["INVTYPE_THROWN"],
+		["INVTYPE_WEAPONMAINHAND"]     = _G["INVTYPE_WEAPONMAINHAND"],
+		["INVTYPE_WEAPONMAINHAND_PET"] = _G["INVTYPE_WEAPONMAINHAND_PET"], -- "Main Attack"
+		["INVTYPE_WEAPONOFFHAND"]      = _G["INVTYPE_WEAPONOFFHAND"],
 	},
 	--[[
 	["Consumable"] = {		-- 0
@@ -170,49 +169,49 @@ local ITEM_DESC_INFO = {
 		["Liquid(OBSOLETE)"] = true, -- 2
 	},
 	--]]
-	["Container"] = {		-- 1
-		["Bag"] 				= "", 		-- 0
+	["Container"] = { -- 1
+		["Bag"] = "", -- 0
 		--["Soul Bag"] 			= true, 	-- 1
 		--["Herb Bag"] 			= true, 	-- 2
 		--["Enchanting Bag"] 	= true, 	-- 3
 		--["Engineering Bag"] 	= true, 	-- 4
 	},
-	["Weapon"] = {		-- 2
-		["One-Handed Axes"] 	= AL["One-Hand, Axe"], 		-- 0
-		["Two-Handed Axes"] 	= AL["Two-Hand, Axe"], 		-- 1
-		["Bows"] 				= AL["Bow"], 				-- 2
-		["Guns"] 				= AL["Gun"], 				-- 3
-		["One-Handed Maces"] 	= AL["One-Hand, Mace"], 	-- 4
-		["Two-Handed Maces"] 	= AL["Two-Hand, Mace"], 	-- 5
-		["Polearms"] 			= AL["Polearm"], 			-- 6
-		["One-Handed Swords"] 	= AL["One-Hand, Sword"], 	-- 7
-		["Two-Handed Swords"] 	= AL["Two-Hand, Sword"], 	-- 8
+	["Weapon"] = {                                -- 2
+		["One-Handed Axes"]   = AL["One-Hand, Axe"], -- 0
+		["Two-Handed Axes"]   = AL["Two-Hand, Axe"], -- 1
+		["Bows"]              = AL["Bow"],        -- 2
+		["Guns"]              = AL["Gun"],        -- 3
+		["One-Handed Maces"]  = AL["One-Hand, Mace"], -- 4
+		["Two-Handed Maces"]  = AL["Two-Hand, Mace"], -- 5
+		["Polearms"]          = AL["Polearm"],    -- 6
+		["One-Handed Swords"] = AL["One-Hand, Sword"], -- 7
+		["Two-Handed Swords"] = AL["Two-Hand, Sword"], -- 8
 		--["Obsolete"] 			= true, 					-- 9
-		["Staves"] 				= AL["Staff"], 				-- 10
+		["Staves"]            = AL["Staff"],      -- 10
 		--["One-Handed Exotics"]= true, 					-- 11
 		--["Two-Handed Exotics"]= true, 					-- 12
-		["Fist Weapons"] 		= AL["Fist Weapon"], 		-- 13
+		["Fist Weapons"]      = AL["Fist Weapon"], -- 13
 		--["Miscellaneous"] 	= true, 					-- 14
-		["Daggers"] 			= AL["Dagger"], 			-- 15
+		["Daggers"]           = AL["Dagger"], -- 15
 		--["Thrown"] 			= true, 					-- 16
 		--["Spears"] 			= true, 					-- 17
-		["Crossbows"] 			= AL["Crossbow"], 			-- 18
-		["Wands"] 				= AL["Wand"], 				-- 19
-		["Fishing Pole"] 		= AL["Fishing Pole"], 		-- 20
+		["Crossbows"]         = AL["Crossbow"], -- 18
+		["Wands"]             = AL["Wand"], -- 19
+		["Fishing Pole"]      = AL["Fishing Pole"], -- 20
 	},
 	--[[
 	["Jewelry(OBSOLETE)"] = {		-- 3
 		["Jewelry(OBSOLETE)"] = true, -- 0
 	},
 	--]]
-	["Armor"] = {		-- 4
-		["Miscellaneous"] 	= "", -- 0
+	["Armor"] = {          -- 4
+		["Miscellaneous"] = "", -- 0
 		--["Cloth"] 		= true, 			-- 1
 		--["Leather"] 		= true, 			-- 2
 		--["Mail"] 			= true, 			-- 3
 		--["Plate"] 		= true, 			-- 4
 		--["Bucklers"] 		= true, 			-- 5
-		["Shields"]		 	= AL["Shield"], 	-- 6
+		["Shields"]       = AL["Shield"], -- 6
 		--["Librams"] 		= true, 			-- 7
 		--["Idols"] 		= true, 			-- 8
 		--["Totems"] 		= true, 			-- 9
@@ -258,7 +257,7 @@ local ITEM_DESC_INFO = {
 		["Fishing"] = true, -- 9
 	},
 	--]]
-	["Money(OBSOLETE)"] = {		-- 10
+	["Money(OBSOLETE)"] = {                        -- 10
 		["Money(OBSOLETE)"] = IngameLocales["Currency"], -- 0
 	},
 	--[[
@@ -285,8 +284,8 @@ local ITEM_DESC_INFO = {
 		["Permanent"] = true, -- 0
 	},
 	--]]
-	["Miscellaneous"] = {		-- 15
-		["Junk"] 	= 	_G["MISCELLANEOUS"], 	-- 0
+	["Miscellaneous"] = {           -- 15
+		["Junk"] = _G["MISCELLANEOUS"], -- 0
 	},
 }
 
@@ -297,7 +296,7 @@ local FILTER = {
 	--{ slot = "INVTYPE_CLOAK", itemType = "Armor", itemSubType = "Cloth", __new = "HELLO THIS IS A TEST :)" },	-- This replace "Back, Cloth" with "HELLO THIS IS A TEST :)"
 	--{ slot = "INVTYPE_CLOAK", itemType = "Armor", itemSubType = "Cloth", __new = { slot = "INVTYPE_THROWN", itemType = "Miscellaneous", itemSubType = "Junk" }},	-- This replace "Back, Cloth" with "Thrown, Junk"
 	-- replace
-	{ slot = "INVTYPE_CLOAK", itemType = "Armor", itemSubType = "Cloth", __new = { slot = "INVTYPE_CLOAK" } },	-- This replace "Back, Cloth" with "Back"
+	{ slot = "INVTYPE_CLOAK", itemType = "Armor", itemSubType = "Cloth", __new = { slot = "INVTYPE_CLOAK" } }, -- This replace "Back, Cloth" with "Back"
 }
 
 local preMt
@@ -314,25 +313,6 @@ preMt = {
 }
 setmetatable(PreSave, preMt)
 
-local function GetAuctionItemClasses()
-	return 'Weapon', 'Armor', 'Container', 'Consumable', 'Trade Goods', 'Projectile', 'Quiver', 'Recipes', 'Reagent', 'Miscellaneous'
-end
-
-local function GetAuctionItemClassesLoc()
-	return {
-				AUCTION_CATEGORY_WEAPONS,
-				AUCTION_CATEGORY_ARMOR,
-				AUCTION_CATEGORY_CONTAINERS,
-				AUCTION_CATEGORY_CONSUMABLES,
-				AUCTION_CATEGORY_TRADE_GOODS,
-				AUCTION_CATEGORY_PROJECTILE,
-				AUCTION_CATEGORY_QUIVER,
-				AUCTION_CATEGORY_RECIPES,
-				AUCTION_CATEGORY_REAGENT,
-				AUCTION_CATEGORY_MISCELLANEOUS,
-			}
-end
-
 local function Init()
 	local NewLocData = {
 		--en = {},
@@ -347,7 +327,7 @@ local function Init()
 
 		for isC = 0, #class do
 			local subClass = class[isC]
-			local name = C_Item.GetItemSubClassInfo(iC,isC)
+			local name = C_Item.GetItemSubClassInfo(iC, isC)
 			if not NewLocData[subClass] then
 				--NewLocData.en[class.__name..subClass] = name
 				NewLocData.loc[className..name] = subClass
@@ -357,8 +337,8 @@ local function Init()
 
 	LOC_DATA = NewLocData
 
-	for i = 1,#FILTER do
-		FILTER[ ItemInfo.CreateDescription(FILTER[i].slot, LOC_DATA.loc[FILTER[i].itemType], LOC_DATA.loc[FILTER[i].itemType..FILTER[i].itemSubType], true) ] = type(FILTER[i].__new) == "table" and ItemInfo.CreateDescription(FILTER[i].__new.slot, LOC_DATA.loc[FILTER[i].__new.itemType], (FILTER[i].__new.itemType and FILTER[i].__new.itemSubType) and FILTER[i].__new.itemType..FILTER[i].__new.itemSubType or nil, true) or FILTER[i].__new
+	for i = 1, #FILTER do
+		FILTER[ItemInfo.CreateDescription(FILTER[i].slot, LOC_DATA.loc[FILTER[i].itemType], LOC_DATA.loc[FILTER[i].itemType..FILTER[i].itemSubType], true)] = type(FILTER[i].__new) == "table" and ItemInfo.CreateDescription(FILTER[i].__new.slot, LOC_DATA.loc[FILTER[i].__new.itemType], (FILTER[i].__new.itemType and FILTER[i].__new.itemSubType) and FILTER[i].__new.itemType..FILTER[i].__new.itemSubType or nil, true) or FILTER[i].__new
 	end
 end
 AtlasLoot:AddInitFunc(Init)
@@ -367,25 +347,25 @@ AtlasLoot:AddInitFunc(Init)
 function ItemInfo.CreateDescription(slot, itemType, itemSubType, filterIgnore)
 	local desc = ""
 	if slot then
-		desc = ITEM_DESC_INFO["slot"][slot] and ITEM_DESC_INFO["slot"][slot] or ( _G[slot] or "" )
+		desc = ITEM_DESC_INFO["slot"][slot] and ITEM_DESC_INFO["slot"][slot] or (_G[slot] or "")
 	end
-	itemType = itemType and ( LOC_DATA.loc[itemType] or itemType ) or itemType
-	itemSubType = (itemType and itemSubType) and ( LOC_DATA.loc[itemType..itemSubType] or itemSubType ) or itemSubType
+	itemType = itemType and (LOC_DATA.loc[itemType] or itemType) or itemType
+	itemSubType = (itemType and itemSubType) and (LOC_DATA.loc[itemType..itemSubType] or itemSubType) or itemSubType
 	if itemType and itemSubType then
 		if ITEM_DESC_INFO[itemType] and ITEM_DESC_INFO[itemType][itemSubType] then
 			if ITEM_DESC_INFO[itemType][itemSubType] ~= true then
 				if ITEM_DESC_INFO[itemType][itemSubType] ~= "" then
-					desc = (desc=="" and "" or desc..", ")..ITEM_DESC_INFO[itemType][itemSubType]
+					desc = (desc == "" and "" or desc..", ")..ITEM_DESC_INFO[itemType][itemSubType]
 				end
 			else
-				desc = (desc=="" and "" or desc..", ")..itemSubType
+				desc = (desc == "" and "" or desc..", ")..itemSubType
 			end
 		else
-			desc = (desc=="" and "" or desc..", ")..itemSubType
+			desc = (desc == "" and "" or desc..", ")..itemSubType
 		end
 	end
-	if not filterIgnore then PreSave[slot or "nil"][itemType or "nil"][itemSubType or "nil"] = { true, FILTER[desc] or desc  } end
-	return filterIgnore and desc or ( FILTER[desc] or desc )
+	if not filterIgnore then PreSave[slot or "nil"][itemType or "nil"][itemSubType or "nil"] = { true, FILTER[desc] or desc } end
+	return filterIgnore and desc or (FILTER[desc] or desc)
 end
 
 function ItemInfo.GetDescription(slot, itemType, itemSubType)

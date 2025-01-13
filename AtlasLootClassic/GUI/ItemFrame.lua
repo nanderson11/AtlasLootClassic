@@ -19,7 +19,7 @@ local PAGE_NAME_PAGE = "%s [%d/%d]"
 local PAGE_NAME_DIFF = "%s (%s)"
 local PAGE_NAME_DIFF_PAGE = "%s (%s) [%d/%d]"
 local FILTER_ALPHA = 0.33
-local DEFAULT_HEADER_COLOR = {0.82, 0.82, 0.82, 0.5}
+local DEFAULT_HEADER_COLOR = { 0.82, 0.82, 0.82, 0.5 }
 
 function ItemFrame:Create()
 	if self.frame then return self.frame end
@@ -43,7 +43,7 @@ function ItemFrame:Create()
 	frame.OnTransMogUpdate = ItemFrame.OnTransMogUpdate
 
 	frame.ItemButtons = {}
-	for i=1,30 do
+	for i = 1, 30 do
 		frame.ItemButtons[i] = AtlasLoot.Button:Create()
 		frame.ItemButtons[i]:ClearAllPoints()
 		frame.ItemButtons[i]:SetParent(frame)
@@ -52,7 +52,7 @@ function ItemFrame:Create()
 		elseif i == 16 then
 			frame.ItemButtons[i]:SetPoint("TOPRIGHT", frame, "TOPRIGHT", 0, 0)
 		else
-			frame.ItemButtons[i]:SetPoint("TOPLEFT", frame.ItemButtons[i-1], "BOTTOMLEFT", 0, -2)
+			frame.ItemButtons[i]:SetPoint("TOPLEFT", frame.ItemButtons[i - 1], "BOTTOMLEFT", 0, -2)
 		end
 	end
 	-- headerlines
@@ -61,7 +61,7 @@ function ItemFrame:Create()
 		local line
 		line = frame:CreateTexture(nil, "BACKGROUND")
 		line:SetPoint("TOPLEFT", frame.ItemButtons[i], "TOPLEFT", 0, 0)
-		line:SetPoint("BOTTOMRIGHT", frame.ItemButtons[i+15], "BOTTOMRIGHT", 0, 0)
+		line:SetPoint("BOTTOMRIGHT", frame.ItemButtons[i + 15], "BOTTOMRIGHT", 0, 0)
 		line:SetColorTexture(unpack(DEFAULT_HEADER_COLOR))
 		line:SetDrawLayer(GUI.frame.contentFrame.itemBG:GetDrawLayer(), 1)
 		--GUI.frame.contentFrame.itemBG
@@ -84,7 +84,7 @@ function ItemFrame:Show(noRefresh)
 end
 
 function ItemFrame:ClearItems()
-	for i=1,30 do
+	for i = 1, 30 do
 		self.frame.ItemButtons[i]:Clear()
 		self.frame.ItemButtons[i]:Hide()
 	end
@@ -121,12 +121,12 @@ end
 
 function ItemFrame.UpdateFilter()
 	local reset = true
-	for i = 1,30 do
+	for i = 1, 30 do
 		reset = ItemFrame.UpdateFilterItem(i, reset)
 	end
 
 	if reset then
-		for i=1,30 do
+		for i = 1, 30 do
 			ItemFrame.frame.ItemButtons[i]:SetAlpha(1)
 		end
 	end
@@ -137,7 +137,7 @@ function ItemFrame.OnClassFilterUpdate()
 end
 
 function ItemFrame.OnSearch(msg)
-	ItemFrame.SearchString = ( not msg or msg == "" ) and nil or slower(msg)
+	ItemFrame.SearchString = (not msg or msg == "") and nil or slower(msg)
 	ItemFrame.UpdateFilter()
 end
 
@@ -147,7 +147,7 @@ function ItemFrame.OnSearchClear()
 end
 
 function ItemFrame.OnSearchTextChanged(msg)
-	ItemFrame.SearchString = ( not msg or msg == "" ) and nil or slower(msg)
+	ItemFrame.SearchString = (not msg or msg == "") and nil or slower(msg)
 	ItemFrame.UpdateFilter()
 end
 
@@ -163,33 +163,35 @@ function ItemFrame:Refresh(skipProtect)
 	local bossData = AtlasLoot.ItemDB:GetBossTable(AtlasLoot.db.GUI.selected[1], AtlasLoot.db.GUI.selected[2], AtlasLoot.db.GUI.selected[3])
 	local items, tableType, diffData = ItemDB:GetItemTable(AtlasLoot.db.GUI.selected[1], AtlasLoot.db.GUI.selected[2], AtlasLoot.db.GUI.selected[3], AtlasLoot.db.GUI.selected[4])
 	if items then
-
 		ItemFrame.LinkedInfo = items.__linkedInfo
 		ItemFrame.CurDiff = diffData.difficultyID or 1
 		ItemFrame.CurTier = diffData.tierID or 1
 		-- refresh title with diff and add pagenumber if there
-			if #items and items[#items] and items[#items][1] > 100 then
-				if not diffData.textIsHidden then
-					GUI.frame.contentFrame.title:SetText(format(PAGE_NAME_DIFF_PAGE, GUI.frame.contentFrame.title.txt, diffData.name, AtlasLoot.db.GUI.selected[5]+1, floor(items[#items][1]/100)+1))
-				else
-					GUI.frame.contentFrame.title:SetText(format(PAGE_NAME_PAGE, GUI.frame.contentFrame.title.txt, AtlasLoot.db.GUI.selected[5]+1, floor(items[#items][1]/100)+1))
-				end
+		if #items and items[#items] and items[#items][1] > 100 then
+			if not diffData.textIsHidden then
+				GUI.frame.contentFrame.title:SetText(format(PAGE_NAME_DIFF_PAGE, GUI.frame.contentFrame.title.txt, diffData.name, AtlasLoot.db.GUI.selected[5] + 1, floor(items[#items][1] / 100) + 1))
 			else
-				if not diffData.textIsHidden then
-					GUI.frame.contentFrame.title:SetText(format(PAGE_NAME_DIFF, GUI.frame.contentFrame.title.txt or "", diffData.name or ""))
-				else
-					GUI.frame.contentFrame.title:SetText(GUI.frame.contentFrame.title.txt or "")
-				end
+				GUI.frame.contentFrame.title:SetText(format(PAGE_NAME_PAGE, GUI.frame.contentFrame.title.txt, AtlasLoot.db.GUI.selected[5] + 1, floor(items[#items][1] / 100) + 1))
 			end
+		else
+			if not diffData.textIsHidden then
+				GUI.frame.contentFrame.title:SetText(format(PAGE_NAME_DIFF, GUI.frame.contentFrame.title.txt or "", diffData.name or ""))
+			else
+				GUI.frame.contentFrame.title:SetText(GUI.frame.contentFrame.title.txt or "")
+			end
+		end
 		if type(items) == "string" then
 			GUI:ShowLoadingInfo(items, true, tableType)
-			AtlasLoot.Loader:LoadModule(items, function() ItemFrame:Refresh(true) GUI.frame.contentFrame.loadingDataText:Hide() end, true)
+			AtlasLoot.Loader:LoadModule(items, function()
+				ItemFrame:Refresh(true)
+				GUI.frame.contentFrame.loadingDataText:Hide()
+			end, true)
 			return
 		end
 
 		local fixItemNum = 0
-		local setn,item = nil
-		for i = 1,#items do
+		local setn, item = nil, nil
+		for i = 1, #items do
 			item = items[i]
 			fixItemNum = item[1] - page
 			if ItemFrame.frame.ItemButtons[fixItemNum] then
@@ -221,7 +223,7 @@ function ItemFrame:Refresh(skipProtect)
 				GUI.frame.contentFrame.prevPageButton.info = { AtlasLoot.db.GUI.selected[3]-1, floor(items[#items][1]/100) }
 			end
 		end
-		]]--
+		]] --
 	end
 	-- check for headers
 	if ItemFrame.headerShown then
