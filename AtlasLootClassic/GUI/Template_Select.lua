@@ -10,7 +10,7 @@
 			icon		= "Interface\\Icons\\INV_Misc_QuestionMark",
 		},
 	}
-]]--
+]] --
 local ALName, ALPrivate = ...
 local AtlasLoot = _G.AtlasLoot
 local GUI = AtlasLoot.GUI
@@ -28,9 +28,9 @@ local BUTTON_HEIGHT = 15
 local COIN_TEXTURE = ALPrivate.COIN_TEXTURE
 
 local COIN_TEXTURE_LINK = {
-	["Achievement"] 	= "AC",
-	["Reputation"] 		= "REPUTATION",
-	["Faction"] 		= "REPUTATION",
+	["Achievement"] = "AC",
+	["Reputation"]  = "REPUTATION",
+	["Faction"]     = "REPUTATION",
 }
 
 
@@ -70,7 +70,7 @@ local function SetSelected(self, id, dataNum, startSelect)
 	end
 	if not id then
 		if self.data[dataNum] then
-			self.selected = {dataNum, self.data[dataNum].id}
+			self.selected = { dataNum, self.data[dataNum].id }
 			if self.ButtonOnClick then
 				self:ButtonOnClick(self.data[dataNum].id, self.data[dataNum].arg)
 			end
@@ -85,7 +85,7 @@ local function SetSelected(self, id, dataNum, startSelect)
 		self.selected = nil
 		for i = 1, #self.data do
 			if self.data[i].id == id then
-				self.selected = {i, id}
+				self.selected = { i, id }
 				if self.ButtonOnClick then
 					self:ButtonOnClick(id, self.data[i].arg, startSelect)
 				end
@@ -105,23 +105,23 @@ local function GetSelected(self)
 end
 
 local function SetNext(self)
-	if self.selected and self.data[ self.selected[1] + 1 ] then
-		self:SetSelected(nil, self.selected[1]+1)
+	if self.selected and self.data[self.selected[1] + 1] then
+		self:SetSelected(nil, self.selected[1] + 1)
 	end
 end
 
 local function CheckIfNext(self)
-	return (self.selected and self.data[ self.selected[1] + 1 ]) and true or nil
+	return (self.selected and self.data[self.selected[1] + 1]) and true or nil
 end
 
 local function SetPrev(self)
-	if self.selected and self.data[ self.selected[1] - 1 ] then
-		self:SetSelected(nil, self.selected[1]-1)
+	if self.selected and self.data[self.selected[1] - 1] then
+		self:SetSelected(nil, self.selected[1] - 1)
 	end
 end
 
 local function CheckIfPrev(self)
-	return (self.selected and self.data[ self.selected[1] - 1 ]) and true or nil
+	return (self.selected and self.data[self.selected[1] - 1]) and true or nil
 end
 
 local function SetData(self, data, startValue)
@@ -198,9 +198,9 @@ do
 		end
 		local numEntrys = self.numContent
 		local selected = self.curPos
-		local startPos, endPos = 1,1
+		local startPos, endPos = 1, 1
 		if selected then
-			if selected+self.numEntrys-1 >= numEntrys then
+			if selected + self.numEntrys - 1 >= numEntrys then
 				startPos = numEntrys - self.numEntrys + 1
 				endPos = numEntrys
 			else
@@ -216,7 +216,10 @@ do
 	end
 
 	local function ButtonOnClick(self, ...)
-		if self.obj.selected and self.info.id == self.obj.selected[2] then self:SetChecked(true) return end
+		if self.obj.selected and self.info.id == self.obj.selected[2] then
+			self:SetChecked(true)
+			return
+		end
 		self.obj:SetSelected(self.info.id)
 	end
 
@@ -231,7 +234,7 @@ do
 			frame:SetHighlightTexture("Interface\\QuestFrame\\UI-QuestTitleHighlight", "ADD")
 			-- Below will now cover the text and currently not transparent
 			-- Can be fixed by setting text and coin to a higher level (and sublevel)
-			frame:SetCheckedTexture("Interface\\QuestFrame\\UI-QuestTitleHighlight", "ADD")
+			frame:SetCheckedTexture("Interface\\QuestFrame\\UI-QuestTitleHighlight")
 			frame:RegisterForClicks("LeftButtonDown", "RightButtonDown")
 			frame:SetChecked(false)
 			frame:SetScript("OnClick", ButtonOnClick)
@@ -255,7 +258,7 @@ do
 
 		frame:ClearAllPoints()
 		frame:SetParent(self.frame)
-		frame:SetFrameLevel(self.frame:GetFrameLevel()+1)
+		frame:SetFrameLevel(self.frame:GetFrameLevel() + 1)
 
 		frame.obj = self
 		frame:SetWidth(self.buttonWidth)
@@ -351,7 +354,7 @@ do
 		if self.numContent >= self.numEntrys then
 			count = self.numEntrys
 		else
-			count = self.numContent+1
+			count = self.numContent + 1
 		end
 		for i = 1, count do
 			self.buttons[i] = CreateButton(self)
@@ -375,7 +378,7 @@ local function Update(self)
 		self.frame.scrollbar:Show()
 		self.enableScroll = true
 		self.buttonWidth = self.buttonWidth - 20
-		self.maxScroll = self.numContent-self.numEntrys+1
+		self.maxScroll = self.numContent - self.numEntrys + 1
 		self.frame.scrollbar:SetMinMaxValues(1, self.maxScroll)
 		self.frame.scrollbar:SetValue(1)
 	else
@@ -436,18 +439,18 @@ function GUI.CreateSelect()
 	self.OnLeaveButton = HideToolTip
 
 	-- data
-	self.data = {}						-- data SetData(dataTable)
-	self.buttons = {}					-- button storage
-	self.selected = nil					-- { <NumberInDataTable>, id }
-	self.curPos = 1						-- current position in scrollframe
-	self.width = 250					-- frame width
-	self.numEntrys = 4					-- number of buttons
-	self.maxScroll = 4					-- Max value for scrollbar (SetMinMaxValues)
-	self.space = 2						-- Space between buttons
-	self.numContent = 0					-- number of content in data tabel (#self.data)
-	self.buttonHeight = BUTTON_HEIGHT	-- button height
-	self.enableScroll = false			-- scrollbar is shown
-	self.showSelectedCoin = true		-- show grey/gold coin on the right side
+	self.data = {}                 -- data SetData(dataTable)
+	self.buttons = {}              -- button storage
+	self.selected = nil            -- { <NumberInDataTable>, id }
+	self.curPos = 1                -- current position in scrollframe
+	self.width = 250               -- frame width
+	self.numEntrys = 4             -- number of buttons
+	self.maxScroll = 4             -- Max value for scrollbar (SetMinMaxValues)
+	self.space = 2                 -- Space between buttons
+	self.numContent = 0            -- number of content in data tabel (#self.data)
+	self.buttonHeight = BUTTON_HEIGHT -- button height
+	self.enableScroll = false      -- scrollbar is shown
+	self.showSelectedCoin = true   -- show grey/gold coin on the right side
 	self.ttSource = GameTooltip
 
 
@@ -455,11 +458,15 @@ function GUI.CreateSelect()
 	local frame = self.frame
 	frame:ClearAllPoints()
 	frame:EnableMouse(true)
-	frame:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background",
-						edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
-						tile = true, tileSize = 16, edgeSize = 16,
-						insets = { left = 4, right = 4, top = 4, bottom = 4 }})
-	frame:SetBackdropColor(0,0,0,1)
+	frame:SetBackdrop({
+		bgFile = "Interface/Tooltips/UI-Tooltip-Background",
+		edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+		tile = true,
+		tileSize = 16,
+		edgeSize = 16,
+		insets = { left = 4, right = 4, top = 4, bottom = 4 }
+	})
+	frame:SetBackdropColor(0, 0, 0, 1)
 	frame:EnableMouseWheel(true)
 	frame:SetScript("OnMouseWheel", OnMouseWheel)
 	frame.obj = self

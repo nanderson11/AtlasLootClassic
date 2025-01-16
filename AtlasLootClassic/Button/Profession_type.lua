@@ -6,9 +6,6 @@ local AL = AtlasLoot.Locales
 local GetAlTooltip = AtlasLoot.Tooltip.GetTooltip
 local Profession = AtlasLoot.Data.Profession
 
---lua
-local GetSpellInfo = GetSpellInfo
-
 local ProfClickHandler = nil
 
 local PROF_COLOR = "|cffffff00"
@@ -121,7 +118,8 @@ end
 
 -- TODO: Add Query?
 function Prof.Refresh(button)
-	local spellName, _, spellTexture = GetSpellInfo(button.SpellID)
+	local temp = C_Spell.GetSpellInfo(button.SpellID)
+	local spellName, spellTexture = temp.name, temp.iconID
 
 	if Profession.IsProfessionSpell(button.SpellID) then
 		local _, itemName, itemQuality, itemTexture, itemCount

@@ -5,7 +5,7 @@ local _G = getfenv(0)
 local rawget = _G.rawget
 
 -- WoW
-local GetSpellInfo = GetSpellInfo
+local GetSpellInfo = C_Spell.GetSpellName
 local GetItemClassInfo, GetItemSubClassInfo = C_Item.GetItemClassInfo, C_Item.GetItemSubClassInfo
 
 -- ----------------------------------------------------------------------------

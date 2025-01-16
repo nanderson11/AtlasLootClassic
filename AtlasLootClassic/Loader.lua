@@ -35,36 +35,36 @@ local ATLASLOOT_MODULE_LIST = {
 		addonName = "AtlasLootClassic_DungeonsAndRaids",
 		--icon = "Interface\\ICONS\\Inv_ChampionsOfAzeroth",
 		name = AL["Dungeons and Raids"],
-		tt_title = nil,		-- ToolTip title
-		tt_text = nil,		-- ToolTip text
+		tt_title = nil, -- ToolTip title
+		tt_text = nil, -- ToolTip text
 	},
 	{
 		addonName = "AtlasLootClassic_Crafting",
 		--icon = "Interface\\ICONS\\Inv_ChampionsOfAzeroth",
 		name = AL["Crafting"],
-		tt_title = nil,		-- ToolTip title
-		tt_text = nil,		-- ToolTip text
+		tt_title = nil, -- ToolTip title
+		tt_text = nil, -- ToolTip text
 	},
 	{
 		addonName = "AtlasLootClassic_Factions",
 		--icon = "Interface\\ICONS\\Inv_ChampionsOfAzeroth",
 		name = AL["Factions"],
-		tt_title = nil,		-- ToolTip title
-		tt_text = nil,		-- ToolTip text
+		tt_title = nil, -- ToolTip title
+		tt_text = nil, -- ToolTip text
 	},
 	{
 		addonName = "AtlasLootClassic_PvP",
 		--icon = "Interface\\ICONS\\Inv_ChampionsOfAzeroth",
 		name = AL["PvP"],
-		tt_title = nil,		-- ToolTip title
-		tt_text = nil,		-- ToolTip text
+		tt_title = nil, -- ToolTip title
+		tt_text = nil, -- ToolTip text
 	},
 	{
 		addonName = "AtlasLootClassic_Collections",
 		--icon = "Interface\\ICONS\\Inv_ChampionsOfAzeroth",
 		name = AL["Collections"],
-		tt_title = nil,		-- ToolTip title
-		tt_text = nil,		-- ToolTip text
+		tt_title = nil, -- ToolTip title
+		tt_text = nil, -- ToolTip text
 	},
 }
 local ATLASLOOT_MODULE_LIST_NAMES = {}
@@ -93,7 +93,7 @@ local function LoaderEvents(frame, event, arg1)
 			LoaderQueue[arg1] = nil
 		end
 	elseif event == "PLAYER_REGEN_ENABLED" then
-		for k,v in pairs(LoaderQueue) do
+		for k, v in pairs(LoaderQueue) do
 			Loader:LoadModule(k)
 		end
 		LoaderFrame:UnregisterEvent("PLAYER_REGEN_ENABLED")
@@ -106,8 +106,8 @@ function Loader.Init()
 	-- Check addonlist for AtlasLoot modules
 	local tmp
 	local playerName = UnitName("player")
-	for i=1,GetNumAddOns() do
-		tmp = {GetAddOnInfo(i)} --5
+	for i = 1, GetNumAddOns() do
+		tmp = { GetAddOnInfo(i) } --5
 		if tmp[1] and str_find(tmp[1], "AtlasLootClassic_") then
 			ModuleList[tmp[1]] = {
 				index = i,
@@ -139,6 +139,7 @@ function Loader.Init()
 
 	AtlasLoot.Data.AutoSelect:RefreshOptions()
 end
+
 AtlasLoot:AddInitFunc(Loader.Init)
 
 --/dump GetAddOnEnableState(playerName, i) == 0 and false or true
@@ -146,12 +147,12 @@ AtlasLoot:AddInitFunc(Loader.Init)
 -- @param	moduleName		<string> name of the module
 -- @param	onLoadFunction	<function> function that is called after the module is finish loaded
 -- @param	oneFunction		<string> category of the load
-local warningSpam = {nil, nil}
+local warningSpam = { nil, nil }
 function Loader:LoadModule(moduleName, onLoadFunction, oneFunction)
 	if not moduleName or not ModuleList[moduleName] then return end
-	if ( ModuleList[moduleName].loadReason and ModuleList[moduleName].loadReason ~= "DEMAND_LOADED" ) or not ModuleList[moduleName].enabled then
+	if (ModuleList[moduleName].loadReason and ModuleList[moduleName].loadReason ~= "DEMAND_LOADED") or not ModuleList[moduleName].enabled then
 		local state = ModuleList[moduleName].loadReason == "DEMAND_LOADED" and "DISABLED" or ModuleList[moduleName].loadReason
-		if warningSpam[1] ~= moduleName or ( warningSpam[1] == moduleName and GetTime() - warningSpam[2] > 1 ) then
+		if warningSpam[1] ~= moduleName or (warningSpam[1] == moduleName and GetTime() - warningSpam[2] > 1) then
 			if state == "DISABLED" then -- localized "ADDON_" ("BANNED", "CORRUPT", "DEMAND_LOADED", "DISABLED", "INCOMPATIBLE", "INTERFACE_VERSION", "MISSING")
 				AtlasLoot:Print(str_format(AL["Module %s is deactivated."], moduleName))
 			elseif state == "MISSING" then
@@ -172,18 +173,18 @@ function Loader:LoadModule(moduleName, onLoadFunction, oneFunction)
 	if onLoadFunction and not oneFunction then
 		tbl_insert(LoaderQueue[moduleName], onLoadFunction)
 	elseif onLoadFunction and oneFunction and oneFunction ~= true then
-		if LoaderQueueSaves[oneFunction] and LoaderQueue[ LoaderQueueSaves[oneFunction] ] then
-			tbl_remove(LoaderQueue[ LoaderQueueSaves[oneFunction] ], LoaderQueue[LoaderQueueSaves[oneFunction]][oneFunction])
+		if LoaderQueueSaves[oneFunction] and LoaderQueue[LoaderQueueSaves[oneFunction]] then
+			tbl_remove(LoaderQueue[LoaderQueueSaves[oneFunction]], LoaderQueue[LoaderQueueSaves[oneFunction]][oneFunction])
 			LoaderQueue[LoaderQueueSaves[oneFunction]][oneFunction] = nil
 			--if #LoaderQueue[LoaderQueueSaves[oneFunction]] == 0 then
 			--	LoaderQueue[LoaderQueueSaves[oneFunction]] = nil
 			--end
 		end
 		if LoaderQueue[moduleName][oneFunction] then
-			LoaderQueue[moduleName][ LoaderQueue[moduleName][oneFunction] ] = onLoadFunction
+			LoaderQueue[moduleName][LoaderQueue[moduleName][oneFunction]] = onLoadFunction
 		else
-			LoaderQueue[moduleName][oneFunction] = #LoaderQueue[moduleName]+1
-			LoaderQueue[moduleName][ LoaderQueue[moduleName][oneFunction] ] = onLoadFunction
+			LoaderQueue[moduleName][oneFunction] = #LoaderQueue[moduleName] + 1
+			LoaderQueue[moduleName][LoaderQueue[moduleName][oneFunction]] = onLoadFunction
 		end
 		LoaderQueueSaves[oneFunction] = moduleName
 	elseif onLoadFunction and oneFunction then
@@ -223,7 +224,7 @@ function Loader:GetLootModuleList()
 			else
 				displayName = moduleTable.name
 			end
-			data.module[#data.module+1] = {
+			data.module[#data.module + 1] = {
 				addonName = moduleTable.addonName,
 				name = displayName,
 				tt_title = moduleTable.tt_title or moduleTable.name,
@@ -235,7 +236,7 @@ function Loader:GetLootModuleList()
 	data.custom = {}
 	for addonName, addonTable in pairs(ModuleList) do
 		if not addonTable.standardModule and addonTable.enabled and addonTable.lootModule == "1" then
-			data.custom[#data.custom+1] = {
+			data.custom[#data.custom + 1] = {
 				addonName = addonName,
 				name = addonTable.moduleName or UNKNOWN,
 			}
@@ -253,11 +254,11 @@ function Loader:LoadAllModules(loadCustom)
 	end
 	local moduleList = Loader:GetLootModuleList()
 	if not moduleList then return end
-	for k,v in ipairs(moduleList.module) do
+	for k, v in ipairs(moduleList.module) do
 		Loader:LoadModule(v.addonName)
 	end
 	if loadCustom then
-		for k,v in ipairs(moduleList.custom) do
+		for k, v in ipairs(moduleList.custom) do
 			Loader:LoadModule(v.addonName)
 		end
 	end
@@ -266,7 +267,11 @@ end
 function Loader.IsMapsModuleAviable(moduleName)
 	if moduleName then
 		if AtlasLoot.db.enableAtlasMapIntegration then
-			return AtlasModuleList[moduleName]
+			if GetFileIDFromPath("Interface\\AddOns\\Atlas\\Images\\Atlas_BattleforAzeroth\\NyalothaA") then
+				return 1
+			else
+				return AtlasModuleList[moduleName]
+			end
 		else
 			return false
 		end

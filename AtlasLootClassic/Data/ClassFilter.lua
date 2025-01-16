@@ -24,35 +24,35 @@ local FILTER_DATA = {
 	-- https://wowpedia.fandom.com/wiki/Enum.InventoryType
 	-- true = all classes are allowed
 	itemEquipLoc = {
-		[""] = true,                                        -- empty
-		["INVTYPE_NON_EQUIP"] = true,                       -- Non-equippable
-		["INVTYPE_HEAD"] = true,                            -- Head
-		["INVTYPE_NECK"] = true,                            -- Neck
-		["INVTYPE_SHOULDER"] = true,                        -- Shoulder
-		["INVTYPE_BODY"] = true,                            -- Shirt
-		["INVTYPE_CHEST"] = true,                           -- Chest
-		["INVTYPE_WAIST"] = true,                           -- Waist
-		["INVTYPE_LEGS"] = true,                            -- Legs
-		["INVTYPE_FEET"] = true,                            -- Feet
-		["INVTYPE_WRIST"] = true,                           -- Wrist
-		["INVTYPE_HAND"] = true,                            -- Hands
-		["INVTYPE_FINGER"] = true,                          -- Finger
-		["INVTYPE_TRINKET"] = true,                         -- Trinket
-		["INVTYPE_WEAPON"] = true,                          -- One-Hand
-		["INVTYPE_SHIELD"] = true,                          -- Off Hand
-		["INVTYPE_RANGED"] = true,                          -- Ranged
-		["INVTYPE_CLOAK"] = true,                           -- Back
-		["INVTYPE_2HWEAPON"] = true,                        -- Two-Hand
-		["INVTYPE_BAG"] = true,                             -- Bag
-		["INVTYPE_TABARD"] = true,                          -- Tabard
-		["INVTYPE_ROBE"] = true,                            -- Chest
-		["INVTYPE_WEAPONMAINHAND"] = true,                  -- Main Hand
-		["INVTYPE_WEAPONOFFHAND"] = true,                   -- Off Hand
-		["INVTYPE_HOLDABLE"] = true,                        -- Held In Off-hand
-		["INVTYPE_AMMO"] = true,                            -- Ammo
-		["INVTYPE_THROWN"] = true,                          -- Thrown
-		["INVTYPE_RANGEDRIGHT"] = true,                     -- Ranged
-		["INVTYPE_QUIVER"] = C.HUNTER,                      -- Quiver
+		[""] = true,                                  -- empty
+		["INVTYPE_NON_EQUIP"] = true,                 -- Non-equippable
+		["INVTYPE_HEAD"] = true,                      -- Head
+		["INVTYPE_NECK"] = true,                      -- Neck
+		["INVTYPE_SHOULDER"] = true,                  -- Shoulder
+		["INVTYPE_BODY"] = true,                      -- Shirt
+		["INVTYPE_CHEST"] = true,                     -- Chest
+		["INVTYPE_WAIST"] = true,                     -- Waist
+		["INVTYPE_LEGS"] = true,                      -- Legs
+		["INVTYPE_FEET"] = true,                      -- Feet
+		["INVTYPE_WRIST"] = true,                     -- Wrist
+		["INVTYPE_HAND"] = true,                      -- Hands
+		["INVTYPE_FINGER"] = true,                    -- Finger
+		["INVTYPE_TRINKET"] = true,                   -- Trinket
+		["INVTYPE_WEAPON"] = true,                    -- One-Hand
+		["INVTYPE_SHIELD"] = true,                    -- Off Hand
+		["INVTYPE_RANGED"] = true,                    -- Ranged
+		["INVTYPE_CLOAK"] = true,                     -- Back
+		["INVTYPE_2HWEAPON"] = true,                  -- Two-Hand
+		["INVTYPE_BAG"] = true,                       -- Bag
+		["INVTYPE_TABARD"] = true,                    -- Tabard
+		["INVTYPE_ROBE"] = true,                      -- Chest
+		["INVTYPE_WEAPONMAINHAND"] = true,            -- Main Hand
+		["INVTYPE_WEAPONOFFHAND"] = true,             -- Off Hand
+		["INVTYPE_HOLDABLE"] = true,                  -- Held In Off-hand
+		["INVTYPE_AMMO"] = true,                      -- Ammo
+		["INVTYPE_THROWN"] = true,                    -- Thrown
+		["INVTYPE_RANGEDRIGHT"] = true,               -- Ranged
+		["INVTYPE_QUIVER"] = C.HUNTER,                -- Quiver
 		["INVTYPE_RELIC"] = C.SHAMAN + C.PALADIN + C.DRUID, -- Relic
 	},
 	itemClass = {
@@ -89,40 +89,40 @@ local FILTER_DATA = {
 			[9] = true, -- Vantus Runes
 		},
 		[LE_ITEM_CLASS_CONTAINER] = {
-			[0] = true,  -- Bag
-			[1] = true,  -- Soul Bag
-			[2] = true,  -- Herb Bag
-			[3] = true,  -- Enchanting Bag
-			[4] = true,  -- Engineering Bag
-			[5] = true,  -- Gem Bag
-			[6] = true,  -- Mining Bag
-			[7] = true,  -- Leatherworking Bag
-			[8] = true,  -- Inscription Bag
-			[9] = true,  -- Tackle Box
+			[0] = true, -- Bag
+			[1] = true, -- Soul Bag
+			[2] = true, -- Herb Bag
+			[3] = true, -- Enchanting Bag
+			[4] = true, -- Engineering Bag
+			[5] = true, -- Gem Bag
+			[6] = true, -- Mining Bag
+			[7] = true, -- Leatherworking Bag
+			[8] = true, -- Inscription Bag
+			[9] = true, -- Tackle Box
 			[10] = true, -- Cooking Bag
 		},
 		[LE_ITEM_CLASS_WEAPON] = {
 			[LE_ITEM_WEAPON_AXE1H]       = C.HUNTER + C.PALADIN + C.SHAMAN + C.WARRIOR + C.DEATHKNIGHT + AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, C.ROGUE, 0), -- One-Handed Axes
-			[LE_ITEM_WEAPON_AXE2H]       = C.HUNTER + C.PALADIN + C.SHAMAN + C.WARRIOR + C.DEATHKNIGHT,                                                                     -- Two-Handed Axes
-			[LE_ITEM_WEAPON_BOWS]        = C.HUNTER + C.ROGUE + C.WARRIOR,                                                                                                  -- Bows
-			[LE_ITEM_WEAPON_GUNS]        = C.HUNTER + C.ROGUE + C.WARRIOR,                                                                                                  -- Guns
-			[LE_ITEM_WEAPON_MACE1H]      = C.DRUID + C.PALADIN + C.PRIEST + C.ROGUE + C.SHAMAN + C.WARRIOR + C.DEATHKNIGHT,                                                 -- One-Handed Maces
-			[LE_ITEM_WEAPON_MACE2H]      = C.DRUID + C.PALADIN + C.SHAMAN + C.WARRIOR + C.DEATHKNIGHT,                                                                      -- Two-Handed Maces
-			[LE_ITEM_WEAPON_POLEARM]     = C.DRUID + C.HUNTER + C.PALADIN + C.WARRIOR + C.DEATHKNIGHT,                                                                      -- Polearms
-			[LE_ITEM_WEAPON_SWORD1H]     = C.HUNTER + C.MAGE + C.PALADIN + C.ROGUE + C.WARLOCK + C.WARRIOR + C.DEATHKNIGHT,                                                 -- One-Handed Swords
-			[LE_ITEM_WEAPON_SWORD2H]     = C.HUNTER + C.PALADIN + C.WARRIOR,                                                                                                -- Two-Handed Swords
-			[LE_ITEM_WEAPON_WARGLAIVE]   = true,                                                                                                                            -- Warglaives
-			[LE_ITEM_WEAPON_STAFF]       = C.DRUID + C.MAGE + C.PRIEST + C.SHAMAN + C.WARLOCK,                                                                              -- Staves
+			[LE_ITEM_WEAPON_AXE2H]       = C.HUNTER + C.PALADIN + C.SHAMAN + C.WARRIOR + C.DEATHKNIGHT,                                                            -- Two-Handed Axes
+			[LE_ITEM_WEAPON_BOWS]        = C.HUNTER + C.ROGUE + C.WARRIOR,                                                                                         -- Bows
+			[LE_ITEM_WEAPON_GUNS]        = C.HUNTER + C.ROGUE + C.WARRIOR,                                                                                         -- Guns
+			[LE_ITEM_WEAPON_MACE1H]      = C.DRUID + C.PALADIN + C.PRIEST + C.ROGUE + C.SHAMAN + C.WARRIOR + C.DEATHKNIGHT,                                        -- One-Handed Maces
+			[LE_ITEM_WEAPON_MACE2H]      = C.DRUID + C.PALADIN + C.SHAMAN + C.WARRIOR + C.DEATHKNIGHT,                                                             -- Two-Handed Maces
+			[LE_ITEM_WEAPON_POLEARM]     = C.DRUID + C.HUNTER + C.PALADIN + C.WARRIOR + C.DEATHKNIGHT,                                                             -- Polearms
+			[LE_ITEM_WEAPON_SWORD1H]     = C.HUNTER + C.MAGE + C.PALADIN + C.ROGUE + C.WARLOCK + C.WARRIOR + C.DEATHKNIGHT,                                        -- One-Handed Swords
+			[LE_ITEM_WEAPON_SWORD2H]     = C.HUNTER + C.PALADIN + C.WARRIOR,                                                                                       -- Two-Handed Swords
+			[LE_ITEM_WEAPON_WARGLAIVE]   = true,                                                                                                                   -- Warglaives
+			[LE_ITEM_WEAPON_STAFF]       = C.DRUID + C.MAGE + C.PRIEST + C.SHAMAN + C.WARLOCK,                                                                     -- Staves
 			--[LE_ITEM_WEAPON_BEARCLAW] 	= true, -- Bear Claws
 			--[LE_ITEM_WEAPON_CATCLAW] 		= true, -- CatClaws 
-			[LE_ITEM_WEAPON_UNARMED]     = C.DRUID + C.ROGUE + C.SHAMAN + C.WARRIOR + C.HUNTER,                              -- Fist Weapons
-			[LE_ITEM_WEAPON_GENERIC]     = true,                                                                             -- Miscellaneous
+			[LE_ITEM_WEAPON_UNARMED]     = C.DRUID + C.ROGUE + C.SHAMAN + C.WARRIOR + C.HUNTER,                        -- Fist Weapons
+			[LE_ITEM_WEAPON_GENERIC]     = true,                                                                       -- Miscellaneous
 			[LE_ITEM_WEAPON_DAGGER]      = C.DRUID + C.HUNTER + C.MAGE + C.PRIEST + C.ROGUE + C.SHAMAN + C.WARLOCK + C.WARRIOR, -- Daggers
-			[LE_ITEM_WEAPON_THROWN]      = C.ROGUE + C.WARRIOR,                                                              -- Thrown
+			[LE_ITEM_WEAPON_THROWN]      = C.ROGUE + C.WARRIOR,                                                        -- Thrown
 			--[17] -- ignore
-			[LE_ITEM_WEAPON_CROSSBOW]    = C.HUNTER + C.ROGUE + C.WARRIOR,                                                   -- Crossbows
-			[LE_ITEM_WEAPON_WAND]        = C.MAGE + C.PRIEST + C.WARLOCK,                                                    -- Wands
-			[LE_ITEM_WEAPON_FISHINGPOLE] = true,                                                                             -- Fishing Poles
+			[LE_ITEM_WEAPON_CROSSBOW]    = C.HUNTER + C.ROGUE + C.WARRIOR,                                             -- Crossbows
+			[LE_ITEM_WEAPON_WAND]        = C.MAGE + C.PRIEST + C.WARLOCK,                                              -- Wands
+			[LE_ITEM_WEAPON_FISHINGPOLE] = true,                                                                       -- Fishing Poles
 		},
 		[LE_ITEM_CLASS_GEM] = {
 			[1] = true, -- Blue
@@ -135,18 +135,18 @@ local FILTER_DATA = {
 			[8] = true, -- Prismatic
 		},
 		[LE_ITEM_CLASS_ARMOR] = {
-			[LE_ITEM_ARMOR_GENERIC]  = true,                                    -- Miscellaneous
-			[LE_ITEM_ARMOR_CLOTH]    = C.PRIEST + C.MAGE + C.WARLOCK,           -- Cloth
-			[LE_ITEM_ARMOR_LEATHER]  = C.DRUID + C.ROGUE,                       -- Leather
-			[LE_ITEM_ARMOR_MAIL]     = C.HUNTER + C.SHAMAN,                     -- Mail
-			[LE_ITEM_ARMOR_PLATE]    = C.WARRIOR + C.PALADIN + C.DEATHKNIGHT,   -- Plate
-			[LE_ITEM_ARMOR_COSMETIC] = true,                                    -- Cosmetic
-			[LE_ITEM_ARMOR_SHIELD]   = C.WARRIOR + C.PALADIN + C.SHAMAN,        -- Shields
-			[LE_ITEM_ARMOR_LIBRAM]   = C.PALADIN,                               -- Librams
-			[LE_ITEM_ARMOR_IDOL]     = C.DRUID,                                 -- Idols
-			[LE_ITEM_ARMOR_TOTEM]    = C.SHAMAN,                                -- Totems
+			[LE_ITEM_ARMOR_GENERIC]  = true,                         -- Miscellaneous
+			[LE_ITEM_ARMOR_CLOTH]    = C.PRIEST + C.MAGE + C.WARLOCK, -- Cloth
+			[LE_ITEM_ARMOR_LEATHER]  = C.DRUID + C.ROGUE,            -- Leather
+			[LE_ITEM_ARMOR_MAIL]     = C.HUNTER + C.SHAMAN,          -- Mail
+			[LE_ITEM_ARMOR_PLATE]    = C.WARRIOR + C.PALADIN + C.DEATHKNIGHT, -- Plate
+			[LE_ITEM_ARMOR_COSMETIC] = true,                         -- Cosmetic
+			[LE_ITEM_ARMOR_SHIELD]   = C.WARRIOR + C.PALADIN + C.SHAMAN, -- Shields
+			[LE_ITEM_ARMOR_LIBRAM]   = C.PALADIN,                    -- Librams
+			[LE_ITEM_ARMOR_IDOL]     = C.DRUID,                      -- Idols
+			[LE_ITEM_ARMOR_TOTEM]    = C.SHAMAN,                     -- Totems
 			--[LE_ITEM_ARMOR_SIGIL] 	    = true, -- Sigils (DK)
-			[LE_ITEM_ARMOR_RELIC]    = C.SHAMAN + C.PALADIN + C.DRUID,          -- Relic
+			[LE_ITEM_ARMOR_RELIC]    = C.SHAMAN + C.PALADIN + C.DRUID, -- Relic
 		},
 		[LE_ITEM_CLASS_REAGENT] = {
 			[0] = true, -- Reagent
@@ -154,23 +154,23 @@ local FILTER_DATA = {
 			[2] = true, -- Context Token
 		},
 		[LE_ITEM_CLASS_PROJECTILE] = {
-			[0] = true,                           -- Wand
-			[1] = true,                           -- Bolt
+			[0] = true,                  -- Wand
+			[1] = true,                  -- Bolt
 			[2] = C.HUNTER + C.ROGUE + C.WARRIOR, -- Arrow
 			[3] = C.HUNTER + C.ROGUE + C.WARRIOR, -- Bullet
 			[4] = C.HUNTER + C.ROGUE + C.WARRIOR, -- Thrown
 		},
 		[LE_ITEM_CLASS_TRADEGOODS] = {
-			[0] = true,  -- Trade Goods (OBSOLETE)
-			[1] = true,  -- Parts
-			[2] = true,  -- Explosives (OBSOLETE)
-			[3] = true,  -- Devices (OBSOLETE)
-			[4] = true,  -- Jewelcrafting
-			[5] = true,  -- Cloth
-			[6] = true,  -- Leather
-			[7] = true,  -- Metal & Stone
-			[8] = true,  -- Cooking
-			[9] = true,  -- Herb
+			[0] = true, -- Trade Goods (OBSOLETE)
+			[1] = true, -- Parts
+			[2] = true, -- Explosives (OBSOLETE)
+			[3] = true, -- Devices (OBSOLETE)
+			[4] = true, -- Jewelcrafting
+			[5] = true, -- Cloth
+			[6] = true, -- Leather
+			[7] = true, -- Metal & Stone
+			[8] = true, -- Cooking
+			[9] = true, -- Herb
 			[10] = true, -- Elemental
 			[11] = true, -- Other
 			[12] = true, -- Enchanting
@@ -181,16 +181,16 @@ local FILTER_DATA = {
 			[17] = true, -- Explosives and Devices (OBSOLETE)
 		},
 		[LE_ITEM_CLASS_ITEM_ENHANCEMENT] = {
-			[0] = true,  -- Head
-			[1] = true,  -- Neck
-			[2] = true,  -- Shoulder
-			[3] = true,  -- Cloak
-			[4] = true,  -- Chest
-			[5] = true,  -- Wrist
-			[6] = true,  -- Hands
-			[7] = true,  -- Waist
-			[8] = true,  -- Legs
-			[9] = true,  -- Feet
+			[0] = true, -- Head
+			[1] = true, -- Neck
+			[2] = true, -- Shoulder
+			[3] = true, -- Cloak
+			[4] = true, -- Chest
+			[5] = true, -- Wrist
+			[6] = true, -- Hands
+			[7] = true, -- Waist
+			[8] = true, -- Legs
+			[9] = true, -- Feet
 			[10] = true, -- Finger
 			[11] = true, -- Weapon
 			[12] = true, -- Two-Handed Weapon
@@ -198,22 +198,22 @@ local FILTER_DATA = {
 			[14] = true, -- Misc
 		},
 		[LE_ITEM_CLASS_RECIPE] = {
-			[LE_ITEM_RECIPE_BOOK]           = true,     -- Book
-			[LE_ITEM_RECIPE_LEATHERWORKING] = true,     -- Leatherworking
-			[LE_ITEM_RECIPE_TAILORING]      = true,     -- Tailoring
-			[LE_ITEM_RECIPE_ENGINEERING]    = true,     -- Engineering
-			[LE_ITEM_RECIPE_BLACKSMITHING]  = true,     -- Blacksmithing
-			[LE_ITEM_RECIPE_COOKING]        = true,     -- Cooking
-			[LE_ITEM_RECIPE_ALCHEMY]        = true,     -- Alchemy
-			[LE_ITEM_RECIPE_FIRST_AID]      = true,     -- First Aid
-			[LE_ITEM_RECIPE_ENCHANTING]     = true,     -- Enchanting
-			[LE_ITEM_RECIPE_FISHING]        = true,     -- Fishing
-			[LE_ITEM_RECIPE_JEWELCRAFTING]  = true,     -- Jewelcrafting
-			[LE_ITEM_RECIPE_INSCRIPTION]    = true,     -- Inscription
+			[LE_ITEM_RECIPE_BOOK]           = true, -- Book
+			[LE_ITEM_RECIPE_LEATHERWORKING] = true, -- Leatherworking
+			[LE_ITEM_RECIPE_TAILORING]      = true, -- Tailoring
+			[LE_ITEM_RECIPE_ENGINEERING]    = true, -- Engineering
+			[LE_ITEM_RECIPE_BLACKSMITHING]  = true, -- Blacksmithing
+			[LE_ITEM_RECIPE_COOKING]        = true, -- Cooking
+			[LE_ITEM_RECIPE_ALCHEMY]        = true, -- Alchemy
+			[LE_ITEM_RECIPE_FIRST_AID]      = true, -- First Aid
+			[LE_ITEM_RECIPE_ENCHANTING]     = true, -- Enchanting
+			[LE_ITEM_RECIPE_FISHING]        = true, -- Fishing
+			[LE_ITEM_RECIPE_JEWELCRAFTING]  = true, -- Jewelcrafting
+			[LE_ITEM_RECIPE_INSCRIPTION]    = true, -- Inscription
 		},
 		[LE_ITEM_CLASS_QUIVER] = {
 			[0] = C.HUNTER, -- Quiver(OBSOLETE)
-			[1] = true,     -- Bolt(OBSOLETE)
+			[1] = true, -- Bolt(OBSOLETE)
 			[2] = C.HUNTER, -- Quiver
 			[3] = C.HUNTER, -- Ammo Pouch
 		},
@@ -225,12 +225,12 @@ local FILTER_DATA = {
 			[1] = true, -- Lockpick
 		},
 		[LE_ITEM_CLASS_MISCELLANEOUS] = {
-			[LE_ITEM_MISCELLANEOUS_JUNK]          = true,      -- Junk
-			[LE_ITEM_MISCELLANEOUS_REAGENT]       = true,      -- Reagent
-			[LE_ITEM_MISCELLANEOUS_COMPANION_PET] = true,      -- Companion Pets
-			[LE_ITEM_MISCELLANEOUS_HOLIDAY]       = true,      -- Holiday
-			[LE_ITEM_MISCELLANEOUS_OTHER]         = true,      -- Other
-			[LE_ITEM_MISCELLANEOUS_MOUNT]         = true,      -- Mount
+			[LE_ITEM_MISCELLANEOUS_JUNK]          = true, -- Junk
+			[LE_ITEM_MISCELLANEOUS_REAGENT]       = true, -- Reagent
+			[LE_ITEM_MISCELLANEOUS_COMPANION_PET] = true, -- Companion Pets
+			[LE_ITEM_MISCELLANEOUS_HOLIDAY]       = true, -- Holiday
+			[LE_ITEM_MISCELLANEOUS_OTHER]         = true, -- Other
+			[LE_ITEM_MISCELLANEOUS_MOUNT]         = true, -- Mount
 			--[LE_ITEM_MISCELLANEOUS_MOUNT_EQUIPMENT] 	= true, -- Mount Equipment
 		},
 	}
@@ -244,7 +244,6 @@ local LINKED_STATS = {
 	["ITEM_MOD_INTELLECT"] = "ITEM_MOD_INTELLECT_SHORT",
 	["ITEM_MOD_MANA"] = "ITEM_MOD_MANA_SHORT",
 
-	["ITEM_MOD_HEALTH_REGEN"] = "ITEM_MOD_HEALTH_REGEN_SHORT",
 	["ITEM_MOD_HEALTH_REGENERATION"] = "ITEM_MOD_HEALTH_REGEN_SHORT",
 	["ITEM_MOD_HEALTH_REGEN"] = "ITEM_MOD_HEALTH_REGEN_SHORT",
 
@@ -288,12 +287,12 @@ local STAT_LIST = {
 	{
 		name = AL["Main"],
 		--"ITEM_MOD_HEALTH_SHORT", -- Health
-		"ITEM_MOD_AGILITY_SHORT",   -- Agility
-		"ITEM_MOD_STRENGTH_SHORT",  -- Strength
+		"ITEM_MOD_AGILITY_SHORT", -- Agility
+		"ITEM_MOD_STRENGTH_SHORT", -- Strength
 		"ITEM_MOD_INTELLECT_SHORT", -- Intellect
-		"ITEM_MOD_SPIRIT_SHORT",    -- Spirit
-		"ITEM_MOD_STAMINA_SHORT",   -- Stamina
-		"ITEM_MOD_MANA_SHORT",      -- Mana
+		"ITEM_MOD_SPIRIT_SHORT", -- Spirit
+		"ITEM_MOD_STAMINA_SHORT", -- Stamina
+		"ITEM_MOD_MANA_SHORT", -- Mana
 	},
 	{
 		name = AL["Regen"],
@@ -308,39 +307,39 @@ local STAT_LIST = {
 	},
 	{
 		name = AL["Bonus"],
-		"ITEM_MOD_SPELL_POWER_SHORT",         -- Spell Power
-		"ITEM_MOD_SPELL_HEALING_DONE_SHORT",  -- Increases healing done by magical spells and effects by up to %s.
-		"ITEM_MOD_SPELL_DAMAGE_DONE_SHORT",   -- Increases damage done by magical spells and effects by up to %s.
+		"ITEM_MOD_SPELL_POWER_SHORT",   -- Spell Power
+		"ITEM_MOD_SPELL_HEALING_DONE_SHORT", -- Increases healing done by magical spells and effects by up to %s.
+		"ITEM_MOD_SPELL_DAMAGE_DONE_SHORT", -- Increases damage done by magical spells and effects by up to %s.
 		"",
-		"ITEM_MOD_ATTACK_POWER_SHORT",        -- Attack Power
-		"ITEM_MOD_MELEE_ATTACK_POWER_SHORT",  -- Melee Attack Power
+		"ITEM_MOD_ATTACK_POWER_SHORT",  -- Attack Power
+		"ITEM_MOD_MELEE_ATTACK_POWER_SHORT", -- Melee Attack Power
 		"ITEM_MOD_RANGED_ATTACK_POWER_SHORT", -- Ranged Attack Power
-		"ITEM_MOD_FERAL_ATTACK_POWER_SHORT",  -- Attack Power In Forms
+		"ITEM_MOD_FERAL_ATTACK_POWER_SHORT", -- Attack Power In Forms
 		"",
-		"ITEM_MOD_HIT_RATING_SHORT",          -- Hit
-		"ITEM_MOD_HIT_MELEE_RATING_SHORT",    -- Hit (Melee)
-		"ITEM_MOD_HIT_RANGED_RATING_SHORT",   -- Hit (Ranged)
-		"ITEM_MOD_HIT_SPELL_RATING_SHORT",    -- Hit (Spell)
+		"ITEM_MOD_HIT_RATING_SHORT",    -- Hit
+		"ITEM_MOD_HIT_MELEE_RATING_SHORT", -- Hit (Melee)
+		"ITEM_MOD_HIT_RANGED_RATING_SHORT", -- Hit (Ranged)
+		"ITEM_MOD_HIT_SPELL_RATING_SHORT", -- Hit (Spell)
 		"",
-		"ITEM_MOD_CRIT_RATING_SHORT",         -- Critical Strike
-		"ITEM_MOD_CRIT_MELEE_RATING_SHORT",   -- Critical Strike (Melee)
-		"ITEM_MOD_CRIT_RANGED_RATING_SHORT",  -- Critical Strike (Ranged)
-		"ITEM_MOD_CRIT_SPELL_RATING_SHORT",   -- Critical Strike (Spell)
+		"ITEM_MOD_CRIT_RATING_SHORT",   -- Critical Strike
+		"ITEM_MOD_CRIT_MELEE_RATING_SHORT", -- Critical Strike (Melee)
+		"ITEM_MOD_CRIT_RANGED_RATING_SHORT", -- Critical Strike (Ranged)
+		"ITEM_MOD_CRIT_SPELL_RATING_SHORT", -- Critical Strike (Spell)
 	},
 	{
 		name = AL["Special"],
-		"ITEM_MOD_DEFENSE_SKILL_RATING_SHORT",     -- Defense
-		"ITEM_MOD_DODGE_RATING_SHORT",             -- Dodge
-		"ITEM_MOD_PARRY_RATING_SHORT",             -- Parry
-		"ITEM_MOD_EXTRA_ARMOR_SHORT",              -- Bonus Armor
+		"ITEM_MOD_DEFENSE_SKILL_RATING_SHORT", -- Defense
+		"ITEM_MOD_DODGE_RATING_SHORT",       -- Dodge
+		"ITEM_MOD_PARRY_RATING_SHORT",       -- Parry
+		"ITEM_MOD_EXTRA_ARMOR_SHORT",        -- Bonus Armor
 		"",
 		"ITEM_MOD_ARMOR_PENETRATION_RATING_SHORT", -- Armor Penetration
-		"ITEM_MOD_SPELL_PENETRATION_SHORT",        -- Spell Penetration
+		"ITEM_MOD_SPELL_PENETRATION_SHORT",  -- Spell Penetration
 		"",
-		"ITEM_MOD_MANA_REGENERATION_SHORT",        -- Mana Regeneration
-		"ITEM_MOD_HEALTH_REGENERATION_SHORT",      -- Health Regeneration
+		"ITEM_MOD_MANA_REGENERATION_SHORT",  -- Mana Regeneration
+		"ITEM_MOD_HEALTH_REGENERATION_SHORT", -- Health Regeneration
 		"",
-		"ITEM_MOD_RESILIENCE_RATING_SHORT",        -- PvP Resilience
+		"ITEM_MOD_RESILIENCE_RATING_SHORT",  -- PvP Resilience
 	}
 }
 local CLASS_FILTER

@@ -5,6 +5,7 @@
 ### Changed
 
  - Update TOC to 1.15.5
+ - Updated Atlas integration to work with Atlas (fork)
 
 ### Fixed
 

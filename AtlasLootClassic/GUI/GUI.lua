@@ -65,8 +65,8 @@ local function UpdateFrames(noPageUpdate, forceContentUpdate)
 	-- refresh background info
 	GUI.lastBgInfo = GUI.curBGInfo
 	GUI.curBgInfo = {
-		contentColor, 	-- color of topBg
-		moduleData[dataID].items[bossID].BgImage and moduleData[dataID].items[bossID].BgImage or (moduleData[dataID].BgImage and moduleData[dataID].BgImage or nil),	-- background image
+		contentColor,                                                                                                                                          -- color of topBg
+		moduleData[dataID].items[bossID].BgImage and moduleData[dataID].items[bossID].BgImage or (moduleData[dataID].BgImage and moduleData[dataID].BgImage or nil), -- background image
 	}
 
 	GUI.RefreshContentBackGround()
@@ -82,7 +82,7 @@ local function UpdateFrames(noPageUpdate, forceContentUpdate)
 		GUI.frame.contentFrame.mapButton.mapID = nil
 		GUI.frame.contentFrame.mapButton:Hide()
 	end
-	]]--
+	]] --
 	if moduleData[dataID] and moduleData[dataID].AtlasMapFile and IsMapsModuleAviable(moduleData[dataID].items[bossID].AtlasModule or moduleData[dataID].AtlasModule) then
 		GUI.frame.contentFrame.map.atlasMapModule = moduleData[dataID].items[bossID].AtlasModule or moduleData[dataID].AtlasModule
 		if GUI.frame.contentFrame.map.atlasMapModule then
@@ -164,18 +164,18 @@ local function UpdateFrames(noPageUpdate, forceContentUpdate)
 		contentFrame.AtlasMapButton.AtlasMapID = nil
 		contentFrame.AtlasMapButton:Hide()
 	end
-	]]--
+	]] --
 
 	-- BaseLvl for Items
 	GUI.ItemFrame.ItemBaseLvl = moduleData[dataID].ItemBaseLvl
 
 	if not noPageUpdate then
 		-- Next/Prev
-		if moduleData[dataID].items[bossID+1] then
-			if moduleData[dataID].items[bossID].ExtraList and moduleData[dataID].items[bossID+1].ExtraList then
+		if moduleData[dataID].items[bossID + 1] then
+			if moduleData[dataID].items[bossID].ExtraList and moduleData[dataID].items[bossID + 1].ExtraList then
 				contentFrame.nextPageButton.info = nil
 				--contentFrame.nextPageButton.info = bossID + 1
-			elseif not moduleData[dataID].items[bossID+1].ExtraList and not moduleData[dataID].items[bossID].ExtraList then
+			elseif not moduleData[dataID].items[bossID + 1].ExtraList and not moduleData[dataID].items[bossID].ExtraList then
 				contentFrame.nextPageButton.info = GUI.frame.boss:CheckIfNext()
 			else
 				contentFrame.nextPageButton.info = nil
@@ -185,7 +185,7 @@ local function UpdateFrames(noPageUpdate, forceContentUpdate)
 		end
 		if contentFrame.shownFrame and contentFrame.shownFrame.prevPage and not moduleData[dataID].items[bossID].ExtraList then
 			contentFrame.prevPageButton.info = tostring(contentFrame.shownFrame.prevPage)
-		elseif moduleData[dataID].items[bossID-1] and not moduleData[dataID].items[bossID].ExtraList then
+		elseif moduleData[dataID].items[bossID - 1] and not moduleData[dataID].items[bossID].ExtraList then
 			contentFrame.prevPageButton.info = GUI.frame.boss:CheckIfPrev()
 		else
 			contentFrame.prevPageButton.info = nil
@@ -221,7 +221,7 @@ function GUI.FreeFrameByType(typ, frame)
 	frameSave[typ][frame] = true
 end
 
-local BackDropFrame = {"TopLeftCorner", "TopRightCorner", "BottomLeftCorner", "BottomRightCorner", "TopEdge", "BottomEdge", "LeftEdge", "RightEdge", "Center"}
+local BackDropFrame = { "TopLeftCorner", "TopRightCorner", "BottomLeftCorner", "BottomRightCorner", "TopEdge", "BottomEdge", "LeftEdge", "RightEdge", "Center" }
 function GUI.SetBackDropLayer(frame, newLayer, count)
 	for k, v in ipairs(BackDropFrame) do
 		if frame[v] then
@@ -243,7 +243,7 @@ end
 
 local function FrameOnDragStop(self)
 	self:StopMovingOrSizing()
-	local a,b,c,d,e = self:GetPoint()
+	local a, b, c, d, e = self:GetPoint()
 	db.point = { a, nil, c, d, e }
 end
 
@@ -259,7 +259,7 @@ local function FrameOnShow(self)
 			self.moduleSelect:SetSelected(module)
 			pass = true
 		end
-		if ( pass and instance ) or ( instance and instance ~= db.selected[2] ) then
+		if (pass and instance) or (instance and instance ~= db.selected[2]) then
 			if instance ~= db.selected[2] then
 				pass = true
 			else
@@ -295,7 +295,7 @@ end
 local function AtlasMapButton_OnClick(self, button)
 	if (AtlasLoot.AtlasIntegration.IsEnabled()) then
 		if (button == "RightButton") then
-			if ( AtlasFrameSmall:IsVisible() ) then
+			if (AtlasFrameSmall:IsVisible()) then
 				HideUIPanel(AtlasFrameSmall)
 			end
 		else
@@ -371,13 +371,17 @@ local function ClassFilterButton_OnClick(self, mouseButton)
 		-- show spec selection here
 		if not self.selectionFrame then
 			local frame = CreateFrame("FRAME", nil, self, _G.BackdropTemplateMixin and "BackdropTemplate" or nil)
-			frame:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background",
-						edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
-						tile = true, tileSize = 16, edgeSize = 16,
-						insets = { left = 4, right = 4, top = 4, bottom = 4 }})
-			frame:SetBackdropColor(0,0,0,1)
+			frame:SetBackdrop({
+				bgFile = "Interface/Tooltips/UI-Tooltip-Background",
+				edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+				tile = true,
+				tileSize = 16,
+				edgeSize = 16,
+				insets = { left = 4, right = 4, top = 4, bottom = 4 }
+			})
+			frame:SetBackdropColor(0, 0, 0, 1)
 			frame:SetPoint("BOTTOMLEFT", self, "TOP", 0, 5)
-			frame:SetSize(10,10)
+			frame:SetSize(10, 10)
 			frame.obj = self
 			frame.buttons = {}
 
@@ -414,14 +418,14 @@ local function ClassFilterButton_OnClick(self, mouseButton)
 
 
 				newWidth = button_height + 2 + button.text:GetWidth()
-				width = newWidth+10 > width and newWidth+10 or width
+				width = newWidth + 10 > width and newWidth + 10 or width
 				height = height + button_height + 2
 
 				frame.buttons[#frame.buttons + 1] = button
 			end
 			-- resize
 			for i = 1, #frame.buttons do
-				frame.buttons[i]:SetSize(width-10, button_height)
+				frame.buttons[i]:SetSize(width - 10, button_height)
 			end
 
 			frame:SetSize(width, height - 2)
@@ -445,7 +449,6 @@ local function ClassFilterButton_OnClick(self, mouseButton)
 			self.selectionFrame:Show()
 		end
 	end
-
 end
 
 local function ContentPhaseButton_Refresh(self)
@@ -494,9 +497,9 @@ local function GameVersionSelect_OnClick(self, mouseButton)
 		frame:SetFrameLevel(100)
 		frame:EnableMouse(true)
 		frame:SetBackdrop(ALPrivate.BOX_BORDER_BACKDROP)
-		frame:SetBackdropColor(0,0,0,1)
+		frame:SetBackdropColor(0, 0, 0, 1)
 		frame:SetPoint("TOP", self, "BOTTOM", 0, -2)
-		frame:SetSize(10,10)
+		frame:SetSize(10, 10)
 		frame.obj = self
 		frame.buttons = {}
 
@@ -505,7 +508,7 @@ local function GameVersionSelect_OnClick(self, mouseButton)
 
 		local createGVButton = function(gameVersion, textureID)
 			local button = CreateFrame("Button", nil, frame)
-			button:SetSize(64,32)
+			button:SetSize(64, 32)
 			button:SetHighlightTexture("Interface\\Buttons\\UI-Common-MouseHilight", "ADD")
 			button:SetScript("OnClick", GameVersionSelect_Selection_OnClick)
 
@@ -516,7 +519,7 @@ local function GameVersionSelect_OnClick(self, mouseButton)
 
 			button.gameVersion = gameVersion
 			button.textureID = textureID
-			frame.buttons[#frame.buttons+1] = button
+			frame.buttons[#frame.buttons + 1] = button
 
 			return button
 		end
@@ -526,15 +529,15 @@ local function GameVersionSelect_OnClick(self, mouseButton)
 
 		if AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM) then
 			local bcButton = createGVButton(AtlasLoot.BC_VERSION_NUM, GAME_VERSION_TEXTURES[AtlasLoot.BC_VERSION_NUM])
-			bcButton:SetPoint("TOP", frame.buttons[#frame.buttons-1], "BOTTOM", 0, -buttonGap)
+			bcButton:SetPoint("TOP", frame.buttons[#frame.buttons - 1], "BOTTOM", 0, -buttonGap)
 		end
 
 		if AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM) then
 			local wrathButton = createGVButton(AtlasLoot.WRATH_VERSION_NUM, GAME_VERSION_TEXTURES[AtlasLoot.WRATH_VERSION_NUM])
-			wrathButton:SetPoint("TOP", frame.buttons[#frame.buttons-1], "BOTTOM", 0, -buttonGap)
+			wrathButton:SetPoint("TOP", frame.buttons[#frame.buttons - 1], "BOTTOM", 0, -buttonGap)
 		end
 
-		frame:SetSize(width, height + (#frame.buttons * 32) + ((#frame.buttons-1) * buttonGap))
+		frame:SetSize(width, height + (#frame.buttons * 32) + ((#frame.buttons - 1) * buttonGap))
 		frame:Hide()
 
 		self.selectionFrame = frame
@@ -555,13 +558,12 @@ local function GameVersionSelect_OnClick(self, mouseButton)
 		self.selectionFrame:Show()
 		self.selectionFrame:Raise()
 	end
-
 end
 
 -- Next / Prev buttons
 local function NextPrevButtonOnClick(self)
 	if self.info then
-		if type(self.info) == "string" then 	-- next item page
+		if type(self.info) == "string" then -- next item page
 			AtlasLoot.db.GUI.selected[5] = tonumber(self.info)
 			UpdateFrames()
 		elseif type(self.info) == "table" then
@@ -569,7 +571,7 @@ local function NextPrevButtonOnClick(self)
 			GUI.frame.boss:SetSelected(self.info[1])
 		elseif type(self.info) == "number" then
 			GUI.frame.boss:SetSelected(self.info)
-		else	-- next boss ;)
+		else -- next boss ;)
 			if self.typ == "next" then
 				GUI.frame.boss:SetNext()
 			else
@@ -602,8 +604,11 @@ end
 -- AtlasMaps
 local ATLAS_MAPS_PATH = "Interface\\AddOns\\AtlasLootClassic_Maps\\%s"
 local ATLAS_MODULE_MAP_PATH_FORMAT = "Interface\\AddOns\\%s\\Images\\%s"
+local ATLAS_INCLUDED_MAPS_PATH = "Interface\\AddOns\\Atlas\\Images\\%s\\%s"
 local function AtlasMaps_GetMapPath(mapName, atlasModule)
-	if atlasModule then
+	if GetFileIDFromPath("Interface\\AddOns\\Atlas\\Images\\Atlas_BattleforAzeroth\\NyalothaA") then
+		return format(ATLAS_INCLUDED_MAPS_PATH, atlasModule, mapName)
+	elseif atlasModule then
 		return format(ATLAS_MODULE_MAP_PATH_FORMAT, atlasModule, mapName)
 	else
 		return format(ATLAS_MAPS_PATH, mapName)
@@ -683,8 +688,8 @@ end
 
 -- Info Button
 local function GUI_InfoOnEnter(self)
-    local tooltip = GetAlTooltip()
-    tooltip:SetOwner(self, "ANCHOR_LEFT", (self:GetWidth() * 0.5), 5)
+	local tooltip = GetAlTooltip()
+	tooltip:SetOwner(self, "ANCHOR_LEFT", (self:GetWidth() * 0.5), 5)
 	tooltip:AddLine("AtlasLootClassic", 0, 1, 0)
 	tooltip:AddLine(format(TT_INFO_ENTRY, AL["Shift + Left Click"], AL["Add item into chat"]))
 	tooltip:AddLine(format(TT_INFO_ENTRY, AL["Ctrl + Left Click"], AL["Shows the item in the Dressing room"]))
@@ -692,11 +697,11 @@ local function GUI_InfoOnEnter(self)
 	if AtlasLoot.db.enableWoWHeadIntegration then
 		tooltip:AddLine(format(TT_INFO_ENTRY, AL["Shift + Right Click"], AL["Shows a copyable link for WoWHead"]))
 	end
-    tooltip:Show()
+	tooltip:Show()
 end
 
 local function GUI_InfoOnLeave(self)
-    GetAlTooltip():Hide()
+	GetAlTooltip():Hide()
 end
 
 -- ################################
@@ -759,24 +764,24 @@ LoadAtlasLootModule = function(abc)
 				end
 			end
 			-- add ini
-			loadedContent[contentIndex][ #loadedContent[contentIndex]+1 ] = {
-				id			= content,
-				name		= name,
-				tt_title	= tt_title,
-				tt_text		= tt_text,
+			loadedContent[contentIndex][#loadedContent[contentIndex] + 1] = {
+				id       = content,
+				name     = name,
+				tt_title = tt_title,
+				tt_text  = tt_text,
 			}
 		end
 	end
 
 	for i = 1, #contentTypes do
 		if loadedContent[i] then
-			data[#data+1] = loadedContent[i]
+			data[#data + 1] = loadedContent[i]
 		end
 	end
 	loadedContent = nil
 
 	if data[0] and #data[0] > 0 then
-		data[#data+1] = data[0]
+		data[#data + 1] = data[0]
 		data[0] = nil
 	end
 	if not foundDbValue then
@@ -799,7 +804,7 @@ function GUI:ShowLoadingInfo(addonName, noWipe, displayType)
 		text:SetAllPoints(GUI.frame.contentFrame)
 		text:SetJustifyH("CENTER")
 		text:SetJustifyV("MIDDLE")
-		text:SetTextColor(1,1,1)
+		text:SetTextColor(1, 1, 1)
 		GUI.frame.contentFrame.loadingDataText = text
 	end
 	if GUI.frame.contentFrame.shownFrame and GUI.frame.contentFrame.shownFrame.Clear then
@@ -893,7 +898,7 @@ local function SubCatSelectFunction(self, id, arg)
 						name = name..Favourites:GetFavouriteCountText(favouriteOverall)
 					end
 				end
-				dataExtra[#dataExtra+1] = {
+				dataExtra[#dataExtra + 1] = {
 					id = i,
 					name = name,
 					name_org = name,
@@ -904,7 +909,7 @@ local function SubCatSelectFunction(self, id, arg)
 				}
 				if not dataExtra[#dataExtra].name then dataExtra[#dataExtra] = nil end
 			else
-				data[#data+1] = {
+				data[#data + 1] = {
 					id = i,
 					name = moduleData[id]:GetNameForItemTable(i),
 					name_org = moduleData[id]:GetNameForItemTable(i),
@@ -914,7 +919,7 @@ local function SubCatSelectFunction(self, id, arg)
 					tt_text_org = tabVal.info -- or AtlasLoot.EncounterJournal:GetBossInfo(tabVal.EncounterJournalID)
 				}
 				if not data[#data].name then data[#data] = nil end
-				if linkedContentLastBoss and data[#data] and data[#data].name  == linkedContentLastBoss.name then
+				if linkedContentLastBoss and data[#data] and data[#data].name == linkedContentLastBoss.name then
 					selectedBoss = i
 					linkedContentLastBoss = nil
 				end
@@ -925,7 +930,7 @@ local function SubCatSelectFunction(self, id, arg)
 	-- this prevents load from unused modules
 	db.selected[4] = moduleData[id].LoadDifficulty or db.selected[4]
 	--if dataExtra then
-		GUI.frame.extra:SetData(dataExtra)
+	GUI.frame.extra:SetData(dataExtra)
 	--end
 	linkedContentLastBoss = nil
 
@@ -962,7 +967,7 @@ local function BossSelectFunction(self, id, arg)
 					name = name..Favourites:GetFavouriteCountText(favouriteOverall)
 				end
 			end
-			data[#data+1] = {
+			data[#data + 1] = {
 				id = count,
 				name = name,
 				tt_title = tt_title,
@@ -1001,7 +1006,7 @@ local function ExtraSelectFunction(self, id, arg)
 				end
 				name = name..Favourites:GetFavouriteCountText(favOverall)
 			end
-			data[ #data+1 ] = {
+			data[#data + 1] = {
 				id = count,
 				name = name,
 				tt_title = tt_title,
@@ -1065,18 +1070,18 @@ function GUI.Init()
 		data[index] = {
 			info = {
 				name = AL["AtlasLoot Modules"],
-				bgColor = {0, 0, 0, 1},		-- Background color
+				bgColor = { 0, 0, 0, 1 }, -- Background color
 			}
 		}
 		for i = 1, #tmp.module do
 			v = tmp.module[i]
 			if not first then first = v.addonName end
 			if v.addonName == db.selected[1] then foundDbValue = true end
-			data[index][ #data[index]+1 ] = {
-				id			= v.addonName,
-				name		= v.name,
-				tt_title	= v.tt_title,
-				tt_text		= v.tt_text,
+			data[index][#data[index] + 1] = {
+				id       = v.addonName,
+				name     = v.name,
+				tt_title = v.tt_title,
+				tt_text  = v.tt_text,
 			}
 		end
 	end
@@ -1085,18 +1090,18 @@ function GUI.Init()
 		data[index] = {
 			info = {
 				name = AL["Custom Modules"],
-				bgColor = {0, 0.3, 0, 1},		-- Background color
+				bgColor = { 0, 0.3, 0, 1 }, -- Background color
 			}
 		}
 		for i = 1, #tmp.custom do
 			v = tmp.custom[i]
 			if not first then first = v.addonName end
 			if v.addonName == db.selected[1] then foundDbValue = true end
-			data[index][ #data[index]+1 ] = {
-				id			= v.addonName,
-				name		= v.name,
-				tt_title	= v.tt_title,
-				tt_text		= v.tt_text,
+			data[index][#data[index] + 1] = {
+				id       = v.addonName,
+				name     = v.name,
+				tt_title = v.tt_title,
+				tt_text  = v.tt_text,
 			}
 		end
 	end
@@ -1117,6 +1122,7 @@ function GUI.Init()
 		--AtlasLoot:PreLoadAtlasLootModules();
 	end
 end
+
 AtlasLoot:AddInitFunc(GUI.Init)
 
 function GUI:Toggle()
@@ -1168,7 +1174,7 @@ function GUI:Create()
 	frame:SetBackdrop(ALPrivate.BOX_BACKDROP)
 	--frame:SetBackdropColor(0.45,0.45,0.45,1)
 	frame:Hide()
-	tinsert(UISpecialFrames, frameName)	-- allow ESC close
+	tinsert(UISpecialFrames, frameName) -- allow ESC close
 
 	frame.CloseButton = CreateFrame("Button", frameName.."-CloseButton", frame, "UIPanelCloseButton")
 	frame.CloseButton:SetPoint("TOPRIGHT", frame, "TOPRIGHT", 0, 0)
@@ -1216,27 +1222,27 @@ function GUI:Create()
 	local function CreateLineForGameVersion()
 		local l = frame.gameVersionButton:CreateLine()
 		l:SetThickness(1)
-		l:SetColorTexture(1,0.82,0,0.4)
-		frame.gameVersionButton.Box[#frame.gameVersionButton.Box+1] = l
+		l:SetColorTexture(1, 0.82, 0, 0.4)
+		frame.gameVersionButton.Box[#frame.gameVersionButton.Box + 1] = l
 		return l
 	end
 
 	local lineGap = 1
 	local l = CreateLineForGameVersion()
-	l:SetStartPoint("TOPLEFT",-lineGap,lineGap)
-	l:SetEndPoint("TOPRIGHT",lineGap,lineGap)
+	l:SetStartPoint("TOPLEFT", -lineGap, lineGap)
+	l:SetEndPoint("TOPRIGHT", lineGap, lineGap)
 
 	l = CreateLineForGameVersion()
-	l:SetStartPoint("TOPRIGHT",lineGap,lineGap)
-	l:SetEndPoint("BOTTOMRIGHT",lineGap,-lineGap)
+	l:SetStartPoint("TOPRIGHT", lineGap, lineGap)
+	l:SetEndPoint("BOTTOMRIGHT", lineGap, -lineGap)
 
 	l = CreateLineForGameVersion()
-	l:SetStartPoint("BOTTOMRIGHT",lineGap,-lineGap)
-	l:SetEndPoint("BOTTOMLEFT",-lineGap,-lineGap)
+	l:SetStartPoint("BOTTOMRIGHT", lineGap, -lineGap)
+	l:SetEndPoint("BOTTOMLEFT", -lineGap, -lineGap)
 
 	l = CreateLineForGameVersion()
-	l:SetStartPoint("BOTTOMLEFT",-lineGap,-lineGap)
-	l:SetEndPoint("TOPLEFT",-lineGap,lineGap)
+	l:SetStartPoint("BOTTOMLEFT", -lineGap, -lineGap)
+	l:SetEndPoint("TOPLEFT", -lineGap, lineGap)
 
 	frame.gameVersionLogo = frame:CreateTexture(frameName.."-gameVersionLogo", "ARTWORK")
 	frame.gameVersionLogo:SetTexture(538639)
@@ -1276,14 +1282,14 @@ function GUI:Create()
 	frame.extra:SetNumEntrys(5)
 	frame.extra:SetButtonOnClick(ExtraSelectFunction)
 
-	frameName =  "AtlasLoot_GUI-ItemFrame"
+	frameName = "AtlasLoot_GUI-ItemFrame"
 
 	frame.contentFrame = CreateFrame("Frame", frameName)
 	frame.contentFrame:ClearAllPoints()
 	frame.contentFrame:SetParent(frame)
 	frame.contentFrame:SetPoint("TOPLEFT", frame, "TOPLEFT", 10, -70)
-	frame.contentFrame:SetWidth(560)		-- Frame = 560, Abstand = 20, Button = 270
-	frame.contentFrame:SetHeight(510)		-- Frame = 460, Abstand = 10, Button = 30
+	frame.contentFrame:SetWidth(560) -- Frame = 560, Abstand = 20, Button = 270
+	frame.contentFrame:SetHeight(510) -- Frame = 460, Abstand = 10, Button = 30
 	frame.contentFrame.shownFrame = nil
 
 	frame.contentFrame.title = frame.contentFrame:CreateFontString(frameName.."-title", "ARTWORK", "GameFontHighlightLarge")
@@ -1293,29 +1299,29 @@ function GUI:Create()
 	frame.contentFrame.title:SetWidth(frame.contentFrame:GetWidth())
 	frame.contentFrame.title:SetHeight(30)
 
-	frame.contentFrame.topBG = frame.contentFrame:CreateTexture(frameName.."-topBG","BACKGROUND")
+	frame.contentFrame.topBG = frame.contentFrame:CreateTexture(frameName.."-topBG", "BACKGROUND")
 	frame.contentFrame.topBG:SetPoint("TOPLEFT", frame.contentFrame, "TOPLEFT")
 	frame.contentFrame.topBG:SetWidth(560)
 	frame.contentFrame.topBG:SetHeight(30)
 
-	frame.contentFrame.downBG = frame.contentFrame:CreateTexture(frameName.."-downBG","BACKGROUND")
+	frame.contentFrame.downBG = frame.contentFrame:CreateTexture(frameName.."-downBG", "BACKGROUND")
 	frame.contentFrame.downBG:SetPoint("TOPLEFT", frame.contentFrame, "TOPLEFT", 0, -480)
 	frame.contentFrame.downBG:SetWidth(560)
 	frame.contentFrame.downBG:SetHeight(30)
 
-	frame.contentFrame.itemBG = frame.contentFrame:CreateTexture(frameName.."-itemBG","BACKGROUND")
+	frame.contentFrame.itemBG = frame.contentFrame:CreateTexture(frameName.."-itemBG", "BACKGROUND")
 	frame.contentFrame.itemBG:SetPoint("TOPLEFT", frame.contentFrame, "TOPLEFT", 0, -30)
 	frame.contentFrame.itemBG:SetWidth(560)
 	frame.contentFrame.itemBG:SetHeight(450)
 	frame.contentFrame.itemBG:SetTexCoord(0.1, 0.7, 0.1, 0.7)
 
 	-- Map frame
-	frame.contentFrame.map = frame.contentFrame:CreateTexture(frameName.."-map1","BACKGROUND")
+	frame.contentFrame.map = frame.contentFrame:CreateTexture(frameName.."-map1", "BACKGROUND")
 	frame.contentFrame.map:SetAllPoints(frame.contentFrame.itemBG)
 	frame.contentFrame.map:SetDrawLayer(frame.contentFrame.itemBG:GetDrawLayer(), 2)
 	frame.contentFrame.map:Hide()
 
-	frame.contentFrame.map.overlay = frame.contentFrame:CreateTexture(frameName.."-map3","BACKGROUND")
+	frame.contentFrame.map.overlay = frame.contentFrame:CreateTexture(frameName.."-map3", "BACKGROUND")
 	frame.contentFrame.map.overlay:SetAllPoints(frame.contentFrame.itemBG)
 	frame.contentFrame.map.overlay:SetDrawLayer(frame.contentFrame.itemBG:GetDrawLayer(), 4)
 	frame.contentFrame.map.overlay:SetColorTexture(0, 0, 0, 0.7)
@@ -1357,14 +1363,14 @@ function GUI:Create()
 	frame.contentFrame.mapButton.mapData = frame.contentFrame.map
 	frame.contentFrame.mapButton:Hide()
 
-	frame.contentFrame.mapButton.texture = frame.contentFrame.mapButton:CreateTexture(frameName.."-mapButton-texture","ARTWORK")
+	frame.contentFrame.mapButton.texture = frame.contentFrame.mapButton:CreateTexture(frameName.."-mapButton-texture", "ARTWORK")
 	frame.contentFrame.mapButton.texture:SetPoint("RIGHT", frame.contentFrame.mapButton)
 	frame.contentFrame.mapButton.texture:SetWidth(48)
 	frame.contentFrame.mapButton.texture:SetHeight(32)
 	frame.contentFrame.mapButton.texture:SetTexture("Interface\\QuestFrame\\UI-QuestMap_Button")
 	frame.contentFrame.mapButton.texture:SetTexCoord(0.125, 0.875, 0.0, 0.5)
 
-	frame.contentFrame.mapButton.highlight = frame.contentFrame.mapButton:CreateTexture(frameName.."-mapButton-highlight","HIGHLIGHT")
+	frame.contentFrame.mapButton.highlight = frame.contentFrame.mapButton:CreateTexture(frameName.."-mapButton-highlight", "HIGHLIGHT")
 	frame.contentFrame.mapButton.highlight:SetPoint("RIGHT", frame.contentFrame.mapButton, -7, 0)
 	frame.contentFrame.mapButton.highlight:SetWidth(36)
 	frame.contentFrame.mapButton.highlight:SetHeight(25)
@@ -1415,7 +1421,7 @@ function GUI:Create()
 	frame.contentFrame.AtlasMapButton.highlight:SetHeight(48)
 	frame.contentFrame.AtlasMapButton.highlight:SetTexture("Interface\\Buttons\\UI-Common-MouseHilight")
 	frame.contentFrame.AtlasMapButton.highlight:SetBlendMode("ADD")
-	]]--
+	]] --
 
 	-- Sound
 	frame.contentFrame.soundsButton = GUI.CreateButton()
@@ -1471,11 +1477,11 @@ function GUI:Create()
 	frame.contentFrame.clasFilterButton.mainButton = true
 	--frame.contentFrame.clasFilterButton:Hide()
 
-	frame.contentFrame.clasFilterButton.texture = frame.contentFrame.clasFilterButton:CreateTexture(frameName.."-clasFilterButton-texture","ARTWORK")
+	frame.contentFrame.clasFilterButton.texture = frame.contentFrame.clasFilterButton:CreateTexture(frameName.."-clasFilterButton-texture", "ARTWORK")
 	frame.contentFrame.clasFilterButton.texture:SetAllPoints(frame.contentFrame.clasFilterButton)
 	--frame.contentFrame.clasFilterButton.texture:SetTexture(CLASS_ICON_PATH[PLAYER_CLASS_FN])
 
-	frame.contentFrame.contentPhaseButton.texture = frame.contentFrame.contentPhaseButton:CreateTexture(frameName.."-contentPhaseButton-texture","ARTWORK")
+	frame.contentFrame.contentPhaseButton.texture = frame.contentFrame.contentPhaseButton:CreateTexture(frameName.."-contentPhaseButton-texture", "ARTWORK")
 	frame.contentFrame.contentPhaseButton.texture:SetAllPoints(frame.contentFrame.contentPhaseButton)
 	frame.contentFrame.contentPhaseButton.texture:SetTexture(AtlasLoot.Data.ContentPhase:GetActivePhaseTexture())
 
@@ -1546,8 +1552,8 @@ function GUI.Temp_SetParPoint(self, ...)
 	-- check for Parent
 	local tmp
 	local parent = frame:GetParent()
-	for i=1, select('#', ...) do
-		tmp = select(i,...)
+	for i = 1, select('#', ...) do
+		tmp = select(i, ...)
 		if type(tmp) == "string" then
 			if _G[tmp] and _G[tmp].GetObjectType then
 				parent = _G[tmp]
@@ -1593,7 +1599,7 @@ function GUI.RefreshContentBackGround()
 	local frame = GUI.frame.contentFrame
 
 	-- top Bg
-	if db.contentTopBar.useContentColor and ( frame.topBG.curAlpha ~= db.contentTopBar.bgColor.a or frame.topBG.curColor ~= GUI.curBgInfo[1]) then
+	if db.contentTopBar.useContentColor and (frame.topBG.curAlpha ~= db.contentTopBar.bgColor.a or frame.topBG.curColor ~= GUI.curBgInfo[1]) then
 		frame.topBG:SetColorTexture(GUI.curBgInfo[1][1], GUI.curBgInfo[1][2], GUI.curBgInfo[1][3], db.contentTopBar.bgColor.a)
 		frame.topBG.curColor = GUI.curBgInfo[1]
 		frame.topBG.curAlpha = db.contentTopBar.bgColor.a
@@ -1603,7 +1609,7 @@ function GUI.RefreshContentBackGround()
 	end
 
 	-- content Bg
-	if db.content.showBgImage and GUI.curBgInfo and GUI.curBgInfo[2] ~= ( GUI.lastBgInfo and GUI.lastBgInfo[2] or nil) then
+	if db.content.showBgImage and GUI.curBgInfo and GUI.curBgInfo[2] ~= (GUI.lastBgInfo and GUI.lastBgInfo[2] or nil) then
 		GUI.frame.contentFrame.itemBG:SetTexture(GUI.curBgInfo[2])
 		GUI.frame.contentFrame.itemBG:SetAlpha(db.content.bgColor.a)
 	elseif not db.content.showBgImage or not GUI.curBgInfo[2] then
@@ -1612,7 +1618,7 @@ function GUI.RefreshContentBackGround()
 	end
 
 	-- bottom Bg
-	if db.contentBottomBar.useContentColor and ( frame.downBG.curAlpha ~= db.contentBottomBar.bgColor.a or frame.downBG.curColor ~= GUI.curBgInfo[1]) then
+	if db.contentBottomBar.useContentColor and (frame.downBG.curAlpha ~= db.contentBottomBar.bgColor.a or frame.downBG.curColor ~= GUI.curBgInfo[1]) then
 		frame.downBG:SetColorTexture(GUI.curBgInfo[1][1], GUI.curBgInfo[1][2], GUI.curBgInfo[1][3], db.contentTopBar.bgColor.a)
 		frame.downBG.curColor = GUI.curBgInfo[1]
 		frame.downBG.curAlpha = db.contentBottomBar.bgColor.a

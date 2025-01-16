@@ -35,4 +35,4 @@ This currently only supports items and notes
 
 ## Maps
 
-
+AtlasLoot Classic integrates with the maps provied by [Atlas (fork)](https://www.curseforge.com/wow/addons/atlas-fork)
