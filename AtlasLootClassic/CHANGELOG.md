@@ -1,11 +1,12 @@
 # Changelog
 
-## 3.3.0 - January 14, 2025
+## 3.2.1 - January 16, 2025
 
 ### Changed
 
- - Update TOC to 1.15.5
  - Updated Atlas integration to work with Atlas (fork)
+ - Update TOC to 1.15.5
+ - Updated content phase to 2.5
 
 ### Fixed
 
