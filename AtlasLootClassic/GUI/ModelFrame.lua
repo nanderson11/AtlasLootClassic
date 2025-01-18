@@ -45,8 +45,16 @@ function ModelFrame.ButtonOnClick(self)
 	if ModelFrame.SelectedCreature then
 		ModelFrame.SelectedCreature:Enable()
 	end
-	ModelFrame.frame:SetDisplayInfo(self.displayInfo)
-	ModelFrame.frame:SetPosition(0,0,0)
+
+	-- Changed from SetDisplayInfo to SetCreature due to https://github.com/Stanzilla/WoWUIBugs/issues/459
+	-- Downsides of this are that it has to run it twice to get uncached models, and we only have the npcID of the main boss, so this doesn't work for encounters with multiple displayIDs
+	--ModelFrame.frame:SetDisplayInfo(self.displayInfo)
+	ModelFrame.frame:SetCreature(ModelFrame.npcID, self.displayInfo)
+	C_Timer.After(1, function()
+		ModelFrame.frame:SetCreature(ModelFrame.npcID, self.displayInfo)
+		ModelFrame.frame:Show()
+	end)
+	ModelFrame.frame:SetPosition(0, 0, 0)
 
 	self:Disable()
 	ModelFrame.SelectedCreature = self
@@ -61,7 +69,7 @@ function ModelFrame:AddButton(name, desc, displayInfo)
 		button = CreateFrame("Button", frameName, ModelFrame.frame, "AtlasLootCreatureButtonTemplate")
 	end
 	button:Show()
-	buttons[#buttons+1] = button
+	buttons[#buttons + 1] = button
 	button.displayInfo = displayInfo
 	button.name = name
 	button.description = desc
@@ -71,7 +79,7 @@ function ModelFrame:AddButton(name, desc, displayInfo)
 		button:SetPoint("TOPLEFT", ModelFrame.frame, "TOPLEFT", 0, -10)
 		ModelFrame.ButtonOnClick(button)
 	else
-		button:SetPoint("TOPLEFT", buttons[#buttons-1], "BOTTOMLEFT")
+		button:SetPoint("TOPLEFT", buttons[#buttons - 1], "BOTTOMLEFT")
 	end
 
 	return button
@@ -120,7 +128,7 @@ end
 	table = {
 		{displayID, "name", "info"},
 	}
-]]--
+]] --
 function ModelFrame:SetDisplayID(displayID)
 	if not self.frame then ModelFrame:Create() end
 	ClearButtonList()
@@ -131,7 +139,7 @@ function ModelFrame:SetDisplayID(displayID)
 		ModelFrame.frame:Hide()
 		return
 	end
-	for k,v in ipairs(displayID) do
+	for k, v in ipairs(displayID) do
 		ModelFrame:AddButton(v[2], v[3], v[1])
 	end
 end

@@ -1,14 +1,14 @@
-<Ui xmlns="http://www.blizzard.com/wow/ui/"   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   xsi:schemaLocation="http://www.blizzard.com/wow/ui/">
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ https://raw.githubusercontent.com/Meorawr/wow-ui-schema/main/UI.xsd">
 
 	 <Texture name="AtlasLoot-GUI-BossModelButton" file="Interface\EncounterJournal\UI-EncounterJournalTextures" virtual="true" >
-		<Size x="64" y="61"/>	
-		<TexCoords left="0.50585938" right="0.63085938" top="0.02246094" bottom="0.08203125"/>	
+		<Size x="64" y="61"/>
+		<TexCoords left="0.50585938" right="0.63085938" top="0.02246094" bottom="0.08203125"/>
 	</Texture>
-	
+
 	<Button name="AtlasLootCreatureButtonTemplate" motionScriptsWhileDisabled="true" virtual="true" hidden="true">
 		<Size x="50" y="49"/>
 		<Layers>
-			<Layer level="BACKGROUND" TextureSubLevel="6">
+			<Layer level="BACKGROUND" textureSubLevel="6">
 				<Texture name="$parentCreature" parentKey="creature">
 					<Size x="40" y="40"/>
 					<Anchors>
@@ -56,5 +56,5 @@
 			</OnLeave>
 		</Scripts>
 	</Button>
-	
+
 </Ui>

@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.2.2 - January 18, 2025
+
+### Fixed
+
+- Fixed NPC models not showing up (Known issue: Encounters with multiple NPCs will only show the first NPC)
+
 ## 3.2.1 - January 16, 2025
 
 ### Changed

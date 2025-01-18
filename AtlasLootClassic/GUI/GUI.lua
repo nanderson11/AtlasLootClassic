@@ -104,6 +104,7 @@ local function UpdateFrames(noPageUpdate, forceContentUpdate)
 			moduleData[dataID].items[bossID].DisplayIDs[1][2] = moduleData[dataID]:GetNameForItemTable(bossID)
 		end
 		GUI.ModelFrame.DisplayIDs = moduleData[dataID].items[bossID].DisplayIDs
+		GUI.ModelFrame.npcID = moduleData[dataID].items[bossID].npcID
 		contentFrame.modelButton:Show()
 	elseif moduleData[dataID].items[bossID].EncounterJournalID then
 		GUI.ModelFrame.EncounterJournalID = moduleData[dataID].items[bossID].EncounterJournalID
