@@ -1,5 +1,12 @@
 # Changelog
 
+## 3.2.3 - January 23, 2025
+
+### Fixed
+
+- Added missing item content phase data
+- Fixed issue where item set icons with phase indicators were broken
+
 ## 3.2.2 - January 18, 2025
 
 ### Fixed
