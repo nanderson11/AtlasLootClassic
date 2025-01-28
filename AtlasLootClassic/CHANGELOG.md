@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.2.4 - January 28, 2025
+
+### Changed
+
+- Update TOC to 1.15.6
+
 ## 3.2.3 - January 23, 2025
 
 ### Fixed

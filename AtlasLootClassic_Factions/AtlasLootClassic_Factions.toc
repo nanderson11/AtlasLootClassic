@@ -1,4 +1,4 @@
-﻿## Interface: 11505
+﻿## Interface: 11506
 
 ## Title: AtlasLootClassic |cFF0099FF[Factions]|r
 ## Title-deDE: AtlasLootClassic |cFF0099FF[Fraktionen]|r
