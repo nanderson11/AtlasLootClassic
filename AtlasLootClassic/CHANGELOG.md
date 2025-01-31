@@ -1,34 +1,28 @@
 # Changelog
 
+## 3.2.5 - January 31, 2025
+### Fixed
+- Fixed issue where polearms were displayed with the druid class filter (they'll automatically be included again when we get to WOTLK)
+
 ## 3.2.4 - January 28, 2025
-
 ### Changed
-
 - Update TOC to 1.15.6
 
 ## 3.2.3 - January 23, 2025
-
 ### Fixed
-
 - Added missing item content phase data
 - Fixed issue where item set icons with phase indicators were broken
 
 ## 3.2.2 - January 18, 2025
-
 ### Fixed
-
 - Fixed NPC models not showing up (Known issue: Encounters with multiple NPCs will only show the first NPC)
 
 ## 3.2.1 - January 16, 2025
-
 ### Changed
-
  - Updated Atlas integration to work with Atlas (fork)
  - Update TOC to 1.15.5
  - Updated content phase to 2.5
-
 ### Fixed
-
 - Fixed various deprecations
 
 ## v3.2.0 (Oct. 22, 2023)
@@ -37,16 +31,6 @@
 - fix lua error with companions
 - Hallow's End update PR #416
 - Fix epic blue gem id, add Ashen Verdict engineering PR #413
-- Add Defiler Scourgestone Vendor
-- Update Dalaran Vendor
-- #397, #388 Update to use new Mount API
-- #396 Added "Maiden of Grief" Missing items in Titan Rune Beta - Halls of Stone
-- #395 Fixed "King Dred" Wrong loot in Titan Rune Beta - Drak'Tharon Keep
-- #394 Fixed "The Prophet Tharon'ja" Wrong loot in Titan Rune Beta - Drak'Tharon Keep
-- #393 Added Missing Leatherworking Fur Linings
-- #391 Added Enchanting Cloak Resistances (Arcane, Fire, Frost, Nature, Shadow), Removed Duplicates
-- #387 Fixed Incorrect Set Links for Death Knight Season 7 PvP Set
-- #381 Added "Six Shared Loot Bosses" Missing items in Titan Rune Beta - Violet Hold
 
 ## v3.1.4 (Oct. 10, 2023)
 
