@@ -2728,5 +2728,23 @@ local DropRateData = {
 	}
 }
 --##END-DATA##
+
+-- Before Vanilla Phase 5, change some loot
+if (AtlasLoot:GameVersion_EQ(AtlasLoot.CLASSIC_VERSION_NUM) and AtlasLoot.Data.ContentPhase:GetActivePhase() < 5) then
+	DropRateData[9018][11623] = 42.6;
+	DropRateData[9019][11810] = 18.39;
+	DropRateData[9019][16724] = 18.29;
+	DropRateData[9027][11728] = 21.31;
+	DropRateData[9027][11729] = 23.03;
+	DropRateData[9027][11730] = 21.8;
+	DropRateData[9027][11731] = 23.13;
+	DropRateData[9033][11815] = 4.56;
+	DropRateData[9237][13178] = 15.01;
+	DropRateData[9319][11626] = 43.33;
+	DropRateData[9502][11746] = 37.5;
+	DropRateData[10584][16670] = 16.13;
+	DropRateData[11143][16682] = 19.31;
+end
+
 Droprate:AddData(DropRateData)
 DropRateData = nil

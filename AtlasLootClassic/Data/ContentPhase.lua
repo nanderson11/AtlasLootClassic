@@ -5,13 +5,13 @@ local ContentPhase = {}
 AtlasLoot.Data.ContentPhase = ContentPhase
 local AL = AtlasLoot.Locales
 local IMAGE_PATH = ALPrivate.IMAGE_PATH
-local ACTIVE_PASE_LIST = {
-	[0]                             = 99, -- dummy
-	[AtlasLoot.CLASSIC_VERSION_NUM] = 2.5, -- classic
-	[AtlasLoot.BC_VERSION_NUM]      = 1, -- bc
-	[AtlasLoot.WRATH_VERSION_NUM]   = 1, -- wrath
+local ACTIVE_PHASE_LIST = {
+	[0]                             = 99,                                                                                 -- dummy
+	[AtlasLoot.CLASSIC_VERSION_NUM] = (C_Seasons.GetActiveSeason() == 11 or C_Seasons.GetActiveSeason() == 12) and 2.5 or 6, -- classic
+	[AtlasLoot.BC_VERSION_NUM]      = 1,                                                                                  -- bc
+	[AtlasLoot.WRATH_VERSION_NUM]   = 1,                                                                                  -- wrath
 }
-local ACTIVE_PHASE = ACTIVE_PASE_LIST[AtlasLoot:GetGameVersion()] or ACTIVE_PASE_LIST[1]
+local ACTIVE_PHASE = ACTIVE_PHASE_LIST[AtlasLoot:GetGameVersion()] or ACTIVE_PHASE_LIST[1]
 
 --##START-DATA##
 local PHASE_ITEMS = {}
@@ -6414,11 +6414,11 @@ function ContentPhase:GetPhaseTextureForItemID(itemID)
 end
 
 function ContentPhase:GetActivePhase(gameVersion)
-	return gameVersion and ACTIVE_PASE_LIST[gameVersion] or ACTIVE_PHASE
+	return gameVersion and ACTIVE_PHASE_LIST[gameVersion] or ACTIVE_PHASE
 end
 
 function ContentPhase:IsActive(phase, gameVersion)
-	return (phase or 0) <= (gameVersion and ACTIVE_PASE_LIST[gameVersion] or ACTIVE_PHASE)
+	return (phase or 0) <= (gameVersion and ACTIVE_PHASE_LIST[gameVersion] or ACTIVE_PHASE)
 end
 
 function ContentPhase:GetActivePhaseTexture()

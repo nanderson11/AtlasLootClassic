@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.2.6 - February
+### Fixed
+- Moved 14 items to their correct pre-Phase 5 drop locations, including Hand of Justice
+- The content phase will be correct for both Classic Era and Anniversary realms
+
 ## 3.2.5 - January 31, 2025
 ### Fixed
 - Fixed issue where polearms were displayed with the druid class filter (they'll automatically be included again when we get to WOTLK)
