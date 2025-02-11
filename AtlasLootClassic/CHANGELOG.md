@@ -1,6 +1,6 @@
 # Changelog
 
-## 3.2.6 - February
+## 3.2.6 - February 11, 2025
 ### Fixed
 - Moved 14 items to their correct pre-Phase 5 drop locations, including Hand of Justice
 - The content phase will be correct for both Classic Era and Anniversary realms
