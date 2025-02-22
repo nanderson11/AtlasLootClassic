@@ -2,7 +2,6 @@
 -- Upvalued Lua API.
 -----------------------------------------------------------------------
 local _G = getfenv(0)
-local select = _G.select
 local string = _G.string
 local format = string.format
 
@@ -260,13 +259,13 @@ data["EmblemofHeroism"] = {
 			name = ALIL["Misc"],
 			[NORMAL_DIFF] = {
 				{ 1,  AtlasLoot:GetRetByFaction(44231, 44230) }, -- Reins of the Wooly Mammoth
-				{ 3,  43102 },                     -- Frozen Orb
-				{ 16, 36919 },                     -- Cardinal Ruby
-				{ 17, 36922 },                     -- King's Amber
-				{ 18, 36925 },                     -- Majestic Zircon
-				{ 19, 36931 },                     -- Ametrine
-				{ 20, 36928 },                     -- Dreadstone
-				{ 21, 36934 },                     -- Eye of Zul
+				{ 3,  43102 },                       -- Frozen Orb
+				{ 16, 36919 },                       -- Cardinal Ruby
+				{ 17, 36922 },                       -- King's Amber
+				{ 18, 36925 },                       -- Majestic Zircon
+				{ 19, 36931 },                       -- Ametrine
+				{ 20, 36928 },                       -- Dreadstone
+				{ 21, 36934 },                       -- Eye of Zul
 			},
 		},
 	}
@@ -1167,16 +1166,16 @@ data["WorldEpicsWrath"] = {
 		{
 			name = AL["World Epics"],
 			[NORMAL_ITTYPE] = {
-				{ 1,  44309 },                 -- Sash of Jordan
-				{ 2,  44312 },                 -- Wapach's Spaulders of Solidarity
-				{ 4,  44308 },                 -- Signet of Edward the Odd
-				{ 5,  37835 },                 -- Je'Tze's Bell
-				{ 16, 44310 },                 -- Namlak's Supernumerary Sticker
-				{ 17, 44311 },                 -- Avool's Sword of Jin
-				{ 18, 44313 },                 -- Zom's Crackling Bulwark
+				{ 1,  44309 },                  -- Sash of Jordan
+				{ 2,  44312 },                  -- Wapach's Spaulders of Solidarity
+				{ 4,  44308 },                  -- Signet of Edward the Odd
+				{ 5,  37835 },                  -- Je'Tze's Bell
+				{ 16, 44310 },                  -- Namlak's Supernumerary Sticker
+				{ 17, 44311 },                  -- Avool's Sword of Jin
+				{ 18, 44313 },                  -- Zom's Crackling Bulwark
 				{ 20, 43575, nil, nil, GetSpellInfo(921) }, -- Reinforced Junkbox
-				{ 21, 43613 },                 -- The Dusk Blade
-				{ 22, 43611 },                 -- Krol Cleaver
+				{ 21, 43613 },                  -- The Dusk Blade
+				{ 22, 43611 },                  -- Krol Cleaver
 			},
 		},
 	},
@@ -1301,9 +1300,9 @@ data["CompanionsWrath"] = {
 			TableType = AC_ITTYPE,
 			[NORMAL_DIFF] = {
 				{ 1,  44810, AtlasLoot:GetRetByFaction(3656, 3478) }, --  Turkey Cage
-				{ 2,  44738, 1956 },                    --  Kirin Tor Familiar
-				{ 16, 40653, 1250 },                    --  Reeking Pet Carrier
-				{ 17, 44841, 2516 },                    --  Little Fawn's Salt Lick
+				{ 2,  44738, 1956 },                      --  Kirin Tor Familiar
+				{ 16, 40653, 1250 },                      --  Reeking Pet Carrier
+				{ 17, 44841, 2516 },                      --  Little Fawn's Salt Lick
 			},
 		},
 		{

@@ -2,7 +2,6 @@
 -- Upvalued Lua API.
 -----------------------------------------------------------------------
 local _G = getfenv(0)
-local select = _G.select
 local string = _G.string
 local format = string.format
 
@@ -116,8 +115,8 @@ data["BadgeofJustice"] = {
 				{ 1, 32083 }, -- Faceguard of Determination
 				{ 2, 32084 }, -- Helmet of the Steadfast Champion
 
-				{ 4, 30769,  }, -- Inferno Tempered Chestguard
-				{ 5, 30767,  }, -- Inferno Tempered Gauntlets
+				{ 4, 30769, }, -- Inferno Tempered Chestguard
+				{ 5, 30767, }, -- Inferno Tempered Gauntlets
 				{ 6, 30766 }, -- Inferno Tempered Leggings
 				{ 7, 30768 }, -- Inferno Tempered Boots
 			},
@@ -125,14 +124,14 @@ data["BadgeofJustice"] = {
 		{
 			name = ALIL["Off Hand"],
 			[NORMAL_DIFF] = {
-				{ 1, 29266 }, -- Azure-Shield of Coldarra
-				{ 2, 29267 }, -- Light-Bearer's Faith Shield
-				{ 3, 29268 }, -- Mazthoril Honor Shield
-				{ 5, 29269 }, -- Sapphiron's Wing Bone
-				{ 6, 29270 }, -- Flametongue Seal
-				{ 7, 29271 }, -- Talisman of Kalecgos
-				{ 8, 29272 }, -- Orb of the Soul-Eater
-				{ 9, 29273 }, -- Khadgar's Knapsack
+				{ 1,  29266 }, -- Azure-Shield of Coldarra
+				{ 2,  29267 }, -- Light-Bearer's Faith Shield
+				{ 3,  29268 }, -- Mazthoril Honor Shield
+				{ 5,  29269 }, -- Sapphiron's Wing Bone
+				{ 6,  29270 }, -- Flametongue Seal
+				{ 7,  29271 }, -- Talisman of Kalecgos
+				{ 8,  29272 }, -- Orb of the Soul-Eater
+				{ 9,  29273 }, -- Khadgar's Knapsack
 				{ 10, 29274 }, -- Tears of Heaven
 				{ 16, 29275 }, -- Searing Sunblade
 			},
@@ -193,85 +192,85 @@ data["BadgeofJustice4"] = {
 		{
 			name = ALIL["Armor"].." - "..ALIL["Cloth"],
 			[NORMAL_DIFF] = {
-				{1, 33588 },
-				{2, 33586 },
-				{3, 33291 },
-				{4, 33584 },
-				{6, 33589 },
-				{7, 33587 },
-				{8, 33585 },
+				{ 1, 33588 },
+				{ 2, 33586 },
+				{ 3, 33291 },
+				{ 4, 33584 },
+				{ 6, 33589 },
+				{ 7, 33587 },
+				{ 8, 33585 },
 			},
 		},
 		{
 			name = ALIL["Armor"].." - "..ALIL["Leather"],
 			[NORMAL_DIFF] = {
-				{1, 33972 },
-				{2, 33973 },
-				{3, 33566 },
-				{4, 33578 },
-				{5, 33974 },
-				{6, 33559 },
-				{7, 33577 },
+				{ 1,  33972 },
+				{ 2,  33973 },
+				{ 3,  33566 },
+				{ 4,  33578 },
+				{ 5,  33974 },
+				{ 6,  33559 },
+				{ 7,  33577 },
 
-				{9, 33287 },
-				{10, 33557 },
-				{11, 33552 },
+				{ 9,  33287 },
+				{ 10, 33557 },
+				{ 11, 33552 },
 
-				{16, 33579 }, -- bonus armor
-				{17, 33580 }, -- bonus armor
-				{18, 33583 }, -- bonus armor
-				{19, 33582 }, -- bonus armor
+				{ 16, 33579 }, -- bonus armor
+				{ 17, 33580 }, -- bonus armor
+				{ 18, 33583 }, -- bonus armor
+				{ 19, 33582 }, -- bonus armor
 
-				{21, 33540 },
-				{22, 33539 },
-				{23, 33538 },
-				{24, 33222 },
+				{ 21, 33540 },
+				{ 22, 33539 },
+				{ 23, 33538 },
+				{ 24, 33222 },
 			},
 		},
 		{
 			name = ALIL["Armor"].." - "..ALIL["Mail"],
 			[NORMAL_DIFF] = {
-				{1, 33970 },
-				{2, 33965 },
-				{3, 33535 },
-				{4, 33524 },
-				{5, 33536 },
-				{6, 33537 },
+				{ 1,  33970 },
+				{ 2,  33965 },
+				{ 3,  33535 },
+				{ 4,  33524 },
+				{ 5,  33536 },
+				{ 6,  33537 },
 
-				{8, 33529 },
-				{9, 33528 },
-				{10, 33280 },
-				{11, 33527 },
+				{ 8,  33529 },
+				{ 9,  33528 },
+				{ 10, 33280 },
+				{ 11, 33527 },
 
-				{16, 33532 },
-				{17, 33531 },
-				{18, 33386 },
-				{19, 33530 },
-				{20, 33324 },
+				{ 16, 33532 },
+				{ 17, 33531 },
+				{ 18, 33386 },
+				{ 19, 33530 },
+				{ 20, 33324 },
 			},
 		},
 		{
 			name = ALIL["Armor"].." - "..ALIL["Plate"],
 			[NORMAL_DIFF] = {
-				{1, 33810 },
-				{2, 33514 },
-				{3, 33513 },
-				{4, 33331 },
-				{5, 33512 },
-				{6, 33501 },
+				{ 1,  33810 },
+				{ 2,  33514 },
+				{ 3,  33513 },
+				{ 4,  33331 },
+				{ 5,  33512 },
+				{ 6,  33501 },
 
-				{8, 33520 },
-				{9, 33519 },
-				{10, 33518 },
-				{11, 33207 },
+				{ 8,  33520 },
+				{ 9,  33519 },
+				{ 10, 33518 },
+				{ 11, 33207 },
 
-				{16, 33522 },
-				{17, 33516 },
-				{18, 33517 },
-				{19, 33279 },
-				{20, 33524 },
-				{21, 33515 },
-				{22, 33523 },
+				{ 16, 33522 },
+				{ 17, 33516 },
+				{ 18, 33517 },
+				{ 19, 33279 },
+				{ 20, 33524 },
+				{ 21, 33515 },
+				{ 22, 33523 },
 			},
 		},
 		{
@@ -284,7 +283,7 @@ data["BadgeofJustice4"] = {
 		{
 			name = ALIL["Neck"],
 			[NORMAL_DIFF] = {
-				{1, 33296},
+				{ 1, 33296 },
 			},
 		},
 		{
@@ -301,25 +300,25 @@ data["BadgeofJustice4"] = {
 		{
 			name = ALIL["Trinket"],
 			[NORMAL_DIFF] = {
-				{1, 35326 },
-				{2, 34049 },
-				{3, 34162 },
-				{4, 34163 },
-				{5, 33832 },
-				{6, 34050 },
+				{ 1, 35326 },
+				{ 2, 34049 },
+				{ 3, 34162 },
+				{ 4, 34163 },
+				{ 5, 33832 },
+				{ 6, 34050 },
 			},
 		},
 		{
 			name = ALIL["Relic"],
 			[NORMAL_DIFF] = {
-				{ 1, "INV_Box_01", nil, AL["Idols"] },
-				{ 2, 33510 },
-				{ 3, 33509 },
-				{ 4, 33508 },
-				{ 6, "INV_Box_01", nil, AL["Librams"] },
-				{ 7, 33503 }, -- Libram of Divine Judgement
-				{ 8, 33502 }, -- Libram of Mending
-				{ 9, 33504 }, -- Libram of Divine Purpose
+				{ 1,  "INV_Box_01", nil, AL["Idols"] },
+				{ 2,  33510 },
+				{ 3,  33509 },
+				{ 4,  33508 },
+				{ 6,  "INV_Box_01", nil, AL["Librams"] },
+				{ 7,  33503 }, -- Libram of Divine Judgement
+				{ 8,  33502 }, -- Libram of Mending
+				{ 9,  33504 }, -- Libram of Divine Purpose
 				{ 16, "INV_Box_01", nil, AL["Totems"] },
 				{ 17, 33506 },
 				{ 18, 33507 },
@@ -345,99 +344,99 @@ data["BadgeofJusticeP5"] = {
 		{
 			name = ALIL["Armor"].." - "..ALIL["Cloth"],
 			[NORMAL_DIFF] = {
-				{1, 34926},
-				{2, 34924},
-				{3, 34925},
-				{5, 34919},
-				{6, 34917},
-				{7, 34918},
-				{9, 34938},
-				{10, 34936},
-				{11, 34937},
+				{ 1,  34926 },
+				{ 2,  34924 },
+				{ 3,  34925 },
+				{ 5,  34919 },
+				{ 6,  34917 },
+				{ 7,  34918 },
+				{ 9,  34938 },
+				{ 10, 34936 },
+				{ 11, 34937 },
 			},
 		},
 		{
 			name = ALIL["Armor"].." - "..ALIL["Leather"],
 			[NORMAL_DIFF] = {
-				{1, 34911}, --bonus armor
-				{2, 34906},  --bonus armor
-				{3, 34910}, --bonus armor
-				{5, 34929}, -- AP
-				{6, 34927}, -- AP
-				{7, 34928}, --AP
-				{16, 34902},  -- healing
-				{17, 34901}, -- healing
-				{18, 34900}, -- healing
-				{20, 34904},  -- SP
-				{21, 34903},  --SP
-				{22, 34905},  -- SP
+				{ 1,  34911 }, --bonus armor
+				{ 2,  34906 }, --bonus armor
+				{ 3,  34910 }, --bonus armor
+				{ 5,  34929 }, -- AP
+				{ 6,  34927 }, -- AP
+				{ 7,  34928 }, --AP
+				{ 16, 34902 }, -- healing
+				{ 17, 34901 }, -- healing
+				{ 18, 34900 }, -- healing
+				{ 20, 34904 }, -- SP
+				{ 21, 34903 }, --SP
+				{ 22, 34905 }, -- SP
 			},
 		},
 		{
 			name = ALIL["Armor"].." - "..ALIL["Mail"],
 			[NORMAL_DIFF] = {
-				{1, 34932}, -- Heal
-				{2, 34931}, -- heal
-				{3, 34930}, -- Heal
-				{5, 34916}, -- AP
-				{6, 34912}, -- AP
-				{7, 34914}, -- AP
-				{9, 34935}, -- SP
-				{10, 34934}, -- SP
-				{11, 34933}, -- SP
+				{ 1,  34932 }, -- Heal
+				{ 2,  34931 }, -- heal
+				{ 3,  34930 }, -- Heal
+				{ 5,  34916 }, -- AP
+				{ 6,  34912 }, -- AP
+				{ 7,  34914 }, -- AP
+				{ 9,  34935 }, -- SP
+				{ 10, 34934 }, -- SP
+				{ 11, 34933 }, -- SP
 			},
 		},
 		{
 			name = ALIL["Armor"].." - "..ALIL["Plate"],
 			[NORMAL_DIFF] = {
-				{1, 34947}, -- DEF + SP
-				{2, 34945}, -- Def + SP
-				{3, 34946}, -- DEF + SP
-				{5, 34941}, -- Def + Expertise
-				{6, 34939}, -- Def
-				{7, 34940}, -- Def + Expertise
-				{16, 34923}, -- Healing
-				{17, 34921}, -- Healing
-				{18, 34922}, -- Healing
-				{20, 34944}, -- STR + Haste
-				{21, 34942}, -- STR + Haste
-				{22, 34943}, -- STR + Haste
+				{ 1,  34947 }, -- DEF + SP
+				{ 2,  34945 }, -- Def + SP
+				{ 3,  34946 }, -- DEF + SP
+				{ 5,  34941 }, -- Def + Expertise
+				{ 6,  34939 }, -- Def
+				{ 7,  34940 }, -- Def + Expertise
+				{ 16, 34923 }, -- Healing
+				{ 17, 34921 }, -- Healing
+				{ 18, 34922 }, -- Healing
+				{ 20, 34944 }, -- STR + Haste
+				{ 21, 34942 }, -- STR + Haste
+				{ 22, 34943 }, -- STR + Haste
 			},
 		},
 		{
 			name = ALIL["Weapon"],
 			[NORMAL_DIFF] = {
-				{1, 34894},  -- 1H Dagger
-				{2, 34949}, -- OH Dagger
-				{3, 34952}, -- OH Dagger
-				{4, 34950}, -- OH Fist 1.5
-				{6, 34893}, -- MH Fist 2.5
-				{7, 34951}, -- OH - Fist 2.5
-				{16, 34891}, -- 2H Axe
-				{18, 34892}, -- Crossbow
-				{20, 34898}, -- Staff AP
-				{22, 34895}, -- MH Dagger - SP
-				{24, 34896}, -- MH Mace - Healing
+				{ 1,  34894 }, -- 1H Dagger
+				{ 2,  34949 }, -- OH Dagger
+				{ 3,  34952 }, -- OH Dagger
+				{ 4,  34950 }, -- OH Fist 1.5
+				{ 6,  34893 }, -- MH Fist 2.5
+				{ 7,  34951 }, -- OH - Fist 2.5
+				{ 16, 34891 }, -- 2H Axe
+				{ 18, 34892 }, -- Crossbow
+				{ 20, 34898 }, -- Staff AP
+				{ 22, 34895 }, -- MH Dagger - SP
+				{ 24, 34896 }, -- MH Mace - Healing
 			},
 		},
 		{
 			name = ALIL["Finger"],
 			[NORMAL_DIFF] = {
-				{1, 34887},
-				{2, 34890},
-				{3, 34889},
-				{4, 34888},
+				{ 1, 34887 },
+				{ 2, 34890 },
+				{ 3, 34889 },
+				{ 4, 34888 },
 			},
 		},
 		{
 			name = ALIL["Gem"],
 			[NORMAL_DIFF] = {
-				{1, 32228},
-				{2, 32249},
-				{3, 32231},
-				{4, 32230},
-				{5, 32227},
-				{6, 32229},
+				{ 1, 32228 },
+				{ 2, 32249 },
+				{ 3, 32231 },
+				{ 4, 32230 },
+				{ 5, 32227 },
+				{ 6, 32229 },
 			},
 		},
 	}
@@ -463,11 +462,11 @@ data["BCCSunmote"] = {
 			name = ALIL["Armor"].." - "..ALIL["Leather"],
 			[NORMAL_DIFF] = {
 				-- int
-				{ 1, 34403 }, -- Cover of Ursoc the Mighty
-				{ 3, 34391 }, -- Spaulders of Devastation
-				{ 5, 34398 }, -- Utopian Tunic of Elune
-				{ 7, 34407 }, -- Tranquil Moonlight Wraps
-				{ 9, 34384 }, -- Breeches of Natural Splendor
+				{ 1,  34403 }, -- Cover of Ursoc the Mighty
+				{ 3,  34391 }, -- Spaulders of Devastation
+				{ 5,  34398 }, -- Utopian Tunic of Elune
+				{ 7,  34407 }, -- Tranquil Moonlight Wraps
+				{ 9,  34384 }, -- Breeches of Natural Splendor
 				-- agi
 				{ 16, 34404 }, -- Mask of the Fury Hunter
 				{ 18, 34397 }, -- Bladed Chaos Tunic
@@ -490,10 +489,10 @@ data["BCCSunmote"] = {
 			name = ALIL["Armor"].." - "..ALIL["Plate"],
 			[NORMAL_DIFF] = {
 				-- int
-				{ 1, 34401 }, -- Helm of Uther's Resolve
-				{ 3, 34389 }, -- Spaulders of the Thalassian Defender
-				{ 5, 34395 }, -- Noble Judicator's Chestguard
-				{ 7, 34382 }, -- Judicator's Legguards
+				{ 1,  34401 }, -- Helm of Uther's Resolve
+				{ 3,  34389 }, -- Spaulders of the Thalassian Defender
+				{ 5,  34395 }, -- Noble Judicator's Chestguard
+				{ 7,  34382 }, -- Judicator's Legguards
 				-- stam
 				{ 16, 34400 }, -- Crown of Dath'Remar
 				{ 18, 34388 }, -- Pauldrons of Berserking
@@ -515,8 +514,8 @@ data["WorldEpicsBC"] = {
 		{
 			name = AL["One-Handed Weapons"],
 			[NORMAL_ITTYPE] = {
-				{ 1, 31331 }, -- The Night Blade
-				{ 3, 31332 }, -- Blinkstrike
+				{ 1,  31331 }, -- The Night Blade
+				{ 3,  31332 }, -- Blinkstrike
 				{ 16, 31336 }, -- Blade of Wizardry
 				{ 18, 31342 }, -- The Ancient Scepter of Sue-Min
 			}
@@ -524,7 +523,7 @@ data["WorldEpicsBC"] = {
 		{
 			name = AL["Two-Handed Weapons"],
 			[NORMAL_ITTYPE] = {
-				{ 1, 31318 }, -- Singing Crystal Axe
+				{ 1,  31318 }, -- Singing Crystal Axe
 				{ 16, 31322 }, -- The Hammer of Destiny
 				{ 18, 31334 }, -- Staff of Natural Fury
 			}
@@ -532,16 +531,16 @@ data["WorldEpicsBC"] = {
 		{
 			name = AL["Ranged Weapons"],
 			[NORMAL_ITTYPE] = {
-				{ 1, 31323 }, -- Don Santos' Famous Hunting Rifle
+				{ 1,  31323 }, -- Don Santos' Famous Hunting Rifle
 				{ 16, 34622 }, -- Spinesever
 			}
 		},
 		{
 			name = ALIL["Trinket"].." & "..ALIL["Finger"].." & "..ALIL["Neck"],
 			[NORMAL_ITTYPE] = {
-				{ 1, 31339 }, -- Lola's Eve
-				{ 3, 31319 }, -- Band of Impenetrable Defenses
-				{ 4, 31326 }, -- Truestrike Ring
+				{ 1,  31339 }, -- Lola's Eve
+				{ 3,  31319 }, -- Band of Impenetrable Defenses
+				{ 4,  31326 }, -- Truestrike Ring
 				{ 16, 31338 }, -- Charlotte's Ivy
 				{ 18, 31321 }, -- Choker of Repentance
 			}
@@ -549,11 +548,11 @@ data["WorldEpicsBC"] = {
 		{
 			name = AL["Equip"],
 			[NORMAL_ITTYPE] = {
-				{ 1, 31329 }, -- Lifegiving Cloak
-				{ 3, 31340 }, -- Will of Edward the Odd
-				{ 4, 31343 }, -- Kamaei's Cerulean Skirt
-				{ 6, 31333 }, -- The Night Watchman
-				{ 7, 31335 }, -- Pants of Living Growth
+				{ 1,  31329 }, -- Lifegiving Cloak
+				{ 3,  31340 }, -- Will of Edward the Odd
+				{ 4,  31343 }, -- Kamaei's Cerulean Skirt
+				{ 6,  31333 }, -- The Night Watchman
+				{ 7,  31335 }, -- Pants of Living Growth
 				{ 18, 31330 }, -- Lightning Crown
 				{ 19, 31328 }, -- Leggings of Beast Mastery
 				{ 21, 31320 }, -- Chestguard of Exile
@@ -572,13 +571,13 @@ data["MountsBC"] = {
 		{
 			name = AL["Faction Mounts"],
 			[ALLIANCE_DIFF] = {
-				{ 5, 29745 }, -- Great Blue Elekk
-				{ 6, 29746 }, -- Great Green Elekk
-				{ 7, 29747 }, -- Great Purple Elekk
+				{ 5,  29745 }, -- Great Blue Elekk
+				{ 6,  29746 }, -- Great Green Elekk
+				{ 7,  29747 }, -- Great Purple Elekk
 				{ 20, 28481 }, -- Brown Elekk
 				{ 21, 29743 }, -- Purple Elekk
 				{ 22, 29744 }, -- Gray Elekk
-				{ 9, 25527 }, -- Swift Red Gryphon
+				{ 9,  25527 }, -- Swift Red Gryphon
 				{ 10, 25528 }, -- Swift Green Gryphon
 				{ 11, 25529 }, -- Swift Purple Gryphon
 				{ 12, 25473 }, -- Swift Blue Gryphon
@@ -587,17 +586,17 @@ data["MountsBC"] = {
 				{ 26, 25472 }, -- Snowy Gryphon
 			},
 			[HORDE_DIFF] = {
-				{ 1, 29223 }, -- Swift Green Hawkstrider
-				{ 2, 29224 }, -- Swift Purple Hawkstrider
-				{ 3, 28936 }, -- Swift Pink Hawkstrider
+				{ 1,  29223 }, -- Swift Green Hawkstrider
+				{ 2,  29224 }, -- Swift Purple Hawkstrider
+				{ 3,  28936 }, -- Swift Pink Hawkstrider
 				{ 16, 29220 }, -- Blue Hawkstrider
 				{ 17, 29221 }, -- Black Hawkstrider
 				{ 18, 29222 }, -- Purple Hawkstrider
 				{ 19, 28927 }, -- Red Hawkstrider
-				{ 6, 25531 }, -- Swift Green Windrider
-				{ 7, 25532 }, -- Swift Yellow Windrider
-				{ 8, 25533 }, -- Swift Purple Windrider
-				{ 9, 25477 }, -- Swift Red Windrider
+				{ 6,  25531 }, -- Swift Green Windrider
+				{ 7,  25532 }, -- Swift Yellow Windrider
+				{ 8,  25533 }, -- Swift Purple Windrider
+				{ 9,  25477 }, -- Swift Red Windrider
 				{ 21, 25474 }, -- Tawny Windrider
 				{ 22, 25475 }, -- Blue Windrider
 				{ 23, 25476 }, -- Green Windrider
@@ -609,26 +608,26 @@ data["MountsBC"] = {
 				{ 1,  35906 }, -- Reins of the Black War Elekk
 				{ 2,  29228 }, -- Reins of the Dark War Talbuk
 				{ 3,  28915 }, -- Reins of the Dark Riding Talbuk
-				{ 16,  30609 }, -- Swift Nether Drake
-				{ 17,  34092 }, -- Merciless Nether Drake
-				{ 18,  37676 }, -- Vengeful Nether Drake
-				{ 19,  43516 }, -- Brutal Nether Drake
+				{ 16, 30609 }, -- Swift Nether Drake
+				{ 17, 34092 }, -- Merciless Nether Drake
+				{ 18, 37676 }, -- Vengeful Nether Drake
+				{ 19, 43516 }, -- Brutal Nether Drake
 			},
 			[HORDE_DIFF] = {
-				{ 1, 34129 }, -- Swift Warstrider
-				{ 2, 29228 }, -- Reins of the Dark War Talbuk
+				{ 1,  34129 }, -- Swift Warstrider
+				{ 2,  29228 }, -- Reins of the Dark War Talbuk
 				{ 3,  28915 }, -- Reins of the Dark Riding Talbuk
-				{ 16,  30609 }, -- Swift Nether Drake
-				{ 17,  34092 }, -- Merciless Nether Drake
-				{ 18,  37676 }, -- Vengeful Nether Drake
-				{ 19,  43516 }, -- Brutal Nether Drake
+				{ 16, 30609 }, -- Swift Nether Drake
+				{ 17, 34092 }, -- Merciless Nether Drake
+				{ 18, 37676 }, -- Vengeful Nether Drake
+				{ 19, 43516 }, -- Brutal Nether Drake
 			},
 		},
 		{
 			name = AL["Drops"],
 			[NORMAL_DIFF] = {
-				{ 1, 32768 }, -- Reins of the Raven Lord
-				{ 3, 33809 }, -- Amani War Bear
+				{ 1,  32768 }, -- Reins of the Raven Lord
+				{ 3,  33809 }, -- Amani War Bear
 				{ 16, 30480 }, -- Fiery Warhorse's Reins
 				{ 18, 32458 }, -- Ashes of Al'ar
 			},
@@ -636,14 +635,14 @@ data["MountsBC"] = {
 		{
 			name = AL["Reputation"],
 			[ALLIANCE_DIFF] = {
-				{ 1, 29227 }, -- Reins of the Cobalt War Talbuk
-				{ 2, 29229 }, -- Reins of the Silver War Talbuk
-				{ 3, 29230 }, -- Reins of the Tan War Talbuk
-				{ 4, 29231 }, -- Reins of the White War Talbuk
-				{ 5, 31830 }, -- Reins of the Cobalt Riding Talbuk
-				{ 6, 31832 }, -- Reins of the Silver Riding Talbuk
-				{ 7, 31834 }, -- Reins of the Tan Riding Talbuk
-				{ 8, 31836 }, -- Reins of the White Riding Talbuk
+				{ 1,  29227 }, -- Reins of the Cobalt War Talbuk
+				{ 2,  29229 }, -- Reins of the Silver War Talbuk
+				{ 3,  29230 }, -- Reins of the Tan War Talbuk
+				{ 4,  29231 }, -- Reins of the White War Talbuk
+				{ 5,  31830 }, -- Reins of the Cobalt Riding Talbuk
+				{ 6,  31832 }, -- Reins of the Silver Riding Talbuk
+				{ 7,  31834 }, -- Reins of the Tan Riding Talbuk
+				{ 8,  31836 }, -- Reins of the White Riding Talbuk
 				{ 16, 33999 }, -- Cenarion War Hippogryph
 				{ 18, 32319 }, -- Blue Riding Nether Ray
 				{ 19, 32314 }, -- Green Riding Nether Ray
@@ -658,15 +657,15 @@ data["MountsBC"] = {
 				{ 29, 32862 }, -- Reins of the Violet Netherwing Drake
 			},
 			[HORDE_DIFF] = {
-				{ 1, 29102 }, -- Reins of the Cobalt War Talbuk
-				{ 2, 29104 }, -- Reins of the Silver War Talbuk
-				{ 3, 29105 }, -- Reins of the Tan War Talbuk
-				{ 4, 29103 }, -- Reins of the White War Talbuk
-				{ 5, 31829 }, -- Reins of the Cobalt Riding Talbuk
-				{ 6, 31831 }, -- Reins of the Silver Riding Talbuk
-				{ 7, 31833 }, -- Reins of the Tan Riding Talbuk
-				{ 8, 31835 }, -- Reins of the White Riding Talbuk
-				{ 9, 31836 }, -- Reins of the White Riding Talbuk
+				{ 1,  29102 }, -- Reins of the Cobalt War Talbuk
+				{ 2,  29104 }, -- Reins of the Silver War Talbuk
+				{ 3,  29105 }, -- Reins of the Tan War Talbuk
+				{ 4,  29103 }, -- Reins of the White War Talbuk
+				{ 5,  31829 }, -- Reins of the Cobalt Riding Talbuk
+				{ 6,  31831 }, -- Reins of the Silver Riding Talbuk
+				{ 7,  31833 }, -- Reins of the Tan Riding Talbuk
+				{ 8,  31835 }, -- Reins of the White Riding Talbuk
+				{ 9,  31836 }, -- Reins of the White Riding Talbuk
 				{ 16, 33999 }, -- Cenarion War Hippogryph
 				{ 18, 32319 }, -- Blue Riding Nether Ray
 				{ 19, 32314 }, -- Green Riding Nether Ray
@@ -691,9 +690,9 @@ data["MountsBC"] = {
 		{
 			name = AL["Special"],
 			[NORMAL_DIFF] = {
-				{ 1, 33225 }, -- Reins of the Swift Spectral Tiger
-				{ 2, 33224 }, -- Reins of the Spectral Tiger
-				{ 4, 38576 }, -- Big Battle Bear
+				{ 1,  33225 }, -- Reins of the Swift Spectral Tiger
+				{ 2,  33224 }, -- Reins of the Spectral Tiger
+				{ 4,  38576 }, -- Big Battle Bear
 				{ 16, 35226 }, -- X-51 Nether-Rocket X-TREME
 				{ 17, 35225 }, -- X-51 Nether-Rocket
 			},
@@ -727,14 +726,14 @@ data["CompanionsBC"] = {
 		{
 			name = AL["Vendor"],
 			[NORMAL_DIFF] = {
-				{ 1, 34478 }, -- Tiny Sporebat
-				{ 2, 38628 }, -- Nether Ray Fry
-				{ 3, 29363 }, -- Mana Wyrmling
-				{ 4, 29364 }, -- Brown Rabbit Crate
-				{ 6, 29903 }, -- Yellow Moth Egg
-				{ 7, 29904 }, -- White Moth Egg
-				{ 8, 29902 }, -- Red Moth Egg
-				{ 9, 29901 }, -- Blue Moth Egg
+				{ 1,  34478 }, -- Tiny Sporebat
+				{ 2,  38628 }, -- Nether Ray Fry
+				{ 3,  29363 }, -- Mana Wyrmling
+				{ 4,  29364 }, -- Brown Rabbit Crate
+				{ 6,  29903 }, -- Yellow Moth Egg
+				{ 7,  29904 }, -- White Moth Egg
+				{ 8,  29902 }, -- Red Moth Egg
+				{ 9,  29901 }, -- Blue Moth Egg
 				{ 16, 29957 }, -- Silver Dragonhawk Hatchling
 				{ 17, 29956 }, -- Red Dragonhawk Hatchling
 				{ 18, 29953 }, -- Golden Dragonhawk Hatchling
@@ -744,10 +743,10 @@ data["CompanionsBC"] = {
 		{
 			name = AL["World Events"],
 			[NORMAL_DIFF] = {
-				{ 1, 34425 }, -- Clockwork Rocket Bot
-				{ 3, 34955 }, -- Scorched Stone
-				{ 5, 32233 }, -- Wolpertinger's Tankard
-				{ 7, 33154 }, -- Sinister Squashling
+				{ 1,  34425 }, -- Clockwork Rocket Bot
+				{ 3,  34955 }, -- Scorched Stone
+				{ 5,  32233 }, -- Wolpertinger's Tankard
+				{ 7,  33154 }, -- Sinister Squashling
 				{ 16, 32617 }, -- Sleepy Willy
 				{ 17, 32622 }, -- Elekk Training Collar
 				{ 18, 32616 }, -- Egbert's Egg
@@ -766,15 +765,15 @@ data["CompanionsBC"] = {
 		{ -- Unobtainable
 			name = AL["Unobtainable"],
 			[NORMAL_DIFF] = {
-				{ 1, 34493 }, -- Dragon Kite
-				{ 2, 32588 }, -- Banana Charm
-				{ 3, 38050 }, -- Soul-Trader Beacon
-				{ 4	, 34492 }, -- Rocket Chicken
-				{ 6, 34519 }, -- Silver Pig Coin
-				{ 7, 34518 }, -- Golden Pig Coin
-				{ 8, 32498 }, -- Fortune Coin
-				{ 9, 32465 }, -- Fortune Coin
-			    { 16, 31665 }, -- Toy RC Mortar Tank
+				{ 1,  34493 }, -- Dragon Kite
+				{ 2,  32588 }, -- Banana Charm
+				{ 3,  38050 }, -- Soul-Trader Beacon
+				{ 4,  34492 }, -- Rocket Chicken
+				{ 6,  34519 }, -- Silver Pig Coin
+				{ 7,  34518 }, -- Golden Pig Coin
+				{ 8,  32498 }, -- Fortune Coin
+				{ 9,  32465 }, -- Fortune Coin
+				{ 16, 31665 }, -- Toy RC Mortar Tank
 				{ 18, 37297 }, -- Gold Medallion
 				{ 19, 37298 }, -- Competitor's Souvenir
 				{ 21, 39656 }, -- Tyrael's Hilt
@@ -796,30 +795,30 @@ data["TabardsBC"] = {
 			name = AL["Factions"],
 			CoinTexture = "Reputation",
 			[ALLIANCE_DIFF] = {
-				{ 1, 31779 },	-- Aldor Tabard
-				{ 2, 31780 },	-- Scryers Tabard
-				{ 4, 31804 },	-- Cenarion Expedition Tabard
-				{ 5, 31776 },	-- Consortium Tabard
-				{ 6, 31777 },	-- Keepers of Time Tabard
-				{ 7, 31778 },	-- Lower City Tabard
-				{ 8, 32828 },	-- Ogri'la Tabard
-				{ 9, 31781 },	-- Sha'tar Tabard
-				{ 10, 32445 },	-- Skyguard Tabard
-				{ 11, 31775 },	-- Sporeggar Tabard
-				{ 12, 35221 },	-- Tabard of the Shattered Sun
-				{ 16, 23999 },	-- Honor Hold Tabard
-				{ 17, 31774 },	-- Honor Hold Tabard
+				{ 1,  31779 }, -- Aldor Tabard
+				{ 2,  31780 }, -- Scryers Tabard
+				{ 4,  31804 }, -- Cenarion Expedition Tabard
+				{ 5,  31776 }, -- Consortium Tabard
+				{ 6,  31777 }, -- Keepers of Time Tabard
+				{ 7,  31778 }, -- Lower City Tabard
+				{ 8,  32828 }, -- Ogri'la Tabard
+				{ 9,  31781 }, -- Sha'tar Tabard
+				{ 10, 32445 }, -- Skyguard Tabard
+				{ 11, 31775 }, -- Sporeggar Tabard
+				{ 12, 35221 }, -- Tabard of the Shattered Sun
+				{ 16, 23999 }, -- Honor Hold Tabard
+				{ 17, 31774 }, -- Honor Hold Tabard
 			},
 			[HORDE_DIFF] = {
 				GetItemsFromDiff = ALLIANCE_DIFF,
-				{ 1, 24004 },	-- Thrallmar Tabard
-				{ 16, 31773 },	-- Mag'har Tabard
+				{ 1,  24004 }, -- Thrallmar Tabard
+				{ 16, 31773 }, -- Mag'har Tabard
 			},
 		},
 		{ -- Unobtainable Tabards
 			name = AL["Unobtainable Tabards"],
 			[NORMAL_DIFF] = {
-				{ 1, 36941 }, -- Competitor's Tabard
+				{ 1,  36941 }, -- Competitor's Tabard
 				{ 16, 28788 }, -- Tabard of the Protector
 			},
 		},
@@ -839,21 +838,21 @@ data["LegendarysBC"] = {
 			[NORMAL_ITTYPE] = {
 				{ 1,  34334 }, -- Thori'dal, the Stars' Fury
 
-				{ 16,  32837 }, -- Warglaive of Azzinoth
-				{ 17,  32838 }, -- Warglaive of Azzinoth
+				{ 16, 32837 }, -- Warglaive of Azzinoth
+				{ 17, 32838 }, -- Warglaive of Azzinoth
 			},
 		},
 		{
 			MapID = 3845,
 			[NORMAL_ITTYPE] = {
-				{ 1,  30312 }, -- Infinity Blade
-				{ 2,  30311 }, -- Warp Slicer
-				{ 3,  30317 }, -- Cosmic Infuser
-				{ 4,  30316 }, -- Devastation
-				{ 5,  30313 }, -- Staff of Disintegration
-				{ 6,  30314 }, -- Phaseshift Bulwark
-				{ 7,  30318 }, -- Netherstrand Longbow
-				{ 8,  30319 }, -- Nether Spike
+				{ 1, 30312 }, -- Infinity Blade
+				{ 2, 30311 }, -- Warp Slicer
+				{ 3, 30317 }, -- Cosmic Infuser
+				{ 4, 30316 }, -- Devastation
+				{ 5, 30313 }, -- Staff of Disintegration
+				{ 6, 30314 }, -- Phaseshift Bulwark
+				{ 7, 30318 }, -- Netherstrand Longbow
+				{ 8, 30319 }, -- Nether Spike
 			},
 		},
 	},
@@ -870,13 +869,13 @@ data["ChildrensWeekBC"] = {
 		{ -- ChildrensWeek
 			name = AL["Childrens Week"],
 			[NORMAL_DIFF] = {
-				{ 1,  23007 }, -- Piglet's Collar
-				{ 2,  23015 }, -- Rat Cage
-				{ 3,  23002 }, -- Turtle Box
-				{ 4,  23022 }, -- Curmudgeon's Payoff
-				{ 6,  32616 }, -- Egbert's Egg
-				{ 7,  32617 }, -- Sleepy Willy
-				{ 8,  32622 }, -- Elekk Training Collar
+				{ 1, 23007 }, -- Piglet's Collar
+				{ 2, 23015 }, -- Rat Cage
+				{ 3, 23002 }, -- Turtle Box
+				{ 4, 23022 }, -- Curmudgeon's Payoff
+				{ 6, 32616 }, -- Egbert's Egg
+				{ 7, 32617 }, -- Sleepy Willy
+				{ 8, 32622 }, -- Elekk Training Collar
 			},
 		},
 	},
@@ -900,12 +899,12 @@ data["MidsummerFestivalBC"] = {
 				{ 6,  34683 }, -- Sandals of Summer
 				{ 7,  34685 }, -- Vestment of Summer
 				{ 9,  23247 }, -- Burning Blossom
-				{ 10,  34599 }, -- Juggling Torch
-				{ 11,  34684 }, -- Handful of Summer Petals
-				{ 12,  23246 }, -- Fiery Festival Brew
+				{ 10, 34599 }, -- Juggling Torch
+				{ 11, 34684 }, -- Handful of Summer Petals
+				{ 12, 23246 }, -- Fiery Festival Brew
 				{ 16, 23215 }, -- Bag of Smorc Ingredients
 				{ 17, 23211 }, -- Toasted Smorc
-				{ 18,  23435 }, -- Elderberry Pie
+				{ 18, 23435 }, -- Elderberry Pie
 				{ 19, 23327 }, -- Fire-toasted Bun
 				{ 20, 23326 }, -- Midsummer Sausage
 			},
@@ -913,31 +912,31 @@ data["MidsummerFestivalBC"] = {
 		{ -- CFRSlaveAhune
 			name = C_Map_GetAreaInfo(3717).." - "..AL["Ahune"],
 			[NORMAL_DIFF] = {
-                { 1, 35514 }, -- Frostscythe of Lord Ahune
-                { 2, 35494 }, -- Shroud of Winter's Chill
-                { 3, 35495 }, -- The Frost Lord's War Cloak
-                { 4, 35496 }, -- Icebound Cloak
-                { 5, 35497 }, -- Cloak of the Frigid Winds
-                { 7, 35723 }, -- Shards of Ahune
-                { 16, 35498 }, -- Formula: Enchant Weapon - Deathfrost
-                { 18, 34955 }, -- Scorched Stone
-                { 19, 35557 }, -- Huge Snowball
+				{ 1,  35514 }, -- Frostscythe of Lord Ahune
+				{ 2,  35494 }, -- Shroud of Winter's Chill
+				{ 3,  35495 }, -- The Frost Lord's War Cloak
+				{ 4,  35496 }, -- Icebound Cloak
+				{ 5,  35497 }, -- Cloak of the Frigid Winds
+				{ 7,  35723 }, -- Shards of Ahune
+				{ 16, 35498 }, -- Formula: Enchant Weapon - Deathfrost
+				{ 18, 34955 }, -- Scorched Stone
+				{ 19, 35557 }, -- Huge Snowball
 			},
 			[HEROIC_DIFF] = {
-                { 1, 29434 }, -- Badge of Justice
-                { 2, 35507 }, -- Amulet of Bitter Hatred
-                { 3, 35508 }, -- Choker of the Arctic Flow
-                { 4, 35509 }, -- Amulet of Glacial Tranquility
-                { 5, 35511 }, -- Hailstone Pendant
-                { 7, 35514 }, -- Frostscythe of Lord Ahune
-                { 8, 35494 }, -- Shroud of Winter's Chill
-                { 9, 35495 }, -- The Frost Lord's War Cloak
-                { 10, 35496 }, -- Icebound Cloak
-                { 11, 35497 }, -- Cloak of the Frigid Winds
-                { 13, 35723 }, -- Shards of Ahune
-                { 22, 35498 }, -- Formula: Enchant Weapon - Deathfrost
-                { 24, 34955 }, -- Scorched Stone
-                { 25, 35557 }, -- Huge Snowball
+				{ 1,  29434 }, -- Badge of Justice
+				{ 2,  35507 }, -- Amulet of Bitter Hatred
+				{ 3,  35508 }, -- Choker of the Arctic Flow
+				{ 4,  35509 }, -- Amulet of Glacial Tranquility
+				{ 5,  35511 }, -- Hailstone Pendant
+				{ 7,  35514 }, -- Frostscythe of Lord Ahune
+				{ 8,  35494 }, -- Shroud of Winter's Chill
+				{ 9,  35495 }, -- The Frost Lord's War Cloak
+				{ 10, 35496 }, -- Icebound Cloak
+				{ 11, 35497 }, -- Cloak of the Frigid Winds
+				{ 13, 35723 }, -- Shards of Ahune
+				{ 22, 35498 }, -- Formula: Enchant Weapon - Deathfrost
+				{ 24, 34955 }, -- Scorched Stone
+				{ 25, 35557 }, -- Huge Snowball
 			},
 		},
 	},
@@ -961,20 +960,20 @@ data["Brewfest"] = {
 				{ 6,  33862 }, -- Brewfest Regalia
 				{ 7,  33966 }, -- Brewfest Slippers
 				{ 8,  33868 }, -- Brewfest Boots
-				{ 10,  33047 }, -- Belbi's Eyesight Enhancing Romance Goggles (Alliance)
-				{ 11,  34008 }, -- Blix's Eyesight Enhancing Romance Goggles (Horde)
-				{ 13,  33016 }, -- Blue Brewfest Stein
-				{ 15,  37829 }, -- Brewfest Prize Token
-				{ 16,  33976 }, -- Brewfest Ram
-				{ 17,  33977 }, -- Swift Brewfest Ram
-				{ 19,  32233 }, -- Wolpertinger's Tankard
-				{ 21,  34028 }, -- "Honorary Brewer" Hand Stamp
-				{ 22,  37599 }, -- "Brew of the Month" Club Membership Form
-				{ 24,  33927 }, -- Brewfest Pony Keg
-				{ 26,  37750 }, -- Fresh Brewfest Hops
-				{ 27,  39477 }, -- Fresh Dwarven Brewfest Hops
-				{ 28,  39476 }, -- Fresh Goblin Brewfest Hops
-				{ 29,  37816 }, -- Preserved Brewfest Hops
+				{ 10, 33047 }, -- Belbi's Eyesight Enhancing Romance Goggles (Alliance)
+				{ 11, 34008 }, -- Blix's Eyesight Enhancing Romance Goggles (Horde)
+				{ 13, 33016 }, -- Blue Brewfest Stein
+				{ 15, 37829 }, -- Brewfest Prize Token
+				{ 16, 33976 }, -- Brewfest Ram
+				{ 17, 33977 }, -- Swift Brewfest Ram
+				{ 19, 32233 }, -- Wolpertinger's Tankard
+				{ 21, 34028 }, -- "Honorary Brewer" Hand Stamp
+				{ 22, 37599 }, -- "Brew of the Month" Club Membership Form
+				{ 24, 33927 }, -- Brewfest Pony Keg
+				{ 26, 37750 }, -- Fresh Brewfest Hops
+				{ 27, 39477 }, -- Fresh Dwarven Brewfest Hops
+				{ 28, 39476 }, -- Fresh Goblin Brewfest Hops
+				{ 29, 37816 }, -- Preserved Brewfest Hops
 			},
 		},
 		{
@@ -988,8 +987,8 @@ data["Brewfest"] = {
 				{ 7,  34021 }, -- Brewdoo Magic
 				{ 8,  34022 }, -- Stout Shrunken Head
 				{ 9,  33034 }, -- Gordok Grog
-				{ 10,  33035 }, -- Ogre Mead
-				{ 11,  33036 }, -- Mudder's Milk
+				{ 10, 33035 }, -- Ogre Mead
+				{ 11, 33036 }, -- Mudder's Milk
 
 			},
 		},
@@ -1003,10 +1002,10 @@ data["Brewfest"] = {
 				{ 5,  38288 }, -- Direbrew Hops
 				{ 6,  38289 }, -- Coren's Lucky Coin
 				{ 8,  37597 }, -- Direbrew's Shanker
-				{ 16,  33977 }, -- Swift Brewfest Ram
-				{ 17,  37828 }, -- Great Brewfest Kodo
-				{ 19,  37863 }, -- Direbrew's Remote
-				{ 21,  38280 }, -- Direbrew's Dire Brew
+				{ 16, 33977 }, -- Swift Brewfest Ram
+				{ 17, 37828 }, -- Great Brewfest Kodo
+				{ 19, 37863 }, -- Direbrew's Remote
+				{ 21, 38280 }, -- Direbrew's Dire Brew
 			},
 		},
 	},
@@ -1070,20 +1069,20 @@ data["HalloweenBC"] = {
 		{ -- SMHeadlessHorseman
 			name = C_Map_GetAreaInfo(796).." - "..AL["Headless Horseman"],
 			[NORMAL_DIFF] = {
-                { 1, 34075 }, -- Ring of Ghoulish Delight
-                { 2, 34073 }, -- The Horseman's Signet Ring
-                { 3, 34074 }, -- Witches Band
-                { 5, 33808 }, -- The Horseman's Helm
-                { 6, 38175 }, -- The Horseman's Blade
-                { 8, 33292 }, -- Hallowed Helm
-                { 10, 34068 }, -- Weighted Jack-o'-Lantern
-                { 12, 33277 }, -- Tome of Thomas Thomson
-                { 16, 37012 }, -- The Horseman's Reins
-                { 18, 33182 }, -- Swift Flying Broom        280% flying
-                { 19, 33176 }, -- Flying Broom              60% flying
-                { 21, 33184 }, -- Swift Magic Broom         100% ground
-                { 22, 37011 }, -- Magic Broom               60% ground
-                { 24, 33154 }, -- Sinister Squashling
+				{ 1,  34075 }, -- Ring of Ghoulish Delight
+				{ 2,  34073 }, -- The Horseman's Signet Ring
+				{ 3,  34074 }, -- Witches Band
+				{ 5,  33808 }, -- The Horseman's Helm
+				{ 6,  38175 }, -- The Horseman's Blade
+				{ 8,  33292 }, -- Hallowed Helm
+				{ 10, 34068 }, -- Weighted Jack-o'-Lantern
+				{ 12, 33277 }, -- Tome of Thomas Thomson
+				{ 16, 37012 }, -- The Horseman's Reins
+				{ 18, 33182 }, -- Swift Flying Broom        280% flying
+				{ 19, 33176 }, -- Flying Broom              60% flying
+				{ 21, 33184 }, -- Swift Magic Broom         100% ground
+				{ 22, 37011 }, -- Magic Broom               60% ground
+				{ 24, 33154 }, -- Sinister Squashling
 			},
 		},
 	},

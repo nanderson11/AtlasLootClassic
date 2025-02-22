@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.2.7 - February 22, 2025
+### Changed
+- Changed content phase indicators to default to on, to make it clearer to new users that some items are there for reference and won't drop until future phases. If you don't want content phase indicators displayed, they can be turned off again in AtlasLoot options.
+
 ## 3.2.6 - February 11, 2025
 ### Fixed
 - Moved 14 items to their correct pre-Phase 5 drop locations, including Hand of Justice

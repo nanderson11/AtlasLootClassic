@@ -5,14 +5,12 @@ AtlasLoot.TooltipScan = TooltipScan
 
 -- lua
 local match, find = string.match, string.find
-local pairs, tab_remove = pairs, table.remove
 
 -- WoW
 local GetSpellLink = GetSpellLink
-local C_Timer_After = C_Timer.After
 
 local cache = {}
-setmetatable(cache, {__mode = "kv"})
+setmetatable(cache, { __mode = "kv" })
 
 local AtlasLootScanTooltip = CreateFrame("GAMETOOLTIP", "AtlasLootScanTooltip", nil, "GameTooltipTemplate")
 AtlasLootScanTooltip:SetOwner(UIParent, "ANCHOR_NONE")
@@ -36,7 +34,7 @@ function TooltipScan.GetTradeskillLink(tradeskillID)
 		TradeskillLink = GetSpellLink(tradeskillID)
 	end
 	AtlasLootScanTooltip:Hide()
-	cache[tradeskillID] = {TradeskillLink, TradeskillName}
+	cache[tradeskillID] = { TradeskillLink, TradeskillName }
 	return TradeskillLink, TradeskillName
 end
 
@@ -46,18 +44,17 @@ local AtlasLootQueryTooltip = CreateFrame("GAMETOOLTIP", "AtlasLootQueryTooltip"
 AtlasLootQueryTooltip:SetOwner(UIParent, "ANCHOR_TOP")
 
 local queryList = {}
-local queryListByID = {}
-local queryCacheMT = {__mode = "kv"}
+local queryCacheMT = { __mode = "kv" }
 local queryCache = { "quest" }
 for i = 1, #queryCache do
-	queryCache[ queryCache[i] ] = setmetatable({}, queryCacheMT)
+	queryCache[queryCache[i]] = setmetatable({}, queryCacheMT)
 end
 
 local function SetNextQuery()
 	if AtlasLootQueryTooltip.curQuery then return end
 	local nextQuery = next(queryList)
 	if nextQuery then
-		queryList[ nextQuery ] = nil
+		queryList[nextQuery] = nil
 		nextQuery[1](nextQuery[2], nextQuery[3], nextQuery[4], nextQuery)
 	end
 end
@@ -72,7 +69,7 @@ local function OnTooltipSetQuest(self)
 	--self:SetScript("OnTooltipSetQuest", nil)
 	self:Hide()
 	-- give the query a little bit time and it works perfect for more than 1 query :)
-	C_Timer_After(0.05, SetNextQuery)
+	C_Timer.After(0.05, SetNextQuery)
 end
 AtlasLootQueryTooltip:SetScript("OnTooltipSetQuest", OnTooltipSetQuest)
 
@@ -80,7 +77,7 @@ AtlasLootQueryTooltip:SetScript("OnTooltipSetQuest", OnTooltipSetQuest)
 function TooltipScan.GetQuestName(questID, onGetFunc, arg1, preSetQuery)
 	if not questID then return end
 	if queryCache.quest[questID] then
-		onGetFunc( queryCache.quest[questID], arg1 )
+		onGetFunc(queryCache.quest[questID], arg1)
 		--AtlasLootQueryTooltip:SetScript("OnTooltipSetQuest", nil)
 		AtlasLootQueryTooltip.onGetFunc = nil
 		AtlasLootQueryTooltip.questID = nil
@@ -90,7 +87,7 @@ function TooltipScan.GetQuestName(questID, onGetFunc, arg1, preSetQuery)
 		SetNextQuery()
 		return
 	end
-	preSetQuery = preSetQuery or {TooltipScan.GetQuestName, questID, onGetFunc, arg1}
+	preSetQuery = preSetQuery or { TooltipScan.GetQuestName, questID, onGetFunc, arg1 }
 	if AtlasLootQueryTooltip.onGetFunc then
 		queryList[preSetQuery] = true
 		return preSetQuery
