@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.2.9 - April 3, 2025
+### Changed
+- Moved Arathi Basin to phase 3
+### Fixed
+- Modified the update checker so that it doesn't detect other forks of AtlasLoot Classic as "updates" to this one
+
 ## 3.2.8 - March 20, 2025
 ### Changed
 - Updated content phase to 3 (Arathi Basin still says phase 4, but I'll move it to phase 3 on April 3rd)

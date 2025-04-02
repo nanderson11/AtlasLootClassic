@@ -267,52 +267,52 @@ data["WarsongGulch"] = {
 			[ALLIANCE_DIFF] = {
 				{ 1,  "f890rep8" },
 				{ 2,  "INV_Box_01", nil, "40 - 49", nil }, -- WSGRepExalted4049
-				{ 3,  19597 },                -- Dryad's Wrist Bindings
-				{ 4,  19590 },                -- Forest Stalker's Bracers
-				{ 5,  19584 },                -- Windtalker's Wristguards
-				{ 6,  19581 },                -- Berserker Bracers
+				{ 3,  19597 },                 -- Dryad's Wrist Bindings
+				{ 4,  19590 },                 -- Forest Stalker's Bracers
+				{ 5,  19584 },                 -- Windtalker's Wristguards
+				{ 6,  19581 },                 -- Berserker Bracers
 				{ 8,  "INV_Box_01", nil, "50 - 59", nil }, -- WSGRepExalted5059
-				{ 9,  19596 },                -- Dryad's Wrist Bindings
-				{ 10, 19589 },                -- Forest Stalker's Bracers
-				{ 11, 19583 },                -- Windtalker's Wristguards
-				{ 12, 19580 },                -- Berserker Bracers
+				{ 9,  19596 },                 -- Dryad's Wrist Bindings
+				{ 10, 19589 },                 -- Forest Stalker's Bracers
+				{ 11, 19583 },                 -- Windtalker's Wristguards
+				{ 12, 19580 },                 -- Berserker Bracers
 				{ 17, "INV_Box_01", nil, "60",      nil }, -- WSGRepExalted60
-				{ 18, 19595 },                -- Dryad's Wrist Bindings
-				{ 19, 19587 },                -- Forest Stalker's Bracers
-				{ 20, 19582 },                -- Windtalker's Wristguards
-				{ 21, 19578 },                -- Berserker Bracers
-				{ 22, 22752 },                -- Sentinel's Silk Leggings
-				{ 23, 22749 },                -- Sentinel's Leather Pants
-				{ 24, 22750 },                -- Sentinel's Lizardhide Pants
-				{ 25, 22748 },                -- Sentinel's Chain Leggings
-				{ 26, 22753 },                -- Sentinel's Lamellar Legguards
-				{ 27, 22672 },                -- Sentinel's Plate Legguards
-				{ 28, 19506 },                -- Silverwing Battle Tabard
+				{ 18, 19595 },                 -- Dryad's Wrist Bindings
+				{ 19, 19587 },                 -- Forest Stalker's Bracers
+				{ 20, 19582 },                 -- Windtalker's Wristguards
+				{ 21, 19578 },                 -- Berserker Bracers
+				{ 22, 22752 },                 -- Sentinel's Silk Leggings
+				{ 23, 22749 },                 -- Sentinel's Leather Pants
+				{ 24, 22750 },                 -- Sentinel's Lizardhide Pants
+				{ 25, 22748 },                 -- Sentinel's Chain Leggings
+				{ 26, 22753 },                 -- Sentinel's Lamellar Legguards
+				{ 27, 22672 },                 -- Sentinel's Plate Legguards
+				{ 28, 19506 },                 -- Silverwing Battle Tabard
 			},
 			[HORDE_DIFF] = {
 				{ 1,  "f889rep8" },
 				{ 2,  "INV_Box_01", nil, "40 - 49", nil }, -- WSGRepExalted4049
-				{ 3,  19597 },                -- Dryad's Wrist Bindings
-				{ 4,  19590 },                -- Forest Stalker's Bracers
-				{ 5,  19584 },                -- Windtalker's Wristguards
-				{ 6,  19581 },                -- Berserker Bracers
+				{ 3,  19597 },                 -- Dryad's Wrist Bindings
+				{ 4,  19590 },                 -- Forest Stalker's Bracers
+				{ 5,  19584 },                 -- Windtalker's Wristguards
+				{ 6,  19581 },                 -- Berserker Bracers
 				{ 8,  "INV_Box_01", nil, "50 - 59", nil }, -- WSGRepExalted5059
-				{ 9,  19596 },                -- Dryad's Wrist Bindings
-				{ 10, 19589 },                -- Forest Stalker's Bracers
-				{ 11, 19583 },                -- Windtalker's Wristguards
-				{ 12, 19580 },                -- Berserker Bracers
+				{ 9,  19596 },                 -- Dryad's Wrist Bindings
+				{ 10, 19589 },                 -- Forest Stalker's Bracers
+				{ 11, 19583 },                 -- Windtalker's Wristguards
+				{ 12, 19580 },                 -- Berserker Bracers
 				{ 17, "INV_Box_01", nil, "60",      nil }, -- WSGRepExalted60
-				{ 18, 19595 },                -- Dryad's Wrist Bindings
-				{ 19, 19587 },                -- Forest Stalker's Bracers
-				{ 20, 19582 },                -- Windtalker's Wristguards
-				{ 21, 19578 },                -- Berserker Bracers
-				{ 22, 22747 },                -- Outrider's Silk Leggings
-				{ 23, 22740 },                -- Outrider's Leather Pants
-				{ 24, 22741 },                -- Outrider's Lizardhide Pants
-				{ 25, 22673 },                -- Outrider's Chain Leggings
-				{ 26, 22676 },                -- Outrider's Mail Leggings
-				{ 27, 22651 },                -- Outrider's Plate Legguards
-				{ 28, 19505 },                -- Warsong Battle Tabard
+				{ 18, 19595 },                 -- Dryad's Wrist Bindings
+				{ 19, 19587 },                 -- Forest Stalker's Bracers
+				{ 20, 19582 },                 -- Windtalker's Wristguards
+				{ 21, 19578 },                 -- Berserker Bracers
+				{ 22, 22747 },                 -- Outrider's Silk Leggings
+				{ 23, 22740 },                 -- Outrider's Leather Pants
+				{ 24, 22741 },                 -- Outrider's Lizardhide Pants
+				{ 25, 22673 },                 -- Outrider's Chain Leggings
+				{ 26, 22676 },                 -- Outrider's Mail Leggings
+				{ 27, 22651 },                 -- Outrider's Plate Legguards
+				{ 28, 19505 },                 -- Warsong Battle Tabard
 			},
 		},
 		{ -- WSGRepRevered
@@ -489,9 +489,9 @@ data["ArathiBasin"] = {
 	AtlasMapID = "ArathiBasin",
 	ContentType = PVP_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
-	ContentPhase = 4,
+	ContentPhase = 3,
 	items = {
-		{ -- ABRepRevered
+		{ -- ABRepExalted
 			name = _G["FACTION_STANDING_LABEL8"],
 			[ALLIANCE_DIFF] = {
 				{ 1,  "f509rep8" },
