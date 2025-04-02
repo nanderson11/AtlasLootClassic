@@ -139,4 +139,4 @@ ALPrivate.LOC_CLASSES = {}
 ---@diagnostic disable-next-line: deprecated
 FillLocalizedClassList(ALPrivate.LOC_CLASSES)
 
-ALPrivate.ADDON_MSG_PREFIX = "ATLASLOOT_MSG"
+ALPrivate.ADDON_MSG_PREFIX = "ATLASLOOT_F_MSG"
