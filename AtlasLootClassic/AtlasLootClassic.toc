@@ -1,4 +1,4 @@
-﻿## Interface: 11506
+﻿## Interface: 11507
 
 ## Title: AtlasLootClassic |cFF22B14C[Core]|r
 ## Title-deDE: AtlasLootClassic |cFF22B14C[Kern]|r

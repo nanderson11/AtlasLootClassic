@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.2.10 - April 8, 2025
+### Changed
+- Update TOC to 1.15.7
+
 ## 3.2.9 - April 3, 2025
 ### Changed
 - Moved Arathi Basin to phase 3
