@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.2.11 - May 2, 2025
+### Changed
+- Anniversary: Updated to content phase 4
+
 ## 3.2.10 - April 8, 2025
 ### Changed
 - Update TOC to 1.15.7
