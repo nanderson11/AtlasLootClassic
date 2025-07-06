@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.2.12 - July 10, 2025
+### Changed
+- Anniversary: Updated to content phase 5 (this includes moving things like Hand of Justice to their phase 5 drop locations)
+
 ## 3.2.11 - May 2, 2025
 ### Changed
 - Anniversary: Updated to content phase 4

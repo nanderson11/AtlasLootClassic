@@ -7024,7 +7024,7 @@ data["Naxxramas"] = {
 if (AtlasLoot:GameVersion_EQ(AtlasLoot.CLASSIC_VERSION_NUM) and AtlasLoot.Data.ContentPhase:GetActivePhase() < 5) then
 	data["BlackrockDepths"]["items"][2][NORMAL_DIFF][1] = { 1, 11623 }; -- Replace Blackveil Cape with Spritecaster Cape on High Interrogator
 	data["BlackrockDepths"]["items"][3][NORMAL_DIFF][1] = { 1, 11626 }; -- Replace Spritecaster Cape with Blackveil Cape on Houndmaster
-	-- Add Save Gladiator Helm, Grips, Leggings and Greaves to Gorosh
+	-- Add Savage Gladiator Helm, Grips, Leggings and Greaves to Gorosh
 	data["BlackrockDepths"]["items"][4][NORMAL_DIFF] = {
 		{ 1, 11726 },                                                 -- Savage Gladiator Chain
 		{ 2, 11729 },                                                 -- Savage Gladiator Helm
