@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.2.13 - August 10, 2025
+### Fixed
+- Moved Idol of Brutality and Idol of the Moon from Phase 6 to Phase 5
+- Moved Libram of Divinity and Libram of Fervor from Phase 6 to Phase 5
+- Moved Totem of Sustaining and Totem of the Storm from Phase 6 to Phase 5
+
 ## 3.2.12 - July 10, 2025
 ### Changed
 - Anniversary: Updated to content phase 5 (this includes moving things like Hand of Justice to their phase 5 drop locations)
