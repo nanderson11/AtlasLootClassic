@@ -30,9 +30,9 @@ local ACClickHandler = ClickHandler:Add(
 		},
 	},
 	{
-		{ "ChatLink", 	    AL["Chat Link"], 	        	AL["Add achievement into chat"] },
-		{ "WoWHeadLink", 	AL["Show WowHead link"], 		AL["Shows a copyable link for WoWHead"] },
-		{ "GoTo",			AL["Open Achievement frame"],	AL["Open Achievement frame"] },
+		{ "ChatLink",    AL["Chat Link"],              AL["Add achievement into chat"] },
+		{ "WoWHeadLink", AL["Show WowHead link"],      AL["Shows a copyable link for WoWHead"] },
+		{ "GoTo",        AL["Open Achievement frame"], AL["Open Achievement frame"] },
 	}
 )
 
@@ -40,10 +40,10 @@ function AC.OnSet(button, second)
 	if not button then return end
 
 	if second and button.__atlaslootinfo.secType then
-        button.secButton.AcID = button.__atlaslootinfo.secType[2]
+		button.secButton.AcID = button.__atlaslootinfo.secType[2]
 		AC.Refresh(button.secButton)
 	else
-        button.AcID = button.__atlaslootinfo.type[2]
+		button.AcID = button.__atlaslootinfo.type[2]
 		AC.Refresh(button)
 	end
 end
@@ -53,8 +53,8 @@ function AC.OnMouseAction(button, mouseButton)
 	mouseButton = ACClickHandler:Get(mouseButton)
 	if mouseButton == "WoWHeadLink" then
 		AtlasLoot.Button:OpenWoWHeadLink(button, "achievement", button.AcID)
-    elseif mouseButton == "ChatLink" then
-        AtlasLoot.Button:AddChatLink(GetAchievementLink(button.AcID) or "achievement:"..button.AcID)
+	elseif mouseButton == "ChatLink" then
+		AtlasLoot.Button:AddChatLink(GetAchievementLink(button.AcID) or ("achievement:"..button.AcID))
 	elseif mouseButton == "GoTo" then
 		if not C_AddOns.IsAddOnLoaded("Blizzard_AchievementUI") then
 			C_AddOns.LoadAddOn("Blizzard_AchievementUI")
@@ -97,7 +97,7 @@ function AC.OnClear(button)
 end
 
 function AC.GetStringContent(str)
-    return tonumber(str)
+	return tonumber(str)
 end
 
 -- UI-Achievement-IconFrame
@@ -129,4 +129,3 @@ end
 function AC.ShowToolTipFrame(button)
 
 end
-

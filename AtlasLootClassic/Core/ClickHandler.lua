@@ -31,15 +31,15 @@ local IsShiftKeyDown, IsLeftShiftKeyDown, IsRightShiftKeyDown = _G.IsShiftKeyDow
 
 local MOUSE_BUTTON_LOC = nil
 local MODIFIER_LOC = {
-	{ "Alt", 		_G["ALT_KEY_TEXT"] },
-	{ "LeftAlt",	_G["LALT_KEY_TEXT"] },
-	{ "RightAlt",	_G["RALT_KEY_TEXT"] },
-	{ "Ctrl",		_G["CTRL_KEY_TEXT"] },
-	{ "LeftCtrl",	_G["LCTRL_KEY_TEXT"] },
-	{ "RightCtrl",	_G["RCTRL_KEY_TEXT"] },
-	{ "Shift",		_G["SHIFT_KEY_TEXT"] },
-	{ "LeftShift",	_G["LSHIFT_KEY_TEXT"] },
-	{ "RightShift",	_G["RSHIFT_KEY_TEXT"] },
+	{ "Alt",        _G["ALT_KEY_TEXT"] },
+	{ "LeftAlt",    _G["LALT_KEY_TEXT"] },
+	{ "RightAlt",   _G["RALT_KEY_TEXT"] },
+	{ "Ctrl",       _G["CTRL_KEY_TEXT"] },
+	{ "LeftCtrl",   _G["LCTRL_KEY_TEXT"] },
+	{ "RightCtrl",  _G["RCTRL_KEY_TEXT"] },
+	{ "Shift",      _G["SHIFT_KEY_TEXT"] },
+	{ "LeftShift",  _G["LSHIFT_KEY_TEXT"] },
+	{ "RightShift", _G["RSHIFT_KEY_TEXT"] },
 }
 local HandlerRegister = {}
 
@@ -68,7 +68,7 @@ function ClickHandler:Add(name, dbDefault, types)
 		defaults = dbDefault
 	}
 
-	setmetatable(handler, {__index = Proto})
+	setmetatable(handler, { __index = Proto })
 	HandlerRegister[name] = handler
 
 	return handler
@@ -90,9 +90,9 @@ function ClickHandler:GetLocMouseButtons()
 			["Button2"] = "RightButton",
 			["Button3"] = "MiddleButton",
 		}
-		for i=1,100 do
+		for i = 1, 100 do
 			if _G["KEY_BUTTON"..i] then
-				MOUSE_BUTTON_LOC[#MOUSE_BUTTON_LOC + 1] = { preSet["Button"..i] or "Button"..i, _G["KEY_BUTTON"..i] }
+				MOUSE_BUTTON_LOC[#MOUSE_BUTTON_LOC + 1] = { preSet["Button"..i] or ("Button"..i), _G["KEY_BUTTON"..i] }
 			else
 				break
 			end
@@ -155,7 +155,7 @@ function Proto:Update()
 
 	local handler = {}
 
-	for k,v in pairs(db) do
+	for k, v in pairs(db) do
 		if k ~= "types" then
 			if v[1] and not handler[v[1]] then
 				handler[v[1]] = {}

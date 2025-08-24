@@ -367,7 +367,7 @@ function Faction.ShowToolTipFrame(button)
 	local factionStandingtext
 	barMin, barMax, barValue = barMin or 0, barMax or 1, barValue or 0
 	factionStandingtext = GetLocRepStanding(standingID)
-	name = name or "Faction "..button.FactionID
+	name = name or ("Faction "..button.FactionID)
 	if button.RepID and name then
 		name = format("%s (%s)", name, GetLocRepStanding(button.RepID))
 	end

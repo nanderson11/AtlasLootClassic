@@ -8,7 +8,7 @@ local format = string.format
 -- WoW
 local function C_Map_GetAreaInfo(id)
 	local d = C_Map.GetAreaInfo(id)
-	return d or "GetAreaInfo"..id
+	return d or ("GetAreaInfo"..id)
 end
 
 -- ----------------------------------------------------------------------------
@@ -296,7 +296,7 @@ data["TierSets"] = {
 			name = format(AL["Tier %s Sets"], "9"),
 			CoinTexture = "WRATH",
 			[NORMAL_DIFF] = AtlasLoot:GetRetByFaction(
-				{       -- horde
+				{     -- horde
 					{ 1,  3000845 }, -- Warlock
 					{ 3,  3000848 }, -- Priest / Heal
 					{ 4,  3000850 }, -- Priest / Shadow
@@ -317,7 +317,7 @@ data["TierSets"] = {
 					{ 27, 3000880 }, -- Paladin / Prot
 					{ 28, 3000878 }, -- Paladin / DD
 				},
-				{       -- alli
+				{     -- alli
 					{ 1,  3000846 }, -- Warlock
 					{ 3,  3000847 }, -- Priest / Heal
 					{ 4,  3000849 }, -- Priest / Shadow
@@ -340,7 +340,7 @@ data["TierSets"] = {
 				}
 			),
 			[RAID25_DIFF] = AtlasLoot:GetRetByFaction(
-				{       -- horde
+				{     -- horde
 					{ 1,  3250845 }, -- Warlock
 					{ 3,  3250848 }, -- Priest / Heal
 					{ 4,  3250850 }, -- Priest / Shadow
@@ -361,7 +361,7 @@ data["TierSets"] = {
 					{ 27, 3250880 }, -- Paladin / Prot
 					{ 28, 3250878 }, -- Paladin / DD
 				},
-				{       -- alli
+				{     -- alli
 					{ 1,  3250846 }, -- Warlock
 					{ 3,  3250847 }, -- Priest / Heal
 					{ 4,  3250849 }, -- Priest / Shadow
@@ -384,7 +384,7 @@ data["TierSets"] = {
 				}
 			),
 			[RAID25H_DIFF] = AtlasLoot:GetRetByFaction(
-				{       -- horde
+				{     -- horde
 					{ 1,  3251845 }, -- Warlock
 					{ 3,  3251848 }, -- Priest / Heal
 					{ 4,  3251850 }, -- Priest / Shadow
@@ -405,7 +405,7 @@ data["TierSets"] = {
 					{ 27, 3251880 }, -- Paladin / Prot
 					{ 28, 3251878 }, -- Paladin / DD
 				},
-				{       -- alli
+				{     -- alli
 					{ 1,  3251846 }, -- Warlock
 					{ 3,  3251847 }, -- Priest / Heal
 					{ 4,  3251849 }, -- Priest / Shadow
@@ -894,7 +894,7 @@ data["Mounts"] = {
 				{ 6, GetForVersion(18242, 29471) }, -- Reins of the Black War Tiger
 			},
 			[HORDE_DIFF] = {
-				{ 1, 19029 },          -- Horn of the Frostwolf Howler
+				{ 1, 19029 },           -- Horn of the Frostwolf Howler
 				{ 3, GetForVersion(18245, 29469) }, -- Horn of the Black War Wolf
 				{ 4, GetForVersion(18247, 29466) }, -- Black War Kodo
 				{ 5, GetForVersion(18246, 29472) }, -- Whistle of the Black War Raptor

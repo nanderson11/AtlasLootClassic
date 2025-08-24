@@ -12,7 +12,7 @@
 		"utf8": "disable"
 	},
 	"Lua.workspace.library": [
-		"~\\.vscode\\extensions\\ketho.wow-api-0.20.8\\Annotations\\Core"
+		"~\\.vscode\\extensions\\ketho.wow-api-0.21.0\\Annotations\\Core"
 	],
 	"Lua.workspace.ignoreDir": [
 		"AtlasLootClassic_Options/Libs",
@@ -146,7 +146,14 @@
 		"WorldMapTitleButton",
 		"GetFactionInfoByID",
 		"LOCALIZED_CLASS_NAMES_FEMALE",
-		"LOCALIZED_CLASS_NAMES_MALE"
+		"LOCALIZED_CLASS_NAMES_MALE",
+		"C_Seasons",
+		"FillLocalizedClassList",
+		"Atlas",
+		"ATLAS_DROPDOWNS",
+		"AtlasFrameDropDownType_OnShow",
+		"AtlasFrameDropDown_OnShow",
+		"Atlas_Refresh"
 	],
 	"Lua.diagnostics.disable": [
 		"need-check-nil"
