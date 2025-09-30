@@ -297,7 +297,7 @@ local function AtlasMapButton_OnClick(self, button)
 	if (AtlasLoot.AtlasIntegration.IsEnabled()) then
 		if (button == "RightButton") then
 			if (AtlasFrameSmall:IsVisible()) then
-				HideUIPanel(AtlasFrameSmall)
+				AtlasFrameSmall:Hide();
 			end
 		else
 			if (self.AtlasMapID) then

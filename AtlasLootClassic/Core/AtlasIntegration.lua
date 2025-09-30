@@ -5,7 +5,7 @@
 local _G = getfenv(0)
 local pairs, select = _G.pairs, _G.select
 -- WoW
-local GetAddOnInfo, GetAddOnEnableState, UnitName =C_AddOns.GetAddOnInfo, C_AddOns.GetAddOnEnableState, _G.UnitName
+local GetAddOnInfo, GetAddOnEnableState, UnitName = C_AddOns.GetAddOnInfo, C_AddOns.GetAddOnEnableState, _G.UnitName
 
 -- ----------------------------------------------------------------------------
 -- AddOn namespace.
@@ -57,14 +57,14 @@ function AtlasIntegration.ShowMap(mapID)
 
 	AtlasIntegration.GetAtlasZoneData(mapID, true)
 
-	if ( AtlasFrameLarge:IsVisible() ) then
-		HideUIPanel(AtlasFrameLarge)
+	if (AtlasFrameLarge:IsVisible()) then
+		AtlasFrameLarge:Hide();
 	end
-	if ( AtlasFrame:IsVisible() ) then
-		HideUIPanel(AtlasFrame)
+	if (AtlasFrame:IsVisible()) then
+		AtlasFrame:Hide();
 	end
-	if (not AtlasFrameSmall:IsVisible() ) then
-		ShowUIPanel(AtlasFrameSmall)
+	if (not AtlasFrameSmall:IsVisible()) then
+		AtlasFrameSmall:Show();
 	end
 	AtlasFrameDropDownType_OnShow()
 	AtlasFrameDropDown_OnShow()
