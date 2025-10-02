@@ -6,10 +6,10 @@ AtlasLoot.Data.ContentPhase = ContentPhase
 local AL = AtlasLoot.Locales
 local IMAGE_PATH = ALPrivate.IMAGE_PATH
 local ACTIVE_PHASE_LIST = {
-	[0]                             = 99,                                                                               -- dummy
-	[AtlasLoot.CLASSIC_VERSION_NUM] = (C_Seasons.GetActiveSeason() == 11 or C_Seasons.GetActiveSeason() == 12) and 5 or 6, -- classic
-	[AtlasLoot.BC_VERSION_NUM]      = 1,                                                                                -- bc
-	[AtlasLoot.WRATH_VERSION_NUM]   = 1,                                                                                -- wrath
+	[0]                             = 99, -- dummy
+	[AtlasLoot.CLASSIC_VERSION_NUM] = 6, -- classic
+	[AtlasLoot.BC_VERSION_NUM]      = 1, -- bc
+	[AtlasLoot.WRATH_VERSION_NUM]   = 1, -- wrath
 }
 local ACTIVE_PHASE = ACTIVE_PHASE_LIST[AtlasLoot:GetGameVersion()] or ACTIVE_PHASE_LIST[1]
 

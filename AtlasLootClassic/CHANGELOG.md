@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.2.14 - October 2, 2025
+### Changed
+- Anniversary: Updated to content phase 6
+
 ## 3.2.13 - August 10, 2025
 ### Fixed
 - Moved Idol of Brutality and Idol of the Moon from Phase 6 to Phase 5
