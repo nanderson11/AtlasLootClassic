@@ -2285,7 +2285,7 @@ data["TheTempleOfAtal'Hakkar"] = {
 	AtlasMapFile_AL = { "TheSunkenTemple", "TheSunkenTempleEnt" },
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
-	LevelRange = GetForVersion({ 45, 50, 60 }, { 35, 47, 50 }),
+	LevelRange = GetForVersion({ 35, 50, 60 }, { 35, 47, 50 }),
 	items = {
 		{ -- STBalconyMinibosses
 			name = AL["Balcony Minibosses"],
