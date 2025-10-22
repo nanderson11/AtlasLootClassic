@@ -1,6 +1,8 @@
 # Changelog
 
-## 3.2.15 -
+## 3.2.15 - October 22, 2025
+### Changed
+- Update TOC to 1.15.8
 ### Fixed
 - Changed the minimum level of Sunken Temple to 35 (if anyone can show that a character between 35 and 45 can't enter ST in pre-TBC WoW, please let me know)
 
