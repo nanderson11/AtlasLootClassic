@@ -31,8 +31,4 @@
 ## X-Category: Map
 ## X-License: GPL v2
 
-core.lua
-
-locales.lua
-items.lua
 source.lua
