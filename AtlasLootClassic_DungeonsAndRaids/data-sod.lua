@@ -97,6 +97,57 @@ local KEYS = {                                                            -- Key
 	},
 }
 
+local BFD_SET = {
+	name = AL["Level 25 Raid"],
+	ExtraList = true,
+	TableType = SET_ITTYPE,
+	[NORMAL_DIFF] = {
+		{ 1, 1570 }, -- Twilight Invoker's Vestments
+		{ 3, 1578 }, -- Twilight Slayer's Leather
+		{ 4, 1579 }, -- Twilight Elementalist's Hide
+		{ 6, 1577 }, -- Twilight Avenger's Mail
+	},
+}
+
+local GNOMEREGAN_SET = {
+	name = AL["Level 40 Raid"],
+	ExtraList = true,
+	TableType = SET_ITTYPE,
+	[NORMAL_DIFF] = {
+		{ 1,  1584 },
+		{ 2,  1587 },
+		{ 3,  1588 },
+		{ 5,  1585 },
+		{ 6,  1586 },
+		{ 8,  1590 },
+		{ 9,  1591 },
+		{ 11, 1589 },
+		{ 12, 1592 },
+	},
+}
+
+local ST_SET = {
+	name = AL["Level 50 Raid"],
+	ExtraList = true,
+	TableType = SET_ITTYPE,
+	[NORMAL_DIFF] = {
+		{ 1,  1637 },
+		{ 2,  1638 },
+		{ 3,  1639 },
+		{ 5,  1640 },
+		{ 6,  1641 },
+		{ 7,  1642 },
+		{ 8,  1643 },
+		{ 10, 1644 },
+		{ 11, 1645 },
+		{ 12, 1646 },
+		{ 13, 1647 },
+		{ 16, 1648 },
+		{ 17, 1649 },
+		{ 18, 1650 },
+	},
+}
+
 local T1_SET = {
 	name = format(AL["Tier %s Sets"], "1"),
 	ExtraList = true,
@@ -104,20 +155,32 @@ local T1_SET = {
 	TableType = SET_ITTYPE,
 	IgnoreAsSource = true,
 	[ALLIANCE_DIFF] = {
-		{ 1,  203 }, -- Warlock
-		{ 3,  202 }, -- Priest
-		{ 16, 201 }, -- Mage
-		{ 5,  204 }, -- Rogue
-		{ 20, 205 }, -- Druid
-		{ 7,  206 }, -- Hunter
-		{ 9,  209 }, -- Warrior
-		{ 24, 208 }, -- Paladin
+		{ 1,  1698 }, --Balance Druid
+		{ 2,  1699 }, --Feral Druid
+		{ 3,  1701 }, --Tank Druid
+		{ 4,  1700 }, --Resto Druid
+		{ 6,  1702 }, --Ranged Hunter
+		{ 7,  1703 }, --Melee Hunter
+		{ 9,  1704 }, --Damage Mage
+		{ 10, 1705 }, --Healer Mage
+		{ 12, 1706 }, -- Holy Pally
+		{ 13, 1707 }, -- Ret Pally
+		{ 14, 1708 }, -- Tank Pally
+		{ 16, 1709 }, -- Healer Priest
+		{ 17, 1710 }, -- DPS Priest
+		{ 19, 1711 }, -- DPS Rogue
+		{ 20, 1712 }, -- Tank Rogue
+		{ 22, 1717 }, -- DPS Lock
+		{ 23, 1718 }, -- Tank Lock
+		{ 25, 1719 }, -- Tank Warr
+		{ 26, 1720 }, -- Dps Warr
 	},
-
 	[HORDE_DIFF] = {
 		GetItemsFromDiff = ALLIANCE_DIFF,
-		{ 22, 207 }, -- Shaman
-		{ 24 }, -- Paladin
+		{ 12, 1713 }, -- Healer Sham
+		{ 13, 1715 }, -- Melee Sham
+		{ 14, 1714 }, -- Ranged Sham
+		{ 15, 1716 }, -- Tank Sham
 	},
 }
 
@@ -129,20 +192,32 @@ local T2_SET = {
 	ContentPhase = 3,
 	IgnoreAsSource = true,
 	[ALLIANCE_DIFF] = {
-		{ 1,  212 }, -- Warlock
-		{ 3,  211 }, -- Priest
-		{ 16, 210 }, -- Mage
-		{ 5,  213 }, -- Rogue
-		{ 20, 214 }, -- Druid
-		{ 7,  215 }, -- Hunter
-		{ 9,  218 }, -- Warrior
-		{ 24, 217 }, -- Paladin
+		{ 1,  1801 }, --Balance Druid
+		{ 2,  1803 }, --Feral Druid
+		{ 3,  1804 }, --Tank Druid
+		{ 4,  1802 }, --Resto Druid
+		{ 6,  1805 }, --Ranged Hunter
+		{ 7,  1806 }, --Melee Hunter
+		{ 9,  1807 }, --Damage Mage
+		{ 10, 1808 }, --Healer Mage
+		{ 12, 1809 }, -- Holy Pally
+		{ 13, 1810 }, -- Ret Pally
+		{ 14, 1811 }, -- Tank Pally -
+		{ 16, 1812 }, -- Healer Priest
+		{ 17, 1813 }, -- DPS Priest -
+		{ 19, 1814 }, -- DPS Rogue
+		{ 20, 1815 }, -- Tank Rogue -
+		{ 22, 1820 }, -- DPS Lock
+		{ 23, 1821 }, -- Tank Lock
+		{ 25, 1822 }, -- Tank Warr
+		{ 26, 1823 }, -- Dps Warr
 	},
-
 	[HORDE_DIFF] = {
 		GetItemsFromDiff = ALLIANCE_DIFF,
-		{ 22, 216 }, -- Shaman
-		{ 24 }, -- Paladin
+		{ 12, 1816 }, -- Healer Sham
+		{ 13, 1818 }, -- Melee Sham
+		{ 14, 1817 }, -- Ranged Sham
+		{ 15, 1819 }, -- Tank Sham
 	},
 }
 
@@ -154,20 +229,70 @@ local T3_SET = {
 	ContentPhase = 6,
 	IgnoreAsSource = true,
 	[ALLIANCE_DIFF] = {
-		{ 1,  529 }, -- Warlock
-		{ 3,  525 }, -- Priest
-		{ 16, 526 }, -- Mage
-		{ 5,  524 }, -- Rogue
-		{ 20, 521 }, -- Druid
-		{ 7,  530 }, -- Hunter
-		{ 9,  523 }, -- Warrior
-		{ 24, 528 }, -- Paladin
+		{ 1,  1904 }, -- Druid Balance
+		{ 2,  1903 }, -- Druid Feral
+		{ 3,  1902 }, -- Druid Resto
+		{ 4,  1901 }, -- Druid Tank
+		{ 6,  1899 }, -- Hunter (Ranged)
+		{ 7,  1900 }, -- Hunter (Melee)
+		{ 9,  1898 }, -- Mage (DPS)
+		{ 10, 1897 }, -- Mage (Healer)
+		{ 12, 1896 }, -- Paladin (DPS)
+		{ 13, 1895 }, -- Paladin (Healer)
+		{ 14, 1894 }, -- Paladin (Tank)
+		{ 16, 1893 }, -- Priest (DPS)
+		{ 17, 1892 }, -- Priest (Healer)
+		{ 19, 1891 }, -- Rogue (DPS)
+		{ 20, 1890 }, -- Rogue (Tank)
+		{ 22, 1885 }, -- Warlock (DPS)
+		{ 23, 1884 }, -- Warlock (Tank)
+		{ 25, 1883 }, -- Warrior (DPS)
+		{ 26, 1882 }, -- Warrior (Tank)
 	},
-
 	[HORDE_DIFF] = {
 		GetItemsFromDiff = ALLIANCE_DIFF,
-		{ 22, 527 }, -- Shaman
-		{ 24 }, -- Paladin
+		{ 12, 1889 }, -- Shaman (Ele)
+		{ 13, 1888 }, -- Shaman (Enhance)
+		{ 14, 1887 }, -- Shaman (Resto)
+		{ 15, 1886 }, -- Shaman (Tank)
+	},
+}
+
+local T3_5_SET = {
+	name = format(AL["Tier %s Sets"], "3.5"),
+	ExtraList = true,
+	LoadDifficulty = LOAD_DIFF,
+	TableType = SET_ITTYPE,
+	ContentPhase = 6,
+	IgnoreAsSource = true,
+	[ALLIANCE_DIFF] = {
+		{ 1,  1945 }, -- Druid
+		{ 2,  1946 }, -- Druid
+		{ 3,  1947 }, -- Druid
+		{ 4,  1948 }, -- Druid
+		{ 6,  1936 }, -- Hunter
+		{ 7,  1937 }, -- Hunter
+		{ 9,  1943 }, -- Mage
+		{ 10, 1944 }, -- Mage
+		{ 12, 1940 }, -- Paladin
+		{ 13, 1941 }, -- Paladin
+		{ 14, 1942 }, -- Paladin
+		{ 15, 1963 }, -- Paladin
+		{ 16, 1938 }, -- Priest
+		{ 17, 1939 }, -- Priest
+		{ 19, 1934 }, -- Rogue
+		{ 20, 1935 }, -- Rogue
+		{ 22, 1953 }, -- Warlock
+		{ 23, 1954 }, -- Warlock
+		{ 25, 1932 }, -- Warrior
+		{ 26, 1933 }, -- Warrior
+	},
+	[HORDE_DIFF] = {
+		GetItemsFromDiff = ALLIANCE_DIFF,
+		{ 12, 1949 }, -- Shaman
+		{ 13, 1950 }, -- Shaman
+		{ 14, 1951 }, -- Shaman
+		{ 15, 1952 }, -- Shaman
 	},
 }
 
@@ -204,13 +329,18 @@ local AQ_ENCHANTS = { -- AQEnchants
 	name = AL["Ahn'Qiraj enchants"],
 	ExtraList = true,
 	[NORMAL_DIFF] = {
-		{ 1, 20728 }, -- Formula: Enchant Gloves - Frost Power
-		{ 2, 20731 }, -- Formula: Enchant Gloves - Superior Agility
-		{ 3, 20734 }, -- Formula: Enchant Cloak - Stealth
-		{ 4, 20729 }, -- Formula: Enchant Gloves - Fire Power
-		{ 5, 20736 }, -- Formula: Enchant Cloak - Dodge
-		{ 6, 20730 }, -- Formula: Enchant Gloves - Healing Power
-		{ 7, 20727 }, -- Formula: Enchant Gloves - Shadow Power
+		{ 1,  20728 }, -- Formula: Enchant Gloves - Frost Power
+		{ 2,  20731 }, -- Formula: Enchant Gloves - Superior Agility
+		{ 3,  20734 }, -- Formula: Enchant Cloak - Stealth
+		{ 4,  20729 }, -- Formula: Enchant Gloves - Fire Power
+		{ 5,  20736 }, -- Formula: Enchant Cloak - Dodge
+		{ 6,  20730 }, -- Formula: Enchant Gloves - Healing Power
+		{ 7,  20727 }, -- Formula: Enchant Gloves - Shadow Power
+		{ 9,  233998 }, -- Formula: Enchant Gloves - Holy Power
+		{ 10, 233999 }, -- Formula: Enchant Gloves - Arcane Power
+		{ 11, 235526 }, -- Formula: Enchant Bracer - Spell Power
+		{ 12, 235528 }, -- Formula: Enchant Bracer - Agility
+		{ 13, 233997 }, -- Formula: Living Stats
 	},
 }
 
@@ -222,22 +352,22 @@ local AQ_OPENING = { -- Keys
 	IgnoreAsSource = true,
 	[NORMAL_DIFF] = {
 		{ 1,  21138 }, -- Red Scepter Shard
-		{ 2,  21529 }, -- Amulet of Shadow Shielding
-		{ 3,  21530 }, -- Onyx Embedded Leggings
+		{ 2,  234130 }, -- Amulet of Shadow Shielding
+		{ 3,  234129 }, -- Onyx Embedded Leggings
 		{ 5,  21139 }, -- Green Scepter Shard
-		{ 6,  21531 }, -- Drake Tooth Necklace
-		{ 7,  21532 }, -- Drudge Boots
+		{ 6,  234132 }, -- Drake Tooth Necklace
+		{ 7,  234133 }, -- Drudge Boots
 		{ 9,  21137 }, -- Blue Scepter Shard
-		{ 10, 21517 }, -- Gnomish Turban of Psychic Might
-		{ 11, 21527 }, -- Darkwater Robes
-		{ 12, 21526 }, -- Band of Icy Depths
+		{ 10, 234134 }, -- Gnomish Turban of Psychic Might
+		{ 11, 234136 }, -- Darkwater Robes
+		{ 12, 234135 }, -- Band of Icy Depths
 		{ 13, 21025 }, -- Recipe: Dirge's Kickin' Chimaerok Chops
 		{ 16, 21175 }, -- The Scepter of the Shifting Sands
 		{ 17, 21176 }, -- Black Qiraji Resonating Crystal
-		{ 18, 21523 }, -- Fang of Korialstrasz
-		{ 19, 21521 }, -- Runesword of the Red
-		{ 20, 21522 }, -- Shadowsong's Sorrow
-		{ 21, 21520 }, -- Ravencrest's Legacy
+		{ 18, 234137 }, -- Fang of Korialstrasz
+		{ 19, 234141 }, -- Runesword of the Red
+		{ 20, 234138 }, -- Shadowsong's Sorrow
+		{ 21, 234139 }, -- Ravencrest's Legacy
 	},
 }
 
@@ -248,14 +378,14 @@ local DM_BOOKS = { -- DMBooks
 	[NORMAL_DIFF] = {
 		{ 1,  18401 }, -- Foror's Compendium of Dragon Slaying
 		{ 3,  18362 }, -- Holy Bologna: What the Light Won't Tell You
-		{ 4,  18358 }, -- The Arcanist's Cookbook
+		{ 4,  228466 }, -- The Arcanist's Cookbook
 		{ 5,  18360 }, -- Harnessing Shadows
-		{ 6,  18356 }, -- Garona: A Study on Stealth and Treachery
+		{ 6,  228464 }, -- Garona: A Study on Stealth and Treachery
 		{ 7,  18364 }, -- The Emerald Dream
 		{ 8,  18361 }, -- The Greatest Race of Hunters
 		{ 9,  18363 }, -- Frost Shock and You
-		{ 10, 18359 }, -- The Light and How to Swing It
-		{ 11, 18357 }, -- Codex of Defense
+		{ 10, 228467 }, -- The Light and How to Swing It
+		{ 11, 228465 }, -- Codex of Defense
 		--{ 16, 18348 }, -- Quel'Serrar
 		{ 18, 18333 }, -- Libram of Focus
 		{ 19, 18334 }, -- Libram of Protection
@@ -979,6 +1109,7 @@ data["BlackfathomDeeps"] = {
 				{ 11, 2271 }, -- Staff of the Blessed Seer
 			},
 		},
+		BFD_SET,
 	},
 }
 
@@ -1212,6 +1343,7 @@ data["Gnomeregan"] = {
 				{ 29, 213427 }, -- Grime-Encrusted Salvage
 			},
 		},
+		GNOMEREGAN_SET,
 	},
 }
 
@@ -2621,6 +2753,7 @@ data["TheTempleOfAtal'Hakkar"] = {
 				{ 21, 15733 }, -- Pattern: Green Dragonscale Leggings
 			},
 		},
+		ST_SET,
 	},
 }
 
@@ -6399,21 +6532,17 @@ data["BlackwingLair"] = {
 			DisplayIDs = { { 10115 } },
 			AtlasMapBossID = 1,
 			[NORMAL_DIFF] = {
-				{ 1,  16926 }, -- Bindings of Transcendence
-				{ 2,  16918 }, -- Netherwind Bindings
-				{ 3,  16934 }, -- Nemesis Bracers
-				{ 4,  16911 }, -- Bloodfang Bracers
-				{ 5,  16904 }, -- Stormrage Bracers
-				{ 6,  16935 }, -- Dragonstalker's Bracers
-				{ 7,  16943 }, -- Bracers of Ten Storms
-				{ 8,  16951 }, -- Judgement Bindings
-				{ 9,  16959 }, -- Bracelets of Wrath
-				{ 16, 19336 }, -- Arcane Infused Gem
-				{ 17, 19337 }, -- The Black Book
-				{ 19, 19370 }, -- Mantle of the Blackwing Cabal
-				{ 20, 19369 }, -- Gloves of Rapid Evolution
-				{ 21, 19335 }, -- Spineshatter
-				{ 22, 19334 }, -- The Untamed Blade
+				{ 1,  231729 }, -- Ancient Gloves
+				{ 2,  231720 }, -- Primeval Gloves
+				{ 3,  231712 }, -- Draconian Gloves
+				{ 5,  231722 }, -- Depleted Scythe of Chaos
+				{ 6,  229352 }, -- Intelligence Findings
+				{ 16, 230237 }, -- Arcane Infused Gem
+				{ 17, 230238 }, -- The Black Book
+				{ 19, 230240 }, -- Mantle of the Blackwing Cabal
+				{ 20, 230239 }, -- Gloves of Rapid Evolution
+				{ 21, 230241 }, -- Spineshatter
+				{ 22, 230242 }, -- The Untamed Blade
 			},
 		},
 		{ -- BWLVaelastrasz
@@ -6423,21 +6552,23 @@ data["BlackwingLair"] = {
 			DisplayIDs = { { 13992 } },
 			AtlasMapBossID = 2,
 			[NORMAL_DIFF] = {
-				{ 1,  16925 }, -- Belt of Transcendence
-				{ 2,  16818 }, -- Netherwind Belt
-				{ 3,  16933 }, -- Nemesis Belt
-				{ 4,  16910 }, -- Bloodfang Belt
-				{ 5,  16903 }, -- Stormrage Belt
-				{ 6,  16936 }, -- Dragonstalker's Belt
-				{ 7,  16944 }, -- Belt of Ten Storms
-				{ 8,  16952 }, -- Judgement Belt
-				{ 9,  16960 }, -- Waistband of Wrath
-				{ 16, 19339 }, -- Mind Quickening Gem
-				{ 17, 19340 }, -- Rune of Metamorphosis
-				{ 19, 19372 }, -- Helm of Endless Rage
-				{ 20, 19371 }, -- Pendant of the Fallen Dragon
-				{ 21, 19348 }, -- Red Dragonscale Protector
-				{ 22, 19346 }, -- Dragonfang Blade
+				{ 1,  231727 }, -- Ancient Leggings
+				{ 2,  231718 }, -- Primeval Leggings
+				{ 3,  231710 }, -- Draconian Leggings
+				{ 5,  230243 }, -- Mind Quickening Gem
+				{ 7,  230904 }, -- Scroll: SEENECS FO RIEF
+				{ 8,  231378 }, -- Shimmering Golden Disk
+				{ 16, 230244 }, -- Shapeshifter's Sigil
+				{ 17, 230246 }, -- Helm of Endless Rage
+				{ 18, 230245 }, -- Pendant of the Fallen Dragon
+				{ 19, 230248 }, -- Red Dragonscale Protector
+				{ 20, 230247 }, -- Dragonfang Blade
+				{ 21, 230848 }, -- Interlaced Shadow Jerkin
+				{ 22, 230843 }, -- Boots of Pure Thought
+				{ 23, 230849 }, -- Ringo's Blizzard Boots
+				{ 24, 230846 }, -- Band of Dark Dominion
+				{ 25, 230845 }, -- Doom's Edge
+				{ 26, 232357 }, -- Draconic Avenger
 			},
 		},
 		{ -- BWLLashlayer
@@ -6447,21 +6578,18 @@ data["BlackwingLair"] = {
 			DisplayIDs = { { 14308 } },
 			AtlasMapBossID = 3,
 			[NORMAL_DIFF] = {
-				{ 1,  16919 }, -- Boots of Transcendence
-				{ 2,  16912 }, -- Netherwind Boots
-				{ 3,  16927 }, -- Nemesis Boots
-				{ 4,  16906 }, -- Bloodfang Boots
-				{ 5,  16898 }, -- Stormrage Boots
-				{ 6,  16941 }, -- Dragonstalker's Greaves
-				{ 7,  16949 }, -- Greaves of Ten Storms
-				{ 8,  16957 }, -- Judgement Sabatons
-				{ 9,  16965 }, -- Sabatons of Wrath
-				{ 16, 19341 }, -- Lifegiving Gem
-				{ 17, 19342 }, -- Venomous Totem
-				{ 19, 19373 }, -- Black Brood Pauldrons
-				{ 20, 19374 }, -- Bracers of Arcane Accuracy
-				{ 21, 19350 }, -- Heartstriker
-				{ 22, 19351 }, -- Maladath, Runed Blade of the Black Flight
+				{ 1,  231730 }, -- Ancient Boots
+				{ 2,  231721 }, -- Primeval Boots
+				{ 3,  231713 }, -- Draconian Boots
+				{ 5,  231452 }, -- Blood of the Lightbringer
+				{ 6,  231882 }, -- Suppression Device Receipt
+				{ 7,  231995 }, -- Hardened Elementium Slag
+				{ 16, 230249 }, -- Lifegiving Gem
+				{ 17, 230250 }, -- Venomous Totem
+				{ 19, 230251 }, -- Black Brood Pauldrons
+				{ 20, 230252 }, -- Bracers of Arcane Accuracy
+				{ 21, 230253 }, -- Heartstriker
+				{ 22, 230254 }, -- Maladath, Runed Blade of the Black Flight
 				{ 24, 20383 }, -- Head of the Broodlord Lashlayer
 			},
 		},
@@ -6472,29 +6600,26 @@ data["BlackwingLair"] = {
 			DisplayIDs = { { 6377 } },
 			AtlasMapBossID = 4,
 			[NORMAL_DIFF] = {
-				{ 1,  16920 }, -- Handguards of Transcendence
-				{ 2,  16913 }, -- Netherwind Gloves
-				{ 3,  16928 }, -- Nemesis Gloves
-				{ 4,  16907 }, -- Bloodfang Gloves
-				{ 5,  16899 }, -- Stormrage Handguards
-				{ 6,  16940 }, -- Dragonstalker's Gauntlets
-				{ 7,  16948 }, -- Gauntlets of Ten Storms
-				{ 8,  16956 }, -- Judgement Gauntlets
-				{ 9,  16964 }, -- Gauntlets of Wrath
-				{ 13, 19344 }, -- Natural Alignment Crystal
-				{ 14, 19343 }, -- Scrolls of Blinding Light
-				{ 16, 19394 }, -- Drake Talon Pauldrons
-				{ 17, 19398 }, -- Cloak of Firemaw
-				{ 18, 19399 }, -- Black Ash Robe
-				{ 19, 19400 }, -- Firemaw's Clutch
-				{ 20, 19396 }, -- Taut Dragonhide Belt
-				{ 21, 19401 }, -- Primalist's Linked Legguards
-				{ 22, 19402 }, -- Legguards of the Fallen Crusader
-				{ 24, 19365 }, -- Claw of the Black Drake
-				{ 25, 19353 }, -- Drake Talon Cleaver
-				{ 26, 19355 }, -- Shadow Wing Focus Staff
-				{ 28, 19397 }, -- Ring of Blackrock
-				{ 29, 19395 }, -- Rejuvenating Gem
+				{ 1,  231727 }, -- Ancient Leggings
+				{ 2,  231718 }, -- Primeval Leggings
+				{ 3,  231710 }, -- Draconian Leggings
+				{ 5,  230273 }, -- Natural Alignment Crystal
+				{ 6,  230272 }, -- Scrolls of Blinding Light
+				{ 7,  230282 }, -- Drake Fang Talisman
+				{ 9,  230847 }, -- Essence Gatherer
+				{ 10, 230844 }, -- Draconic Maul
+				{ 11, 230276 }, -- Claw of the Black Drake
+				{ 12, 230270 }, -- Shadow Wing Focus Staff
+				{ 16, 230256 }, -- Drake Talon Pauldrons
+				{ 17, 230277 }, -- Cloak of Firemaw
+				{ 18, 230274 }, -- Black Ash Robe
+				{ 19, 230275 }, -- Firemaw's Clutch
+				{ 20, 230255 }, -- Taut Dragonhide Belt
+				{ 21, 230279 }, -- Primalist's Linked Legguards
+				{ 22, 230278 }, -- Legguards of the Fallen Crusader
+				{ 23, 230842 }, -- Cloak of Draconic Might
+				{ 25, 230257 }, -- Ring of Blackrock
+				{ 26, 230269 }, -- Rejuvenating Gem
 			},
 		},
 		{ -- BWLEbonroc
@@ -6504,27 +6629,20 @@ data["BlackwingLair"] = {
 			DisplayIDs = { { 6377 } },
 			AtlasMapBossID = 5,
 			[NORMAL_DIFF] = {
-				{ 1,  16920 }, -- Handguards of Transcendence
-				{ 2,  16913 }, -- Netherwind Gloves
-				{ 3,  16928 }, -- Nemesis Gloves
-				{ 4,  16907 }, -- Bloodfang Gloves
-				{ 5,  16899 }, -- Stormrage Handguards
-				{ 6,  16940 }, -- Dragonstalker's Gauntlets
-				{ 7,  16948 }, -- Gauntlets of Ten Storms
-				{ 8,  16956 }, -- Judgement Gauntlets
-				{ 9,  16964 }, -- Gauntlets of Wrath
-				{ 11, 19345 }, -- Aegis of Preservation
-				{ 12, 19406 }, -- Drake Fang Talisman
-				{ 13, 19395 }, -- Rejuvenating Gem
-				{ 16, 19394 }, -- Drake Talon Pauldrons
+				{ 1,  231728 }, -- Ancient Helm
+				{ 2,  231719 }, -- Primeval Helm
+				{ 3,  231711 }, -- Draconian Hood
+				{ 5,  230280 }, -- Aegis of Preservation
+				{ 7,  230269 }, -- Rejuvenating Gem
+				{ 16, 230256 }, -- Drake Talon Pauldrons
 				{ 17, 19407 }, -- Ebony Flame Gloves
-				{ 18, 19396 }, -- Taut Dragonhide Belt
-				{ 19, 19405 }, -- Malfurion's Blessed Bulwark
-				{ 21, 19368 }, -- Dragonbreath Hand Cannon
-				{ 22, 19353 }, -- Drake Talon Cleaver
-				{ 23, 19355 }, -- Shadow Wing Focus Staff
-				{ 26, 19403 }, -- Band of Forced Concentration
-				{ 27, 19397 }, -- Ring of Blackrock
+				{ 18, 230255 }, -- Taut Dragonhide Belt
+				{ 19, 230725 }, -- Malfurion's Blessed Bulwark
+				{ 20, 230726 }, -- Dragonbreath Hand Cannon
+				{ 21, 230271 }, -- Drake Talon Cleaver
+				{ 22, 230270 }, -- Shadow Wing Focus Staff
+				{ 23, 230281 }, -- Band of Forced Concentration
+				{ 24, 230257 }, -- Ring of Blackrock
 
 			},
 		},
@@ -6535,27 +6653,21 @@ data["BlackwingLair"] = {
 			DisplayIDs = { { 6377 } },
 			AtlasMapBossID = 6,
 			[NORMAL_DIFF] = {
-				{ 1,  16920 }, -- Handguards of Transcendence
-				{ 2,  16913 }, -- Netherwind Gloves
-				{ 3,  16928 }, -- Nemesis Gloves
-				{ 4,  16907 }, -- Bloodfang Gloves
-				{ 5,  16899 }, -- Stormrage Handguards
-				{ 6,  16940 }, -- Dragonstalker's Gauntlets
-				{ 7,  16948 }, -- Gauntlets of Ten Storms
-				{ 8,  16956 }, -- Judgement Gauntlets
-				{ 9,  16964 }, -- Gauntlets of Wrath
-				{ 11, 19395 }, -- Rejuvenating Gem
-				{ 12, 19431 }, -- Styleen's Impeding Scarab
-				{ 16, 19394 }, -- Drake Talon Pauldrons
-				{ 17, 19430 }, -- Shroud of Pure Thought
-				{ 18, 19396 }, -- Taut Dragonhide Belt
-				{ 19, 19433 }, -- Emberweave Leggings
-				{ 21, 19367 }, -- Dragon's Touch
-				{ 22, 19353 }, -- Drake Talon Cleaver
-				{ 23, 19357 }, -- Herald of Woe
-				{ 24, 19355 }, -- Shadow Wing Focus Staff
-				{ 26, 19432 }, -- Circle of Applied Force
-				{ 27, 19397 }, -- Ring of Blackrock
+				{ 1,  230269 }, -- Rejuvenating Gem
+				{ 2,  230736 }, -- Styleen's Impeding Scarab
+				{ 3,  230282 }, -- Drake Fang Talisman
+				{ 5,  230256 }, -- Drake Talon Pauldrons
+				{ 6,  230733 }, -- Shroud of Pure Thought
+				{ 7,  230255 }, -- Taut Dragonhide Belt
+				{ 8,  230735 }, -- Emberweave Leggings
+				{ 9,  230842 }, -- Cloak of Draconic Might
+				{ 11, 230734 }, -- Circle of Applied Force
+				{ 12, 230257 }, -- Ring of Blackrock
+				{ 16, 230737 }, -- Dragon's Touch
+				{ 17, 230738 }, -- Herald of Woe
+				{ 18, 230844 }, -- Draconic Maul
+				{ 19, 230847 }, -- Essence Gatherer
+				{ 20, 230270 }, -- Shadow Wing Focus Staff
 			},
 		},
 		{ -- BWLChromaggus
@@ -6565,28 +6677,24 @@ data["BlackwingLair"] = {
 			DisplayIDs = { { 14367 } },
 			AtlasMapBossID = 7,
 			[NORMAL_DIFF] = {
-				{ 1,  16924 }, -- Pauldrons of Transcendence
-				{ 2,  16917 }, -- Netherwind Mantle
-				{ 3,  16932 }, -- Nemesis Spaulders
-				{ 4,  16832 }, -- Bloodfang Spaulders
-				{ 5,  16902 }, -- Stormrage Pauldrons
-				{ 6,  16937 }, -- Dragonstalker's Spaulders
-				{ 7,  16945 }, -- Epaulets of Ten Storms
-				{ 8,  16953 }, -- Judgement Spaulders
-				{ 9,  16961 }, -- Pauldrons of Wrath
-				{ 16, 19389 }, -- Taut Dragonhide Shoulderpads
-				{ 17, 19386 }, -- Elementium Threaded Cloak
-				{ 18, 19390 }, -- Taut Dragonhide Gloves
-				{ 19, 19388 }, -- Angelista's Grasp
-				{ 20, 19393 }, -- Primalist's Linked Waistguard
-				{ 21, 19392 }, -- Girdle of the Fallen Crusader
-				{ 22, 19385 }, -- Empowered Leggings
-				{ 23, 19391 }, -- Shimmering Geta
-				{ 24, 19387 }, -- Chromatic Boots
-				{ 26, 19361 }, -- Ashjre'thul, Crossbow of Smiting
-				{ 27, 19349 }, -- Elementium Reinforced Bulwark
-				{ 28, 19347 }, -- Claw of Chromaggus
-				{ 29, 19352 }, -- Chromatically Tempered Sword
+				{ 1,  231726 }, -- Ancient Shoulderpads
+				{ 2,  231717 }, -- Primeval Shoulderpads
+				{ 3,  231709 }, -- Draconian Shoulderpads
+				{ 5,  231814 }, -- Chromatic Heart
+				{ 6,  229906 }, -- Tarnished Bronze Scale
+				{ 16, 230740 }, -- Taut Dragonhide Shoulderpads
+				{ 17, 230744 }, -- Elementium Threaded Cloak
+				{ 18, 230742 }, -- Taut Dragonhide Gloves
+				{ 19, 230739 }, -- Angelista's Grasp
+				{ 20, 230800 }, -- Primalist's Linked Waistguard
+				{ 21, 230745 }, -- Girdle of the Fallen Crusader
+				{ 22, 230746 }, -- Empowered Leggings
+				{ 23, 230743 }, -- Shimmering Geta
+				{ 24, 230741 }, -- Chromatic Boots
+				{ 26, 230801 }, -- Ashjre'thul, Crossbow of Smiting
+				{ 27, 230802 }, -- Elementium Reinforced Bulwark
+				{ 28, 230794 }, -- Claw of Chromaggus
+				{ 29, 230747 }, -- Chromatically Tempered Sword
 			},
 		},
 		{ -- BWLNefarian
@@ -6596,35 +6704,43 @@ data["BlackwingLair"] = {
 			DisplayIDs = { { 11380 } },
 			AtlasMapBossID = 8,
 			[NORMAL_DIFF] = {
-				{ 1,  16923 }, -- Robes of Transcendence
-				{ 2,  16916 }, -- Netherwind Robes
-				{ 3,  16931 }, -- Nemesis Robes
-				{ 4,  16905 }, -- Bloodfang Chestpiece
-				{ 5,  16897 }, -- Stormrage Chestguard
-				{ 6,  16942 }, -- Dragonstalker's Breastplate
-				{ 7,  16950 }, -- Breastplate of Ten Storms
-				{ 8,  16958 }, -- Judgement Breastplate
-				{ 9,  16966 }, -- Breastplate of Wrath
-				{ 11, 19003 }, -- Head of Nefarian
-				{ 16, 19360 }, -- Lok'amir il Romathis
-				{ 17, 19363 }, -- Crul'shorukh, Edge of Chaos
-				{ 18, 19364 }, -- Ashkandi, Greatsword of the Brotherhood
-				{ 19, 19356 }, -- Staff of the Shadow Flame
-				{ 21, 19375 }, -- Mish'undare, Circlet of the Mind Flayer
-				{ 22, 19377 }, -- Prestor's Talisman of Connivery
-				{ 23, 19378 }, -- Cloak of the Brood Lord
-				{ 24, 19380 }, -- Therazane's Link
-				{ 25, 19381 }, -- Boots of the Shadow Flame
-				{ 26, 19376 }, -- Archimtiros' Ring of Reckoning
-				{ 27, 19382 }, -- Pure Elementium Band
-				{ 28, 19379 }, -- Neltharion's Tear
-				{ 30, 11938 }, -- Sack of Gems
-				-- Hidden items
-				{ 0,  17962 }, -- Blue Sack of Gems
-				{ 0,  17963 }, -- Green Sack of Gems
-				{ 0,  17964 }, -- Gray Sack of Gems
-				{ 0,  17965 }, -- Yellow Sack of Gems
-				{ 0,  17969 }, -- Red Sack of Gems
+				{ 1,   19002, [ATLASLOOT_IT_ALLIANCE] = 19003 }, -- Head of Nefarian
+				{ 2,   230838 },                     -- Lok'amir il Romathis
+				{ 3,   230837 },                     -- Crul'shorukh, Edge of Chaos
+				{ 4,   230818 },                     -- Ashkandi, Greatsword of the Brotherhood
+				{ 5,   230813 },                     -- Staff of the Shadow Flame
+				{ 6,   230812 },                     -- Mish'undare, Circlet of the Mind Flayer
+				{ 7,   231803 },                     -- Prestor's Talisman of Connivery
+				{ 8,   230804 },                     -- Cloak of the Brood Lord
+				{ 9,   230806 },                     -- Therazane's Link
+				{ 10,  230805 },                     -- Boots of the Shadow Flame
+				{ 11,  230808 },                     -- Archimtiros' Ring of Reckoning
+				{ 12,  230811 },                     -- Pure Elementium Band
+				{ 13,  230810 },                     -- Neltharion's Tear
+				{ 16,  231726 },                     -- Ancient Shoulderpads
+				{ 17,  231717 },                     -- Primeval Shoulderpads
+				{ 18,  231709 },                     -- Draconian Shoulderpads
+				{ 20,  231731 },                     -- Ancient Chest
+				{ 21,  231723 },                     -- Primeval Chest
+				{ 22,  231714 },                     -- Draconian Robe
+				{ 24,  231727 },                     -- Ancient Leggings
+				{ 25,  231718 },                     -- Primeval Leggings
+				{ 26,  231710 },                     -- Draconian Leggings
+				{ 101, 231724 },                     -- Ancient Bindings
+				{ 102, 231715 },                     -- Primeval Bindings
+				{ 103, 231707 },                     -- Draconian Bindings
+				{ 105, 231729 },                     -- Ancient Gloves
+				{ 106, 231720 },                     -- Primeval Gloves
+				{ 107, 231712 },                     -- Draconian Gloves
+				{ 109, 231730 },                     -- Ancient Boots
+				{ 110, 231721 },                     -- Primeval Boots
+				{ 111, 231713 },                     -- Draconian Boots
+				{ 113, 231725 },                     -- Ancient Belt
+				{ 114, 231716 },                     -- Primeval Belt
+				{ 115, 231708 },                     -- Draconian Belt
+				{ 116, 231728 },                     -- Ancient Helm
+				{ 117, 231719 },                     -- Primeval Helm
+				{ 118, 231711 },                     -- Draconian Hood
 			},
 		},
 		{ -- BWLTrashMobs

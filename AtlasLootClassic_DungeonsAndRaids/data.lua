@@ -6123,35 +6123,35 @@ data["BlackwingLair"] = {
 			DisplayIDs = { { 11380 } },
 			AtlasMapBossID = 8,
 			[NORMAL_DIFF] = {
-				{ 1,  16923 }, -- Robes of Transcendence
-				{ 2,  16916 }, -- Netherwind Robes
-				{ 3,  16931 }, -- Nemesis Robes
-				{ 4,  16905 }, -- Bloodfang Chestpiece
-				{ 5,  16897 }, -- Stormrage Chestguard
-				{ 6,  16942 }, -- Dragonstalker's Breastplate
-				{ 7,  16950 }, -- Breastplate of Ten Storms
-				{ 8,  16958 }, -- Judgement Breastplate
-				{ 9,  16966 }, -- Breastplate of Wrath
-				{ 11, 19003 }, -- Head of Nefarian
-				{ 16, 19360 }, -- Lok'amir il Romathis
-				{ 17, 19363 }, -- Crul'shorukh, Edge of Chaos
-				{ 18, 19364 }, -- Ashkandi, Greatsword of the Brotherhood
-				{ 19, 19356 }, -- Staff of the Shadow Flame
-				{ 21, 19375 }, -- Mish'undare, Circlet of the Mind Flayer
-				{ 22, 19377 }, -- Prestor's Talisman of Connivery
-				{ 23, 19378 }, -- Cloak of the Brood Lord
-				{ 24, 19380 }, -- Therazane's Link
-				{ 25, 19381 }, -- Boots of the Shadow Flame
-				{ 26, 19376 }, -- Archimtiros' Ring of Reckoning
-				{ 27, 19382 }, -- Pure Elementium Band
-				{ 28, 19379 }, -- Neltharion's Tear
-				{ 30, 11938 }, -- Sack of Gems
+				{ 1,  16923 },                      -- Robes of Transcendence
+				{ 2,  16916 },                      -- Netherwind Robes
+				{ 3,  16931 },                      -- Nemesis Robes
+				{ 4,  16905 },                      -- Bloodfang Chestpiece
+				{ 5,  16897 },                      -- Stormrage Chestguard
+				{ 6,  16942 },                      -- Dragonstalker's Breastplate
+				{ 7,  16950 },                      -- Breastplate of Ten Storms
+				{ 8,  16958 },                      -- Judgement Breastplate
+				{ 9,  16966 },                      -- Breastplate of Wrath
+				{ 11, 19002, [ATLASLOOT_IT_ALLIANCE] = 19003 }, -- Head of Nefarian
+				{ 16, 19360 },                      -- Lok'amir il Romathis
+				{ 17, 19363 },                      -- Crul'shorukh, Edge of Chaos
+				{ 18, 19364 },                      -- Ashkandi, Greatsword of the Brotherhood
+				{ 19, 19356 },                      -- Staff of the Shadow Flame
+				{ 21, 19375 },                      -- Mish'undare, Circlet of the Mind Flayer
+				{ 22, 19377 },                      -- Prestor's Talisman of Connivery
+				{ 23, 19378 },                      -- Cloak of the Brood Lord
+				{ 24, 19380 },                      -- Therazane's Link
+				{ 25, 19381 },                      -- Boots of the Shadow Flame
+				{ 26, 19376 },                      -- Archimtiros' Ring of Reckoning
+				{ 27, 19382 },                      -- Pure Elementium Band
+				{ 28, 19379 },                      -- Neltharion's Tear
+				{ 30, 11938 },                      -- Sack of Gems
 				-- Hidden items
-				{ 0,  17962 }, -- Blue Sack of Gems
-				{ 0,  17963 }, -- Green Sack of Gems
-				{ 0,  17964 }, -- Gray Sack of Gems
-				{ 0,  17965 }, -- Yellow Sack of Gems
-				{ 0,  17969 }, -- Red Sack of Gems
+				{ 0,  17962 },                      -- Blue Sack of Gems
+				{ 0,  17963 },                      -- Green Sack of Gems
+				{ 0,  17964 },                      -- Gray Sack of Gems
+				{ 0,  17965 },                      -- Yellow Sack of Gems
+				{ 0,  17969 },                      -- Red Sack of Gems
 			},
 		},
 		{ -- BWLTrashMobs
