@@ -15,7 +15,7 @@ local addonVersion = GetAddOnMetadata(addonname, "Version")
 if addonVersion == string.format("@%s@", "project-version") then addonVersion = "v99.99.9999-dev" end
 local versionT = { string.match(addonVersion, "v(%d+)%.(%d+)%.(%d+)%-?(%a*)(%d*)") }
 local addonRevision = ""
-for k,v in ipairs(versionT) do
+for k, v in ipairs(versionT) do
 	if k < 4 then
 		local it = k == 3 and (4 - #v) or (2 - #v)
 		for i = 1, it do
@@ -41,41 +41,41 @@ local MainMT = {
 setmetatable(_G.AtlasLoot, MainMT)
 
 -- DB
-AtlasLootClassicDB = {}
+AtlasLootClassicDB                        = {}
 
 -- Translations
-_G.AtlasLoot.Locale = {}
+_G.AtlasLoot.Locale                       = {}
 
 -- Init functions
-_G.AtlasLoot.Init = {}
+_G.AtlasLoot.Init                         = {}
 
 -- Data table
-_G.AtlasLoot.Data = {}
+_G.AtlasLoot.Data                         = {}
 
 -- Version
-local WOW_PROJECT_ID = _G.WOW_PROJECT_ID or 99
-local WOW_PROJECT_MAINLINE = _G.WOW_PROJECT_MAINLINE or 99
-local WOW_PROJECT_CLASSIC = _G.WOW_PROJECT_CLASSIC or 1
+local WOW_PROJECT_ID                      = _G.WOW_PROJECT_ID or 99
+local WOW_PROJECT_MAINLINE                = _G.WOW_PROJECT_MAINLINE or 99
+local WOW_PROJECT_CLASSIC                 = _G.WOW_PROJECT_CLASSIC or 1
 local WOW_PROJECT_BURNING_CRUSADE_CLASSIC = _G.WOW_PROJECT_BURNING_CRUSADE_CLASSIC or 2
-local WOW_PROJECT_WRATH_CLASSIC = _G.WOW_PROJECT_WRATH_CLASSIC or 11
+local WOW_PROJECT_WRATH_CLASSIC           = _G.WOW_PROJECT_WRATH_CLASSIC or 11
 
-AtlasLoot.RETAIL_VERSION_NUM 	= 99
-AtlasLoot.CLASSIC_VERSION_NUM 	= 1
-AtlasLoot.BC_VERSION_NUM 		= 2
-AtlasLoot.WRATH_VERSION_NUM 	= 3
+AtlasLoot.RETAIL_VERSION_NUM              = 99
+AtlasLoot.CLASSIC_VERSION_NUM             = 1
+AtlasLoot.BC_VERSION_NUM                  = 2
+AtlasLoot.WRATH_VERSION_NUM               = 3
 
-AtlasLoot.GAME_VERSION_TEXTURES = {
-	[AtlasLoot.CLASSIC_VERSION_NUM] = 538639,
+AtlasLoot.GAME_VERSION_TEXTURES           = {
+	[AtlasLoot.CLASSIC_VERSION_NUM] = C_Seasons.GetActiveSeason() == 2 and 6366097 or 538639,
 	[AtlasLoot.BC_VERSION_NUM] = 131194,
 	[AtlasLoot.WRATH_VERSION_NUM] = 235509,
 }
 
-AtlasLoot.IS_CLASSIC = false
-AtlasLoot.IS_BC = false
-AtlasLoot.IS_WRATH = false
-AtlasLoot.IS_RETAIL = false
+AtlasLoot.IS_CLASSIC                      = false
+AtlasLoot.IS_BC                           = false
+AtlasLoot.IS_WRATH                        = false
+AtlasLoot.IS_RETAIL                       = false
 
-local CurrentGameVersion = AtlasLoot.RETAIL_VERSION_NUM
+local CurrentGameVersion                  = AtlasLoot.RETAIL_VERSION_NUM
 if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
 	CurrentGameVersion = AtlasLoot.RETAIL_VERSION_NUM
 	AtlasLoot.IS_RETAIL = true
