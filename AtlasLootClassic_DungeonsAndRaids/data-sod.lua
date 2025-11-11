@@ -5291,19 +5291,19 @@ data["KarazhanCrypts"] = {
 		{ -- The Failed Apprentices
 			name = AL["The Failed Apprentice"],
 			[NORMAL_DIFF] = {
-				{ 1,  "INV_Box_01", nil, AL["Barian Maryla"],  nil },
+				{ 1,  "INV_Box_01", nil, AL["Barian Maryla"], nil },
 				{ 2,  235887 }, -- Barian's Choker
 				{ 3,  235880 }, -- Pauper Soles
 				{ 4,  235894 }, -- Doomsayer's Demise
 				{ 5,  235873 }, -- Crypt's Keepers
 				{ 6,  235879 }, -- Nimble Links
-				{ 8,  "INV_Box_01", nil, AL["Kaigy Marylaa"],  nil },
+				{ 8,  "INV_Box_01", nil, AL["Kaigy Maryla"],  nil },
 				{ 9,  235886 }, -- Kaigy's Clasp
 				{ 10, 235880 }, -- Pauper Soles
 				{ 11, 235894 }, -- Doomsayer's Demise
 				{ 12, 235873 }, -- Crypt's Keepers
 				{ 13, 235879 }, -- Nimble Links
-				{ 16, "INV_Box_01", nil, AL["Sairuh Marylaa"], nil },
+				{ 16, "INV_Box_01", nil, AL["Sairuh Maryla"], nil },
 				{ 17, 236782 }, -- Sairuh's Collar
 				{ 18, 235880 }, -- Pauper Soles
 				{ 19, 235894 }, -- Doomsayer's Demise
@@ -7765,7 +7765,7 @@ data["The Scarlet Enclave"] = {
 			},
 		},
 		{
-			name = AL["Lillian Voss"],
+			name = AL["Lilian Voss"],
 			npcID = 243021,
 			DisplayIDs = { { 128659 } },
 			[NORMAL_DIFF] = {
