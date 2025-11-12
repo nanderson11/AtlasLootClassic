@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.3.1 - November 12, 2025
+### Fixed
+- Fixed item note popup not working
+
 ## 3.3.0 - November 11, 2025
 I want this fork of AtlasLoot Classic to be accurate for all versions of Vanilla, TBC and WOTLK. As part of that, I've started adding Season of Discovery loot tables. While it may not be as relevant as it once was, SoD is sticking around and this fork should cover that. I've done it differently from the original SoD fork of ALC. SoD loot will only show if you are in SoD, so there won't be any confusion of what items you're viewing. I've also added a special logo for SoD, additional item set lists and additional translations compared to the original SoD fork. I'll follow up with more SoD loot soon, as well as TBC support for Anniversary.
 ### Added
