@@ -342,6 +342,7 @@ AL["Wushoolay"] = "Wushoolay"
 AL["Ysondre"] = "Ysondre"
 AL["Zerillis"] = "Zerillis"
 AL["Zevrim Thornhoof"] = "Zevrim Dornhuf"
+
 -- SoD
 AL["Prince Thunderaan"] = "Prinz Donneraan"
 AL["The Molten Core"] = "Der Geschmolzene Kern"
@@ -525,6 +526,8 @@ AL["Zul'jin"] = "Zul'jin"
 if AtlasLoot:GameVersion_LT(AtlasLoot.WRATH_VERSION_NUM) then return end
 -- DungeonsAndRaidsWrath
 AL["%s Attempts left"] = "%s Versuche übrig"
+--[[Translation missing --]]
+--[[ AL["Above Tier is iLVL 200"] = "Above Tier is iLVL 200"--]]
 AL["Achievements"] = "Erfolge"
 AL["Algalon the Observer"] = "Algalon der Beobachter"
 AL["Amanitar"] = "Amanitar"
@@ -543,6 +546,10 @@ AL["Blood-Queen Lana'thel"] = "Blutkönigin Lana'thel"
 AL["Bonus Loot"] = "Bonus Loot"
 AL["Bronjahm"] = "Bronjahm"
 AL["Chrono-Lord Epoch"] = "Chronolord Epoch"
+--[[Translation missing --]]
+--[[ AL["Class Item drops"] = "Class Item drops"--]]
+--[[Translation missing --]]
+--[[ AL["Click the > button down below"] = "Click the > button down below"--]]
 AL["Commander Kolurg"] = "Kommandant Kolurg"
 AL["Commander Stoutbeard"] = "Kommandant Starkbart"
 AL["Cyanigosa"] = "Cyanigosa"
@@ -556,9 +563,13 @@ AL["Eck the Ferocious"] = "Der wilde Eck"
 AL["Elder Nadox"] = "Urahne Nadox"
 AL["Elemental"] = "Elemental"
 AL["Emalon the Storm Watcher"] = "Emalon der Sturmwächter"
+--[[Translation missing --]]
+--[[ AL["Enhancement"] = "Enhancement"--]]
 AL["Erekem"] = "Erekem"
 AL["Faction Champions"] = "Fraktionschampions"
 AL["Falric"] = "Falric"
+--[[Translation missing --]]
+--[[ AL["Feral"] = "Feral"--]]
 AL["Festergut"] = "Fauldarm"
 AL["Flame Leviathan"] = "Flammenleviathan"
 AL["Forgemaster Garfrost"] = "Schmiedemeister Garfrost"
@@ -566,6 +577,12 @@ AL["Freya"] = "Freya"
 AL["Gal'darah"] = "Gal'darah"
 AL["General Bjarngrim"] = "General Bjarngrim"
 AL["General Vezax"] = "General Vezax"
+--[[Translation missing --]]
+--[[ AL["Glory of the Icecrown Raider"] = "Glory of the Icecrown Raider"--]]
+--[[Translation missing --]]
+--[[ AL["Glory of the Raider"] = "Glory of the Raider"--]]
+--[[Translation missing --]]
+--[[ AL["Glory of the Ulduar Raider"] = "Glory of the Ulduar Raider"--]]
 AL["Gortok Palehoof"] = "Gortok Bleichhuf"
 AL["Grand Champions"] = "Großchampions"
 AL["Grand Magus Telestra"] = "Großmagistrix Telestra"
@@ -578,7 +595,11 @@ AL["Holy"] = "Heilig"
 AL["ICC"] = "ICC"
 AL["Icecrown Gunship Battle"] = "Luftschiffkampf um die Eiskronenzitadelle"
 AL["Ichoron"] = "Ichoron"
+--[[Translation missing --]]
+--[[ AL["Ick & Krick"] = "Ick & Krick"--]]
 AL["Ignis the Furnace Master"] = "Ignis, Meister des Eisenwerks"
+--[[Translation missing --]]
+--[[ AL["Includes the loot from %s"] = "Includes the loot from %s"--]]
 AL["Infinite Corruptor"] = "Ewiger Verderber"
 AL["Ingvar the Plunderer"] = "Ingvar der Brandschatzer"
 AL["Ionar"] = "Ionar"
@@ -607,12 +628,20 @@ AL["Moorabi"] = "Moorabi"
 AL["Moragg"] = "Moragg"
 AL["Nexus"] = "Nexus"
 AL["Novos the Summoner"] = "Novos der Beschwörer"
+--[[Translation missing --]]
+--[[ AL["One Drake Left"] = "One Drake Left"--]]
 AL["Ormorok the Tree-Shaper"] = "Ormorok der Baumformer"
 AL["Prince Keleseth"] = "Prinz Keleseth"
 AL["Prince Taldaram"] = "Prinz Taldaram"
 AL["Professor Putricide"] = "Professor Seuchenmord"
+--[[Translation missing --]]
+--[[ AL["Protection"] = "Protection"--]]
 AL["Raids"] = "Raids"
 AL["Razorscale"] = "Klingenschuppe"
+--[[Translation missing --]]
+--[[ AL["Restoration"] = "Restoration"--]]
+--[[Translation missing --]]
+--[[ AL["Retribution"] = "Retribution"--]]
 AL["Rotface"] = "Modermiene"
 AL["Salramm the Fleshcrafter"] = "Salramm der Fleischformer"
 AL["Sartharion"] = "Sartharion"
@@ -621,6 +650,8 @@ AL["Shadow"] = "Schatten"
 AL["Sindragosa"] = "Sindragosa"
 AL["Sjonnir The Ironshaper"] = "Sjonnir der Eisenformer"
 AL["Skadi the Ruthless"] = "Skadi der Skrupellose"
+--[[Translation missing --]]
+--[[ AL["Skarvald the Constructor & Dalronn the Controller"] = "Skarvald the Constructor & Dalronn the Controller"--]]
 AL["Slad'ran"] = "Slad'ran"
 AL["Svala Sorrowgrave"] = "Svala Grabesleid"
 AL["The Beasts of Northrend"] = "Bestien von Nordend"
@@ -631,12 +662,30 @@ AL["The Prophet Tharon'ja"] = "Der Prophet Tharon'ja"
 AL["The Tribunal of Ages"] = "Das Tribunal der Zeitalter"
 AL["The Twin Val'kyr"] = "Zwillingsval'kyr"
 AL["Thorim"] = "Thorim"
+--[[Translation missing --]]
+--[[ AL["Three Drakes Left"] = "Three Drakes Left"--]]
+--[[Translation missing --]]
+--[[ AL["Tier drops on next page"] = "Tier drops on next page"--]]
+--[[Translation missing --]]
+--[[ AL["Tier Token iLvl200"] = "Tier Token iLvl200"--]]
+--[[Translation missing --]]
+--[[ AL["Tier Token iLvl225"] = "Tier Token iLvl225"--]]
+--[[Translation missing --]]
+--[[ AL["Titan Rune Alpha"] = "Titan Rune Alpha"--]]
+--[[Translation missing --]]
+--[[ AL["Titan Rune Beta"] = "Titan Rune Beta"--]]
 AL["Toravon the Ice Watcher"] = "Toravon der Eiswächter"
 AL["Trollgore"] = "Trollgrind"
+--[[Translation missing --]]
+--[[ AL["Two Drakes Left"] = "Two Drakes Left"--]]
 AL["Ulduar"] = "Ulduar"
+--[[Translation missing --]]
+--[[ AL["Utgarde"] = "Utgarde"--]]
 AL["Valithria Dreamwalker"] = "Valithria Traumwandler"
 AL["Varos Cloudstrider"] = "Varos Wolkenwanderer"
 AL["Volkhan"] = "Volkhan"
+--[[Translation missing --]]
+--[[ AL["Wrath of the Lich King"] = "Wrath of the Lich King"--]]
 AL["Xevozz"] = "Xevozz"
 AL["XT-002 Deconstructor"] = "XT-002 Dekonstruktor"
 AL["Yogg-Saron"] = "Yogg-Saron"

@@ -342,6 +342,7 @@ AL["Wushoolay"] = "乌苏雷"
 AL["Ysondre"] = "绿龙"
 AL["Zerillis"] = "泽雷利斯"
 AL["Zevrim Thornhoof"] = "瑟雷姆·刺蹄"
+
 -- SoD
 AL["Prince Thunderaan"] = "桑德兰王子"
 --AL["The Molten Core"] = ""
@@ -525,6 +526,8 @@ AL["Zul'jin"] = "祖尔金"
 if AtlasLoot:GameVersion_LT(AtlasLoot.WRATH_VERSION_NUM) then return end
 -- DungeonsAndRaidsWrath
 AL["%s Attempts left"] = "还剩%s次尝试次数"
+--[[Translation missing --]]
+--[[ AL["Above Tier is iLVL 200"] = "Above Tier is iLVL 200"--]]
 AL["Achievements"] = "成就 "
 AL["Algalon the Observer"] = "观察者奥尔加隆"
 AL["Amanitar"] = "埃曼尼塔"
@@ -544,6 +547,8 @@ AL["Bonus Loot"] = "额外拾取"
 AL["Bronjahm"] = "布隆亚姆"
 AL["Chrono-Lord Epoch"] = "时光领主埃博克"
 AL["Class Item drops"] = "职业物品掉落"
+--[[Translation missing --]]
+--[[ AL["Click the > button down below"] = "Click the > button down below"--]]
 AL["Commander Kolurg"] = "指挥官库鲁尔格"
 AL["Commander Stoutbeard"] = "指挥官斯托比德"
 AL["Cyanigosa"] = "塞安妮苟萨"
@@ -645,6 +650,16 @@ AL["The Tribunal of Ages"] = "远古法庭"
 AL["The Twin Val'kyr"] = "瓦格里双子"
 AL["Thorim"] = "托里姆"
 AL["Three Drakes Left"] = "剩余3条幼龙"
+--[[Translation missing --]]
+--[[ AL["Tier drops on next page"] = "Tier drops on next page"--]]
+--[[Translation missing --]]
+--[[ AL["Tier Token iLvl200"] = "Tier Token iLvl200"--]]
+--[[Translation missing --]]
+--[[ AL["Tier Token iLvl225"] = "Tier Token iLvl225"--]]
+--[[Translation missing --]]
+--[[ AL["Titan Rune Alpha"] = "Titan Rune Alpha"--]]
+--[[Translation missing --]]
+--[[ AL["Titan Rune Beta"] = "Titan Rune Beta"--]]
 AL["Toravon the Ice Watcher"] = "寒冰看守者图拉旺"
 AL["Trollgore"] = "托尔戈"
 AL["Two Drakes Left"] = "剩余2条幼龙"

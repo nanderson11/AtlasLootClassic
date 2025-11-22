@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.3.2 - November 22, 2025
+### Added
+- Added updated translations for all languages
+
 ## 3.3.1 - November 12, 2025
 ### Fixed
 - Fixed item note popup not working

@@ -23,7 +23,7 @@ AL["Arcanist Doan"] = "신비술사 도안"
 AL["Archaedas"] = "아카에다스"
 AL["Archivist Galford"] = "기록관 갈포드"
 AL["Archmage Arugal"] = "대마법사 아루갈"
-AL["Armory"] = "병영"
+AL["Armory"] = "무기고"
 AL["Arugal's Voidwalker"] = "아루갈의 보이드워커"
 AL["Atal'alarion"] = "아탈알라리온"
 AL["Atiesh"] = "아티쉬"
@@ -128,7 +128,7 @@ AL["Golem Lord Argelmach"] = "골렘군주 아젤마크"
 AL["Golemagg the Incinerator"] = "초열의 골레마그"
 AL["Goraluk Anvilcrack "] = "고랄루크 앤빌크랙"
 AL["Gorosh the Dervish"] = "광신자 고로쉬"
-AL["Graveyard"] = "공동묘지"
+AL["Graveyard"] = "묘지"
 AL["Gri'lek"] = "그리렉"
 AL["Grimlok"] = "그림로크"
 AL["Grizzle"] = "그리즐"
@@ -342,6 +342,7 @@ AL["Wushoolay"] = "우슬레이"
 AL["Ysondre"] = "이손드레"
 AL["Zerillis"] = "제릴리스"
 AL["Zevrim Thornhoof"] = "제브림 쏜후프"
+
 -- SoD
 AL["Prince Thunderaan"] = "왕자 썬더란"
 AL["The Molten Core"] = "화산 심장부"
@@ -525,6 +526,8 @@ AL["Zul'jin"] = "줄진"
 if AtlasLoot:GameVersion_LT(AtlasLoot.WRATH_VERSION_NUM) then return end
 -- DungeonsAndRaidsWrath
 AL["%s Attempts left"] = "%s 남은 도전 기회"
+--[[Translation missing --]]
+--[[ AL["Above Tier is iLVL 200"] = "Above Tier is iLVL 200"--]]
 AL["Achievements"] = "업적"
 AL["Algalon the Observer"] = "관찰자 알갈론"
 AL["Amanitar"] = "아마니타르"
@@ -544,6 +547,8 @@ AL["Bonus Loot"] = "추가 전리품"
 AL["Bronjahm"] = "브론잠"
 AL["Chrono-Lord Epoch"] = "시간의 군주 에포크"
 AL["Class Item drops"] = "직업별 드랍템"
+--[[Translation missing --]]
+--[[ AL["Click the > button down below"] = "Click the > button down below"--]]
 AL["Commander Kolurg"] = "사령관 콜루르그"
 AL["Commander Stoutbeard"] = "사령관 스타우트비어드"
 AL["Cyanigosa"] = "시아니고사"
@@ -645,6 +650,8 @@ AL["The Tribunal of Ages"] = "시대의 심판장"
 AL["The Twin Val'kyr"] = "발키르 쌍둥이"
 AL["Thorim"] = "토림"
 AL["Three Drakes Left"] = "3비룡 남을 시"
+--[[Translation missing --]]
+--[[ AL["Tier drops on next page"] = "Tier drops on next page"--]]
 AL["Tier Token iLvl200"] = "iLvl200 티어 토큰"
 AL["Tier Token iLvl225"] = "iLvl225 티어 토큰"
 AL["Titan Rune Alpha"] = "티탄 룬 알파"

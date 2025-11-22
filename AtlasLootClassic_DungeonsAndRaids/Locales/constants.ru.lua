@@ -342,6 +342,7 @@ AL["Wushoolay"] = "Вушулай"
 AL["Ysondre"] = "Исондра"
 AL["Zerillis"] = "Зериллис"
 AL["Zevrim Thornhoof"] = "Зеврим Терновое Копыто"
+
 -- SoD
 AL["Prince Thunderaan"] = "Принц Громораан"
 --AL["The Molten Core"] = ""
