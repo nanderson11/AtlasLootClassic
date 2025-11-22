@@ -15,11 +15,11 @@ jobs:
     steps:
 
       - name: Clone project
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
-      - uses: kemayo/actions-recent-changelog@v1
+      - uses: kemayo/actions-recent-changelog@v2
         with:
           input: AtlasLootClassic/CHANGELOG.md
           output: RECENT_CHANGES.md
