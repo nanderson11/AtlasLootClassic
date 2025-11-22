@@ -23,8 +23,7 @@ AL["Baron Kazum"] = "Barón Kazum"
 AL["Box of Chocolates"] = "Caja de bombones"
 AL["Brewfest"] = "Fiesta de la Cerveza"
 AL["Brightly Colored Egg"] = "Huevo de colores vivos"
---[[Translation missing --]]
---[[ AL["Capitals"] = "Capitals"--]]
+AL["Capitals"] = "Capitales"
 --[[Translation missing --]]
 --[[ AL["Card Game Tabards"] = "Card Game Tabards"--]]
 AL["Childrens Week"] = "Semana de los Niños"
@@ -34,8 +33,8 @@ AL["Crimson Templar"] = "Templario Carmesí"
 --[[Translation missing --]]
 --[[ AL["Defiler's Scourgestone"] = "Defiler's Scourgestone"--]]
 AL["Drops"] = "Despoja"
-AL["Dungeon Set %s"] = "Conjunto de Mazmorra %s"
-AL["Dungeon Sets"] = "Conjuntos de Mazmorra"
+AL["Dungeon Set %s"] = "Conjunto de Calabozo %s"
+AL["Dungeon Sets"] = "Conjuntos de Calabozo"
 AL["Earthen Templar"] = "Templario terráneo"
 AL["Elemental Invasions"] = "Invasión elemental"
 --[[Translation missing --]]

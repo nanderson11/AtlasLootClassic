@@ -8,18 +8,30 @@ AL["'%s' Vendor"] = "'%s' 商人"
 AL["Abyssal Dukes"] = "深淵公爵"
 AL["Abyssal Lords"] = "深淵議會高層"
 AL["Abyssal Templars"] = "深淵聖殿騎士"
+--[[Translation missing --]]
+--[[ AL["Ahune"] = "Ahune"--]]
+--[[Translation missing --]]
+--[[ AL["Apothecary Hummel"] = "Apothecary Hummel"--]]
 AL["Argent Tournament"] = "銀白錦標賽"
 AL["Avalanchion"] = "阿瓦蘭奇奧"
 AL["Azure Templar"] = "碧藍聖殿騎士"
+--[[Translation missing --]]
+--[[ AL["Badge of Justice"] = "Badge of Justice"--]]
 AL["Baron Charr"] = "火焰男爵查爾"
 AL["Baron Kazum"] = "卡蘇姆男爵"
 AL["BC"] = "燃燒的遠征"
 AL["Box of Chocolates"] = "一盒巧克力"
 AL["Brewfest"] = "啤酒節"
 AL["Brightly Colored Egg"] = "明亮的彩蛋"
+--[[Translation missing --]]
+--[[ AL["Capitals"] = "Capitals"--]]
+--[[Translation missing --]]
+--[[ AL["Card Game Tabards"] = "Card Game Tabards"--]]
 AL["Childrens Week"] = "兒童週"
 AL["Crimson Templar"] = "赤紅聖殿騎士"
 AL["Day of the Dead"] = "亡者節"
+--[[Translation missing --]]
+--[[ AL["Defiler's Scourgestone"] = "Defiler's Scourgestone"--]]
 AL["Drops"] = "掉落"
 AL["Dungeon Set %s"] = "地城套裝 %s"
 AL["Dungeon Sets"] = "地城套裝"
@@ -35,6 +47,8 @@ AL["Faction Mounts"] = "陣營坐騎"
 AL["Feast of Winter Veil"] = "冬幕節"
 AL["Festive Gift"] = "節慶禮物"
 AL["First Prize"] = "頭獎"
+--[[Translation missing --]]
+--[[ AL["Food"] = "Food"--]]
 AL["Gaily Wrapped Present"] = "微微震動的禮物"
 AL["Gently Shaken Gift"] = "精美的禮品"
 AL["Gift of Adoration"] = "愛慕的禮物"
@@ -43,7 +57,11 @@ AL["Hallow's End"] = "萬鬼節"
 AL["Harvest Festival"] = "收穫節"
 AL["High Marshal Whirlaxis"] = "大元帥維拉希斯"
 AL["Hoary Templar"] = "蒼白聖殿騎士"
+--[[Translation missing --]]
+--[[ AL["Idols"] = "Idols"--]]
 AL["Legendarys"] = "傳說物品"
+--[[Translation missing --]]
+--[[ AL["Librams"] = "Librams"--]]
 AL["Lord Skwol"] = "斯古恩領主"
 AL["Love is in the Air"] = "愛就在身邊"
 AL["Lucky Red Envelope"] = "幸運紅包袋"
@@ -62,10 +80,14 @@ AL["Rare Fish Rewards"] = "稀有魚獎勵"
 AL["Scarlet Monastery - Graveyard"] = "血色修道院 - 墓地"
 AL["Scourge Invasion"] = "天譴軍入侵"
 AL["Sidereal Essence"] = "恆星精華"
+--[[Translation missing --]]
+--[[ AL["Sidereal Essence: 1 for 1"] = "Sidereal Essence: 1 for 1"--]]
 AL["Silithus Abyssal"] = "深淵議會"
 AL["Smokywood Pastures"] = "熏木農場"
 AL["Smokywood Pastures Special Gift"] = "熏木農場特殊禮物"
 AL["Stranglethorn Fishing Extravaganza"] = "荊棘谷釣魚大賽"
+--[[Translation missing --]]
+--[[ AL["Sunmote"] = "Sunmote"--]]
 AL["The Duke of Cynders"] = "烏爾之書"
 AL["The Duke of Fathoms"] = "深淵公爵"
 AL["The Duke of Shards"] = "碎石公爵"
@@ -73,8 +95,12 @@ AL["The Duke of Zephyrs"] = "微風公爵"
 AL["The Windreaver"] = "烈風搶奪者"
 AL["Tier Sets"] = "T 裝"
 AL["Token"] = "代幣"
+--[[Translation missing --]]
+--[[ AL["Totems"] = "Totems"--]]
 AL["Two-Handed Weapons"] = "雙手武器"
 AL["Unobtainable"] = "無法取得"
+--[[Translation missing --]]
+--[[ AL["Unobtainable Tabards"] = "Unobtainable Tabards"--]]
 AL["Wands"] = "魔杖"
 AL["World Epics"] = "世界史詩"
 AL["World Events"] = "世界事件"

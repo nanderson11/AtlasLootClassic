@@ -23,8 +23,7 @@ AL["Baron Kazum"] = "Barón Kazum"
 AL["Box of Chocolates"] = "Caja de bombones"
 AL["Brewfest"] = "Fiesta de la Cerveza"
 AL["Brightly Colored Egg"] = "Huevo de colores vivos"
---[[Translation missing --]]
---[[ AL["Capitals"] = "Capitals"--]]
+AL["Capitals"] = "Capitales"
 --[[Translation missing --]]
 --[[ AL["Card Game Tabards"] = "Card Game Tabards"--]]
 AL["Childrens Week"] = "Semana de los Niños"

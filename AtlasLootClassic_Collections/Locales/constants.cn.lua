@@ -24,6 +24,10 @@ AL["Capitals"] = "主城"
 AL["Card Game Tabards"] = "纸牌游戏战袍"
 AL["Childrens Week"] = "儿童周"
 AL["Crimson Templar"] = "赤红圣殿骑士"
+--[[Translation missing --]]
+--[[ AL["Day of the Dead"] = "Day of the Dead"--]]
+--[[Translation missing --]]
+--[[ AL["Defiler's Scourgestone"] = "Defiler's Scourgestone"--]]
 AL["Drops"] = "掉落"
 AL["Dungeon Set %s"] = "地下城 组合 %s"
 AL["Dungeon Sets"] = "地下城 组合"
@@ -60,6 +64,8 @@ AL["Masks"] = "面具"
 AL["Midsummer Festival"] = "仲夏火焰节"
 AL["Noblegarden"] = "复活节"
 AL["One-Handed Weapons"] = "单手武器"
+--[[Translation missing --]]
+--[[ AL["Pilgrim's Bounty"] = "Pilgrim's Bounty"--]]
 AL["Prince Skaldrenox"] = "斯卡德诺斯克王子"
 AL["Princess Tempestria"] = "泰比斯蒂亚公主"
 AL["Ranged Weapons"] = "远程武器"
@@ -67,6 +73,10 @@ AL["Rare Fish"] = "稀有鱼种"
 AL["Rare Fish Rewards"] = "稀有鱼种奖励"
 AL["Scarlet Monastery - Graveyard"] = "血色修道院 - 墓地"
 AL["Scourge Invasion"] = "天灾入侵"
+--[[Translation missing --]]
+--[[ AL["Sidereal Essence"] = "Sidereal Essence"--]]
+--[[Translation missing --]]
+--[[ AL["Sidereal Essence: 1 for 1"] = "Sidereal Essence: 1 for 1"--]]
 AL["Silithus Abyssal"] = "深渊议会"
 AL["Smokywood Pastures"] = "熏木农场"
 AL["Smokywood Pastures Special Gift"] = "熏木农场特殊礼物"

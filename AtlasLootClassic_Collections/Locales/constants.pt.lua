@@ -9,21 +9,43 @@ AL["Abyssal Dukes"] = "Duques abissais"
 AL["Abyssal Lords"] = "Lordes abissais"
 AL["Abyssal Templars"] = "Templários abissais"
 AL["Ahune"] = "Ahune"
+--[[Translation missing --]]
+--[[ AL["Apothecary Hummel"] = "Apothecary Hummel"--]]
+AL["Argent Tournament"] = "Torneio Argênteo"
 AL["Avalanchion"] = "Avalanchion"
 AL["Azure Templar"] = "Templário Lazúli"
 AL["Badge of Justice"] = "Distintivo da Justiça"
 AL["Baron Charr"] = "Barão Charr"
 AL["Baron Kazum"] = "Barão Kazum"
+--[[Translation missing --]]
+--[[ AL["BC"] = "BC"--]]
 AL["Box of Chocolates"] = "Caixa de Bombons"
 AL["Brewfest"] = "CervaFest"
 AL["Brightly Colored Egg"] = "Ovo Colorido Brilhante"
+--[[Translation missing --]]
+--[[ AL["Capitals"] = "Capitals"--]]
+--[[Translation missing --]]
+--[[ AL["Card Game Tabards"] = "Card Game Tabards"--]]
 AL["Childrens Week"] = "Semana das Crianças"
 AL["Crimson Templar"] = "Templário Carmesim"
+AL["Day of the Dead"] = "Dia dos Mortos"
+--[[Translation missing --]]
+--[[ AL["Defiler's Scourgestone"] = "Defiler's Scourgestone"--]]
 AL["Drops"] = "Saque"
 AL["Dungeon Set %s"] = "Conjunto de Masmorra %s"
 AL["Dungeon Sets"] = "Conjuntos de Masmorras"
 AL["Earthen Templar"] = "Templário Terrano"
 AL["Elemental Invasions"] = "Invasões elementares"
+--[[Translation missing --]]
+--[[ AL["Emblem of Conquest"] = "Emblem of Conquest"--]]
+--[[Translation missing --]]
+--[[ AL["Emblem of Frost"] = "Emblem of Frost"--]]
+--[[Translation missing --]]
+--[[ AL["Emblem of Heroism"] = "Emblem of Heroism"--]]
+--[[Translation missing --]]
+--[[ AL["Emblem of Triumph"] = "Emblem of Triumph"--]]
+--[[Translation missing --]]
+--[[ AL["Emblem of Valor"] = "Emblem of Valor"--]]
 AL["Equip"] = "Equipar"
 AL["Faction Mounts"] = "Montarias de facção"
 AL["Feast of Winter Veil"] = "Festa do Véu de Inverno"
@@ -50,6 +72,7 @@ AL["Masks"] = "Máscaras"
 AL["Midsummer Festival"] = "Festival do Fogo do Solstício"
 AL["Noblegarden"] = "Jardinova"
 AL["One-Handed Weapons"] = "Armas de Uma Mão"
+AL["Pilgrim's Bounty"] = "Festa da Fartura"
 AL["Prince Skaldrenox"] = "Príncipe Skaldrenox"
 AL["Princess Tempestria"] = "Princesa Tempestria"
 AL["Ranged Weapons"] = "Longo alcance"
@@ -57,6 +80,10 @@ AL["Rare Fish"] = "Peixe raro"
 AL["Rare Fish Rewards"] = "Recompensas de peixes raros"
 AL["Scarlet Monastery - Graveyard"] = "Monastério Escarlate - Cemitério"
 AL["Scourge Invasion"] = "Invasão do Flagelo"
+--[[Translation missing --]]
+--[[ AL["Sidereal Essence"] = "Sidereal Essence"--]]
+--[[Translation missing --]]
+--[[ AL["Sidereal Essence: 1 for 1"] = "Sidereal Essence: 1 for 1"--]]
 AL["Silithus Abyssal"] = "Abissal Silithus"
 AL["Smokywood Pastures"] = "Fazenda Bosque Defumado"
 AL["Smokywood Pastures Special Gift"] = "Presente Especial da Fazenda Bosque Defumado"
@@ -68,9 +95,14 @@ AL["The Duke of Shards"] = "O Duque dos Estilhaços"
 AL["The Duke of Zephyrs"] = "O Duque dos Zéfiros"
 AL["The Windreaver"] = "O Teceventos"
 AL["Tier Sets"] = "Conjuntos de Tier"
+--[[Translation missing --]]
+--[[ AL["Token"] = "Token"--]]
 AL["Totems"] = "Totens"
 AL["Two-Handed Weapons"] = "Armas de Duas Mãos"
 AL["Unobtainable"] = "Inatingível"
+--[[Translation missing --]]
+--[[ AL["Unobtainable Tabards"] = "Unobtainable Tabards"--]]
 AL["Wands"] = "Varinhas"
 AL["World Epics"] = "Épicos do mundo"
 AL["World Events"] = "Eventos Mundiais"
+AL["Wrath"] = "Wrath"
