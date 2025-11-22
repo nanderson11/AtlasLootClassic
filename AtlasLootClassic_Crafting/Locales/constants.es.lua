@@ -11,8 +11,7 @@ AL["Drums"] = "Tambores"
 AL["Elixirs"] = "Elixires"
 AL["Expert"] = "Experto"
 AL["Fireworks"] = "Fuegos artificiales"
---[[Translation missing --]]
---[[ AL["Fishes"] = "Fishes"--]]
+AL["Fishes"] = "Pescados"
 AL["Flares"] = "Bengalas"
 AL["Flasks"] = "Frascos"
 AL["Healing/Mana Potions"] = "Pociones de sanación/maná"

@@ -11,6 +11,8 @@ AL["Drums"] = "Trommeln"
 AL["Elixirs"] = "Elixiere"
 AL["Expert"] = "Experte"
 AL["Fireworks"] = "Feuerwerk"
+--[[Translation missing --]]
+--[[ AL["Fishes"] = "Fishes"--]]
 AL["Flares"] = "Rauchsignal"
 AL["Flasks"] = "Fläschchen"
 AL["Healing/Mana Potions"] = "Heil/Mana Tränke"
@@ -22,6 +24,8 @@ AL["Oil"] = "Öl"
 AL["Pet"] = "Haustier"
 AL["Pets"] = "Haustiere"
 AL["Protection Potions"] = "Schutztränke"
+--[[Translation missing --]]
+--[[ AL["Raw Gems"] = "Raw Gems"--]]
 AL["Resistance"] = "Widerstand"
 AL["Ring"] = "Ring"
 AL["Secondary Professions"] = "Sekundäre Fertigkeiten"
