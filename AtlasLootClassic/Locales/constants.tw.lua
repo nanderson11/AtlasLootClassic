@@ -5,6 +5,10 @@ if not AL then return end
 AL["--- or ---"] = "--- 或 ---"
 AL["%s will finish loading after combat."] = "%s 將會在戰鬥結束後載入。"
 AL["(%d) Set:"] = "(%d) 套裝:"
+--[[Translation missing --]]
+--[[ AL["(obsolete)"] = "(obsolete)"--]]
+--[[Translation missing --]]
+--[[ AL["(owned)"] = "(owned)"--]]
 AL["/al - Open the AtlasLoot window."] = "/al - 打開副本戰利品查詢主視窗。"
 AL["/al mmb - Toggle MiniMapButton"] = "/al mmb - 切換顯示小地圖按鈕。"
 AL["/al options - Open AtlasLoot Options window."] = "/al options - 打開副本戰利品查詢設定選項視窗。"
@@ -40,7 +44,13 @@ AL["AtlasLoot"] = "副本戰利品查詢"
 AL["AtlasLoot Modules"] = "副本戰利品查詢模組"
 AL["Balzaphon"] = "巴爾薩馮"
 AL["Bonus"] = "獎勵"
+--[[Translation missing --]]
+--[[ AL["Bought with..."] = "Bought with..."--]]
 AL["Bow"] = "弓"
+--[[Translation missing --]]
+--[[ AL["Brutal %s"] = "Brutal %s"--]]
+--[[Translation missing --]]
+--[[ AL["Cancel"] = "Cancel"--]]
 AL["Change item note"] = "修改物品備注"
 AL["Chat Link"] = "聊天連結"
 AL["Chat-Link"] = "聊天連結"
@@ -49,8 +59,12 @@ AL["Click to open Atlas instance map."] = "點一下打開 Atlas 副本地圖。
 AL["Collections"] = "收藏"
 AL["Command %s not found. Use '/al slash' for a full list of commands"] = "無法找到指令 %s。請輸入 '/al slash' 取得完整的指令列表。"
 AL["Conqueror's %s"] = "征服者 %s"
+--[[Translation missing --]]
+--[[ AL["Contains."] = "Contains."--]]
 AL["Content phase:"] = "內容部分:"
 AL["Copy Box"] = "複製文字方塊"
+--[[Translation missing --]]
+--[[ AL["Coren Direbrew"] = "Coren Direbrew"--]]
 AL["Crafting"] = "專業製作"
 AL["Crossbow"] = "弩"
 AL["Ctrl + C to copy"] = "按 Ctrl+C 複製"
@@ -62,24 +76,36 @@ AL["Dress up"] = "試穿"
 AL["Droprate:"] = "掉落率:"
 AL["Dungeons and Raids"] = "地城和團隊"
 AL["Enhancements"] = "附魔"
+--[[Translation missing --]]
+--[[ AL["Enter a note for %s"] = "Enter a note for %s"--]]
 AL["Factions"] = "陣營"
 AL["Favourites"] = "最愛"
 AL["Fishing Pole"] = "釣竿"
 AL["Fist Weapon"] = "主手武器"
+--[[Translation missing --]]
+--[[ AL["Furious %s"] = "Furious %s"--]]
 AL["Global base list"] = "整體清單"
 AL["Global lists"] = "整體清單"
 AL["Gluth"] = "古魯斯"
 AL["gold"] = "金"
-AL["Gothik the Harvester"] = "『收割者』高希"
+AL["Gothik the Harvester"] = "收割者高希"
 AL["Grand Widow Faerlina"] = "大寡婦費琳娜"
 AL["Grobbulus"] = "葛羅巴斯"
 AL["Gun"] = "槍"
+--[[Translation missing --]]
+--[[ AL["H"] = "H"--]]
 AL["Hateful %s"] = "憎恨 %s"
-AL["Heigan the Unclean"] = "『不潔者』海根"
+--[[Translation missing --]]
+--[[ AL["Headless Horseman"] = "Headless Horseman"--]]
+AL["Heigan the Unclean"] = "不潔者海根"
 AL["Heirloom"] = "傳家寶"
+--[[Translation missing --]]
+--[[ AL["Heroes' %s"] = "Heroes' %s"--]]
 AL["Heroic"] = "英雄"
 AL["Heroic Sanctified %s"] = "英雄 沐聖 %s"
 AL["Honor Hold"] = "榮譽堡"
+--[[Translation missing --]]
+--[[ AL["Horde Expedition"] = "Horde Expedition"--]]
 AL["Import done!"] = "匯入完成！"
 AL["Instructor Razuvious"] = "講師拉祖維斯"
 AL["Item level:"] = "物品等級:"
@@ -88,19 +114,29 @@ AL["Items"] = "物品"
 AL["Kel'Thuzad"] = "科爾蘇加德"
 AL["Key"] = "鑰匙"
 AL["Keys"] = "鑰匙"
+--[[Translation missing --]]
+--[[ AL["Kurenai"] = "Kurenai"--]]
 AL["Lady Falther'ess"] = "法瑟蕾絲夫人"
 AL["L-Click"] = "左鍵"
 AL["Left Click"] = "左鍵"
+--[[Translation missing --]]
+--[[ AL["List received. Click link again to import!"] = "List received. Click link again to import!"--]]
 AL["Lists"] = "清單"
 AL["Loatheb"] = "洛斯伯"
 AL["Loot"] = "戰利品"
+--[[Translation missing --]]
+--[[ AL["Lord Blackwood"] = "Lord Blackwood"--]]
 AL["Maexxna"] = "梅克絲娜"
 AL["Main"] = "主要"
+--[[Translation missing --]]
+--[[ AL["Malformed link"] = "Malformed link"--]]
 AL["Middle Click"] = "中鍵"
 AL["Misc"] = "其他"
 AL["Model"] = "模組"
 AL["Module %s is deactivated."] = "尚未啟用模組 %s。"
 AL["Module %s is not installed."] = "尚未安裝模組 %s。"
+--[[Translation missing --]]
+--[[ AL["N"] = "N"--]]
 AL["New version available!"] = "有新版本可用！"
 AL["No module found."] = "無法找到模組。"
 AL["Normal"] = "一般"
@@ -116,21 +152,37 @@ AL["Open Options"] = "設定選項"
 AL["Patchwerk"] = "縫補者"
 AL["Plans"] = "計劃"
 AL["Polearm"] = "長柄武器"
+--[[Translation missing --]]
+--[[ AL["Prince Tenris Mirkblood"] = "Prince Tenris Mirkblood"--]]
 AL["Profile base list"] = "設定檔清單"
 AL["PvP"] = "PvP"
 AL["Quest"] = "任務"
 AL["Quest objective."] = "任務目標。"
 AL["Reagent for..."] = "所需材料..."
+--[[Translation missing --]]
+--[[ AL["Received unexpected favourite list '%s' (expected '%s')"] = "Received unexpected favourite list '%s' (expected '%s')"--]]
 AL["Recipe"] = "食譜"
 AL["Regen"] = "恢復"
+--[[Translation missing --]]
+--[[ AL["Relentless %s"] = "Relentless %s"--]]
 AL["Remove item from list"] = "從清單中移除物品"
+--[[Translation missing --]]
+--[[ AL["Reputation"] = "Reputation"--]]
+--[[Translation missing --]]
+--[[ AL["Requesting favorite list from %s ..."] = "Requesting favorite list from %s ..."--]]
 AL["Required module %s is currently disabled."] = "需要的模組 %s 目前已停用。"
 AL["Required module %s is not installed."] = "需要的模組 %s 尚未安裝。"
+--[[Translation missing --]]
+--[[ AL["Revanchion"] = "Revanchion"--]]
 AL["Right Click"] = "右鍵"
 AL["Right-click to close Atlas window."] = "點一下右鍵關閉副本戰利品查詢主視窗。"
 AL["Sanctified %s"] = "沐聖 %s"
 AL["Sapphiron"] = "薩菲隆"
 AL["Savage %s"] = "荒蠻 %s"
+--[[Translation missing --]]
+--[[ AL["Save"] = "Save"--]]
+--[[Translation missing --]]
+--[[ AL["Scorn"] = "Scorn"--]]
 AL["Select Module"] = "選擇主分類"
 AL["Select Subcategory"] = "選擇子分類"
 AL["Set Favourite"] = "加入最愛"
@@ -162,11 +214,21 @@ AL["Special"] = "特殊"
 AL["Staff"] = "法杖"
 AL["Thaddius"] = "泰迪斯"
 AL["The Four Horsemen"] = "四騎士"
+--[[Translation missing --]]
+--[[ AL["The Mag'har"] = "The Mag'har"--]]
 AL["The Silver Covenant"] = "白銀誓盟"
+--[[Translation missing --]]
+--[[ AL["The Sunreavers"] = "The Sunreavers"--]]
+--[[Translation missing --]]
+--[[ AL["Thrallmar"] = "Thrallmar"--]]
 AL["Tier %s Sets"] = "T%s 套裝"
 AL["Toggle AtlasLoot"] = "顯示副本戰利品查詢"
 AL["Token for..."] = "兌換貨幣..."
+--[[Translation missing --]]
+--[[ AL["Tranquillien"] = "Tranquillien"--]]
 AL["Trash Mobs"] = "小怪"
+--[[Translation missing --]]
+--[[ AL["Triumphant %s"] = "Triumphant %s"--]]
 AL["Two-Hand, Axe"] = "雙手斧"
 AL["Two-Hand, Mace"] = "雙手錘"
 AL["Two-Hand, Sword"] = "雙手劍"
@@ -176,3 +238,5 @@ AL["Vendor"] = "商人"
 AL["Wand"] = "魔杖"
 AL["Weapons"] = "武器"
 AL["Wintersaber Trainers"] = "冬刃豹訓練師"
+--[[Translation missing --]]
+--[[ AL["Wrathful %s"] = "Wrathful %s"--]]
