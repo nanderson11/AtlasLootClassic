@@ -5,6 +5,8 @@ if not AL then return end
 AL["|cff33ff99Rank:|r %s"] = "|cff33ff99等級:|r %s"
 AL["Battlegrounds"] = "戰場"
 AL["Class Sets"] = "職業套裝"
+--[[Translation missing --]]
+--[[ AL["Gladiator Mount"] = "Gladiator Mount"--]]
 AL["Honor"] = "榮譽"
 AL["Insignia"] = "徽章"
 AL["Non Set '%s'"] = "非套裝 '%s'"

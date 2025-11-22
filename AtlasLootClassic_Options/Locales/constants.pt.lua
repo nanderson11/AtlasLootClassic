@@ -21,8 +21,12 @@ AL["Delete list"] = "Excluir lista"
 AL["Enable Atlas map integration if available."] = "Ative a integração do mapa Atlas, se disponível."
 AL["Enable auto selection of bosses if available."] = "Ative a seleção automática de chefes, se disponível."
 AL["Enable auto selection of instances if available."] = "Ative a seleção automática de instâncias, se disponível."
+--[[Translation missing --]]
+--[[ AL["Enable colored loot table names."] = "Enable colored loot table names."--]]
 AL["Enable WoWHead links."] = "Habilite os links WoWHead."
 AL["Export item list"] = "Exportar lista de itens"
+--[[Translation missing --]]
+--[[ AL["Extra tooltip info"] = "Extra tooltip info"--]]
 AL["Font"] = "Fonte"
 AL["Font color/alpha"] = "Cor da fonte/alfa"
 AL["Font size"] = "Tamanho da fonte"
@@ -47,7 +51,15 @@ AL["Show content phase indicator for items."] = "Mostrar indicador de fase de co
 AL["Show content phase indicator for loottables."] = "Mostrar indicador de fase de conteúdo para tabelas de saques."
 AL["Show content phase indicator for sets."] = "Mostrar indicador de fase de conteúdo para conjuntos."
 AL["Show drop rate if available."] = "Mostrar chance de saque, se disponível."
+--[[Translation missing --]]
+--[[ AL["Show extra info in every tooltip."] = "Show extra info in every tooltip."--]]
 AL["Show favourite item icon in item tooltip"] = "Mostrar ícone do iten favorito na dica de ferramenta do iten"
+--[[Translation missing --]]
+--[[ AL["Show ID's."] = "Show ID's."--]]
+--[[Translation missing --]]
+--[[ AL["Show Item level."] = "Show Item level."--]]
+--[[Translation missing --]]
+--[[ AL["Show learned info for companions."] = "Show learned info for companions."--]]
 AL["Show level range if available."] = "Mostrar faixa de nível, se disponível."
 AL["Show listname in item tooltip"] = "Mostrar nome da lista na dica de ferramenta do iten"
 AL["Show minimap button."] = "Mostrar botão minimapa."
@@ -58,6 +70,7 @@ AL["Show vendor prices if available."] = "Mostrar preços de comerciantes, se di
 AL["Sources"] = "Recursos"
 AL["Text"] = "Texto"
 AL["This loads the |cff999999%s|r module."] = "Isso carrega o módulo |cff999999%s|r."
+AL["ToolTip"] = "Dica"
 AL["Use content color if available."] = "Use a cor do conteúdo, se disponível."
 AL["Use english WoWHead."] = "Use o inglês WoWHead."
 AL["Use GameTooltip"] = "Usar dica de ferramenta de jogo"

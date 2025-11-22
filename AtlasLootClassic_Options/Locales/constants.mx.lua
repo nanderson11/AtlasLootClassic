@@ -41,7 +41,7 @@ AL["Reset position of minimap button"] = "Reiniciar posición del botón del min
 AL["Reset position of the |cff33ff99\"%s\"|r window."] = "Reiniciar posición de la ventana |cff33ff99\"%s\"|r."
 AL["Reset position of the |cff33ff99\"Minimap button\"|r."] = "Reiniciar posición del |cff33ff99\"Botón de Minimapa\"|r."
 AL["Scale"] = "Escala"
-AL["Select instance loottable on open."] = "Seleccionar tabla de botín de instancia en abrir."
+AL["Select instance loottable on open."] = "Seleccionar tabla de botín de estancia al abrir."
 AL["Selected list settings"] = "Configuración de lista seleccionada"
 AL["Show background image if available."] = "Mostrar imagen del fondo si está disponible"
 AL["Show boss level if available."] = "Mostrar nivel de jefe si está disponible"
@@ -56,8 +56,7 @@ AL["Show drop rate if available."] = "Mostrar probabilidad conseguirse si está 
 AL["Show favourite item icon in item tooltip"] = "Mostrar icono de objeto favorito en el tooltip del icono."
 --[[Translation missing --]]
 --[[ AL["Show ID's."] = "Show ID's."--]]
---[[Translation missing --]]
---[[ AL["Show Item level."] = "Show Item level."--]]
+AL["Show Item level."] = "Mostrar nivel de objeto."
 --[[Translation missing --]]
 --[[ AL["Show learned info for companions."] = "Show learned info for companions."--]]
 AL["Show level range if available."] = "Mostrar rango de nivel si está disponible."

@@ -21,8 +21,12 @@ AL["Delete list"] = "Liste löschen"
 AL["Enable Atlas map integration if available."] = "Aktivieren Sie die Atlas-Kartenintegration, falls verfügbar."
 AL["Enable auto selection of bosses if available."] = "Bosse automatisch auswählen wenn verfügbar."
 AL["Enable auto selection of instances if available."] = "Instanzen automatisch auswählen wenn verfügbar."
+--[[Translation missing --]]
+--[[ AL["Enable colored loot table names."] = "Enable colored loot table names."--]]
 AL["Enable WoWHead links."] = "WoWHead Links aktivieren."
 AL["Export item list"] = "Itemliste exportieren"
+--[[Translation missing --]]
+--[[ AL["Extra tooltip info"] = "Extra tooltip info"--]]
 AL["Font"] = "Schriftart"
 AL["Font color/alpha"] = "Schriftfarbe/transparenz"
 AL["Font size"] = "Schriftgröße"
@@ -47,7 +51,15 @@ AL["Show content phase indicator for items."] = "Zeige Content-Phasen Indikator 
 AL["Show content phase indicator for loottables."] = "Zeige Content-Phasen für Beuteverzeichnisse."
 AL["Show content phase indicator for sets."] = "Zeige Content-Phasen Indikator für Sets."
 AL["Show drop rate if available."] = "Zeige Droprate wenn verfügbar."
+--[[Translation missing --]]
+--[[ AL["Show extra info in every tooltip."] = "Show extra info in every tooltip."--]]
 AL["Show favourite item icon in item tooltip"] = "Symbole in ToolTips der Favoriten anzeigen"
+--[[Translation missing --]]
+--[[ AL["Show ID's."] = "Show ID's."--]]
+--[[Translation missing --]]
+--[[ AL["Show Item level."] = "Show Item level."--]]
+--[[Translation missing --]]
+--[[ AL["Show learned info for companions."] = "Show learned info for companions."--]]
 AL["Show level range if available."] = "Levelbereich anzeigen wenn verfügbar."
 AL["Show listname in item tooltip"] = "Zeige Listenname im Gegenstands-Tooltip"
 AL["Show minimap button."] = "MiniMap Button anzeigen."
@@ -58,6 +70,8 @@ AL["Show vendor prices if available."] = "Zeige Händlerpreise an, falls verfüg
 AL["Sources"] = "Herkunft"
 AL["Text"] = "Text"
 AL["This loads the |cff999999%s|r module."] = "Lädt das |cff999999%s|r Modul."
+--[[Translation missing --]]
+--[[ AL["ToolTip"] = "ToolTip"--]]
 AL["Use content color if available."] = "Benutze Inhaltsfarbe wenn verfügbar."
 AL["Use english WoWHead."] = "Englisches WoWHead verwenden."
 AL["Use GameTooltip"] = "Standard Tooltip benutzen"

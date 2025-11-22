@@ -53,6 +53,8 @@ AL["Show extra info in every tooltip."] = "모든 툴팁에 추가정보 보기"
 AL["Show favourite item icon in item tooltip"] = "아이템 툴팁에 즐겨찾기 아이템 아이콘 보기"
 AL["Show ID's."] = "아이템ID 보기"
 AL["Show Item level."] = "아이템 레벨 보기"
+--[[Translation missing --]]
+--[[ AL["Show learned info for companions."] = "Show learned info for companions."--]]
 AL["Show level range if available."] = "가능한 경우 레벨 범위를 표시"
 AL["Show listname in item tooltip"] = "아이템 툴팁에 목록 이름 표시"
 AL["Show minimap button."] = "미니맵 버튼 보기"

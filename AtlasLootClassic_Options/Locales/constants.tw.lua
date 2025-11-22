@@ -53,6 +53,8 @@ AL["Show extra info in every tooltip."] = "在所有滑鼠提示中顯示額外�
 AL["Show favourite item icon in item tooltip"] = "最愛的物品在滑鼠提示中顯示圖示"
 AL["Show ID's."] = "顯示物品ID。"
 AL["Show Item level."] = "顯示物品等級。"
+--[[Translation missing --]]
+--[[ AL["Show learned info for companions."] = "Show learned info for companions."--]]
 AL["Show level range if available."] = "顯示等級範圍 (如果有的話)。"
 AL["Show listname in item tooltip"] = "在物品的滑鼠提示中顯示清單名稱"
 AL["Show minimap button."] = "顯示小地圖按鈕。"
