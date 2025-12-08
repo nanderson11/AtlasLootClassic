@@ -35,3 +35,4 @@
 Locales\Locales.xml
 
 data.lua
+data-sod.lua
