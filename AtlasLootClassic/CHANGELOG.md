@@ -4,6 +4,7 @@
 ### Added
 - SoD: Added items to Factions
 - SoD: Added items to PvP
+- SoD: Added class/rank requirements to items from Dungeons and Raids, Factions and PvP
 
 ## 3.3.2 - November 22, 2025
 ### Added
