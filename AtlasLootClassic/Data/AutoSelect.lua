@@ -5,9 +5,6 @@ local AutoSelect = {}
 AtlasLoot.Data.AutoSelect = AutoSelect
 local AL = AtlasLoot.Locales
 
--- lua
-local unpack = unpack
-
 -- WoW
 local UnitPosition = UnitPosition
 local GetSubZoneText = GetSubZoneText
@@ -1085,39 +1082,38 @@ function AutoSelect:RefreshOptions()
 end
 
 function AutoSelect:AddInstanceTable(module, instanceAlID, iniTab)
-    if not iniTab then return end
-    local instanceID = iniTab.InstanceID
-    if not module or not instanceAlID or not instanceID then return end
-    --if not AutoSelectSave[instanceID] then
-		-- AutoSelect now overwrite multiple instanceID's and use the last one added
-		-- That prevent problems with instances like naxx
-        AutoSelectSave[instanceID] = {
-            base = { module, instanceAlID }
-        }
-    --end
+	if not iniTab then return end
+	local instanceID = iniTab.InstanceID
+	if not module or not instanceAlID or not instanceID then return end
+	--if not AutoSelectSave[instanceID] then
+	-- AutoSelect now overwrite multiple instanceID's and use the last one added
+	-- That prevent problems with instances like naxx
+	AutoSelectSave[instanceID] = {
+		base = { module, instanceAlID }
+	}
+	--end
 
-    if iniTab.SubAreaIDs then
+	if iniTab.SubAreaIDs then
 		local content = AutoSelectSave[instanceID]
-        if not content.sub then
-            content.sub = {}
-            content.subList = {}
-        end
+		if not content.sub then
+			content.sub = {}
+			content.subList = {}
+		end
 
-        for i = 1, #iniTab.SubAreaIDs do
-            content.sub[iniTab.SubAreaIDs[i]] = { module, instanceAlID }
-            content.subList[#content.subList + 1] = iniTab.SubAreaIDs[i]
-        end
-        -- SubAreaIDs / SubAreaID
-        for i = 1, #iniTab.items do
+		for i = 1, #iniTab.SubAreaIDs do
+			content.sub[iniTab.SubAreaIDs[i]] = { module, instanceAlID }
+			content.subList[#content.subList + 1] = iniTab.SubAreaIDs[i]
+		end
+		-- SubAreaIDs / SubAreaID
+		for i = 1, #iniTab.items do
 			if iniTab.items[i] then
 				local id = iniTab.items[i].SubAreaID
 				if id and content.sub[id] and not content.sub[id][3] then
 					content.sub[id][3] = i
 				end
 			end
-        end
-
-    end
+		end
+	end
 end
 
 local function GetNewLocalData(instanceID, newData, isBase)
@@ -1139,18 +1135,18 @@ local function GetNewLocalData(instanceID, newData, isBase)
 end
 
 function AutoSelect:GetCurrrentPlayerData()
-    local posY, posX, posZ, instanceID = UnitPosition("player")
-    local ini = instanceID and AutoSelectSave[instanceID] or nil
-    if ini then
-        if ini.sub then
-            local subZoneName = GetSubZoneText()
-            for i = 1, #ini.subList do
-                local locName = SUB_L[ini.subList[i]]
+	local posY, posX, posZ, instanceID = UnitPosition("player")
+	local ini = instanceID and AutoSelectSave[instanceID] or nil
+	if ini then
+		if ini.sub then
+			local subZoneName = GetSubZoneText()
+			for i = 1, #ini.subList do
+				local locName = SUB_L[ini.subList[i]]
 				if locName and locName == subZoneName then
-                    return GetNewLocalData(instanceID, ini.sub[ini.subList[i]])
-                end
-            end
+					return GetNewLocalData(instanceID, ini.sub[ini.subList[i]])
+				end
+			end
 		end
-        return GetNewLocalData(instanceID, ini.base, true)
+		return GetNewLocalData(instanceID, ini.base, true)
 	end
 end
