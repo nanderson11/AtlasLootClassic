@@ -318,37 +318,37 @@ data["WarsongGulch"] = {
 			[HORDE_DIFF] = {
 				{ 1,   "f889rep7" },
 				{ 2,   "INV_Box_01", nil, "10 - 19", nil }, -- WSGRepRevered1019
-				{ 3,   20437 },                  -- Outrider's Bow
-				{ 4,   20441 },                  -- Scout's Blade
-				{ 5,   20430 },                  -- Legionnaire's Sword
-				{ 6,   20425 },                  -- Advisor's Gnarled Staff
+				{ 3,   20437 },                 -- Outrider's Bow
+				{ 4,   20441 },                 -- Scout's Blade
+				{ 5,   20430 },                 -- Legionnaire's Sword
+				{ 6,   20425 },                 -- Advisor's Gnarled Staff
 				{ 8,   "INV_Box_01", nil, "25",      nil },
-				{ 9,   212585 },                 --Outrider's Bow
-				{ 10,  212587 },                 --Scout's Blade
-				{ 11,  212586 },                 --Legionnaire's Sword
-				{ 12,  212584 },                 --Advisor's Gnarled Staff
-				{ 13,  213088 },                 --Sergeant's Cloak
+				{ 9,   212585 },                --Outrider's Bow
+				{ 10,  212587 },                --Scout's Blade
+				{ 11,  212586 },                --Legionnaire's Sword
+				{ 12,  212584 },                --Advisor's Gnarled Staff
+				{ 13,  213088 },                --Sergeant's Cloak
 				{ 17,  "INV_Box_01", nil, "20 - 29", nil }, -- WSGRepRevered2029
-				{ 18,  19561 },                  -- Outrider's Bow
-				{ 19,  19545 },                  -- Scout's Blade
-				{ 20,  19553 },                  -- Legionnaire's Sword
-				{ 21,  19569 },                  -- Advisor's Gnarled Staff
+				{ 18,  19561 },                 -- Outrider's Bow
+				{ 19,  19545 },                 -- Scout's Blade
+				{ 20,  19553 },                 -- Legionnaire's Sword
+				{ 21,  19569 },                 -- Advisor's Gnarled Staff
 				{ 23,  "INV_Box_01", nil, "30 - 39", nil }, -- WSGRepRevered3039
-				{ 24,  19560 },                  -- Outrider's Bow
-				{ 25,  19544 },                  -- Scout's Blade
-				{ 26,  19552 },                  -- Legionnaire's Sword
-				{ 27,  19568 },                  -- Advisor's Gnarled Staff
+				{ 24,  19560 },                 -- Outrider's Bow
+				{ 25,  19544 },                 -- Scout's Blade
+				{ 26,  19552 },                 -- Legionnaire's Sword
+				{ 27,  19568 },                 -- Advisor's Gnarled Staff
 				{ 101, "f889rep7" },
 				{ 102, "INV_Box_01", nil, "40 - 49", nil }, -- WSGRepRevered4049
-				{ 103, 19559 },                  -- Outrider's Bow
-				{ 104, 19543 },                  -- Scout's Blade
-				{ 105, 19551 },                  -- Legionnaire's Sword
-				{ 106, 19567 },                  -- Advisor's Gnarled Staff
+				{ 103, 19559 },                 -- Outrider's Bow
+				{ 104, 19543 },                 -- Scout's Blade
+				{ 105, 19551 },                 -- Legionnaire's Sword
+				{ 106, 19567 },                 -- Advisor's Gnarled Staff
 				{ 108, "INV_Box_01", nil, "50 - 59", nil }, -- WSGRepRevered5059
-				{ 109, 19558 },                  -- Outrider's Bow
-				{ 110, 19542 },                  -- Scout's Blade
-				{ 111, 19550 },                  -- Legionnaire's Sword
-				{ 112, 19566 },                  -- Advisor's Gnarled Staff
+				{ 109, 19558 },                 -- Outrider's Bow
+				{ 110, 19542 },                 -- Scout's Blade
+				{ 111, 19550 },                 -- Legionnaire's Sword
+				{ 112, 19566 },                 -- Advisor's Gnarled Staff
 			},
 		},
 		{ -- WSGRepHonored
@@ -898,28 +898,28 @@ data["ClassSets"] = {
 		{
 			name = AL["Level 50"],
 			[ALLIANCE_DIFF] = {
-				{ 2,  1618 },
-				{ 4,  1624 },
-				{ 5,  1623 },
-				{ 6,  1622 },
-				{ 7,  1625 },
-				{ 9,  1627 },
-				{ 10, 1631 },
-				{ 11, 1629 },
-				{ 13, 1633 },
-				{ 14, 1635 },
+				{ 1,  1634 },
+				{ 2,  1636 },
+				{ 4,  1628 },
+				{ 5,  1630 },
+				{ 6,  1632 },
+				{ 8,  1665 },
+				{ 9,  1626 },
+				{ 11, 1619 },
+				{ 12, 1620 },
+				{ 13, 1621 },
 			},
 			[HORDE_DIFF] = {
-				{ 17, 1619 },
-				{ 18, 1620 },
-				{ 19, 1621 },
-				{ 21, 1665 },
-				{ 22, 1626 },
-				{ 24, 1628 },
-				{ 25, 1630 },
-				{ 26, 1632 },
-				{ 28, 1634 },
-				{ 29, 1636 },
+				{ 1,  1633 },
+				{ 2,  1635 },
+				{ 4,  1627 },
+				{ 5,  1631 },
+				{ 6,  1629 },
+				{ 8,  1624 },
+				{ 9,  1623 },
+				{ 10, 1622 },
+				{ 11, 1625 },
+				{ 13, 1618 },
 			},
 		},
 		PVP_RANKS,
