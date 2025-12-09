@@ -5691,7 +5691,7 @@ data["MoltenCore"] = {
 			[NORMAL_DIFF] = {
 				{ 1,  227765 }, -- Scorched Core Boots
 				{ 2,  227757 }, -- Molten Scaled Boots
-				{ 3,  227533 }, -- Incandescent Gloves
+				{ 3,  227536 }, -- Incandescent Boots
 				{ 5,  228350 }, -- Eskhandar's Right Claw
 				{ 16, 228285 }, -- Helm of the Lifegiver
 				{ 17, 228239 }, -- Robe of Volatile Power
