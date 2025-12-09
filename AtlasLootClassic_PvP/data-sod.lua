@@ -1,5 +1,5 @@
--- If we are on a SoD realm, ignore everything in this file
-if C_Seasons.GetActiveSeason() == 2 then return end
+-- If we aren't on a SoD realm, ignore everything in this file
+if C_Seasons.GetActiveSeason() ~= 2 then return end
 
 -----------------------------------------------------------------------
 -- Upvalued Lua API.
@@ -102,7 +102,6 @@ data["AlteracValley"] = {
 	AtlasMapID = "AlteracValley",
 	ContentType = PVP_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
-	ContentPhase = 2.5,
 	items = {
 		{ -- AVRepExalted
 			name = _G["FACTION_STANDING_LABEL8"],
@@ -225,7 +224,6 @@ data["WarsongGulch"] = {
 	AtlasMapID = "WarsongGulch",
 	ContentType = PVP_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
-	ContentPhase = 2.5,
 	items = {
 		{ -- WSGRepExalted
 			name = _G["FACTION_STANDING_LABEL8"],
@@ -289,56 +287,68 @@ data["WarsongGulch"] = {
 				{ 4,   20443 },                 -- Sentinel's Blade
 				{ 5,   20440 },                 -- Protector's Sword
 				{ 6,   20434 },                 -- Lorekeeper's Staff
-				{ 8,   "INV_Box_01", nil, "20 - 29", nil }, -- WSGRepRevered2029
-				{ 9,   19565 },                 -- Outrunner's Bow
-				{ 10,  19549 },                 -- Sentinel's Blade
-				{ 11,  19557 },                 -- Protector's Sword
-				{ 12,  19573 },                 -- Lorekeeper's Staff
-				{ 17,  "INV_Box_01", nil, "30 - 39", nil }, -- WSGRepRevered3039
-				{ 18,  19564 },                 -- Outrunner's Bow
-				{ 19,  19548 },                 -- Sentinel's Blade
-				{ 20,  19556 },                 -- Protector's Sword
-				{ 21,  19572 },                 -- Lorekeeper's Staff
-				{ 23,  "INV_Box_01", nil, "40 - 49", nil }, -- WSGRepRevered4049
-				{ 24,  19563 },                 -- Outrunner's Bow
-				{ 25,  19547 },                 -- Sentinel's Blade
-				{ 26,  19555 },                 -- Protector's Sword
-				{ 27,  19571 },                 -- Lorekeeper's Staff
+				{ 8,   "INV_Box_01", nil, "25",      nil },
+				{ 9,   212581 },                --Outrunner's Bow
+				{ 10,  212583 },                --Sentinel's Blade
+				{ 11,  212582 },                --Protector's Sword
+				{ 12,  212580 },                --Lorekeeper's Staff
+				{ 13,  213087 },                --Sergeant's Cloak
+				{ 17,  "INV_Box_01", nil, "20 - 29", nil }, -- WSGRepRevered2029
+				{ 18,  19565 },                 -- Outrunner's Bow
+				{ 19,  19549 },                 -- Sentinel's Blade
+				{ 20,  19557 },                 -- Protector's Sword
+				{ 21,  19573 },                 -- Lorekeeper's Staff
+				{ 23,  "INV_Box_01", nil, "30 - 39", nil }, -- WSGRepRevered3039
+				{ 24,  19564 },                 -- Outrunner's Bow
+				{ 25,  19548 },                 -- Sentinel's Blade
+				{ 26,  19556 },                 -- Protector's Sword
+				{ 27,  19572 },                 -- Lorekeeper's Staff
 				{ 101, "f890rep7" },
-				{ 102, "INV_Box_01", nil, "50 - 59", nil }, -- WSGRepRevered5059
-				{ 103, 19562 },                 -- Outrunner's Bow
-				{ 104, 19546 },                 -- Sentinel's Blade
-				{ 105, 19554 },                 -- Protector's Sword
-				{ 106, 19570 },                 -- Lorekeeper's Staff
+				{ 102, "INV_Box_01", nil, "40 - 49", nil }, -- WSGRepRevered4049
+				{ 103, 19563 },                 -- Outrunner's Bow
+				{ 104, 19547 },                 -- Sentinel's Blade
+				{ 105, 19555 },                 -- Protector's Sword
+				{ 106, 19571 },                 -- Lorekeeper's Staff
+				{ 108, "INV_Box_01", nil, "50 - 59", nil }, -- WSGRepRevered5059
+				{ 109, 19562 },                 -- Outrunner's Bow
+				{ 110, 19546 },                 -- Sentinel's Blade
+				{ 111, 19554 },                 -- Protector's Sword
+				{ 112, 19570 },                 -- Lorekeeper's Staff
 			},
 			[HORDE_DIFF] = {
 				{ 1,   "f889rep7" },
 				{ 2,   "INV_Box_01", nil, "10 - 19", nil }, -- WSGRepRevered1019
-				{ 3,   20437 },                 -- Outrider's Bow
-				{ 4,   20441 },                 -- Scout's Blade
-				{ 5,   20430 },                 -- Legionnaire's Sword
-				{ 6,   20425 },                 -- Advisor's Gnarled Staff
-				{ 8,   "INV_Box_01", nil, "20 - 29", nil }, -- WSGRepRevered2029
-				{ 9,   19561 },                 -- Outrider's Bow
-				{ 10,  19545 },                 -- Scout's Blade
-				{ 11,  19553 },                 -- Legionnaire's Sword
-				{ 12,  19569 },                 -- Advisor's Gnarled Staff
-				{ 17,  "INV_Box_01", nil, "30 - 39", nil }, -- WSGRepRevered3039
-				{ 18,  19560 },                 -- Outrider's Bow
-				{ 19,  19544 },                 -- Scout's Blade
-				{ 20,  19552 },                 -- Legionnaire's Sword
-				{ 21,  19568 },                 -- Advisor's Gnarled Staff
-				{ 23,  "INV_Box_01", nil, "40 - 49", nil }, -- WSGRepRevered4049
-				{ 24,  19559 },                 -- Outrider's Bow
-				{ 25,  19543 },                 -- Scout's Blade
-				{ 26,  19551 },                 -- Legionnaire's Sword
-				{ 27,  19567 },                 -- Advisor's Gnarled Staff
+				{ 3,   20437 },                  -- Outrider's Bow
+				{ 4,   20441 },                  -- Scout's Blade
+				{ 5,   20430 },                  -- Legionnaire's Sword
+				{ 6,   20425 },                  -- Advisor's Gnarled Staff
+				{ 8,   "INV_Box_01", nil, "25",      nil },
+				{ 9,   212585 },                 --Outrider's Bow
+				{ 10,  212587 },                 --Scout's Blade
+				{ 11,  212586 },                 --Legionnaire's Sword
+				{ 12,  212584 },                 --Advisor's Gnarled Staff
+				{ 13,  213088 },                 --Sergeant's Cloak
+				{ 17,  "INV_Box_01", nil, "20 - 29", nil }, -- WSGRepRevered2029
+				{ 18,  19561 },                  -- Outrider's Bow
+				{ 19,  19545 },                  -- Scout's Blade
+				{ 20,  19553 },                  -- Legionnaire's Sword
+				{ 21,  19569 },                  -- Advisor's Gnarled Staff
+				{ 23,  "INV_Box_01", nil, "30 - 39", nil }, -- WSGRepRevered3039
+				{ 24,  19560 },                  -- Outrider's Bow
+				{ 25,  19544 },                  -- Scout's Blade
+				{ 26,  19552 },                  -- Legionnaire's Sword
+				{ 27,  19568 },                  -- Advisor's Gnarled Staff
 				{ 101, "f889rep7" },
-				{ 102, "INV_Box_01", nil, "50 - 59", nil }, -- WSGRepRevered5059
-				{ 103, 19558 },                 -- Outrider's Bow
-				{ 104, 19542 },                 -- Scout's Blade
-				{ 105, 19550 },                 -- Legionnaire's Sword
-				{ 106, 19566 },                 -- Advisor's Gnarled Staff
+				{ 102, "INV_Box_01", nil, "40 - 49", nil }, -- WSGRepRevered4049
+				{ 103, 19559 },                  -- Outrider's Bow
+				{ 104, 19543 },                  -- Scout's Blade
+				{ 105, 19551 },                  -- Legionnaire's Sword
+				{ 106, 19567 },                  -- Advisor's Gnarled Staff
+				{ 108, "INV_Box_01", nil, "50 - 59", nil }, -- WSGRepRevered5059
+				{ 109, 19558 },                  -- Outrider's Bow
+				{ 110, 19542 },                  -- Scout's Blade
+				{ 111, 19550 },                  -- Legionnaire's Sword
+				{ 112, 19566 },                  -- Advisor's Gnarled Staff
 			},
 		},
 		{ -- WSGRepHonored
@@ -410,39 +420,49 @@ data["WarsongGulch"] = {
 			name = _G["FACTION_STANDING_LABEL5"],
 			[ALLIANCE_DIFF] = {
 				{ 1,  "f890rep5" },
-				{ 2,  "INV_Box_01", nil, "20 - 29", nil }, -- WSGRepFriendly2029
-				{ 3,  21568 },                 -- Rune of Duty
-				{ 4,  21566 },                 -- Rune of Perfection
-				{ 5,  19062 },                 -- Warsong Gulch Field Ration
-				{ 6,  19068 },                 -- Warsong Gulch Silk Bandage
-				{ 8,  "INV_Box_01", nil, "30 - 39", nil }, -- WSGRepFriendly3039
-				{ 9,  19061 },                 -- Warsong Gulch Iron Ration
-				{ 10, 19067 },                 -- Warsong Gulch Mageweave Bandage
-				{ 11, 17349 },                 -- Superior Healing Draught
-				{ 12, 17352 },                 -- Superior Mana Draught
-				{ 17, "INV_Box_01", nil, "40 - 49", nil }, -- WSGRepFriendly4049
-				{ 18, 21567 },                 -- Rune of Duty
-				{ 19, 21565 },                 -- Rune of Perfection
-				{ 20, 19060 },                 -- Warsong Gulch Enriched Ration
-				{ 21, 19066 },                 -- Warsong Gulch Runecloth Bandage
+				{ 2,  "INV_Box_01", nil, "25",      nil },
+				{ 3,  211500 },                --Resilient Cloth Headband
+				{ 4,  211857 },                --Resilient Leather Mask
+				{ 5,  211856 },                --Resilient Mail Coif
+				{ 6,  211498 },                --Trainee's Sentinel Nightsaber
+				{ 8,  "INV_Box_01", nil, "20 - 29", nil }, -- WSGRepFriendly2029
+				{ 9,  21568 },                 -- Rune of Duty
+				{ 10, 21566 },                 -- Rune of Perfection
+				{ 11, 19062 },                 -- Warsong Gulch Field Ration
+				{ 12, 19068 },                 -- Warsong Gulch Silk Bandage
+				{ 17, "INV_Box_01", nil, "30 - 39", nil }, -- WSGRepFriendly3039
+				{ 18, 19061 },                 -- Warsong Gulch Iron Ration
+				{ 19, 19067 },                 -- Warsong Gulch Mageweave Bandage
+				{ 20, 17349 },                 -- Superior Healing Draught
+				{ 21, 17352 },                 -- Superior Mana Draught
+				{ 23, "INV_Box_01", nil, "40 - 49", nil }, -- WSGRepFriendly4049
+				{ 24, 21567 },                 -- Rune of Duty
+				{ 25, 21565 },                 -- Rune of Perfection
+				{ 26, 19060 },                 -- Warsong Gulch Enriched Ration
+				{ 27, 19066 },                 -- Warsong Gulch Runecloth Bandage
 			},
 			[HORDE_DIFF] = {
 				{ 1,  "f889rep5" },
-				{ 2,  "INV_Box_01", nil, "20 - 29", nil }, -- WSGRepFriendly2029
-				{ 3,  21568 },                 -- Rune of Duty
-				{ 4,  21566 },                 -- Rune of Perfection
-				{ 5,  19062 },                 -- Warsong Gulch Field Ration
-				{ 6,  19068 },                 -- Warsong Gulch Silk Bandage
-				{ 8,  "INV_Box_01", nil, "30 - 39", nil }, -- WSGRepFriendly3039
-				{ 9,  19061 },                 -- Warsong Gulch Iron Ration
-				{ 10, 19067 },                 -- Warsong Gulch Mageweave Bandage
-				{ 11, 17349 },                 -- Superior Healing Draught
-				{ 12, 17352 },                 -- Superior Mana Draught
-				{ 17, "INV_Box_01", nil, "40 - 49", nil }, -- WSGRepFriendly4049
-				{ 18, 21567 },                 -- Rune of Duty
-				{ 19, 21565 },                 -- Rune of Perfection
-				{ 20, 19060 },                 -- Warsong Gulch Enriched Ration
-				{ 21, 19066 },                 -- Warsong Gulch Runecloth Bandage
+				{ 2,  "INV_Box_01", nil, "25",      nil },
+				{ 3,  211500 },                --Resilient Cloth Headband
+				{ 4,  211857 },                --Resilient Leather Mask
+				{ 5,  211856 },                --Resilient Mail Coif
+				{ 6,  211499 },                --Trainee's Outrider Wolf
+				{ 8,  "INV_Box_01", nil, "20 - 29", nil }, -- WSGRepFriendly2029
+				{ 9,  21568 },                 -- Rune of Duty
+				{ 10, 21566 },                 -- Rune of Perfection
+				{ 11, 19062 },                 -- Warsong Gulch Field Ration
+				{ 12, 19068 },                 -- Warsong Gulch Silk Bandage
+				{ 17, "INV_Box_01", nil, "30 - 39", nil }, -- WSGRepFriendly3039
+				{ 18, 19061 },                 -- Warsong Gulch Iron Ration
+				{ 19, 19067 },                 -- Warsong Gulch Mageweave Bandage
+				{ 20, 17349 },                 -- Superior Healing Draught
+				{ 21, 17352 },                 -- Superior Mana Draught
+				{ 23, "INV_Box_01", nil, "40 - 49", nil }, -- WSGRepFriendly4049
+				{ 24, 21567 },                 -- Rune of Duty
+				{ 25, 21565 },                 -- Rune of Perfection
+				{ 26, 19060 },                 -- Warsong Gulch Enriched Ration
+				{ 27, 19066 },                 -- Warsong Gulch Runecloth Bandage
 			},
 		},
 		PVP_RANKS,
@@ -454,7 +474,6 @@ data["ArathiBasin"] = {
 	AtlasMapID = "ArathiBasin",
 	ContentType = PVP_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
-	ContentPhase = 3,
 	items = {
 		{ -- ABRepExalted
 			name = _G["FACTION_STANDING_LABEL8"],
@@ -664,61 +683,243 @@ data["ArathiBasin"] = {
 	},
 }
 
+data["Blood Moon"] = {
+	name = AL["Blood Moon"],
+	ContentType = GENERAL_CONTENT,
+	LoadDifficulty = NORMAL_DIFF,
+	TableType = SET_ITTYPE,
+	items = {
+		{
+			name = AL["Level 60"],
+			TableType = NORMAL_ITTYPE,
+			[NORMAL_DIFF] = {
+				{ 1,   235144 }, -- Satchel of Blood-Caked Copper Coins
+				{ 2,   235145 }, -- Satchel of Blood-Caked Silver Coins
+				{ 3,   234145 }, -- Blood-Caked Hakkari Bijou
+				{ 4,   234960 }, -- Reins of the Blood-Caked Tiger
+				{ 5,   234961 }, -- Whistle of the Blood-Caked Raptor
+				{ 7,   233728 }, -- Blood-Caked Insignia
+				{ 8,   233740 }, -- Blood-Caked Shroud
+				{ 9,   233739 }, -- Blood-Caked Drape
+				{ 10,  233738 }, -- Blood-Caked Cape
+				{ 11,  233737 }, -- Blood-Caked Cloak
+				{ 12,  233736 }, -- Blood-Caked Band
+				{ 13,  233735 }, -- Blood-Caked Loop
+				{ 14,  233734 }, -- Blood-Caked Circle
+				{ 15,  233733 }, -- Blood-Caked Ring
+				{ 16,  233732 }, -- Blood-Caked Necklace
+				{ 17,  233731 }, -- Blood-Caked Amulet
+				{ 18,  233730 }, -- Blood-Caked Talisman
+				{ 19,  233729 }, -- Blood-Caked Choker
+				{ 21,  233765 }, -- Battle Hardened Dragonhide Cord
+				{ 22,  233761 }, -- Battle Hardened Dragonhide Belt
+				{ 23,  233763 }, -- Battle Hardened Dragonhide Waistguard
+				{ 24,  233759 }, -- Battle Hardened Dragonhide Bracers
+				{ 25,  233767 }, -- Battle Hardened Dragonhide Wrists
+				{ 26,  233769 }, -- Battle Hardened Dragonhide Armbands
+				{ 101, 233751 }, -- Battle Hardened Chain Girdle
+				{ 102, 233753 }, -- Battle Hardened Chain Belt
+				{ 103, 233755 }, -- Battle Hardened Chain Wristguards
+				{ 104, 233757 }, -- Battle Hardened Chain Bracers
+				{ 106, 233777 }, -- Battle Hardened Silk Sash
+				{ 107, 233775 }, -- Battle Hardened Silk Cuffs
+				{ 109, 233741 }, -- Battle Hardened Lamellar Belt
+				{ 110, 233744 }, -- Battle Hardened Lamellar Cord
+				{ 111, 233743 }, -- Battle Hardened Lamellar Wrists
+				{ 112, 233742 }, -- Battle Hardened Lamellar Armguards
+				{ 116, 233783 }, -- Battle Hardened Satin Sash
+				{ 117, 233786 }, -- Battle Hardened Satin Cinch
+				{ 118, 233781 }, -- Battle Hardened Satin Wrists
+				{ 119, 233780 }, -- Battle Hardened Satin Bracers
+				{ 121, 233771 }, -- Battle Hardened Leather Girdle
+				{ 122, 233773 }, -- Battle Hardened Leather Armsplints
+				{ 124, 233745 }, -- Battle Hardened Mail Waistband
+				{ 125, 233746 }, -- Battle Hardened Mail Cord
+				{ 126, 233747 }, -- Battle Hardened Mail Belt
+				{ 127, 233748 }, -- Battle Hardened Mail Bracers
+				{ 128, 233749 }, -- Battle Hardened Mail Wristguards
+				{ 129, 233750 }, -- Battle Hardened Mail Vambraces
+				{ 201, 233789 }, -- Battle Hardened Dreadweave Belt
+				{ 202, 233787 }, -- Battle Hardened Dreadweave Cuffs
+				{ 204, 233724 }, -- Battle Hardened Plate Girdle
+				{ 205, 233726 }, -- Battle Hardened Plate Armguards
+			},
+		},
+		{
+			name = AL["Level 50"],
+			TableType = NORMAL_ITTYPE,
+			[NORMAL_DIFF] = {
+				{ 1,  221447 }, -- Ritualist's Bloodmoon Grimoire
+				{ 2,  221446 }, -- Ritualist's Hammer
+				{ 3,  221448 }, -- Talisman of the Corrupted Grove
+				{ 5,  221451 }, -- Bloodthirst Crossbow
+				{ 6,  221450 }, -- Gurubashi Pit Fighter's Bow
+				{ 8,  221452 }, -- Bloodfocused Arcane Band
+				{ 9,  221453 }, -- Band of Boiling Blood
+				{ 10, 221454 }, -- Glacial Blood Band
+				{ 12, 221457 }, -- Libram of Draconic Destruction
+				{ 13, 221455 }, -- Bloodlight Reverence
+				{ 14, 221456 }, -- Eclipsed Sanguine Saber
+				{ 15, 220173 }, -- Parasomnia
+				{ 16, 221459 }, -- Seal of the Sacrificed
+				{ 17, 221458 }, -- Shadowy Band of Victory
+				{ 19, 221460 }, -- Gurubashi Backstabber
+				{ 20, 221462 }, -- Bloodied Sword of Speed
+				{ 22, 221464 }, -- Totem of Fiery Precision
+				{ 23, 221463 }, -- Ancestral Voodoo Doll
+				{ 24, 221465 }, -- Corrupted Smashbringer
+				{ 26, 221466 }, -- Loop of Burning Blood
+				{ 27, 221467 }, -- Eye of the Bloodmoon
+				{ 29, 221469 }, -- Headhunter's Barbed Spear
+				{ 30, 221468 }, -- Wall of Whispers
+			},
+		},
+		{
+			name = AL["Level 40"],
+			TableType = NORMAL_ITTYPE,
+			[NORMAL_DIFF] = {
+				{ 1,   216621 }, -- Blooddrenched Drape
+				{ 2,   216620 }, -- Bloodrot Cloak
+				{ 3,   216623 }, -- Cape of Hemostasis
+				{ 4,   216622 }, -- Coagulated Cloak
+				{ 5,   216570 }, -- Reins of the Golden Sabercat
+				{ 6,   216492 }, -- Whistle of the Mottled Blood Raptor
+				{ 8,   216498 }, -- Enchanted Sanguine Grimoire
+				{ 9,   216499 }, -- Bloodbark Crusher
+				{ 10,  216500 }, -- Bloodbonded Grove Talisman
+				{ 12,  216513 }, -- Tigerblood Talisman
+				{ 13,  216514 }, -- Sanguine Quiver
+				{ 14,  216515 }, -- Sanguine Ammo Pouch
+				{ 15,  216516 }, -- Bloodlash Bow
+				{ 16,  216510 }, -- Blood Resonance Circle
+				{ 17,  216511 }, -- Emberblood Seal
+				{ 18,  216512 }, -- Loop of Chilled Veins
+				{ 20,  216504 }, -- Eclipsed Bloodlight Saber
+				{ 21,  216505 }, -- Bloodlight Crusader's Radiance
+				{ 22,  216506 }, -- Bloodlight Avenger's Edge
+				{ 23,  216607 }, -- Bloodlight Offering
+				{ 25,  216517 }, -- Sanguine Sanctuary
+				{ 26,  216518 }, -- Blood Covenant Seal
+				{ 27,  216519 }, -- Sanguine Shadow Band
+				{ 101, 216520 }, -- Bloodharvest Blade
+				{ 102, 216521 }, -- Swift Sanguine Strikers
+				{ 103, 216522 }, -- Blood Spattered Stiletto
+				{ 105, 216501 }, -- Bloodstorm Barrier
+				{ 106, 216502 }, -- Bloodstorm War Totem
+				{ 107, 216503 }, -- Bloodstorm Jewel
+				{ 108, 216615 }, -- Ancestral Bloodstorm Beacon
+				{ 110, 216507 }, -- Umbral Bloodseal
+				{ 111, 216508 }, -- Infernal Bloodcoil Band
+				{ 112, 216509 }, -- Infernal Pact Essence
+				{ 116, 216495 }, -- Sanguine Crusher
+				{ 117, 216496 }, -- Sanguine Skullcrusher
+				{ 118, 216497 }, -- Exsanguinar
+			},
+		},
+	},
+}
+
 data["ClassSets"] = {
 	name = AL["Class Sets"],
 	ContentType = GENERAL_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
 	TableType = SET_ITTYPE,
-	ContentPhase = 2,
 	items = {
 		{ -- Epic
-			name = ALIL["Epic"],
-			ContentPhase = 2,
+			name = AL["Level 60"].." "..ALIL["Epic"],
 			[ALLIANCE_DIFF] = {
-				{ 1,  392 }, -- Warlock
-				{ 3,  389 }, -- Priest
-				{ 16, 388 }, -- Mage
-				{ 5,  394 }, -- Rogue
-				{ 20, 397 }, -- Druid
-				{ 7,  395 }, -- Hunter
-				{ 9,  384 }, -- Warrior
-				{ 24, 402 }, -- Paladin
+				{ 1,  1740 }, -- Mage
+				{ 3,  1741 }, -- Priest caster
+				{ 4,  1742 }, -- Priest healer
+				{ 6,  1746 }, -- Warlock
+				{ 8,  1735 }, -- Druid caster
+				{ 9,  1736 }, -- Druid healer
+				{ 10, 1737 }, -- Druid melee
+				{ 12, 1743 }, -- Rogue
+				{ 16, 1738 }, -- Hunter melee
+				{ 17, 1739 }, -- Hunter ranged
+				{ 19, 1745 }, -- Paladin healer
+				{ 20, 1744 }, -- Paladin melee
+				{ 22, 1747 }, -- Warrior
 			},
 
 			[HORDE_DIFF] = {
-				{ 1,  391 }, -- Warlock
-				{ 3,  390 }, -- Priest
-				{ 16, 387 }, -- Mage
-				{ 5,  393 }, -- Rogue
-				{ 20, 398 }, -- Druid
-				{ 7,  396 }, -- Hunter
-				{ 9,  383 }, -- Warrior
-				{ 22, 386 }, -- Shaman
+				{ 1,  1727 }, -- Mage
+				{ 3,  1728 }, -- Priest caster
+				{ 4,  1729 }, -- Priest healer
+				{ 6,  1734 }, -- Warlock
+				{ 8,  1723 }, -- Druid caster
+				{ 9,  1724 }, -- Druid healer
+				{ 10, 1722 }, -- Druid melee
+				{ 12, 1730 }, -- Rogue
+				{ 16, 1726 }, -- Hunter melee
+				{ 17, 1725 }, -- Hunter ranged
+				{ 19, 1732 }, -- Shaman caster
+				{ 20, 1733 }, -- Shaman healer
+				{ 21, 1731 }, -- Shaman melee
+				{ 23, 1721 }, -- Warrior
 			},
 		},
 		{ -- Rare
-			name = ALIL["Rare"],
-			ContentPhase = 2,
+			name = AL["Level 60"].." "..ALIL["Rare"],
 			[ALLIANCE_DIFF] = {
-				{ 1,  547 }, -- Warlock
-				{ 3,  549 }, -- Priest
-				{ 16, 546 }, -- Mage
-				{ 5,  548 }, -- Rogue
-				{ 20, 551 }, -- Druid
-				{ 7,  550 }, -- Hunter
-				{ 9,  545 }, -- Warrior
-				{ 24, 544 }, -- Paladin
+				{ 1,  1767 }, -- Mage
+				{ 3,  1768 }, -- Priest
+				{ 4,  1769 }, -- Priest
+				{ 6,  1774 }, -- Warlock
+				{ 8,  1762 }, -- Druid
+				{ 9,  1763 }, -- Druid
+				{ 10, 1764 }, -- Druid
+				{ 12, 1770 }, -- Rogue
+				{ 16, 1765 }, -- Hunter
+				{ 17, 1766 }, -- Hunter
+				{ 19, 1776 }, -- Paladin
+				{ 20, 1777 }, -- Paladin
+				{ 22, 1775 }, -- Warrior
 			},
 
 			[HORDE_DIFF] = {
-				{ 1,  541 }, -- Warlock
-				{ 3,  540 }, -- Priest
-				{ 16, 542 }, -- Mage
-				{ 5,  522 }, -- Rogue
-				{ 20, 539 }, -- Druid
-				{ 7,  543 }, -- Hunter
-				{ 9,  537 }, -- Warrior
-				{ 22, 538 }, -- Shaman
+				{ 1,  1753 }, -- Mage
+				{ 3,  1754 }, -- Priest
+				{ 4,  1755 }, -- Priest
+				{ 6,  1760 }, -- Warlock
+				{ 8,  1748 }, -- Druid
+				{ 9,  1749 }, -- Druid
+				{ 10, 1750 }, -- Druid
+				{ 12, 1756 }, -- Rogue
+				{ 16, 1751 }, -- Hunter
+				{ 17, 1752 }, -- Hunter
+				{ 19, 1757 }, -- shaman
+				{ 20, 1758 }, -- Shaman
+				{ 21, 1759 }, -- Shaman
+				{ 23, 1761 }, -- Warrior
+			},
+		},
+		{
+			name = AL["Level 50"],
+			[ALLIANCE_DIFF] = {
+				{ 2,  1618 },
+				{ 4,  1624 },
+				{ 5,  1623 },
+				{ 6,  1622 },
+				{ 7,  1625 },
+				{ 9,  1627 },
+				{ 10, 1631 },
+				{ 11, 1629 },
+				{ 13, 1633 },
+				{ 14, 1635 },
+			},
+			[HORDE_DIFF] = {
+				{ 17, 1619 },
+				{ 18, 1620 },
+				{ 19, 1621 },
+				{ 21, 1665 },
+				{ 22, 1626 },
+				{ 24, 1628 },
+				{ 25, 1630 },
+				{ 26, 1632 },
+				{ 28, 1634 },
+				{ 29, 1636 },
 			},
 		},
 		PVP_RANKS,
@@ -729,9 +930,8 @@ data["Armor"] = {
 	name = AL["Armor"],
 	ContentType = GENERAL_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
-	ContentPhase = 2,
 	items = {
-		{ -- PVPWeapons
+		{ -- PVPArmor
 			name = AL["Armor"],
 			[ALLIANCE_DIFF] = {
 				{ 1,  18664 }, -- A Treatise on Military Ranks
@@ -800,55 +1000,64 @@ data["Weapons"] = {
 	name = AL["Weapons"],
 	ContentType = GENERAL_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
-	ContentPhase = 2,
 	items = {
 		{ -- PVPWeapons
 			name = AL["Weapons"],
 			[ALLIANCE_DIFF] = {
-				{ 1,  18827 }, -- Grand Marshal's Handaxe
-				{ 2,  18830 }, -- Grand Marshal's Sunderer
-				{ 3,  18838 }, -- Grand Marshal's Dirk
-				{ 4,  23451 }, -- Grand Marshal's Mageblade
-				{ 5,  18843 }, -- Grand Marshal's Right Hand Blade
-				{ 6,  18847 }, -- Grand Marshal's Left Hand Blade
-				{ 7,  18865 }, -- Grand Marshal's Punisher
-				{ 8,  23454 }, -- Grand Marshal's Warhammer
-				{ 9,  23455 }, -- Grand Marshal's Demolisher
-				{ 10, 18867 }, -- Grand Marshal's Battle Hammer
-				{ 11, 12584 }, -- Grand Marshal's Longsword
-				{ 12, 23456 }, -- Grand Marshal's Swiftblade
-				{ 13, 18876 }, -- Grand Marshal's Claymore
-				{ 16, 18869 }, -- Grand Marshal's Glaive
-				{ 17, 18873 }, -- Grand Marshal's Stave
-				{ 18, 18833 }, -- Grand Marshal's Bullseye
-				{ 19, 18836 }, -- Grand Marshal's Repeater
-				{ 20, 18855 }, -- Grand Marshal's Hand Cannon
-				{ 21, 18825 }, -- Grand Marshal's Aegis
-				{ 22, 23452 }, -- Grand Marshal's Tome of Power
-				{ 23, 23453 }, -- Grand Marshal's Tome of Restoration
+				{ 1,  234580 }, -- Grand Marshal's Handaxe
+				{ 2,  234566 }, -- Grand Marshal's Sunderer
+				{ 3,  234582 }, -- Grand Marshal's Dirk
+				{ 4,  235479 }, -- Grand Marshal's Shiv
+				{ 5,  234574 }, -- Grand Marshal's Mageblade
+				{ 6,  234583 }, -- Grand Marshal's Right Hand Blade
+				{ 7,  234584 }, -- Grand Marshal's Left Hand Blade
+				{ 8,  234581 }, -- Grand Marshal's Punisher
+				{ 9,  235481 }, -- Grand Marshal's Hacker
+				{ 10, 235480 }, -- Grand Marshal's Bonecracker
+				{ 11, 234576 }, -- Grand Marshal's Warhammer
+				{ 12, 234568 }, -- Grand Marshal's Demolisher
+				{ 13, 234567 }, -- Grand Marshal's Battle Hammer
+				{ 14, 234578 }, -- Grand Marshal's Longsword
+				{ 15, 234579 }, -- Grand Marshal's Swiftblade
+				{ 16, 234565 }, -- Grand Marshal's Claymore
+				{ 17, 234569 }, -- Grand Marshal's Glaive
+				{ 18, 234570 }, -- Grand Marshal's Polearm
+				{ 19, 234571 }, -- Grand Marshal's Stave
+				{ 20, 234585 }, -- Grand Marshal's Bullseye
+				{ 21, 234586 }, -- Grand Marshal's Repeater
+				{ 22, 234587 }, -- Grand Marshal's Hand Cannon
+				{ 23, 234588 }, -- Grand Marshal's Aegis
+				{ 24, 235473 }, -- Grand Marshal's Barricade
+				{ 25, 234589 }, -- Grand Marshal's Tome of Power
+				{ 26, 234590 }, -- Grand Marshal's Tome of Restoration
 			},
 			[HORDE_DIFF] = {
-				{ 1,  18828 }, -- High Warlord's Cleaver
-				{ 2,  18831 }, -- High Warlord's Battle Axe
-				{ 3,  18840 }, -- High Warlord's Razor
-				{ 4,  23466 }, -- High Warlord's Spellblade
-				{ 5,  18844 }, -- High Warlord's Right Claw
-				{ 6,  18848 }, -- High Warlord's Left Claw
-				{ 7,  18866 }, -- High Warlord's Bludgeon
-				{ 8,  23464 }, -- High Warlord's Battle Mace
-				{ 9,  23465 }, -- High Warlord's Destroyer
-				{ 10, 18868 }, -- High Warlord's Pulverizer
-				{ 11, 16345 }, -- High Warlord's Blade
-				{ 12, 23467 }, -- High Warlord's Quickblade
-				{ 13, 18877 }, -- High Warlord's Greatsword
-				{ 16, 18871 }, -- High Warlord's Pig Sticker
-				{ 17, 18874 }, -- High Warlord's War Staff
-				{ 18, 18835 }, -- High Warlord's Recurve
-				{ 19, 18837 }, -- High Warlord's Crossbow
-				{ 20, 18860 }, -- High Warlord's Street Sweeper
-				{ 21, 18826 }, -- High Warlord's Shield Wall
-				{ 22, 23468 }, -- High Warlord's Tome of Destruction
-				{ 23, 23469 }, -- High Warlord's Tome of Mending
+				{ 1,  234554 }, -- High Warlord's Cleaver
+				{ 2,  234543 }, -- High Warlord's Battle Axe
+				{ 3,  235476 }, -- High Warlord's Hacker
+				{ 4,  234556 }, -- High Warlord's Razor
+				{ 5,  235478 }, -- High Warlord's Razor
+				{ 6,  234550 }, -- High Warlord's Spellblade
+				{ 7,  234557 }, -- High Warlord's Right Claw
+				{ 8,  234558 }, -- High Warlord's Left Claw
+				{ 9,  234555 }, -- High Warlord's Bludgeon
+				{ 10, 234551 }, -- High Warlord's Battle Mace
+				{ 11, 235477 }, -- High Warlord's Bonecracker
+				{ 12, 234546 }, -- High Warlord's Destroyer
+				{ 13, 234545 }, -- High Warlord's Pulverizer
+				{ 14, 234552 }, -- High Warlord's Blade
+				{ 15, 234553 }, -- High Warlord's Quickblade
+				{ 16, 234542 }, -- High Warlord's Greatsword
+				{ 17, 234547 }, -- High Warlord's Pig Sticker
+				{ 18, 234548 }, -- High Warlord's Pig Poker
+				{ 19, 234549 }, -- High Warlord's War Staff
+				{ 20, 234559 }, -- High Warlord's Recurve
+				{ 21, 234560 }, -- High Warlord's Crossbow
+				{ 22, 234561 }, -- High Warlord's Street Sweeper
+				{ 23, 234562 }, -- High Warlord's Shield Wall
+				{ 24, 235474 }, -- High Warlord's Barricade
+				{ 25, 234563 }, -- High Warlord's Tome of Destruction
+				{ 26, 234564 }, -- High Warlord's Tome of Mending
 			},
 		},
 		PVP_RANKS,
@@ -859,7 +1068,6 @@ data["PvPMounts"] = {
 	name = ALIL["Mounts"],
 	ContentType = GENERAL_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
-	ContentPhase = 2,
 	CorrespondingFields = private.MOUNTS_LINK,
 	items = {
 		{ -- PvPMountsPvP
@@ -887,7 +1095,6 @@ data["Insignia"] = {
 	name = AL["Insignia"],
 	ContentType = GENERAL_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
-	ContentPhase = 2,
 	items = {
 		{
 			name = AL["Insignia"],

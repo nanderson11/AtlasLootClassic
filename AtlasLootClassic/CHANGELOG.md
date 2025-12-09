@@ -2,7 +2,8 @@
 
 ## 3.4.0 -
 ### Added
-- SoD: Added items to Factions (including item costs for upgraded crafted items)
+- SoD: Added items to Factions
+- SoD: Added items to PvP
 
 ## 3.3.2 - November 22, 2025
 ### Added
