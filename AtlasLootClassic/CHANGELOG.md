@@ -2,6 +2,7 @@
 
 ## 3.5.0 -
 ### Added
+- SoD: Added token data
 - SoD: Added hard mode weapons with alternate visual effects to Dungeons and Raids
 ### Fixed
 - Era/Anni/SoD: Clean up faction-specific items, including Nefarian/Onyxia heads

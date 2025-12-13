@@ -361,6 +361,322 @@ TOKEN_DATA.CLASSIC = {
 	[21178] = { "f609rep5", 0, { 20802, 5 }, { 20800, 3 }, { 20801, 7 } },        -- Gloves of Earthen Power
 	[21187] = 21178,                                                              -- Earthweave Cloak
 	[21179] = 21178,                                                              -- Band of Earthen Wrath
+
+	-- SoD Darkmoon Decks
+	-- Wilds Deck
+	[221272] = { 221272, 221308, 0, 221271, 221273, 221274, 221275, 221276, 221277, 221278, 221279 }, -- Wilds Deck
+	[221271] = 221272,
+	[221273] = 221272,
+	[221274] = 221272,
+	[221275] = 221272,
+	[221276] = 221272,
+	[221277] = 221272,
+	[221278] = 221272,
+	[221279] = 221272,
+	-- Plagues Deck
+	[221280] = { 221280, 221307, 0, 221281, 221282, 221283, 221284, 221285, 221286, 221287, 221288 },
+	[221281] = 221280,
+	[221282] = 221280,
+	[221283] = 221280,
+	[221284] = 221280,
+	[221285] = 221280,
+	[221286] = 221280,
+	[221287] = 221280,
+	[221288] = 221280,
+	--Dunes Deck
+	[221289] = { 221289, 221309, 0, 221290, 221291, 221292, 221293, 221294, 221295, 221296, 221297 },
+	[221290] = 221289,
+	[221291] = 221289,
+	[221292] = 221289,
+	[221293] = 221289,
+	[221294] = 221289,
+	[221295] = 221289,
+	[221296] = 221289,
+	[221297] = 221289,
+	--Nightmares Deck
+	[221299] = { 221299, 221310, 0, 221298, 221300, 221301, 221302, 221303, 221304, 221305, 221306 },
+	[221298] = 221299,
+	[221300] = 221299,
+	[221301] = 221299,
+	[221302] = 221299,
+	[221303] = 221299,
+	[221304] = 221299,
+	[221305] = 221299,
+	[221306] = 221299,
+	-- Portals Deck / Darkmoon Card: Twisting Nether
+	[235275] = { 235275, 234179, 0, 19276, 19278, 19279, 19280, 19281, 19282, 19283, 19284 },
+	-- Elementals Deck / Darkmoon Card: Maelstrom
+	[235276] = { 235276, 234178, 0, 19268, 19269, 19270, 19271, 19272, 19273, 19274, 19275 },
+	-- Warlords Deck / Darkmoon Card: Heroism
+	[235277] = { 235277, 234176, 0, 19258, 19259, 19260, 19261, 19262, 19263, 19264, 19265 },
+	-- Beasts Deck / Darkmoon Card: Blue Dragon
+	[235278] = { 235278, 234177, 0, 19227, 19230, 19231, 19232, 19233, 19234, 19235, 19236 },
+
+	-- SoD Waylaid Supplies
+	-- Level 25
+	[211322] = { { 20744, 2 }, type = 4 },
+	[211321] = { { 11287, 2 }, type = 4 },
+	[211318] = { { 118, 20 }, type = 4 },
+	[211320] = { { 3473, 3 }, type = 4 },
+	[211323] = { { 4360, 12 }, type = 4 },
+	[211329] = { { 6888, 20 }, type = 4 },
+	[211326] = { { 2300, 3 }, type = 4 },
+	[211332] = { { 2581, 10 }, type = 4 },
+	[211319] = { { 2847, 6 }, type = 4 },
+	[211330] = { { 2680, 20 }, type = 4 },
+	[211324] = { { 4362, 3 }, type = 4 },
+	[211327] = { { 4343, 6 }, type = 4 },
+	[211317] = { { 765, 20 }, type = 4 },
+	[211325] = { { 4237, 5 }, type = 4 },
+	[211328] = { { 6238, 4 }, type = 4 },
+	[211934] = { { 929, 10 }, type = 4 },
+	[211315] = { { 2318, 14 }, type = 4 },
+	[211331] = { { 6290, 20 }, type = 4 },
+	[210771] = { { 2840, 20 }, type = 4 },
+	[211933] = { { 2835, 10 }, type = 4 },
+	[211316] = { { 2447, 20 }, type = 4 },
+	[211828] = { { 20745, 2 }, type = 4 },
+	[211824] = { { 3385, 20 }, type = 4 },
+	[211835] = { { 21072, 15 }, type = 4 },
+	[211829] = { { 4374, 12 }, type = 4 },
+	[211822] = { { 2453, 20 }, type = 4 },
+	[211838] = { { 3531, 15 }, type = 4 },
+	[211825] = { { 6350, 3 }, type = 4 },
+	[211836] = { { 6890, 20 }, type = 4 },
+	[211831] = { { 2316, 2 }, type = 4 },
+	[211837] = { { 5527, 8 }, type = 4 },
+	[211820] = { { 2842, 6 }, type = 4 },
+	[211821] = { { 2319, 12 }, type = 4 },
+	[211833] = { { 2587, 4 }, type = 4 },
+	[211827] = { { 6339, 1 }, type = 4 },
+	[211819] = { { 2841, 12 }, type = 4 },
+	[211830] = { { 5507, 2 }, type = 4 },
+	[211826] = { { 15869, 14 }, type = 4 },
+	[211935] = { { 6373, 15 }, type = 4 },
+	[211834] = { { 5542, 3 }, type = 4 },
+	[211823] = { { 2452, 20 }, type = 4 },
+	[211832] = { { 4251, 2 }, type = 4 },
+	-- Level 40
+	[215403] = { { 10546, 2 }, type = 4 },
+	[215400] = { { 7966, 5 }, type = 4 },
+	[215402] = { { 4394, 8 }, type = 4 },
+	[215389] = { { 3818, 16 }, type = 4 },
+	[215391] = { { 3819, 8 }, type = 4 },
+	[215411] = { { 7377, 2 }, type = 4 },
+	[215398] = { { 3835, 5 }, type = 4 },
+	[215387] = { { 4235, 5 }, type = 4 },
+	[215420] = { { 4594, 40 }, type = 4 },
+	[215421] = { { 6371, 7 }, type = 4 },
+	[215413] = { { 4334, 3 }, type = 4 },
+	[215408] = { { 5966, 5 }, type = 4 },
+	[215392] = { { 8831, 8 }, type = 4 },
+	[215386] = { { 3860, 6 }, type = 4 },
+	[215390] = { { 3358, 10 }, type = 4 },
+	[215399] = { { 7919, 3 }, type = 4 },
+	[215395] = { { 8949, 6 }, type = 4 },
+	[215388] = { { 4304, 10 }, type = 4 },
+	[215393] = { { 1710, 16 }, type = 4 },
+	[215401] = { { 4391, 2 }, type = 4 },
+	[215419] = { { 6451, 10 }, type = 4 },
+	[215414] = { { 7062, 4 }, type = 4 },
+	[215385] = { { 3577, 4 }, type = 4 },
+	[215417] = { { 3729, 10 }, type = 4 },
+	[215415] = { { 4335, 5 }, type = 4 },
+	[215410] = { { 7387, 4 }, type = 4 },
+	[215407] = { { 5964, 4 }, type = 4 },
+	[215418] = { { 17222, 5 }, type = 4 },
+	[215404] = { { 10508, 2 }, type = 4 },
+	[215406] = { { 10577, 14 }, type = 4 },
+	[215396] = { { 8951, 14 }, type = 4 },
+	[215405] = { { 10724, 1 }, type = 4 },
+	[215397] = { { 3855, 2 }, type = 4 },
+	[215409] = { { 8198, 2 }, type = 4 },
+	[215394] = { { 4623, 20 }, type = 4 },
+	[215416] = { { 10008, 3 }, type = 4 },
+	-- Level 50
+	[220918] = { { 16766, 16 }, type = 4 },
+	[220919] = { { 13931, 8 }, type = 4 },
+	[220920] = { { 18045, 12 }, type = 4 },
+	[220921] = { { 8545, 14 }, type = 4 },
+	[220922] = { { 8838, 15 }, type = 4 },
+	[220923] = { { 13463, 6 }, type = 4 },
+	[220924] = { { 6037, 12 }, type = 4 },
+	[220925] = { { 12359, 16 }, type = 4 },
+	[220926] = { { 8170, 14 }, type = 4 },
+	[220927] = { { 8169, 8 }, type = 4 },
+	[220928] = { { 12655, 4 }, type = 4 },
+	[220929] = { { 13443, 6 }, type = 4 },
+	[220930] = { { 13446, 8 }, type = 4 },
+	[220931] = { { 10562, 16 }, type = 4 },
+	[220932] = { { 15993, 3 }, type = 4 },
+	[220933] = { { 15995, 2 }, type = 4 },
+	[220934] = { { 7931, 3 }, type = 4 },
+	[220935] = { { 12406, 5 }, type = 4 },
+	[220936] = { { 7938, 2 }, type = 4 },
+	[220937] = { { 15564, 12 }, type = 4 },
+	[220938] = { { 15084, 6 }, type = 4 },
+	[220939] = { { 15092, 5 }, type = 4 },
+	[220940] = { { 10024, 5 }, type = 4 },
+	[220941] = { { 13856, 6 }, type = 4 },
+	[220942] = { { 10034, 4 }, type = 4 },
+
+	-- SoD Other
+	[232454] = { 221487, 221488, 221489, 221510, 221513, 221514, 221516, 232458, 221490, type = 2 }, -- Emblem of the Wild Gods
+	[232455] = { 212548, 212549, 212551, 212552, 212559, 212561, 212562, 212560, 208853, type = 2 }, -- Emblem of Dishonor
+	[232456] = { 213100, 213104, 213112, 213118, 213124, 213130, 213137, 213144, 216606, type = 2 }, -- Emblem of the Violet Eye
+	[232457] = { 232459, 232460, 232461, 232462, type = 2 },                                      -- Emblem of the Worldcore
+
+	-- SoD BFD
+	[211454] = { 16886, 16887, type = 3 },        -- Strange Water Globe
+	[209693] = { 211451, 211450, 211449, type = 3 }, -- Perfect Blackfathom Pearl
+	[211452] = { 211451, 211450, 211449, type = 3 }, -- Perfect Blackfathom Pearl
+	-- SoD Gnomeregan
+	[217007] = { 213336, 213337, 213341, 213342, 213338, 213339, 213335, 216484, type = 6 },
+	[217008] = { 213310, 213311, 213312, 213313, 213314, 213315, 213316, 216485, type = 6 },
+	[217009] = { 213328, 213329, 213331, 213332, 213333, 213334, 213330, 216486, type = 6 },
+	[217350] = { 213346, 213345, 213344, 213343, type = 3 }, -- Thermaplugg's Engineering Notes
+	[217351] = { 213346, 213345, 213344, 213343, type = 3 }, -- Thermaplugg's Engineering Notes
+	-- SoD ST
+	[220636] = { ICONS.PALADIN, nil, 220642, 220643, 220648, nil, 220653, 220654, 220656, 0, ICONS.PALADIN, nil, 220660, 220661, 220662, nil, 220650, 220651, 220652, 0, ICONS.WARRIOR, nil, 220642, 220643, 220648, nil, 220653, 220654, 220656, 0, ICONS.HUNTER, nil, 220666, 220667, 220668, 0, ICONS.ROGUE, nil, 220676, 220678, 220677, 0, ICONS.SHAMAN, nil, 220665, 220663, 220664, nil, 220657, 220658, 220659, 0, ICONS.SHAMAN, nil, 220660, 220661, 220662, 0, type = 6 },
+	[220637] = { ICONS.PRIEST, nil, 220683, 220684, 220685, nil, 220680, 220679, 220681, 0, ICONS.MAGE, nil, 220680, 220679, 220681, 0, ICONS.WARLOCK, nil, 220680, 220679, 220681, { nil }, 220783, 220781, 220784, 0, ICONS.DRUID, nil, 220779, 220778, 220780, nil, 220669, 220671, 220670, 0, ICONS.DRUID, { nil }, 220672, 220673, 220675, 0, type = 6 },
+	[221475] = { 221474, type = 3 },
+	[221363] = { 220626, 220627, 220628, 220629, 220630, type = 3 },
+	[221346] = { 220626, 220627, 220628, 220629, 220630, type = 3 },
+	-- SoD Molten Core
+	[228129] = { 228143, type = 5 },                                                                                                                                                                                                                                                                            -- Shadowflame Skull
+	[227728] = { 227683, type = 5 },                                                                                                                                                                                                                                                                            -- Eye of Sulfuras
+	[227536] = { ICONS.MAGE, 226557, 226568, 0, ICONS.PRIEST, 226571, 226586, 0, ICONS.WARLOCK, 226554, 216918, type = 6 },                                                                                                                                                                                     -- Incandescent Boots
+	[227765] = { ICONS.DRUID, 226645, 226652, 226663, 226673, 0, ICONS.WARRIOR, 226487, 226496, 0, ICONS.ROGUE, 226443, 226477, type = 6 },                                                                                                                                                                     -- Scorched Core Boots
+	[227763] = { ICONS.DRUID, 226646, 226651, 226666, 226671, 0, ICONS.WARRIOR, 226490, 226493, 0, ICONS.ROGUE, 226445, 226479, type = 6 },                                                                                                                                                                     -- Scorched Core Leggings
+	[227534] = { ICONS.MAGE, 226561, 226565, 0, ICONS.PRIEST, 226574, 226583, 0, ICONS.WARLOCK, 226547, 216923, type = 6 },                                                                                                                                                                                     -- Incandescent Leggings
+	[227754] = { ICONS.PALADIN, 226594, 226598, 226606, 0, ICONS.HUNTER, 226532, 226537, 0, ICONS.SHAMAN, 226614, 226639, 226623, 226631, type = 6 },                                                                                                                                                           -- Molten Scaled Leggings
+	[227757] = { ICONS.PALADIN, 226593, 226601, 226609, 0, ICONS.HUNTER, 226531, 226538, 0, ICONS.SHAMAN, 226613, 226636, 226620, 226628, type = 6 },                                                                                                                                                           -- Molten Scaled Boots
+	[227533] = { ICONS.MAGE, 226556, 226569, 0, ICONS.PRIEST, 226572, 226585, 0, ICONS.WARLOCK, 226552, 216921, type = 6 },                                                                                                                                                                                     -- Incandescent Gloves
+	[227764] = { ICONS.DRUID, 226647, 226658, 226659, 226670, 0, ICONS.WARRIOR, 226488, 226495, 0, ICONS.ROGUE, 226446, 226480, type = 6 },                                                                                                                                                                     -- Scorched Core Helm
+	[227755] = { ICONS.PALADIN, 226590, 226599, 0, ICONS.HUNTER, 226533, 226536, 0, ICONS.SHAMAN, 226612, 226638, 226622, 226630, type = 6 },                                                                                                                                                                   -- Molten Scaled Helm
+	[227759] = { ICONS.DRUID, 226648, 226654, 226664, 226669, 0, ICONS.WARRIOR, 226486, 226497, 0, ICONS.ROGUE, 226441, 226475, type = 6 },                                                                                                                                                                     -- Scorched Core Gloves
+	[227756] = { ICONS.PALADIN, 226591, 226600, 226608, 0, ICONS.HUNTER, 226528, 226540, 0, ICONS.SHAMAN, 226615, 226637, 226621, 226629, type = 6 },                                                                                                                                                           -- Molten Scaled Gloves
+	[227537] = { ICONS.MAGE, 226560, 226566, 0, ICONS.PRIEST, 226576, 226581, 0, ICONS.WARLOCK, 226550, 216925, type = 6 },                                                                                                                                                                                     -- Incandescent Shoulderpads
+	[227762] = { ICONS.DRUID, 226644, 226653, 226665, 226674, 0, ICONS.WARRIOR, 226491, 226492, 0, ICONS.ROGUE, 226444, 226478, type = 6 },                                                                                                                                                                     -- Scorched Core Shoulderpads
+	[227752] = { ICONS.PALADIN, 226588, 221783, 226605, 0, ICONS.HUNTER, 226527, 226543, 0, ICONS.SHAMAN, 226611, 226640, 226624, 226632, type = 6 },                                                                                                                                                           -- Molten Scaled Shoulderpads
+	[227535] = { ICONS.MAGE, 226559, 226563, 0, ICONS.PRIEST, 226575, 226582, 0, ICONS.WARLOCK, 226548, 216924, type = 6 },                                                                                                                                                                                     -- Incandescent Robe
+	[227766] = { ICONS.DRUID, 221785, 226656, 226661, 226675, 0, ICONS.WARRIOR, 226489, 226494, 0, ICONS.ROGUE, 226447, 226473, type = 6 },                                                                                                                                                                     -- Scorched Core Chest
+	[227758] = { ICONS.PALADIN, 226610, 226602, 226595, 0, ICONS.HUNTER, 226534, 226535, 0, ICONS.SHAMAN, 226617, 226635, 226619, 226627, type = 6 },                                                                                                                                                           -- Molten Scaled Chest
+	[227532] = { ICONS.MAGE, 226562, 226564, 0, ICONS.PRIEST, 226573, 226584, 0, ICONS.WARLOCK, 226549, 216922, type = 6 },                                                                                                                                                                                     -- Incandescent Hood
+	[227531] = { ICONS.MAGE, 226558, 226567, 0, ICONS.PRIEST, 226578, 226579, 0, ICONS.WARLOCK, 226553, 216920, type = 6 },                                                                                                                                                                                     -- Incandescent Bindings
+	[227760] = { ICONS.DRUID, 226655, 226662, 226668, 226649, 0, ICONS.WARRIOR, 226484, 226499, 0, ICONS.ROGUE, 226442, 226476, type = 6 },                                                                                                                                                                     -- Scorched Core Bindings
+	[227750] = { ICONS.PALADIN, 226589, 226596, 226603, 0, ICONS.HUNTER, 226530, 226541, 0, ICONS.SHAMAN, 226618, 226642, 226626, 226634, type = 6 },                                                                                                                                                           -- Molten Scaled Bindings
+	[227530] = { ICONS.MAGE, 226555, 226570, 0, ICONS.PRIEST, 226577, 226580, 0, ICONS.WARLOCK, 226551, 216919, type = 6 },                                                                                                                                                                                     -- Incandescent Belt
+	[227761] = { ICONS.DRUID, 226657, 226660, 226667, 226650, 0, ICONS.WARRIOR, 226485, 226498, 0, ICONS.ROGUE, 226440, 226474, type = 6 },                                                                                                                                                                     -- Scorched Core Belt
+	[227751] = { ICONS.PALADIN, 226592, 226597, 226604, 0, ICONS.HUNTER, 226529, 226542, 0, ICONS.SHAMAN, 226616, 226641, 226625, 226633, type = 6 },                                                                                                                                                           -- Molten Scaled Belt
+	-- SoD Onyxia
+	[228689] = { 228685, 228687, 228686, type = 3 },                                                                                                                                                                                                                                                            -- Head of Onyxia
+	[228688] = { 228685, 228687, 228686, type = 3 },                                                                                                                                                                                                                                                            -- Head of Onyxia
+	-- SoD BWL
+	[229352] = { 224122, type = 3 },                                                                                                                                                                                                                                                                            -- Intelligence Findings
+	[230904] = { 229909, 229971, 229972, type = 3 },                                                                                                                                                                                                                                                            -- Scroll: SEENECS FO RIEF
+	[231378] = { 224280, type = 3 },                                                                                                                                                                                                                                                                            -- Shimmering Golden Disc
+	[231882] = { 231754, 231755, type = 3 },                                                                                                                                                                                                                                                                    -- Suppression Device Receipt
+	[231452] = { 229749, 229806, type = 3 },                                                                                                                                                                                                                                                                    -- Blood of the Lightbringer
+	[231995] = { 224279, 231890, type = 3 },                                                                                                                                                                                                                                                                    -- Hardened Elementium Slag
+	[231722] = { 229910, type = 3 },                                                                                                                                                                                                                                                                            -- Depleted Scythe of Chaos
+	[231814] = { 224281, 224282, type = 3 },                                                                                                                                                                                                                                                                    -- Chromatic Heart
+	[229906] = { 231509, type = 3 },                                                                                                                                                                                                                                                                            -- Tarnished Bronze Scale
+	[231729] = { ICONS.PALADIN, 231179, 231195, 231188, 0, ICONS.HUNTER, 231060, 231069, 0, ICONS.SHAMAN, 231214, 231222, 231198, 231206, type = 6 },                                                                                                                                                           -- Ancient Gloves
+	[231724] = { ICONS.PALADIN, 231174, 231190, 231182, 0, ICONS.HUNTER, 231055, 231063, 0, ICONS.SHAMAN, 231215, 231223, 231199, 231207, type = 6 },                                                                                                                                                           -- Ancient Bindings
+	[231725] = { ICONS.PALADIN, 231175, 231191, 231183, 0, ICONS.HUNTER, 231056, 231065, 0, ICONS.SHAMAN, 231216, 231224, 231200, 231208, type = 6 },                                                                                                                                                           -- Ancient Belt
+	[231731] = { ICONS.PALADIN, 231181, 231197, 231187, 0, ICONS.HUNTER, 231062, 231071, 0, ICONS.SHAMAN, 231221, 231229, 231205, 231213, type = 6 },                                                                                                                                                           -- Ancient Chest
+	[231726] = { ICONS.PALADIN, 231176, 231192, 231184, 0, ICONS.HUNTER, 231057, 231066, 0, ICONS.SHAMAN, 231217, 231225, 231201, 231209, type = 6 },                                                                                                                                                           -- Ancient Shoulderpads
+	[231730] = { ICONS.PALADIN, 231180, 231196, 231189, 0, ICONS.HUNTER, 231061, 231070, 0, ICONS.SHAMAN, 231220, 231228, 231204, 231212, type = 6 },                                                                                                                                                           -- Ancient Boots
+	[231727] = { ICONS.PALADIN, 231177, 231193, 231185, 0, ICONS.HUNTER, 231058, 231067, 0, ICONS.SHAMAN, 231218, 231226, 231202, 231210, type = 6 },                                                                                                                                                           -- Ancient Leggings
+	[231728] = { ICONS.PALADIN, 231178, 231194, 231186, 0, ICONS.HUNTER, 231059, 231068, 0, ICONS.SHAMAN, 231219, 231227, 231203, 231211, type = 6 },                                                                                                                                                           -- Ancient Helm
+	[231715] = { ICONS.DRUID, 231253, 231261, 231237, 231245, 0, ICONS.ROGUE, 231046, 231054, 0, ICONS.WARRIOR, 231031, 231023, type = 6 },                                                                                                                                                                     -- Primeval Bindings
+	[231721] = { ICONS.DRUID, 231247, 231255, 231231, 231239, 0, ICONS.ROGUE, 231041, 231049, 0, ICONS.WARRIOR, 231037, 231029, type = 6 },                                                                                                                                                                     -- Primeval Boots
+	[231718] = { ICONS.DRUID, 231250, 231258, 231234, 231242, 0, ICONS.ROGUE, 231044, 231052, 0, ICONS.WARRIOR, 231034, 231026, type = 6 },                                                                                                                                                                     -- Primeval Leggings
+	[231720] = { ICONS.DRUID, 231248, 231256, 231232, 231240, 0, ICONS.ROGUE, 231042, 231050, 0, ICONS.WARRIOR, 231036, 231028, type = 6 },                                                                                                                                                                     -- Primeval Gloves
+	[231719] = { ICONS.DRUID, 231249, 231257, 231233, 231241, 0, ICONS.ROGUE, 231043, 231051, 0, ICONS.WARRIOR, 231035, 231027, type = 6 },                                                                                                                                                                     -- Primeval Helm
+	[231723] = { ICONS.DRUID, 231246, 231254, 231230, 231238, 0, ICONS.ROGUE, 231040, 231048, 0, ICONS.WARRIOR, 231038, 231030, type = 6 },                                                                                                                                                                     -- Primeval Chest
+	[231717] = { ICONS.DRUID, 231251, 231259, 231235, 231243, 0, ICONS.ROGUE, 231039, 231047, 0, ICONS.WARRIOR, 231033, 231025, type = 6 },                                                                                                                                                                     -- Primeval Shoulderpads
+	[231716] = { ICONS.DRUID, 231252, 231260, 231236, 231244, 0, ICONS.ROGUE, 231045, 231053, 0, ICONS.WARRIOR, 231032, 231024, type = 6 },                                                                                                                                                                     -- Primeval Belt
+	[231714] = { ICONS.PRIEST, 231169, 231159, 0, ICONS.MAGE, 231105, 231113, 0, ICONS.WARLOCK, 231076, 231095, type = 6 },                                                                                                                                                                                     -- Draconian Robe
+	[231708] = { ICONS.PRIEST, 231171, 231161, 0, ICONS.MAGE, 231100, 231108, 0, ICONS.WARLOCK, 231078, 231097, type = 6 },                                                                                                                                                                                     -- Draconian Belt
+	[231712] = { ICONS.PRIEST, 231166, 231156, 0, ICONS.MAGE, 231102, 231110, 0, ICONS.WARLOCK, 231073, 231091, type = 6 },                                                                                                                                                                                     -- Draconian Gloves
+	[231710] = { ICONS.PRIEST, 231168, 231158, 0, ICONS.MAGE, 231104, 231112, 0, ICONS.WARLOCK, 231075, 231093, type = 6 },                                                                                                                                                                                     -- Draconian Leggings
+	[231707] = { ICONS.PRIEST, 231172, 231162, 0, ICONS.MAGE, 231107, 231115, 0, ICONS.WARLOCK, 231079, 231098, type = 6 },                                                                                                                                                                                     -- Draconian Bindings
+	[231711] = { ICONS.PRIEST, 231167, 231157, 0, ICONS.MAGE, 231103, 231111, 0, ICONS.WARLOCK, 231074, 231092, type = 6 },                                                                                                                                                                                     -- Draconian Hood
+	[231709] = { ICONS.PRIEST, 231170, 231160, 0, ICONS.MAGE, 231106, 231114, 0, ICONS.WARLOCK, 231077, 231096, type = 6 },                                                                                                                                                                                     -- Draconian Shoulderpads
+	[231713] = { ICONS.PRIEST, 231165, 231155, 0, ICONS.MAGE, 231101, 231109, 0, ICONS.WARLOCK, 231072, 231090, type = 6 },                                                                                                                                                                                     -- Draconian Boots
+	--SoD AQ40
+	[235045] = { 234808, 234809, 234810, type = 6 },                                                                                                                                                                                                                                                            -- Imperial Qiraji Regalia
+	[235046] = { 234804, 234805, 234806, 234807, type = 6 },                                                                                                                                                                                                                                                    -- Imperial Qiraji Armaments
+	[233363] = { ICONS.WARRIOR, 233651, 233373, 0, ICONS.HUNTER, 233664, 233411, 0, ICONS.MAGE, 233402, 233678, 0, type = 6 },                                                                                                                                                                                  -- Carapace of the Old God
+	[233362] = { ICONS.PALADIN, 233397, 233688, 233693, 0, ICONS.SHAMAN, 233704, 233699, 233386, 233694, 0, ICONS.DRUID, 233715, 233711, 233720, 233415, 0, type = 6 },                                                                                                                                         -- Husk of the Old God
+	[233364] = { ICONS.ROGUE, 233389, 233659, 0, ICONS.PRIEST, 233395, 233680, 0, ICONS.WARLOCK, 233380, 233670, 0, type = 6 },                                                                                                                                                                                 -- Skin of the Old God
+	[233367] = { ICONS.WARRIOR, 233375, 233653, 0, ICONS.WARRIOR, 233374, 233654, 0, ICONS.HUNTER, 233410, 233666, 0, ICONS.HUNTER, 233408, 233667, 0, ICONS.MAGE, 233676, 233404, 0, ICONS.MAGE, 233674, 233406, 0, type = 6 },                                                                                -- Intact Peritoneum
+	[233365] = { ICONS.PALADIN, 233692, 233398, 233687, 0, ICONS.PALADIN, 233690, 233400, 233685, 0, ICONS.SHAMAN, 233705, 233700, 233385, 233695, 0, ICONS.SHAMAN, 233708, 233703, 233382, 233698, 0, ICONS.DRUID, 233718, 233709, 233723, 233412, 0, ICONS.DRUID, 233714, 233710, 233719, 233416, 0, type = 6 }, -- Intact Viscera
+	[233368] = { ICONS.ROGUE, 233661, 233388, 0, ICONS.ROGUE, 233662, 233390, 0, ICONS.PRIEST, 233682, 233393, 0, ICONS.PRIEST, 233679, 233396, 0, ICONS.WARLOCK, 233669, 233381, 0, ICONS.WARLOCK, 233672, 233378, 0, type = 6 },                                                                              -- Intact Entrails
+	[233370] = { ICONS.WARRIOR, 233376, 233658, 0, ICONS.WARRIOR, 233372, 233652, 0, ICONS.HUNTER, 233409, 233668, 0, ICONS.HUNTER, 233407, 233665, 0, ICONS.MAGE, 233677, 233403, 0, ICONS.MAGE, 233675, 233405, 0, type = 6 },                                                                                -- Qiraji Bindings of Command
+	[233369] = { ICONS.PALADIN, 233689, 233401, 233684, 0, ICONS.PALADIN, 233691, 233399, 233686, 0, ICONS.SHAMAN, 233707, 233702, 233383, 233697, 0, ICONS.SHAMAN, 233706, 233701, 233384, 233696, 0, ICONS.DRUID, 233717, 233713, 233722, 233413, 0, ICONS.DRUID, 233716, 233712, 233721, 233414, 0, type = 6 }, -- Qiraji Bindings of Dominance
+	[233371] = { ICONS.ROGUE, 233663, 233387, 0, ICONS.ROGUE, 233660, 233391, 0, ICONS.PRIEST, 233681, 233394, 0, ICONS.PRIEST, 233683, 233392, 0, ICONS.WARLOCK, 233671, 233379, 0, ICONS.WARLOCK, 233673, 233377, 0, type = 6 },                                                                              -- Qiraji Bindings of Sovereignty
+	-- SoD Naxx
+	[236350] = { 236351, 236352, type = 3 },                                                                                                                                                                                                                                                                    -- The Phylactery of Kel'Thuzad
+	[236236] = { ICONS.HUNTER, 236046, 236054, 0, ICONS.MAGE, 236083, 236091, 0, ICONS.WARRIOR, 236016, 236007, type = 6 },
+	[236231] = { ICONS.HUNTER, 236043, 236058, 0, ICONS.MAGE, 236081, 236095, 0, ICONS.WARRIOR, 236014, 236005, type = 6 },
+	[236237] = { ICONS.HUNTER, 236044, 236052, 0, ICONS.MAGE, 236084, 236089, 0, ICONS.WARRIOR, 236017, 236008, type = 6 },
+	[236233] = { ICONS.HUNTER, 236047, 236055, 0, ICONS.MAGE, 236082, 236092, 0, ICONS.WARRIOR, 236019, 236010, type = 6 },
+	[236234] = { ICONS.HUNTER, 236049, 236057, 0, ICONS.MAGE, 236080, 236094, 0, ICONS.WARRIOR, 236018, 236009, type = 6 },
+	[236235] = { ICONS.HUNTER, 236042, 236050, 0, ICONS.MAGE, 236077, 236087, 0, ICONS.WARRIOR, 236021, 236012, type = 6 },
+	[236238] = { ICONS.HUNTER, 236045, 236053, 0, ICONS.MAGE, 236079, 236090, 0, ICONS.WARRIOR, 236015, 236006, type = 6 },
+	[236232] = { ICONS.HUNTER, 236048, 236051, 0, ICONS.MAGE, 236078, 236088, 0, ICONS.WARRIOR, 236020, 236011, type = 6 },
+	[236249] = { ICONS.DRUID, 236196, 236214, 236182, 236205, 0, ICONS.PALADIN, 236128, 236117, 236137, 0, ICONS.SHAMAN, 236155, 236174, 236144, 236165, type = 6 },
+	[236251] = { ICONS.DRUID, 236200, 236218, 236186, 236209, 0, ICONS.PALADIN, 236132, 236115, 236141, 0, ICONS.SHAMAN, 236159, 236179, 236147, 236169, type = 6 },
+	[236254] = { ICONS.DRUID, 236194, 236212, 236189, 236203, 0, ICONS.PALADIN, 236126, 236122, 236135, 0, ICONS.SHAMAN, 236153, 236172, 236145, 236163, type = 6 },
+	[236250] = { ICONS.DRUID, 236197, 236215, 236184, 236206, 0, ICONS.PALADIN, 236129, 236118, 236138, 0, ICONS.SHAMAN, 236156, 236175, 236142, 236166, type = 6 },
+	[236248] = { ICONS.DRUID, 236199, 236217, 236185, 236208, 0, ICONS.PALADIN, 236131, 236123, 236140, 0, ICONS.SHAMAN, 236158, 236177, 236146, 236168, type = 6 },
+	[236247] = { ICONS.DRUID, 236192, 236210, 236183, 236201, 0, ICONS.PALADIN, 236124, 236119, 236133, 0, ICONS.SHAMAN, 236151, 236170, 236149, 236160, type = 6 },
+	[236253] = { ICONS.DRUID, 236195, 236213, 236188, 236204, 0, ICONS.PALADIN, 236127, 236121, 236136, 0, ICONS.SHAMAN, 236154, 236173, 236143, 236164, type = 6 },
+	[236252] = { ICONS.DRUID, 236193, 236211, 236187, 236202, 0, ICONS.PALADIN, 236125, 236120, 236134, 0, ICONS.SHAMAN, 236152, 236171, 236148, 236162, type = 6 },
+	[236241] = { ICONS.PRIEST, 236110, 236103, 0, ICONS.ROGUE, 236025, 236037, 0, ICONS.WARLOCK, 236064, 236072, type = 6 },
+	[236242] = { ICONS.PRIEST, 236114, 236097, 0, ICONS.ROGUE, 236023, 236039, 0, ICONS.WARLOCK, 236062, 236076, type = 6 },
+	[236240] = { ICONS.PRIEST, 236108, 236102, 0, ICONS.ROGUE, 236026, 236035, 0, ICONS.WARLOCK, 236065, 236070, type = 6 },
+	[236243] = { ICONS.PRIEST, 236111, 236104, 0, ICONS.ROGUE, 236028, 236038, 0, ICONS.WARLOCK, 236063, 236073, type = 6 },
+	[236239] = { ICONS.PRIEST, 236113, 236099, 0, ICONS.ROGUE, 236027, 236033, 0, ICONS.WARLOCK, 236059, 236075, type = 6 },
+	[236245] = { ICONS.PRIEST, 236106, 236100, 0, ICONS.ROGUE, 236030, 236040, 0, ICONS.WARLOCK, 236061, 236068, type = 6 },
+	[236246] = { ICONS.PRIEST, 236109, 236101, 0, ICONS.ROGUE, 236024, 236036, 0, ICONS.WARLOCK, 236060, 236071, type = 6 },
+	[236244] = { ICONS.PRIEST, 236107, 236098, 0, ICONS.ROGUE, 236029, 236032, 0, ICONS.WARLOCK, 236066, 236069, type = 6 },
+	[237381] = { ICONS.HUNTER, 236041, 236056, 0, ICONS.MAGE, 236085, 236093, 0, ICONS.WARRIOR, 236022, 236013, 0, ICONS.DRUID, 236198, 236216, 236190, 236207, 0, ICONS.PALADIN, 236130, 236116, 236139, 0, ICONS.SHAMAN, 236157, 236176, 236150, 236167, 0, ICONS.PRIEST, 236112, 236105, 0, ICONS.ROGUE, 236031, 236034, 0, ICONS.WARLOCK, 236067, 236074, type = 6 },
+	-- SoD Scarlet Enclave
+	[239215] = { 242314, 242317, 242315, 242316, type = 3 },                                                                                                              -- Charred Emblem
+	[242365] = { 242367, 242364, 242366, 0, 240837, type = 1 },                                                                                                           -- Wing of Balnazzar
+	[242366] = { 242367, 242364, 242365, 0, 240837, type = 1 },                                                                                                           -- Strings of Fate
+	[242364] = { 242367, 242365, 242366, 0, 240837, type = 1 },                                                                                                           -- Mature Light Dragon Sinew
+	[238945] = { 238961, type = 9 },                                                                                                                                      -- Caladboulder
+	[239196] = { 239301, type = 3 },                                                                                                                                      -- Ashbringer
+	[239696] = { 239301, type = 3 },                                                                                                                                      -- Ashbringer
+	[239719] = { ICONS.ROGUE, 239555, 239547, 0, ICONS.PRIEST, 239583, 239588, 0, ICONS.WARLOCK, 240152, 240145, type = 6 },                                              -- Consecrated Bindings
+	[239718] = { ICONS.ROGUE, 239556, 239554, 0, ICONS.PRIEST, 239582, 239590, 0, ICONS.WARLOCK, 240151, 240144, type = 6 },                                              -- Consecrated Belt
+	[239716] = { ICONS.ROGUE, 239557, 239549, 0, ICONS.PRIEST, 239574, 239584, 0, ICONS.WARLOCK, 240147, 240140, type = 6 },                                              -- Consecrated Gloves
+	[239714] = { ICONS.ROGUE, 239560, 239550, 0, ICONS.PRIEST, 239575, 239585, 0, ICONS.WARLOCK, 240148, 240141, type = 6 },                                              -- Consecrated Circlet
+	[239710] = { ICONS.ROGUE, 239558, 239553, 0, ICONS.PRIEST, 239572, 239589, 0, ICONS.WARLOCK, 240153, 240139, type = 6 },                                              -- Consecrated Sandals
+	[239712] = { ICONS.ROGUE, 239559, 239552, 0, ICONS.PRIEST, 239581, 239586, 0, ICONS.WARLOCK, 240150, 240143, type = 6 },                                              -- Consecrated Shoulderpads
+	[239721] = { ICONS.ROGUE, 239561, 239551, 0, ICONS.PRIEST, 239577, 239587, 0, ICONS.WARLOCK, 240149, 240142, type = 6 },                                              -- Consecrated Leggings
+	[239715] = { ICONS.ROGUE, 239562, 239548, 0, ICONS.PRIEST, 239565, 239591, 0, ICONS.WARLOCK, 240146, 240138, type = 6 },                                              -- Consecrated Robe
+	[239759] = { ICONS.WARRIOR, 239512, 239520, 0, ICONS.HUNTER, 239536, 239544, 0, ICONS.MAGE, 240052, 240044, type = 6 },                                               -- Consecrated Bracers
+	[239760] = { ICONS.WARRIOR, 239513, 239521, 0, ICONS.HUNTER, 239535, 239538, 0, ICONS.MAGE, 240053, 240045, type = 6 },                                               -- Consecrated Waistguard
+	[239762] = { ICONS.WARRIOR, 239514, 239522, 0, ICONS.HUNTER, 239531, 239539, 0, ICONS.MAGE, 240057, 240049, type = 6 },                                               -- Consecrated Gauntlets
+	[239707] = { ICONS.WARRIOR, 239517, 239525, 0, ICONS.HUNTER, 239532, 239540, 0, ICONS.MAGE, 240056, 240048, type = 6 },                                               -- Consecrated Helmet
+	[239706] = { ICONS.WARRIOR, 239515, 239523, 0, ICONS.HUNTER, 239530, 239537, 0, ICONS.MAGE, 240058, 240050, type = 6 },                                               -- Consecrated Sabatons
+	[239708] = { ICONS.WARRIOR, 239516, 239524, 0, ICONS.HUNTER, 239534, 239542, 0, ICONS.MAGE, 240054, 240046, type = 6 },                                               -- Consecrated Pauldrons
+	[239709] = { ICONS.WARRIOR, 239518, 239526, 0, ICONS.HUNTER, 239533, 239541, 0, ICONS.MAGE, 240055, 240047, type = 6 },                                               -- Consecrated Legplates
+	[239761] = { ICONS.WARRIOR, 239519, 239527, 0, ICONS.HUNTER, 239529, 239543, 0, ICONS.MAGE, 240059, 240051, type = 6 },                                               -- Consecrated Breastplate
+	[239722] = { ICONS.PALADIN, 240023, 240042, 240031, 246056, 0, ICONS.SHAMAN, 240108, 240100, 240137, 240127, 0, ICONS.DRUID, 240060, 240068, 240084, 240076, type = 6 }, -- Consecrated Wristguards
+	[239756] = { ICONS.PALADIN, 240024, 240043, 240032, 246059, 0, ICONS.SHAMAN, 240107, 240099, 240136, 240126, 0, ICONS.DRUID, 240061, 240069, 240085, 240077, type = 6 }, -- Consecrated Girdle
+	[239730] = { ICONS.PALADIN, 240028, 240041, 240036, 246055, 0, ICONS.SHAMAN, 240103, 240095, 240130, 240122, 0, ICONS.DRUID, 240065, 240073, 240089, 240081, type = 6 }, -- Consecrated Handguards
+	[239729] = { ICONS.PALADIN, 240027, 240040, 240035, 246062, 0, ICONS.SHAMAN, 240104, 240096, 240131, 240123, 0, ICONS.DRUID, 240064, 240072, 240088, 240080, type = 6 }, -- Consecrated Headpiece
+	[239726] = { ICONS.PALADIN, 240029, 240022, 240037, 246057, 0, ICONS.SHAMAN, 240102, 240093, 240129, 240110, 0, ICONS.DRUID, 240066, 240074, 240090, 240082, type = 6 }, -- Consecrated Boots
+	[239758] = { ICONS.PALADIN, 240025, 240021, 240033, 246061, 0, ICONS.SHAMAN, 240106, 240098, 240135, 240125, 0, ICONS.DRUID, 240062, 240070, 240086, 240078, type = 6 }, -- Consecrated Spaulders
+	[239757] = { ICONS.PALADIN, 240026, 240020, 240034, 246058, 0, ICONS.SHAMAN, 240105, 240097, 240134, 240124, 0, ICONS.DRUID, 240063, 240071, 240087, 240079, type = 6 }, -- Consecrated Legguards
+	[239731] = { ICONS.PALADIN, 240030, 240039, 240038, 246060, 0, ICONS.SHAMAN, 240101, 240092, 240128, 240109, 0, ICONS.DRUID, 240067, 240075, 240091, 240083, type = 6 }, -- Consecrated Tunic
 }
 
 if AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM) then
