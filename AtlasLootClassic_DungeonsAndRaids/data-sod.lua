@@ -98,7 +98,7 @@ local KEYS = {                                                            -- Key
 }
 
 local BFD_SET = {
-	name = AL["Level 25 Raid"],
+	name = AL["Level 25 Raid Sets"],
 	ExtraList = true,
 	TableType = SET_ITTYPE,
 	[NORMAL_DIFF] = {
@@ -110,7 +110,7 @@ local BFD_SET = {
 }
 
 local GNOMEREGAN_SET = {
-	name = AL["Level 40 Raid"],
+	name = AL["Level 40 Raid Sets"],
 	ExtraList = true,
 	TableType = SET_ITTYPE,
 	[NORMAL_DIFF] = {
@@ -127,7 +127,7 @@ local GNOMEREGAN_SET = {
 }
 
 local ST_SET = {
-	name = AL["Level 50 Raid"],
+	name = AL["Level 50 Raid Sets"],
 	ExtraList = true,
 	TableType = SET_ITTYPE,
 	[NORMAL_DIFF] = {
