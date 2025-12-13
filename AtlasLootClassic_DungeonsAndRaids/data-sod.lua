@@ -5647,7 +5647,7 @@ data["MoltenCore"] = {
 				{ 23, 228242 }, -- Heavy Dark Iron Ring
 				{ 24, 228243 }, -- Ring of Spell Power
 				{ 25, 228262 }, -- Crimson Shocker
-				{ 26, 228263 }, -- Sorcerous Dagger
+				{ 26, 228263, 229376 }, -- Sorcerous Dagger
 				{ 27, 228127 }, -- Wristguards of Instability
 				{ 30, 16665 }, -- Tome of Tranquilizing Shot
 			},
@@ -5662,7 +5662,7 @@ data["MoltenCore"] = {
 				{ 1,  227763 }, -- Scorched Core Leggings
 				{ 2,  227534 }, -- Incandescent Leggings
 				{ 3,  227754 }, -- Molten Scaled Leggings
-				{ 5,  228146 }, -- Magmadar's Left Claw
+				{ 5,  228146, 229377 }, -- Magmadar's Left Claw
 				{ 6,  228101 }, -- Hide of the Behemoth
 				{ 16, 228249 }, -- Medallion of Steadfast Might
 				{ 17, 228258 }, -- Deep Earth Spaulders
@@ -5675,9 +5675,9 @@ data["MoltenCore"] = {
 				{ 24, 228261 }, -- Quick Strike Ring
 				{ 25, 228255 }, -- Talisman of Ephemeral Power
 				{ 26, 228259 }, -- Fire Runed Grimoire
-				{ 27, 228252 }, -- Striker's Mark
-				{ 28, 228248 }, -- Earthshaker
-				{ 29, 228229 }, -- Obsidian Edged Blade
+				{ 27, 228252, 228519 }, -- Striker's Mark
+				{ 28, 228248, 228463 }, -- Earthshaker
+				{ 29, 228229, 228459 }, -- Obsidian Edged Blade
 			},
 		},
 		{ --MCGehennas
@@ -5690,7 +5690,7 @@ data["MoltenCore"] = {
 				{ 1,  227765 }, -- Scorched Core Boots
 				{ 2,  227757 }, -- Molten Scaled Boots
 				{ 3,  227536 }, -- Incandescent Boots
-				{ 5,  228350 }, -- Eskhandar's Right Claw
+				{ 5,  228350, 229379 }, -- Eskhandar's Right Claw
 				{ 16, 228285 }, -- Helm of the Lifegiver
 				{ 17, 228239 }, -- Robe of Volatile Power
 				{ 18, 228246 }, -- Wristguards of Stability
@@ -5700,7 +5700,7 @@ data["MoltenCore"] = {
 				{ 22, 228242 }, -- Heavy Dark Iron Ring
 				{ 23, 228243 }, -- Ring of Spell Power
 				{ 24, 228262 }, -- Crimson Shocker
-				{ 25, 228263 }, -- Sorcerous Dagger
+				{ 25, 228263, 229376 }, -- Sorcerous Dagger
 				{ 26, 228127 }, -- Wristguards of Instability
 			},
 		},
@@ -5715,9 +5715,9 @@ data["MoltenCore"] = {
 				{ 3,  227532 }, -- Incandescent Hood
 				{ 4,  227764 }, -- Scorched Core Helm
 				{ 5,  227755 }, -- Molten Scaled Helm
-				{ 7,  228139 }, -- Fist of the Firesworn
+				{ 7,  228139, 229374 }, -- Fist of the Firesworn
 				{ 8,  228142 }, -- Earth and Fire
-				{ 9,  228160 }, -- Faithbringer
+				{ 9,  228160, 229373 }, -- Faithbringer
 				{ 16, 228258 }, -- Deep Earth Spaulders
 				{ 17, 228257 }, -- Aged Core Leather Gloves
 				{ 18, 228260 }, -- Flameguard Gauntlets
@@ -5729,10 +5729,10 @@ data["MoltenCore"] = {
 				{ 24, 228255 }, -- Talisman of Ephemeral Power
 				{ 25, 228259 }, -- Fire Runed Grimoire
 				{ 26, 228266 }, -- Drillborer Disk
-				{ 27, 228267 }, -- Gutgore Ripper
-				{ 28, 228264 }, -- Aurastone Hammer
-				{ 29, 228265 }, -- Brutality Blade
-				{ 30, 228229 }, -- Obsidian Edged Blade
+				{ 27, 228267, 229372 }, -- Gutgore Ripper
+				{ 28, 228264, 228462 }, -- Aurastone Hammer
+				{ 29, 228265, 228506 }, -- Brutality Blade
+				{ 30, 228229, 228459 }, -- Obsidian Edged Blade
 			},
 		},
 		{ --MCShazzrah
@@ -5742,23 +5742,23 @@ data["MoltenCore"] = {
 			DisplayIDs = { { 13032 } },
 			AtlasMapBossID = 5,
 			[NORMAL_DIFF] = {
-				{ 1,  227531 }, -- Incandescent Bindings
-				{ 2,  227760 }, -- Scorched Core Bindings
-				{ 3,  227750 }, -- Molten Scaled Bindings
-				{ 5,  "INV_Box_01", nil, AL["Heat 3 Only"], nil },
-				{ 6,  228286 }, -- Band of Accuria
-				{ 16, 228285 }, -- Helm of the Lifegiver
-				{ 17, 228239 }, -- Robe of Volatile Power
-				{ 18, 228246 }, -- Wristguards of Stability
-				{ 19, 228244 }, -- Manastorm Leggings
-				{ 20, 228245 }, -- Salamander Scale Pants
-				{ 21, 228240 }, -- Flamewaker Legplates
-				{ 22, 228242 }, -- Heavy Dark Iron Ring
-				{ 23, 228243 }, -- Ring of Spell Power
-				{ 24, 228262 }, -- Crimson Shocker
-				{ 25, 228263 }, -- Sorcerous Dagger
-				{ 26, 228127 }, -- Wristguards of Instability
-				{ 27, 228253 }, -- Sabatons of the Flamewalker
+				{ 1,  227531 },   -- Incandescent Bindings
+				{ 2,  227760 },   -- Scorched Core Bindings
+				{ 3,  227750 },   -- Molten Scaled Bindings
+				{ 5,  "INV_Box_01", nil,   AL["Heat 3 Only"], nil },
+				{ 6,  228286 },   -- Band of Accuria
+				{ 16, 228285 },   -- Helm of the Lifegiver
+				{ 17, 228239 },   -- Robe of Volatile Power
+				{ 18, 228246 },   -- Wristguards of Stability
+				{ 19, 228244 },   -- Manastorm Leggings
+				{ 20, 228245 },   -- Salamander Scale Pants
+				{ 21, 228240 },   -- Flamewaker Legplates
+				{ 22, 228242 },   -- Heavy Dark Iron Ring
+				{ 23, 228243 },   -- Ring of Spell Power
+				{ 24, 228262 },   -- Crimson Shocker
+				{ 25, 228263,       229376 }, -- Sorcerous Dagger
+				{ 26, 228127 },   -- Wristguards of Instability
+				{ 27, 228253 },   -- Sabatons of the Flamewalker
 			},
 		},
 		{ --MCGeddon
@@ -5783,10 +5783,10 @@ data["MoltenCore"] = {
 				{ 24, 228268 }, -- Seal of the Archmagus
 				{ 25, 228255 }, -- Talisman of Ephemeral Power
 				{ 26, 228259 }, -- Fire Runed Grimoire
-				{ 27, 228229 }, -- Obsidian Edged Blade
-				{ 28, 228139 }, -- Fist of the Firesworn
+				{ 27, 228229, 228459 }, -- Obsidian Edged Blade
+				{ 28, 228139, 229374 }, -- Fist of the Firesworn
 				{ 29, 228142 }, -- Earth and Fire
-				{ 30, 228160 }, -- Faithbringer
+				{ 30, 228160, 229373 }, -- Faithbringer
 			},
 		},
 		{ --MCGolemagg
@@ -5796,50 +5796,50 @@ data["MoltenCore"] = {
 			DisplayIDs = { { 11986 } },
 			AtlasMapBossID = 7,
 			[NORMAL_DIFF] = {
-				{ 1,   17203 }, -- Sulfuron Ingot
-				{ 2,   228137 }, -- Heart of Golemagg
-				{ 3,   228147 }, -- Magmadar's Horn
-				{ 4,   228258 }, -- Deep Earth Spaulders
-				{ 5,   228257 }, -- Aged Core Leather Gloves
-				{ 6,   228260 }, -- Flameguard Gauntlets
-				{ 7,   228256 }, -- Mana Igniting Cord
-				{ 8,   228240 }, -- Flamewaker Legplates
-				{ 9,   228253 }, -- Sabatons of the Flamewalker
-				{ 10,  228254 }, -- Magma Tempered Boots
-				{ 11,  228261 }, -- Quick Strike Ring
-				{ 12,  228255 }, -- Talisman of Ephemeral Power
-				{ 13,  228259 }, -- Fire Runed Grimoire
-				{ 14,  228270 }, -- Blastershot Launcher
-				{ 15,  228269 }, -- Azuresong Mageblade
-				{ 16,  228229 }, -- Obsidian Edged Blade
-				{ 17,  228271 }, -- Staff of Dominance
-				{ 19,  "INV_Box_01", nil, AL["Heat 3 Only"], nil },
-				{ 20,  228290 }, -- Cloak of the Shrouded Mists
-				{ 21,  228289 }, -- Choken of the Fire Lord
-				{ 23,  227535 }, -- Incandescent Robe
-				{ 24,  227766 }, -- Scorched Core Chest
-				{ 25,  227758 }, -- Molten Scaled Chest
-				{ 27,  227537 }, -- Incandescent Shoulderpads
-				{ 28,  227752 }, -- Molten Scaled Shoulderpads
-				{ 29,  227762 }, -- Scorched Core Shoulderpads
-				{ 101, 227533 }, -- Incandescent Gloves
-				{ 102, 227756 }, -- Molten Scaled Gloves
-				{ 103, 227759 }, -- Scorched Core Gloves
-				{ 105, 227531 }, -- Incandescent Bindings
-				{ 106, 227750 }, -- Molten Scaled Bindings
-				{ 107, 227760 }, -- Scorched Core Bindings
-				{ 109, 227530 }, -- Incandescent Belt
-				{ 110, 227751 }, -- Molten Scaled Belt
-				{ 111, 227761 }, -- Scorched Core Belt
-				{ 116, 227534 }, -- Incandescent Leggings
-				{ 117, 227754 }, -- Molten Scaled Leggings
-				{ 118, 227763 }, -- Scorched Core Leggings
-				{ 120, 227536 }, -- Incandescent Boots
-				{ 121, 227757 }, -- Molten Scaled Boots
-				{ 122, 227765 }, -- Scorched Core Boots
-				{ 124, 227532 }, -- Incandescent Hood
-				{ 125, 227764 }, -- Scorched Core Helm
-				{ 126, 227755 }, -- Molten Scaled Helm
+				{ 1,   17203 },    -- Sulfuron Ingot
+				{ 2,   228137 },   -- Heart of Golemagg
+				{ 3,   228147 },   -- Magmadar's Horn
+				{ 4,   228258 },   -- Deep Earth Spaulders
+				{ 5,   228257 },   -- Aged Core Leather Gloves
+				{ 6,   228260 },   -- Flameguard Gauntlets
+				{ 7,   228256 },   -- Mana Igniting Cord
+				{ 8,   228240 },   -- Flamewaker Legplates
+				{ 9,   228253 },   -- Sabatons of the Flamewalker
+				{ 10,  228254 },   -- Magma Tempered Boots
+				{ 11,  228261 },   -- Quick Strike Ring
+				{ 12,  228255 },   -- Talisman of Ephemeral Power
+				{ 13,  228259 },   -- Fire Runed Grimoire
+				{ 14,  228270 },   -- Blastershot Launcher
+				{ 15,  228269,       228517 }, -- Azuresong Mageblade
+				{ 16,  228229,       228459 }, -- Obsidian Edged Blade
+				{ 17,  228271,       228922 }, -- Staff of Dominance
+				{ 19,  "INV_Box_01", nil,   AL["Heat 3 Only"], nil },
+				{ 20,  228290 },   -- Cloak of the Shrouded Mists
+				{ 21,  228289 },   -- Choken of the Fire Lord
+				{ 23,  227535 },   -- Incandescent Robe
+				{ 24,  227766 },   -- Scorched Core Chest
+				{ 25,  227758 },   -- Molten Scaled Chest
+				{ 27,  227537 },   -- Incandescent Shoulderpads
+				{ 28,  227752 },   -- Molten Scaled Shoulderpads
+				{ 29,  227762 },   -- Scorched Core Shoulderpads
+				{ 101, 227533 },   -- Incandescent Gloves
+				{ 102, 227756 },   -- Molten Scaled Gloves
+				{ 103, 227759 },   -- Scorched Core Gloves
+				{ 105, 227531 },   -- Incandescent Bindings
+				{ 106, 227750 },   -- Molten Scaled Bindings
+				{ 107, 227760 },   -- Scorched Core Bindings
+				{ 109, 227530 },   -- Incandescent Belt
+				{ 110, 227751 },   -- Molten Scaled Belt
+				{ 111, 227761 },   -- Scorched Core Belt
+				{ 116, 227534 },   -- Incandescent Leggings
+				{ 117, 227754 },   -- Molten Scaled Leggings
+				{ 118, 227763 },   -- Scorched Core Leggings
+				{ 120, 227536 },   -- Incandescent Boots
+				{ 121, 227757 },   -- Molten Scaled Boots
+				{ 122, 227765 },   -- Scorched Core Boots
+				{ 124, 227532 },   -- Incandescent Hood
+				{ 125, 227764 },   -- Scorched Core Helm
+				{ 126, 227755 },   -- Molten Scaled Helm
 			},
 		},
 		{ -- MCSulfuron
@@ -5849,47 +5849,47 @@ data["MoltenCore"] = {
 			DisplayIDs = { { 13030 }, { 12030 } },
 			AtlasMapBossID = 8,
 			[NORMAL_DIFF] = {
-				{ 1,   17203 }, -- Sulfuron Ingot
-				{ 3,   18870 }, -- Helm of the Lifegiver
-				{ 4,   228239 }, -- Robe of Volatile Power
-				{ 5,   228246 }, -- Wristguards of Stability
-				{ 6,   228244 }, -- Manastorm Leggings
-				{ 7,   228245 }, -- Salamander Scale Pants
-				{ 8,   228240 }, -- Flamewaker Legplates
-				{ 9,   228242 }, -- Heavy Dark Iron Ring
-				{ 10,  228243 }, -- Ring of Spell Power
-				{ 11,  228262 }, -- Crimson Shocker
-				{ 12,  228263 }, -- Sorcerous Dagger
-				{ 13,  228272 }, -- Shadowstrike
-				{ 14,  228127 }, -- Wristguards of Instability
-				{ 15,  228128 }, -- Hammer of the Black Anvil
-				{ 16,  228260 }, -- Flameguard Gauntlets
-				{ 17,  228292 }, -- Dragon's Blood Cape
-				{ 19,  "INV_Box_01", nil, AL["Heat 2+"], nil },
-				{ 20,  228295 }, -- Onslaught Girdle
-				{ 22,  227535 }, -- Incandescent Robe
-				{ 23,  227766 }, -- Scorched Core Chest
-				{ 24,  227758 }, -- Molten Scaled Chest
-				{ 26,  227537 }, -- Incandescent Shoulderpads
-				{ 27,  227752 }, -- Molten Scaled Shoulderpads
-				{ 28,  227762 }, -- Scorched Core Shoulderpads
-				{ 101, 227533 }, -- Incandescent Gloves
-				{ 102, 227756 }, -- Molten Scaled Gloves
-				{ 103, 227759 }, -- Scorched Core Gloves
-				{ 105, 227531 }, -- Incandescent Bindings
-				{ 106, 227750 }, -- Molten Scaled Bindings
-				{ 109, 227530 }, -- Incandescent Belt
-				{ 110, 227751 }, -- Molten Scaled Belt
-				{ 111, 227761 }, -- Scorched Core Belt
-				{ 116, 227534 }, -- Incandescent Leggings
-				{ 117, 227754 }, -- Molten Scaled Leggings
-				{ 118, 227763 }, -- Scorched Core Leggings
-				{ 120, 227536 }, -- Incandescent Boots
-				{ 121, 227757 }, -- Molten Scaled Boots
-				{ 122, 227765 }, -- Scorched Core Boots
-				{ 124, 227532 }, -- Incandescent Hood
-				{ 125, 227764 }, -- Scorched Core Helm
-				{ 126, 227755 }, -- Molten Scaled Helm
+				{ 1,   17203 },    -- Sulfuron Ingot
+				{ 3,   18870 },    -- Helm of the Lifegiver
+				{ 4,   228239 },   -- Robe of Volatile Power
+				{ 5,   228246 },   -- Wristguards of Stability
+				{ 6,   228244 },   -- Manastorm Leggings
+				{ 7,   228245 },   -- Salamander Scale Pants
+				{ 8,   228240 },   -- Flamewaker Legplates
+				{ 9,   228242 },   -- Heavy Dark Iron Ring
+				{ 10,  228243 },   -- Ring of Spell Power
+				{ 11,  228262 },   -- Crimson Shocker
+				{ 12,  228263,       229376 }, -- Sorcerous Dagger
+				{ 13,  228272,       229380 }, -- Shadowstrike
+				{ 14,  228127 },   -- Wristguards of Instability
+				{ 15,  228128,       228508 }, -- Hammer of the Black Anvil
+				{ 16,  228260 },   -- Flameguard Gauntlets
+				{ 17,  228292 },   -- Dragon's Blood Cape
+				{ 19,  "INV_Box_01", nil,   AL["Heat 2+"], nil },
+				{ 20,  228295 },   -- Onslaught Girdle
+				{ 22,  227535 },   -- Incandescent Robe
+				{ 23,  227766 },   -- Scorched Core Chest
+				{ 24,  227758 },   -- Molten Scaled Chest
+				{ 26,  227537 },   -- Incandescent Shoulderpads
+				{ 27,  227752 },   -- Molten Scaled Shoulderpads
+				{ 28,  227762 },   -- Scorched Core Shoulderpads
+				{ 101, 227533 },   -- Incandescent Gloves
+				{ 102, 227756 },   -- Molten Scaled Gloves
+				{ 103, 227759 },   -- Scorched Core Gloves
+				{ 105, 227531 },   -- Incandescent Bindings
+				{ 106, 227750 },   -- Molten Scaled Bindings
+				{ 109, 227530 },   -- Incandescent Belt
+				{ 110, 227751 },   -- Molten Scaled Belt
+				{ 111, 227761 },   -- Scorched Core Belt
+				{ 116, 227534 },   -- Incandescent Leggings
+				{ 117, 227754 },   -- Molten Scaled Leggings
+				{ 118, 227763 },   -- Scorched Core Leggings
+				{ 120, 227536 },   -- Incandescent Boots
+				{ 121, 227757 },   -- Molten Scaled Boots
+				{ 122, 227765 },   -- Scorched Core Boots
+				{ 124, 227532 },   -- Incandescent Hood
+				{ 125, 227764 },   -- Scorched Core Helm
+				{ 126, 227755 },   -- Molten Scaled Helm
 			},
 		},
 		{ -- MCMajordomo
@@ -5900,48 +5900,48 @@ data["MoltenCore"] = {
 			DisplayIDs = { { 12029 }, { 13029 }, { 12002 } },
 			AtlasMapBossID = 9,
 			[NORMAL_DIFF] = {
-				{ 1,   17203 }, -- Sulfuron Ingot
-				{ 2,   228279 }, -- Fireguard Shoulders
-				{ 3,   228283 }, -- Wild Growth Spaulders
-				{ 4,   228280 }, -- Fireproof Cloak
-				{ 5,   228281 }, -- Gloves of the Hypnotic Flame
-				{ 6,   228282 }, -- Sash of Whispered Secrets
-				{ 7,   228284 }, -- Wristguards of True Flight
-				{ 8,   228275 }, -- Core Forged Greaves
-				{ 9,   228274 }, -- Cauterizing Band
-				{ 10,  228102 }, -- Majordomo's Drape
-				{ 11,  228277 }, -- Core Hound Tooth
-				{ 12,  228278 }, -- Hyperthermically Insulated Lava Dredger
-				{ 16,  18703 }, -- Ancient Petrified Leaf
-				{ 17,  18646 }, -- The Eye of Divinity
-				{ 18,  228129 }, -- Shadowflame Skull
-				{ 20,  "INV_Box_01", nil, AL["Heat 3 Only"], nil },
-				{ 21,  228461 }, -- Bonereaver's Edge
-				{ 22,  228296 }, -- Perdition's Blade (Gutgore Ripper)
-				{ 23,  227535 }, -- Incandescent Robe
-				{ 24,  227766 }, -- Scorched Core Chest
-				{ 25,  227758 }, -- Molten Scaled Chest
-				{ 27,  227537 }, -- Incandescent Shoulderpads
-				{ 28,  227752 }, -- Molten Scaled Shoulderpads
-				{ 29,  227762 }, -- Scorched Core Shoulderpads
-				{ 101, 227533 }, -- Incandescent Gloves
-				{ 102, 227756 }, -- Molten Scaled Gloves
-				{ 103, 227759 }, -- Scorched Core Gloves
-				{ 105, 227531 }, -- Incandescent Bindings
-				{ 106, 227750 }, -- Molten Scaled Bindings
-				{ 107, 227760 }, -- Scorched Core Bindings
-				{ 109, 227530 }, -- Incandescent Belt
-				{ 110, 227751 }, -- Molten Scaled Belt
-				{ 111, 227761 }, -- Scorched Core Belt
-				{ 116, 227534 }, -- Incandescent Leggings
-				{ 117, 227754 }, -- Molten Scaled Leggings
-				{ 118, 227763 }, -- Scorched Core Leggings
-				{ 120, 227536 }, -- Incandescent Boots
-				{ 121, 227757 }, -- Molten Scaled Boots
-				{ 122, 227765 }, -- Scorched Core Boots
-				{ 124, 227532 }, -- Incandescent Hood
-				{ 125, 227764 }, -- Scorched Core Helm
-				{ 126, 227755 }, -- Molten Scaled Helm
+				{ 1,   17203 },    -- Sulfuron Ingot
+				{ 2,   228279 },   -- Fireguard Shoulders
+				{ 3,   228283 },   -- Wild Growth Spaulders
+				{ 4,   228280 },   -- Fireproof Cloak
+				{ 5,   228281 },   -- Gloves of the Hypnotic Flame
+				{ 6,   228282 },   -- Sash of Whispered Secrets
+				{ 7,   228284 },   -- Wristguards of True Flight
+				{ 8,   228275 },   -- Core Forged Greaves
+				{ 9,   228274 },   -- Cauterizing Band
+				{ 10,  228102 },   -- Majordomo's Drape
+				{ 11,  228277,       228701 }, -- Core Hound Tooth
+				{ 12,  228278,       229382 }, -- Hyperthermically Insulated Lava Dredger
+				{ 16,  18703 },    -- Ancient Petrified Leaf
+				{ 17,  18646 },    -- The Eye of Divinity
+				{ 18,  228129 },   -- Shadowflame Skull
+				{ 20,  "INV_Box_01", nil,   AL["Heat 3 Only"], nil },
+				{ 21,  228461 },   -- Bonereaver's Edge
+				{ 22,  228296,       228511 }, -- Perdition's Blade
+				{ 23,  227535 },   -- Incandescent Robe
+				{ 24,  227766 },   -- Scorched Core Chest
+				{ 25,  227758 },   -- Molten Scaled Chest
+				{ 27,  227537 },   -- Incandescent Shoulderpads
+				{ 28,  227752 },   -- Molten Scaled Shoulderpads
+				{ 29,  227762 },   -- Scorched Core Shoulderpads
+				{ 101, 227533 },   -- Incandescent Gloves
+				{ 102, 227756 },   -- Molten Scaled Gloves
+				{ 103, 227759 },   -- Scorched Core Gloves
+				{ 105, 227531 },   -- Incandescent Bindings
+				{ 106, 227750 },   -- Molten Scaled Bindings
+				{ 107, 227760 },   -- Scorched Core Bindings
+				{ 109, 227530 },   -- Incandescent Belt
+				{ 110, 227751 },   -- Molten Scaled Belt
+				{ 111, 227761 },   -- Scorched Core Belt
+				{ 116, 227534 },   -- Incandescent Leggings
+				{ 117, 227754 },   -- Molten Scaled Leggings
+				{ 118, 227763 },   -- Scorched Core Leggings
+				{ 120, 227536 },   -- Incandescent Boots
+				{ 121, 227757 },   -- Molten Scaled Boots
+				{ 122, 227765 },   -- Scorched Core Boots
+				{ 124, 227532 },   -- Incandescent Hood
+				{ 125, 227764 },   -- Scorched Core Helm
+				{ 126, 227755 },   -- Molten Scaled Helm
 			},
 		},
 		{ -- MCRagnaros
@@ -5965,9 +5965,9 @@ data["MoltenCore"] = {
 				{ 13,  228266 }, -- Essence of the Pure Flame (Drillborer Disk)
 				{ 14,  228294 }, -- Malistar's Defender
 				{ 15,  228293 }, -- Essence of the Pure Flame
-				{ 16,  228296 }, -- Perdition's Blade (Gutgore Ripper)
-				{ 17,  228299 }, -- Spinal Reaper
-				{ 18,  228288 }, -- Bonereaver's Edge
+				{ 16,  228296, 228511 }, -- Perdition's Blade
+				{ 17,  228299, 228460 }, -- Spinal Reaper
+				{ 18,  228288, 228461 }, -- Bonereaver's Edge
 				{ 20,  227535 }, -- Incandescent Robe
 				{ 21,  227766 }, -- Scorched Core Chest
 				{ 22,  227758 }, -- Molten Scaled Chest
@@ -6004,9 +6004,9 @@ data["MoltenCore"] = {
 				{ 3,   18564 }, -- Bindings of the Windseeker
 				{ 5,   228286 }, -- Band of Accuria
 				{ 6,   228287 }, -- Band of Sulfuras
-				{ 7,   228296 }, -- Perdition's Blade
-				{ 8,   228288 }, -- Bonereaver's Edge
-				{ 9,   228299 }, -- Spinal Reaper
+				{ 7,   228296, 228511 }, -- Perdition's Blade
+				{ 8,   228288, 228461 }, -- Bonereaver's Edge
+				{ 9,   228299, 228460 }, -- Spinal Reaper
 				{ 16,  227535 }, -- Incandescent Robe
 				{ 17,  227766 }, -- Scorched Core Chest
 				{ 18,  227758 }, -- Molten Scaled Chest
@@ -6159,7 +6159,7 @@ data["Zul'Gurub"] = {
 				{ 7,  19718 }, -- Primal Hakkari Stanchion
 				{ 8,  19719 }, -- Primal Hakkari Girdle
 				{ 9,  19720 }, -- Primal Hakkari Sash
-				{ 16, 230911 }, -- Jeklik's Crusher
+				{ 16, 230911, 231861 }, -- Jeklik's Crusher
 				{ 18, 230913 }, -- Jeklik's Opaline Talisman
 				{ 19, 230912 }, -- Animist's Spaulders
 				{ 20, 230916 }, -- Seafury Boots
@@ -6185,11 +6185,11 @@ data["Zul'Gurub"] = {
 				{ 8,  19719 }, -- Primal Hakkari Girdle
 				{ 9,  19720 }, -- Primal Hakkari Sash
 				{ 16, 230864 }, -- Runed Bloodstained Hauberk
-				{ 17, 230865 }, -- Fang of Venoxis
+				{ 17, 230865, 231874 }, -- Fang of Venoxis
 				{ 19, 232311 }, -- Zulian Tigerhide Cloak
 				{ 20, 230866 }, -- Blooddrenched Footpads
 				{ 21, 230867 }, -- Zanzil's Band
-				{ 22, 230868 }, -- Zulian Stone Axe
+				{ 22, 230868, 231873 }, -- Zulian Stone Axe
 			},
 		},
 		{ -- ZGMarli
@@ -6209,7 +6209,7 @@ data["Zul'Gurub"] = {
 				{ 8,  19719 }, -- Primal Hakkari Girdle
 				{ 9,  19720 }, -- Primal Hakkari Sash
 				{ 16, 230917 }, -- Flowing Ritual Robes
-				{ 17, 230918 }, -- Mar'li's Touch
+				{ 17, 230918, 231866 }, -- Mar'li's Touch
 				{ 19, 230922 }, -- Talisman of Protection
 				{ 20, 230919 }, -- Bloodstained Greaves
 				{ 21, 230921 }, -- Band of Jin
@@ -6234,10 +6234,10 @@ data["Zul'Gurub"] = {
 				{ 9,  19720 }, -- Primal Hakkari Sash
 				{ 11, 22637 }, -- Primal Hakkari Idol
 				{ 16, 19872 }, -- Swift Razzashi Raptor
-				{ 17, 230993 }, -- Mandokir's Sting
-				{ 18, 230989 }, -- Bloodlord's Defender
-				{ 19, 230992 }, -- Warblade of the Hakkari
-				{ 20, 230991 }, -- Halberd of Smiting
+				{ 17, 230993, 231868 }, -- Mandokir's Sting
+				{ 18, 230989, 231867 }, -- Bloodlord's Defender
+				{ 19, 230992, 231869 }, -- Warblade of the Hakkari
+				{ 20, 230991, 231870 }, -- Halberd of Smiting
 				{ 22, 230996 }, -- Bloodsoaked Pauldrons
 				{ 23, 230998 }, -- Hakkari Loa Cloak
 				{ 24, 230995 }, -- Blooddrenched Grips
@@ -6255,8 +6255,8 @@ data["Zul'Gurub"] = {
 			DisplayIDs = { { 8390 } },
 			AtlasMapBossID = 6,
 			[NORMAL_DIFF] = {
-				{ 1, 231274 }, -- Gri'lek's Grinder
-				{ 2, 231273 }, -- Gri'lek's Carver
+				{ 1, 231274, 231847 }, -- Gri'lek's Grinder
+				{ 2, 231273, 231846 }, -- Gri'lek's Carver
 				{ 4, 19939 }, -- Gri'lek's Blood
 			},
 		},
@@ -6267,8 +6267,8 @@ data["Zul'Gurub"] = {
 			DisplayIDs = { { 15267 } },
 			AtlasMapBossID = 6,
 			[NORMAL_DIFF] = {
-				{ 1, 231276 }, -- Thoughtblighter
-				{ 2, 231275 }, -- Fiery Retributer
+				{ 1, 231276, 231863 }, -- Thoughtblighter
+				{ 2, 231275, 231862 }, -- Fiery Retributer
 				{ 4, 19942 }, -- Hazza'rah's Dream Thread
 			},
 		},
@@ -6279,8 +6279,8 @@ data["Zul'Gurub"] = {
 			DisplayIDs = { { 15268 } },
 			AtlasMapBossID = 6,
 			[NORMAL_DIFF] = {
-				{ 1, 232309 }, -- Renataki's Soul Conduit
-				{ 2, 231277 }, -- Pitchfork of Madness
+				{ 1, 232309, 232310 }, -- Renataki's Soul Conduit
+				{ 2, 231277, 231864 }, -- Pitchfork of Madness
 				{ 4, 19940 }, -- Renataki's Tooth
 			},
 		},
@@ -6291,8 +6291,8 @@ data["Zul'Gurub"] = {
 			DisplayIDs = { { 15269 } },
 			AtlasMapBossID = 6,
 			[NORMAL_DIFF] = {
-				{ 1, 231278 }, -- Hoodoo Hunting Bow
-				{ 2, 231279 }, -- Wushoolay's Poker
+				{ 1, 231278, 231872 }, -- Hoodoo Hunting Bow
+				{ 2, 231279, 231871 }, -- Wushoolay's Poker
 				{ 4, 19941 }, -- Wushoolay's Mane
 			},
 		},
@@ -6304,9 +6304,9 @@ data["Zul'Gurub"] = {
 			AtlasMapBossID = 7,
 			[NORMAL_DIFF] = {
 				{ 1, 231014 }, -- Foror's Eyepatch
-				{ 2, 231016 }, -- Nat Pagle's Fish Terminator
+				{ 2, 231016, 231848 }, -- Nat Pagle's Fish Terminator
 				{ 4, 231271 }, -- Nat Pagle's Broken Reel
-				{ 5, 231272 }, -- Tigule's Harpoon
+				{ 5, 231272, 231849 }, -- Tigule's Harpoon
 				{ 7, 22739 }, -- Tome of Polymorph: Turtle
 			},
 		},
@@ -6328,12 +6328,12 @@ data["Zul'Gurub"] = {
 				{ 9,  19720 }, -- Primal Hakkari Sash
 				{ 16, 19902 }, -- Swift Zulian Tiger
 				{ 17, 230923 }, -- Betrayer's Boots
-				{ 18, 230925 }, -- Thekal's Grasp
+				{ 18, 230925, 231875 }, -- Thekal's Grasp
 				{ 20, 230927 }, -- Ritualistic Legguards
 				{ 21, 230928 }, -- Seafury Leggings
 				{ 22, 230926 }, -- Peacekeeper Leggings
 				{ 23, 230929 }, -- Seal of Jin
-				{ 24, 230930 }, -- Zulian Slicer
+				{ 24, 230930, 231876 }, -- Zulian Slicer
 			},
 		},
 		{ -- ZGArlokk
@@ -6352,8 +6352,8 @@ data["Zul'Gurub"] = {
 				{ 7,  19718 }, -- Primal Hakkari Stanchion
 				{ 8,  19719 }, -- Primal Hakkari Girdle
 				{ 9,  19720 }, -- Primal Hakkari Sash
-				{ 16, 230934 }, -- Arlokk's Grasp
-				{ 17, 230939 }, -- Will of Arlokk
+				{ 16, 230934, 231851 }, -- Arlokk's Grasp
+				{ 17, 230939, 231850 }, -- Will of Arlokk
 				{ 19, 230942 }, -- Bloodsoaked Greaves
 				{ 20, 230943 }, -- Overlord's Onyx Band
 				{ 21, 230941 }, -- Arlokk's Hoodoo Stick
@@ -6379,8 +6379,8 @@ data["Zul'Gurub"] = {
 				{ 11, 22637 }, -- Primal Hakkari Idol
 				{ 16, 231003 }, -- Jin'do's Evil Eye
 				{ 17, 231005 }, -- Jin'do's Bag of Whammies
-				{ 18, 231002 }, -- Jin'do's Hexxer
-				{ 19, 231004 }, -- Jin'do's Judgement
+				{ 18, 231002, 231859 }, -- Jin'do's Hexxer
+				{ 19, 231004, 231860 }, -- Jin'do's Judgement
 				{ 21, 231013 }, -- The Hexxer's Cover
 				{ 22, 231007 }, -- Bloodstained Coif
 				{ 23, 231012 }, -- Overlord's Embrace
@@ -6398,21 +6398,21 @@ data["Zul'Gurub"] = {
 			DisplayIDs = { { 15295 } },
 			AtlasMapBossID = 11,
 			[NORMAL_DIFF] = {
-				{ 1,  231300 },                       -- Cloak of Consumption
-				{ 2,  231305, [ATLASLOOT_IT_ALLIANCE] = 231303 }, -- Seafury Gauntlets / Peacekeeper Gauntlets
-				{ 3,  231299 },                       -- Bloodsoaked Legplates
-				{ 4,  231306 },                       -- Soul Corrupter's Necklace
-				{ 5,  231307 },                       -- The Eye of Hakkar
-				{ 7,  19802 },                        -- Heart of Hakkar
-				{ 16, 231308 },                       -- Touch of Chaos
-				{ 17, 231302 },                       -- Gurubashi Dwarf Destroyer
-				{ 18, 231289 },                       -- Aegis of the Blood God
-				{ 19, 231296 },                       -- Bloodcaller
-				{ 20, 231309 },                       -- Warblade of the Hakkari
-				{ 21, 230992 },                       -- Warblade of the Hakkari
-				{ 22, 231293 },                       -- Ancient Hakkari Manslayer
-				{ 23, 231301 },                       -- Fang of the Faceless
-				{ 24, 231315 },                       -- Zin'rokh, Destroyer of Worlds
+				{ 1,  231300 },                                              -- Cloak of Consumption
+				{ 2,  [ATLASLOOT_IT_HORDE] = 231305, [ATLASLOOT_IT_ALLIANCE] = 231303 }, -- Seafury Gauntlets / Peacekeeper Gauntlets
+				{ 3,  231299 },                                              -- Bloodsoaked Legplates
+				{ 4,  231306 },                                              -- Soul Corrupter's Necklace
+				{ 5,  231307 },                                              -- The Eye of Hakkar
+				{ 7,  19802 },                                               -- Heart of Hakkar
+				{ 16, 231308,                        231857 },               -- Touch of Chaos
+				{ 17, 231302,                        231852 },               -- Gurubashi Dwarf Destroyer
+				{ 18, 231289 },                                              -- Aegis of the Blood God
+				{ 19, 231296,                        231858 },               -- Bloodcaller
+				{ 20, 231309,                        231853 },               -- Warblade of the Hakkari
+				{ 21, 230992,                        231869 },               -- Warblade of the Hakkari
+				{ 22, 231293,                        231856 },               -- Ancient Hakkari Manslayer
+				{ 23, 231301,                        231855 },               -- Fang of the Faceless
+				{ 24, 231315,                        231854 },               -- Zin'rokh, Destroyer of Worlds
 			},
 		},
 		{ -- ZGShared
@@ -6539,8 +6539,8 @@ data["BlackwingLair"] = {
 				{ 17, 230238 }, -- The Black Book
 				{ 19, 230240 }, -- Mantle of the Blackwing Cabal
 				{ 20, 230239 }, -- Gloves of Rapid Evolution
-				{ 21, 230241 }, -- Spineshatter
-				{ 22, 230242 }, -- The Untamed Blade
+				{ 21, 230241, 232567 }, -- Spineshatter
+				{ 22, 230242, 232566 }, -- The Untamed Blade
 			},
 		},
 		{ -- BWLVaelastrasz
@@ -6560,13 +6560,13 @@ data["BlackwingLair"] = {
 				{ 17, 230246 }, -- Helm of Endless Rage
 				{ 18, 230245 }, -- Pendant of the Fallen Dragon
 				{ 19, 230248 }, -- Red Dragonscale Protector
-				{ 20, 230247 }, -- Dragonfang Blade
+				{ 20, 230247, 232565 }, -- Dragonfang Blade
 				{ 21, 230848 }, -- Interlaced Shadow Jerkin
 				{ 22, 230843 }, -- Boots of Pure Thought
 				{ 23, 230849 }, -- Ringo's Blizzard Boots
 				{ 24, 230846 }, -- Band of Dark Dominion
-				{ 25, 230845 }, -- Doom's Edge
-				{ 26, 232357 }, -- Draconic Avenger
+				{ 25, 230845, 232577 }, -- Doom's Edge
+				{ 26, 232357, 232556 }, -- Draconic Avenger
 			},
 		},
 		{ -- BWLLashlayer
@@ -6586,8 +6586,8 @@ data["BlackwingLair"] = {
 				{ 17, 230250 }, -- Venomous Totem
 				{ 19, 230251 }, -- Black Brood Pauldrons
 				{ 20, 230252 }, -- Bracers of Arcane Accuracy
-				{ 21, 230253 }, -- Heartstriker
-				{ 22, 230254 }, -- Maladath, Runed Blade of the Black Flight
+				{ 21, 230253, 232607 }, -- Heartstriker
+				{ 22, 230254, 232564 }, -- Maladath, Runed Blade of the Black Flight
 				{ 24, 20383 }, -- Head of the Broodlord Lashlayer
 			},
 		},
@@ -6605,9 +6605,9 @@ data["BlackwingLair"] = {
 				{ 6,  230272 }, -- Scrolls of Blinding Light
 				{ 7,  230282 }, -- Drake Fang Talisman
 				{ 9,  230847 }, -- Essence Gatherer
-				{ 10, 230844 }, -- Draconic Maul
-				{ 11, 230276 }, -- Claw of the Black Drake
-				{ 12, 230270 }, -- Shadow Wing Focus Staff
+				{ 10, 230844, 232551 }, -- Draconic Maul
+				{ 11, 230276, 232561 }, -- Claw of the Black Drake
+				{ 12, 230270, 232563 }, -- Shadow Wing Focus Staff
 				{ 16, 230256 }, -- Drake Talon Pauldrons
 				{ 17, 230277 }, -- Cloak of Firemaw
 				{ 18, 230274 }, -- Black Ash Robe
@@ -6636,9 +6636,9 @@ data["BlackwingLair"] = {
 				{ 17, 19407 }, -- Ebony Flame Gloves
 				{ 18, 230255 }, -- Taut Dragonhide Belt
 				{ 19, 230725 }, -- Malfurion's Blessed Bulwark
-				{ 20, 230726 }, -- Dragonbreath Hand Cannon
-				{ 21, 230271 }, -- Drake Talon Cleaver
-				{ 22, 230270 }, -- Shadow Wing Focus Staff
+				{ 20, 230726, 232608 }, -- Dragonbreath Hand Cannon
+				{ 21, 230271, 232562 }, -- Drake Talon Cleaver
+				{ 22, 230270, 232563 }, -- Shadow Wing Focus Staff
 				{ 23, 230281 }, -- Band of Forced Concentration
 				{ 24, 230257 }, -- Ring of Blackrock
 
@@ -6662,10 +6662,10 @@ data["BlackwingLair"] = {
 				{ 11, 230734 }, -- Circle of Applied Force
 				{ 12, 230257 }, -- Ring of Blackrock
 				{ 16, 230737 }, -- Dragon's Touch
-				{ 17, 230738 }, -- Herald of Woe
-				{ 18, 230844 }, -- Draconic Maul
+				{ 17, 230738, 232559 }, -- Herald of Woe
+				{ 18, 230844, 232551 }, -- Draconic Maul
 				{ 19, 230847 }, -- Essence Gatherer
-				{ 20, 230270 }, -- Shadow Wing Focus Staff
+				{ 20, 230270, 232563 }, -- Shadow Wing Focus Staff
 			},
 		},
 		{ -- BWLChromaggus
@@ -6689,10 +6689,10 @@ data["BlackwingLair"] = {
 				{ 22, 230746 }, -- Empowered Leggings
 				{ 23, 230743 }, -- Shimmering Geta
 				{ 24, 230741 }, -- Chromatic Boots
-				{ 26, 230801 }, -- Ashjre'thul, Crossbow of Smiting
+				{ 26, 230801, 232606 }, -- Ashjre'thul, Crossbow of Smiting
 				{ 27, 230802 }, -- Elementium Reinforced Bulwark
-				{ 28, 230794 }, -- Claw of Chromaggus
-				{ 29, 230747 }, -- Chromatically Tempered Sword
+				{ 28, 230794, 232557 }, -- Claw of Chromaggus
+				{ 29, 230747, 232558 }, -- Chromatically Tempered Sword
 			},
 		},
 		{ -- BWLNefarian
@@ -6702,43 +6702,43 @@ data["BlackwingLair"] = {
 			DisplayIDs = { { 11380 } },
 			AtlasMapBossID = 8,
 			[NORMAL_DIFF] = {
-				{ 1,   19002, [ATLASLOOT_IT_ALLIANCE] = 19003 }, -- Head of Nefarian
-				{ 2,   230838 },                     -- Lok'amir il Romathis
-				{ 3,   230837 },                     -- Crul'shorukh, Edge of Chaos
-				{ 4,   230818 },                     -- Ashkandi, Greatsword of the Brotherhood
-				{ 5,   230813 },                     -- Staff of the Shadow Flame
-				{ 6,   230812 },                     -- Mish'undare, Circlet of the Mind Flayer
-				{ 7,   231803 },                     -- Prestor's Talisman of Connivery
-				{ 8,   230804 },                     -- Cloak of the Brood Lord
-				{ 9,   230806 },                     -- Therazane's Link
-				{ 10,  230805 },                     -- Boots of the Shadow Flame
-				{ 11,  230808 },                     -- Archimtiros' Ring of Reckoning
-				{ 12,  230811 },                     -- Pure Elementium Band
-				{ 13,  230810 },                     -- Neltharion's Tear
-				{ 16,  231726 },                     -- Ancient Shoulderpads
-				{ 17,  231717 },                     -- Primeval Shoulderpads
-				{ 18,  231709 },                     -- Draconian Shoulderpads
-				{ 20,  231731 },                     -- Ancient Chest
-				{ 21,  231723 },                     -- Primeval Chest
-				{ 22,  231714 },                     -- Draconian Robe
-				{ 24,  231727 },                     -- Ancient Leggings
-				{ 25,  231718 },                     -- Primeval Leggings
-				{ 26,  231710 },                     -- Draconian Leggings
-				{ 101, 231724 },                     -- Ancient Bindings
-				{ 102, 231715 },                     -- Primeval Bindings
-				{ 103, 231707 },                     -- Draconian Bindings
-				{ 105, 231729 },                     -- Ancient Gloves
-				{ 106, 231720 },                     -- Primeval Gloves
-				{ 107, 231712 },                     -- Draconian Gloves
-				{ 109, 231730 },                     -- Ancient Boots
-				{ 110, 231721 },                     -- Primeval Boots
-				{ 111, 231713 },                     -- Draconian Boots
-				{ 113, 231725 },                     -- Ancient Belt
-				{ 114, 231716 },                     -- Primeval Belt
-				{ 115, 231708 },                     -- Draconian Belt
-				{ 116, 231728 },                     -- Ancient Helm
-				{ 117, 231719 },                     -- Primeval Helm
-				{ 118, 231711 },                     -- Draconian Hood
+				{ 1,   [ATLASLOOT_IT_HORDE] = 19002, [ATLASLOOT_IT_ALLIANCE] = 19003 }, -- Head of Nefarian
+				{ 2,   230838,                       232552 },              -- Lok'amir il Romathis
+				{ 3,   230837,                       232555 },              -- Crul'shorukh, Edge of Chaos
+				{ 4,   230818,                       232550 },              -- Ashkandi, Greatsword of the Brotherhood
+				{ 5,   230813,                       232556 },              -- Staff of the Shadow Flame
+				{ 6,   230812 },                                            -- Mish'undare, Circlet of the Mind Flayer
+				{ 7,   231803 },                                            -- Prestor's Talisman of Connivery
+				{ 8,   230804 },                                            -- Cloak of the Brood Lord
+				{ 9,   230806 },                                            -- Therazane's Link
+				{ 10,  230805 },                                            -- Boots of the Shadow Flame
+				{ 11,  230808 },                                            -- Archimtiros' Ring of Reckoning
+				{ 12,  230811 },                                            -- Pure Elementium Band
+				{ 13,  230810 },                                            -- Neltharion's Tear
+				{ 16,  231726 },                                            -- Ancient Shoulderpads
+				{ 17,  231717 },                                            -- Primeval Shoulderpads
+				{ 18,  231709 },                                            -- Draconian Shoulderpads
+				{ 20,  231731 },                                            -- Ancient Chest
+				{ 21,  231723 },                                            -- Primeval Chest
+				{ 22,  231714 },                                            -- Draconian Robe
+				{ 24,  231727 },                                            -- Ancient Leggings
+				{ 25,  231718 },                                            -- Primeval Leggings
+				{ 26,  231710 },                                            -- Draconian Leggings
+				{ 101, 231724 },                                            -- Ancient Bindings
+				{ 102, 231715 },                                            -- Primeval Bindings
+				{ 103, 231707 },                                            -- Draconian Bindings
+				{ 105, 231729 },                                            -- Ancient Gloves
+				{ 106, 231720 },                                            -- Primeval Gloves
+				{ 107, 231712 },                                            -- Draconian Gloves
+				{ 109, 231730 },                                            -- Ancient Boots
+				{ 110, 231721 },                                            -- Primeval Boots
+				{ 111, 231713 },                                            -- Draconian Boots
+				{ 113, 231725 },                                            -- Ancient Belt
+				{ 114, 231716 },                                            -- Primeval Belt
+				{ 115, 231708 },                                            -- Draconian Belt
+				{ 116, 231728 },                                            -- Ancient Helm
+				{ 117, 231719 },                                            -- Primeval Helm
+				{ 118, 231711 },                                            -- Draconian Hood
 			},
 		},
 		{ -- BWLTrashMobs
@@ -6780,8 +6780,8 @@ data["TheRuinsofAhnQiraj"] = { -- AQ20
 			AtlasMapBossID = 1,
 			[NORMAL_DIFF] = {
 				{ 1,  234062 }, -- Vestments of the Shifting Sands
-				{ 2,  234061 }, -- Qiraji Sacrificial Dagger
-				{ 3,  234118 }, -- Gavel of Qiraji Authority
+				{ 2,  234061, 234989 }, -- Qiraji Sacrificial Dagger
+				{ 3,  234118, 234996 }, -- Gavel of Qiraji Authority
 				{ 4,  234065 }, -- Sand Reaver Wristguards
 				{ 5,  234066 }, -- Toughened Silithid Hide Gloves
 				{ 6,  234064 }, -- Belt of the Inquisition
@@ -6800,7 +6800,7 @@ data["TheRuinsofAhnQiraj"] = { -- AQ20
 			AtlasMapBossID = 2,
 			[NORMAL_DIFF] = {
 				{ 1,  234068 }, -- Boots of the Vanguard
-				{ 2,  234067 }, -- Manslayer of the Qiraji
+				{ 2,  234067, 234990 }, -- Manslayer of the Qiraji
 				{ 4,  234070 }, -- Bracers of Qiraji Command
 				{ 5,  234072 }, -- Southwind's Grasp
 				{ 6,  234071 }, -- Legplates of the Qiraji Command
@@ -6869,8 +6869,8 @@ data["TheRuinsofAhnQiraj"] = { -- AQ20
 			AtlasMapBossID = 5,
 			[NORMAL_DIFF] = {
 				{ 1,  234075 }, -- Gauntlets of the Immovable
-				{ 2,  234096 }, -- Bow of Taut Sinew
-				{ 3,  234097 }, -- Stinger of Ayamiss
+				{ 2,  234096, 234991 }, -- Bow of Taut Sinew
+				{ 3,  234097, 234992 }, -- Stinger of Ayamiss
 				{ 5,  234100 }, -- Helm of Regrowth
 				{ 6,  234102 }, -- Scaled Silithid Gauntlets
 				{ 7,  234099 }, -- Boots of the Fiery Sands
@@ -6891,59 +6891,59 @@ data["TheRuinsofAhnQiraj"] = { -- AQ20
 			DisplayIDs = { { 15432 } },
 			AtlasMapBossID = 6,
 			[NORMAL_DIFF] = {
-				{ 1,  234107 },                             -- Helm of Domination
-				{ 2,  234111,       [ATLASLOOT_IT_ALLIANCE] = 234109 }, -- Runic Stone Shoulders / Mantle of the Horusath
-				{ 3,  234113 },                             -- Sandstorm Cloak
-				{ 4,  234114 },                             -- Shackles of the Unscarred
-				{ 5,  234103 },                             -- Bracers of Brutality
-				{ 6,  234106 },                             -- Gloves of Dark Wisdom
-				{ 7,  234105 },                             -- Gauntlets of New Life
-				{ 8,  234110 },                             -- Ossirian's Binding
-				{ 9,  234108 },                             -- Leggings of the Black Blizzard
-				{ 10, 234104 },                             -- Crossbow of Imminent Doom
-				{ 11, 234112 },                             -- Sand Polished Hammer
-				{ 12, 234115 },                             -- Staff of the Ruins
-				{ 16, 20890 },                              -- Qiraji Ornate Hilt
-				{ 17, 20886 },                              -- Qiraji Spiked Hilt
-				{ 20, 20888 },                              -- Qiraji Ceremonial Ring
-				{ 21, 20884 },                              -- Qiraji Magisterial Ring
-				{ 23, 21220 },                              -- Head of Ossirian the Unscarred
-				{ 25, "INV_Box_01", nil,                             AL["Hard Mode Mounts"], nil },
-				{ 26, 235511 },                             -- Flawless Yellow Qiraji Resonating Crystal
-				{ 27, 235512 },                             -- Flawless Green Qiraji Resonating Crystal
-				{ 28, 235513 },                             -- Flawless Blue Qiraji Resonating Crystal
-				{ 29, 235514 },                             -- Flawless Red Qiraji Resonating Crystal
+				{ 1,  234107 },                                              -- Helm of Domination
+				{ 2,  [ATLASLOOT_IT_HORDE] = 234111, [ATLASLOOT_IT_ALLIANCE] = 234109 }, -- Runic Stone Shoulders / Mantle of the Horusath
+				{ 3,  234113 },                                              -- Sandstorm Cloak
+				{ 4,  234114 },                                              -- Shackles of the Unscarred
+				{ 5,  234103 },                                              -- Bracers of Brutality
+				{ 6,  234106 },                                              -- Gloves of Dark Wisdom
+				{ 7,  234105 },                                              -- Gauntlets of New Life
+				{ 8,  234110 },                                              -- Ossirian's Binding
+				{ 9,  234108 },                                              -- Leggings of the Black Blizzard
+				{ 10, 234104,                        234993 },               -- Crossbow of Imminent Doom
+				{ 11, 234112,                        234994 },               -- Sand Polished Hammer
+				{ 12, 234115,                        234995 },               -- Staff of the Ruins
+				{ 16, 20890 },                                               -- Qiraji Ornate Hilt
+				{ 17, 20886 },                                               -- Qiraji Spiked Hilt
+				{ 20, 20888 },                                               -- Qiraji Ceremonial Ring
+				{ 21, 20884 },                                               -- Qiraji Magisterial Ring
+				{ 23, 21220 },                                               -- Head of Ossirian the Unscarred
+				{ 25, "INV_Box_01",                  nil,                             AL["Hard Mode Mounts"], nil },
+				{ 26, 235511 },                                              -- Flawless Yellow Qiraji Resonating Crystal
+				{ 27, 235512 },                                              -- Flawless Green Qiraji Resonating Crystal
+				{ 28, 235513 },                                              -- Flawless Blue Qiraji Resonating Crystal
+				{ 29, 235514 },                                              -- Flawless Red Qiraji Resonating Crystal
 			},
 		},
 		{ -- AQ20Trash
 			name = AL["Trash"],
 			ExtraList = true,
 			[NORMAL_DIFF] = {
-				{ 1,  234123, [ATLASLOOT_IT_ALLIANCE] = 234120 }, -- Coif of Elemental Fury / Helm of the Holy Avenger
-				{ 2,  21805 },                        -- Polished Obsidian Pauldrons
-				{ 5,  20873 },                        -- Alabaster Idol
-				{ 6,  20869 },                        -- Amber Idol
-				{ 7,  20866 },                        -- Azure Idol
-				{ 8,  20870 },                        -- Jasper Idol
-				{ 9,  20868 },                        -- Lambent Idol
-				{ 10, 20871 },                        -- Obsidian Idol
-				{ 11, 20867 },                        -- Onyx Idol
-				{ 12, 20872 },                        -- Vermillion Idol
-				{ 14, 21761 },                        -- Scarab Coffer Key
-				{ 15, 21156 },                        -- Scarab Bag
-				{ 16, 234119 },                       -- Antenna of Invigoration
-				{ 17, 234121 },                       -- Silithid Husked Launcher
-				{ 18, 234122 },                       -- The Lost Kris of Zedd
-				{ 20, 20864 },                        -- Bone Scarab
-				{ 21, 20861 },                        -- Bronze Scarab
-				{ 22, 20863 },                        -- Clay Scarab
-				{ 23, 20862 },                        -- Crystal Scarab
-				{ 24, 20859 },                        -- Gold Scarab
-				{ 25, 20865 },                        -- Ivory Scarab
-				{ 26, 20860 },                        -- Silver Scarab
-				{ 27, 20858 },                        -- Stone Scarab
-				{ 29, 22203 },                        -- Large Obsidian Shard
-				{ 30, 22202 },                        -- Small Obsidian Shard
+				{ 1,  [ATLASLOOT_IT_HORDE] = 234123, [ATLASLOOT_IT_ALLIANCE] = 234120 }, -- Coif of Elemental Fury / Helm of the Holy Avenger
+				{ 2,  21805 },                                               -- Polished Obsidian Pauldrons
+				{ 5,  20873 },                                               -- Alabaster Idol
+				{ 6,  20869 },                                               -- Amber Idol
+				{ 7,  20866 },                                               -- Azure Idol
+				{ 8,  20870 },                                               -- Jasper Idol
+				{ 9,  20868 },                                               -- Lambent Idol
+				{ 10, 20871 },                                               -- Obsidian Idol
+				{ 11, 20867 },                                               -- Onyx Idol
+				{ 12, 20872 },                                               -- Vermillion Idol
+				{ 14, 21761 },                                               -- Scarab Coffer Key
+				{ 15, 21156 },                                               -- Scarab Bag
+				{ 16, 234119,                        235282 },               -- Antenna of Invigoration
+				{ 17, 234121,                        234997 },               -- Silithid Husked Launcher
+				{ 18, 234122,                        234998 },               -- The Lost Kris of Zedd
+				{ 20, 20864 },                                               -- Bone Scarab
+				{ 21, 20861 },                                               -- Bronze Scarab
+				{ 22, 20863 },                                               -- Clay Scarab
+				{ 23, 20862 },                                               -- Crystal Scarab
+				{ 24, 20859 },                                               -- Gold Scarab
+				{ 25, 20865 },                                               -- Ivory Scarab
+				{ 26, 20860 },                                               -- Silver Scarab
+				{ 27, 20858 },                                               -- Stone Scarab
+				{ 29, 22203 },                                               -- Large Obsidian Shard
+				{ 30, 22202 },                                               -- Small Obsidian Shard
 			},
 		},
 		{ -- AQ20ClassBooks
@@ -7014,11 +7014,11 @@ data["TheTempleofAhnQiraj"] = { -- AQ40
 				{ 10, 233503 }, -- Pendant of the Qiraji Guardian
 				{ 11, 233504 }, -- Cloak of Concentrated Hatred
 				{ 12, 233507 }, -- Ring of Swarming Thought
-				{ 13, 233515 }, -- Hammer of Ji'zhi
-				{ 14, 233509 }, -- Staff of the Qiraji Prophets
+				{ 13, 233515, 234975 }, -- Hammer of Ji'zhi
+				{ 14, 233509, 234974 }, -- Staff of the Qiraji Prophets
 				{ 16, 235045 }, -- Imperial Qiraji Regalia
 				{ 17, 235046 }, -- Imperial Qiraji Armaments
-				{ 19, 22222, 22196 }, -- Plans: Thick Obsidian Breastplate
+				{ 19, 22222,  22196 }, -- Plans: Thick Obsidian Breastplate
 			},
 		},
 		{ -- AQ40Trio
@@ -7028,30 +7028,30 @@ data["TheTempleofAhnQiraj"] = { -- AQ40
 			DisplayIDs = { { 15657 }, { 15658 }, { 15656 } },
 			AtlasMapBossID = 2,
 			[NORMAL_DIFF] = {
-				{ 1,  233522 }, -- Guise of the Devourer
-				{ 2,  233521 }, -- Ternary Mantle
-				{ 3,  233519 }, -- Cape of the Trinity
-				{ 4,  233520 }, -- Robes of the Triumvirate
-				{ 5,  233523 }, -- Triad Girdle
-				{ 6,  233524 }, -- Angelista's Touch
-				{ 8,  235045 }, -- Imperial Qiraji Regalia
-				{ 9,  235046 }, -- Imperial Qiraji Armaments
-				{ 11, "INV_BOX_02", nil, format(AL["%s killed last"], AL["Lord Kri"]) },
-				{ 12, 233568 }, -- Vest of Swift Execution
-				{ 13, 233569 }, -- Ring of the Devoured
-				{ 14, 233570 }, -- Petrified Scarab
-				{ 15, 233571 }, -- Wand of Qiraji Nobility
-				{ 16, "INV_BOX_02", nil, format(AL["%s killed last"], AL["Vem"]) },
-				{ 17, 233562 }, -- Angelista's Charm
-				{ 18, 233559 }, -- Gloves of Ebru
-				{ 19, 233560 }, -- Ooze-ridden Gauntlets
-				{ 20, 233561 }, -- Boots of the Fallen Hero
-				{ 22, "INV_BOX_02", nil, format(AL["%s killed last"], AL["Princess Yauj"]) },
-				{ 23, 233563 }, -- Mantle of Phrenic Power
-				{ 24, 233566 }, -- Mantle of the Desert's Fury
-				{ 25, 233567 }, -- Mantle of the Desert Crusade
-				{ 26, 233564 }, -- Bile-Covered Gauntlets
-				{ 27, 233565 }, -- Ukko's Ring of Darkness
+				{ 1,  233522 },   -- Guise of the Devourer
+				{ 2,  233521 },   -- Ternary Mantle
+				{ 3,  233519 },   -- Cape of the Trinity
+				{ 4,  233520 },   -- Robes of the Triumvirate
+				{ 5,  233523 },   -- Triad Girdle
+				{ 6,  233524 },   -- Angelista's Touch
+				{ 8,  235045 },   -- Imperial Qiraji Regalia
+				{ 9,  235046 },   -- Imperial Qiraji Armaments
+				{ 11, "INV_BOX_02", nil,   format(AL["%s killed last"], AL["Lord Kri"]) },
+				{ 12, 233568 },   -- Vest of Swift Execution
+				{ 13, 233569 },   -- Ring of the Devoured
+				{ 14, 233570 },   -- Petrified Scarab
+				{ 15, 233571,       234976 }, -- Wand of Qiraji Nobility
+				{ 16, "INV_BOX_02", nil,   format(AL["%s killed last"], AL["Vem"]) },
+				{ 17, 233562 },   -- Angelista's Charm
+				{ 18, 233559 },   -- Gloves of Ebru
+				{ 19, 233560 },   -- Ooze-ridden Gauntlets
+				{ 20, 233561 },   -- Boots of the Fallen Hero
+				{ 22, "INV_BOX_02", nil,   format(AL["%s killed last"], AL["Princess Yauj"]) },
+				{ 23, 233563 },   -- Mantle of Phrenic Power
+				{ 24, 233566 },   -- Mantle of the Desert's Fury
+				{ 25, 233567 },   -- Mantle of the Desert Crusade
+				{ 26, 233564 },   -- Bile-Covered Gauntlets
+				{ 27, 233565 },   -- Ukko's Ring of Darkness
 			},
 		},
 		{ -- AQ40Sartura
@@ -7073,7 +7073,7 @@ data["TheTempleofAhnQiraj"] = { -- AQ40
 				{ 10, 233573 }, -- Recomposed Boots
 				{ 11, 233580 }, -- Badge of the Swarmguard
 				{ 12, 233581 }, -- Sartura's Might
-				{ 13, 233576 }, -- Silithid Claw
+				{ 13, 233576, 234977 }, -- Silithid Claw
 				{ 16, 235045 }, -- Imperial Qiraji Regalia
 				{ 17, 235046 }, -- Imperial Qiraji Armaments
 			},
@@ -7092,8 +7092,8 @@ data["TheTempleofAhnQiraj"] = { -- AQ40
 				{ 5,  233591 }, -- Silithid Carapace Chestguard
 				{ 6,  233595 }, -- Scaled Sand Reaver Leggings
 				{ 7,  233590 }, -- Hive Tunneler's Boots
-				{ 8,  233585 }, -- Ancient Qiraji Ripper
-				{ 9,  233586 }, -- Barb of the Sand Reaver
+				{ 8,  233585, 234650 }, -- Ancient Qiraji Ripper
+				{ 9,  233586, 234978 }, -- Barb of the Sand Reaver
 				{ 11, 233587 }, -- Barbed Choker
 				{ 12, 233589 }, -- Fetish of the Sand Reaver
 				{ 13, 233596 }, -- Libram of Grace
@@ -7115,7 +7115,7 @@ data["TheTempleofAhnQiraj"] = { -- AQ40
 				{ 1,  233604 }, -- Gauntlets of Kalimdor
 				{ 2,  233603 }, -- Gauntlets of the Righteous Champion
 				{ 3,  233598 }, -- Slime-coated Leggings
-				{ 4,  233599 }, -- Sharpened Silithid Femur
+				{ 4,  233599, 234979 }, -- Sharpened Silithid Femur
 				{ 6,  233600 }, -- Ring of the Qiraji Fury
 				{ 7,  233601 }, -- Scarab Brooch
 				{ 8,  233602 }, -- Idol of Health
@@ -7138,7 +7138,7 @@ data["TheTempleofAhnQiraj"] = { -- AQ40
 				{ 3,  233607 }, -- Gloves of the Messiah
 				{ 4,  233608 }, -- Wasphide Gauntlets
 				{ 5,  233609 }, -- Ring of the Martyr
-				{ 6,  233605 }, -- Huhuran's Stinger
+				{ 6,  233605, 234980 }, -- Huhuran's Stinger
 				{ 16, 235045 }, -- Imperial Qiraji Regalia
 				{ 17, 235046 }, -- Imperial Qiraji Armaments
 				{ 19, 233370 }, -- Qiraji Bindings of Command
@@ -7153,31 +7153,31 @@ data["TheTempleofAhnQiraj"] = { -- AQ40
 			DisplayIDs = { { 15761 }, { 15778 } },
 			AtlasMapBossID = 7,
 			[NORMAL_DIFF] = {
-				{ 1,  "INV_Box_01", nil, AL["Emperor Vek'lor"],    nil },
-				{ 2,  233612 }, -- Qiraji Execution Bracers
-				{ 3,  233613 }, -- Vek'lor's Gloves of Devastation
-				{ 4,  233614 }, -- Royal Qiraji Belt
-				{ 5,  233611 }, -- Boots of Epiphany
-				{ 6,  233615 }, -- Ring of Emperor Vek'lor
-				{ 7,  233616 }, -- Royal Scepter of Vek'lor
-				{ 8,  20735 }, -- Formula: Enchant Cloak - Subtlety
-				{ 12, 235046 }, -- Imperial Qiraji Armaments
-				{ 13, 233365 }, -- Intact Viscera
-				{ 14, 233367 }, -- Intact Peritoneum
-				{ 15, 233368 }, -- Intact Entrails
-				{ 16, "INV_Box_01", nil, AL["Emperor Vek'nilash"], nil },
-				{ 17, 233620 }, -- Amulet of Vek'nilash
-				{ 18, 233617 }, -- Bracelets of Royal Redemption
-				{ 19, 233618 }, -- Gloves of the Hidden Temple
-				{ 20, 21609 }, -- Regenerating Belt of Vek'nilash
-				{ 21, 233622 }, -- Grasp of the Fallen Emperor
-				{ 22, 233623 }, -- Belt of the Fallen Emperor
-				{ 23, 233621 }, -- Kalimdor's Revenge
-				{ 24, 20726 }, -- Formula: Enchant Gloves - Threat
-				{ 27, 235045 }, -- Imperial Qiraji Regalia
-				{ 28, 233365 }, -- Intact Viscera
-				{ 29, 233367 }, -- Intact Peritoneum
-				{ 30, 233368 }, -- Intact Entrails
+				{ 1,  "INV_Box_01", nil,   AL["Emperor Vek'lor"],    nil },
+				{ 2,  233612 },   -- Qiraji Execution Bracers
+				{ 3,  233613 },   -- Vek'lor's Gloves of Devastation
+				{ 4,  233614 },   -- Royal Qiraji Belt
+				{ 5,  233611 },   -- Boots of Epiphany
+				{ 6,  233615 },   -- Ring of Emperor Vek'lor
+				{ 7,  233616 },   -- Royal Scepter of Vek'lor
+				{ 8,  20735 },    -- Formula: Enchant Cloak - Subtlety
+				{ 12, 235046 },   -- Imperial Qiraji Armaments
+				{ 13, 233365 },   -- Intact Viscera
+				{ 14, 233367 },   -- Intact Peritoneum
+				{ 15, 233368 },   -- Intact Entrails
+				{ 16, "INV_Box_01", nil,   AL["Emperor Vek'nilash"], nil },
+				{ 17, 233620 },   -- Amulet of Vek'nilash
+				{ 18, 233617 },   -- Bracelets of Royal Redemption
+				{ 19, 233618 },   -- Gloves of the Hidden Temple
+				{ 20, 21609 },    -- Regenerating Belt of Vek'nilash
+				{ 21, 233622 },   -- Grasp of the Fallen Emperor
+				{ 22, 233623 },   -- Belt of the Fallen Emperor
+				{ 23, 233621,       234981 }, -- Kalimdor's Revenge
+				{ 24, 20726 },    -- Formula: Enchant Gloves - Threat
+				{ 27, 235045 },   -- Imperial Qiraji Regalia
+				{ 28, 233365 },   -- Intact Viscera
+				{ 29, 233367 },   -- Intact Peritoneum
+				{ 30, 233368 },   -- Intact Entrails
 			},
 		},
 		{ -- AQ40Ouro
@@ -7192,7 +7192,7 @@ data["TheTempleofAhnQiraj"] = { -- AQ40
 				{ 3,  233628 }, -- The Burrower's Shell
 				{ 4,  233627 }, -- Jom Gabbar
 				{ 5,  21610 }, -- Wormscale Blocker
-				{ 6,  233626 }, -- Larvae of the Great Worm
+				{ 6,  233626, 234983 }, -- Larvae of the Great Worm
 				{ 16, 235045 }, -- Imperial Qiraji Regalia
 				{ 17, 235046 }, -- Imperial Qiraji Armaments
 				{ 18, 233365 }, -- Intact Viscera
@@ -7207,30 +7207,30 @@ data["TheTempleofAhnQiraj"] = { -- AQ40
 			DisplayIDs = { { 15787 } },
 			AtlasMapBossID = 9,
 			[NORMAL_DIFF] = {
-				{ 1,  233642 }, -- Mark of C'Thun
-				{ 2,  233641 }, -- Cloak of Clarity
-				{ 3,  233630 }, -- Cloak of the Devoured
-				{ 4,  233633 }, -- Eyestalk Waist Cord
-				{ 5,  233632 }, -- Grasp of the Old God
-				{ 6,  233635 }, -- Belt of Never-ending Agony
-				{ 7,  233631 }, -- Dark Storm Gauntlets
-				{ 8,  233637 }, -- Gauntlets of Annihilation
-				{ 9,  233638 }, -- Ring of the Godslayer
-				{ 10, 233639 }, -- Vanquished Tentacle of C'Thun
-				{ 11, 233636 }, -- Scepter of the False Prophet
-				{ 12, 233634 }, -- Death's Sting
-				{ 13, 233640 }, -- Dark Edge of Insanity
-				{ 16, 233363 }, -- Carapace of the Old God
-				{ 17, 233362 }, -- Husk of the Old God
-				{ 18, 233364 }, -- Skin of the Old God
-				{ 20, 21221 }, -- Eye of C'Thun
-				{ 22, 22734 }, -- Base of Atiesh
-				{ 24, "INV_Box_01", nil, AL["Hard Mode Mounts"], nil },
-				{ 25, 233351 }, -- Light Green Qiraji Resonating Crystal
-				{ 26, 233352 }, -- Dark Blue Qiraji Resonating Crystal
-				{ 27, 233353 }, -- Light Blue Qiraji Resonating Crystal
-				{ 28, 233356 }, -- Orange Qiraji Resonating Crystal
-				{ 29, 233357 }, -- Twilight Qiraji Resonating Crystal
+				{ 1,  233642 },   -- Mark of C'Thun
+				{ 2,  233641 },   -- Cloak of Clarity
+				{ 3,  233630 },   -- Cloak of the Devoured
+				{ 4,  233633 },   -- Eyestalk Waist Cord
+				{ 5,  233632 },   -- Grasp of the Old God
+				{ 6,  233635 },   -- Belt of Never-ending Agony
+				{ 7,  233631 },   -- Dark Storm Gauntlets
+				{ 8,  233637 },   -- Gauntlets of Annihilation
+				{ 9,  233638 },   -- Ring of the Godslayer
+				{ 10, 233639 },   -- Vanquished Tentacle of C'Thun
+				{ 11, 233636,       235014 }, -- Scepter of the False Prophet
+				{ 12, 233634,       234984 }, -- Death's Sting
+				{ 13, 233640,       234985 }, -- Dark Edge of Insanity
+				{ 16, 233363 },   -- Carapace of the Old God
+				{ 17, 233362 },   -- Husk of the Old God
+				{ 18, 233364 },   -- Skin of the Old God
+				{ 20, 21221 },    -- Eye of C'Thun
+				{ 22, 22734 },    -- Base of Atiesh
+				{ 24, "INV_Box_01", nil,   AL["Hard Mode Mounts"], nil },
+				{ 25, 233351 },   -- Light Green Qiraji Resonating Crystal
+				{ 26, 233352 },   -- Dark Blue Qiraji Resonating Crystal
+				{ 27, 233353 },   -- Light Blue Qiraji Resonating Crystal
+				{ 28, 233356 },   -- Orange Qiraji Resonating Crystal
+				{ 29, 233357 },   -- Twilight Qiraji Resonating Crystal
 			},
 		},
 		{ -- AQ40Trash1
@@ -7240,8 +7240,8 @@ data["TheTempleofAhnQiraj"] = { -- AQ40
 				{ 1,  233644 }, -- Garb of Royal Ascension
 				{ 2,  233645 }, -- Gloves of the Immortal
 				{ 3,  233646 }, -- Gloves of the Redeemed Prophecy
-				{ 4,  233647 }, -- Neretzek, The Blood Drinker
-				{ 5,  233643 }, -- Anubisath Warhammer
+				{ 4,  233647, 234987 }, -- Neretzek, The Blood Drinker
+				{ 5,  233643, 234986 }, -- Anubisath Warhammer
 				{ 6,  233648 }, -- Ritssyn's Ring of Chaos
 				{ 7,  233649 }, -- Shard of the Fallen Star
 				{ 16, 21218 }, -- Blue Qiraji Resonating Crystal
