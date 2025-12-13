@@ -907,18 +907,18 @@ data["BlackfathomDeeps"] = {
 			Level = GetForVersion(28, 24),
 			DisplayIDs = { { 110 } },
 			[NORMAL_DIFF] = {
-				{ 1,  211454 }, -- Strange Water Globe
-				{ 2,  211852 }, -- Handwraps of Befouled Water
-				{ 3,  209423 }, -- Flowing Scarf
-				{ 4,  209421 }, -- Cord of Aquanis
-				{ 5,  209828 }, -- Sub-Zero Pauldrons
-				{ 6,  209422 }, -- High Tide Choker
-				{ 7,  209825 }, -- Droplet Choker
-				{ 8,  204807 }, -- Fathomblade
-				{ 9,  204804 }, -- Hydraxian Bangles
-				{ 10, 209676 }, -- Shoulderguards of Crushing Depths
-				{ 11, 209590 }, -- Cracked Water Globe
-				{ 12, 209677 }, -- Loop of Swift Currents
+				{ 1,  [ATLASLOOT_IT_HORDE] = 211454, [ATLASLOOT_IT_ALLIANCE] = 211818 }, -- Strange Water Globe
+				{ 2,  211852 },                                              -- Handwraps of Befouled Water
+				{ 3,  209423 },                                              -- Flowing Scarf
+				{ 4,  209421 },                                              -- Cord of Aquanis
+				{ 5,  209828 },                                              -- Sub-Zero Pauldrons
+				{ 6,  209422 },                                              -- High Tide Choker
+				{ 7,  209825 },                                              -- Droplet Choker
+				{ 8,  204807 },                                              -- Fathomblade
+				{ 9,  204804 },                                              -- Hydraxian Bangles
+				{ 10, 209676 },                                              -- Shoulderguards of Crushing Depths
+				{ 11, 209590 },                                              -- Cracked Water Globe
+				{ 12, 209677 },                                              -- Loop of Swift Currents
 			},
 		},
 		{ -- BFDGhamoora
@@ -1065,31 +1065,31 @@ data["BlackfathomDeeps"] = {
 			DisplayIDs = { { 2837 } },
 			AtlasMapFile = { "CL_BlackfathomDeepsB", "CL_BlackfathomDeepsEnt" },
 			[NORMAL_DIFF] = {
-				{ 1,  211452, [ATLASLOOT_IT_ALLIANCE] = 209693 }, -- Perfect Blackfathom Pearl
-				{ 3,  209692 },                       -- Sentinel Pauldrons
-				{ 4,  211456 },                       -- Dagger of Willing Sacrifice
-				{ 5,  209685 },                       -- Ancient Moss Cinch
-				{ 6,  209688 },                       -- Bael Modan Blunderbuss
-				{ 7,  209687 },                       -- Hydra Hide Cuirass
-				{ 8,  209690 },                       -- Shadowscale Coif
-				{ 9,  209691 },                       -- Vampiric Boot Knife
-				{ 10, 209580 },                       -- Gusting Wind
-				{ 11, 209684 },                       -- Soul Leech Pants
-				{ 12, 209689 },                       -- Crabshell Waders
-				{ 13, 209534 },                       -- Azshari Arbalest
-				{ 14, 209562 },                       -- Deadly Strike of the Hydra
-				{ 16, 211505 },                       -- Twilight Avenger's Helm
-				{ 17, 211504 },                       -- Twilight Avenger's Chain
-				{ 18, 211506 },                       -- Twilight Avenger's Boots
-				{ 20, 211507 },                       -- Twilight Elementalist's Cowl
-				{ 21, 211509 },                       -- Twilight Elementalist's Robe
-				{ 22, 211508 },                       -- Twilight Elementalist's Footpads
-				{ 24, 211510 },                       -- Twilight Slayer's Cowl
-				{ 25, 211512 },                       -- Twilight Slayer's Tunic
-				{ 26, 211511 },                       -- Twilight Slayer's Footpads
-				{ 28, 209683 },                       -- Twilight Invoker's Shawl
-				{ 29, 209671 },                       -- Twilight Invoker's Robes
-				{ 30, 209669 },                       -- Twilight Invoker's Shoes
+				{ 1,  [ATLASLOOT_IT_HORDE] = 211452, [ATLASLOOT_IT_ALLIANCE] = 209693 }, -- Perfect Blackfathom Pearl
+				{ 3,  209692 },                                              -- Sentinel Pauldrons
+				{ 4,  211456 },                                              -- Dagger of Willing Sacrifice
+				{ 5,  209685 },                                              -- Ancient Moss Cinch
+				{ 6,  209688 },                                              -- Bael Modan Blunderbuss
+				{ 7,  209687 },                                              -- Hydra Hide Cuirass
+				{ 8,  209690 },                                              -- Shadowscale Coif
+				{ 9,  209691 },                                              -- Vampiric Boot Knife
+				{ 10, 209580 },                                              -- Gusting Wind
+				{ 11, 209684 },                                              -- Soul Leech Pants
+				{ 12, 209689 },                                              -- Crabshell Waders
+				{ 13, 209534 },                                              -- Azshari Arbalest
+				{ 14, 209562 },                                              -- Deadly Strike of the Hydra
+				{ 16, 211505 },                                              -- Twilight Avenger's Helm
+				{ 17, 211504 },                                              -- Twilight Avenger's Chain
+				{ 18, 211506 },                                              -- Twilight Avenger's Boots
+				{ 20, 211507 },                                              -- Twilight Elementalist's Cowl
+				{ 21, 211509 },                                              -- Twilight Elementalist's Robe
+				{ 22, 211508 },                                              -- Twilight Elementalist's Footpads
+				{ 24, 211510 },                                              -- Twilight Slayer's Cowl
+				{ 25, 211512 },                                              -- Twilight Slayer's Tunic
+				{ 26, 211511 },                                              -- Twilight Slayer's Footpads
+				{ 28, 209683 },                                              -- Twilight Invoker's Shawl
+				{ 29, 209671 },                                              -- Twilight Invoker's Robes
+				{ 30, 209669 },                                              -- Twilight Invoker's Shoes
 			},
 		},
 		{ -- BFDTrash
@@ -1292,28 +1292,27 @@ data["Gnomeregan"] = {
 			Level = GetForVersion(34, 28),
 			DisplayIDs = { { 117499 } },
 			[NORMAL_DIFF] = {
-				{ 1,  217350 }, -- Thermaplugg's Engineering Notes
-				{ 2,  217351 }, -- Thermaplugg's Engineering Notes
-				{ 4,  213281 }, -- Electromagnetic Hyperflux Reactivator
-				{ 5,  213348 }, -- Gyromatic Experiment 420b
-				{ 6,  213349 }, -- Gniodine Pill Bottle
-				{ 7,  213350 }, -- Wirdal's Hardened Core
-				{ 8,  213347 }, -- Miniaturized Combustion Chamber
-				{ 9,  215461 }, -- Domesticated Attack Chicken
-				{ 11, 215379 }, -- Irradiated Trousers
-				{ 12, 215377 }, -- Irradiated Robe
-				{ 13, 215378 }, -- Irradiated Boots
-				{ 16, 213283 }, -- Hypercharged Gear of Conflagration
-				{ 17, 213284 }, -- Hypercharged Gear of Devastation
-				{ 18, 213282 }, -- Hypercharged Gear of Innovation
-				{ 20, 213356 }, -- Thermaplugg's Custom Blaster
-				{ 21, 213409 }, -- Mekgatorque's Arcano-Shredder
-				{ 22, 213416 }, -- Thermaplugg's Rocket Cleaver
-				{ 24, 216608 }, -- Radiant Ray Reflectors
-				{ 25, 13325 }, -- Fluorescent Green Mechanostrider
-				{ 27, 217008 }, -- Power Depleted Chest
-				{ 28, 217009 }, -- Power Depleted Legs
-				{ 29, 217007 }, -- Power Depleted Boots
+				{ 1,  [ATLASLOOT_IT_HORDE] = 217351, [ATLASLOOT_IT_ALLIANCE] = 217350 }, -- Thermaplugg's Engineering Notes
+				{ 3,  213281 },                                              -- Electromagnetic Hyperflux Reactivator
+				{ 4,  213348 },                                              -- Gyromatic Experiment 420b
+				{ 5,  213349 },                                              -- Gniodine Pill Bottle
+				{ 6,  213350 },                                              -- Wirdal's Hardened Core
+				{ 7,  213347 },                                              -- Miniaturized Combustion Chamber
+				{ 8,  215461 },                                              -- Domesticated Attack Chicken
+				{ 10, 215379 },                                              -- Irradiated Trousers
+				{ 11, 215377 },                                              -- Irradiated Robe
+				{ 12, 215378 },                                              -- Irradiated Boots
+				{ 16, 213283 },                                              -- Hypercharged Gear of Conflagration
+				{ 17, 213284 },                                              -- Hypercharged Gear of Devastation
+				{ 18, 213282 },                                              -- Hypercharged Gear of Innovation
+				{ 20, 213356 },                                              -- Thermaplugg's Custom Blaster
+				{ 21, 213409 },                                              -- Mekgatorque's Arcano-Shredder
+				{ 22, 213416 },                                              -- Thermaplugg's Rocket Cleaver
+				{ 24, 216608 },                                              -- Radiant Ray Reflectors
+				{ 25, 13325 },                                               -- Fluorescent Green Mechanostrider
+				{ 27, 217008 },                                              -- Power Depleted Chest
+				{ 28, 217009 },                                              -- Power Depleted Legs
+				{ 29, 217007 },                                              -- Power Depleted Boots
 			},
 		},
 		{ -- GnTrash
@@ -2711,23 +2710,22 @@ data["TheTempleOfAtal'Hakkar"] = {
 			AtlasMapBossID = 3,
 			Level = 48,
 			[NORMAL_DIFF] = {
-				{ 1,  221363 }, -- Scapula of the Fallen Avatar
-				{ 2,  221346 }, -- Scapula of the Fallen Avatar
-				{ 4,  220608 }, -- Featherskin Drape
-				{ 5,  220530 }, -- Will of the Atal'ai Warrior
-				{ 6,  220577 }, -- Might of the Blood Loa
-				{ 7,  220557 }, -- Cursed Windscale Sarong
-				{ 8,  220562 }, -- Bloodshot Battle Greaves
-				{ 9,  220636 }, -- Atal'ai Blood Icon
-				{ 10, 220637 }, -- Atal'ai Ritual Token
-				{ 12, 220634 }, -- Atal'ai Blood Ritual Charm
-				{ 13, 220633 }, -- Atal'ai Blood Ritual Badge
-				{ 14, 220632 }, -- Atal'ai Blood Ritual Medallion
-				{ 16, 220590 }, -- Spire of Hakkari Worship
-				{ 17, 220620 }, -- Wind Serpent Skull
-				{ 18, 220534 }, -- Eternal Embrace of the Wind Serpent
-				{ 19, 220686 }, -- Chieftain's Bane
-				{ 20, 220588 }, -- Cobra Fang Claw
+				{ 1,  [ATLASLOOT_IT_HORDE] = 221363, [ATLASLOOT_IT_ALLIANCE] = 221346 }, -- Scapula of the Fallen Avatar
+				{ 3,  220608 },                                              -- Featherskin Drape
+				{ 4,  220530 },                                              -- Will of the Atal'ai Warrior
+				{ 5,  220577 },                                              -- Might of the Blood Loa
+				{ 6,  220557 },                                              -- Cursed Windscale Sarong
+				{ 7,  220562 },                                              -- Bloodshot Battle Greaves
+				{ 8,  220636 },                                              -- Atal'ai Blood Icon
+				{ 9,  220637 },                                              -- Atal'ai Ritual Token
+				{ 11, 220634 },                                              -- Atal'ai Blood Ritual Charm
+				{ 12, 220633 },                                              -- Atal'ai Blood Ritual Badge
+				{ 13, 220632 },                                              -- Atal'ai Blood Ritual Medallion
+				{ 16, 220590 },                                              -- Spire of Hakkari Worship
+				{ 17, 220620 },                                              -- Wind Serpent Skull
+				{ 18, 220534 },                                              -- Eternal Embrace of the Wind Serpent
+				{ 19, 220686 },                                              -- Chieftain's Bane
+				{ 20, 220588 },                                              -- Cobra Fang Claw
 			},
 		},
 		{ -- STTrash
@@ -6082,53 +6080,53 @@ data["Onyxia"] = {
 			DisplayIDs = { { 8570 } },
 			AtlasMapBossID = 3,
 			[NORMAL_DIFF] = {
-				{ 1,   18423 }, -- Head of Onyxia
-				{ 2,   18705 }, -- Mature Black Dragon Sinew
-				{ 3,   228759 }, -- Eskhandar's Collar
-				{ 4,   17078 }, -- Sapphiron Drape
-				{ 5,   18813 }, -- Ring of Binding
-				{ 6,   228298 }, -- Shard of the Scale
-				{ 7,   228955 }, -- Ancient Cornerstone Grimoire
-				{ 8,   17068 }, -- Deathbringer
-				{ 9,   17075 }, -- Vis'kag the Bloodletter
-				{ 10,  228166 }, -- Key to the City
-				{ 11,  228162 }, -- Deceit
-				{ 12,  228165 }, -- Dragonslayer's Javelin
-				{ 13,  228163 }, -- Broodmother's Brooch
-				{ 14,  228188 }, -- Prestor's Hairpin
-				{ 15,  228992 }, -- Onyxia Hide Backpack
-				{ 16,  15410 }, -- Scale of Onyxia
-				{ 17,  11938 }, -- Sack of Gems
-				{ 19,  227535 }, -- Incandescent Robe
-				{ 20,  227766 }, -- Scorched Core Chest
-				{ 21,  227758 }, -- Molten Scaled Chest
-				{ 23,  227537 }, -- Incandescent Shoulderpads
-				{ 24,  227752 }, -- Molten Scaled Shoulderpads
-				{ 25,  227762 }, -- Scorched Core Shoulderpads
-				{ 27,  227532 }, -- Incandescent Hood
-				{ 28,  227764 }, -- Scorched Core Helm
-				{ 29,  227755 }, -- Molten Scaled Helm
-				{ 101, 227533 }, -- Incandescent Gloves
-				{ 102, 227756 }, -- Molten Scaled Gloves
-				{ 103, 227759 }, -- Scorched Core Gloves
-				{ 105, 227531 }, -- Incandescent Bindings
-				{ 106, 227750 }, -- Molten Scaled Bindings
-				{ 107, 227760 }, -- Scorched Core Bindings
-				{ 109, 227530 }, -- Incandescent Belt
-				{ 110, 227751 }, -- Molten Scaled Belt
-				{ 111, 227761 }, -- Scorched Core Belt
-				{ 116, 227534 }, -- Incandescent Leggings
-				{ 117, 227754 }, -- Molten Scaled Leggings
-				{ 118, 227763 }, -- Scorched Core Leggings
-				{ 120, 227536 }, -- Incandescent Boots
-				{ 121, 227757 }, -- Molten Scaled Boots
-				{ 122, 227765 }, -- Scorched Core Boots
+				{ 1,   [ATLASLOOT_IT_HORDE] = 228689, [ATLASLOOT_IT_ALLIANCE] = 228688 }, -- Head of Onyxia
+				{ 2,   18705 },                                               -- Mature Black Dragon Sinew
+				{ 3,   228759 },                                              -- Eskhandar's Collar
+				{ 4,   17078 },                                               -- Sapphiron Drape
+				{ 5,   18813 },                                               -- Ring of Binding
+				{ 6,   228298 },                                              -- Shard of the Scale
+				{ 7,   228955 },                                              -- Ancient Cornerstone Grimoire
+				{ 8,   17068 },                                               -- Deathbringer
+				{ 9,   17075 },                                               -- Vis'kag the Bloodletter
+				{ 10,  228166 },                                              -- Key to the City
+				{ 11,  228162 },                                              -- Deceit
+				{ 12,  228165 },                                              -- Dragonslayer's Javelin
+				{ 13,  228163 },                                              -- Broodmother's Brooch
+				{ 14,  228188 },                                              -- Prestor's Hairpin
+				{ 15,  228992 },                                              -- Onyxia Hide Backpack
+				{ 16,  15410 },                                               -- Scale of Onyxia
+				{ 17,  11938 },                                               -- Sack of Gems
+				{ 19,  227535 },                                              -- Incandescent Robe
+				{ 20,  227766 },                                              -- Scorched Core Chest
+				{ 21,  227758 },                                              -- Molten Scaled Chest
+				{ 23,  227537 },                                              -- Incandescent Shoulderpads
+				{ 24,  227752 },                                              -- Molten Scaled Shoulderpads
+				{ 25,  227762 },                                              -- Scorched Core Shoulderpads
+				{ 27,  227532 },                                              -- Incandescent Hood
+				{ 28,  227764 },                                              -- Scorched Core Helm
+				{ 29,  227755 },                                              -- Molten Scaled Helm
+				{ 101, 227533 },                                              -- Incandescent Gloves
+				{ 102, 227756 },                                              -- Molten Scaled Gloves
+				{ 103, 227759 },                                              -- Scorched Core Gloves
+				{ 105, 227531 },                                              -- Incandescent Bindings
+				{ 106, 227750 },                                              -- Molten Scaled Bindings
+				{ 107, 227760 },                                              -- Scorched Core Bindings
+				{ 109, 227530 },                                              -- Incandescent Belt
+				{ 110, 227751 },                                              -- Molten Scaled Belt
+				{ 111, 227761 },                                              -- Scorched Core Belt
+				{ 116, 227534 },                                              -- Incandescent Leggings
+				{ 117, 227754 },                                              -- Molten Scaled Leggings
+				{ 118, 227763 },                                              -- Scorched Core Leggings
+				{ 120, 227536 },                                              -- Incandescent Boots
+				{ 121, 227757 },                                              -- Molten Scaled Boots
+				{ 122, 227765 },                                              -- Scorched Core Boots
 				-- Hidden items
-				{ 0,   17962 }, -- Blue Sack of Gems
-				{ 0,   17963 }, -- Green Sack of Gems
-				{ 0,   17964 }, -- Gray Sack of Gems
-				{ 0,   17965 }, -- Yellow Sack of Gems
-				{ 0,   17969 }, -- Red Sack of Gems
+				{ 0,   17962 },                                               -- Blue Sack of Gems
+				{ 0,   17963 },                                               -- Green Sack of Gems
+				{ 0,   17964 },                                               -- Gray Sack of Gems
+				{ 0,   17965 },                                               -- Yellow Sack of Gems
+				{ 0,   17969 },                                               -- Red Sack of Gems
 			},
 		},
 	},
@@ -6849,18 +6847,18 @@ data["TheRuinsofAhnQiraj"] = { -- AQ20
 			DisplayIDs = { { 15654 } },
 			AtlasMapBossID = 4,
 			[NORMAL_DIFF] = {
-				{ 1,  234091, [ATLASLOOT_IT_ALLIANCE] = 234090 }, -- Slimy Scaled Gauntlets / Gloves of the Swarm
-				{ 2,  234089 },                       -- Buru's Skull Fragment
-				{ 5,  234094 },                       -- Scaled Bracers of the Gorger
-				{ 6,  234093 },                       -- Quicksand Waders
-				{ 7,  234095 },                       -- Slime Kickers
-				{ 8,  234092 },                       -- Fetish of Chitinous Spikes
-				{ 16, 20890 },                        -- Qiraji Ornate Hilt
-				{ 17, 20886 },                        -- Qiraji Spiked Hilt
-				{ 20, 20885 },                        -- Qiraji Martial Drape
-				{ 21, 20889 },                        -- Qiraji Regal Drape
-				{ 22, 20888 },                        -- Qiraji Ceremonial Ring
-				{ 23, 20884 },                        -- Qiraji Magisterial Ring
+				{ 1,  [ATLASLOOT_IT_HORDE] = 234091, [ATLASLOOT_IT_ALLIANCE] = 234090 }, -- Slimy Scaled Gauntlets / Gloves of the Swarm
+				{ 2,  234089 },                                              -- Buru's Skull Fragment
+				{ 5,  234094 },                                              -- Scaled Bracers of the Gorger
+				{ 6,  234093 },                                              -- Quicksand Waders
+				{ 7,  234095 },                                              -- Slime Kickers
+				{ 8,  234092 },                                              -- Fetish of Chitinous Spikes
+				{ 16, 20890 },                                               -- Qiraji Ornate Hilt
+				{ 17, 20886 },                                               -- Qiraji Spiked Hilt
+				{ 20, 20885 },                                               -- Qiraji Martial Drape
+				{ 21, 20889 },                                               -- Qiraji Regal Drape
+				{ 22, 20888 },                                               -- Qiraji Ceremonial Ring
+				{ 23, 20884 },                                               -- Qiraji Magisterial Ring
 			},
 		},
 		{ -- AQ20Ayamiss
@@ -7278,17 +7276,17 @@ data["Naxxramas"] = {
 			AtlasMapBossID = "1",
 			NameColor = BLUE,
 			[NORMAL_DIFF] = {
-				{ 1,  22726 },                        -- Splinter of Atiesh
-				{ 2,  22727 },                        -- Frame of Atiesh
-				{ 4,  236245 },                       -- Desecrated Bindings
-				{ 5,  236247 },                       -- Desecrated Wristguards
-				{ 6,  236235 },                       -- Desecrated Bracers
-				{ 8,  236256 },                       -- Touch of Frost
-				{ 9,  236258 },                       -- Cryptfiend Silk Cloak
-				{ 10, 236255 },                       -- Wristguards of Vengeance
-				{ 11, 236259 },                       -- Band of Unanswered Prayers
-				{ 12, 236257 },                       -- Gem of Nerubis
-				{ 13, 236226, [ATLASLOOT_IT_ALLIANCE] = 236228 }, -- Pauldrons of Elemental Fury / Spaulders of the Grand Grusader
+				{ 1,  22726 },                                               -- Splinter of Atiesh
+				{ 2,  22727 },                                               -- Frame of Atiesh
+				{ 4,  236245 },                                              -- Desecrated Bindings
+				{ 5,  236247 },                                              -- Desecrated Wristguards
+				{ 6,  236235 },                                              -- Desecrated Bracers
+				{ 8,  236256 },                                              -- Touch of Frost
+				{ 9,  236258 },                                              -- Cryptfiend Silk Cloak
+				{ 10, 236255 },                                              -- Wristguards of Vengeance
+				{ 11, 236259 },                                              -- Band of Unanswered Prayers
+				{ 12, 236257 },                                              -- Gem of Nerubis
+				{ 13, [ATLASLOOT_IT_HORDE] = 236226, [ATLASLOOT_IT_ALLIANCE] = 236228 }, -- Pauldrons of Elemental Fury / Spaulders of the Grand Grusader
 			},
 		},
 		{ -- NAXGrandWidowFaerlina
@@ -7341,19 +7339,19 @@ data["Naxxramas"] = {
 			AtlasMapBossID = "1",
 			NameColor = PURP,
 			[NORMAL_DIFF] = {
-				{ 1,  22726 },                        -- Splinter of Atiesh
-				{ 2,  22727 },                        -- Frame of Atiesh
-				{ 4,  236244 },                       -- Desecrated Belt
-				{ 5,  236252 },                       -- Desecrated Girdle
-				{ 6,  236232 },                       -- Desecrated Waistguard
-				{ 8,  236272 },                       -- Cloak of the Scourge
-				{ 9,  236273 },                       -- Band of the Inevitable
-				{ 10, 236274 },                       -- Hailstone Band
-				{ 11, 236275 },                       -- Noth's Frigid Heart
-				{ 12, 236271 },                       -- Libram of Light
-				{ 13, 236276 },                       -- Totem of Flowing Water
-				{ 14, 236270 },                       -- Hatchet of Sundered Bone
-				{ 15, 236230, [ATLASLOOT_IT_ALLIANCE] = 236229 }, -- Leggings of Elemental Fury / Leggings of the Grand Crusader
+				{ 1,  22726 },                                               -- Splinter of Atiesh
+				{ 2,  22727 },                                               -- Frame of Atiesh
+				{ 4,  236244 },                                              -- Desecrated Belt
+				{ 5,  236252 },                                              -- Desecrated Girdle
+				{ 6,  236232 },                                              -- Desecrated Waistguard
+				{ 8,  236272 },                                              -- Cloak of the Scourge
+				{ 9,  236273 },                                              -- Band of the Inevitable
+				{ 10, 236274 },                                              -- Hailstone Band
+				{ 11, 236275 },                                              -- Noth's Frigid Heart
+				{ 12, 236271 },                                              -- Libram of Light
+				{ 13, 236276 },                                              -- Totem of Flowing Water
+				{ 14, 236270 },                                              -- Hatchet of Sundered Bone
+				{ 15, [ATLASLOOT_IT_HORDE] = 236230, [ATLASLOOT_IT_ALLIANCE] = 236229 }, -- Leggings of Elemental Fury / Leggings of the Grand Crusader
 			},
 		},
 		{ -- NAXHeigantheUnclean
@@ -7428,17 +7426,17 @@ data["Naxxramas"] = {
 			AtlasMapBossID = "2",
 			NameColor = _RED,
 			[NORMAL_DIFF] = {
-				{ 1,  22726 },                        -- Splinter of Atiesh
-				{ 2,  22727 },                        -- Frame of Atiesh
-				{ 4,  236239 },                       -- Desecrated Sandals
-				{ 5,  236248 },                       -- Desecrated Boots
-				{ 6,  236234 },                       -- Desecrated Sabatons
-				{ 8,  236278 },                       -- Glacial Headdress
-				{ 9,  236315 },                       -- Polar Helmet
-				{ 10, 236316 },                       -- Sadist's Collar
-				{ 11, 236313 },                       -- The Soul Harvester's Bindings
-				{ 12, 236314 },                       -- Boots of Displacement
-				{ 13, 236225, [ATLASLOOT_IT_ALLIANCE] = 236227 }, -- Girdle of Elemental Fury / Belt of the Grand Crusader
+				{ 1,  22726 },                                               -- Splinter of Atiesh
+				{ 2,  22727 },                                               -- Frame of Atiesh
+				{ 4,  236239 },                                              -- Desecrated Sandals
+				{ 5,  236248 },                                              -- Desecrated Boots
+				{ 6,  236234 },                                              -- Desecrated Sabatons
+				{ 8,  236278 },                                              -- Glacial Headdress
+				{ 9,  236315 },                                              -- Polar Helmet
+				{ 10, 236316 },                                              -- Sadist's Collar
+				{ 11, 236313 },                                              -- The Soul Harvester's Bindings
+				{ 12, 236314 },                                              -- Boots of Displacement
+				{ 13, [ATLASLOOT_IT_HORDE] = 236225, [ATLASLOOT_IT_ALLIANCE] = 236227 }, -- Girdle of Elemental Fury / Belt of the Grand Crusader
 			},
 		},
 		{ -- NAXTheFourHorsemen

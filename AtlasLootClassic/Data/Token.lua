@@ -260,7 +260,9 @@ TOKEN_DATA.CLASSIC = {
 	[12780] = { 13966, 13968, 13965, type = 3 }, -- General Drakkisath's Command
 	[7666] = { 7673, type = 3 },              -- Shattered Necklace
 	[19003] = { 19383, 19384, 19366, type = 3 }, -- Head of Nefarian
+	[19002] = { 19383, 19384, 19366, type = 3 }, -- Head of Nefarian
 	[18423] = { 18404, 18403, 18406, type = 3 }, -- Head of Onyxia
+	[18422] = { 18404, 18403, 18406, type = 3 }, -- Head of Onyxia
 	[20644] = { 20600, type = 3 },            -- Shrouded in Nightmare
 
 	-- Quest objective

@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.5.0 -
+### Fixed
+- Era/Anni/SoD: Clean up faction-specific items, including Nefarian/Onyxia heads
+
 ## 3.4.0 - December 9, 2025
 ### Added
 - SoD: Added items to Factions

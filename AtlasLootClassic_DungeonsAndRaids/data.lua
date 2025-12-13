@@ -5495,33 +5495,33 @@ data["Onyxia"] = {
 			DisplayIDs = { { 8570 } },
 			AtlasMapBossID = 3,
 			[NORMAL_DIFF] = {
-				{ 1,  16921 }, -- Halo of Transcendence
-				{ 2,  16914 }, -- Netherwind Crown
-				{ 3,  16929 }, -- Nemesis Skullcap
-				{ 4,  16908 }, -- Bloodfang Hood
-				{ 5,  16900 }, -- Stormrage Cover
-				{ 6,  16939 }, -- Dragonstalker's Helm
-				{ 7,  16947 }, -- Helmet of Ten Storms
-				{ 8,  16955 }, -- Judgement Crown
-				{ 9,  16963 }, -- Helm of Wrath
-				{ 11, 18423 }, -- Head of Onyxia
-				{ 12, 15410 }, -- Scale of Onyxia
-				{ 16, 18705 }, -- Mature Black Dragon Sinew
-				{ 18, 18205 }, -- Eskhandar's Collar
-				{ 19, 17078 }, -- Sapphiron Drape
-				{ 20, 18813 }, -- Ring of Binding
-				{ 21, 17064 }, -- Shard of the Scale
-				{ 22, 17067 }, -- Ancient Cornerstone Grimoire
-				{ 23, 17068 }, -- Deathbringer
-				{ 24, 17075 }, -- Vis'kag the Bloodletter
-				{ 26, 17966 }, -- Onyxia Hide Backpack
-				{ 27, 11938 }, -- Sack of Gems
+				{ 1,  16921 },                                             -- Halo of Transcendence
+				{ 2,  16914 },                                             -- Netherwind Crown
+				{ 3,  16929 },                                             -- Nemesis Skullcap
+				{ 4,  16908 },                                             -- Bloodfang Hood
+				{ 5,  16900 },                                             -- Stormrage Cover
+				{ 6,  16939 },                                             -- Dragonstalker's Helm
+				{ 7,  16947 },                                             -- Helmet of Ten Storms
+				{ 8,  16955 },                                             -- Judgement Crown
+				{ 9,  16963 },                                             -- Helm of Wrath
+				{ 11, [ATLASLOOT_IT_HORDE] = 18422, [ATLASLOOT_IT_ALLIANCE] = 18423 }, -- Head of Onyxia
+				{ 12, 15410 },                                             -- Scale of Onyxia
+				{ 16, 18705 },                                             -- Mature Black Dragon Sinew
+				{ 18, 18205 },                                             -- Eskhandar's Collar
+				{ 19, 17078 },                                             -- Sapphiron Drape
+				{ 20, 18813 },                                             -- Ring of Binding
+				{ 21, 17064 },                                             -- Shard of the Scale
+				{ 22, 17067 },                                             -- Ancient Cornerstone Grimoire
+				{ 23, 17068 },                                             -- Deathbringer
+				{ 24, 17075 },                                             -- Vis'kag the Bloodletter
+				{ 26, 17966 },                                             -- Onyxia Hide Backpack
+				{ 27, 11938 },                                             -- Sack of Gems
 				-- Hidden items
-				{ 0,  17962 }, -- Blue Sack of Gems
-				{ 0,  17963 }, -- Green Sack of Gems
-				{ 0,  17964 }, -- Gray Sack of Gems
-				{ 0,  17965 }, -- Yellow Sack of Gems
-				{ 0,  17969 }, -- Red Sack of Gems
+				{ 0,  17962 },                                             -- Blue Sack of Gems
+				{ 0,  17963 },                                             -- Green Sack of Gems
+				{ 0,  17964 },                                             -- Gray Sack of Gems
+				{ 0,  17965 },                                             -- Yellow Sack of Gems
+				{ 0,  17969 },                                             -- Red Sack of Gems
 			},
 		},
 	},
@@ -5793,22 +5793,21 @@ data["Zul'Gurub"] = {
 			DisplayIDs = { { 15295 } },
 			AtlasMapBossID = 11,
 			[NORMAL_DIFF] = {
-				{ 1,  19857 },                      -- Cloak of Consumption
-				{ 2,  20257, [ATLASLOOT_IT_ALLIANCE] = 20264 }, -- Seafury Gauntlets
-				--{ 3,  20264, [ATLASLOOT_IT_HORDE] = 20257 }, -- Peacekeeper Gauntlets
-				{ 3,  19855 },                      -- Bloodsoaked Legplates
-				{ 4,  19876 },                      -- Soul Corrupter's Necklace
-				{ 5,  19856 },                      -- The Eye of Hakkar
-				{ 7,  19802 },                      -- Heart of Hakkar
-				{ 16, 19861 },                      -- Touch of Chaos
-				{ 17, 19853 },                      -- Gurubashi Dwarf Destroyer
-				{ 18, 19862 },                      -- Aegis of the Blood God
-				{ 19, 19864 },                      -- Bloodcaller
-				{ 20, 19865 },                      -- Warblade of the Hakkari
-				{ 21, 19866 },                      -- Warblade of the Hakkari
-				{ 22, 19852 },                      -- Ancient Hakkari Manslayer
-				{ 23, 19859 },                      -- Fang of the Faceless
-				{ 24, 19854 },                      -- Zin'rokh, Destroyer of Worlds
+				{ 1,  19857 },                                             -- Cloak of Consumption
+				{ 2,  [ATLASLOOT_IT_HORDE] = 20257, [ATLASLOOT_IT_ALLIANCE] = 20264 }, -- Seafury Gauntlets / Peacekeeper Gauntlets
+				{ 3,  19855 },                                             -- Bloodsoaked Legplates
+				{ 4,  19876 },                                             -- Soul Corrupter's Necklace
+				{ 5,  19856 },                                             -- The Eye of Hakkar
+				{ 7,  19802 },                                             -- Heart of Hakkar
+				{ 16, 19861 },                                             -- Touch of Chaos
+				{ 17, 19853 },                                             -- Gurubashi Dwarf Destroyer
+				{ 18, 19862 },                                             -- Aegis of the Blood God
+				{ 19, 19864 },                                             -- Bloodcaller
+				{ 20, 19865 },                                             -- Warblade of the Hakkari
+				{ 21, 19866 },                                             -- Warblade of the Hakkari
+				{ 22, 19852 },                                             -- Ancient Hakkari Manslayer
+				{ 23, 19859 },                                             -- Fang of the Faceless
+				{ 24, 19854 },                                             -- Zin'rokh, Destroyer of Worlds
 			},
 		},
 		{ -- ZGShared
@@ -6123,35 +6122,35 @@ data["BlackwingLair"] = {
 			DisplayIDs = { { 11380 } },
 			AtlasMapBossID = 8,
 			[NORMAL_DIFF] = {
-				{ 1,  16923 },                      -- Robes of Transcendence
-				{ 2,  16916 },                      -- Netherwind Robes
-				{ 3,  16931 },                      -- Nemesis Robes
-				{ 4,  16905 },                      -- Bloodfang Chestpiece
-				{ 5,  16897 },                      -- Stormrage Chestguard
-				{ 6,  16942 },                      -- Dragonstalker's Breastplate
-				{ 7,  16950 },                      -- Breastplate of Ten Storms
-				{ 8,  16958 },                      -- Judgement Breastplate
-				{ 9,  16966 },                      -- Breastplate of Wrath
-				{ 11, 19002, [ATLASLOOT_IT_ALLIANCE] = 19003 }, -- Head of Nefarian
-				{ 16, 19360 },                      -- Lok'amir il Romathis
-				{ 17, 19363 },                      -- Crul'shorukh, Edge of Chaos
-				{ 18, 19364 },                      -- Ashkandi, Greatsword of the Brotherhood
-				{ 19, 19356 },                      -- Staff of the Shadow Flame
-				{ 21, 19375 },                      -- Mish'undare, Circlet of the Mind Flayer
-				{ 22, 19377 },                      -- Prestor's Talisman of Connivery
-				{ 23, 19378 },                      -- Cloak of the Brood Lord
-				{ 24, 19380 },                      -- Therazane's Link
-				{ 25, 19381 },                      -- Boots of the Shadow Flame
-				{ 26, 19376 },                      -- Archimtiros' Ring of Reckoning
-				{ 27, 19382 },                      -- Pure Elementium Band
-				{ 28, 19379 },                      -- Neltharion's Tear
-				{ 30, 11938 },                      -- Sack of Gems
+				{ 1,  16923 },                                             -- Robes of Transcendence
+				{ 2,  16916 },                                             -- Netherwind Robes
+				{ 3,  16931 },                                             -- Nemesis Robes
+				{ 4,  16905 },                                             -- Bloodfang Chestpiece
+				{ 5,  16897 },                                             -- Stormrage Chestguard
+				{ 6,  16942 },                                             -- Dragonstalker's Breastplate
+				{ 7,  16950 },                                             -- Breastplate of Ten Storms
+				{ 8,  16958 },                                             -- Judgement Breastplate
+				{ 9,  16966 },                                             -- Breastplate of Wrath
+				{ 11, [ATLASLOOT_IT_HORDE] = 19002, [ATLASLOOT_IT_ALLIANCE] = 19003 }, -- Head of Nefarian
+				{ 16, 19360 },                                             -- Lok'amir il Romathis
+				{ 17, 19363 },                                             -- Crul'shorukh, Edge of Chaos
+				{ 18, 19364 },                                             -- Ashkandi, Greatsword of the Brotherhood
+				{ 19, 19356 },                                             -- Staff of the Shadow Flame
+				{ 21, 19375 },                                             -- Mish'undare, Circlet of the Mind Flayer
+				{ 22, 19377 },                                             -- Prestor's Talisman of Connivery
+				{ 23, 19378 },                                             -- Cloak of the Brood Lord
+				{ 24, 19380 },                                             -- Therazane's Link
+				{ 25, 19381 },                                             -- Boots of the Shadow Flame
+				{ 26, 19376 },                                             -- Archimtiros' Ring of Reckoning
+				{ 27, 19382 },                                             -- Pure Elementium Band
+				{ 28, 19379 },                                             -- Neltharion's Tear
+				{ 30, 11938 },                                             -- Sack of Gems
 				-- Hidden items
-				{ 0,  17962 },                      -- Blue Sack of Gems
-				{ 0,  17963 },                      -- Green Sack of Gems
-				{ 0,  17964 },                      -- Gray Sack of Gems
-				{ 0,  17965 },                      -- Yellow Sack of Gems
-				{ 0,  17969 },                      -- Red Sack of Gems
+				{ 0,  17962 },                                             -- Blue Sack of Gems
+				{ 0,  17963 },                                             -- Green Sack of Gems
+				{ 0,  17964 },                                             -- Gray Sack of Gems
+				{ 0,  17965 },                                             -- Yellow Sack of Gems
+				{ 0,  17969 },                                             -- Red Sack of Gems
 			},
 		},
 		{ -- BWLTrashMobs
@@ -6261,18 +6260,18 @@ data["TheRuinsofAhnQiraj"] = { -- AQ20
 			DisplayIDs = { { 15654 } },
 			AtlasMapBossID = 4,
 			[NORMAL_DIFF] = {
-				{ 1,  21487, [ATLASLOOT_IT_ALLIANCE] = 21486 }, -- Slimy Scaled Gauntlets / Gloves of the Swarm
-				{ 2,  21485 },                      -- Buru's Skull Fragment
-				{ 5,  21491 },                      -- Scaled Bracers of the Gorger
-				{ 6,  21489 },                      -- Quicksand Waders
-				{ 7,  21490 },                      -- Slime Kickers
-				{ 8,  21488 },                      -- Fetish of Chitinous Spikes
-				{ 16, 20890 },                      -- Qiraji Ornate Hilt
-				{ 17, 20886 },                      -- Qiraji Spiked Hilt
-				{ 20, 20885 },                      -- Qiraji Martial Drape
-				{ 21, 20889 },                      -- Qiraji Regal Drape
-				{ 22, 20888 },                      -- Qiraji Ceremonial Ring
-				{ 23, 20884 },                      -- Qiraji Magisterial Ring
+				{ 1,  [ATLASLOOT_IT_HORDE] = 21487, [ATLASLOOT_IT_ALLIANCE] = 21486 }, -- Slimy Scaled Gauntlets / Gloves of the Swarm
+				{ 2,  21485 },                                             -- Buru's Skull Fragment
+				{ 5,  21491 },                                             -- Scaled Bracers of the Gorger
+				{ 6,  21489 },                                             -- Quicksand Waders
+				{ 7,  21490 },                                             -- Slime Kickers
+				{ 8,  21488 },                                             -- Fetish of Chitinous Spikes
+				{ 16, 20890 },                                             -- Qiraji Ornate Hilt
+				{ 17, 20886 },                                             -- Qiraji Spiked Hilt
+				{ 20, 20885 },                                             -- Qiraji Martial Drape
+				{ 21, 20889 },                                             -- Qiraji Regal Drape
+				{ 22, 20888 },                                             -- Qiraji Ceremonial Ring
+				{ 23, 20884 },                                             -- Qiraji Magisterial Ring
 			},
 		},
 		{ -- AQ20Ayamiss
@@ -6305,54 +6304,54 @@ data["TheRuinsofAhnQiraj"] = { -- AQ20
 			DisplayIDs = { { 15432 } },
 			AtlasMapBossID = 6,
 			[NORMAL_DIFF] = {
-				{ 1,  21460 },                      -- Helm of Domination
-				{ 2,  21454, [ATLASLOOT_IT_ALLIANCE] = 21453 }, -- Runic Stone Shoulders / Mantle of the Horusath
-				{ 3,  21456 },                      -- Sandstorm Cloak
-				{ 4,  21464 },                      -- Shackles of the Unscarred
-				{ 5,  21457 },                      -- Bracers of Brutality
-				{ 6,  21462 },                      -- Gloves of Dark Wisdom
-				{ 7,  21458 },                      -- Gauntlets of New Life
-				{ 8,  21463 },                      -- Ossirian's Binding
-				{ 9,  21461 },                      -- Leggings of the Black Blizzard
-				{ 10, 21459 },                      -- Crossbow of Imminent Doom
-				{ 11, 21715 },                      -- Sand Polished Hammer
-				{ 12, 21452 },                      -- Staff of the Ruins
-				{ 16, 20890 },                      -- Qiraji Ornate Hilt
-				{ 17, 20886 },                      -- Qiraji Spiked Hilt
-				{ 20, 20888 },                      -- Qiraji Ceremonial Ring
-				{ 21, 20884 },                      -- Qiraji Magisterial Ring
-				{ 23, 21220 },                      -- Head of Ossirian the Unscarred
+				{ 1,  21460 },                                             -- Helm of Domination
+				{ 2,  [ATLASLOOT_IT_HORDE] = 21454, [ATLASLOOT_IT_ALLIANCE] = 21453 }, -- Runic Stone Shoulders / Mantle of the Horusath
+				{ 3,  21456 },                                             -- Sandstorm Cloak
+				{ 4,  21464 },                                             -- Shackles of the Unscarred
+				{ 5,  21457 },                                             -- Bracers of Brutality
+				{ 6,  21462 },                                             -- Gloves of Dark Wisdom
+				{ 7,  21458 },                                             -- Gauntlets of New Life
+				{ 8,  21463 },                                             -- Ossirian's Binding
+				{ 9,  21461 },                                             -- Leggings of the Black Blizzard
+				{ 10, 21459 },                                             -- Crossbow of Imminent Doom
+				{ 11, 21715 },                                             -- Sand Polished Hammer
+				{ 12, 21452 },                                             -- Staff of the Ruins
+				{ 16, 20890 },                                             -- Qiraji Ornate Hilt
+				{ 17, 20886 },                                             -- Qiraji Spiked Hilt
+				{ 20, 20888 },                                             -- Qiraji Ceremonial Ring
+				{ 21, 20884 },                                             -- Qiraji Magisterial Ring
+				{ 23, 21220 },                                             -- Head of Ossirian the Unscarred
 			},
 		},
 		{ -- AQ20Trash
 			name = AL["Trash"],
 			ExtraList = true,
 			[NORMAL_DIFF] = {
-				{ 1,  21804, [ATLASLOOT_IT_ALLIANCE] = 21803 }, -- Coif of Elemental Fury / Helm of the Holy Avenger
-				{ 2,  21805 },                      -- Polished Obsidian Pauldrons
-				{ 5,  20873 },                      -- Alabaster Idol
-				{ 6,  20869 },                      -- Amber Idol
-				{ 7,  20866 },                      -- Azure Idol
-				{ 8,  20870 },                      -- Jasper Idol
-				{ 9,  20868 },                      -- Lambent Idol
-				{ 10, 20871 },                      -- Obsidian Idol
-				{ 11, 20867 },                      -- Onyx Idol
-				{ 12, 20872 },                      -- Vermillion Idol
-				{ 14, 21761 },                      -- Scarab Coffer Key
-				{ 15, 21156 },                      -- Scarab Bag
-				{ 16, 21801 },                      -- Antenna of Invigoration
-				{ 17, 21800 },                      -- Silithid Husked Launcher
-				{ 18, 21802 },                      -- The Lost Kris of Zedd
-				{ 20, 20864 },                      -- Bone Scarab
-				{ 21, 20861 },                      -- Bronze Scarab
-				{ 22, 20863 },                      -- Clay Scarab
-				{ 23, 20862 },                      -- Crystal Scarab
-				{ 24, 20859 },                      -- Gold Scarab
-				{ 25, 20865 },                      -- Ivory Scarab
-				{ 26, 20860 },                      -- Silver Scarab
-				{ 27, 20858 },                      -- Stone Scarab
-				{ 29, 22203 },                      -- Large Obsidian Shard
-				{ 30, 22202 },                      -- Small Obsidian Shard
+				{ 1,  [ATLASLOOT_IT_HORDE] = 21804, [ATLASLOOT_IT_ALLIANCE] = 21803 }, -- Coif of Elemental Fury / Helm of the Holy Avenger
+				{ 2,  21805 },                                             -- Polished Obsidian Pauldrons
+				{ 5,  20873 },                                             -- Alabaster Idol
+				{ 6,  20869 },                                             -- Amber Idol
+				{ 7,  20866 },                                             -- Azure Idol
+				{ 8,  20870 },                                             -- Jasper Idol
+				{ 9,  20868 },                                             -- Lambent Idol
+				{ 10, 20871 },                                             -- Obsidian Idol
+				{ 11, 20867 },                                             -- Onyx Idol
+				{ 12, 20872 },                                             -- Vermillion Idol
+				{ 14, 21761 },                                             -- Scarab Coffer Key
+				{ 15, 21156 },                                             -- Scarab Bag
+				{ 16, 21801 },                                             -- Antenna of Invigoration
+				{ 17, 21800 },                                             -- Silithid Husked Launcher
+				{ 18, 21802 },                                             -- The Lost Kris of Zedd
+				{ 20, 20864 },                                             -- Bone Scarab
+				{ 21, 20861 },                                             -- Bronze Scarab
+				{ 22, 20863 },                                             -- Clay Scarab
+				{ 23, 20862 },                                             -- Crystal Scarab
+				{ 24, 20859 },                                             -- Gold Scarab
+				{ 25, 20865 },                                             -- Ivory Scarab
+				{ 26, 20860 },                                             -- Silver Scarab
+				{ 27, 20858 },                                             -- Stone Scarab
+				{ 29, 22203 },                                             -- Large Obsidian Shard
+				{ 30, 22202 },                                             -- Small Obsidian Shard
 			},
 		},
 		{ -- AQ20ClassBooks
