@@ -693,127 +693,127 @@ data["Blood Moon"] = {
 			name = AL["Level 60"],
 			TableType = NORMAL_ITTYPE,
 			[NORMAL_DIFF] = {
-				{ 1,   235144 }, -- Satchel of Blood-Caked Copper Coins
-				{ 2,   235145 }, -- Satchel of Blood-Caked Silver Coins
-				{ 3,   234145 }, -- Blood-Caked Hakkari Bijou
-				{ 4,   234960 }, -- Reins of the Blood-Caked Tiger
-				{ 5,   234961 }, -- Whistle of the Blood-Caked Raptor
-				{ 7,   233728 }, -- Blood-Caked Insignia
-				{ 8,   233740 }, -- Blood-Caked Shroud
-				{ 9,   233739 }, -- Blood-Caked Drape
-				{ 10,  233738 }, -- Blood-Caked Cape
-				{ 11,  233737 }, -- Blood-Caked Cloak
-				{ 12,  233736 }, -- Blood-Caked Band
-				{ 13,  233735 }, -- Blood-Caked Loop
-				{ 14,  233734 }, -- Blood-Caked Circle
-				{ 15,  233733 }, -- Blood-Caked Ring
-				{ 16,  233732 }, -- Blood-Caked Necklace
-				{ 17,  233731 }, -- Blood-Caked Amulet
-				{ 18,  233730 }, -- Blood-Caked Talisman
-				{ 19,  233729 }, -- Blood-Caked Choker
-				{ 21,  233765 }, -- Battle Hardened Dragonhide Cord
-				{ 22,  233761 }, -- Battle Hardened Dragonhide Belt
-				{ 23,  233763 }, -- Battle Hardened Dragonhide Waistguard
-				{ 24,  233759 }, -- Battle Hardened Dragonhide Bracers
-				{ 25,  233767 }, -- Battle Hardened Dragonhide Wrists
-				{ 26,  233769 }, -- Battle Hardened Dragonhide Armbands
-				{ 101, 233751 }, -- Battle Hardened Chain Girdle
-				{ 102, 233753 }, -- Battle Hardened Chain Belt
-				{ 103, 233755 }, -- Battle Hardened Chain Wristguards
-				{ 104, 233757 }, -- Battle Hardened Chain Bracers
-				{ 106, 233777 }, -- Battle Hardened Silk Sash
-				{ 107, 233775 }, -- Battle Hardened Silk Cuffs
-				{ 109, 233741 }, -- Battle Hardened Lamellar Belt
-				{ 110, 233744 }, -- Battle Hardened Lamellar Cord
-				{ 111, 233743 }, -- Battle Hardened Lamellar Wrists
-				{ 112, 233742 }, -- Battle Hardened Lamellar Armguards
-				{ 116, 233783 }, -- Battle Hardened Satin Sash
-				{ 117, 233786 }, -- Battle Hardened Satin Cinch
-				{ 118, 233781 }, -- Battle Hardened Satin Wrists
-				{ 119, 233780 }, -- Battle Hardened Satin Bracers
-				{ 121, 233771 }, -- Battle Hardened Leather Girdle
-				{ 122, 233773 }, -- Battle Hardened Leather Armsplints
-				{ 124, 233745 }, -- Battle Hardened Mail Waistband
-				{ 125, 233746 }, -- Battle Hardened Mail Cord
-				{ 126, 233747 }, -- Battle Hardened Mail Belt
-				{ 127, 233748 }, -- Battle Hardened Mail Bracers
-				{ 128, 233749 }, -- Battle Hardened Mail Wristguards
-				{ 129, 233750 }, -- Battle Hardened Mail Vambraces
-				{ 201, 233789 }, -- Battle Hardened Dreadweave Belt
-				{ 202, 233787 }, -- Battle Hardened Dreadweave Cuffs
-				{ 204, 233724 }, -- Battle Hardened Plate Girdle
-				{ 205, 233726 }, -- Battle Hardened Plate Armguards
+				{ 1,   235144, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:1" }, -- Satchel of Blood-Caked Copper Coins
+				{ 2,   235145, [PRICE_EXTRA_ITTYPE] = "bloodCakedGold:1" },   -- Satchel of Blood-Caked Silver Coins
+				{ 3,   234145, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:1" }, -- Blood-Caked Hakkari Bijou
+				{ 4,   234960, [PRICE_EXTRA_ITTYPE] = "bloodCakedGold:2:money:8000000" }, -- Reins of the Blood-Caked Tiger
+				{ 5,   234961, [PRICE_EXTRA_ITTYPE] = "bloodCakedGold:2:money:8000000" }, -- Whistle of the Blood-Caked Raptor
+				{ 7,   233728, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:5" }, -- Blood-Caked Insignia
+				{ 8,   233740, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:25" }, -- Blood-Caked Shroud
+				{ 9,   233739, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:25" }, -- Blood-Caked Drape
+				{ 10,  233738, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:25" }, -- Blood-Caked Cape
+				{ 11,  233737, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:25" }, -- Blood-Caked Cloak
+				{ 12,  233736, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:25" }, -- Blood-Caked Band
+				{ 13,  233735, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:25" }, -- Blood-Caked Loop
+				{ 14,  233734, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:25" }, -- Blood-Caked Circle
+				{ 15,  233733, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:25" }, -- Blood-Caked Ring
+				{ 16,  233732, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:25" }, -- Blood-Caked Necklace
+				{ 17,  233731, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:25" }, -- Blood-Caked Amulet
+				{ 18,  233730, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:25" }, -- Blood-Caked Talisman
+				{ 19,  233729, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:25" }, -- Blood-Caked Choker
+				{ 21,  233765, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Dragonhide Cord
+				{ 22,  233761, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Dragonhide Belt
+				{ 23,  233763, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Dragonhide Waistguard
+				{ 24,  233759, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Dragonhide Bracers
+				{ 25,  233767, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Dragonhide Wrists
+				{ 26,  233769, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Dragonhide Armbands
+				{ 101, 233751, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Chain Girdle
+				{ 102, 233753, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Chain Belt
+				{ 103, 233755, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Chain Wristguards
+				{ 104, 233757, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Chain Bracers
+				{ 106, 233777, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Silk Sash
+				{ 107, 233775, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Silk Cuffs
+				{ 109, 233741, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Lamellar Belt
+				{ 110, 233744, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Lamellar Cord
+				{ 111, 233743, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Lamellar Wrists
+				{ 112, 233742, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Lamellar Armguards
+				{ 116, 233783, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Satin Sash
+				{ 117, 233786, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Satin Cinch
+				{ 118, 233781, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Satin Wrists
+				{ 119, 233780, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Satin Bracers
+				{ 121, 233771, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Leather Girdle
+				{ 122, 233773, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Leather Armsplints
+				{ 124, 233745, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Mail Waistband
+				{ 125, 233746, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Mail Cord
+				{ 126, 233747, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Mail Belt
+				{ 127, 233748, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Mail Bracers
+				{ 128, 233749, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Mail Wristguards
+				{ 129, 233750, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Mail Vambraces
+				{ 201, 233789, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Dreadweave Belt
+				{ 202, 233787, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Dreadweave Cuffs
+				{ 204, 233724, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Plate Girdle
+				{ 205, 233726, [PRICE_EXTRA_ITTYPE] = "bloodCakedSilver:50" }, -- Battle Hardened Plate Armguards
 			},
 		},
 		{
 			name = AL["Level 50"],
 			TableType = NORMAL_ITTYPE,
 			[NORMAL_DIFF] = {
-				{ 1,  221447 }, -- Ritualist's Bloodmoon Grimoire
-				{ 2,  221446 }, -- Ritualist's Hammer
-				{ 3,  221448 }, -- Talisman of the Corrupted Grove
-				{ 5,  221451 }, -- Bloodthirst Crossbow
-				{ 6,  221450 }, -- Gurubashi Pit Fighter's Bow
-				{ 8,  221452 }, -- Bloodfocused Arcane Band
-				{ 9,  221453 }, -- Band of Boiling Blood
-				{ 10, 221454 }, -- Glacial Blood Band
-				{ 12, 221457 }, -- Libram of Draconic Destruction
-				{ 13, 221455 }, -- Bloodlight Reverence
-				{ 14, 221456 }, -- Eclipsed Sanguine Saber
-				{ 15, 220173 }, -- Parasomnia
-				{ 16, 221459 }, -- Seal of the Sacrificed
-				{ 17, 221458 }, -- Shadowy Band of Victory
-				{ 19, 221460 }, -- Gurubashi Backstabber
-				{ 20, 221462 }, -- Bloodied Sword of Speed
-				{ 22, 221464 }, -- Totem of Fiery Precision
-				{ 23, 221463 }, -- Ancestral Voodoo Doll
-				{ 24, 221465 }, -- Corrupted Smashbringer
-				{ 26, 221466 }, -- Loop of Burning Blood
-				{ 27, 221467 }, -- Eye of the Bloodmoon
-				{ 29, 221469 }, -- Headhunter's Barbed Spear
-				{ 30, 221468 }, -- Wall of Whispers
+				{ 1,  221447, [PRICE_EXTRA_ITTYPE] = "silvermassacre:15" }, -- Ritualist's Bloodmoon Grimoire
+				{ 2,  221446, [PRICE_EXTRA_ITTYPE] = "silvermassacre:25" }, -- Ritualist's Hammer
+				{ 3,  221448, [PRICE_EXTRA_ITTYPE] = "silvermassacre:15" }, -- Talisman of the Corrupted Grove
+				{ 5,  221451, [PRICE_EXTRA_ITTYPE] = "silvermassacre:25" }, -- Bloodthirst Crossbow
+				{ 6,  221450, [PRICE_EXTRA_ITTYPE] = "silvermassacre:25" }, -- Gurubashi Pit Fighter's Bow
+				{ 8,  221452, [PRICE_EXTRA_ITTYPE] = "silvermassacre:15" }, -- Bloodfocused Arcane Band
+				{ 9,  221453, [PRICE_EXTRA_ITTYPE] = "silvermassacre:15" }, -- Band of Boiling Blood
+				{ 10, 221454, [PRICE_EXTRA_ITTYPE] = "silvermassacre:15" }, -- Glacial Blood Band
+				{ 12, 221457, [PRICE_EXTRA_ITTYPE] = "silvermassacre:15" }, -- Libram of Draconic Destruction
+				{ 13, 221455, [PRICE_EXTRA_ITTYPE] = "silvermassacre:15" }, -- Bloodlight Reverence
+				{ 14, 221456, [PRICE_EXTRA_ITTYPE] = "silvermassacre:25" }, -- Eclipsed Sanguine Saber
+				{ 15, 220173, [PRICE_EXTRA_ITTYPE] = "silvermassacre:25" }, -- Parasomnia
+				{ 16, 221459, [PRICE_EXTRA_ITTYPE] = "silvermassacre:15" }, -- Seal of the Sacrificed
+				{ 17, 221458, [PRICE_EXTRA_ITTYPE] = "silvermassacre:15" }, -- Shadowy Band of Victory
+				{ 19, 221460, [PRICE_EXTRA_ITTYPE] = "silvermassacre:25" }, -- Gurubashi Backstabber
+				{ 20, 221462, [PRICE_EXTRA_ITTYPE] = "silvermassacre:25" }, -- Bloodied Sword of Speed
+				{ 22, 221464, [PRICE_EXTRA_ITTYPE] = "silvermassacre:15" }, -- Totem of Fiery Precision
+				{ 23, 221463, [PRICE_EXTRA_ITTYPE] = "silvermassacre:15" }, -- Ancestral Voodoo Doll
+				{ 24, 221465, [PRICE_EXTRA_ITTYPE] = "silvermassacre:25" }, -- Corrupted Smashbringer
+				{ 26, 221466, [PRICE_EXTRA_ITTYPE] = "silvermassacre:15" }, -- Loop of Burning Blood
+				{ 27, 221467, [PRICE_EXTRA_ITTYPE] = "silvermassacre:15" }, -- Eye of the Bloodmoon
+				{ 29, 221469, [PRICE_EXTRA_ITTYPE] = "silvermassacre:25" }, -- Headhunter's Barbed Spear
+				{ 30, 221468, [PRICE_EXTRA_ITTYPE] = "silvermassacre:15" }, -- Wall of Whispers
 			},
 		},
 		{
 			name = AL["Level 40"],
 			TableType = NORMAL_ITTYPE,
 			[NORMAL_DIFF] = {
-				{ 1,   216621 }, -- Blooddrenched Drape
-				{ 2,   216620 }, -- Bloodrot Cloak
-				{ 3,   216623 }, -- Cape of Hemostasis
-				{ 4,   216622 }, -- Coagulated Cloak
-				{ 5,   216570 }, -- Reins of the Golden Sabercat
-				{ 6,   216492 }, -- Whistle of the Mottled Blood Raptor
-				{ 8,   216498 }, -- Enchanted Sanguine Grimoire
-				{ 9,   216499 }, -- Bloodbark Crusher
-				{ 10,  216500 }, -- Bloodbonded Grove Talisman
-				{ 12,  216513 }, -- Tigerblood Talisman
-				{ 13,  216514 }, -- Sanguine Quiver
-				{ 14,  216515 }, -- Sanguine Ammo Pouch
-				{ 15,  216516 }, -- Bloodlash Bow
-				{ 16,  216510 }, -- Blood Resonance Circle
-				{ 17,  216511 }, -- Emberblood Seal
-				{ 18,  216512 }, -- Loop of Chilled Veins
-				{ 20,  216504 }, -- Eclipsed Bloodlight Saber
-				{ 21,  216505 }, -- Bloodlight Crusader's Radiance
-				{ 22,  216506 }, -- Bloodlight Avenger's Edge
-				{ 23,  216607 }, -- Bloodlight Offering
-				{ 25,  216517 }, -- Sanguine Sanctuary
-				{ 26,  216518 }, -- Blood Covenant Seal
-				{ 27,  216519 }, -- Sanguine Shadow Band
-				{ 101, 216520 }, -- Bloodharvest Blade
-				{ 102, 216521 }, -- Swift Sanguine Strikers
-				{ 103, 216522 }, -- Blood Spattered Stiletto
-				{ 105, 216501 }, -- Bloodstorm Barrier
-				{ 106, 216502 }, -- Bloodstorm War Totem
-				{ 107, 216503 }, -- Bloodstorm Jewel
-				{ 108, 216615 }, -- Ancestral Bloodstorm Beacon
-				{ 110, 216507 }, -- Umbral Bloodseal
-				{ 111, 216508 }, -- Infernal Bloodcoil Band
-				{ 112, 216509 }, -- Infernal Pact Essence
-				{ 116, 216495 }, -- Sanguine Crusher
-				{ 117, 216496 }, -- Sanguine Skullcrusher
-				{ 118, 216497 }, -- Exsanguinar
+				{ 1,   216621, [PRICE_EXTRA_ITTYPE] = "silverblood:2" }, -- Blooddrenched Drape
+				{ 2,   216620, [PRICE_EXTRA_ITTYPE] = "silverblood:2" }, -- Bloodrot Cloak
+				{ 3,   216623, [PRICE_EXTRA_ITTYPE] = "silverblood:2" }, -- Cape of Hemostasis
+				{ 4,   216622, [PRICE_EXTRA_ITTYPE] = "silverblood:2" }, -- Coagulated Cloak
+				{ 5,   216570, [PRICE_EXTRA_ITTYPE] = "goldblood:1" }, -- Reins of the Golden Sabercat
+				{ 6,   216492, [PRICE_EXTRA_ITTYPE] = "goldblood:1" }, -- Whistle of the Mottled Blood Raptor
+				{ 8,   216498, [PRICE_EXTRA_ITTYPE] = "silverblood:5" }, -- Enchanted Sanguine Grimoire
+				{ 9,   216499, [PRICE_EXTRA_ITTYPE] = "silverblood:15" }, -- Bloodbark Crusher
+				{ 10,  216500, [PRICE_EXTRA_ITTYPE] = "silverblood:5" }, -- Bloodbonded Grove Talisman
+				{ 12,  216513, [PRICE_EXTRA_ITTYPE] = "silverblood:5" }, -- Tigerblood Talisman
+				{ 13,  216514, [PRICE_EXTRA_ITTYPE] = "silverblood:3" }, -- Sanguine Quiver
+				{ 14,  216515, [PRICE_EXTRA_ITTYPE] = "silverblood:3" }, -- Sanguine Ammo Pouch
+				{ 15,  216516, [PRICE_EXTRA_ITTYPE] = "silverblood:5" }, -- Bloodlash Bow
+				{ 16,  216510, [PRICE_EXTRA_ITTYPE] = "silverblood:5" }, -- Blood Resonance Circle
+				{ 17,  216511, [PRICE_EXTRA_ITTYPE] = "silverblood:5" }, -- Emberblood Seal
+				{ 18,  216512, [PRICE_EXTRA_ITTYPE] = "silverblood:5" }, -- Loop of Chilled Veins
+				{ 20,  216504, [PRICE_EXTRA_ITTYPE] = "silverblood:15" }, -- Eclipsed Bloodlight Saber
+				{ 21,  216505, [PRICE_EXTRA_ITTYPE] = "silverblood:5" }, -- Bloodlight Crusader's Radiance
+				{ 22,  216506, [PRICE_EXTRA_ITTYPE] = "silverblood:15" }, -- Bloodlight Avenger's Edge
+				{ 23,  216607, [PRICE_EXTRA_ITTYPE] = "silverblood:5" }, -- Bloodlight Offering
+				{ 25,  216517, [PRICE_EXTRA_ITTYPE] = "silverblood:5" }, -- Sanguine Sanctuary
+				{ 26,  216518, [PRICE_EXTRA_ITTYPE] = "silverblood:5" }, -- Blood Covenant Seal
+				{ 27,  216519, [PRICE_EXTRA_ITTYPE] = "silverblood:5" }, -- Sanguine Shadow Band
+				{ 101, 216520, [PRICE_EXTRA_ITTYPE] = "silverblood:10" }, -- Bloodharvest Blade
+				{ 102, 216521, [PRICE_EXTRA_ITTYPE] = "silverblood:5" }, -- Swift Sanguine Strikers
+				{ 103, 216522, [PRICE_EXTRA_ITTYPE] = "silverblood:5" }, -- Blood Spattered Stiletto
+				{ 105, 216501, [PRICE_EXTRA_ITTYPE] = "silverblood:5" }, -- Bloodstorm Barrier
+				{ 106, 216502, [PRICE_EXTRA_ITTYPE] = "silverblood:15" }, -- Bloodstorm War Totem
+				{ 107, 216503, [PRICE_EXTRA_ITTYPE] = "silverblood:5" }, -- Bloodstorm Jewel
+				{ 108, 216615, [PRICE_EXTRA_ITTYPE] = "silverblood:5" }, -- Ancestral Bloodstorm Beacon
+				{ 110, 216507, [PRICE_EXTRA_ITTYPE] = "silverblood:5" }, -- Umbral Bloodseal
+				{ 111, 216508, [PRICE_EXTRA_ITTYPE] = "silverblood:5" }, -- Infernal Bloodcoil Band
+				{ 112, 216509, [PRICE_EXTRA_ITTYPE] = "silverblood:5" }, -- Infernal Pact Essence
+				{ 116, 216495, [PRICE_EXTRA_ITTYPE] = "silverblood:15" }, -- Sanguine Crusher
+				{ 117, 216496, [PRICE_EXTRA_ITTYPE] = "silverblood:10" }, -- Sanguine Skullcrusher
+				{ 118, 216497, [PRICE_EXTRA_ITTYPE] = "silverblood:15" }, -- Exsanguinar
 			},
 		},
 	},

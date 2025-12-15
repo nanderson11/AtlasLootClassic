@@ -64,19 +64,19 @@ data["Emerald Wardens"] = {
 			name = ALIL["Exalted"],
 			[NORMAL_DIFF] = {
 				{ 1, "f2641rep8" },
-				{ 2, 221442 }, -- Roar of the Guardian
-				{ 3, 220621 }, -- Nightmare Resonance Crystal
-				{ 4, 221440 }, -- Roar of the Dream
-				{ 5, 221443 }, -- Roar of the Grove
+				{ 2, 221442,     [PRICE_EXTRA_ITTYPE] = "emeraldchip:75" }, -- Roar of the Guardian
+				{ 3, 220621,     [PRICE_EXTRA_ITTYPE] = "emeraldchip:75" }, -- Nightmare Resonance Crystal
+				{ 4, 221440,     [PRICE_EXTRA_ITTYPE] = "emeraldchip:75" }, -- Roar of the Dream
+				{ 5, 221443,     [PRICE_EXTRA_ITTYPE] = "emeraldchip:75" }, -- Roar of the Grove
 			},
 		},
 		{ -- Revered
 			name = ALIL["Revered"],
 			[NORMAL_DIFF] = {
 				{ 1, "f2641rep7" },
-				{ 2, 221441 }, -- Warden of the Dream
-				{ 3, 220649 }, -- Merithra's Inheritence
-				{ 4, 221439 }, -- Armor of the Emerald Slumber
+				{ 2, 221441 },                                  -- Warden of the Dream
+				{ 3, 220649,     [PRICE_EXTRA_ITTYPE] = "emeraldchip:50" }, -- Merithra's Inheritence
+				{ 4, 221439,     [PRICE_EXTRA_ITTYPE] = "emeraldchip:50" }, -- Armor of the Emerald Slumber
 			},
 		},
 		{ -- Honored
@@ -384,85 +384,85 @@ data["ThoriumBrotherhood"] = {
 			name = ALIL["Exalted"],
 			[NORMAL_DIFF] = {
 				{ 1,  "f59rep8" },
-				{ 2,  19210 },                                            -- Plans: Ebon Hand
-				{ 3,  19211 },                                            -- Plans: Blackguard
-				{ 4,  19212 },                                            -- Plans: Nightfall
-				{ 5,  20040 },                                            -- Plans: Dark Iron Boots
-				{ 17, 227842,   [PRICE_EXTRA_ITTYPE] = "19170:1:227801:25:17010:2" }, -- Ebon Fist
-				{ 18, 227840,   [PRICE_EXTRA_ITTYPE] = "19168:1:227801:25:17011:2" }, -- Implacable Blackguard
-				{ 20, 228929,   [PRICE_EXTRA_ITTYPE] = "20039:1:227801:15:17010:1" }, -- Tempered Dark Iron Boots
-				{ 21, 228924,   [PRICE_EXTRA_ITTYPE] = "20039:1:227801:15:17010:1" }, -- Tempered Dark Iron Boots
-				{ 22, 228927,   [PRICE_EXTRA_ITTYPE] = "20039:1:227801:15:17010:1" }, -- Tempered Dark Iron Boots
-				{ 23, 228926,   [PRICE_EXTRA_ITTYPE] = "20039:1:227801:15:17010:1" }, -- Tempered Dark Iron Boots
-				{ 24, 228925,   [PRICE_EXTRA_ITTYPE] = "20039:1:227801:15:17010:1" }, -- Tempered Dark Iron Boots
-				{ 25, 228928,   [PRICE_EXTRA_ITTYPE] = "20039:1:227801:15:17010:1" }, -- Tempered Dark Iron Boots
-				{ 26, 227841,   [PRICE_EXTRA_ITTYPE] = "20039:1:227801:15:17010:1" }, -- Tempered Dark Iron Boots
+				{ 2,  19210 },                                                    -- Plans: Ebon Hand
+				{ 3,  19211 },                                                    -- Plans: Blackguard
+				{ 4,  19212 },                                                    -- Plans: Nightfall
+				{ 5,  20040 },                                                    -- Plans: Dark Iron Boots
+				{ 17, 227842,   [PRICE_EXTRA_ITTYPE] = "19170:1:firelandsember:25:17010:2" }, -- Ebon Fist
+				{ 18, 227840,   [PRICE_EXTRA_ITTYPE] = "19168:1:firelandsember:25:17011:2" }, -- Implacable Blackguard
+				{ 20, 228929,   [PRICE_EXTRA_ITTYPE] = "20039:1:firelandsember:15:17010:1" }, -- Tempered Dark Iron Boots
+				{ 21, 228924,   [PRICE_EXTRA_ITTYPE] = "20039:1:firelandsember:15:17010:1" }, -- Tempered Dark Iron Boots
+				{ 22, 228927,   [PRICE_EXTRA_ITTYPE] = "20039:1:firelandsember:15:17010:1" }, -- Tempered Dark Iron Boots
+				{ 23, 228926,   [PRICE_EXTRA_ITTYPE] = "20039:1:firelandsember:15:17010:1" }, -- Tempered Dark Iron Boots
+				{ 24, 228925,   [PRICE_EXTRA_ITTYPE] = "20039:1:firelandsember:15:17010:1" }, -- Tempered Dark Iron Boots
+				{ 25, 228928,   [PRICE_EXTRA_ITTYPE] = "20039:1:firelandsember:15:17010:1" }, -- Tempered Dark Iron Boots
+				{ 26, 227841,   [PRICE_EXTRA_ITTYPE] = "20039:1:firelandsember:15:17010:1" }, -- Tempered Dark Iron Boots
 			},
 		},
 		{ -- Revered
 			name = ALIL["Revered"],
 			[NORMAL_DIFF] = {
 				{ 1,  "f59rep7" },
-				{ 2,  19220 },                                            -- Pattern: Flarecore Leggings
-				{ 3,  19333 },                                            -- Pattern: Molten Belt
-				{ 4,  19332 },                                            -- Pattern: Corehound Belt
-				{ 5,  17053 },                                            -- Plans: Fiery Chain Shoulders
-				{ 6,  19331 },                                            -- Pattern: Chromatic Gauntlets
-				{ 7,  19207 },                                            -- Plans: Dark Iron Gauntlets
-				{ 8,  17052 },                                            -- Plans: Dark Iron Leggings
-				{ 9,  19208 },                                            -- Plans: Black Amnesty
-				{ 10, 19209 },                                            -- Plans: Blackfury
-				{ 11, 19449 },                                            -- Formula: Enchant Weapon - Mighty Intellect
-				{ 17, 227839,   [PRICE_EXTRA_ITTYPE] = "19165:1:227801:15:17010:1" }, -- Fine Flarecore Leggings
-				{ 19, 227837,   [PRICE_EXTRA_ITTYPE] = "19162:1:227801:15:17010:1" }, -- Thick Corehound Belt
-				{ 20, 227834,   [PRICE_EXTRA_ITTYPE] = "16988:1:227801:15:17010:1" }, -- Molten Chain Shoulders
-				{ 21, 227838,   [PRICE_EXTRA_ITTYPE] = "19157:1:227801:15:17010:1" }, -- Shining Chromatic Gauntlets
-				{ 22, 227835,   [PRICE_EXTRA_ITTYPE] = "19164:1:227801:15:17011:1" }, -- Tempered Dark Iron Gauntlets
-				{ 23, 227836,   [PRICE_EXTRA_ITTYPE] = "17013:1:227801:15:17010:1" }, -- Tempered Dark Iron Leggings
-				{ 24, 227832,   [PRICE_EXTRA_ITTYPE] = "19166:1:227801:25:17010:2" }, -- Tempered Black Amnesty
-				{ 25, 227833,   [PRICE_EXTRA_ITTYPE] = "19167:1:227801:25:17011:2" }, -- Glaive of Obsidian Fury
+				{ 2,  19220 },                                                    -- Pattern: Flarecore Leggings
+				{ 3,  19333 },                                                    -- Pattern: Molten Belt
+				{ 4,  19332 },                                                    -- Pattern: Corehound Belt
+				{ 5,  17053 },                                                    -- Plans: Fiery Chain Shoulders
+				{ 6,  19331 },                                                    -- Pattern: Chromatic Gauntlets
+				{ 7,  19207 },                                                    -- Plans: Dark Iron Gauntlets
+				{ 8,  17052 },                                                    -- Plans: Dark Iron Leggings
+				{ 9,  19208 },                                                    -- Plans: Black Amnesty
+				{ 10, 19209 },                                                    -- Plans: Blackfury
+				{ 11, 19449 },                                                    -- Formula: Enchant Weapon - Mighty Intellect
+				{ 17, 227839,   [PRICE_EXTRA_ITTYPE] = "19165:1:firelandsember:15:17010:1" }, -- Fine Flarecore Leggings
+				{ 19, 227837,   [PRICE_EXTRA_ITTYPE] = "19162:1:firelandsember:15:17010:1" }, -- Thick Corehound Belt
+				{ 20, 227834,   [PRICE_EXTRA_ITTYPE] = "16988:1:firelandsember:15:17010:1" }, -- Molten Chain Shoulders
+				{ 21, 227838,   [PRICE_EXTRA_ITTYPE] = "19157:1:firelandsember:15:17010:1" }, -- Shining Chromatic Gauntlets
+				{ 22, 227835,   [PRICE_EXTRA_ITTYPE] = "19164:1:firelandsember:15:17011:1" }, -- Tempered Dark Iron Gauntlets
+				{ 23, 227836,   [PRICE_EXTRA_ITTYPE] = "17013:1:firelandsember:15:17010:1" }, -- Tempered Dark Iron Leggings
+				{ 24, 227832,   [PRICE_EXTRA_ITTYPE] = "19166:1:firelandsember:25:17010:2" }, -- Tempered Black Amnesty
+				{ 25, 227833,   [PRICE_EXTRA_ITTYPE] = "19167:1:firelandsember:25:17011:2" }, -- Glaive of Obsidian Fury
 			},
 		},
 		{ -- Honored
 			name = ALIL["Honored"],
 			[NORMAL_DIFF] = {
 				{ 1,  "f59rep6" },
-				{ 2,  17017 },                                            -- Pattern: Flarecore Mantle
-				{ 3,  19219 },                                            -- Pattern: Flarecore Robe
-				{ 4,  19330 },                                            -- Pattern: Lava Belt
-				{ 5,  17049 },                                            -- Plans: Fiery Chain Girdle
-				{ 6,  17025 },                                            -- Pattern: Black Dragonscale Boots
-				{ 7,  19206 },                                            -- Plans: Dark Iron Helm
-				{ 8,  17059 },                                            -- Plans: Dark Iron Reaver
-				{ 9,  17060 },                                            -- Plans: Dark Iron Destroyer
-				{ 10, 19448 },                                            -- Formula: Enchant Weapon - Mighty Spirit
-				{ 11, 228981 },                                           -- Formula: Conductive Shield Coating
-				{ 12, 229008 },                                           -- Formula: Enchant Cloak - Greater Fire Resistance
-				{ 13, 229009 },                                           -- Formula: Enchant Cloak - Greater Nature Resistance
-				{ 17, 227830,   [PRICE_EXTRA_ITTYPE] = "16980:1:227801:15:17010:1" }, -- Fine Flarecore Mantle
-				{ 18, 227831,   [PRICE_EXTRA_ITTYPE] = "19156:1:227801:20:17011:1" }, -- Fine Flarecore Robe
-				{ 19, 227828,   [PRICE_EXTRA_ITTYPE] = "19149:1:227801:15:17011:1" }, -- Lavawalker Belt
-				{ 20, 227827,   [PRICE_EXTRA_ITTYPE] = "16989:1:227801:15:17010:1" }, -- Molten Chain Girdle
-				{ 21, 227829,   [PRICE_EXTRA_ITTYPE] = "16984:1:227801:15:17011:1" }, -- Hardened Black Dragonscale Boots
-				{ 22, 227824,   [PRICE_EXTRA_ITTYPE] = "19148:1:227801:15:17011:1" }, -- Tempered Dark Iron Helm
-				{ 23, 227826,   [PRICE_EXTRA_ITTYPE] = "17015:1:227801:25:17010:2" }, -- Dark Iron Flame Reaver
-				{ 24, 227825,   [PRICE_EXTRA_ITTYPE] = "17016:1:227801:25:17010:2" }, -- Molten Dark Iron Destroyer
+				{ 2,  17017 },                                                    -- Pattern: Flarecore Mantle
+				{ 3,  19219 },                                                    -- Pattern: Flarecore Robe
+				{ 4,  19330 },                                                    -- Pattern: Lava Belt
+				{ 5,  17049 },                                                    -- Plans: Fiery Chain Girdle
+				{ 6,  17025 },                                                    -- Pattern: Black Dragonscale Boots
+				{ 7,  19206 },                                                    -- Plans: Dark Iron Helm
+				{ 8,  17059 },                                                    -- Plans: Dark Iron Reaver
+				{ 9,  17060 },                                                    -- Plans: Dark Iron Destroyer
+				{ 10, 19448 },                                                    -- Formula: Enchant Weapon - Mighty Spirit
+				{ 11, 228981 },                                                   -- Formula: Conductive Shield Coating
+				{ 12, 229008 },                                                   -- Formula: Enchant Cloak - Greater Fire Resistance
+				{ 13, 229009 },                                                   -- Formula: Enchant Cloak - Greater Nature Resistance
+				{ 17, 227830,   [PRICE_EXTRA_ITTYPE] = "16980:1:firelandsember:15:17010:1" }, -- Fine Flarecore Mantle
+				{ 18, 227831,   [PRICE_EXTRA_ITTYPE] = "19156:1:firelandsember:20:17011:1" }, -- Fine Flarecore Robe
+				{ 19, 227828,   [PRICE_EXTRA_ITTYPE] = "19149:1:firelandsember:15:17011:1" }, -- Lavawalker Belt
+				{ 20, 227827,   [PRICE_EXTRA_ITTYPE] = "16989:1:firelandsember:15:17010:1" }, -- Molten Chain Girdle
+				{ 21, 227829,   [PRICE_EXTRA_ITTYPE] = "16984:1:firelandsember:15:17011:1" }, -- Hardened Black Dragonscale Boots
+				{ 22, 227824,   [PRICE_EXTRA_ITTYPE] = "19148:1:firelandsember:15:17011:1" }, -- Tempered Dark Iron Helm
+				{ 23, 227826,   [PRICE_EXTRA_ITTYPE] = "17015:1:firelandsember:25:17010:2" }, -- Dark Iron Flame Reaver
+				{ 24, 227825,   [PRICE_EXTRA_ITTYPE] = "17016:1:firelandsember:25:17010:2" }, -- Molten Dark Iron Destroyer
 			},
 		},
 		{ -- Friendly
 			name = ALIL["Friendly"],
 			[NORMAL_DIFF] = {
 				{ 1,  "f59rep5" },
-				{ 2,  17018 },                                            -- Pattern: Flarecore Gloves
-				{ 3,  17023 },                                            -- Pattern: Molten Helm
-				{ 4,  17022 },                                            -- Pattern: Corehound Boots
-				{ 5,  17051 },                                            -- Plans: Dark Iron Bracers
-				{ 6,  20761 },                                            -- Recipe: Transmute Elemental Fire
-				{ 7,  19444 },                                            -- Formula: Enchant Weapon - Strength
-				{ 17, 227823,   [PRICE_EXTRA_ITTYPE] = "16979:1:227801:15:17010:1" }, -- Fine Flarecore Gloves
-				{ 18, 227821,   [PRICE_EXTRA_ITTYPE] = "16983:1:227801:15:17011:1" }, -- Flamekissed Molten Helm
-				{ 19, 227822,   [PRICE_EXTRA_ITTYPE] = "16982:1:227801:15:17011:1" }, -- Thick Corehound Boots
-				{ 20, 227820,   [PRICE_EXTRA_ITTYPE] = "17014:1:227801:10:17010:1" }, -- Tempered Dark Iron Bracers
+				{ 2,  17018 },                                                    -- Pattern: Flarecore Gloves
+				{ 3,  17023 },                                                    -- Pattern: Molten Helm
+				{ 4,  17022 },                                                    -- Pattern: Corehound Boots
+				{ 5,  17051 },                                                    -- Plans: Dark Iron Bracers
+				{ 6,  20761 },                                                    -- Recipe: Transmute Elemental Fire
+				{ 7,  19444 },                                                    -- Formula: Enchant Weapon - Strength
+				{ 17, 227823,   [PRICE_EXTRA_ITTYPE] = "16979:1:firelandsember:15:17010:1" }, -- Fine Flarecore Gloves
+				{ 18, 227821,   [PRICE_EXTRA_ITTYPE] = "16983:1:firelandsember:15:17011:1" }, -- Flamekissed Molten Helm
+				{ 19, 227822,   [PRICE_EXTRA_ITTYPE] = "16982:1:firelandsember:15:17011:1" }, -- Thick Corehound Boots
+				{ 20, 227820,   [PRICE_EXTRA_ITTYPE] = "17014:1:firelandsember:10:17010:1" }, -- Tempered Dark Iron Bracers
 			},
 		},
 	},
