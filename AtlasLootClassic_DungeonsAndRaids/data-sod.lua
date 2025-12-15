@@ -5464,7 +5464,7 @@ data["WorldBosses"] = {
 				{ 1,  231725 }, -- Ancient Belt
 				{ 2,  231716 }, -- Primeval Belt
 				{ 3,  231708 }, -- Draconian Belt
-				{ 5,  19018 }, -- Dormant Wind Kissed Blade
+				{ 5,  232018 }, -- Dormant Wind Kissed Blade
 				{ 16, 231782 }, -- Crown of the Successor
 				{ 17, 231783 }, -- Drape of the Windlord
 				{ 18, 231785 }, -- Echoes of Betrayal
@@ -6257,7 +6257,7 @@ data["Zul'Gurub"] = {
 			[NORMAL_DIFF] = {
 				{ 1, 231274, 231847 }, -- Gri'lek's Grinder
 				{ 2, 231273, 231846 }, -- Gri'lek's Carver
-				{ 4, 19939 }, -- Gri'lek's Blood
+				{ 4, 231513 }, -- Gri'lek's Blood
 			},
 		},
 		{ -- ZGHazzarah
@@ -6269,7 +6269,7 @@ data["Zul'Gurub"] = {
 			[NORMAL_DIFF] = {
 				{ 1, 231276, 231863 }, -- Thoughtblighter
 				{ 2, 231275, 231862 }, -- Fiery Retributer
-				{ 4, 19942 }, -- Hazza'rah's Dream Thread
+				{ 4, 231516 }, -- Hazza'rah's Dream Thread
 			},
 		},
 		{ -- ZGRenataki
@@ -6281,7 +6281,7 @@ data["Zul'Gurub"] = {
 			[NORMAL_DIFF] = {
 				{ 1, 232309, 232310 }, -- Renataki's Soul Conduit
 				{ 2, 231277, 231864 }, -- Pitchfork of Madness
-				{ 4, 19940 }, -- Renataki's Tooth
+				{ 4, 231514 }, -- Renataki's Tooth
 			},
 		},
 		{ -- ZGWushoolay
@@ -6293,7 +6293,7 @@ data["Zul'Gurub"] = {
 			[NORMAL_DIFF] = {
 				{ 1, 231278, 231872 }, -- Hoodoo Hunting Bow
 				{ 2, 231279, 231871 }, -- Wushoolay's Poker
-				{ 4, 19941 }, -- Wushoolay's Mane
+				{ 4, 231515 }, -- Wushoolay's Mane
 			},
 		},
 		{ -- ZGGahzranka

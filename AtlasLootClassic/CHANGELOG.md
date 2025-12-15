@@ -6,6 +6,7 @@
 - SoD: Added hard mode weapons with alternate visual effects to Dungeons and Raids
 ### Fixed
 - Era/Anni/SoD: Clean up faction-specific items, including Nefarian/Onyxia heads
+- SoD: Fix a few item drops that have alternate SoD versions
 
 ## 3.4.0 - December 9, 2025
 ### Added
