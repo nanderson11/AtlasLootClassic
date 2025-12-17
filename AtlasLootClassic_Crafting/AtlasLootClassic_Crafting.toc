@@ -36,3 +36,4 @@ Locales\Locales.xml
 
 private.lua
 data.lua
+data-sod.lua

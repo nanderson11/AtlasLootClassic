@@ -1,5 +1,5 @@
--- If we are on a SoD realm, ignore everything in this file
-if C_Seasons.GetActiveSeason() == 2 then return end
+-- If we aren't on a SoD realm, ignore everything in this file
+if C_Seasons.GetActiveSeason() ~= 2 then return end
 
 -----------------------------------------------------------------------
 -- Upvalued Lua API.
