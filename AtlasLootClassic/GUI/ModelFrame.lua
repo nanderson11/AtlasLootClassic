@@ -46,14 +46,7 @@ function ModelFrame.ButtonOnClick(self)
 		ModelFrame.SelectedCreature:Enable()
 	end
 
-	-- Changed from SetDisplayInfo to SetCreature due to https://github.com/Stanzilla/WoWUIBugs/issues/459
-	-- Downsides of this are that it has to run it twice to get uncached models, and we only have the npcID of the main boss, so this doesn't work for encounters with multiple displayIDs
-	--ModelFrame.frame:SetDisplayInfo(self.displayInfo)
-	ModelFrame.frame:SetCreature(ModelFrame.npcID, self.displayInfo)
-	C_Timer.After(1, function()
-		ModelFrame.frame:SetCreature(ModelFrame.npcID, self.displayInfo)
-		ModelFrame.frame:Show()
-	end)
+	ModelFrame.frame:SetDisplayInfo(self.displayInfo)
 	ModelFrame.frame:SetPosition(0, 0, 0)
 
 	self:Disable()

@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.6.0 -
+### Fixed
+- Fixed models for boss fights with multiple creatures
+
 ## 3.5.0 - December 17, 2025
 ### Added
 - SoD: Added items to Collections
