@@ -1,6 +1,6 @@
 # Changelog
 
-## 3.5.0 -
+## 3.5.0 - December 17, 2025
 ### Added
 - SoD: Added items to Collections
 - SoD: Added vendor prices for PvP, Factions and Collections items
