@@ -1,6 +1,8 @@
 # Changelog
 
-## 3.6.0 -
+## 3.6.0 - December 19, 2025
+### Added
+- Anniversary: Added support for TBC (item phase data to come later)
 ### Fixed
 - Fixed models for boss fights with multiple creatures
 

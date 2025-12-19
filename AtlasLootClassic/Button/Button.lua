@@ -34,7 +34,7 @@ Button.API = API
 local AL = AtlasLoot.Locales
 
 local GetAlTooltip = AtlasLoot.Tooltip.GetTooltip
-local DEFAULT_BACKGROUND_COLOR = {0.82, 0.82, 0.82, 0.4}
+local DEFAULT_BACKGROUND_COLOR = { 0.82, 0.82, 0.82, 0.4 }
 
 -- UnitFactionGroup("player")		"Alliance", "Horde", "Neutral" or nil.
 -- :SetAtlas()
@@ -62,7 +62,7 @@ local SEC_BUTTON_COUNT = 0
 local button_types, extra_button_types, button_types_index, extra_button_types_index = {}, {}, {}, {}
 local STANDART_TABLE = { "Name", "Description", "Extra" }
 local STANDART_FORMAT_TABLE = { "Item", "Item" }
-for i = 1,#STANDART_TABLE do STANDART_FORMAT_TABLE[#STANDART_FORMAT_TABLE+1] = STANDART_TABLE[i] end
+for i = 1, #STANDART_TABLE do STANDART_FORMAT_TABLE[#STANDART_FORMAT_TABLE + 1] = STANDART_TABLE[i] end
 
 function Button.Init()
 	PLAYER_FACTION_ID = UnitFactionGroup("player") == "Horde" and 0 or 1
@@ -75,17 +75,29 @@ function Button.Init()
 
 	-- Setup WoW Head locale
 	local locale = GetLocale()
-	if locale == "deDE" then WOW_HEAD_LOCALE = "de"
-	elseif locale == "esMX" then WOW_HEAD_LOCALE = "es"
-	elseif locale == "esES" then WOW_HEAD_LOCALE = "es"
-	elseif locale == "frFR" then WOW_HEAD_LOCALE = "fr"
-	elseif locale == "itIT" then WOW_HEAD_LOCALE = "it"
-	elseif locale == "ptBR" then WOW_HEAD_LOCALE = "pt"
-	elseif locale == "ruRU" then WOW_HEAD_LOCALE = "ru"
-	elseif locale == "koKR" then WOW_HEAD_LOCALE = "ko"
-	elseif locale == "zhCN" then WOW_HEAD_LOCALE = "cn"
-	elseif locale == "zhTW" then WOW_HEAD_LOCALE = "cn" end
+	if locale == "deDE" then
+		WOW_HEAD_LOCALE = "de"
+	elseif locale == "esMX" then
+		WOW_HEAD_LOCALE = "es"
+	elseif locale == "esES" then
+		WOW_HEAD_LOCALE = "es"
+	elseif locale == "frFR" then
+		WOW_HEAD_LOCALE = "fr"
+	elseif locale == "itIT" then
+		WOW_HEAD_LOCALE = "it"
+	elseif locale == "ptBR" then
+		WOW_HEAD_LOCALE = "pt"
+	elseif locale == "ruRU" then
+		WOW_HEAD_LOCALE = "ru"
+	elseif locale == "koKR" then
+		WOW_HEAD_LOCALE = "ko"
+	elseif locale == "zhCN" then
+		WOW_HEAD_LOCALE = "cn"
+	elseif locale == "zhTW" then
+		WOW_HEAD_LOCALE = "cn"
+	end
 end
+
 AtlasLoot:AddInitFunc(Button.Init)
 
 function Button:GetWoWHeadLocale()
@@ -93,7 +105,7 @@ function Button:GetWoWHeadLocale()
 end
 
 function Button:CreateFormatTable(tab)
-	for i = 1,#STANDART_TABLE do tab[#tab+1] = STANDART_TABLE[i] end
+	for i = 1, #STANDART_TABLE do tab[#tab + 1] = STANDART_TABLE[i] end
 	return tab
 end
 
@@ -162,12 +174,12 @@ local function Button_SetNormalTexture(self, texture)
 end
 
 local function Button_ForceSetText(self, text, force)
-	if force == true then	-- single force
+	if force == true then -- single force
 		self.forcedTextSet = true
 		self:Ori_SetText(text)
-	elseif force == false then	-- remove text force
+	elseif force == false then -- remove text force
 		self.forcedTextSet = false
-	elseif text == nil then	-- reset
+	elseif text == nil then -- reset
 		self:Ori_SetText(nil)
 		self.forcedTextSet = false
 	elseif not self.forcedTextSet then
@@ -176,10 +188,10 @@ local function Button_ForceSetText(self, text, force)
 end
 
 local function Button_Overlay_SetQualityBorder(self, qualityID)
-	if qualityID ==  1 then
+	if qualityID == 1 then
 		self:SetTexture(LOOT_BORDER_BY_QUALITY_AL[qualityID])
 	else
-		self:SetAtlas(LOOT_BORDER_BY_QUALITY_AL[qualityID] or LOOT_BORDER_BY_QUALITY_AL[LE_ITEM_QUALITY_UNCOMMON])
+		self:SetAtlas(LOOT_BORDER_BY_QUALITY_AL[qualityID] or LOOT_BORDER_BY_QUALITY_AL[Enum.ItemQuality.Good])
 	end
 	if not LOOT_BORDER_BY_QUALITY_AL[qualityID] then
 		self:SetDesaturated(true)
@@ -192,7 +204,7 @@ Button.Button_Overlay_SetQualityBorder = Button_Overlay_SetQualityBorder
 
 local function Button_Overlay_SetAchievementBorder(self, set, isGuildAc)
 	if not set then
-		self:SetTexCoord(0,1,0,1)
+		self:SetTexCoord(0, 1, 0, 1)
 		self:SetPoint("TOPLEFT", self.icon, "TOPLEFT")
 		self:SetPoint("BOTTOMRIGHT", self.icon, "BOTTOMRIGHT")
 		return
@@ -210,7 +222,7 @@ local function Button_Overlay_SetAchievementBorder(self, set, isGuildAc)
 	self:SetPoint("TOPLEFT", self.icon, "TOPLEFT", -resize, resize)
 	self:SetPoint("BOTTOMRIGHT", self.icon, "BOTTOMRIGHT", resize, -resize)
 
-	self:SetSize(self.icon:GetWidth()*1.2, self.icon:GetHeight()*1.2)
+	self:SetSize(self.icon:GetWidth() * 1.2, self.icon:GetHeight() * 1.2)
 	self:Show()
 end
 Button.Button_Overlay_SetAchievementBorder = Button_Overlay_SetAchievementBorder
@@ -242,8 +254,8 @@ function Button:Create()
 	-- highlight Background
 	local highlightBg = button:CreateTexture(buttonName.."_highlightBg")
 	highlightBg:SetPoint("TOPLEFT", button, "TOPLEFT", 0, 0)
-	highlightBg:SetPoint("BOTTOMRIGHT", button, "BOTTOMRIGHT", -(button:GetWidth()/2), 0)
-	highlightBg:SetColorTexture(1,0,0)
+	highlightBg:SetPoint("BOTTOMRIGHT", button, "BOTTOMRIGHT", -(button:GetWidth() / 2), 0)
+	highlightBg:SetColorTexture(1, 0, 0)
 	highlightBg:SetGradient("HORIZONTAL", CreateColor(1, 1, 1, 0.45), CreateColor(1, 1, 1, 0))
 	highlightBg:Hide()
 	button.highlightBg = highlightBg
@@ -271,7 +283,7 @@ function Button:Create()
 	button.qualityBorder:SetPoint("BOTTOMRIGHT", button.icon, "BOTTOMRIGHT")
 	button.qualityBorder:SetTexture("Interface\\Common\\WhiteIconFrame")
 	button.qualityBorder:Hide()
-	]]--
+	]] --
 
 	-- secButtonTexture <texture>
 	button.overlay = button:CreateTexture(buttonName.."_overlay")
@@ -363,7 +375,7 @@ function Button:Create()
 	button.secButton.qualityBorder:SetAllPoints(button.secButton)
 	button.secButton.qualityBorder:SetTexture("Interface\\Common\\WhiteIconFrame")
 	button.secButton.qualityBorder:Hide()
-	]]--
+	]] --
 
 	-- secButtonMini <texture>
 	button.secButton.mini = button.secButton:CreateTexture(buttonName.."_secButtonMini", "ARTWORK")
@@ -434,7 +446,7 @@ function Button:Create()
 
 	button:Hide()
 	button.__atlaslootinfo = {}
-	for k,v in pairs(Proto) do
+	for k, v in pairs(Proto) do
 		button[k] = v
 	end
 
@@ -455,7 +467,7 @@ function Button:CreateSecOnly(frame)
 	button.secButton:SetPoint("BOTTOMRIGHT", button, "BOTTOMRIGHT", -1, 1)
 	button.secButton:SetHighlightTexture("Interface\\QuestFrame\\UI-QuestTitleHighlight", "ADD")
 	button.secButton.OriSetNormalTexture = button.secButton.SetNormalTexture
-	button.secButton.type = "secButton"	-- now we can use button functions ;)
+	button.secButton.type = "secButton" -- now we can use button functions ;)
 	button.secButton.obj = button
 	button.secButton:SetScript("OnEnter", Button_OnEnter)
 	button.secButton:SetScript("OnLeave", Button_OnLeave)
@@ -474,7 +486,7 @@ function Button:CreateSecOnly(frame)
 	button.secButton.qualityBorder:SetAllPoints(button.secButton)
 	button.secButton.qualityBorder:SetTexture("Interface\\Common\\WhiteIconFrame")
 	button.secButton.qualityBorder:Hide()
-	]]--
+	]] --
 
 	-- secButtonMini <texture>
 	button.secButton.mini = button.secButton:CreateTexture(buttonName.."_secButtonMini", "ARTWORK")
@@ -528,7 +540,7 @@ function Button:CreateSecOnly(frame)
 
 	button.secButton:Hide()
 	button.__atlaslootinfo = {}
-	for k,v in pairs(Proto) do
+	for k, v in pairs(Proto) do
 		button[k] = v
 	end
 
@@ -600,13 +612,14 @@ end
 function Proto:SetPreSet(tab)
 	self.__atlaslootinfo.preSet = tab
 end
+
 --- Set the content table
 --[[ formatTab
 	formatTab = {
 		"Item",
 		"Spell",
 	}
-]]--
+]] --
 function Proto:SetContentTable(tab, formatTab, setOnlySec)
 	if not tab or tab[IGNORE_THIS_BUTTON_ID] then return end
 	formatTab = formatTab or STANDART_FORMAT_TABLE
@@ -620,7 +633,7 @@ function Proto:SetContentTable(tab, formatTab, setOnlySec)
 	end
 
 	for i = 1, #formatTab do
-		self.__atlaslootinfo[formatTab[i]] = tab[i+1]
+		self.__atlaslootinfo[formatTab[i]] = tab[i + 1]
 	end
 
 	self.__atlaslootinfo.filterIgnore = tab[ATLASLOOT_IT_FILTERIGNORE]
@@ -637,14 +650,14 @@ function Proto:SetContentTable(tab, formatTab, setOnlySec)
 					tab[IGNORE_THIS_BUTTON_ID] = true
 					return
 				else
-					self.factionIcon:SetAtlas(FACTION_TEXTURES[ ( horde and alliance ) and PLAYER_FACTION_ID or ( horde and 0 or 1 )])
+					self.factionIcon:SetAtlas(FACTION_TEXTURES[(horde and alliance) and PLAYER_FACTION_ID or (horde and 0 or 1)])
 				end
 			end
 
 			if not tab[FACTION_INFO_IS_SET_ID] then
 				local usedFaction
 
-				if PLAYER_FACTION_ID == 0  then
+				if PLAYER_FACTION_ID == 0 then
 					usedFaction = horde
 				else
 					usedFaction = alliance
@@ -652,7 +665,7 @@ function Proto:SetContentTable(tab, formatTab, setOnlySec)
 
 				if type(usedFaction) == "table" then
 					for i = 1, #usedFaction do
-						tab[i+1] = usedFaction[i]
+						tab[i + 1] = usedFaction[i]
 					end
 				elseif usedFaction and usedFaction ~= true then
 					tab[2] = usedFaction
@@ -696,21 +709,21 @@ function Proto:SetContentTable(tab, formatTab, setOnlySec)
 
 	local formatType, curContent, buttonType
 	for i = 1, #formatTab do
-		formatType, curContent = formatTab[i], tab[i+1]
+		formatType, curContent = formatTab[i], tab[i + 1]
 		self.__atlaslootinfo[formatType] = nil
 
-		if formatType == "Name" and curContent then	-- force namechange
+		if formatType == "Name" and curContent then                                                                      -- force namechange
 			self.name:SetText(curContent, true)
 		elseif formatType == "Description" and curContent and (not buttonType or not buttonType.descReplaceForceDisabled) then -- force description change .descReplaceForceDisabled
 			self.extra:SetText(curContent, true)
 		elseif type(curContent) == "string" and not button_types[curContent] then
 			local found = false
-			for j=1, #button_types_index do
-				buttonType = button_types[ button_types_index[j] ]
+			for j = 1, #button_types_index do
+				buttonType = button_types[button_types_index[j]]
 				sub = str_sub(curContent, 1, buttonType.identifierLength)
 				if sub == buttonType.identifier then
 					if buttonType.GetStringContent then
-						self:SetType(button_types_index[j], buttonType.GetStringContent(str_sub(curContent, buttonType.identifierLength+1)))
+						self:SetType(button_types_index[j], buttonType.GetStringContent(str_sub(curContent, buttonType.identifierLength + 1)))
 					else
 						self:SetType(button_types_index[j], tonumber(str_match(curContent, "(%d+)")))
 					end
@@ -719,12 +732,12 @@ function Proto:SetContentTable(tab, formatTab, setOnlySec)
 				end
 			end
 			if not found and button_types[formatType] and button_types[formatType].GetStringContent then
-				self:SetType(formatType,  button_types[formatType].GetStringContent(curContent))
+				self:SetType(formatType, button_types[formatType].GetStringContent(curContent))
 			end
 		elseif button_types[curContent] then
 			self.__atlaslootinfo[formatType] = nil
 			if button_types[curContent].GetStringContent then
-				self:SetType(i, button_types[curContent].GetStringContent(str_sub(curContent, button_types[curContent].identifierLength+1)))
+				self:SetType(i, button_types[curContent].GetStringContent(str_sub(curContent, button_types[curContent].identifierLength + 1)))
 			else
 				self:SetType(formatType, curContent)
 			end
@@ -741,9 +754,9 @@ function Proto:SetContentTable(tab, formatTab, setOnlySec)
 
 	-- check for extra types
 	if formatTab.extra then
-		for i=1, #formatTab.extra do
-			if tab[i+100] then
-				self:SetExtraType(formatTab.extra[i], tab[i+100])
+		for i = 1, #formatTab.extra do
+			if tab[i + 100] then
+				self:SetExtraType(formatTab.extra[i], tab[i + 100])
 			end
 		end
 	end
@@ -792,7 +805,7 @@ function Proto:SetExtraType(typ, val)
 		--	end
 		--	self.__atlaslootinfo.extraType[#self.__atlaslootinfo.extraType+1] = { typ, val }
 		--else
-			self.__atlaslootinfo.extraType = { typ, val }
+		self.__atlaslootinfo.extraType = { typ, val }
 		--end
 		self.enhancedDesc.ttInfo = typ
 		extra_button_types[typ].OnSet(self, self.enhancedDesc)
@@ -817,6 +830,7 @@ end
 function Proto:GetSecTypeFunctions()
 	return button_types[self.__atlaslootinfo.secType[1]]
 end
+
 --################################
 -- Enhanced Description
 --################################
@@ -887,7 +901,7 @@ local EnhancedDescriptionProto = {
 		end
 
 		textFrame:Show()
-		self.content[#self.content+1] = textFrame
+		self.content[#self.content + 1] = textFrame
 	end,
 	["AddIcon"] = function(self, path, size)
 		if self.contentSize == self.parWidth then return end
@@ -904,7 +918,7 @@ local EnhancedDescriptionProto = {
 
 		iconFrame:SetTexture(path or "Interface\\Icons\\INV_Misc_QuestionMark")
 
-		iconFrame:SetSize(size,size)
+		iconFrame:SetSize(size, size)
 
 		self.contentSize = self.contentSize + size + 1
 
@@ -921,7 +935,7 @@ local EnhancedDescriptionProto = {
 		end
 
 		iconFrame:Show()
-		self.content[#self.content+1] = iconFrame
+		self.content[#self.content + 1] = iconFrame
 	end
 }
 
@@ -965,6 +979,7 @@ function Proto:AddEnhancedDescription()
 	self.extra:Hide()
 	return desc
 end
+
 --################################
 -- Type register
 --################################
@@ -980,7 +995,7 @@ function Button:AddType(typ, identifier)
 	assert(typ and type(typ) == "string", "typ must be a string.")
 	assert(identifier and type(identifier) == "string", "identifier must be a string.")
 	if not button_types[typ] then
-		button_types_index[#button_types_index+1] = typ
+		button_types_index[#button_types_index + 1] = typ
 		button_types[typ] = {
 			index = #button_types_index,
 			identifier = identifier,
@@ -995,7 +1010,7 @@ function Button:AddType(typ, identifier)
 			--end,
 			__index = Proto,
 		})
-		]]--
+		]] --
 	end
 
 	return button_types[typ]
@@ -1003,7 +1018,7 @@ end
 
 function Button:AddIdentifier(sourceType, identifier)
 	if button_types[sourceType] then
-		return setmetatable(Button:AddType(sourceType..identifier, identifier), {__index = button_types[sourceType]})
+		return setmetatable(Button:AddType(sourceType..identifier, identifier), { __index = button_types[sourceType] })
 	end
 end
 
@@ -1018,7 +1033,7 @@ function Button:AddExtraType(typ)
 		extra_button_types[typ] = {
 
 		}
-		extra_button_types_index[#extra_button_types_index+1] = typ
+		extra_button_types_index[#extra_button_types_index + 1] = typ
 	end
 
 	return extra_button_types[typ]
@@ -1031,7 +1046,6 @@ end
 
 function Button:FormatItemTableType(tab)
 	assert(tab and type(tab) == "table", "tab must be a table.")
-
 end
 
 function Button:DisableDescriptionReplaceForce(typ, state)
@@ -1054,7 +1068,7 @@ local function ExtraItemFrame_AddButton(self)
 	local button = next(container)
 	if not button then
 		button = AtlasLoot.Button:CreateSecOnly()
-		button:SetSize(ITEM_ICON_SIZE,ITEM_ICON_SIZE)
+		button:SetSize(ITEM_ICON_SIZE, ITEM_ICON_SIZE)
 		button:SetParent(self)
 		button.secButton.IsExtraItemFrameButton = true
 	end
@@ -1064,7 +1078,7 @@ local function ExtraItemFrame_AddButton(self)
 		button:SetPoint("TOPLEFT", self, "TOPLEFT", BORDER_DISTANCE, -BORDER_DISTANCE)
 	else
 		if #shownContainer % MAX_ITEMS_PER_LINE == 0 then
-			button:SetPoint("TOPLEFT", shownContainer[(#shownContainer-MAX_ITEMS_PER_LINE) + 1], "BOTTOMLEFT", 0, -ITEM_DISTANCE)
+			button:SetPoint("TOPLEFT", shownContainer[(#shownContainer - MAX_ITEMS_PER_LINE) + 1], "BOTTOMLEFT", 0, -ITEM_DISTANCE)
 		else
 			button:SetPoint("TOPLEFT", shownContainer[#shownContainer], "TOPRIGHT", ITEM_DISTANCE, 0)
 		end
@@ -1083,8 +1097,8 @@ local function ExtraItemFrame_ClearAllButtons(self)
 	end
 	wipe(self.ShownContainer)
 	self:Hide()
-	self:SetWidth(BORDER_DISTANCE*2)
-	self:SetHeight(ITEM_ICON_SIZE+(BORDER_DISTANCE*2))
+	self:SetWidth(BORDER_DISTANCE * 2)
+	self:SetHeight(ITEM_ICON_SIZE + (BORDER_DISTANCE * 2))
 	self.ItemList = nil
 	self.button = nil
 end
@@ -1115,10 +1129,10 @@ function Button:ExtraItemFrame_GetFrame(button, itemList)
 	elseif not frame then
 		frame = CreateFrame("frame", nil, nil, _G.BackdropTemplateMixin and "BackdropTemplate" or nil)
 		frame:SetClampedToScreen(true)
-		frame:SetHeight(ITEM_ICON_SIZE+(BORDER_DISTANCE*2))
-		frame:SetWidth(BORDER_DISTANCE*2)
+		frame:SetHeight(ITEM_ICON_SIZE + (BORDER_DISTANCE * 2))
+		frame:SetWidth(BORDER_DISTANCE * 2)
 		frame:SetBackdrop(ALPrivate.BOX_BORDER_BACKDROP)
-		frame:SetBackdropColor(1,1,1,1)
+		frame:SetBackdropColor(1, 1, 1, 1)
 		frame:EnableMouse(true)
 
 		frame.Container = {}
@@ -1141,7 +1155,7 @@ function Button:ExtraItemFrame_GetFrame(button, itemList)
 		if item == 0 then
 			line = line + 1
 			-- if we have a new line we must create some empty buttons
-			local newButtonCount = ( line * MAX_ITEMS_PER_LINE ) - fixedCounter
+			local newButtonCount = (line * MAX_ITEMS_PER_LINE) - fixedCounter
 			fixedCounter = fixedCounter + newButtonCount
 			for i = 1, newButtonCount do
 				frame:AddButton():Hide()
@@ -1194,7 +1208,6 @@ function Button:ExtraItemFrame_ClearFrame()
 	if not ExtraItemFrame_Frame then return end
 	ExtraItemFrame_Frame:Clear()
 end
-
 
 --################################
 -- WowHead Copy Frame
