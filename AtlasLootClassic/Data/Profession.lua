@@ -10,7 +10,7 @@ local ALIL = AtlasLoot.IngameLocales
 local format = string.format
 
 local LOC_STRING_DESC = "|cff00ff00"..AL["L-Click"]..":|r %s"
-local LOC_STRING_DESC2 = AL["|cff00ff00Left-Click:|r Show reagents."]
+local LOC_STRING_DESC2 = AL["|cff00ff00Left-Click:|r Show reagents"]
 local FORMAT_STRING_SKILL = "|cffff8040%d|r |cffffff00%d|r |cff40bf40%d|r |cff808080%d|r"
 local FORMAT_STRING_SKILL2 = "|cffffff00%d|r |cff40bf40%d|r |cff808080%d|r"
 

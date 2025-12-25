@@ -9,7 +9,7 @@ local pairs = _G.pairs
 
 
 local LOC_STRING = AL["|cff00ff00Left-Click:|r %s"]
-local LOC_STRING2 = AL["|cff00ff00Left-Click:|r Show reagents."]
+local LOC_STRING2 = AL["|cff00ff00Left-Click:|r Show reagents"]
 local RECIPE_PROF_DEFAULT = 0
 local RECIPE_PROF_TEXT = Profession.PROFESSION_TEXT
 
