@@ -3,6 +3,7 @@
 ## 3.6.1 -
 ### Fixed
 - Fixed text of Master Hammersmith
+- TBC: Removed some stray WOTLK items
 
 ## 3.6.0 - December 19, 2025
 ### Added
