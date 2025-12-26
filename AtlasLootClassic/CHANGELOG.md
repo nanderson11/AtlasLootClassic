@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.6.1 -
+### Fixed
+- Fixed text of Master Hammersmith
+
 ## 3.6.0 - December 19, 2025
 ### Added
 - Anniversary: Added support for TBC (item phase data to come later)

@@ -88,7 +88,7 @@ local IngameLocales = {
 	-- sub Professions
 	["Armorsmith"] = GetSpellInfo(9788),
 	["Weaponsmith"] = GetSpellInfo(9787),
-	["Hammersmith"] = GetSpellInfo(17041),
+	["Hammersmith"] = GetSpellInfo(17040),
 	["Axesmith"] = GetSpellInfo(17041),
 	["Swordsmith"] = GetSpellInfo(17039),
 	["Gnomish Engineer"] = GetSpellInfo(20220),
