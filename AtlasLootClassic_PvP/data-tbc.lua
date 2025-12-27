@@ -2,11 +2,8 @@
 -- Upvalued Lua API.
 -----------------------------------------------------------------------
 local _G = getfenv(0)
-local select = _G.select
 local string = _G.string
 local format = string.format
-
--- WoW
 
 -- ----------------------------------------------------------------------------
 -- AddOn namespace.
@@ -46,51 +43,48 @@ local ARENA_CONTENT = data:AddContentType(AL["Arena"], ATLASLOOT_PVP_COLOR)
 local OPEN_WORLD_CONTENT = data:AddContentType(AL["Open World"], ATLASLOOT_PVP_COLOR)
 local GENERAL_CONTENT = data:AddContentType(GENERAL, ATLASLOOT_RAID40_COLOR)
 
-local HORDE, ALLIANCE, RANK_FORMAT = "Horde", "Alliance", AL["|cff33ff99Rank:|r %s"]
-local BLIZZARD_NYI = " |cff00ccff<NYI |T130946:12:20:0:0:32:16:4:28:0:16|t>|r"
-
-local PVP_INSIGNIA = {	-- Insignias
+local PVP_INSIGNIA = { -- Insignias
 	name = AL["Insignia"],
 	NORMAL_ITTYPE = ICON_ITTYPE,
 	ExtraList = true,
 	[ALLIANCE_DIFF] = {
-		{ 1, 25829, [PRICE_EXTRA_ITTYPE] = "honorA:22950:pvpEye:10" }, -- Talisman of the Alliance
-		{ 2, 37864, [PRICE_EXTRA_ITTYPE] = "honorA:40000" }, -- Medallion of the Alliance
-		{ 3, 28235, [PRICE_EXTRA_ITTYPE] = "honorA:8000" }, -- Medallion of the Alliance
-		{ 4, 28237, [PRICE_EXTRA_ITTYPE] = "honorA:8000" }, -- Medallion of the Alliance
-		{ 5, 28238, [PRICE_EXTRA_ITTYPE] = "honorA:8000" }, -- Medallion of the Alliance
-		{ 6, 28236, [PRICE_EXTRA_ITTYPE] = "honorA:8000" }, -- Medallion of the Alliance
-		{ 7, 30349, [PRICE_EXTRA_ITTYPE] = "honorA:8000" }, -- Medallion of the Alliance
-		{ 8, 28234, [PRICE_EXTRA_ITTYPE] = "honorA:8000" }, -- Medallion of the Alliance
-		{ 9, 30351, [PRICE_EXTRA_ITTYPE] = "honorA:8000" }, -- Medallion of the Alliance
-		{ 10, 30348, [PRICE_EXTRA_ITTYPE] = "honorA:8000" }, -- Medallion of the Alliance
-		{ 11, 30350, [PRICE_EXTRA_ITTYPE] = "honorA:8000" }, -- Medallion of the Alliance
+		{ 1,  25829, [PRICE_EXTRA_ITTYPE] = "honorA:22950:pvpEye:10" }, -- Talisman of the Alliance
+		{ 2,  37864, [PRICE_EXTRA_ITTYPE] = "honorA:40000" },    -- Medallion of the Alliance
+		{ 3,  28235, [PRICE_EXTRA_ITTYPE] = "honorA:8000" },     -- Medallion of the Alliance
+		{ 4,  28237, [PRICE_EXTRA_ITTYPE] = "honorA:8000" },     -- Medallion of the Alliance
+		{ 5,  28238, [PRICE_EXTRA_ITTYPE] = "honorA:8000" },     -- Medallion of the Alliance
+		{ 6,  28236, [PRICE_EXTRA_ITTYPE] = "honorA:8000" },     -- Medallion of the Alliance
+		{ 7,  30349, [PRICE_EXTRA_ITTYPE] = "honorA:8000" },     -- Medallion of the Alliance
+		{ 8,  28234, [PRICE_EXTRA_ITTYPE] = "honorA:8000" },     -- Medallion of the Alliance
+		{ 9,  30351, [PRICE_EXTRA_ITTYPE] = "honorA:8000" },     -- Medallion of the Alliance
+		{ 10, 30348, [PRICE_EXTRA_ITTYPE] = "honorA:8000" },     -- Medallion of the Alliance
+		{ 11, 30350, [PRICE_EXTRA_ITTYPE] = "honorA:8000" },     -- Medallion of the Alliance
 	},
 	[HORDE_DIFF] = {
-		{ 1, 24551, [PRICE_EXTRA_ITTYPE] = "honorH:22950:pvpEye:10" }, -- Talisman of the Horde
-		{ 2, 37865, [PRICE_EXTRA_ITTYPE] = "honorH:40000" }, -- Medallion of the Horde
-		{ 3, 28241, [PRICE_EXTRA_ITTYPE] = "honorH:8000" }, -- Medallion of the Horde
-		{ 4, 28243, [PRICE_EXTRA_ITTYPE] = "honorH:8000" }, -- Medallion of the Horde
-		{ 5, 28239, [PRICE_EXTRA_ITTYPE] = "honorH:8000" }, -- Medallion of the Horde
-		{ 6, 28242, [PRICE_EXTRA_ITTYPE] = "honorH:8000" }, -- Medallion of the Horde
-		{ 7, 30346, [PRICE_EXTRA_ITTYPE] = "honorH:8000" }, -- Medallion of the Horde
-		{ 8, 28240, [PRICE_EXTRA_ITTYPE] = "honorH:8000" }, -- Medallion of the Horde
-		{ 9, 30345, [PRICE_EXTRA_ITTYPE] = "honorH:8000" }, -- Medallion of the Horde
-		{ 10, 30343, [PRICE_EXTRA_ITTYPE] = "honorH:8000" }, -- Medallion of the Horde
-		{ 11, 30344, [PRICE_EXTRA_ITTYPE] = "honorH:8000" }, -- Medallion of the Horde
+		{ 1,  24551, [PRICE_EXTRA_ITTYPE] = "honorH:22950:pvpEye:10" }, -- Talisman of the Horde
+		{ 2,  37865, [PRICE_EXTRA_ITTYPE] = "honorH:40000" },    -- Medallion of the Horde
+		{ 3,  28241, [PRICE_EXTRA_ITTYPE] = "honorH:8000" },     -- Medallion of the Horde
+		{ 4,  28243, [PRICE_EXTRA_ITTYPE] = "honorH:8000" },     -- Medallion of the Horde
+		{ 5,  28239, [PRICE_EXTRA_ITTYPE] = "honorH:8000" },     -- Medallion of the Horde
+		{ 6,  28242, [PRICE_EXTRA_ITTYPE] = "honorH:8000" },     -- Medallion of the Horde
+		{ 7,  30346, [PRICE_EXTRA_ITTYPE] = "honorH:8000" },     -- Medallion of the Horde
+		{ 8,  28240, [PRICE_EXTRA_ITTYPE] = "honorH:8000" },     -- Medallion of the Horde
+		{ 9,  30345, [PRICE_EXTRA_ITTYPE] = "honorH:8000" },     -- Medallion of the Horde
+		{ 10, 30343, [PRICE_EXTRA_ITTYPE] = "honorH:8000" },     -- Medallion of the Horde
+		{ 11, 30344, [PRICE_EXTRA_ITTYPE] = "honorH:8000" },     -- Medallion of the Horde
 	},
 }
 
-local PVP_GEMS = {	-- Gems
+local PVP_GEMS = { -- Gems
 	name = ALIL["Gems"],
 	NORMAL_ITTYPE = ICON_ITTYPE,
 	ExtraList = true,
 	[NORMAL_DIFF] = {
-		{ 1, 28118, [PRICE_EXTRA_ITTYPE] = "honor:8500" }, -- Runed Ornate Ruby
-		{ 2, 28362, [PRICE_EXTRA_ITTYPE] = "honor:8500" }, -- Bold Ornate Ruby
+		{ 1,  28118, [PRICE_EXTRA_ITTYPE] = "honor:8500" }, -- Runed Ornate Ruby
+		{ 2,  28362, [PRICE_EXTRA_ITTYPE] = "honor:8500" }, -- Bold Ornate Ruby
 
-		{ 4, 28119, [PRICE_EXTRA_ITTYPE] = "honor:8500" }, -- Smooth Ornate Dawnstone
-		{ 5, 28120, [PRICE_EXTRA_ITTYPE] = "honor:8500" }, -- Gleaming Ornate Dawnstone
+		{ 4,  28119, [PRICE_EXTRA_ITTYPE] = "honor:8500" }, -- Smooth Ornate Dawnstone
+		{ 5,  28120, [PRICE_EXTRA_ITTYPE] = "honor:8500" }, -- Gleaming Ornate Dawnstone
 
 		{ 16, 28123, [PRICE_EXTRA_ITTYPE] = "honor:8500" }, -- Potent Ornate Topaz
 		{ 17, 28363, [PRICE_EXTRA_ITTYPE] = "honor:8500" }, -- Inscribed Ornate Topaz
@@ -106,53 +100,53 @@ data["HonorSetBCC"] = {
 			name = ALIL["Sets"],
 			TableType = SET_ITTYPE,
 			[ALLIANCE_DIFF] = {
-				{ 1,    591 }, -- Warlock
-				{ 4,    691 }, -- Priest / Heal
-				{ 5,    597 }, -- Priest / Shadow
-				{ 7,    605 }, -- Rogue
-				{ 9,    595 }, -- Hunter
-				{ 11,   590 }, -- Warrior
-				{ 16,   599 }, -- Mage
-				{ 18,   688 }, -- Druid / Heal
-				{ 19,   609 }, -- Druid / Owl
-				{ 20,   601 }, -- Druid / Feral
-				{ 22,   603 }, -- Shaman / Heal
-				{ 23,   695 }, -- Shaman / Ele
-				{ 24,   593 }, -- Shaman / Enh
-				{ 26,   693 }, -- Paladin / Heal
-				{ 27,   589 }, -- Paladin / Prot
-				{ 28,   607 }, -- Paladin / DD
+				{ 1,  591 }, -- Warlock
+				{ 4,  691 }, -- Priest / Heal
+				{ 5,  597 }, -- Priest / Shadow
+				{ 7,  605 }, -- Rogue
+				{ 9,  595 }, -- Hunter
+				{ 11, 590 }, -- Warrior
+				{ 16, 599 }, -- Mage
+				{ 18, 688 }, -- Druid / Heal
+				{ 19, 609 }, -- Druid / Owl
+				{ 20, 601 }, -- Druid / Feral
+				{ 22, 603 }, -- Shaman / Heal
+				{ 23, 695 }, -- Shaman / Ele
+				{ 24, 593 }, -- Shaman / Enh
+				{ 26, 693 }, -- Paladin / Heal
+				{ 27, 589 }, -- Paladin / Prot
+				{ 28, 607 }, -- Paladin / DD
 			},
 			[HORDE_DIFF] = {
-				{ 1,    592 }, -- Warlock
-				{ 4,    692 }, -- Priest / Heal
-				{ 5,    598 }, -- Priest / Shadow
-				{ 7,    606 }, -- Rogue
-				{ 9,    596 }, -- Hunter
-				{ 11,   588 }, -- Warrior
-				{ 16,   600 }, -- Mage
-				{ 18,   689 }, -- Druid / Heal
-				{ 19,   610 }, -- Druid / Owl
-				{ 20,   602 }, -- Druid / Feral
-				{ 22,   604 }, -- Shaman / Heal
-				{ 23,   696 }, -- Shaman / Ele
-				{ 24,   594 }, -- Shaman / Enh
-				{ 26,   694 }, -- Paladin / Heal
-				{ 27,   587 }, -- Paladin / Prot
-				{ 28,   608 }, -- Paladin / DD
+				{ 1,  592 }, -- Warlock
+				{ 4,  692 }, -- Priest / Heal
+				{ 5,  598 }, -- Priest / Shadow
+				{ 7,  606 }, -- Rogue
+				{ 9,  596 }, -- Hunter
+				{ 11, 588 }, -- Warrior
+				{ 16, 600 }, -- Mage
+				{ 18, 689 }, -- Druid / Heal
+				{ 19, 610 }, -- Druid / Owl
+				{ 20, 602 }, -- Druid / Feral
+				{ 22, 604 }, -- Shaman / Heal
+				{ 23, 696 }, -- Shaman / Ele
+				{ 24, 594 }, -- Shaman / Enh
+				{ 26, 694 }, -- Paladin / Heal
+				{ 27, 587 }, -- Paladin / Prot
+				{ 28, 608 }, -- Paladin / DD
 			},
 		},
 		{
 			name = AL["Weapons"].." - "..AL["One-Handed"],
 			[ALLIANCE_DIFF] = {
-				{ 1, 28954 }, -- Grand Marshal's Shanker
-				{ 2, 28955 }, -- Grand Marshal's Shiv
+				{ 1,  28954 }, -- Grand Marshal's Shanker
+				{ 2,  28955 }, -- Grand Marshal's Shiv
 
-				{ 4, 28951 }, -- Grand Marshal's Pummeler
-				{ 5, 28950 }, -- Grand Marshal's Bonecracker
+				{ 4,  28951 }, -- Grand Marshal's Pummeler
+				{ 5,  28950 }, -- Grand Marshal's Bonecracker
 
-				{ 7, 28956 }, -- Grand Marshal's Slicer
-				{ 8, 28952 }, -- Grand Marshal's Quickblade
+				{ 7,  28956 }, -- Grand Marshal's Slicer
+				{ 8,  28952 }, -- Grand Marshal's Quickblade
 
 				{ 10, 28944 }, -- Grand Marshal's Cleaver
 				{ 11, 28946 }, -- Grand Marshal's Hacker
@@ -163,14 +157,14 @@ data["HonorSetBCC"] = {
 				{ 16, 28957 }, -- Grand Marshal's Spellblade
 			},
 			[HORDE_DIFF] = {
-				{ 1, 28929 }, -- High Warlord's Shanker
-				{ 2, 28930 }, -- High Warlord's Shiv
+				{ 1,  28929 }, -- High Warlord's Shanker
+				{ 2,  28930 }, -- High Warlord's Shiv
 
-				{ 4, 28925 }, -- High Warlord's Pummeler
-				{ 5, 28924 }, -- High Warlord's Bonecracker
+				{ 4,  28925 }, -- High Warlord's Pummeler
+				{ 5,  28924 }, -- High Warlord's Bonecracker
 
-				{ 7, 28937 }, -- High Warlord's Slicer
-				{ 8, 28926 }, -- High Warlord's Quickblade
+				{ 7,  28937 }, -- High Warlord's Slicer
+				{ 8,  28926 }, -- High Warlord's Quickblade
 
 				{ 10, 28920 }, -- High Warlord's Cleaver
 				{ 11, 28921 }, -- High Warlord's Hacker
@@ -184,26 +178,26 @@ data["HonorSetBCC"] = {
 		{
 			name = AL["Weapons"].." - "..AL["Two-Handed"],
 			[ALLIANCE_DIFF] = {
-				{ 1, 28943 }, -- Grand Marshal's Warblade
+				{ 1,  28943 }, -- Grand Marshal's Warblade
 
-				{ 3, 28945 }, -- Grand Marshal's Decapitator
+				{ 3,  28945 }, -- Grand Marshal's Decapitator
 
-				{ 5, 28949 }, -- Grand Marshal's Painsaw
+				{ 5,  28949 }, -- Grand Marshal's Painsaw
 
-				{ 7, 28942 }, -- Grand Marshal's Bonegrinder
-				{ 8, 28948 }, -- Grand Marshal's Maul
+				{ 7,  28942 }, -- Grand Marshal's Bonegrinder
+				{ 8,  28948 }, -- Grand Marshal's Maul
 
 				{ 16, 28959 }, -- Grand Marshal's War Staff
 			},
 			[HORDE_DIFF] = {
-				{ 1, 28293 }, -- High Warlord's Claymore
+				{ 1,  28293 }, -- High Warlord's Claymore
 
-				{ 3, 28918 }, -- High Warlord's Decapitator
+				{ 3,  28918 }, -- High Warlord's Decapitator
 
-				{ 5, 28923 }, -- High Warlord's Painsaw
+				{ 5,  28923 }, -- High Warlord's Painsaw
 
-				{ 7, 28917 }, -- High Warlord's Bonegrinder
-				{ 8, 28919 }, -- High Warlord's Maul
+				{ 7,  28917 }, -- High Warlord's Bonegrinder
+				{ 8,  28919 }, -- High Warlord's Maul
 
 				{ 16, 28935 }, -- High Warlord's War Staff
 			},
@@ -220,11 +214,11 @@ data["HonorSetBCC"] = {
 		{
 			name = AL["Weapons"].." - "..ALIL["Off Hand"],
 			[ALLIANCE_DIFF] = {
-				{ 1, 28940 }, -- Grand Marshal's Barricade
+				{ 1,  28940 }, -- Grand Marshal's Barricade
 				{ 16, 28941 }, -- Grand Marshal's Battletome
 			},
 			[HORDE_DIFF] = {
-				{ 1, 28939 }, -- High Warlord's Barricade
+				{ 1,  28939 }, -- High Warlord's Barricade
 				{ 16, 28938 }, -- High Warlord's Battletome
 			},
 		},
@@ -253,21 +247,21 @@ data["ReputationSetBCC"] = {
 			name = ALIL["Sets"],
 			TableType = SET_ITTYPE,
 			[NORMAL_DIFF] = {
-				{ 1,    738 }, -- Warlock
-				{ 4,    739 }, -- Priest / Heal
-				{ 5,    740 }, -- Priest / Shadow
-				{ 7,    745 }, -- Rogue
-				{ 9,    749 }, -- Hunter
-				{ 11,   750 }, -- Warrior
-				{ 16,   741 }, -- Mage
-				{ 18,   744 }, -- Druid / Heal
-				{ 19,   743 }, -- Druid / Owl
-				{ 20,   742 }, -- Druid / Feral
-				{ 22,   747 }, -- Shaman / Heal
-				{ 23,   746 }, -- Shaman / Ele
-				{ 24,   748 }, -- Shaman / Enh
-				{ 26,   751 }, -- Paladin / Heal
-				{ 27,   752 }, -- Paladin / DD
+				{ 1,  738 }, -- Warlock
+				{ 4,  739 }, -- Priest / Heal
+				{ 5,  740 }, -- Priest / Shadow
+				{ 7,  745 }, -- Rogue
+				{ 9,  749 }, -- Hunter
+				{ 11, 750 }, -- Warrior
+				{ 16, 741 }, -- Mage
+				{ 18, 744 }, -- Druid / Heal
+				{ 19, 743 }, -- Druid / Owl
+				{ 20, 742 }, -- Druid / Feral
+				{ 22, 747 }, -- Shaman / Heal
+				{ 23, 746 }, -- Shaman / Ele
+				{ 24, 748 }, -- Shaman / Enh
+				{ 26, 751 }, -- Paladin / Heal
+				{ 27, 752 }, -- Paladin / DD
 			},
 		},
 		PVP_INSIGNIA,
@@ -290,22 +284,22 @@ data["PvPMountsBCC"] = {
 				{ 5,  29468 }, -- Black War Steed Bridle
 				{ 6,  29471 }, -- Reins of the Black War Tiger
 				{ 7,  35906 }, -- Reins of the Black War Elekk
-				{ 16,  30609 }, -- Swift Nether Drake
-				{ 17,  34092 }, -- Merciless Nether Drake
-				{ 18,  37676 }, -- Vengeful Nether Drake
-				{ 19,  43516 }, -- Brutal Nether Drake
+				{ 16, 30609 }, -- Swift Nether Drake
+				{ 17, 34092 }, -- Merciless Nether Drake
+				{ 18, 37676 }, -- Vengeful Nether Drake
+				{ 19, 43516 }, -- Brutal Nether Drake
 			},
 			[HORDE_DIFF] = {
-				{ 1, 19029  }, -- Horn of the Frostwolf Howler
-				{ 3, 29469 }, -- Horn of the Black War Wolf
-				{ 4, 29466 }, -- Black War Kodo
-				{ 5, 29472 }, -- Whistle of the Black War Raptor
-				{ 6, 29470 }, -- Red Skeletal Warhorse
-				{ 7, 34129 }, -- Swift Warstrider
-				{ 16,  30609 }, -- Swift Nether Drake
-				{ 17,  34092 }, -- Merciless Nether Drake
-				{ 18,  37676 }, -- Vengeful Nether Drake
-				{ 19,  43516 }, -- Brutal Nether Drake
+				{ 1,  19029 }, -- Horn of the Frostwolf Howler
+				{ 3,  29469 }, -- Horn of the Black War Wolf
+				{ 4,  29466 }, -- Black War Kodo
+				{ 5,  29472 }, -- Whistle of the Black War Raptor
+				{ 6,  29470 }, -- Red Skeletal Warhorse
+				{ 7,  34129 }, -- Swift Warstrider
+				{ 16, 30609 }, -- Swift Nether Drake
+				{ 17, 34092 }, -- Merciless Nether Drake
+				{ 18, 37676 }, -- Vengeful Nether Drake
+				{ 19, 43516 }, -- Brutal Nether Drake
 			},
 		},
 	},
@@ -321,36 +315,36 @@ data["ArenaS1PvP"] = {
 			name = AL["Sets"],
 			TableType = SET_ITTYPE,
 			[NORMAL_DIFF] = {
-				{ 1,    568 }, -- Warlock
-				{ 2,    615 }, -- Warlock 2
-				{ 4,    687 }, -- Priest / Heal
-				{ 5,    581 }, -- Priest / Shadow
-				{ 7,    577 }, -- Rogue
-				{ 9,    586 }, -- Hunter
-				{ 11,   567 }, -- Warrior
-				{ 16,   579 }, -- Mage
-				{ 18,   685 }, -- Druid / Heal
-				{ 19,   585 }, -- Druid / Owl
-				{ 20,   584 }, -- Druid / Feral
-				{ 22,   580 }, -- Shaman / Heal
-				{ 23,   686 }, -- Shaman / Ele
-				{ 24,   578 }, -- Shaman / Enh
-				{ 26,   690 }, -- Paladin / Heal
-				{ 27,   582 }, -- Paladin / Prot
-				{ 28,   583 }, -- Paladin / DD
+				{ 1,  568 }, -- Warlock
+				{ 2,  615 }, -- Warlock 2
+				{ 4,  687 }, -- Priest / Heal
+				{ 5,  581 }, -- Priest / Shadow
+				{ 7,  577 }, -- Rogue
+				{ 9,  586 }, -- Hunter
+				{ 11, 567 }, -- Warrior
+				{ 16, 579 }, -- Mage
+				{ 18, 685 }, -- Druid / Heal
+				{ 19, 585 }, -- Druid / Owl
+				{ 20, 584 }, -- Druid / Feral
+				{ 22, 580 }, -- Shaman / Heal
+				{ 23, 686 }, -- Shaman / Ele
+				{ 24, 578 }, -- Shaman / Enh
+				{ 26, 690 }, -- Paladin / Heal
+				{ 27, 582 }, -- Paladin / Prot
+				{ 28, 583 }, -- Paladin / DD
 			},
 		},
 		{
 			name = AL["Weapons"].." - "..AL["One-Handed"],
 			[NORMAL_DIFF] = {
-				{ 1, 28312 }, -- Gladiator's Shanker
-				{ 2, 28310 }, -- Gladiator's Shiv
+				{ 1,  28312 }, -- Gladiator's Shanker
+				{ 2,  28310 }, -- Gladiator's Shiv
 
-				{ 4, 28305 }, -- Gladiator's Pummeler
-				{ 5, 28302 }, -- Gladiator's Bonecracker
+				{ 4,  28305 }, -- Gladiator's Pummeler
+				{ 5,  28302 }, -- Gladiator's Bonecracker
 
-				{ 7, 28295 }, -- Gladiator's Slicer
-				{ 8, 28307 }, -- Gladiator's Quickblade
+				{ 7,  28295 }, -- Gladiator's Slicer
+				{ 8,  28307 }, -- Gladiator's Quickblade
 
 				{ 10, 28308 }, -- Gladiator's Cleaver
 				{ 11, 28309 }, -- Gladiator's Hacker
@@ -367,14 +361,14 @@ data["ArenaS1PvP"] = {
 		{
 			name = AL["Weapons"].." - "..AL["Two-Handed"],
 			[NORMAL_DIFF] = {
-				{ 1, 24550 }, -- Gladiator's Greatsword
+				{ 1,  24550 }, -- Gladiator's Greatsword
 
-				{ 3, 28298 }, -- Gladiator's Decapitator
+				{ 3,  28298 }, -- Gladiator's Decapitator
 
-				{ 5, 28300 }, -- Gladiator's Painsaw
+				{ 5,  28300 }, -- Gladiator's Painsaw
 
-				{ 7, 28299 }, -- Gladiator's Bonegrinder
-				{ 8, 28476 }, -- Gladiator's Maul
+				{ 7,  28299 }, -- Gladiator's Bonegrinder
+				{ 8,  28476 }, -- Gladiator's Maul
 
 				{ 16, 24557 }, -- Gladiator's War Staff
 			},
@@ -382,8 +376,8 @@ data["ArenaS1PvP"] = {
 		{
 			name = AL["Weapons"].." - "..AL["Ranged"],
 			[NORMAL_DIFF] = {
-				{ 1, 28294 }, -- Gladiator's Heavy Crossbow
-				{ 3, 28319 }, -- Gladiator's War Edge
+				{ 1,  28294 }, -- Gladiator's Heavy Crossbow
+				{ 3,  28319 }, -- Gladiator's War Edge
 
 				{ 16, 28320 }, -- Gladiator's Touch of Defeat
 			},
@@ -391,7 +385,7 @@ data["ArenaS1PvP"] = {
 		{
 			name = AL["Weapons"].." - "..ALIL["Off Hand"],
 			[NORMAL_DIFF] = {
-				{ 1, 28358 }, -- Gladiator's Shield Wall
+				{ 1,  28358 }, -- Gladiator's Shield Wall
 				{ 16, 28346 }, -- Gladiator's Endgame
 				{ 17, 32452 }, -- Gladiator's Repriev
 			},
@@ -399,12 +393,12 @@ data["ArenaS1PvP"] = {
 		{
 			name = ALIL["Relic"],
 			[NORMAL_DIFF] = {
-				{ 1, 33942 }, -- Gladiator's Idol of Steadfastness
-				{ 2, 33945 }, -- Gladiator's Idol of Resolve
-				{ 3, 28355 }, -- Gladiator's Idol of Tenacity
-				{ 5, 28356 }, -- Gladiator's Libram of Justice
-				{ 6, 33936 }, -- Gladiator's Libram of Fortitude
-				{ 7, 33948 }, -- Gladiator's Libram of Vengeance
+				{ 1,  33942 }, -- Gladiator's Idol of Steadfastness
+				{ 2,  33945 }, -- Gladiator's Idol of Resolve
+				{ 3,  28355 }, -- Gladiator's Idol of Tenacity
+				{ 5,  28356 }, -- Gladiator's Libram of Justice
+				{ 6,  33936 }, -- Gladiator's Libram of Fortitude
+				{ 7,  33948 }, -- Gladiator's Libram of Vengeance
 				{ 16, 28357 }, -- Gladiator's Totem of the Third Wind
 				{ 17, 33951 }, -- Gladiator's Totem of Survival
 				{ 18, 33939 }, -- Gladiator's Totem of Indomitability
@@ -427,28 +421,28 @@ data["ArenaS1PvP"] = {
 		{
 			name = format(AL["Non Set '%s'"], ALIL["Cloth"]),
 			[HORDE_DIFF] = {
-				{ 1, 28411 }, -- General's Silk Cuffs
-				{ 2, 28409 }, -- General's Silk Belt
-				{ 3, 28410 }, -- General's Silk Footguards
+				{ 1,  28411 }, -- General's Silk Cuffs
+				{ 2,  28409 }, -- General's Silk Belt
+				{ 3,  28410 }, -- General's Silk Footguards
 
-				{ 5, 28405 }, -- General's Dreadweave Cuffs
-				{ 6, 28404 }, -- General's Dreadweave Belt
-				{ 7, 28402 }, -- General's Dreadweave Stalkers
+				{ 5,  28405 }, -- General's Dreadweave Cuffs
+				{ 6,  28404 }, -- General's Dreadweave Belt
+				{ 7,  28402 }, -- General's Dreadweave Stalkers
 
-				{ 9, 32973 }, -- General's Mooncloth Cuffs
+				{ 9,  32973 }, -- General's Mooncloth Cuffs
 				{ 10, 32974 }, -- General's Mooncloth Belt
 				{ 11, 32975 }, -- General's Mooncloth Slippers
 			},
 			[ALLIANCE_DIFF] = {
-				{ 1, 29002 }, -- Marshal's Silk Cuffs
-				{ 2, 29001 }, -- Marshal's Silk Belt
-				{ 3, 29003 }, -- Marshal's Silk Footguards
+				{ 1,  29002 }, -- Marshal's Silk Cuffs
+				{ 2,  29001 }, -- Marshal's Silk Belt
+				{ 3,  29003 }, -- Marshal's Silk Footguards
 
-				{ 5, 28981 }, -- Marshal's Dreadweave Cuffs
-				{ 6, 28980 }, -- Marshal's Dreadweave Belt
-				{ 7, 28982 }, -- Marshal's Dreadweave Stalkers
+				{ 5,  28981 }, -- Marshal's Dreadweave Cuffs
+				{ 6,  28980 }, -- Marshal's Dreadweave Belt
+				{ 7,  28982 }, -- Marshal's Dreadweave Stalkers
 
-				{ 9, 32977 }, -- Marshal's Mooncloth Cuffs
+				{ 9,  32977 }, -- Marshal's Mooncloth Cuffs
 				{ 10, 32976 }, -- Marshal's Mooncloth Belt
 				{ 11, 32978 }, -- Marshal's Mooncloth Slippers
 			},
@@ -456,13 +450,13 @@ data["ArenaS1PvP"] = {
 		{
 			name = format(AL["Non Set '%s'"], ALIL["Leather"]),
 			[HORDE_DIFF] = {
-				{ 1, 28445 }, -- General's Dragonhide Bracers
-				{ 2, 28443 }, -- General's Dragonhide Belt
-				{ 3, 28444 }, -- General's Dragonhide Boots
+				{ 1,  28445 }, -- General's Dragonhide Bracers
+				{ 2,  28443 }, -- General's Dragonhide Belt
+				{ 3,  28444 }, -- General's Dragonhide Boots
 
-				{ 5, 28424 }, -- General's Leather Bracers
-				{ 6, 28423 }, -- General's Leather Belt
-				{ 7, 28422 }, -- General's Leather Boots
+				{ 5,  28424 }, -- General's Leather Bracers
+				{ 6,  28423 }, -- General's Leather Belt
+				{ 7,  28422 }, -- General's Leather Boots
 
 				{ 16, 31598 }, -- General's Kodohide Bracers
 				{ 17, 31594 }, -- General's Kodohide Belt
@@ -473,13 +467,13 @@ data["ArenaS1PvP"] = {
 				{ 22, 28447 }, -- General's Wyrmhide Boots
 			},
 			[ALLIANCE_DIFF] = {
-				{ 1, 28978 }, -- Marshal's Dragonhide Bracers
-				{ 2, 28976 }, -- Marshal's Dragonhide Belt
-				{ 3, 28977 }, -- Marshal's Dragonhide Boots
+				{ 1,  28978 }, -- Marshal's Dragonhide Bracers
+				{ 2,  28976 }, -- Marshal's Dragonhide Belt
+				{ 3,  28977 }, -- Marshal's Dragonhide Boots
 
-				{ 5, 28988 }, -- Marshal's Leather Bracers
-				{ 6, 28986 }, -- Marshal's Leather Belt
-				{ 7, 28987 }, -- Marshal's Leather Boots
+				{ 5,  28988 }, -- Marshal's Leather Bracers
+				{ 6,  28986 }, -- Marshal's Leather Belt
+				{ 7,  28987 }, -- Marshal's Leather Boots
 
 				{ 16, 31599 }, -- Marshal's Kodohide Bracers
 				{ 17, 31596 }, -- Marshal's Kodohide Belt
@@ -493,13 +487,13 @@ data["ArenaS1PvP"] = {
 		{
 			name = format(AL["Non Set '%s'"], ALIL["Mail"]),
 			[HORDE_DIFF] = {
-				{ 1, 32991 }, -- General's Ringmail Bracers
-				{ 2, 32992 }, -- General's Ringmail Girdle
-				{ 3, 32993 }, -- General's Ringmail Sabatons
+				{ 1,  32991 }, -- General's Ringmail Bracers
+				{ 2,  32992 }, -- General's Ringmail Girdle
+				{ 3,  32993 }, -- General's Ringmail Sabatons
 
-				{ 5, 28638 }, -- General's Mail Bracers
-				{ 6, 28639 }, -- General's Mail Girdle
-				{ 7, 28640 }, -- General's Mail Sabatons
+				{ 5,  28638 }, -- General's Mail Bracers
+				{ 6,  28639 }, -- General's Mail Girdle
+				{ 7,  28640 }, -- General's Mail Sabatons
 
 				{ 16, 28605 }, -- General's Linked Bracers
 				{ 17, 28629 }, -- General's Linked Girdle
@@ -510,13 +504,13 @@ data["ArenaS1PvP"] = {
 				{ 22, 28449 }, -- General's Chain Sabatons
 			},
 			[ALLIANCE_DIFF] = {
-				{ 1, 32994 }, -- Marshal's Ringmail Bracers
-				{ 2, 32995 }, -- Marshal's Ringmail Girdle
-				{ 3, 32996 }, -- Marshal's Ringmail Sabatons
+				{ 1,  32994 }, -- Marshal's Ringmail Bracers
+				{ 2,  32995 }, -- Marshal's Ringmail Girdle
+				{ 3,  32996 }, -- Marshal's Ringmail Sabatons
 
-				{ 5, 28992 }, -- Marshal's Mail Bracers
-				{ 6, 28993 }, -- Marshal's Mail Girdle
-				{ 7, 28994 }, -- Marshal's Mail Sabatons
+				{ 5,  28992 }, -- Marshal's Mail Bracers
+				{ 6,  28993 }, -- Marshal's Mail Girdle
+				{ 7,  28994 }, -- Marshal's Mail Sabatons
 
 				{ 16, 28989 }, -- Marshal's Linked Bracers
 				{ 17, 28990 }, -- Marshal's Linked Girdle
@@ -530,13 +524,13 @@ data["ArenaS1PvP"] = {
 		{
 			name = format(AL["Non Set '%s'"], ALIL["Plate"]),
 			[HORDE_DIFF] = {
-				{ 1, 28646 }, -- General's Scaled Bracers
-				{ 2, 28644 }, -- General's Scaled Belt
-				{ 3, 28645 }, -- General's Scaled Greaves
+				{ 1,  28646 }, -- General's Scaled Bracers
+				{ 2,  28644 }, -- General's Scaled Belt
+				{ 3,  28645 }, -- General's Scaled Greaves
 
-				{ 5, 28381 }, -- General's Plate Bracers
-				{ 6, 28385 }, -- General's Plate Belt
-				{ 7, 28383 }, -- General's Plate Greaves
+				{ 5,  28381 }, -- General's Plate Bracers
+				{ 6,  28385 }, -- General's Plate Belt
+				{ 7,  28383 }, -- General's Plate Greaves
 
 				{ 16, 32983 }, -- General's Ornamented Bracers
 				{ 17, 32982 }, -- General's Ornamented Belt
@@ -547,13 +541,13 @@ data["ArenaS1PvP"] = {
 				{ 22, 28642 }, -- General's Lamellar Greaves
 			},
 			[ALLIANCE_DIFF] = {
-				{ 1, 28999 }, -- Marshal's Scaled Bracers
-				{ 2, 28998 }, -- Marshal's Scaled Belt
-				{ 3, 29000 }, -- Marshal's Scaled Greaves
+				{ 1,  28999 }, -- Marshal's Scaled Bracers
+				{ 2,  28998 }, -- Marshal's Scaled Belt
+				{ 3,  29000 }, -- Marshal's Scaled Greaves
 
-				{ 5, 28996 }, -- Marshal's Plate Bracers
-				{ 6, 28995 }, -- Marshal's Plate Belt
-				{ 7, 28997 }, -- Marshal's Plate Greaves
+				{ 5,  28996 }, -- Marshal's Plate Bracers
+				{ 6,  28995 }, -- Marshal's Plate Belt
+				{ 7,  28997 }, -- Marshal's Plate Greaves
 
 				{ 16, 32986 }, -- Marshal's Ornamented Bracers
 				{ 17, 32985 }, -- Marshal's Ornamented Belt
@@ -570,7 +564,7 @@ data["ArenaS1PvP"] = {
 			name = AL["Gladiator Mount"],
 			ExtraList = true,
 			[NORMAL_DIFF] = {
-				{ 1,  30609 }, -- Swift Nether Drake
+				{ 1, 30609 }, -- Swift Nether Drake
 			}
 		}
 	}
@@ -586,36 +580,36 @@ data["ArenaS2PvP"] = {
 			name = AL["Sets"],
 			TableType = SET_ITTYPE,
 			[NORMAL_DIFF] = {
-				{ 1,    702 }, -- Warlock
-				{ 2,    704 }, -- Warlock 2
-				{ 4,    705 }, -- Priest / Heal
-				{ 5,    707 }, -- Priest / Shadow
-				{ 7,    713 }, -- Rogue
-				{ 9,    706 }, -- Hunter
-				{ 11,   701 }, -- Warrior
-				{ 16,   710 }, -- Mage
-				{ 18,   709 }, -- Druid / Heal
-				{ 19,   716 }, -- Druid / Owl
-				{ 20,   711 }, -- Druid / Feral
-				{ 22,   712 }, -- Shaman / Heal
-				{ 23,   715 }, -- Shaman / Ele
-				{ 24,   703 }, -- Shaman / Enh
-				{ 26,   708 }, -- Paladin / Heal
-				{ 27,   700 }, -- Paladin / Prot
-				{ 28,   714 }, -- Paladin / DD
+				{ 1,  702 }, -- Warlock
+				{ 2,  704 }, -- Warlock 2
+				{ 4,  705 }, -- Priest / Heal
+				{ 5,  707 }, -- Priest / Shadow
+				{ 7,  713 }, -- Rogue
+				{ 9,  706 }, -- Hunter
+				{ 11, 701 }, -- Warrior
+				{ 16, 710 }, -- Mage
+				{ 18, 709 }, -- Druid / Heal
+				{ 19, 716 }, -- Druid / Owl
+				{ 20, 711 }, -- Druid / Feral
+				{ 22, 712 }, -- Shaman / Heal
+				{ 23, 715 }, -- Shaman / Ele
+				{ 24, 703 }, -- Shaman / Enh
+				{ 26, 708 }, -- Paladin / Heal
+				{ 27, 700 }, -- Paladin / Prot
+				{ 28, 714 }, -- Paladin / DD
 			},
 		},
 		{
 			name = AL["Weapons"].." - "..AL["One-Handed"],
 			[NORMAL_DIFF] = {
-				{ 1, 32044 }, -- Gladiator's Shanker
-				{ 2, 32046 }, -- Gladiator's Shiv
+				{ 1,  32044 }, -- Gladiator's Shanker
+				{ 2,  32046 }, -- Gladiator's Shiv
 
-				{ 4, 32026 }, -- Gladiator's Pummeler
-				{ 5, 31958 }, -- Gladiator's Bonecracker
+				{ 4,  32026 }, -- Gladiator's Pummeler
+				{ 5,  31958 }, -- Gladiator's Bonecracker
 
-				{ 7, 32052 }, -- Gladiator's Slicer
-				{ 8, 32027 }, -- Gladiator's Quickblade
+				{ 7,  32052 }, -- Gladiator's Slicer
+				{ 8,  32027 }, -- Gladiator's Quickblade
 
 				{ 10, 31965 }, -- Gladiator's Cleaver
 				{ 11, 31985 }, -- Gladiator's Hacker
@@ -632,14 +626,14 @@ data["ArenaS2PvP"] = {
 		{
 			name = AL["Weapons"].." - "..AL["Two-Handed"],
 			[NORMAL_DIFF] = {
-				{ 1, 31984 }, -- Gladiator's Greatsword
+				{ 1,  31984 }, -- Gladiator's Greatsword
 
-				{ 3, 31966 }, -- Gladiator's Decapitator
+				{ 3,  31966 }, -- Gladiator's Decapitator
 
-				{ 5, 32025 }, -- Gladiator's Painsaw
+				{ 5,  32025 }, -- Gladiator's Painsaw
 
-				{ 7, 31959 }, -- Gladiator's Bonegrinder
-				{ 8, 32014 }, -- Gladiator's Maul
+				{ 7,  31959 }, -- Gladiator's Bonegrinder
+				{ 8,  32014 }, -- Gladiator's Maul
 
 				{ 16, 32055 }, -- Gladiator's War Staff
 			},
@@ -647,8 +641,8 @@ data["ArenaS2PvP"] = {
 		{
 			name = AL["Weapons"].." - "..AL["Ranged"],
 			[NORMAL_DIFF] = {
-				{ 1, 31986 }, -- Gladiator's Heavy Crossbow
-				{ 3, 32054 }, -- Gladiator's War Edge
+				{ 1,  31986 }, -- Gladiator's Heavy Crossbow
+				{ 3,  32054 }, -- Gladiator's War Edge
 
 				{ 16, 32962 }, -- Gladiator's Touch of Defeat
 			},
@@ -656,9 +650,9 @@ data["ArenaS2PvP"] = {
 		{
 			name = AL["Weapons"].." - "..ALIL["Off Hand"],
 			[NORMAL_DIFF] = {
-				{ 1, 32045 }, -- Gladiator's Shield Wall
-				{ 3, 33309 }, -- Merciless Gladiator's Redoubt
-				{ 4, 33313 }, -- Merciless Gladiator's Barrier
+				{ 1,  32045 }, -- Gladiator's Shield Wall
+				{ 3,  33309 }, -- Merciless Gladiator's Redoubt
+				{ 4,  33313 }, -- Merciless Gladiator's Barrier
 				{ 16, 31978 }, -- Gladiator's Endgame
 				{ 17, 32961 }, -- Gladiator's Repriev
 			},
@@ -666,12 +660,12 @@ data["ArenaS2PvP"] = {
 		{
 			name = ALIL["Relic"],
 			[NORMAL_DIFF] = {
-				{ 1, 33943 }, -- Gladiator's Idol of Steadfastness
-				{ 2, 33946 }, -- Gladiator's Idol of Resolve
-				{ 3, 33076 }, -- Gladiator's Idol of Tenacity
-				{ 5, 33077 }, -- Gladiator's Libram of Justice
-				{ 6, 33937 }, -- Gladiator's Libram of Fortitude
-				{ 7, 33949 }, -- Gladiator's Libram of Vengeance
+				{ 1,  33943 }, -- Gladiator's Idol of Steadfastness
+				{ 2,  33946 }, -- Gladiator's Idol of Resolve
+				{ 3,  33076 }, -- Gladiator's Idol of Tenacity
+				{ 5,  33077 }, -- Gladiator's Libram of Justice
+				{ 6,  33937 }, -- Gladiator's Libram of Fortitude
+				{ 7,  33949 }, -- Gladiator's Libram of Vengeance
 				{ 16, 33078 }, -- Gladiator's Totem of the Third Wind
 				{ 17, 33952 }, -- Gladiator's Totem of Survival
 				{ 18, 33940 }, -- Gladiator's Totem of Indomitability
@@ -697,15 +691,15 @@ data["ArenaS2PvP"] = {
 		{
 			name = format(AL["Non Set '%s'"], ALIL["Cloth"]),
 			[NORMAL_DIFF] = {
-				{ 1, 32820 }, -- Veteran's Silk Cuffs
-				{ 2, 32807 }, -- Veteran's Silk Belt
-				{ 3, 32795 }, -- Veteran's Silk Footguards
+				{ 1,  32820 }, -- Veteran's Silk Cuffs
+				{ 2,  32807 }, -- Veteran's Silk Belt
+				{ 3,  32795 }, -- Veteran's Silk Footguards
 
-				{ 5, 32811 }, -- Veteran's Dreadweave Cuffs
-				{ 6, 32799 }, -- Veteran's Dreadweave Belt
-				{ 7, 32787 }, -- Veteran's Dreadweave Stalkers
+				{ 5,  32811 }, -- Veteran's Dreadweave Cuffs
+				{ 6,  32799 }, -- Veteran's Dreadweave Belt
+				{ 7,  32787 }, -- Veteran's Dreadweave Stalkers
 
-				{ 9, 32980 }, -- Veteran's Mooncloth Cuffs
+				{ 9,  32980 }, -- Veteran's Mooncloth Cuffs
 				{ 10, 32979 }, -- Veteran's Mooncloth Belt
 				{ 11, 32981 }, -- Veteran's Mooncloth Slippers
 			},
@@ -713,13 +707,13 @@ data["ArenaS2PvP"] = {
 		{
 			name = format(AL["Non Set '%s'"], ALIL["Leather"]),
 			[NORMAL_DIFF] = {
-				{ 1, 32810 }, -- Veteran's Dragonhide Bracers
-				{ 2, 32798 }, -- Veteran's Dragonhide Belt
-				{ 3, 32786 }, -- Veteran's Dragonhide Boots
+				{ 1,  32810 }, -- Veteran's Dragonhide Bracers
+				{ 2,  32798 }, -- Veteran's Dragonhide Belt
+				{ 3,  32786 }, -- Veteran's Dragonhide Boots
 
-				{ 5, 32814 }, -- Veteran's Leather Bracers
-				{ 6, 32802 }, -- Veteran's Leather Belt
-				{ 7, 32790 }, -- Veteran's Leather Boots
+				{ 5,  32814 }, -- Veteran's Leather Bracers
+				{ 6,  32802 }, -- Veteran's Leather Belt
+				{ 7,  32790 }, -- Veteran's Leather Boots
 
 				{ 16, 32812 }, -- Veteran's Kodohide Bracers
 				{ 17, 32800 }, -- Veteran's Kodohide Belt
@@ -733,13 +727,13 @@ data["ArenaS2PvP"] = {
 		{
 			name = format(AL["Non Set '%s'"], ALIL["Mail"]),
 			[NORMAL_DIFF] = {
-				{ 1, 32997 }, -- Veteran's Ringmail Bracers
-				{ 2, 32998 }, -- Veteran's Ringmail Girdle
-				{ 3, 32999 }, -- Veteran's Ringmail Sabatons
+				{ 1,  32997 }, -- Veteran's Ringmail Bracers
+				{ 2,  32998 }, -- Veteran's Ringmail Girdle
+				{ 3,  32999 }, -- Veteran's Ringmail Sabatons
 
-				{ 5, 32817 }, -- Veteran's Mail Bracers
-				{ 6, 32804 }, -- Veteran's Mail Girdle
-				{ 7, 32792 }, -- Veteran's Mail Sabatons
+				{ 5,  32817 }, -- Veteran's Mail Bracers
+				{ 6,  32804 }, -- Veteran's Mail Girdle
+				{ 7,  32792 }, -- Veteran's Mail Sabatons
 
 				{ 16, 32816 }, -- Veteran's Linked Bracers
 				{ 17, 32803 }, -- Veteran's Linked Girdle
@@ -753,13 +747,13 @@ data["ArenaS2PvP"] = {
 		{
 			name = format(AL["Non Set '%s'"], ALIL["Plate"]),
 			[NORMAL_DIFF] = {
-				{ 1, 32819 }, -- Veteran's Scaled Bracers
-				{ 2, 32806 }, -- Veteran's Scaled Belt
-				{ 3, 32794 }, -- Veteran's Scaled Greaves
+				{ 1,  32819 }, -- Veteran's Scaled Bracers
+				{ 2,  32806 }, -- Veteran's Scaled Belt
+				{ 3,  32794 }, -- Veteran's Scaled Greaves
 
-				{ 5, 32818 }, -- Veteran's Plate Bracers
-				{ 6, 32805 }, -- Veteran's Plate Belt
-				{ 7, 32793 }, -- Veteran's Plate Greaves
+				{ 5,  32818 }, -- Veteran's Plate Bracers
+				{ 6,  32805 }, -- Veteran's Plate Belt
+				{ 7,  32793 }, -- Veteran's Plate Greaves
 
 				{ 16, 32989 }, -- Veteran's Ornamented Bracers
 				{ 17, 32988 }, -- Veteran's Ornamented Belt
@@ -776,7 +770,7 @@ data["ArenaS2PvP"] = {
 			name = AL["Gladiator Mount"],
 			ExtraList = true,
 			[NORMAL_DIFF] = {
-				{ 1,  37676 }, -- Vengeful Nether Drake
+				{ 1, 37676 }, -- Vengeful Nether Drake
 			}
 		}
 	}
@@ -792,37 +786,37 @@ data["ArenaS3PvP"] = {
 			name = AL["Sets"],
 			TableType = SET_ITTYPE,
 			[NORMAL_DIFF] = {
-				{ 1,    734 }, -- Warlock
-				{ 2,    735 }, -- Warlock 2
-				{ 4,    728 }, -- Priest / Heal
-				{ 5,    729 }, -- Priest / Shadow
-				{ 7,    730 }, -- Rogue
-				{ 9,    723 }, -- Hunter
-				{ 11,   736 }, -- Warrior
-				{ 16,   724 }, -- Mage
-				{ 18,   720 }, -- Druid / Heal
-				{ 19,   722 }, -- Druid / Owl
-				{ 20,   721 }, -- Druid / Feral
-				{ 22,   733 }, -- Shaman / Heal
-				{ 23,   731 }, -- Shaman / Ele
-				{ 24,   732 }, -- Shaman / Enh
-				{ 26,   725 }, -- Paladin / Heal
-				{ 27,   727 }, -- Paladin / Prot
-				{ 28,   726 }, -- Paladin / DD
+				{ 1,  734 }, -- Warlock
+				{ 2,  735 }, -- Warlock 2
+				{ 4,  728 }, -- Priest / Heal
+				{ 5,  729 }, -- Priest / Shadow
+				{ 7,  730 }, -- Rogue
+				{ 9,  723 }, -- Hunter
+				{ 11, 736 }, -- Warrior
+				{ 16, 724 }, -- Mage
+				{ 18, 720 }, -- Druid / Heal
+				{ 19, 722 }, -- Druid / Owl
+				{ 20, 721 }, -- Druid / Feral
+				{ 22, 733 }, -- Shaman / Heal
+				{ 23, 731 }, -- Shaman / Ele
+				{ 24, 732 }, -- Shaman / Enh
+				{ 26, 725 }, -- Paladin / Heal
+				{ 27, 727 }, -- Paladin / Prot
+				{ 28, 726 }, -- Paladin / DD
 			},
 		},
 		{
 			name = AL["Weapons"].." - "..AL["One-Handed"],
 			[NORMAL_DIFF] = {
-				{ 1, 33754 }, -- Gladiator's Shanker
-				{ 2, 33756 }, -- Gladiator's Shiv
-				{ 3, 33801 }, -- Vengeful Gladiator's Mutilator
+				{ 1,  33754 }, -- Gladiator's Shanker
+				{ 2,  33756 }, -- Gladiator's Shiv
+				{ 3,  33801 }, -- Vengeful Gladiator's Mutilator
 
-				{ 5, 33733 }, -- Gladiator's Pummeler
-				{ 6, 33662 }, -- Gladiator's Bonecracker
+				{ 5,  33733 }, -- Gladiator's Pummeler
+				{ 6,  33662 }, -- Gladiator's Bonecracker
 
-				{ 8, 33762 }, -- Gladiator's Slicer
-				{ 9, 33734 }, -- Gladiator's Quickblade
+				{ 8,  33762 }, -- Gladiator's Slicer
+				{ 9,  33734 }, -- Gladiator's Quickblade
 
 				{ 11, 33669 }, -- Gladiator's Cleaver
 				{ 12, 33689 }, -- Gladiator's Hacker
@@ -841,14 +835,14 @@ data["ArenaS3PvP"] = {
 		{
 			name = AL["Weapons"].." - "..AL["Two-Handed"],
 			[NORMAL_DIFF] = {
-				{ 1, 33688 }, -- Gladiator's Greatsword
+				{ 1,  33688 }, -- Gladiator's Greatsword
 
-				{ 3, 33670 }, -- Gladiator's Decapitator
-				{ 4, 34014 }, -- Vengeful Gladiator's Waraxe
+				{ 3,  33670 }, -- Gladiator's Decapitator
+				{ 4,  34014 }, -- Vengeful Gladiator's Waraxe
 
-				{ 6, 33727 }, -- Gladiator's Painsaw
+				{ 6,  33727 }, -- Gladiator's Painsaw
 
-				{ 8, 33663 }, -- Gladiator's Bonegrinder
+				{ 8,  33663 }, -- Gladiator's Bonegrinder
 				--{ 9, 32014 }, -- Gladiator's Maul
 
 				{ 16, 33766 }, -- Gladiator's War Staff
@@ -859,10 +853,10 @@ data["ArenaS3PvP"] = {
 		{
 			name = AL["Weapons"].." - "..AL["Ranged"],
 			[NORMAL_DIFF] = {
-				{ 1, 34529 }, -- Vengeful Gladiator's Longbow
-				{ 3, 33006 }, -- Gladiator's Heavy Crossbow
-				{ 5, 34530 }, -- Vengeful Gladiator's Rifle
-				{ 7, 33765 }, -- Gladiator's War Edge
+				{ 1,  34529 }, -- Vengeful Gladiator's Longbow
+				{ 3,  33006 }, -- Gladiator's Heavy Crossbow
+				{ 5,  34530 }, -- Vengeful Gladiator's Rifle
+				{ 7,  33765 }, -- Gladiator's War Edge
 
 				{ 16, 33764 }, -- Gladiator's Touch of Defeat
 				{ 17, 34059 }, -- Vengeful Gladiator's Baton of Light
@@ -872,9 +866,9 @@ data["ArenaS3PvP"] = {
 		{
 			name = AL["Weapons"].." - "..ALIL["Off Hand"],
 			[NORMAL_DIFF] = {
-				{ 1, 33755 }, -- Vengeful Gladiator's Shield Wall
-				{ 3, 33661 }, -- Vengeful Gladiator's Barrier
-				{ 4, 33735 }, -- Vengeful Gladiator's Redoubt
+				{ 1,  33755 }, -- Vengeful Gladiator's Shield Wall
+				{ 3,  33661 }, -- Vengeful Gladiator's Barrier
+				{ 4,  33735 }, -- Vengeful Gladiator's Redoubt
 				{ 16, 33681 }, -- Gladiator's Endgame
 				{ 17, 33736 }, -- Gladiator's Reprieve
 				{ 18, 34033 }, -- Vengeful Gladiator's Grimoire
@@ -884,12 +878,12 @@ data["ArenaS3PvP"] = {
 		{
 			name = ALIL["Relic"],
 			[NORMAL_DIFF] = {
-				{ 1, 33944 }, -- Gladiator's Idol of Steadfastness
-				{ 2, 33947 }, -- Gladiator's Idol of Resolve
-				{ 3, 33841 }, -- Gladiator's Idol of Tenacity
-				{ 5, 33842 }, -- Gladiator's Libram of Justice
-				{ 6, 33938 }, -- Gladiator's Libram of Fortitude
-				{ 7, 33950 }, -- Gladiator's Libram of Vengeance
+				{ 1,  33944 }, -- Gladiator's Idol of Steadfastness
+				{ 2,  33947 }, -- Gladiator's Idol of Resolve
+				{ 3,  33841 }, -- Gladiator's Idol of Tenacity
+				{ 5,  33842 }, -- Gladiator's Libram of Justice
+				{ 6,  33938 }, -- Gladiator's Libram of Fortitude
+				{ 7,  33950 }, -- Gladiator's Libram of Vengeance
 				{ 16, 33843 }, -- Gladiator's Totem of the Third Wind
 				{ 17, 33953 }, -- Gladiator's Totem of Survival
 				{ 18, 33941 }, -- Gladiator's Totem of Indomitability
@@ -929,15 +923,15 @@ data["ArenaS3PvP"] = {
 		{
 			name = format(AL["Non Set '%s'"], ALIL["Cloth"]),
 			[NORMAL_DIFF] = {
-				{ 1, 33913 }, -- Vindicator's Silk Cuffs
-				{ 2, 33912 }, -- Vindicator's Silk Belt
-				{ 3, 33914 }, -- Vindicator's Silk Footguards
+				{ 1,  33913 }, -- Vindicator's Silk Cuffs
+				{ 2,  33912 }, -- Vindicator's Silk Belt
+				{ 3,  33914 }, -- Vindicator's Silk Footguards
 
-				{ 5, 33883 }, -- Vindicator's Dreadweave Cuffs
-				{ 6, 33882 }, -- Vindicator's Dreadweave Belt
-				{ 7, 33884 }, -- Vindicator's Dreadweave Stalkers
+				{ 5,  33883 }, -- Vindicator's Dreadweave Cuffs
+				{ 6,  33882 }, -- Vindicator's Dreadweave Belt
+				{ 7,  33884 }, -- Vindicator's Dreadweave Stalkers
 
-				{ 9, 33901 }, -- Vindicator's Mooncloth Cuffs
+				{ 9,  33901 }, -- Vindicator's Mooncloth Cuffs
 				{ 10, 33900 }, -- Vindicator's Mooncloth Belt
 				{ 11, 33902 }, -- Vindicator's Mooncloth Slippers
 			},
@@ -945,13 +939,13 @@ data["ArenaS3PvP"] = {
 		{
 			name = format(AL["Non Set '%s'"], ALIL["Leather"]),
 			[NORMAL_DIFF] = {
-				{ 1, 33881 }, -- Vindicator's Dragonhide Bracers
-				{ 2, 33879 }, -- Vindicator's Dragonhide Belt
-				{ 3, 33880 }, -- Vindicator's Dragonhide Boots
+				{ 1,  33881 }, -- Vindicator's Dragonhide Bracers
+				{ 2,  33879 }, -- Vindicator's Dragonhide Belt
+				{ 3,  33880 }, -- Vindicator's Dragonhide Boots
 
-				{ 5, 33893 }, -- Vindicator's Leather Bracers
-				{ 6, 33891 }, -- Vindicator's Leather Belt
-				{ 7, 33892 }, -- Vindicator's Leather Boots
+				{ 5,  33893 }, -- Vindicator's Leather Bracers
+				{ 6,  33891 }, -- Vindicator's Leather Belt
+				{ 7,  33892 }, -- Vindicator's Leather Boots
 
 				{ 16, 33887 }, -- Vindicator's Kodohide Bracers
 				{ 17, 33885 }, -- Vindicator's Kodohide Belt
@@ -965,13 +959,13 @@ data["ArenaS3PvP"] = {
 		{
 			name = format(AL["Non Set '%s'"], ALIL["Mail"]),
 			[NORMAL_DIFF] = {
-				{ 1, 33906 }, -- Vindicator's Ringmail Bracers
-				{ 2, 33907 }, -- Vindicator's Ringmail Girdle
-				{ 3, 33908 }, -- Vindicator's Ringmail Sabatons
+				{ 1,  33906 }, -- Vindicator's Ringmail Bracers
+				{ 2,  33907 }, -- Vindicator's Ringmail Girdle
+				{ 3,  33908 }, -- Vindicator's Ringmail Sabatons
 
-				{ 5, 33897 }, -- Vindicator's Mail Bracers
-				{ 6, 33898 }, -- Vindicator's Mail Girdle
-				{ 7, 33899 }, -- Vindicator's Mail Sabatons
+				{ 5,  33897 }, -- Vindicator's Mail Bracers
+				{ 6,  33898 }, -- Vindicator's Mail Girdle
+				{ 7,  33899 }, -- Vindicator's Mail Sabatons
 
 				{ 16, 33894 }, -- Vindicator's Linked Bracers
 				{ 17, 33895 }, -- Vindicator's Linked Girdle
@@ -985,13 +979,13 @@ data["ArenaS3PvP"] = {
 		{
 			name = format(AL["Non Set '%s'"], ALIL["Plate"]),
 			[NORMAL_DIFF] = {
-				{ 1, 33910 }, -- Vindicator's Scaled Bracers
-				{ 2, 33909 }, -- Vindicator's Scaled Belt
-				{ 3, 33911 }, -- Vindicator's Scaled Greaves
+				{ 1,  33910 }, -- Vindicator's Scaled Bracers
+				{ 2,  33909 }, -- Vindicator's Scaled Belt
+				{ 3,  33911 }, -- Vindicator's Scaled Greaves
 
-				{ 5, 33813 }, -- Vindicator's Plate Bracers
-				{ 6, 33811 }, -- Vindicator's Plate Belt
-				{ 7, 33812 }, -- Vindicator's Plate Greaves
+				{ 5,  33813 }, -- Vindicator's Plate Bracers
+				{ 6,  33811 }, -- Vindicator's Plate Belt
+				{ 7,  33812 }, -- Vindicator's Plate Greaves
 
 				{ 16, 33904 }, -- Vindicator's Ornamented Bracers
 				{ 17, 33903 }, -- Vindicator's Ornamented Belt
@@ -1008,7 +1002,7 @@ data["ArenaS3PvP"] = {
 			name = AL["Gladiator Mount"],
 			ExtraList = true,
 			[NORMAL_DIFF] = {
-				{ 1,  34092 }, -- Merciless Nether Drake
+				{ 1, 34092 }, -- Merciless Nether Drake
 			}
 		}
 	}
@@ -1024,38 +1018,38 @@ data["ArenaS4PvP"] = {
 			name = AL["Sets"],
 			TableType = SET_ITTYPE,
 			[NORMAL_DIFF] = {
-				{ 1,    2000568 }, -- Warlock
-				{ 2,    2000615 }, -- Warlock 2
-				{ 4,    2000687 }, -- Priest / Heal
-				{ 5,    2000581 }, -- Priest / Shadow
-				{ 7,    2000577 }, -- Rogue
-				{ 9,    2000586 }, -- Hunter
-				{ 11,   2000567 }, -- Warrior
-				AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, { 13,   760 }), -- Deathknight
-				{ 16,   2000579 }, -- Mage
-				{ 18,   2000685 }, -- Druid / Heal
-				{ 19,   2000585 }, -- Druid / Owl
-				{ 20,   2000584 }, -- Druid / Feral
-				{ 22,   2000580 }, -- Shaman / Heal
-				{ 23,   2000686 }, -- Shaman / Ele
-				{ 24,   2000578 }, -- Shaman / Enh
-				{ 26,   2000690 }, -- Paladin / Heal
-				{ 27,   2000582 }, -- Paladin / Prot
-				{ 28,   2000583 }, -- Paladin / DD
+				{ 1,  2000568 },                                          -- Warlock
+				{ 2,  2000615 },                                          -- Warlock 2
+				{ 4,  2000687 },                                          -- Priest / Heal
+				{ 5,  2000581 },                                          -- Priest / Shadow
+				{ 7,  2000577 },                                          -- Rogue
+				{ 9,  2000586 },                                          -- Hunter
+				{ 11, 2000567 },                                          -- Warrior
+				AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, { 13, 760 }), -- Deathknight
+				{ 16, 2000579 },                                          -- Mage
+				{ 18, 2000685 },                                          -- Druid / Heal
+				{ 19, 2000585 },                                          -- Druid / Owl
+				{ 20, 2000584 },                                          -- Druid / Feral
+				{ 22, 2000580 },                                          -- Shaman / Heal
+				{ 23, 2000686 },                                          -- Shaman / Ele
+				{ 24, 2000578 },                                          -- Shaman / Enh
+				{ 26, 2000690 },                                          -- Paladin / Heal
+				{ 27, 2000582 },                                          -- Paladin / Prot
+				{ 28, 2000583 },                                          -- Paladin / DD
 			},
 		},
 		{
 			name = AL["Weapons"].." - "..AL["One-Handed"],
 			[NORMAL_DIFF] = {
-				{ 1, 35093 }, -- Gladiator's Shanker
-				{ 2, 35095 }, -- Gladiator's Shiv
-				{ 3, 35058 }, -- Vengeful Gladiator's Mutilator
+				{ 1,  35093 }, -- Gladiator's Shanker
+				{ 2,  35095 }, -- Gladiator's Shiv
+				{ 3,  35058 }, -- Vengeful Gladiator's Mutilator
 
-				{ 5, 35071 }, -- Gladiator's Pummeler
-				{ 6, 34988 }, -- Gladiator's Bonecracker
+				{ 5,  35071 }, -- Gladiator's Pummeler
+				{ 6,  34988 }, -- Gladiator's Bonecracker
 
-				{ 8, 35101 }, -- Gladiator's Slicer
-				{ 9, 35072 }, -- Gladiator's Quickblade
+				{ 8,  35101 }, -- Gladiator's Slicer
+				{ 9,  35072 }, -- Gladiator's Quickblade
 
 				{ 11, 34996 }, -- Gladiator's Cleaver
 				{ 12, 35017 }, -- Gladiator's Hacker
@@ -1077,14 +1071,14 @@ data["ArenaS4PvP"] = {
 		{
 			name = AL["Weapons"].." - "..AL["Two-Handed"],
 			[NORMAL_DIFF] = {
-				{ 1, 35015 }, -- Gladiator's Greatsword
+				{ 1,  35015 }, -- Gladiator's Greatsword
 
-				{ 3, 34997 }, -- Gladiator's Decapitator
-				{ 4, 35110 }, -- Vengeful Gladiator's Waraxe
+				{ 3,  34997 }, -- Gladiator's Decapitator
+				{ 4,  35110 }, -- Vengeful Gladiator's Waraxe
 
-				{ 6, 35064 }, -- Gladiator's Painsaw
+				{ 6,  35064 }, -- Gladiator's Painsaw
 
-				{ 8, 34989 }, -- Gladiator's Bonegrinder
+				{ 8,  34989 }, -- Gladiator's Bonegrinder
 
 				{ 16, 35109 }, -- Gladiator's War Staff
 				{ 17, 34987 }, -- Vengeful Gladiator's Battle Staff
@@ -1094,10 +1088,10 @@ data["ArenaS4PvP"] = {
 		{
 			name = AL["Weapons"].." - "..AL["Ranged"],
 			[NORMAL_DIFF] = {
-				{ 1, 35047 }, -- Vengeful Gladiator's Longbow
-				{ 3, 35018 }, -- Gladiator's Heavy Crossbow
-				{ 5, 35075 }, -- Vengeful Gladiator's Rifle
-				{ 7, 35108 }, -- Gladiator's War Edge
+				{ 1,  35047 }, -- Vengeful Gladiator's Longbow
+				{ 3,  35018 }, -- Gladiator's Heavy Crossbow
+				{ 5,  35075 }, -- Vengeful Gladiator's Rifle
+				{ 7,  35108 }, -- Gladiator's War Edge
 
 				{ 16, 35107 }, -- Gladiator's Touch of Defeat
 				{ 17, 34985 }, -- Vengeful Gladiator's Baton of Light
@@ -1107,9 +1101,9 @@ data["ArenaS4PvP"] = {
 		{
 			name = AL["Weapons"].." - "..ALIL["Off Hand"],
 			[NORMAL_DIFF] = {
-				{ 1, 35094 }, -- Vengeful Gladiator's Shield Wall
-				{ 3, 34986 }, -- Vengeful Gladiator's Barrier
-				{ 4, 35073 }, -- Vengeful Gladiator's Redoubt
+				{ 1,  35094 }, -- Vengeful Gladiator's Shield Wall
+				{ 3,  34986 }, -- Vengeful Gladiator's Barrier
+				{ 4,  35073 }, -- Vengeful Gladiator's Redoubt
 				{ 16, 35008 }, -- Gladiator's Endgame
 				{ 17, 35074 }, -- Gladiator's Reprieve
 				{ 18, 35016 }, -- Vengeful Gladiator's Grimoire
@@ -1127,12 +1121,12 @@ data["ArenaS4PvP"] = {
 		{
 			name = ALIL["Relic"],
 			[NORMAL_DIFF] = {
-				{ 1, 35020 }, -- Gladiator's Idol of Steadfastness
-				{ 2, 35019 }, -- Gladiator's Idol of Resolve
-				{ 3, 35021 }, -- Gladiator's Idol of Tenacity
-				{ 5, 35040 }, -- Gladiator's Libram of Justice
-				{ 6, 35039 }, -- Gladiator's Libram of Fortitude
-				{ 7, 35041 }, -- Gladiator's Libram of Vengeance
+				{ 1,  35020 }, -- Gladiator's Idol of Steadfastness
+				{ 2,  35019 }, -- Gladiator's Idol of Resolve
+				{ 3,  35021 }, -- Gladiator's Idol of Tenacity
+				{ 5,  35040 }, -- Gladiator's Libram of Justice
+				{ 6,  35039 }, -- Gladiator's Libram of Fortitude
+				{ 7,  35041 }, -- Gladiator's Libram of Vengeance
 				{ 16, 35106 }, -- Gladiator's Totem of the Third Wind
 				{ 17, 35105 }, -- Gladiator's Totem of Survival
 				{ 18, 35104 }, -- Gladiator's Totem of Indomitability
@@ -1170,15 +1164,15 @@ data["ArenaS4PvP"] = {
 		{
 			name = format(AL["Non Set '%s'"], ALIL["Cloth"]),
 			[NORMAL_DIFF] = {
-				{ 1, 35179 }, -- Guardian's Silk Cuffs
-				{ 2, 35164 }, -- Guardian's Silk Belt
-				{ 3, 35149 }, -- Guardian's Silk Footguards
+				{ 1,  35179 }, -- Guardian's Silk Cuffs
+				{ 2,  35164 }, -- Guardian's Silk Belt
+				{ 3,  35149 }, -- Guardian's Silk Footguards
 
-				{ 5, 35168 }, -- Guardian's Dreadweave Cuffs
-				{ 6, 35153 }, -- Guardian's Dreadweave Belt
-				{ 7, 35138 }, -- Guardian's Dreadweave Stalkers
+				{ 5,  35168 }, -- Guardian's Dreadweave Cuffs
+				{ 6,  35153 }, -- Guardian's Dreadweave Belt
+				{ 7,  35138 }, -- Guardian's Dreadweave Stalkers
 
-				{ 9, 35174 }, -- Guardian's Mooncloth Cuffs
+				{ 9,  35174 }, -- Guardian's Mooncloth Cuffs
 				{ 10, 35159 }, -- Guardian's Mooncloth Belt
 				{ 11, 35144 }, -- Guardian's Mooncloth Slippers
 			},
@@ -1186,13 +1180,13 @@ data["ArenaS4PvP"] = {
 		{
 			name = format(AL["Non Set '%s'"], ALIL["Leather"]),
 			[NORMAL_DIFF] = {
-				{ 1, 35167 }, -- Guardian's Dragonhide Bracers
-				{ 2, 35152 }, -- Guardian's Dragonhide Belt
-				{ 3, 35137 }, -- Guardian's Dragonhide Boots
+				{ 1,  35167 }, -- Guardian's Dragonhide Bracers
+				{ 2,  35152 }, -- Guardian's Dragonhide Belt
+				{ 3,  35137 }, -- Guardian's Dragonhide Boots
 
-				{ 5, 35171 }, -- Guardian's Leather Bracers
-				{ 6, 35156 }, -- Guardian's Leather Belt
-				{ 7, 35141 }, -- Guardian's Leather Boots
+				{ 5,  35171 }, -- Guardian's Leather Bracers
+				{ 6,  35156 }, -- Guardian's Leather Belt
+				{ 7,  35141 }, -- Guardian's Leather Boots
 
 				{ 16, 35169 }, -- Guardian's Kodohide Bracers
 				{ 17, 35154 }, -- Guardian's Kodohide Belt
@@ -1206,13 +1200,13 @@ data["ArenaS4PvP"] = {
 		{
 			name = format(AL["Non Set '%s'"], ALIL["Mail"]),
 			[NORMAL_DIFF] = {
-				{ 1, 35177 }, -- Guardian's Ringmail Bracers
-				{ 2, 35162 }, -- Guardian's Ringmail Girdle
-				{ 3, 35147 }, -- Guardian's Ringmail Sabatons
+				{ 1,  35177 }, -- Guardian's Ringmail Bracers
+				{ 2,  35162 }, -- Guardian's Ringmail Girdle
+				{ 3,  35147 }, -- Guardian's Ringmail Sabatons
 
-				{ 5, 35173 }, -- Guardian's Mail Bracers
-				{ 6, 35158 }, -- Guardian's Mail Girdle
-				{ 7, 35143 }, -- Guardian's Mail Sabatons
+				{ 5,  35173 }, -- Guardian's Mail Bracers
+				{ 6,  35158 }, -- Guardian's Mail Girdle
+				{ 7,  35143 }, -- Guardian's Mail Sabatons
 
 				{ 16, 35172 }, -- Guardian's Linked Bracers
 				{ 17, 35157 }, -- Guardian's Linked Girdle
@@ -1226,13 +1220,13 @@ data["ArenaS4PvP"] = {
 		{
 			name = format(AL["Non Set '%s'"], ALIL["Plate"]),
 			[NORMAL_DIFF] = {
-				{ 1, 35178 }, -- Guardian's Scaled Bracers
-				{ 2, 35163 }, -- Guardian's Scaled Belt
-				{ 3, 35148 }, -- Guardian's Scaled Greaves
+				{ 1,  35178 }, -- Guardian's Scaled Bracers
+				{ 2,  35163 }, -- Guardian's Scaled Belt
+				{ 3,  35148 }, -- Guardian's Scaled Greaves
 
-				{ 5, 35176 }, -- Guardian's Plate Bracers
-				{ 6, 35161 }, -- Guardian's Plate Belt
-				{ 7, 35146 }, -- Guardian's Plate Greaves
+				{ 5,  35176 }, -- Guardian's Plate Bracers
+				{ 6,  35161 }, -- Guardian's Plate Belt
+				{ 7,  35146 }, -- Guardian's Plate Greaves
 
 				{ 16, 35175 }, -- Guardian's Ornamented Bracers
 				{ 17, 35160 }, -- Guardian's Ornamented Belt
@@ -1249,7 +1243,7 @@ data["ArenaS4PvP"] = {
 			name = AL["Gladiator Mount"],
 			ExtraList = true,
 			[NORMAL_DIFF] = {
-				{ 1,  43516 }, -- Brutal Nether Drake
+				{ 1, 43516 }, -- Brutal Nether Drake
 			}
 		}
 	}
@@ -1263,15 +1257,15 @@ data["HellfirePeninsulaPvP"] = {
 		{
 			MapID = 3483,
 			[ALLIANCE_DIFF] = {
-				{ 1, 24520 }, -- Honor Hold Favor
-				{ 3, 24579 }, -- Mark of Honor Hold
+				{ 1,  24520 }, -- Honor Hold Favor
+				{ 3,  24579 }, -- Mark of Honor Hold
 				{ 16, 27830 }, -- Circlet of the Victor
 				{ 17, 27785 }, -- Notched Deep Peridot
 				{ 18, 27777 }, -- Stark Blood Garnet
 			},
 			[HORDE_DIFF] = {
-				{ 1, 24522 }, -- Thrallmar Favor
-				{ 3, 24581 }, -- Mark of Thrallmar
+				{ 1,  24522 }, -- Thrallmar Favor
+				{ 3,  24581 }, -- Mark of Thrallmar
 				{ 16, 27833 }, -- Band of the Victor
 				{ 17, 27786 }, -- Barbed Deep Peridot
 				{ 18, 28360 }, -- Mighty Blood Garnet
@@ -1288,19 +1282,19 @@ data["NagrandPvP"] = {
 		{
 			name = AL["Vendor"],
 			[NORMAL_DIFF] = {
-				{ 1, 28915, [PRICE_EXTRA_ITTYPE] = "HalaaBT:70:HalaaRT:15" }, -- Reins of the Dark Riding Talbuk
-				{ 2, 27679, [PRICE_EXTRA_ITTYPE] = "HalaaBT:100" }, -- Sublime Mystic Dawnstone
-				{ 3, 27649, [PRICE_EXTRA_ITTYPE] = "HalaaBT:40:HalaaRT:2" }, -- Hierophant's Leggings
-				{ 4, 27648, [PRICE_EXTRA_ITTYPE] = "HalaaBT:40:HalaaRT:2" }, -- Dreamstalker Leggings
-				{ 5, 27650, [PRICE_EXTRA_ITTYPE] = "HalaaBT:40:HalaaRT:2" }, -- Shadowstalker's Leggings
-				{ 6, 27647, [PRICE_EXTRA_ITTYPE] = "HalaaBT:40:HalaaRT:2" }, -- Marksman's Legguards
-				{ 7, 27652, [PRICE_EXTRA_ITTYPE] = "HalaaBT:40:HalaaRT:2" }, -- Stormbreaker's Leggings
-				{ 8, 27654, [PRICE_EXTRA_ITTYPE] = "HalaaBT:40:HalaaRT:2" }, -- Avenger's Legplates
-				{ 9, 27653, [PRICE_EXTRA_ITTYPE] = "HalaaBT:40:HalaaRT:2" }, -- Slayer's Leggings
+				{ 1,  28915, [PRICE_EXTRA_ITTYPE] = "HalaaBT:70:HalaaRT:15" }, -- Reins of the Dark Riding Talbuk
+				{ 2,  27679, [PRICE_EXTRA_ITTYPE] = "HalaaBT:100" }, -- Sublime Mystic Dawnstone
+				{ 3,  27649, [PRICE_EXTRA_ITTYPE] = "HalaaBT:40:HalaaRT:2" }, -- Hierophant's Leggings
+				{ 4,  27648, [PRICE_EXTRA_ITTYPE] = "HalaaBT:40:HalaaRT:2" }, -- Dreamstalker Leggings
+				{ 5,  27650, [PRICE_EXTRA_ITTYPE] = "HalaaBT:40:HalaaRT:2" }, -- Shadowstalker's Leggings
+				{ 6,  27647, [PRICE_EXTRA_ITTYPE] = "HalaaBT:40:HalaaRT:2" }, -- Marksman's Legguards
+				{ 7,  27652, [PRICE_EXTRA_ITTYPE] = "HalaaBT:40:HalaaRT:2" }, -- Stormbreaker's Leggings
+				{ 8,  27654, [PRICE_EXTRA_ITTYPE] = "HalaaBT:40:HalaaRT:2" }, -- Avenger's Legplates
+				{ 9,  27653, [PRICE_EXTRA_ITTYPE] = "HalaaBT:40:HalaaRT:2" }, -- Slayer's Leggings
 				{ 11, 24208, [PRICE_EXTRA_ITTYPE] = "money:120000" }, -- Design: Mystic Dawnstone
-				{ 14, 26045 }, -- Halaa Battle Token
+				{ 14, 26045 },                                      -- Halaa Battle Token
 				{ 16, 29228, [PRICE_EXTRA_ITTYPE] = "HalaaBT:100:HalaaRT:20" }, -- Reins of the Dark War Talbuk
-				{ 17, 27680, [PRICE_EXTRA_ITTYPE] = "HalaaRT:8" }, -- Halaani Bag
+				{ 17, 27680, [PRICE_EXTRA_ITTYPE] = "HalaaRT:8" },  -- Halaani Bag
 				{ 18, 27638, [PRICE_EXTRA_ITTYPE] = "HalaaBT:20:HalaaRT:1" }, -- Hierophant's Sash
 				{ 19, 27645, [PRICE_EXTRA_ITTYPE] = "HalaaBT:20:HalaaRT:1" }, -- Dreamstalker Sash
 				{ 20, 27637, [PRICE_EXTRA_ITTYPE] = "HalaaBT:20:HalaaRT:1" }, -- Shadowstalker's Sash
@@ -1308,25 +1302,25 @@ data["NagrandPvP"] = {
 				{ 22, 27643, [PRICE_EXTRA_ITTYPE] = "HalaaBT:20:HalaaRT:1" }, -- Stormbreaker's Girdle
 				{ 23, 27644, [PRICE_EXTRA_ITTYPE] = "HalaaBT:20:HalaaRT:1" }, -- Avenger's Waistguard
 				{ 24, 27639, [PRICE_EXTRA_ITTYPE] = "HalaaBT:20:HalaaRT:1" }, -- Slayer's Waistguard
-				{ 26, 33783, [PRICE_EXTRA_ITTYPE] = "HalaaRT:4" }, -- Design: Steady Talasite
-				{ 27, 32071, [PRICE_EXTRA_ITTYPE] = "HalaaRT:2" }, -- Recipe: Elixir of Ironskin
-				{ 29, 26044 }, -- Halaa Research Token
+				{ 26, 33783, [PRICE_EXTRA_ITTYPE] = "HalaaRT:4" },  -- Design: Steady Talasite
+				{ 27, 32071, [PRICE_EXTRA_ITTYPE] = "HalaaRT:2" },  -- Recipe: Elixir of Ironskin
+				{ 29, 26044 },                                      -- Halaa Research Token
 			},
 		},
 		{
 			MapID = 3518,
 			[ALLIANCE_DIFF] = {
-				{ 1, 30611 }, -- Halaani Razorshaft
-				{ 2, 30612 }, -- Halaani Grimshot
-				{ 3, 30615 }, -- Halaani Whiskey
+				{ 1,  30611 }, -- Halaani Razorshaft
+				{ 2,  30612 }, -- Halaani Grimshot
+				{ 3,  30615 }, -- Halaani Whiskey
 				{ 16, 30598 }, -- Don Amancio's Heart
 				{ 17, 30597 }, -- Halaani Claymore
 				{ 18, 30599 }, -- Avenging Blades
 			},
 			[HORDE_DIFF] = {
-				{ 1, 30611 }, -- Halaani Razorshaft
-				{ 2, 30612 }, -- Halaani Grimshot
-				{ 3, 30615 }, -- Halaani Whiskey
+				{ 1,  30611 }, -- Halaani Razorshaft
+				{ 2,  30612 }, -- Halaani Grimshot
+				{ 3,  30615 }, -- Halaani Whiskey
 				{ 16, 30571 }, -- Don Rodrigo's Heart
 				{ 17, 30570 }, -- Arkadian Claymore
 				{ 18, 30568 }, -- The Sharp Cookie
@@ -1343,14 +1337,14 @@ data["TerokkarPvP"] = {
 		{
 			MapID = 3519,
 			[NORMAL_DIFF] = {
-				{ 1, 28553 }, -- Band of the Exorcist
-				{ 2, 28557}, -- Swift Starfire Diamond
-				{ 3, 28759 }, -- Exorcist's Dreadweave Hood
-				{ 4, 28574 }, -- Exorcist's Dragonhide Helm
-				{ 5, 28575 }, -- Exorcist's Wyrmhide Helm
-				{ 6, 28577 }, -- Exorcist's Linked Helm
-				{ 7, 28560 }, -- Exorcist's Lamellar Helm
-				{ 8, 28761 }, -- Exorcist's Scaled Helm
+				{ 1,  28553 }, -- Band of the Exorcist
+				{ 2,  28557 }, -- Swift Starfire Diamond
+				{ 3,  28759 }, -- Exorcist's Dreadweave Hood
+				{ 4,  28574 }, -- Exorcist's Dragonhide Helm
+				{ 5,  28575 }, -- Exorcist's Wyrmhide Helm
+				{ 6,  28577 }, -- Exorcist's Linked Helm
+				{ 7,  28560 }, -- Exorcist's Lamellar Helm
+				{ 8,  28761 }, -- Exorcist's Scaled Helm
 				{ 10, 32947 }, -- Auchenai Healing Potion
 				{ 12, 28558 }, -- Spirit Shard
 				{ 16, 28555 }, -- Seal of the Exorcist
@@ -1374,25 +1368,25 @@ data["ZangarmarshPvP"] = {
 		{
 			MapID = 3521,
 			[ALLIANCE_DIFF] = {
-				{ 1, 27990, [PRICE_EXTRA_ITTYPE] = "MarkOfHonorHold:15" }, -- Idol of Savagery
-				{ 2, 27984, [PRICE_EXTRA_ITTYPE] = "MarkOfHonorHold:15" }, -- Totem of Impact
-				{ 3, 27929, [PRICE_EXTRA_ITTYPE] = "MarkOfHonorHold:15" }, -- Terminal Edge
-				{ 4, 27939, [PRICE_EXTRA_ITTYPE] = "MarkOfHonorHold:15" }, -- Incendic Rod
-				{ 5, 27983, [PRICE_EXTRA_ITTYPE] = "MarkOfHonorHold:15" }, -- Libram of Zeal
-				{ 6, 27930, [PRICE_EXTRA_ITTYPE] = "MarkOfHonorHold:15" }, -- Splintermark
-				{ 8, 24579 }, -- Mark of Honor Hold
+				{ 1,  27990, [PRICE_EXTRA_ITTYPE] = "MarkOfHonorHold:15" }, -- Idol of Savagery
+				{ 2,  27984, [PRICE_EXTRA_ITTYPE] = "MarkOfHonorHold:15" }, -- Totem of Impact
+				{ 3,  27929, [PRICE_EXTRA_ITTYPE] = "MarkOfHonorHold:15" }, -- Terminal Edge
+				{ 4,  27939, [PRICE_EXTRA_ITTYPE] = "MarkOfHonorHold:15" }, -- Incendic Rod
+				{ 5,  27983, [PRICE_EXTRA_ITTYPE] = "MarkOfHonorHold:15" }, -- Libram of Zeal
+				{ 6,  27930, [PRICE_EXTRA_ITTYPE] = "MarkOfHonorHold:15" }, -- Splintermark
+				{ 8,  24579 },                                  -- Mark of Honor Hold
 				{ 16, 27922, [PRICE_EXTRA_ITTYPE] = "MarkOfHonorHold:30" }, -- Mark of Defiance
 				{ 17, 27920, [PRICE_EXTRA_ITTYPE] = "MarkOfHonorHold:30" }, -- Mark of Conquest
 				{ 18, 27927, [PRICE_EXTRA_ITTYPE] = "MarkOfHonorHold:30" }, -- Mark of Vindication
 			},
 			[HORDE_DIFF] = {
-				{ 1, 27990, [PRICE_EXTRA_ITTYPE] = "MarkOfThrallmar:5" }, -- Idol of Savagery
-				{ 2, 27984, [PRICE_EXTRA_ITTYPE] = "MarkOfThrallmar:15" }, -- Totem of Impact
-				{ 3, 27929, [PRICE_EXTRA_ITTYPE] = "MarkOfThrallmar:15" }, -- Terminal Edge
-				{ 4, 27939, [PRICE_EXTRA_ITTYPE] = "MarkOfThrallmar:15" }, -- Incendic Rod
-				{ 5, 27983, [PRICE_EXTRA_ITTYPE] = "MarkOfThrallmar:15" }, -- Libram of Zeal
-				{ 6, 27930, [PRICE_EXTRA_ITTYPE] = "MarkOfThrallmar:15" }, -- Splintermark
-				{ 8, 24581 }, -- Mark of Thrallmar
+				{ 1,  27990, [PRICE_EXTRA_ITTYPE] = "MarkOfThrallmar:5" }, -- Idol of Savagery
+				{ 2,  27984, [PRICE_EXTRA_ITTYPE] = "MarkOfThrallmar:15" }, -- Totem of Impact
+				{ 3,  27929, [PRICE_EXTRA_ITTYPE] = "MarkOfThrallmar:15" }, -- Terminal Edge
+				{ 4,  27939, [PRICE_EXTRA_ITTYPE] = "MarkOfThrallmar:15" }, -- Incendic Rod
+				{ 5,  27983, [PRICE_EXTRA_ITTYPE] = "MarkOfThrallmar:15" }, -- Libram of Zeal
+				{ 6,  27930, [PRICE_EXTRA_ITTYPE] = "MarkOfThrallmar:15" }, -- Splintermark
+				{ 8,  24581 },                                  -- Mark of Thrallmar
 				{ 16, 27922, [PRICE_EXTRA_ITTYPE] = "MarkOfThrallmar:30" }, -- Mark of Defiance
 				{ 17, 27920, [PRICE_EXTRA_ITTYPE] = "MarkOfThrallmar:30" }, -- Mark of Conquest
 				{ 18, 27927, [PRICE_EXTRA_ITTYPE] = "MarkOfThrallmar:30" }, -- Mark of Vindication

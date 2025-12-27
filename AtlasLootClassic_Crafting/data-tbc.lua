@@ -2,7 +2,6 @@
 -- Upvalued Lua API.
 -----------------------------------------------------------------------
 local _G = getfenv(0)
-local select = _G.select
 local string = _G.string
 local format = string.format
 
@@ -16,8 +15,6 @@ local addonname, private = ...
 local AtlasLoot = _G.AtlasLoot
 if AtlasLoot:GameVersion_LT(AtlasLoot.BC_VERSION_NUM) then return end
 local data = AtlasLoot.ItemDB:Add(addonname, 1, AtlasLoot.BC_VERSION_NUM)
-
-local GetColorSkill = AtlasLoot.Data.Profession.GetColorSkillRankNoSpell
 
 local AL = AtlasLoot.Locales
 local ALIL = AtlasLoot.IngameLocales
@@ -39,9 +36,7 @@ local PROF_SEC_CONTENT = data:AddContentType(AL["Secondary Professions"], ATLASL
 local PROF_CLASS_CONTENT = data:AddContentType(AL["Class Professions"], ATLASLOOT_CLASSPROFESSION_COLOR)
 
 local SPLIT_FORMAT = "%s - %s"
-
 local GEM_FORMAT1 = ALIL["Gems"].." - %s"
-local GEM_FORMAT2 = ALIL["Gems"].." - %s & %s"
 
 data["AlchemyBC"] = {
 	name = ALIL["Alchemy"],
@@ -85,8 +80,6 @@ data["AlchemyBC"] = {
 				{ 1,  28586 }, -- Super Rejuvenation Potion (390)
 				{ 3,  28551 }, -- Super Healing Potion (340)
 				{ 4,  33732 }, -- Volatile Healing Potion (315)
-
-
 				{ 16, 38961 }, -- Fel Mana Potion (360)
 				{ 17, 28555 }, -- Super Mana Potion (340)
 				{ 18, 33733 }, -- Unstable Mana Potion (325)
