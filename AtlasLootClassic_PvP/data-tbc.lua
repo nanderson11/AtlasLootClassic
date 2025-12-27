@@ -49,29 +49,29 @@ local PVP_INSIGNIA = { -- Insignias
 	ExtraList = true,
 	[ALLIANCE_DIFF] = {
 		{ 1,  25829, [PRICE_EXTRA_ITTYPE] = "honorA:22950:pvpEye:10" }, -- Talisman of the Alliance
-		{ 2,  37864, [PRICE_EXTRA_ITTYPE] = "honorA:40000" },    -- Medallion of the Alliance
-		{ 3,  28235, [PRICE_EXTRA_ITTYPE] = "honorA:8000" },     -- Medallion of the Alliance
-		{ 4,  28237, [PRICE_EXTRA_ITTYPE] = "honorA:8000" },     -- Medallion of the Alliance
-		{ 5,  28238, [PRICE_EXTRA_ITTYPE] = "honorA:8000" },     -- Medallion of the Alliance
-		{ 6,  28236, [PRICE_EXTRA_ITTYPE] = "honorA:8000" },     -- Medallion of the Alliance
-		{ 7,  30349, [PRICE_EXTRA_ITTYPE] = "honorA:8000" },     -- Medallion of the Alliance
-		{ 8,  28234, [PRICE_EXTRA_ITTYPE] = "honorA:8000" },     -- Medallion of the Alliance
-		{ 9,  30351, [PRICE_EXTRA_ITTYPE] = "honorA:8000" },     -- Medallion of the Alliance
-		{ 10, 30348, [PRICE_EXTRA_ITTYPE] = "honorA:8000" },     -- Medallion of the Alliance
-		{ 11, 30350, [PRICE_EXTRA_ITTYPE] = "honorA:8000" },     -- Medallion of the Alliance
+		{ 2,  37864, [PRICE_EXTRA_ITTYPE] = "honorA:40000" },     -- Medallion of the Alliance
+		{ 3,  28235, [PRICE_EXTRA_ITTYPE] = "honorA:8000" },      -- Medallion of the Alliance
+		{ 4,  28237, [PRICE_EXTRA_ITTYPE] = "honorA:8000" },      -- Medallion of the Alliance
+		{ 5,  28238, [PRICE_EXTRA_ITTYPE] = "honorA:8000" },      -- Medallion of the Alliance
+		{ 6,  28236, [PRICE_EXTRA_ITTYPE] = "honorA:8000" },      -- Medallion of the Alliance
+		{ 7,  30349, [PRICE_EXTRA_ITTYPE] = "honorA:8000" },      -- Medallion of the Alliance
+		{ 8,  28234, [PRICE_EXTRA_ITTYPE] = "honorA:8000" },      -- Medallion of the Alliance
+		{ 9,  30351, [PRICE_EXTRA_ITTYPE] = "honorA:8000" },      -- Medallion of the Alliance
+		{ 10, 30348, [PRICE_EXTRA_ITTYPE] = "honorA:8000" },      -- Medallion of the Alliance
+		{ 11, 30350, [PRICE_EXTRA_ITTYPE] = "honorA:8000" },      -- Medallion of the Alliance
 	},
 	[HORDE_DIFF] = {
 		{ 1,  24551, [PRICE_EXTRA_ITTYPE] = "honorH:22950:pvpEye:10" }, -- Talisman of the Horde
-		{ 2,  37865, [PRICE_EXTRA_ITTYPE] = "honorH:40000" },    -- Medallion of the Horde
-		{ 3,  28241, [PRICE_EXTRA_ITTYPE] = "honorH:8000" },     -- Medallion of the Horde
-		{ 4,  28243, [PRICE_EXTRA_ITTYPE] = "honorH:8000" },     -- Medallion of the Horde
-		{ 5,  28239, [PRICE_EXTRA_ITTYPE] = "honorH:8000" },     -- Medallion of the Horde
-		{ 6,  28242, [PRICE_EXTRA_ITTYPE] = "honorH:8000" },     -- Medallion of the Horde
-		{ 7,  30346, [PRICE_EXTRA_ITTYPE] = "honorH:8000" },     -- Medallion of the Horde
-		{ 8,  28240, [PRICE_EXTRA_ITTYPE] = "honorH:8000" },     -- Medallion of the Horde
-		{ 9,  30345, [PRICE_EXTRA_ITTYPE] = "honorH:8000" },     -- Medallion of the Horde
-		{ 10, 30343, [PRICE_EXTRA_ITTYPE] = "honorH:8000" },     -- Medallion of the Horde
-		{ 11, 30344, [PRICE_EXTRA_ITTYPE] = "honorH:8000" },     -- Medallion of the Horde
+		{ 2,  37865, [PRICE_EXTRA_ITTYPE] = "honorH:40000" },     -- Medallion of the Horde
+		{ 3,  28241, [PRICE_EXTRA_ITTYPE] = "honorH:8000" },      -- Medallion of the Horde
+		{ 4,  28243, [PRICE_EXTRA_ITTYPE] = "honorH:8000" },      -- Medallion of the Horde
+		{ 5,  28239, [PRICE_EXTRA_ITTYPE] = "honorH:8000" },      -- Medallion of the Horde
+		{ 6,  28242, [PRICE_EXTRA_ITTYPE] = "honorH:8000" },      -- Medallion of the Horde
+		{ 7,  30346, [PRICE_EXTRA_ITTYPE] = "honorH:8000" },      -- Medallion of the Horde
+		{ 8,  28240, [PRICE_EXTRA_ITTYPE] = "honorH:8000" },      -- Medallion of the Horde
+		{ 9,  30345, [PRICE_EXTRA_ITTYPE] = "honorH:8000" },      -- Medallion of the Horde
+		{ 10, 30343, [PRICE_EXTRA_ITTYPE] = "honorH:8000" },      -- Medallion of the Horde
+		{ 11, 30344, [PRICE_EXTRA_ITTYPE] = "honorH:8000" },      -- Medallion of the Horde
 	},
 }
 
@@ -770,7 +770,7 @@ data["ArenaS2PvP"] = {
 			name = AL["Gladiator Mount"],
 			ExtraList = true,
 			[NORMAL_DIFF] = {
-				{ 1, 37676 }, -- Vengeful Nether Drake
+				{ 1, 34092 }, -- Merciless Nether Drake
 			}
 		}
 	}
@@ -1002,7 +1002,7 @@ data["ArenaS3PvP"] = {
 			name = AL["Gladiator Mount"],
 			ExtraList = true,
 			[NORMAL_DIFF] = {
-				{ 1, 34092 }, -- Merciless Nether Drake
+				{ 1, 37676 }, -- Vengeful Nether Drake
 			}
 		}
 	}
@@ -1018,24 +1018,24 @@ data["ArenaS4PvP"] = {
 			name = AL["Sets"],
 			TableType = SET_ITTYPE,
 			[NORMAL_DIFF] = {
-				{ 1,  2000568 },                                          -- Warlock
-				{ 2,  2000615 },                                          -- Warlock 2
-				{ 4,  2000687 },                                          -- Priest / Heal
-				{ 5,  2000581 },                                          -- Priest / Shadow
-				{ 7,  2000577 },                                          -- Rogue
-				{ 9,  2000586 },                                          -- Hunter
-				{ 11, 2000567 },                                          -- Warrior
+				{ 1,  2000568 },                                        -- Warlock
+				{ 2,  2000615 },                                        -- Warlock 2
+				{ 4,  2000687 },                                        -- Priest / Heal
+				{ 5,  2000581 },                                        -- Priest / Shadow
+				{ 7,  2000577 },                                        -- Rogue
+				{ 9,  2000586 },                                        -- Hunter
+				{ 11, 2000567 },                                        -- Warrior
 				AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, { 13, 760 }), -- Deathknight
-				{ 16, 2000579 },                                          -- Mage
-				{ 18, 2000685 },                                          -- Druid / Heal
-				{ 19, 2000585 },                                          -- Druid / Owl
-				{ 20, 2000584 },                                          -- Druid / Feral
-				{ 22, 2000580 },                                          -- Shaman / Heal
-				{ 23, 2000686 },                                          -- Shaman / Ele
-				{ 24, 2000578 },                                          -- Shaman / Enh
-				{ 26, 2000690 },                                          -- Paladin / Heal
-				{ 27, 2000582 },                                          -- Paladin / Prot
-				{ 28, 2000583 },                                          -- Paladin / DD
+				{ 16, 2000579 },                                        -- Mage
+				{ 18, 2000685 },                                        -- Druid / Heal
+				{ 19, 2000585 },                                        -- Druid / Owl
+				{ 20, 2000584 },                                        -- Druid / Feral
+				{ 22, 2000580 },                                        -- Shaman / Heal
+				{ 23, 2000686 },                                        -- Shaman / Ele
+				{ 24, 2000578 },                                        -- Shaman / Enh
+				{ 26, 2000690 },                                        -- Paladin / Heal
+				{ 27, 2000582 },                                        -- Paladin / Prot
+				{ 28, 2000583 },                                        -- Paladin / DD
 			},
 		},
 		{
