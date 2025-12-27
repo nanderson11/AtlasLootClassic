@@ -3,7 +3,8 @@
 ## 3.6.1 -
 ### Fixed
 - Fixed text of Master Hammersmith
-- TBC: Removed some stray WOTLK items
+- TBC: Removed some stray WOTLK items in Blacksmithing
+- TBC: Fixed incorrect item in Badge of Justice P4 vendor Collection
 
 ## 3.6.0 - December 19, 2025
 ### Added
