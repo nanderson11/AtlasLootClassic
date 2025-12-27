@@ -56,49 +56,48 @@ local IngameLocales = {
 	-- ######################################################################
 	-- Faction standing
 	-- ######################################################################
-	["Hated"] = GetLocRepStanding(1),
-	["Hostile"] = GetLocRepStanding(2),
-	["Unfriendly"] = GetLocRepStanding(3),
-	["Neutral"] = GetLocRepStanding(4),
-	["Friendly"] = GetLocRepStanding(5),
-	["Honored"] = GetLocRepStanding(6),
-	["Revered"] = GetLocRepStanding(7),
-	["Exalted"] = GetLocRepStanding(8),
+	["Hated"]                              = GetLocRepStanding(1),
+	["Hostile"]                            = GetLocRepStanding(2),
+	["Unfriendly"]                         = GetLocRepStanding(3),
+	["Neutral"]                            = GetLocRepStanding(4),
+	["Friendly"]                           = GetLocRepStanding(5),
+	["Honored"]                            = GetLocRepStanding(6),
+	["Revered"]                            = GetLocRepStanding(7),
+	["Exalted"]                            = GetLocRepStanding(8),
 
 	-- ######################################################################
 	-- Professions
 	-- ######################################################################
-	["Professions"] = GLOBAL["TRADE_SKILLS"],
-	["First Aid"] = GetSpellInfo(3273),
-	["Blacksmithing"] = GetSpellInfo(2018),
-	["Leatherworking"] = GetSpellInfo(2108),
-	["Alchemy"] = GetSpellInfo(2259),
-	["Herbalism"] = GetSpellInfo(2366),
-	["Cooking"] = GetSpellInfo(2550),
-	["Mining"] = GetSpellInfo(2575),
-	["Tailoring"] = GetSpellInfo(3908),
-	["Engineering"] = GetSpellInfo(4036),
-	["Enchanting"] = GetSpellInfo(7411),
-	["Fishing"] = GetSpellInfo(7732),
-	["Skinning"] = GetSpellInfo(8618),
-	["Poisons"] = GetSpellInfo(2842),
-	["Jewelcrafting"] = GetSpellInfo(353970) or UNKNOWN,
-	["Inscription"] = GetSpellInfo(45357) or UNKNOWN,
+	["Professions"]                        = GLOBAL["TRADE_SKILLS"],
+	["First Aid"]                          = GetSpellInfo(3273),
+	["Blacksmithing"]                      = GetSpellInfo(2018),
+	["Leatherworking"]                     = GetSpellInfo(2108),
+	["Alchemy"]                            = GetSpellInfo(2259),
+	["Herbalism"]                          = GetSpellInfo(2366),
+	["Cooking"]                            = GetSpellInfo(2550),
+	["Mining"]                             = GetSpellInfo(2575),
+	["Tailoring"]                          = GetSpellInfo(3908),
+	["Engineering"]                        = GetSpellInfo(4036),
+	["Enchanting"]                         = GetSpellInfo(7411),
+	["Fishing"]                            = GetSpellInfo(7732),
+	["Skinning"]                           = GetSpellInfo(8618),
+	["Poisons"]                            = GetSpellInfo(2842),
+	["Jewelcrafting"]                      = GetSpellInfo(353970) or UNKNOWN,
+	["Inscription"]                        = GetSpellInfo(45357) or UNKNOWN,
 
 	-- sub Professions
-	["Armorsmith"] = GetSpellInfo(9788),
-	["Weaponsmith"] = GetSpellInfo(9787),
-	["Hammersmith"] = GetSpellInfo(17040),
-	["Axesmith"] = GetSpellInfo(17041),
-	["Swordsmith"] = GetSpellInfo(17039),
-	["Gnomish Engineer"] = GetSpellInfo(20220),
+	["Armorsmith"]                         = GetSpellInfo(9788),
+	["Weaponsmith"]                        = GetSpellInfo(9787),
+	["Hammersmith"]                        = GetSpellInfo(17040),
+	["Axesmith"]                           = GetSpellInfo(17041),
+	["Swordsmith"]                         = GetSpellInfo(17039),
+	["Gnomish Engineer"]                   = GetSpellInfo(20220),
 
 	-- glyphs
-	["Minor Glyph"] = GLOBAL["MINOR_GLYPH"],
-	["Minor Glyphs"] = GLOBAL["MINOR_GLYPHS"],
-	["Major Glyph"] = GLOBAL["MAJOR_GLYPH"],
-	["Major Glyphs"] = GLOBAL["MAJOR_GLYPHS"],
-
+	["Minor Glyph"]                        = GLOBAL["MINOR_GLYPH"],
+	["Minor Glyphs"]                       = GLOBAL["MINOR_GLYPHS"],
+	["Major Glyph"]                        = GLOBAL["MAJOR_GLYPH"],
+	["Major Glyphs"]                       = GLOBAL["MAJOR_GLYPHS"],
 
 	-- ######################################################################
 	-- Months
@@ -246,12 +245,15 @@ local IngameLocales = {
 	-- ######################################################################
 	-- Gems
 	-- ######################################################################
-	["Socket Gems"]                        = AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, GLOBAL["SOCKET_GEMS"], GLOBAL["SOCKETGLOBALEMS"]),
-	["Gems"]                               = AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, GLOBAL["AUCTION_CATEGORY_GEMS"], GLOBAL["AUCTION_CATEGORYGLOBALEMS"]),
-	["Meta"]                               = AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, GLOBAL["META_GEM"], GLOBAL["METAGLOBALEM"]),
-	["Red"]                                = AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, GLOBAL["RED_GEM"], GLOBAL["REDGLOBALEM"]),
-	["Yellow"]                             = AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, GLOBAL["YELLOW_GEM"], GLOBAL["YELLOWGLOBALEM"]),
-	["Blue"]                               = AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, GLOBAL["BLUE_GEM"], GLOBAL["BLUEGLOBALEM"]),
+	["Gems"]                               = GLOBAL["AUCTION_CATEGORY_GEMS"],
+	["Meta"]                               = GLOBAL["META_GEM"],
+	["Red"]                                = GLOBAL["RED_GEM"],
+	["Yellow"]                             = GLOBAL["YELLOW_GEM"],
+	["Blue"]                               = GLOBAL["BLUE_GEM"],
+	["Purple"]                             = GetItemSubClassInfo(3, 3),
+	["Green"]                              = GetItemSubClassInfo(3, 4),
+	["Orange"]                             = GetItemSubClassInfo(3, 5),
+
 	-- ######################################################################
 	-- Zones
 	-- ######################################################################
@@ -271,37 +273,36 @@ local IngameLocales = {
 	["WARRIOR"]                            = AtlasLootGLOBALetClassName("WARRIOR"),
 	["DEATHKNIGHT"]                        = AtlasLootGLOBALetClassName("DEATHKNIGHT"),
 
-
 	-- ######################################################################
 	-- Item Quality
 	-- ######################################################################
-	["Poor"]          = GLOBAL["ITEM_QUALITY0_DESC"],
-	["Common"]        = GLOBAL["ITEM_QUALITY1_DESC"],
-	["Uncommon"]      = GLOBAL["ITEM_QUALITY2_DESC"],
-	["Rare"]          = GLOBAL["ITEM_QUALITY3_DESC"],
-	["Epic"]          = GLOBAL["ITEM_QUALITY4_DESC"],
-	["Legendary"]     = GLOBAL["ITEM_QUALITY5_DESC"],
-	["Artifact"]      = GLOBAL["ITEM_QUALITY6_DESC"],
-	["Heirloom"]      = GLOBAL["ITEM_QUALITY7_DESC"],
+	["Poor"]                               = GLOBAL["ITEM_QUALITY0_DESC"],
+	["Common"]                             = GLOBAL["ITEM_QUALITY1_DESC"],
+	["Uncommon"]                           = GLOBAL["ITEM_QUALITY2_DESC"],
+	["Rare"]                               = GLOBAL["ITEM_QUALITY3_DESC"],
+	["Epic"]                               = GLOBAL["ITEM_QUALITY4_DESC"],
+	["Legendary"]                          = GLOBAL["ITEM_QUALITY5_DESC"],
+	["Artifact"]                           = GLOBAL["ITEM_QUALITY6_DESC"],
+	["Heirloom"]                           = GLOBAL["ITEM_QUALITY7_DESC"],
 
 	-- ######################################################################
 	-- Misc
 	-- ######################################################################
-	["Food"]          = GLOBAL["POWER_TYPE_FOOD"],
-	["Special"]       = GLOBAL["SPECIAL"],
-	["Mounts"]        = GLOBAL["MOUNTS"],
-	["Mount"]         = GLOBAL["MOUNT"],
-	["Pet"]           = GLOBAL["PET"],
-	["Pets"]          = GLOBAL["PETS"],
-	["Default"]       = GLOBAL["DEFAULT"],
-	["Settings"]      = GLOBAL["SETTINGS"],
-	["Dressing Room"] = GLOBAL["DRESSUP_FRAME"],
-	["Quest Item"]    = GLOBAL["ITEM_BIND_QUEST"],
-	["Collected"]     = GLOBAL["COLLECTED"],
-	["Not Collected"] = GLOBAL["NOT_COLLECTED"],
-	["Achievements"]  = GLOBAL["ACHIEVEMENTS"],
-	["Companions"]    = GLOBAL["COMPANIONS"],
-	["Currency"]      = GLOBAL["CURRENCY"],
+	["Food"]                               = GLOBAL["POWER_TYPE_FOOD"],
+	["Special"]                            = GLOBAL["SPECIAL"],
+	["Mounts"]                             = GLOBAL["MOUNTS"],
+	["Mount"]                              = GLOBAL["MOUNT"],
+	["Pet"]                                = GLOBAL["PET"],
+	["Pets"]                               = GLOBAL["PETS"],
+	["Default"]                            = GLOBAL["DEFAULT"],
+	["Settings"]                           = GLOBAL["SETTINGS"],
+	["Dressing Room"]                      = GLOBAL["DRESSUP_FRAME"],
+	["Quest Item"]                         = GLOBAL["ITEM_BIND_QUEST"],
+	["Collected"]                          = GLOBAL["COLLECTED"],
+	["Not Collected"]                      = GLOBAL["NOT_COLLECTED"],
+	["Achievements"]                       = GLOBAL["ACHIEVEMENTS"],
+	["Companions"]                         = GLOBAL["COMPANIONS"],
+	["Currency"]                           = GLOBAL["CURRENCY"],
 }
 AtlasLoot.IngameLocales = IngameLocales
 
