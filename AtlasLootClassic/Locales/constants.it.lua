@@ -25,7 +25,7 @@ if not AL then return end
 --[[Translation missing --]]
 --[[ AL["|cff00ff00Left-Click:|r %s"] = "|cff00ff00Left-Click:|r %s"--]]
 --[[Translation missing --]]
---[[ AL["|cff00ff00Left-Click:|r Show reagents."] = "|cff00ff00Left-Click:|r Show reagents."--]]
+--[[ AL["|cff00ff00Left-Click:|r Show reagents"] = "|cff00ff00Left-Click:|r Show reagents"--]]
 --[[Translation missing --]]
 --[[ AL["|cff00ff00Right-Click:|r Change Class"] = "|cff00ff00Right-Click:|r Change Class"--]]
 --[[Translation missing --]]

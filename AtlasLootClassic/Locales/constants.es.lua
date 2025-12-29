@@ -14,8 +14,8 @@ AL["/al options - Open AtlasLoot Options window."] = "/al options - Abre ventana
 AL["/al slash - Prints a list of all slash commands."] = "/al slash - Publica una lista de todos los comandos slash."
 AL["/al togglebg - Toggle the background image on loottables."] = "/al togglebg - Alterna el imagen de fondo en las tabla de botines"
 AL["|cff00ff00Left-Click:|r %s"] = "|cff00ff00Clic Izquierdo:|r %s"
-AL["|cff00ff00Left-Click:|r Show reagents."] = "|cff00ff00Clic Izquierdo:|r Zeige Reagenzien."
-AL["|cff00ff00Right-Click:|r Change Class"] = "|cff00ff00Clic-Derecho:|r Cambiar Clase"
+AL["|cff00ff00Left-Click:|r Show reagents"] = "|cff00ff00Clic Izquierdo:|r Mostrar componentes"
+AL["|cff00ff00Right-Click:|r Change Class"] = "|cff00ff00Clic Derecho:|r Cambiar Clase"
 AL["|cff00ff00Set item:|r "] = "|cff00ff00Equipo de conjunto:|r"
 --[[Translation missing --]]
 --[[ AL["10 Raid"] = "10 Raid"--]]

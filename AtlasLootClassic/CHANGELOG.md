@@ -1,6 +1,22 @@
 # Changelog
 
-## 3.5.0 -
+## 3.6.1 -
+### Added
+- TBC: Added content phases to various sections
+- TBC: Added category and group to TOC
+### Fixed
+- Fixed text of Master Hammersmith
+- TBC: Removed some stray WOTLK items in Blacksmithing
+- TBC: Fixed incorrect item in Badge of Justice P4 vendor Collection
+- TBC: Fixed Vengeful and Merciless Nether Drakes being in the wrong arena season
+
+## 3.6.0 - December 19, 2025
+### Added
+- Anniversary: Added support for TBC (item phase data to come later)
+### Fixed
+- Fixed models for boss fights with multiple creatures
+
+## 3.5.0 - December 17, 2025
 ### Added
 - SoD: Added items to Collections
 - SoD: Added vendor prices for PvP, Factions and Collections items

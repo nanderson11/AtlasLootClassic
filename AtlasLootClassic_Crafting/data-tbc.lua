@@ -2,7 +2,6 @@
 -- Upvalued Lua API.
 -----------------------------------------------------------------------
 local _G = getfenv(0)
-local select = _G.select
 local string = _G.string
 local format = string.format
 
@@ -16,8 +15,6 @@ local addonname, private = ...
 local AtlasLoot = _G.AtlasLoot
 if AtlasLoot:GameVersion_LT(AtlasLoot.BC_VERSION_NUM) then return end
 local data = AtlasLoot.ItemDB:Add(addonname, 1, AtlasLoot.BC_VERSION_NUM)
-
-local GetColorSkill = AtlasLoot.Data.Profession.GetColorSkillRankNoSpell
 
 local AL = AtlasLoot.Locales
 local ALIL = AtlasLoot.IngameLocales
@@ -39,9 +36,7 @@ local PROF_SEC_CONTENT = data:AddContentType(AL["Secondary Professions"], ATLASL
 local PROF_CLASS_CONTENT = data:AddContentType(AL["Class Professions"], ATLASLOOT_CLASSPROFESSION_COLOR)
 
 local SPLIT_FORMAT = "%s - %s"
-
 local GEM_FORMAT1 = ALIL["Gems"].." - %s"
-local GEM_FORMAT2 = ALIL["Gems"].." - %s & %s"
 
 data["AlchemyBC"] = {
 	name = ALIL["Alchemy"],
@@ -64,15 +59,15 @@ data["AlchemyBC"] = {
 		{
 			name = AL["Transmutes"],
 			[NORMAL_DIFF] = {
-				{ 1, 28581 }, -- Transmute: Primal Water to Shadow (385)
-				{ 2, 28580 }, -- Transmute: Primal Shadow to Water (385)
-				{ 3, 28582 }, -- Transmute: Primal Mana to Fire (385)
-				{ 4, 28584 }, -- Transmute: Primal Life to Earth (385)
-				{ 5, 28583 }, -- Transmute: Primal Fire to Mana (385)
-				{ 6, 28585 }, -- Transmute: Primal Earth to Life (385)
-				{ 7, 32766 }, -- Transmute: Skyfire Diamond (350)
-				{ 8, 32765 }, -- Transmute: Earthstorm Diamond (350)
-				{ 9, 29688 }, -- Transmute: Primal Might (350)
+				{ 1,  28581 }, -- Transmute: Primal Water to Shadow (385)
+				{ 2,  28580 }, -- Transmute: Primal Shadow to Water (385)
+				{ 3,  28582 }, -- Transmute: Primal Mana to Fire (385)
+				{ 4,  28584 }, -- Transmute: Primal Life to Earth (385)
+				{ 5,  28583 }, -- Transmute: Primal Fire to Mana (385)
+				{ 6,  28585 }, -- Transmute: Primal Earth to Life (385)
+				{ 7,  32766 }, -- Transmute: Skyfire Diamond (350)
+				{ 8,  32765 }, -- Transmute: Earthstorm Diamond (350)
+				{ 9,  29688 }, -- Transmute: Primal Might (350)
 				{ 10, 28569 }, -- Transmute: Primal Water to Air (350)
 				{ 11, 28568 }, -- Transmute: Primal Fire to Earth (350)
 				{ 12, 28567 }, -- Transmute: Primal Earth to Water (350)
@@ -82,11 +77,9 @@ data["AlchemyBC"] = {
 		{
 			name = AL["Healing/Mana Potions"],
 			[NORMAL_DIFF] = {
-				{ 1, 28586 }, -- Super Rejuvenation Potion (390)
-				{ 3, 28551 }, -- Super Healing Potion (340)
-				{ 4, 33732 }, -- Volatile Healing Potion (315)
-
-
+				{ 1,  28586 }, -- Super Rejuvenation Potion (390)
+				{ 3,  28551 }, -- Super Healing Potion (340)
+				{ 4,  33732 }, -- Volatile Healing Potion (315)
 				{ 16, 38961 }, -- Fel Mana Potion (360)
 				{ 17, 28555 }, -- Super Mana Potion (340)
 				{ 18, 33733 }, -- Unstable Mana Potion (325)
@@ -106,15 +99,15 @@ data["AlchemyBC"] = {
 		{
 			name = AL["Util Potions"],
 			[NORMAL_DIFF] = {
-				{ 1, 28579 }, -- Ironshield Potion (365)
-				{ 2, 28565 }, -- Destruction Potion (350)
-				{ 3, 28564 }, -- Haste Potion (350)
-				{ 4, 28563 }, -- Heroic Potion (350)
-				{ 5, 28562 }, -- Major Dreamless Sleep Potion (350)
-				{ 6, 38962 }, -- Fel Regeneration Potion (345)
-				{ 7, 45061 }, -- Mad Alchemist's Potion (335)
-				{ 8, 28554 }, -- Shrouding Potion (335)
-				{ 9, 28550 }, -- Insane Strength Potion (320)
+				{ 1,  28579 }, -- Ironshield Potion (365)
+				{ 2,  28565 }, -- Destruction Potion (350)
+				{ 3,  28564 }, -- Haste Potion (350)
+				{ 4,  28563 }, -- Heroic Potion (350)
+				{ 5,  28562 }, -- Major Dreamless Sleep Potion (350)
+				{ 6,  38962 }, -- Fel Regeneration Potion (345)
+				{ 7,  45061 }, -- Mad Alchemist's Potion (335)
+				{ 8,  28554 }, -- Shrouding Potion (335)
+				{ 9,  28550 }, -- Insane Strength Potion (320)
 				{ 10, 28546 }, -- Sneaking Potion (315)
 			},
 		},
@@ -122,15 +115,15 @@ data["AlchemyBC"] = {
 			name = AL["Elixirs"],
 			[NORMAL_DIFF] = {
 				--{ 1, 11478 }, --Elixir of Detect Demon
-				{ 1, 28578 }, -- Elixir of Empowerment (365)
-				{ 2, 28570 }, -- Elixir of Major Mageblood (355)
-				{ 3, 28558 }, -- Elixir of Major Shadow Power (350)
-				{ 4, 28557 }, -- Elixir of Major Defense (345)
-				{ 5, 28556 }, -- Elixir of Major Firepower (345)
-				{ 6, 39638 }, -- Elixir of Draenic Wisdom (335)
-				{ 7, 38960 }, -- Fel Strength Elixir (335)
-				{ 8, 39639 }, -- Elixir of Ironskin (330)
-				{ 9, 33741 }, -- Elixir of Mastery (330)
+				{ 1,  28578 }, -- Elixir of Empowerment (365)
+				{ 2,  28570 }, -- Elixir of Major Mageblood (355)
+				{ 3,  28558 }, -- Elixir of Major Shadow Power (350)
+				{ 4,  28557 }, -- Elixir of Major Defense (345)
+				{ 5,  28556 }, -- Elixir of Major Firepower (345)
+				{ 6,  39638 }, -- Elixir of Draenic Wisdom (335)
+				{ 7,  38960 }, -- Fel Strength Elixir (335)
+				{ 8,  39639 }, -- Elixir of Ironskin (330)
+				{ 9,  33741 }, -- Elixir of Mastery (330)
 				{ 10, 28553 }, -- Elixir of Major Agility (330)
 				{ 11, 39636 }, -- Elixir of Major Fortitude (325)
 				{ 12, 28552 }, -- Elixir of the Searching Eye (325)
@@ -156,10 +149,10 @@ data["AlchemyBC"] = {
 		{
 			name = AL["Stones"],
 			[NORMAL_DIFF] = {
-				{ 1, 47048 }, -- Sorcerer's Alchemist Stone (375)
-				{ 2, 47049 }, -- Redeemer's Alchemist Stone (375)
-				{ 3, 47046 }, -- Guardian's Alchemist Stone (375)
-				{ 4, 47050 }, -- Assassin's Alchemist Stone (375)
+				{ 1,  47048 }, -- Sorcerer's Alchemist Stone (375)
+				{ 2,  47049 }, -- Redeemer's Alchemist Stone (375)
+				{ 3,  47046 }, -- Guardian's Alchemist Stone (375)
+				{ 4,  47050 }, -- Assassin's Alchemist Stone (375)
 				{ 16, 38070 }, -- Mercurial Stone (340)
 			},
 		},
@@ -184,13 +177,13 @@ data["BlacksmithingBC"] = {
 		{
 			name = AL["Weapons"].." - "..AL["Axes"],
 			[NORMAL_DIFF] = {
-				{ 1, "INV_sword_04", nil, ALIL["One-Handed Axes"] },
-				{ 2, 36260 }, -- Wicked Edge of the Planes (385)
-				{ 3, 34542 }, -- Black Planar Edge (385)
-				{ 4, 34541 }, -- The Planar Edge (360)
-				{ 6, 29694 }, -- Fel Edged Battleaxe (365)
-				{ 7, 36134 }, -- Stormforged Axe (340)
-				{ 8, 29557 }, -- Fel Iron Hatchet (320)
+				{ 1,  "INV_sword_04", nil, ALIL["One-Handed Axes"] },
+				{ 2,  36260 }, -- Wicked Edge of the Planes (385)
+				{ 3,  34542 }, -- Black Planar Edge (385)
+				{ 4,  34541 }, -- The Planar Edge (360)
+				{ 6,  29694 }, -- Fel Edged Battleaxe (365)
+				{ 7,  36134 }, -- Stormforged Axe (340)
+				{ 8,  29557 }, -- Fel Iron Hatchet (320)
 				{ 10, 36126 }, -- Light Skyforged Axe (280)
 				{ 16, "INV_sword_04", nil, ALIL["Two-Handed Axes"] },
 				{ 17, 36261 }, -- Bloodmoon (385)
@@ -204,14 +197,14 @@ data["BlacksmithingBC"] = {
 		{
 			name = AL["Weapons"].." - "..AL["Maces"],
 			[NORMAL_DIFF] = {
-				{ 1, "INV_sword_04", nil, ALIL["One-Handed Maces"] },
-				{ 2, 36262 }, -- Dragonstrike (385)
-				{ 3, 34546 }, -- Dragonmaw (385)
-				{ 4, 34545 }, -- Drakefist Hammer (360)
-				{ 6, 29700 }, -- Hand of Eternity (365)
-				{ 7, 29696 }, -- Runic Hammer (365)
-				{ 8, 36136 }, -- Lavaforged Warhammer (340)
-				{ 9, 29558 }, -- Fel Iron Hammer (325)
+				{ 1,  "INV_sword_04", nil, ALIL["One-Handed Maces"] },
+				{ 2,  36262 }, -- Dragonstrike (385)
+				{ 3,  34546 }, -- Dragonmaw (385)
+				{ 4,  34545 }, -- Drakefist Hammer (360)
+				{ 6,  29700 }, -- Hand of Eternity (365)
+				{ 7,  29696 }, -- Runic Hammer (365)
+				{ 8,  36136 }, -- Lavaforged Warhammer (340)
+				{ 9,  29558 }, -- Fel Iron Hammer (325)
 				{ 11, 36128 }, -- Light Emberforged Hammer (280)
 				{ 16, "INV_sword_04", nil, ALIL["Two-Handed Maces"] },
 				{ 17, 36263 }, -- Stormherald (385)
@@ -226,13 +219,13 @@ data["BlacksmithingBC"] = {
 		{
 			name = AL["Weapons"].." - "..AL["Swords"],
 			[NORMAL_DIFF] = {
-				{ 1, "INV_sword_04", nil, ALIL["One-Handed Swords"] },
-				{ 2, 36258 }, -- Blazefury (385)
-				{ 3, 34537 }, -- Blazeguard (385)
-				{ 4, 34535 }, -- Fireguard (360)
-				{ 6, 29692 }, -- Felsteel Longblade (365)
-				{ 7, 29571 }, -- Adamantite Rapier (335)
-				{ 8, 36131 }, -- Windforged Rapier (340)
+				{ 1,  "INV_sword_04", nil, ALIL["One-Handed Swords"] },
+				{ 2,  36258 }, -- Blazefury (385)
+				{ 3,  34537 }, -- Blazeguard (385)
+				{ 4,  34535 }, -- Fireguard (360)
+				{ 6,  29692 }, -- Felsteel Longblade (365)
+				{ 7,  29571 }, -- Adamantite Rapier (335)
+				{ 8,  36131 }, -- Windforged Rapier (340)
 				{ 10, 36125 }, -- Light Earthforged Blade (280)
 				{ 16, "INV_sword_06", nil, ALIL["Two-Handed Swords"] },
 				{ 17, 36259 }, -- Lionheart Executioner (385)
@@ -280,18 +273,18 @@ data["BlacksmithingBC"] = {
 		{
 			name = AL["Armor"].." - "..ALIL["Chest"],
 			[MAIL_DIFF] = {
-				{ 1, 36256 }, -- Embrace of the Twisting Nether (385)
-				{ 2, 34530 }, -- Twisting Nether Chain Shirt (385)
-				{ 3, 34529 }, -- Nether Chain Shirt (360)
+				{ 1,  36256 }, -- Embrace of the Twisting Nether (385)
+				{ 2,  34530 }, -- Twisting Nether Chain Shirt (385)
+				{ 3,  34529 }, -- Nether Chain Shirt (360)
 
 				{ 16, 29649 }, -- Earthpeace Breastplate (370)
 				{ 17, 36130 }, -- Stormforged Hauberk (340)
 				{ 18, 29556 }, -- Fel Iron Chain Tunic (330)
 			},
 			[PLATE_DIFF] = {
-				{ 1, 36257 }, -- Bulwark of the Ancient Kings (385)
-				{ 2, 34534 }, -- Bulwark of Kings (385)
-				{ 3, 34533 }, -- Breastplate of Kings (360)
+				{ 1,  36257 }, -- Bulwark of the Ancient Kings (385)
+				{ 2,  34534 }, -- Bulwark of Kings (385)
+				{ 3,  34533 }, -- Breastplate of Kings (360)
 
 				{ 16, 38477 }, -- Iceguard Breastplate (375)
 				{ 17, 38473 }, -- Wildguard Breastplate (375)
@@ -379,82 +372,77 @@ data["BlacksmithingBC"] = {
 		{
 			name = ALIL["Armorsmith"],
 			[MAIL_DIFF] = {
-				{ 1, 36256 },	-- Embrace of the Twisting Nether
-				{ 2, 34530 },	-- Twisting Nether Chain Shirt
-				{ 3, 34529 },	-- Nether Chain Shirt
-				{ 4, 36130 },	-- Stormforged Hauberk
-				{ 5, 36124 },	-- Windforged Leggings
+				{ 1, 36256 }, -- Embrace of the Twisting Nether
+				{ 2, 34530 }, -- Twisting Nether Chain Shirt
+				{ 3, 34529 }, -- Nether Chain Shirt
+				{ 4, 36130 }, -- Stormforged Hauberk
+				{ 5, 36124 }, -- Windforged Leggings
 			},
 			[PLATE_DIFF] = {
-				{ 1, 55186 },	-- Chestplate of Conquest
-				{ 2, 55187 },	-- Legplates of Conquest
-				{ 3, 36257 },	-- Bulwark of the Ancient Kings
-				{ 4, 34534 },	-- Bulwark of Kings
-				{ 5, 34533 },	-- Breastplate of Kings
-				{ 6, 36129 },	-- Heavy Earthforged Breastplate
-				{ 7, 36122 },	-- Earthforged Leggings
+				{ 1, 36257 }, -- Bulwark of the Ancient Kings
+				{ 2, 34534 }, -- Bulwark of Kings
+				{ 3, 34533 }, -- Breastplate of Kings
+				{ 4, 36129 }, -- Heavy Earthforged Breastplate
+				{ 5, 36122 }, -- Earthforged Leggings
 			},
 		},
 		{
 			name = ALIL["Weaponsmith"],
 			[NORMAL_DIFF] = {
-				{ 1, 55185 },	-- Saronite Mindcrusher
-				{ 2, 55184 },	-- Corroded Saronite Woundbringer
-				{ 3, 55183 },	-- Corroded Saronite Edge
-				{ 4, 36126 },	-- Light Skyforged Axe
-				{ 5, 36128 },	-- Light Emberforged Hammer
-				{ 6, 36125 },	-- Light Earthforged Blade
+				{ 1, 36126 }, -- Light Skyforged Axe
+				{ 2, 36128 }, -- Light Emberforged Hammer
+				{ 3, 36125 }, -- Light Earthforged Blade
 			},
 		},
 		{
 			name = ALIL["Axesmith"],
 			[NORMAL_DIFF] = {
-				{ 1, 36260 },	-- Wicked Edge of the Planes
-				{ 2, 36261 },	-- Bloodmoon
-				{ 3, 34542 },	-- Black Planar Edge
-				{ 4, 34544 },	-- Mooncleaver
-				{ 5, 34541 },	-- The Planar Edge
-				{ 6, 34543 },	-- Lunar Crescent
-				{ 7, 36134 },	-- Stormforged Axe
-				{ 8, 36135 },	-- Skyforged Great Axe
+				{ 1, 36260 }, -- Wicked Edge of the Planes
+				{ 2, 36261 }, -- Bloodmoon
+				{ 3, 34542 }, -- Black Planar Edge
+				{ 4, 34544 }, -- Mooncleaver
+				{ 5, 34541 }, -- The Planar Edge
+				{ 6, 34543 }, -- Lunar Crescent
+				{ 7, 36134 }, -- Stormforged Axe
+				{ 8, 36135 }, -- Skyforged Great Axe
 			},
 		},
 		{
 			name = ALIL["Hammersmith"],
 			[NORMAL_DIFF] = {
-				{ 1, 36262 },	-- Dragonstrike
-				{ 2, 36263 },	-- Stormherald
-				{ 3, 34546 },	-- Dragonmaw
-				{ 4, 34548 },	-- Deep Thunder
-				{ 5, 34545 },	-- Drakefist Hammer
-				{ 6, 34547 },	-- Thunder
-				{ 7, 36136 },	-- Lavaforged Warhammer
-				{ 8, 36137 },	-- Great Earthforged Hammer
+				{ 1, 36262 }, -- Dragonstrike
+				{ 2, 36263 }, -- Stormherald
+				{ 3, 34546 }, -- Dragonmaw
+				{ 4, 34548 }, -- Deep Thunder
+				{ 5, 34545 }, -- Drakefist Hammer
+				{ 6, 34547 }, -- Thunder
+				{ 7, 36136 }, -- Lavaforged Warhammer
+				{ 8, 36137 }, -- Great Earthforged Hammer
 			},
 		},
 		{
 			name = ALIL["Swordsmith"],
 			[NORMAL_DIFF] = {
-				{ 1, 36258 },	-- Blazefury
-				{ 2, 36259 },	-- Lionheart Executioner
-				{ 3, 34537 },	-- Blazeguard
-				{ 4, 34540 },	-- Lionheart Champion
-				{ 5, 34535 },	-- Fireguard
-				{ 6, 34538 },	-- Lionheart Blade
-				{ 7, 36131 },	-- Windforged Rapier
-				{ 8, 36133 },	-- Stoneforged Claymore
+				{ 1, 36258 }, -- Blazefury
+				{ 2, 36259 }, -- Lionheart Executioner
+				{ 3, 34537 }, -- Blazeguard
+				{ 4, 34540 }, -- Lionheart Champion
+				{ 5, 34535 }, -- Fireguard
+				{ 6, 34538 }, -- Lionheart Blade
+				{ 7, 36131 }, -- Windforged Rapier
+				{ 8, 36133 }, -- Stoneforged Claymore
 			},
 		},
 		{
 			name = AL["Misc"],
 			[NORMAL_DIFF] = {
-				{ 1, 32657 }, -- Eternium Rod (375)
-				{ 2, 32656 }, -- Adamantite Rod (350)
-				{ 3, 32655 }, -- Fel Iron Rod (300)
-				{ 5, 34608 }, -- Adamantite Weightstone (350)
-				{ 6, 34607 }, -- Fel Weightstone (300)
-				{ 8, 29729 }, -- Greater Ward of Shielding (375)
-				{ 9, 29728 }, -- Lesser Ward of Shielding (340)
+				{ 1,  32657 }, -- Eternium Rod (375)
+				{ 2,  32656 }, -- Adamantite Rod (350)
+				{ 3,  32655 }, -- Fel Iron Rod (300)
+				{ 5,  34608 }, -- Adamantite Weightstone (350)
+				{ 6,  34607 }, -- Fel Weightstone (300)
+				{ 8,  29729 }, -- Greater Ward of Shielding (375)
+				{ 9,  29728 }, -- Lesser Ward of Shielding (340)
 				{ 16, 42688 }, -- Adamantite Weapon Chain (335)
 				{ 18, 29657 }, -- Felsteel Shield Spike (360)
 				{ 20, 29656 }, -- Adamantite Sharpening Stone (350)
@@ -476,15 +464,15 @@ data["EnchantingBC"] = {
 		{
 			name = ALIL["Weapon"].." - "..AL["Enhancements"],
 			[NORMAL_DIFF] = {
-				{ 1, 42974 }, -- Enchant Weapon - Executioner (375)
-				{ 2, 27982 }, -- Enchant Weapon - Soulfrost (375)
-				{ 3, 27981 }, -- Enchant Weapon - Sunfire (375)
-				{ 4, 27984 }, -- Enchant Weapon - Mongoose (375)
-				{ 5, 28003 }, -- Enchant Weapon - Spellsurge (360)
-				{ 6, 28004 }, -- Enchant Weapon - Battlemaster (360)
-				{ 7, 46578 }, -- Enchant Weapon - Deathfrost (350)
-				{ 8, 42620 }, -- Enchant Weapon - Greater Agility (350)
-				{ 9, 34010 }, -- Enchant Weapon - Major Healing (350)
+				{ 1,  42974 }, -- Enchant Weapon - Executioner (375)
+				{ 2,  27982 }, -- Enchant Weapon - Soulfrost (375)
+				{ 3,  27981 }, -- Enchant Weapon - Sunfire (375)
+				{ 4,  27984 }, -- Enchant Weapon - Mongoose (375)
+				{ 5,  28003 }, -- Enchant Weapon - Spellsurge (360)
+				{ 6,  28004 }, -- Enchant Weapon - Battlemaster (360)
+				{ 7,  46578 }, -- Enchant Weapon - Deathfrost (350)
+				{ 8,  42620 }, -- Enchant Weapon - Greater Agility (350)
+				{ 9,  34010 }, -- Enchant Weapon - Major Healing (350)
 				{ 10, 27975 }, -- Enchant Weapon - Major Spellpower (350)
 				{ 11, 27972 }, -- Enchant Weapon - Potency (350)
 				{ 12, 27968 }, -- Enchant Weapon - Major Intellect (340)
@@ -501,15 +489,15 @@ data["EnchantingBC"] = {
 		{
 			name = ALIL["Cloak"].." - "..AL["Enhancements"],
 			[NORMAL_DIFF] = {
-				{ 1, 47051 }, -- Enchant Cloak - Steelweave (375)
-				{ 2, 34006 }, -- Enchant Cloak - Greater Shadow Resistance (350)
-				{ 3, 34005 }, -- Enchant Cloak - Greater Arcane Resistance (350)
-				{ 4, 27962 }, -- Enchant Cloak - Major Resistance (330)
-				{ 5, 34003 }, -- Enchant Cloak - Spell Penetration (325)
-				{ 6, 34004 }, -- Enchant Cloak - Greater Agility (320)
-				{ 7, 27961 }, -- Enchant Cloak - Major Armor (320)
-				{ 8, 25086 }, -- Enchant Cloak - Dodge (320)
-				{ 9, 25081 }, -- Enchant Cloak - Greater Fire Resistance (320)
+				{ 1,  47051 }, -- Enchant Cloak - Steelweave (375)
+				{ 2,  34006 }, -- Enchant Cloak - Greater Shadow Resistance (350)
+				{ 3,  34005 }, -- Enchant Cloak - Greater Arcane Resistance (350)
+				{ 4,  27962 }, -- Enchant Cloak - Major Resistance (330)
+				{ 5,  34003 }, -- Enchant Cloak - Spell Penetration (325)
+				{ 6,  34004 }, -- Enchant Cloak - Greater Agility (320)
+				{ 7,  27961 }, -- Enchant Cloak - Major Armor (320)
+				{ 8,  25086 }, -- Enchant Cloak - Dodge (320)
+				{ 9,  25081 }, -- Enchant Cloak - Greater Fire Resistance (320)
 				{ 10, 25082 }, --Enchant Cloak - Greater Nature Resistance (320)
 				{ 11, 25084 }, --Enchant Cloak - Subtlety (320)
 				{ 12, 25083 }, --Enchant Cloak - Stealth (320)
@@ -588,12 +576,12 @@ data["EnchantingBC"] = {
 		{
 			name = AL["Misc"],
 			[NORMAL_DIFF] = {
-				{ 1, 28019 }, -- Superior Wizard Oil (340)
-				{ 2, 28016 }, -- Superior Mana Oil (310)
-				{ 5, 45765 }, -- Void Shatter (375)
-				{ 6, 28022 }, -- Large Prismatic Shard (335)
-				{ 7, 42615 }, -- Small Prismatic Shard (315)
-				{ 8, 42613 }, -- Nexus Transformation (295)
+				{ 1,  28019 }, -- Superior Wizard Oil (340)
+				{ 2,  28016 }, -- Superior Mana Oil (310)
+				{ 5,  45765 }, -- Void Shatter (375)
+				{ 6,  28022 }, -- Large Prismatic Shard (335)
+				{ 7,  42615 }, -- Small Prismatic Shard (315)
+				{ 8,  42613 }, -- Nexus Transformation (295)
 				--{ 10, 28021 }, -- Arcane Dust (undefined) (Never added to the retail game)
 				{ 16, 32667 }, -- Runed Eternium Rod (375)
 				{ 17, 32665 }, -- Runed Adamantite Rod (350)
@@ -615,34 +603,34 @@ data["EngineeringBC"] = {
 		{
 			name = AL["Armor"],
 			[NORMAL_DIFF] = {
-				{ 1, 46697 }, -- Rocket Boots Xtreme Lite (355)
-				{ 2, 30556 }, -- Rocket Boots Xtreme (355)
+				{ 1,  46697 }, -- Rocket Boots Xtreme Lite (355)
+				{ 2,  30556 }, -- Rocket Boots Xtreme (355)
 				{ 16, 30570 }, -- Nigh-Invulnerability Belt (360)
 			}
 		},
 		{
 			name = AL["Armor"].." - "..ALIL["Head"].." - "..ALIL["Cloth"],
 			[NORMAL_DIFF] = {
-				{ 1, 46111 }, -- Annihilator Holo-Gogs (375)
-				{ 2, 41320 }, -- Destruction Holo-gogs (370)
+				{ 1,  46111 }, -- Annihilator Holo-Gogs (375)
+				{ 2,  41320 }, -- Destruction Holo-gogs (370)
 				{ 16, 46108 }, -- Powerheal 9000 Lens (375)
 				{ 17, 41321 }, -- Powerheal 4000 Lens (370)
-				{ 4, 30565 }, -- Foreman's Enchanted Helmet (375)
-				{ 5, 30574 }, -- Gnomish Power Goggles (375)
-				{ 6, 30318 }, -- Ultra-Spectropic Detection Goggles (350)
-				{ 7, 30317 }, -- Power Amplification Goggles (340)
+				{ 4,  30565 }, -- Foreman's Enchanted Helmet (375)
+				{ 5,  30574 }, -- Gnomish Power Goggles (375)
+				{ 6,  30318 }, -- Ultra-Spectropic Detection Goggles (350)
+				{ 7,  30317 }, -- Power Amplification Goggles (340)
 			}
 		},
 		{
 			name = AL["Armor"].." - "..ALIL["Head"].." - "..ALIL["Leather"],
 			[NORMAL_DIFF] = {
-				{ 1, 46106 }, -- Wonderheal XT68 Shades (375)
-				{ 2, 41318 }, -- Wonderheal XT40 Shades (370)
-				{ 4, 46116 }, -- Quad Deathblow X44 Goggles (375)
-				{ 5, 41317 }, -- Deathblow X11 Goggles (370)
-				{ 7, 30575 }, -- Gnomish Battle Goggles (375)
-				{ 8, 30325 }, -- Hyper-Vision Goggles (360)
-				{ 9, 30316 }, -- Cogspinner Goggles (340)
+				{ 1,  46106 }, -- Wonderheal XT68 Shades (375)
+				{ 2,  41318 }, -- Wonderheal XT40 Shades (370)
+				{ 4,  46116 }, -- Quad Deathblow X44 Goggles (375)
+				{ 5,  41317 }, -- Deathblow X11 Goggles (370)
+				{ 7,  30575 }, -- Gnomish Battle Goggles (375)
+				{ 8,  30325 }, -- Hyper-Vision Goggles (360)
+				{ 9,  30316 }, -- Cogspinner Goggles (340)
 				{ 16, 46109 }, -- Hyper-Magnified Moon Specs (375)
 				{ 17, 41319 }, -- Magnified Moon Specs (370)
 			}
@@ -650,11 +638,11 @@ data["EngineeringBC"] = {
 		{
 			name = AL["Armor"].." - "..ALIL["Head"].." - "..ALIL["Mail"],
 			[NORMAL_DIFF] = {
-				{ 1, 46112 }, -- Lightning Etched Specs (375)
-				{ 2, 41315 }, -- Gadgetstorm Goggles (370)
-				{ 4, 46113 }, -- Surestrike Goggles v3.0 (375)
-				{ 5, 41314 }, -- Surestrike Goggles v2.0 (370)
-				{ 7, 30566 }, -- Foreman's Reinforced Helmet (375)
+				{ 1,  46112 }, -- Lightning Etched Specs (375)
+				{ 2,  41315 }, -- Gadgetstorm Goggles (370)
+				{ 4,  46113 }, -- Surestrike Goggles v3.0 (375)
+				{ 5,  41314 }, -- Surestrike Goggles v2.0 (370)
+				{ 7,  30566 }, -- Foreman's Reinforced Helmet (375)
 				{ 16, 46110 }, -- Primal-Attuned Goggles (375)
 				{ 17, 41316 }, -- Living Replicator Specs (370)
 			}
@@ -662,10 +650,10 @@ data["EngineeringBC"] = {
 		{
 			name = AL["Armor"].." - "..ALIL["Head"].." - "..ALIL["Plate"],
 			[NORMAL_DIFF] = {
-				{ 1, 46115 }, -- Hard Khorium Goggles (375)
-				{ 2, 41312 }, -- Tankatronic Goggles (370)
-				{ 4, 46114 }, -- Mayhem Projection Goggles (375)
-				{ 5, 40274 }, -- Furious Gizmatic Goggles (370)
+				{ 1,  46115 }, -- Hard Khorium Goggles (375)
+				{ 2,  41312 }, -- Tankatronic Goggles (370)
+				{ 4,  46114 }, -- Mayhem Projection Goggles (375)
+				{ 5,  40274 }, -- Furious Gizmatic Goggles (370)
 				{ 16, 46107 }, -- Justicebringer 3000 Specs (375)
 				{ 17, 41311 }, -- Justicebringer 2000 Specs (370)
 			}
@@ -673,8 +661,8 @@ data["EngineeringBC"] = {
 		{
 			name = AL["Armor"].." - "..ALIL["Trinket"],
 			[NORMAL_DIFF] = {
-				{ 1, 30563 }, -- Goblin Rocket Launcher (360)
-				{ 2, 30569 }, -- Gnomish Poultryizer (360)
+				{ 1,  30563 }, -- Goblin Rocket Launcher (360)
+				{ 2,  30569 }, -- Gnomish Poultryizer (360)
 				{ 16, 36955 }, -- Ultrasafe Transporter - Toshley's Station (350)
 				{ 17, 36954 }, -- Dimensional Ripper - Area 52 (350)
 			}
@@ -699,22 +687,22 @@ data["EngineeringBC"] = {
 		{
 			name = ALIL["Projectile"],
 			[NORMAL_DIFF] = {
-				{ 1, 30347, 23773 }, -- Adamantite Shell Machine (335)
-				{ 3, 30346 }, -- Fel Iron Shells (310)
+				{ 1,  30347, 23773 }, -- Adamantite Shell Machine (335)
+				{ 3,  30346 }, -- Fel Iron Shells (310)
 				{ 16, 43676, 33803 }, -- Adamantite Arrow Maker (335)
 			}
 		},
 		{
 			name = ALIL["Parts"],
 			[NORMAL_DIFF] = {
-				{ 1, 30308 }, -- Khorium Power Core (350)
-				{ 2, 30309 }, -- Felsteel Stabilizer (350)
-				{ 3, 30307 }, -- Hardened Adamantite Tube (350)
-				{ 4, 39971 }, -- Icy Blasting Primers (335)
-				{ 5, 30306 }, -- Adamantite Frame (325)
-				{ 6, 30303 }, -- Elemental Blasting Powder (300)
-				{ 7, 30305 }, -- Handful of Fel Iron Bolts (300)
-				{ 8, 30304 }, -- Fel Iron Casing (300)
+				{ 1,  30308 }, -- Khorium Power Core (350)
+				{ 2,  30309 }, -- Felsteel Stabilizer (350)
+				{ 3,  30307 }, -- Hardened Adamantite Tube (350)
+				{ 4,  39971 }, -- Icy Blasting Primers (335)
+				{ 5,  30306 }, -- Adamantite Frame (325)
+				{ 6,  30303 }, -- Elemental Blasting Powder (300)
+				{ 7,  30305 }, -- Handful of Fel Iron Bolts (300)
+				{ 8,  30304 }, -- Fel Iron Casing (300)
 				{ 10, 39895 }, -- Fused Wiring (275)
 			}
 		},
@@ -731,11 +719,11 @@ data["EngineeringBC"] = {
 		{
 			name = ALIL["Explosives"],
 			[NORMAL_DIFF] = {
-				{ 1, 39973 }, -- Frost Grenades (345)
-				{ 2, 30560 }, -- Super Sapper Charge (340)
-				{ 3, 30311 }, -- Adamantite Grenade (335)
-				{ 4, 30558 }, -- The Bigger One (325)
-				{ 5, 30310 }, -- Fel Iron Bomb (320)
+				{ 1,  39973 }, -- Frost Grenades (345)
+				{ 2,  30560 }, -- Super Sapper Charge (340)
+				{ 3,  30311 }, -- Adamantite Grenade (335)
+				{ 4,  30558 }, -- The Bigger One (325)
+				{ 5,  30310 }, -- Fel Iron Bomb (320)
 				{ 16, 30568 }, -- Gnomish Flame Turret (335)
 			}
 		},
@@ -748,14 +736,14 @@ data["EngineeringBC"] = {
 		{
 			name = AL["Misc"],
 			[NORMAL_DIFF] = {
-				{ 1, 44157 }, -- Turbo-Charged Flying Machine (385)
-				{ 2, 44155 }, -- Flying Machine (375)
-				{ 4, 30349 }, -- Khorium Toolbox (350)
-				{ 5, 30348 }, -- Fel Iron Toolbox (325)
-				{ 7, 30552 }, -- Mana Potion Injector (345)
-				{ 8, 30551 }, -- Healing Potion Injector (330)
+				{ 1,  44157 }, -- Turbo-Charged Flying Machine (385)
+				{ 2,  44155 }, -- Flying Machine (375)
+				{ 4,  30349 }, -- Khorium Toolbox (350)
+				{ 5,  30348 }, -- Fel Iron Toolbox (325)
+				{ 7,  30552 }, -- Mana Potion Injector (345)
+				{ 8,  30551 }, -- Healing Potion Injector (330)
 				{ 10, 23078 }, -- Goblin Jumper Cables XL (265) (got updated from classic-era and is not a trinket anymore)
-				{ 11, 9273 },  -- Goblin Jumper Cables (165) (got updated from classic-era and is not a trinket anymore)
+				{ 11, 9273 }, -- Goblin Jumper Cables (165) (got updated from classic-era and is not a trinket anymore)
 				{ 16, 30548 }, -- Zapthrottle Mote Extractor (305)
 				{ 18, 44391 }, -- Field Repair Bot 110G (360)
 				{ 20, 30547 }, -- Elemental Seaforium Charge (350)
@@ -810,15 +798,15 @@ data["TailoringBC"] = {
 		{
 			name = AL["Armor"].." - "..ALIL["Chest"],
 			[NORMAL_DIFF] = {
-				{ 1, 26762 }, -- Primal Mooncloth Robe (375)
-				{ 2, 26758 }, -- Frozen Shadoweave Robe (375)
-				{ 3, 26754 }, -- Spellfire Robe (375)
-				{ 4, 26781 }, -- Soulcloth Vest (375)
-				{ 5, 37884 }, -- Flameheart Vest (370)
-				{ 6, 26784 }, -- Arcanoweave Robe (370)
-				{ 7, 46130 }, -- Sunfire Robe (365)
-				{ 8, 46131 }, -- Robe of Eternal Light (365)
-				{ 9, 26778 }, -- Imbued Netherweave Tunic (360)
+				{ 1,  26762 }, -- Primal Mooncloth Robe (375)
+				{ 2,  26758 }, -- Frozen Shadoweave Robe (375)
+				{ 3,  26754 }, -- Spellfire Robe (375)
+				{ 4,  26781 }, -- Soulcloth Vest (375)
+				{ 5,  37884 }, -- Flameheart Vest (370)
+				{ 6,  26784 }, -- Arcanoweave Robe (370)
+				{ 7,  46130 }, -- Sunfire Robe (365)
+				{ 8,  46131 }, -- Robe of Eternal Light (365)
+				{ 9,  26778 }, -- Imbued Netherweave Tunic (360)
 				{ 10, 26777 }, -- Imbued Netherweave Robe (360)
 				{ 11, 36665 }, -- Netherflame Robe (355)
 				{ 12, 26774 }, -- Netherweave Tunic (345)
@@ -831,14 +819,14 @@ data["TailoringBC"] = {
 		{
 			name = AL["Armor"].." - "..ALIL["Feet"],
 			[NORMAL_DIFF] = {
-				{ 1, 40020 }, -- Soulguard Slippers (375)
-				{ 2, 36318 }, -- Boots of the Long Road (375)
-				{ 3, 36317 }, -- Boots of Blasting (375)
-				{ 4, 26757 }, -- Frozen Shadoweave Boots (365)
-				{ 5, 26783 }, -- Arcanoweave Boots (360)
-				{ 6, 36668 }, -- Netherflame Boots (355)
-				{ 7, 26776 }, -- Imbued Netherweave Boots (350)
-				{ 8, 26772 }, -- Netherweave Boots (345)
+				{ 1,  40020 }, -- Soulguard Slippers (375)
+				{ 2,  36318 }, -- Boots of the Long Road (375)
+				{ 3,  36317 }, -- Boots of Blasting (375)
+				{ 4,  26757 }, -- Frozen Shadoweave Boots (365)
+				{ 5,  26783 }, -- Arcanoweave Boots (360)
+				{ 6,  36668 }, -- Netherflame Boots (355)
+				{ 7,  26776 }, -- Imbued Netherweave Boots (350)
+				{ 8,  26772 }, -- Netherweave Boots (345)
 				{ 16, 49677 }, -- Dress Shoes (250)
 			}
 		},
@@ -856,28 +844,28 @@ data["TailoringBC"] = {
 		{
 			name = AL["Armor"].." - "..ALIL["Legs"],
 			[NORMAL_DIFF] = {
-				{ 1, 40023 }, -- Soulguard Leggings (375)
-				{ 2, 31453 }, -- Battlecast Pants (375)
-				{ 3, 31452 }, -- Spellstrike Pants (375)
-				{ 4, 31451 }, -- Whitemend Pants (375)
-				{ 5, 36669 }, -- Lifeblood Leggings (undefined)
-				{ 6, 26775 }, -- Imbued Netherweave Pants (340)
-				{ 7, 26771 }, -- Netherweave Pants (335)
+				{ 1,  40023 }, -- Soulguard Leggings (375)
+				{ 2,  31453 }, -- Battlecast Pants (375)
+				{ 3,  31452 }, -- Spellstrike Pants (375)
+				{ 4,  31451 }, -- Whitemend Pants (375)
+				{ 5,  36669 }, -- Lifeblood Leggings (undefined)
+				{ 6,  26775 }, -- Imbued Netherweave Pants (340)
+				{ 7,  26771 }, -- Netherweave Pants (335)
 				{ 16, 50647 }, -- Haliscan Pantaloons (245)
 			}
 		},
 		{
 			name = AL["Armor"].." - "..ALIL["Waist"],
 			[NORMAL_DIFF] = {
-				{ 1, 40024 }, -- Soulguard Girdle (375)
-				{ 2, 36316 }, -- Belt of the Long Road (375)
-				{ 3, 36315 }, -- Belt of Blasting (375)
-				{ 4, 31443 }, -- Girdle of Ruination (365)
-				{ 5, 31442 }, -- Unyielding Girdle (365)
-				{ 6, 31444 }, -- Black Belt of Knowledge (365)
-				{ 7, 36667 }, -- Netherflame Belt (undefined)
-				{ 8, 36670 }, -- Lifeblood Belt (undefined)
-				{ 9, 26760 }, -- Primal Mooncloth Belt (355)
+				{ 1,  40024 }, -- Soulguard Girdle (375)
+				{ 2,  36316 }, -- Belt of the Long Road (375)
+				{ 3,  36315 }, -- Belt of Blasting (375)
+				{ 4,  31443 }, -- Girdle of Ruination (365)
+				{ 5,  31442 }, -- Unyielding Girdle (365)
+				{ 6,  31444 }, -- Black Belt of Knowledge (365)
+				{ 7,  36667 }, -- Netherflame Belt (undefined)
+				{ 8,  36670 }, -- Lifeblood Belt (undefined)
+				{ 9,  26760 }, -- Primal Mooncloth Belt (355)
 				{ 10, 26752 }, -- Spellfire Belt (355)
 				{ 11, 26765 }, -- Netherweave Belt (320)
 			}
@@ -885,24 +873,24 @@ data["TailoringBC"] = {
 		{
 			name = AL["Armor"].." - "..ALIL["Wrist"],
 			[NORMAL_DIFF] = {
-				{ 1, 41207 }, -- Swiftheal Wraps (375)
-				{ 2, 41205 }, -- Bracers of Nimble Thought (375)
-				{ 3, 40021 }, -- Soulguard Bracers (375)
-				{ 4, 36672 }, -- Lifeblood Bracers (355)
-				{ 5, 37882 }, -- Flameheart Bracers (350)
-				{ 6, 31437 }, -- Blackstrike Bracers (350)
-				{ 7, 31435 }, -- Bracers of Havok (350)
-				{ 8, 31434 }, -- Unyielding Bracers (350)
-				{ 9, 26782 }, -- Arcanoweave Bracers (350)
+				{ 1,  41207 }, -- Swiftheal Wraps (375)
+				{ 2,  41205 }, -- Bracers of Nimble Thought (375)
+				{ 3,  40021 }, -- Soulguard Bracers (375)
+				{ 4,  36672 }, -- Lifeblood Bracers (355)
+				{ 5,  37882 }, -- Flameheart Bracers (350)
+				{ 6,  31437 }, -- Blackstrike Bracers (350)
+				{ 7,  31435 }, -- Bracers of Havok (350)
+				{ 8,  31434 }, -- Unyielding Bracers (350)
+				{ 9,  26782 }, -- Arcanoweave Bracers (350)
 				{ 10, 26764 }, -- Netherweave Bracers (320)
 			}
 		},
 		{
 			name = ALIL["Bag"],
 			[NORMAL_DIFF] = {
-				{ 1, 26763 }, -- Primal Mooncloth Bag (375)
-				{ 2, 26749 }, -- Imbued Netherweave Bag (340)
-				{ 3, 26746 }, -- Netherweave Bag (320)
+				{ 1,  26763 }, -- Primal Mooncloth Bag (375)
+				{ 2,  26749 }, -- Imbued Netherweave Bag (340)
+				{ 3,  26746 }, -- Netherweave Bag (320)
 				{ 16, 50194 }, -- Mycah's Botanical Bag (375)
 				{ 18, 26759 }, -- Ebon Shadowbag (375)
 				{ 20, 26755 }, -- Spellfire Bag (375)
@@ -912,8 +900,8 @@ data["TailoringBC"] = {
 		{
 			name = AL["Enhancements"],
 			[NORMAL_DIFF] = {
-				{ 1, 31433 }, -- Golden Spellthread (375)
-				{ 2, 31431 }, -- Silver Spellthread (335)
+				{ 1,  31433 }, -- Golden Spellthread (375)
+				{ 2,  31431 }, -- Silver Spellthread (335)
 				{ 16, 31432 }, -- Runic Spellthread (375)
 				{ 17, 31430 }, -- Mystic Spellthread (335)
 			}
@@ -921,11 +909,11 @@ data["TailoringBC"] = {
 		{
 			name = AL["Misc"],
 			[NORMAL_DIFF] = {
-				{ 1, 36686 }, -- Shadowcloth (350)
-				{ 2, 26751 }, -- Primal Mooncloth (350)
-				{ 4, 26750 }, -- Bolt of Soulcloth (345)
-				{ 6, 26747 }, -- Bolt of Imbued Netherweave (325)
-				{ 7, 26745 }, -- Bolt of Netherweave (305)
+				{ 1,  36686 }, -- Shadowcloth (350)
+				{ 2,  26751 }, -- Primal Mooncloth (350)
+				{ 4,  26750 }, -- Bolt of Soulcloth (345)
+				{ 6,  26747 }, -- Bolt of Imbued Netherweave (325)
+				{ 7,  26745 }, -- Bolt of Netherweave (305)
 				{ 16, 31373 }, -- Spellcloth (350)
 				--{ 23, 31461 }, -- Heavy Netherweave Net (undefined)
 				{ 21, 31460 }, -- Netherweave Net (300)
@@ -950,15 +938,15 @@ data["LeatherworkingBC"] = {
 		{
 			name = AL["Armor"].." - "..ALIL["Chest"],
 			[LEATHER_DIFF] = {
-				{ 1, 35585 }, -- Windhawk Hauberk (385)
-				{ 2, 35589 }, -- Primalstrike Vest (385)
-				{ 3, 46136 }, -- Leather Chestguard of the Sun (365)
-				{ 4, 46138 }, -- Carapace of Sun and Shadow (365)
-				{ 5, 42731 }, -- Shadowprowler's Chestguard (365)
-				{ 6, 32495 }, -- Heavy Clefthoof Vest (360)
-				{ 7, 36078 }, -- Living Crystal Breastplate (350)
-				{ 8, 36077 }, -- Primalstorm Breastplate (350)
-				{ 9, 32481 }, -- Wild Draenish Vest (340)
+				{ 1,  35585 }, -- Windhawk Hauberk (385)
+				{ 2,  35589 }, -- Primalstrike Vest (385)
+				{ 3,  46136 }, -- Leather Chestguard of the Sun (365)
+				{ 4,  46138 }, -- Carapace of Sun and Shadow (365)
+				{ 5,  42731 }, -- Shadowprowler's Chestguard (365)
+				{ 6,  32495 }, -- Heavy Clefthoof Vest (360)
+				{ 7,  36078 }, -- Living Crystal Breastplate (350)
+				{ 8,  36077 }, -- Primalstorm Breastplate (350)
+				{ 9,  32481 }, -- Wild Draenish Vest (340)
 				{ 10, 32473 }, -- Thick Draenic Vest (340)
 			},
 			[MAIL_DIFF] = {
@@ -1024,15 +1012,15 @@ data["LeatherworkingBC"] = {
 		{
 			name = AL["Armor"].." - "..ALIL["Head"],
 			[LEATHER_DIFF] = {
-				{ 1, 35558 }, -- Cobrascale Hood (365)
-				{ 2, 35560 }, -- Windscale Hood (365)
-				{ 3, 35561 }, -- Hood of Primal Life (365)
+				{ 1,  35558 }, -- Cobrascale Hood (365)
+				{ 2,  35560 }, -- Windscale Hood (365)
+				{ 3,  35561 }, -- Hood of Primal Life (365)
 				{ 16, 32489 }, -- Stylin' Jungle Hat (350)
 				{ 17, 32485 }, -- Stylin' Purple Hat (350)
 			},
 			[MAIL_DIFF] = {
-				{ 1, 35564 }, -- Living Dragonscale Helm (365)
-				{ 2, 35572 }, -- Netherdrake Helm (365)
+				{ 1,  35564 }, -- Living Dragonscale Helm (365)
+				{ 2,  35572 }, -- Netherdrake Helm (365)
 				{ 16, 32488 }, -- Stylin' Crimson Hat (350)
 				{ 17, 32487 }, -- Stylin' Adventure Hat (350)
 			},
@@ -1040,23 +1028,23 @@ data["LeatherworkingBC"] = {
 		{
 			name = AL["Armor"].." - "..ALIL["Legs"],
 			[LEATHER_DIFF] = {
-				{ 1, 40005 }, -- Redeemed Soul Legguards (375)
-				{ 2, 32496 }, -- Heavy Clefthoof Leggings (355)
-				{ 3, 32494 }, -- Fel Leather Leggings (350)
-				{ 4, 35535 }, -- Blastguard Pants (350)
-				{ 5, 35532 }, -- Enchanted Clefthoof Leggings (350)
-				{ 6, 32480 }, -- Wild Draenish Leggings (330)
-				{ 7, 32471 }, -- Thick Draenic Pants (325)
+				{ 1,  40005 }, -- Redeemed Soul Legguards (375)
+				{ 2,  32496 }, -- Heavy Clefthoof Leggings (355)
+				{ 3,  32494 }, -- Fel Leather Leggings (350)
+				{ 4,  35535 }, -- Blastguard Pants (350)
+				{ 5,  35532 }, -- Enchanted Clefthoof Leggings (350)
+				{ 6,  32480 }, -- Wild Draenish Leggings (330)
+				{ 7,  32471 }, -- Thick Draenic Pants (325)
 				{ 16, 36075 }, -- Wildfeather Leggings (280)
 				{ 17, 36074 }, -- Blackstorm Leggings (280)
 			},
 			[MAIL_DIFF] = {
-				{ 1, 40001 }, -- Greaves of Shackled Souls (375)
-				{ 2, 35529 }, -- Flamescale Leggings (350)
-				{ 3, 35525 }, -- Enchanted Felscale Leggings (350)
-				{ 4, 32502 }, -- Netherfury Leggings (340)
-				{ 5, 32464 }, -- Felscale Pants (330)
-				{ 6, 32466 }, -- Scaled Draenic Pants (310)
+				{ 1,  40001 }, -- Greaves of Shackled Souls (375)
+				{ 2,  35529 }, -- Flamescale Leggings (350)
+				{ 3,  35525 }, -- Enchanted Felscale Leggings (350)
+				{ 4,  32502 }, -- Netherfury Leggings (340)
+				{ 5,  32464 }, -- Felscale Pants (330)
+				{ 6,  32466 }, -- Scaled Draenic Pants (310)
 				{ 16, 36076 }, -- Dragonstrike Leggings (280)
 			},
 		},
@@ -1113,12 +1101,12 @@ data["LeatherworkingBC"] = {
 		{
 			name = AL["Enhancements"],
 			[NORMAL_DIFF] = {
-				{ 1, 35554 }, -- Nethercobra Leg Armor (365)
-				{ 2, 35549 }, -- Cobrahide Leg Armor (335)
-				{ 4, 35557 }, -- Nethercleft Leg Armor (365)
-				{ 5, 35555 }, -- Clefthide Leg Armor (335)
-				{ 7, 44970 }, -- Heavy Knothide Armor Kit (355)
-				{ 8, 32456 }, -- Knothide Armor Kit (310)
+				{ 1,  35554 }, -- Nethercobra Leg Armor (365)
+				{ 2,  35549 }, -- Cobrahide Leg Armor (335)
+				{ 4,  35557 }, -- Nethercleft Leg Armor (365)
+				{ 5,  35555 }, -- Clefthide Leg Armor (335)
+				{ 7,  44970 }, -- Heavy Knothide Armor Kit (355)
+				{ 8,  32456 }, -- Knothide Armor Kit (310)
 				{ 10, 32458 }, -- Magister's Armor Kit (325)
 				{ 11, 32457 }, -- Vindicator's Armor Kit (325)
 				{ 13, 44770 }, -- Glove Reinforcements (355)
@@ -1132,23 +1120,23 @@ data["LeatherworkingBC"] = {
 		{
 			name = AL["Drums"],
 			[NORMAL_DIFF] = {
-				{ 1, 351771 }, -- Greater Drums of Battle (375)
+				{ 1,  351771 }, -- Greater Drums of Battle (375)
 				{ 16, 35543 }, -- Drums of Battle (365)
-				{ 3, 351770 }, -- Greater Drums of Panic (375)
+				{ 3,  351770 }, -- Greater Drums of Panic (375)
 				{ 18, 35538 }, -- Drums of Panic (370)
-				{ 5, 351769 }, -- Greater Drums of Restoration (375)
+				{ 5,  351769 }, -- Greater Drums of Restoration (375)
 				{ 20, 35539 }, -- Drums of Restoration (350)
-				{ 7, 351768 }, -- Greater Drums of Speed (375)
+				{ 7,  351768 }, -- Greater Drums of Speed (375)
 				{ 22, 35544 }, -- Drums of Speed (345)
-				{ 9, 351766 }, -- Greater Drums of War (375)
+				{ 9,  351766 }, -- Greater Drums of War (375)
 				{ 24, 35540 }, -- Drums of War (340)
 			},
 		},
 		{
 			name = ALIL["Bag"],
 			[NORMAL_DIFF] = {
-				{ 1, 45117 }, -- Bag of Many Hides (360)
-				{ 3, 35530 }, -- Reinforced Mining Bag (325)
+				{ 1,  45117 }, -- Bag of Many Hides (360)
+				{ 3,  35530 }, -- Reinforced Mining Bag (325)
 				{ 16, 44768 }, -- Netherscale Ammo Pouch (350)
 				{ 17, 44343 }, -- Knothide Ammo Pouch (325)
 				{ 19, 44359 }, -- Quiver of a Thousand Feathers (350)
@@ -1159,9 +1147,9 @@ data["LeatherworkingBC"] = {
 		{
 			name = AL["Misc"],
 			[NORMAL_DIFF] = {
-				{ 1, 32455 }, -- Heavy Knothide Leather (325)
-				{ 2, 32454 }, -- Knothide Leather (300)
-				{ 4, 44953 }, -- Winter Boots (285)
+				{ 1,  32455 }, -- Heavy Knothide Leather (325)
+				{ 2,  32454 }, -- Knothide Leather (300)
+				{ 4,  44953 }, -- Winter Boots (285)
 				{ 16, 32461 }, -- Riding Crop (350)
 				{ 18, 32482 }, -- Comfortable Insoles (300)
 
@@ -1192,36 +1180,36 @@ data["JewelcraftingBC"] = {
 		{
 			name = AL["Armor"].." - "..ALIL["Neck"],
 			[NORMAL_DIFF] = {
-				{ 1, 31072 }, -- Embrace of the Dawn (365)
-				{ 2, 46127 }, -- Hard Khorium Choker (365)
-				{ 3, 46126 }, -- Amulet of Flowing Life (365)
-				{ 4, 46125 }, -- Pendant of Sunfire (365)
-				{ 5, 31076 }, -- Chain of the Twilight Owl (365)
-				{ 6, 31070 }, -- Braided Eternium Chain (360)
-				{ 7, 31071 }, -- Eye of the Night (360)
-				{ 8, 31066 }, -- Pendant of the Null Rune (360)
-				{ 9, 31065 }, -- Pendant of Shadow's End (360)
-				{ 10, 31064 }, -- Pendant of Withering (360)
-				{ 11, 31063 }, -- Pendant of Thawing (360)
-				{ 12, 31062 }, -- Pendant of Frozen Flame (360)
-				{ 13, 31068 }, -- Living Ruby Pendant (355)
-				{ 14, 31067 }, -- Thick Felsteel Necklace (355)
-				{ 15, 31051 }, -- Thick Adamantite Necklace (345)
-				{ 16, 40514 }, -- Necklace of the Deep (340)
-				{ 17, 26918 }, -- Arcanite Sword Pendant (315)
-				{ 18, 26915 }, -- Necklace of the Diamond Tower (305)
-				{ 19, 26911 }, -- Living Emerald Pendant (300)
-				{ 20, 26908 }, -- Sapphire Pendant of Winter Night (290)
-				{ 21, 26883 }, -- Ruby Pendant of Fire (260)
-				{ 22, 26897 }, -- Opal Necklace of Impact (250)
-				{ 23, 26876 }, -- Aquamarine Pendant of the Warrior (245)
-				{ 24, 25622 }, -- Citrine Pendant of Golden Healing (190)
-				{ 25, 25618 }, -- Jade Pendant of Blasting (160)
-				{ 26, 25320 }, -- Heavy Golden Necklace of Battle (150)
-				{ 27, 25614 }, -- Silver Rose Pendant (145)
-				{ 28, 25498 }, -- Barbaric Iron Collar (140)
-				{ 29, 25610 }, -- Pendant of the Agate Shield (120)
-				{ 30, 38175 }, -- Bronze Torc (110)
+				{ 1,   31072 }, -- Embrace of the Dawn (365)
+				{ 2,   46127 }, -- Hard Khorium Choker (365)
+				{ 3,   46126 }, -- Amulet of Flowing Life (365)
+				{ 4,   46125 }, -- Pendant of Sunfire (365)
+				{ 5,   31076 }, -- Chain of the Twilight Owl (365)
+				{ 6,   31070 }, -- Braided Eternium Chain (360)
+				{ 7,   31071 }, -- Eye of the Night (360)
+				{ 8,   31066 }, -- Pendant of the Null Rune (360)
+				{ 9,   31065 }, -- Pendant of Shadow's End (360)
+				{ 10,  31064 }, -- Pendant of Withering (360)
+				{ 11,  31063 }, -- Pendant of Thawing (360)
+				{ 12,  31062 }, -- Pendant of Frozen Flame (360)
+				{ 13,  31068 }, -- Living Ruby Pendant (355)
+				{ 14,  31067 }, -- Thick Felsteel Necklace (355)
+				{ 15,  31051 }, -- Thick Adamantite Necklace (345)
+				{ 16,  40514 }, -- Necklace of the Deep (340)
+				{ 17,  26918 }, -- Arcanite Sword Pendant (315)
+				{ 18,  26915 }, -- Necklace of the Diamond Tower (305)
+				{ 19,  26911 }, -- Living Emerald Pendant (300)
+				{ 20,  26908 }, -- Sapphire Pendant of Winter Night (290)
+				{ 21,  26883 }, -- Ruby Pendant of Fire (260)
+				{ 22,  26897 }, -- Opal Necklace of Impact (250)
+				{ 23,  26876 }, -- Aquamarine Pendant of the Warrior (245)
+				{ 24,  25622 }, -- Citrine Pendant of Golden Healing (190)
+				{ 25,  25618 }, -- Jade Pendant of Blasting (160)
+				{ 26,  25320 }, -- Heavy Golden Necklace of Battle (150)
+				{ 27,  25614 }, -- Silver Rose Pendant (145)
+				{ 28,  25498 }, -- Barbaric Iron Collar (140)
+				{ 29,  25610 }, -- Pendant of the Agate Shield (120)
+				{ 30,  38175 }, -- Bronze Torc (110)
 				{ 101, 25339 }, -- Amulet of the Moon (110)
 				{ 102, 36523 }, -- Brilliant Necklace (105)
 				{ 103, 26927 }, -- Thick Bronze Necklace (80)
@@ -1232,36 +1220,36 @@ data["JewelcraftingBC"] = {
 		{
 			name = AL["Armor"].." - "..AL["Ring"],
 			[NORMAL_DIFF] = {
-				{ 1, 38504 }, -- The Natural Ward (375)
-				{ 2, 46122 }, -- Loop of Forged Power (365)
-				{ 3, 38503 }, -- The Frozen Eye (375)
-				{ 4, 37855 }, -- Ring of Arcane Shielding (360)
-				{ 5, 36526 }, -- Diamond Focus Ring (285)
-				{ 6, 36525 }, -- Red Ring of Destruction (255)
-				{ 7, 34959 }, -- Truesilver Commander's Ring (210)
-				{ 8, 34955 }, -- Golden Ring of Power (190)
-				{ 9, 36524 }, -- Heavy Jade Ring (135)
-				{ 10, 37818 }, -- Bronze Band of Force (95)
-				{ 11, 46123 }, -- Ring of Flowing Life (365)
-				{ 12, 46124 }, -- Hard Khorium Band (365)
-				{ 13, 31061 }, -- Blazing Eternium Band (365)
-				{ 14, 31057 }, -- Arcane Khorium Band (365)
-				{ 15, 31056 }, -- Khorium Band of Leaves (360)
-				{ 16, 31060 }, -- Delicate Eternium Ring (355)
-				{ 17, 31055 }, -- Khorium Inferno Band (355)
-				{ 18, 31054 }, -- Khorium Band of Frost (355)
-				{ 19, 31053 }, -- Khorium Band of Shadows (350)
-				{ 20, 31058 }, -- Heavy Felsteel Ring (345)
-				{ 21, 31052 }, -- Heavy Adamantite Ring (345)
-				{ 22, 41415 }, -- The Black Pearl (340)
-				{ 23, 41414 }, -- Brilliant Pearl Band (335)
-				{ 24, 31050 }, -- Azure Moonstone Ring (330)
-				{ 25, 31049 }, -- Golden Draenite Ring (320)
-				{ 26, 31048 }, -- Fel Iron Blood Ring (320)
-				{ 27, 26916 }, -- Band of Natural Fire (320)
-				{ 28, 34961 }, -- Emerald Lion Ring (300)
-				{ 29, 34960 }, -- Glowing Thorium Band (290)
-				{ 30, 26907 }, -- Onslaught Ring (290)
+				{ 1,   38504 }, -- The Natural Ward (375)
+				{ 2,   46122 }, -- Loop of Forged Power (365)
+				{ 3,   38503 }, -- The Frozen Eye (375)
+				{ 4,   37855 }, -- Ring of Arcane Shielding (360)
+				{ 5,   36526 }, -- Diamond Focus Ring (285)
+				{ 6,   36525 }, -- Red Ring of Destruction (255)
+				{ 7,   34959 }, -- Truesilver Commander's Ring (210)
+				{ 8,   34955 }, -- Golden Ring of Power (190)
+				{ 9,   36524 }, -- Heavy Jade Ring (135)
+				{ 10,  37818 }, -- Bronze Band of Force (95)
+				{ 11,  46123 }, -- Ring of Flowing Life (365)
+				{ 12,  46124 }, -- Hard Khorium Band (365)
+				{ 13,  31061 }, -- Blazing Eternium Band (365)
+				{ 14,  31057 }, -- Arcane Khorium Band (365)
+				{ 15,  31056 }, -- Khorium Band of Leaves (360)
+				{ 16,  31060 }, -- Delicate Eternium Ring (355)
+				{ 17,  31055 }, -- Khorium Inferno Band (355)
+				{ 18,  31054 }, -- Khorium Band of Frost (355)
+				{ 19,  31053 }, -- Khorium Band of Shadows (350)
+				{ 20,  31058 }, -- Heavy Felsteel Ring (345)
+				{ 21,  31052 }, -- Heavy Adamantite Ring (345)
+				{ 22,  41415 }, -- The Black Pearl (340)
+				{ 23,  41414 }, -- Brilliant Pearl Band (335)
+				{ 24,  31050 }, -- Azure Moonstone Ring (330)
+				{ 25,  31049 }, -- Golden Draenite Ring (320)
+				{ 26,  31048 }, -- Fel Iron Blood Ring (320)
+				{ 27,  26916 }, -- Band of Natural Fire (320)
+				{ 28,  34961 }, -- Emerald Lion Ring (300)
+				{ 29,  34960 }, -- Glowing Thorium Band (290)
+				{ 30,  26907 }, -- Onslaught Ring (290)
 				{ 101, 26910 }, -- Ring of Bitter Shadows (285)
 				{ 102, 26903 }, -- Sapphire Signet (285)
 				{ 103, 26902 }, -- Simple Opal Ring (280)
@@ -1292,13 +1280,13 @@ data["JewelcraftingBC"] = {
 		{
 			name = AL["Armor"].." - "..ALIL["Trinket"],
 			[NORMAL_DIFF] = {
-				{ 1, 46779 }, -- Figurine - Seaspray Albatross (375)
-				{ 2, 31082 }, -- Figurine - Talasite Owl (370)
-				{ 3, 26909 }, -- Figurine - Emerald Owl (285)
-				{ 4, 26872 }, -- Figurine - Jade Owl (225)
-				{ 6, 46778 }, -- Figurine - Shadowsong Panther (375)
-				{ 7, 31083 }, -- Figurine - Nightseye Panther (370)
-				{ 8, 26875 }, -- Figurine - Black Pearl Panther (215)
+				{ 1,  46779 }, -- Figurine - Seaspray Albatross (375)
+				{ 2,  31082 }, -- Figurine - Talasite Owl (370)
+				{ 3,  26909 }, -- Figurine - Emerald Owl (285)
+				{ 4,  26872 }, -- Figurine - Jade Owl (225)
+				{ 6,  46778 }, -- Figurine - Shadowsong Panther (375)
+				{ 7,  31083 }, -- Figurine - Nightseye Panther (370)
+				{ 8,  26875 }, -- Figurine - Black Pearl Panther (215)
 				{ 16, 46775 }, -- Figurine - Empyrean Tortoise (375)
 				{ 17, 31080 }, -- Figurine - Dawnstone Crab (370)
 				{ 18, 26912 }, -- Figurine - Black Diamond Crab (300)
@@ -1322,13 +1310,13 @@ data["JewelcraftingBC"] = {
 		{
 			name = format(GEM_FORMAT1, ALIL["Meta"]),
 			[NORMAL_DIFF] = {
-				{ 1, 46601 }, -- Ember Skyfire Diamond (370)
-				{ 2, 39963 }, -- Thundering Skyfire Diamond (365)
-				{ 3, 44794 }, -- Chaotic Skyfire Diamond (365)
-				{ 4, 32873 }, -- Swift Skyfire Diamond (365)
-				{ 5, 32872 }, -- Mystical Skyfire Diamond (365)
-				{ 6, 32874 }, -- Enigmatic Skyfire Diamond (365)
-				{ 7, 32871 }, -- Destructive Skyfire Diamond (365)
+				{ 1,  46601 }, -- Ember Skyfire Diamond (370)
+				{ 2,  39963 }, -- Thundering Skyfire Diamond (365)
+				{ 3,  44794 }, -- Chaotic Skyfire Diamond (365)
+				{ 4,  32873 }, -- Swift Skyfire Diamond (365)
+				{ 5,  32872 }, -- Mystical Skyfire Diamond (365)
+				{ 6,  32874 }, -- Enigmatic Skyfire Diamond (365)
+				{ 7,  32871 }, -- Destructive Skyfire Diamond (365)
 				{ 16, 46597 }, -- Eternal Earthstorm Diamond (370)
 				{ 17, 39961 }, -- Relentless Earthstorm Diamond (365)
 				{ 18, 32868 }, -- Tenacious Earthstorm Diamond (365)
@@ -1341,14 +1329,14 @@ data["JewelcraftingBC"] = {
 		{
 			name = format(GEM_FORMAT1, ALIL["Red"]),
 			[NORMAL_DIFF] = {
-				{ 1, 42588 }, -- Kailee's Rose (360)
-				{ 2, 39710 }, -- Teardrop Crimson Spinel (375)
-				{ 3, 31087 }, -- Teardrop Living Ruby (350)
-				{ 4, 28903 }, -- Teardrop Blood Garnet (300)
-				{ 6, 42558 }, -- Don Julio's Heart (360)
-				{ 7, 39711 }, -- Runed Crimson Spinel (375)
-				{ 8, 31088 }, -- Runed Living Ruby (350)
-				{ 9, 28906 }, -- Runed Blood Garnet (315)
+				{ 1,  42588 }, -- Kailee's Rose (360)
+				{ 2,  39710 }, -- Teardrop Crimson Spinel (375)
+				{ 3,  31087 }, -- Teardrop Living Ruby (350)
+				{ 4,  28903 }, -- Teardrop Blood Garnet (300)
+				{ 6,  42558 }, -- Don Julio's Heart (360)
+				{ 7,  39711 }, -- Runed Crimson Spinel (375)
+				{ 8,  31088 }, -- Runed Living Ruby (350)
+				{ 9,  28906 }, -- Runed Blood Garnet (315)
 				{ 11, 42589 }, -- Crimson Sun (360)
 				{ 12, 39712 }, -- Bright Crimson Spinel (375)
 				{ 13, 31089 }, -- Bright Living Ruby (350)
@@ -1368,14 +1356,14 @@ data["JewelcraftingBC"] = {
 		{
 			name = format(GEM_FORMAT1, ALIL["Yellow"]),
 			[NORMAL_DIFF] = {
-				{ 1, 42591 }, -- Stone of Blades (360)
-				{ 2, 39720 }, -- Smooth Lionseye (375)
-				{ 3, 31097 }, -- Smooth Dawnstone (350)
-				{ 4, 34069 }, -- Smooth Golden Draenite (325)
-				{ 6, 42592 }, -- Blood of Amber (360)
-				{ 7, 39722 }, -- Gleaming Lionseye (375)
-				{ 8, 31099 }, -- Gleaming Dawnstone (350)
-				{ 9, 28944 }, -- Gleaming Golden Draenite (305)
+				{ 1,  42591 }, -- Stone of Blades (360)
+				{ 2,  39720 }, -- Smooth Lionseye (375)
+				{ 3,  31097 }, -- Smooth Dawnstone (350)
+				{ 4,  34069 }, -- Smooth Golden Draenite (325)
+				{ 6,  42592 }, -- Blood of Amber (360)
+				{ 7,  39722 }, -- Gleaming Lionseye (375)
+				{ 8,  31099 }, -- Gleaming Dawnstone (350)
+				{ 9,  28944 }, -- Gleaming Golden Draenite (305)
 				{ 11, 42593 }, -- Facet of Eternity (360)
 				{ 12, 39723 }, -- Thick Lionseye (375)
 				{ 13, 31100 }, -- Thick Dawnstone (350)
@@ -1398,13 +1386,13 @@ data["JewelcraftingBC"] = {
 		{
 			name = format(GEM_FORMAT1, ALIL["Blue"]),
 			[NORMAL_DIFF] = {
-				{ 1, 42590 }, -- Falling Star (360)
-				{ 2, 39715 }, -- Solid Empyrean Sapphire (375)
-				{ 3, 31092 }, -- Solid Star of Elune (350)
-				{ 4, 28950 }, -- Solid Azure Moonstone (300)
-				{ 6, 39718 }, -- Stormy Empyrean Sapphire (375)
-				{ 7, 31095 }, -- Stormy Star of Elune (350)
-				{ 8, 28955 }, -- Stormy Azure Moonstone (315)
+				{ 1,  42590 }, -- Falling Star (360)
+				{ 2,  39715 }, -- Solid Empyrean Sapphire (375)
+				{ 3,  31092 }, -- Solid Star of Elune (350)
+				{ 4,  28950 }, -- Solid Azure Moonstone (300)
+				{ 6,  39718 }, -- Stormy Empyrean Sapphire (375)
+				{ 7,  31095 }, -- Stormy Star of Elune (350)
+				{ 8,  28955 }, -- Stormy Azure Moonstone (315)
 				{ 17, 39716 }, -- Sparkling Empyrean Sapphire (375)
 				{ 18, 31149 }, -- Sparkling Star of Elune (350)
 				{ 19, 28953 }, -- Sparkling Azure Moonstone (305)
@@ -1416,13 +1404,13 @@ data["JewelcraftingBC"] = {
 		{
 			name = format(GEM_FORMAT1, ALIL["Orange"]),
 			[NORMAL_DIFF] = {
-				{ 1, 39738 }, -- Wicked Pyrestone (375)
-				{ 2, 39471 }, -- Wicked Noble Topaz (350)
-				{ 3, 39467 }, -- Wicked Flame Spessarite (325)
-				{ 5, 39737 }, -- Veiled Pyrestone (375)
-				{ 6, 39470 }, -- Veiled Noble Topaz (350)
-				{ 7, 39466 }, -- Veiled Flame Spessarite (325)
-				{ 9, 39734 }, -- Potent Pyrestone (375)
+				{ 1,  39738 }, -- Wicked Pyrestone (375)
+				{ 2,  39471 }, -- Wicked Noble Topaz (350)
+				{ 3,  39467 }, -- Wicked Flame Spessarite (325)
+				{ 5,  39737 }, -- Veiled Pyrestone (375)
+				{ 6,  39470 }, -- Veiled Noble Topaz (350)
+				{ 7,  39466 }, -- Veiled Flame Spessarite (325)
+				{ 9,  39734 }, -- Potent Pyrestone (375)
 				{ 10, 31107 }, -- Potent Noble Topaz (350)
 				{ 11, 28915 }, -- Potent Flame Spessarite (325)
 				{ 13, 47055 }, -- Reckless Pyrestone (375)
@@ -1441,13 +1429,13 @@ data["JewelcraftingBC"] = {
 		{
 			name = format(GEM_FORMAT1, ALIL["Green"]),
 			[NORMAL_DIFF] = {
-				{ 1, 39739 }, -- Enduring Seaspray Emerald (375)
-				{ 2, 31110 }, -- Enduring Talasite (350)
-				{ 3, 28918 }, -- Enduring Deep Peridot (315)
-				{ 5, 39740 }, -- Radiant Seaspray Emerald (375)
-				{ 6, 31111 }, -- Radiant Talasite (350)
-				{ 7, 28916 }, -- Radiant Deep Peridot (300)
-				{ 9, 47054 }, -- Steady Seaspray Emerald (375)
+				{ 1,  39739 }, -- Enduring Seaspray Emerald (375)
+				{ 2,  31110 }, -- Enduring Talasite (350)
+				{ 3,  28918 }, -- Enduring Deep Peridot (315)
+				{ 5,  39740 }, -- Radiant Seaspray Emerald (375)
+				{ 6,  31111 }, -- Radiant Talasite (350)
+				{ 7,  28916 }, -- Radiant Deep Peridot (300)
+				{ 9,  47054 }, -- Steady Seaspray Emerald (375)
 				{ 10, 43493 }, -- Steady Talasite (350)
 				{ 16, 39742 }, -- Jagged Seaspray Emerald (375)
 				{ 17, 31113 }, -- Jagged Talasite (350)
@@ -1462,13 +1450,13 @@ data["JewelcraftingBC"] = {
 		{
 			name = format(GEM_FORMAT1, ALIL["Purple"]),
 			[NORMAL_DIFF] = {
-				{ 1, 39728 }, -- Shifting Shadowsong Amethyst (375)
-				{ 2, 31103 }, -- Shifting Nightseye (350)
-				{ 3, 28933 }, -- Shifting Shadow Draenite (315)
-				{ 5, 39727 }, -- Sovereign Shadowsong Amethyst (375)
-				{ 6, 31102 }, -- Sovereign Nightseye (350)
-				{ 7, 28936 }, -- Sovereign Shadow Draenite (325)
-				{ 9, 39729 }, -- Balanced Shadowsong Amethyst (375)
+				{ 1,  39728 }, -- Shifting Shadowsong Amethyst (375)
+				{ 2,  31103 }, -- Shifting Nightseye (350)
+				{ 3,  28933 }, -- Shifting Shadow Draenite (315)
+				{ 5,  39727 }, -- Sovereign Shadowsong Amethyst (375)
+				{ 6,  31102 }, -- Sovereign Nightseye (350)
+				{ 7,  28936 }, -- Sovereign Shadow Draenite (325)
+				{ 9,  39729 }, -- Balanced Shadowsong Amethyst (375)
 				{ 10, 39463 }, -- Balanced Nightseye (350)
 				{ 11, 39455 }, -- Balanced Shadow Draenite (325)
 				{ 13, 39730 }, -- Infused Shadowsong Amethyst (375)
@@ -1490,15 +1478,15 @@ data["JewelcraftingBC"] = {
 			name = format(SPLIT_FORMAT, AL["Raw Gems"], AL["Classic"]),
 			TableType = NORMAL_ITTYPE,
 			[NORMAL_DIFF] = {
-				{ 1, 12363 }, -- Arcane Crystal
-				{ 2, 12800 }, --  Azerothian Diamond
-				{ 3, 12364 }, --  Huge Emerald
-				{ 4, 12361 }, --  Blue Sapphire
-				{ 5, 12799 }, --  Large Opal
-				{ 6, 7910 }, --  Star Ruby
-				{ 7, 11382 }, --  Blood of the Mountain
-				{ 8, 19774 }, --  Souldarite
-				{ 9, 7909 }, --  Aquamarine
+				{ 1,  12363 }, -- Arcane Crystal
+				{ 2,  12800 }, --  Azerothian Diamond
+				{ 3,  12364 }, --  Huge Emerald
+				{ 4,  12361 }, --  Blue Sapphire
+				{ 5,  12799 }, --  Large Opal
+				{ 6,  7910 }, --  Star Ruby
+				{ 7,  11382 }, --  Blood of the Mountain
+				{ 8,  19774 }, --  Souldarite
+				{ 9,  7909 }, --  Aquamarine
 				{ 10, 23158 }, --  Solid Aquamarine
 				{ 11, 23159 }, --  Sparkling Aquamarine
 				{ 12, 13926 }, --  Golden Pearl
@@ -1518,12 +1506,12 @@ data["JewelcraftingBC"] = {
 			name = AL["Raw Gems"],
 			TableType = NORMAL_ITTYPE,
 			[NORMAL_DIFF] = {
-				{ 1, 25867 }, --  Earthstorm Diamond
-				{ 2, 25868 }, --  Skyfire Diamond
-				{ 5, 32228 }, -- Empyrean Sapphire
-				{ 6, 23438 }, --  Star of Elune
-				{ 7, 23117 }, --  Azure Moonstone
-				{ 9, 32249 }, --  Seaspray Emerald
+				{ 1,  25867 }, --  Earthstorm Diamond
+				{ 2,  25868 }, --  Skyfire Diamond
+				{ 5,  32228 }, -- Empyrean Sapphire
+				{ 6,  23438 }, --  Star of Elune
+				{ 7,  23117 }, --  Azure Moonstone
+				{ 9,  32249 }, --  Seaspray Emerald
 				{ 10, 23437 }, --  Talasite
 				{ 11, 23079 }, --  Deep Peridot
 				{ 13, 32231 }, --  Pyrestone
@@ -1545,11 +1533,11 @@ data["JewelcraftingBC"] = {
 		{
 			name = AL["Misc"],
 			[NORMAL_DIFF] = {
-				{ 1, 38068 }, -- Mercurial Adamantite (325)
-				{ 2, 26880 }, -- Thorium Setting (235)
-				{ 3, 25615 }, -- Mithril Filigree (170)
-				{ 4, 25278 }, -- Bronze Setting (70)
-				{ 5, 25255 }, -- Delicate Copper Wire (20)
+				{ 1,  38068 }, -- Mercurial Adamantite (325)
+				{ 2,  26880 }, -- Thorium Setting (235)
+				{ 3,  25615 }, -- Mithril Filigree (170)
+				{ 4,  25278 }, -- Bronze Setting (70)
+				{ 5,  25255 }, -- Delicate Copper Wire (20)
 				{ 16, 47280 }, -- Brilliant Glass (350)
 				{ 18, 32810 }, -- Primal Stone Statue (undefined)
 				{ 19, 32809 }, -- Dense Stone Statue (225)
@@ -1572,13 +1560,13 @@ data["MiningBC"] = {
 		{
 			name = AL["Smelting"],
 			[NORMAL_DIFF] = {
-				{ 1, 46353 }, -- Smelt Hardened Khorium (375)
-				{ 2, 29686 }, -- Smelt Hardened Adamantite (375)
-				{ 3, 29361 }, -- Smelt Khorium (375)
-				{ 4, 29360 }, -- Smelt Felsteel (355)
-				{ 5, 29359 }, -- Smelt Eternium (350)
-				{ 6, 29358 }, -- Smelt Adamantite (325)
-				{ 7, 29356 }, -- Smelt Fel Iron (300)
+				{ 1,  46353 }, -- Smelt Hardened Khorium (375)
+				{ 2,  29686 }, -- Smelt Hardened Adamantite (375)
+				{ 3,  29361 }, -- Smelt Khorium (375)
+				{ 4,  29360 }, -- Smelt Felsteel (355)
+				{ 5,  29359 }, -- Smelt Eternium (350)
+				{ 6,  29358 }, -- Smelt Adamantite (325)
+				{ 7,  29356 }, -- Smelt Fel Iron (300)
 				{ 16, 35751 }, -- Fire Sunder (300)
 				{ 17, 35750 }, -- Earth Shatter (300)
 			}
@@ -1604,8 +1592,8 @@ data["HerbalismBC"] = {
 				{ 6,  22787 }, -- Ragveil
 				{ 7,  22786 }, -- Dreaming Glory
 				{ 8,  22785, 22795 }, -- Felweed
-				{ 16,  22794 }, -- Fel Lotus
-				{ 17,  22575 }, -- Mote of Life
+				{ 16, 22794 }, -- Fel Lotus
+				{ 17, 22575 }, -- Mote of Life
 			}
 		},
 	}
@@ -1706,10 +1694,10 @@ data["CookingBC"] = {
 		{
 			name = AL["Misc"],
 			[NORMAL_DIFF] = {
-				{ 1, 46684 }, -- Charred Bear Kabobs (250)
-				{ 2, 46688 }, -- Juicy Bear Burger (250)
-				{ 4, 28267 }, -- Crunchy Spider Surprise (60)
-				{ 5, 33278 }, -- Bat Bites (50)
+				{ 1,  46684 }, -- Charred Bear Kabobs (250)
+				{ 2,  46688 }, -- Juicy Bear Burger (250)
+				{ 4,  28267 }, -- Crunchy Spider Surprise (60)
+				{ 5,  33278 }, -- Bat Bites (50)
 				{ 16, 33277 }, -- Roasted Moongraze Tenderloin (1)
 				{ 17, 33276 }, --Lynx Steak (1)
 			},
@@ -1717,8 +1705,8 @@ data["CookingBC"] = {
 		{
 			name = AL["Special"],
 			[NORMAL_DIFF] = {
-				{ 1, 43779 }, -- Delicious Chocolate Cake (1)
-				{ 3, 45695 }, -- Captain Rumsey's Lager (100)
+				{ 1,  43779 }, -- Delicious Chocolate Cake (1)
+				{ 3,  45695 }, -- Captain Rumsey's Lager (100)
 				{ 16, 43758 }, -- Stormchops (300)
 			},
 		},
@@ -1752,12 +1740,12 @@ data["FishingBC"] = {
 		{
 			name = ALIL["Fishing"],
 			[NORMAL_DIFF] = {
-				{ 1, 6533 }, --  Aquadynamic Fish Attractor
-				{ 2, 34861 }, -- Sharpened Fish Hook
-				{ 3, 6532 }, --  Bright Baubles
-				{ 4, 7307 }, --  Flesh Eating Worm
-				{ 5, 6811 }, --  Aquadynamic Fish Lens
-				{ 6, 6530 }, --  Nightcrawlers
+				{ 1,  6533 }, --  Aquadynamic Fish Attractor
+				{ 2,  34861 }, -- Sharpened Fish Hook
+				{ 3,  6532 }, --  Bright Baubles
+				{ 4,  7307 }, --  Flesh Eating Worm
+				{ 5,  6811 }, --  Aquadynamic Fish Lens
+				{ 6,  6530 }, --  Nightcrawlers
 				{ 16, 34109 }, -- Weather-Beaten Journal
 				{ 18, 19971 }, -- High Test Eternium Fishing Line
 				{ 19, 34836 }, -- Spun Truesilver Fishing Line
@@ -1807,30 +1795,30 @@ data["RoguePoisonsBC"] = {
 		{
 			name = ALIL["Poisons"],
 			[NORMAL_DIFF] = {
-				{ 1, 26892 }, -- Instant Poison VII
-				{ 2, 11343 }, -- Instant Poison VI
-				{ 3, 11342 }, -- Instant Poison V
-				{ 4, 11341 }, -- Instant Poison IV
-				{ 5, 8691  }, -- Instant Poison III
-				{ 6, 8687  }, -- Instant Poison II
-				{ 7, 8681  }, -- Instant Poison
-				{ 9, 27283 },  -- Wound Poison V
-				{ 10, 13230 },  -- Wound Poison IV
-				{ 11, 13229 },  -- Wound Poison III
+				{ 1,  26892 }, -- Instant Poison VII
+				{ 2,  11343 }, -- Instant Poison VI
+				{ 3,  11342 }, -- Instant Poison V
+				{ 4,  11341 }, -- Instant Poison IV
+				{ 5,  8691 }, -- Instant Poison III
+				{ 6,  8687 }, -- Instant Poison II
+				{ 7,  8681 }, -- Instant Poison
+				{ 9,  27283 }, -- Wound Poison V
+				{ 10, 13230 }, -- Wound Poison IV
+				{ 11, 13229 }, -- Wound Poison III
 				{ 12, 13228 }, -- Wound Poison II
 				{ 13, 13220 }, -- Wound Poison
-				{ 15, 3420  }, -- Crippling Poison
+				{ 15, 3420 }, -- Crippling Poison
 				{ 16, 27282 }, -- Deadly Poison VII
 				{ 17, 26969 }, -- Deadly Poison VI
 				{ 18, 25347 }, -- Deadly Poison V
 				{ 19, 11358 }, -- Deadly Poison IV
 				{ 20, 11357 }, -- Deadly Poison III
-				{ 21, 2837  }, -- Deadly Poison II
-				{ 22, 2835  }, -- Deadly Poison
+				{ 21, 2837 }, -- Deadly Poison II
+				{ 22, 2835 }, -- Deadly Poison
 				{ 26, 11400 }, -- Mind-numbing Poison III
-				{ 27, 8694  }, -- Mind-numbing Poison II
-				{ 28, 5763  }, -- Mind-numbing Poison
-				{ 30, 26786  }, -- Anesthetic Poison
+				{ 27, 8694 }, -- Mind-numbing Poison II
+				{ 28, 5763 }, -- Mind-numbing Poison
+				{ 30, 26786 }, -- Anesthetic Poison
 			}
 		},
 	}
