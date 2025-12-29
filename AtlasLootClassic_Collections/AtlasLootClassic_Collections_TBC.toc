@@ -26,6 +26,8 @@
 
 ## Author: nanderson11, Lag
 ## Version: @project-version@
+## Group: AtlasLootClassic
+## IconTexture: Interface\Icons\INV_Box_01
 ## Dependencies: AtlasLootClassic
 ## LoadOnDemand: 1
 ## X-Category: Map

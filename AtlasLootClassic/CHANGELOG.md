@@ -1,6 +1,8 @@
 # Changelog
 
 ## 3.6.1 -
+### Changed
+- TBC: Added category and group to TOC
 ### Fixed
 - Fixed text of Master Hammersmith
 - TBC: Removed some stray WOTLK items in Blacksmithing
