@@ -575,6 +575,7 @@ data["ArenaS2PvP"] = {
 	ContentType = ARENA_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
 	TableType = NORMAL_ITTYPE,
+	ContentPhaseBC = 2,
 	items = {
 		{
 			name = AL["Sets"],
@@ -781,6 +782,7 @@ data["ArenaS3PvP"] = {
 	ContentType = ARENA_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
 	TableType = NORMAL_ITTYPE,
+	ContentPhaseBC = 3,
 	items = {
 		{
 			name = AL["Sets"],
@@ -1013,29 +1015,30 @@ data["ArenaS4PvP"] = {
 	ContentType = ARENA_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
 	TableType = NORMAL_ITTYPE,
+	ContentPhaseBC = 5,
 	items = {
 		{
 			name = AL["Sets"],
 			TableType = SET_ITTYPE,
 			[NORMAL_DIFF] = {
-				{ 1,  2000568 },                                        -- Warlock
-				{ 2,  2000615 },                                        -- Warlock 2
-				{ 4,  2000687 },                                        -- Priest / Heal
-				{ 5,  2000581 },                                        -- Priest / Shadow
-				{ 7,  2000577 },                                        -- Rogue
-				{ 9,  2000586 },                                        -- Hunter
-				{ 11, 2000567 },                                        -- Warrior
-				AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, { 13, 760 }), -- Deathknight
-				{ 16, 2000579 },                                        -- Mage
-				{ 18, 2000685 },                                        -- Druid / Heal
-				{ 19, 2000585 },                                        -- Druid / Owl
-				{ 20, 2000584 },                                        -- Druid / Feral
-				{ 22, 2000580 },                                        -- Shaman / Heal
-				{ 23, 2000686 },                                        -- Shaman / Ele
-				{ 24, 2000578 },                                        -- Shaman / Enh
-				{ 26, 2000690 },                                        -- Paladin / Heal
-				{ 27, 2000582 },                                        -- Paladin / Prot
-				{ 28, 2000583 },                                        -- Paladin / DD
+				{ 1,  2000568 }, -- Warlock
+				{ 2,  2000615 }, -- Warlock 2
+				{ 4,  2000687 }, -- Priest / Heal
+				{ 5,  2000581 }, -- Priest / Shadow
+				{ 7,  2000577 }, -- Rogue
+				{ 9,  2000586 }, -- Hunter
+				{ 11, 2000567 }, -- Warrior
+				--AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, { 13, 760 }), -- Deathknight
+				{ 16, 2000579 }, -- Mage
+				{ 18, 2000685 }, -- Druid / Heal
+				{ 19, 2000585 }, -- Druid / Owl
+				{ 20, 2000584 }, -- Druid / Feral
+				{ 22, 2000580 }, -- Shaman / Heal
+				{ 23, 2000686 }, -- Shaman / Ele
+				{ 24, 2000578 }, -- Shaman / Enh
+				{ 26, 2000690 }, -- Paladin / Heal
+				{ 27, 2000582 }, -- Paladin / Prot
+				{ 28, 2000583 }, -- Paladin / DD
 			},
 		},
 		{

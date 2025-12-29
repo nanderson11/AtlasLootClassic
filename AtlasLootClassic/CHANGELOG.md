@@ -1,7 +1,8 @@
 # Changelog
 
 ## 3.6.1 -
-### Changed
+### Added
+- TBC: Added content phases to various sections
 - TBC: Added category and group to TOC
 ### Fixed
 - Fixed text of Master Hammersmith

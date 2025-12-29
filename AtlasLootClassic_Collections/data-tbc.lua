@@ -187,6 +187,7 @@ data["BadgeofJustice4"] = {
 	name = format(AL["'%s %s' Vendor"], AL["Badge of Justice"], "P4"),
 	ContentType = VENDOR_CONTENT,
 	TableType = NORMAL_ITTYPE,
+	ContentPhaseBC = 4,
 	gameVersion = AtlasLoot.BC_VERSION_NUM,
 	items = {
 		{
@@ -339,6 +340,7 @@ data["BadgeofJusticeP5"] = {
 	name = format(AL["'%s %s' Vendor"], AL["Badge of Justice"], "P5"),
 	ContentType = VENDOR_CONTENT,
 	TableType = NORMAL_ITTYPE,
+	ContentPhaseBC = 5,
 	gameVersion = AtlasLoot.BC_VERSION_NUM,
 	items = {
 		{
@@ -446,6 +448,7 @@ data["BCCSunmote"] = {
 	name = format(AL["'%s' Vendor"], AL["Sunmote"]),
 	ContentType = VENDOR_CONTENT,
 	TableType = NORMAL_ITTYPE,
+	ContentPhaseBC = 5,
 	gameVersion = AtlasLoot.BC_VERSION_NUM,
 	items = {
 		{
