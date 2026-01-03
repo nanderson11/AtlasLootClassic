@@ -624,207 +624,270 @@ data["Enchanting"] = {
 		{
 			name = AL["Oil"],
 			[NORMAL_DIFF] = {
-				{ 1, 25130 }, --Brilliant Mana Oil / 310
-				{ 2, 25129 }, --Brilliant Wizard Oil / 310
-				{ 3, 25128 }, --Wizard Oil / 285
-				{ 4, 25127 }, --Lesser Mana Oil / 260
-				{ 5, 25126 }, --Lesser Wizard Oil / 210
-				{ 6, 25125 }, --Minor Mana Oil / 160
-				{ 7, 25124 }, --Minor Wizard Oil / 55
+				{ 1,  25130 }, -- Brilliant Mana Oil / 310
+				{ 2,  25129 }, -- Brilliant Wizard Oil / 310
+				{ 3,  25128 }, -- Wizard Oil / 285
+				{ 4,  25127 }, -- Lesser Mana Oil / 260
+				{ 5,  25126 }, -- Lesser Wizard Oil / 210
+				{ 6,  430409 }, -- Blackfathom Mana Oil
+				{ 7,  25125 }, -- Minor Mana Oil / 160
+				{ 8,  25124 }, -- Minor Wizard Oil / 55
+				{ 16, 1213610 }, -- Enchanted Repellent
+				{ 17, 463869 }, -- Conductive Shield Coating
 			}
 		},
 		{
 			name = ALIL["Wands"],
 			[NORMAL_DIFF] = {
-				{ 1, 14810 }, --Greater Mystic Wand / 195
-				{ 2, 14809 }, --Lesser Mystic Wand / 175
-				{ 3, 14807 }, --Greater Magic Wand / 110
-				{ 4, 14293 }, --Lesser Magic Wand / 75
+				{ 1, 439134 }, -- Greater Mystic Wand / 195
+				{ 2, 14809 }, -- Lesser Mystic Wand / 175
+				{ 3, 14807 }, -- Greater Magic Wand / 110
+				{ 4, 14293 }, -- Lesser Magic Wand / 75
+			}
+		},
+		{
+			name = ALIL["Trinket"],
+			[NORMAL_DIFF] = {
+				{ 1, 1213593 }, -- Speedstone
+				{ 2, 1213595 }, -- Tear of the Dreamer
+				{ 3, 1213598 }, -- Lodestone of Retaliation
+				{ 4, 1213600 }, -- Enchanted Stopwatch
+				{ 5, 1213603 }, -- Ruby-Encrusted Broach
+			}
+		},
+		{
+			name = ALIL["Relic"],
+			[NORMAL_DIFF] = {
+				{ 1,  1213628 }, -- Enchanted Prayer Tome
+				{ 2,  1216005 }, -- Libram of Righteousness
+				{ 3,  1216010 }, -- Libram of Sanctity
+				{ 4,  1216007 }, -- Libram of the Exorcist
+				{ 6,  1213633 }, -- Enchanted Totem
+				{ 7,  1216018 }, -- Totem of Flowing Magma
+				{ 8,  1216014 }, -- Totem of Pyroclastic Thunder
+				{ 9,  1216016 }, -- Totem of Thunderous Strikes
+				{ 11, 1213635 }, -- Enchanted Mushroom
+				{ 12, 1216022 }, -- Idol of Feline Ferocity
+				{ 13, 1216020 }, -- Idol of Sidereal Wrath
+				{ 14, 1216024 }, -- Idol of Ursin Power
 			}
 		},
 		{
 			name = AL["Misc"],
 			[NORMAL_DIFF] = {
-				{ 1,  20051 }, --Runed Arcanite Rod / 310
-				{ 2,  13702 }, --Runed Truesilver Rod / 220
-				{ 3,  13628 }, --Runed Golden Rod / 175
-				{ 4,  7795 }, --Runed Silver Rod / 130
-				{ 5,  7421 }, --Runed Copper Rod / 5
-				{ 16, 15596 }, --Smoking Heart of the Mountain / 285
-				{ 18, 17181 }, --Enchanted Leather / 250
-				{ 20, 17180 }, --Enchanted Thorium / 250
+				{ 1,  20051 }, -- Runed Arcanite Rod / 310
+				{ 2,  13702 }, -- Runed Truesilver Rod / 220
+				{ 3,  13628 }, -- Runed Golden Rod / 175
+				{ 4,  7795 }, -- Runed Silver Rod / 130
+				{ 5,  7421 }, -- Runed Copper Rod / 5
+
+				{ 7,  1213607 }, -- Scroll: Wrath of the Swarm
+				{ 8,  463866 }, -- Sigil of Flowing Waters
+				{ 9,  446243 }, -- Sigil of Living Dreams
+				{ 10, 439156 }, -- Sigil of Innovation
+				{ 11, 448624 }, -- Scroll of Spatial Mending
+
+				{ 16, 15596 }, -- Smoking Heart of the Mountain / 285
+				{ 18, 17181 }, -- Enchanted Leather / 250
+				{ 20, 17180 }, -- Enchanted Thorium / 250
 			}
 		},
 		{
 			name = ALIL["Weapon"].." - "..AL["Enhancements"],
 			[NORMAL_DIFF] = {
-				{ 1,  23804 }, --Enchant Weapon - Mighty Intellect / 320
-				{ 2,  20034 }, --Enchant Weapon - Crusader / 320
-				{ 3,  20032 }, --Enchant Weapon - Lifestealing / 320
-				{ 4,  22749 }, --Enchant Weapon - Spell Power / 320
-				{ 5,  22750 }, --Enchant Weapon - Healing Power / 320
-				{ 6,  23803 }, --Enchant Weapon - Mighty Spirit / 320
-				{ 7,  20031 }, --Enchant Weapon - Superior Striking / 320
-				{ 8,  20033 }, --Enchant Weapon - Unholy Weapon / 315
-				{ 9,  23799 }, --Enchant Weapon - Strength / 310
-				{ 10, 23800 }, --Enchant Weapon - Agility / 310
-				{ 11, 20029 }, --Enchant Weapon - Icy Chill / 305
-				{ 12, 13898 }, --Enchant Weapon - Fiery Weapon / 285
-				{ 13, 13943 }, --Enchant Weapon - Greater Striking / 265
-				{ 14, 13915 }, --Enchant Weapon - Demonslaying / 250
-				{ 15, 13693 }, --Enchant Weapon - Striking / 215
-				{ 16, 21931 }, --Enchant Weapon - Winter / 210
-				{ 17, 13653 }, --Enchant Weapon - Lesser Beastslayer / 195
-				{ 18, 13655 }, --Enchant Weapon - Lesser Elemental Slayer / 195
-				{ 19, 13503 }, --Enchant Weapon - Lesser Striking / 165
-				{ 20, 7788 }, --Enchant Weapon - Minor Striking / 120
-				{ 21, 7786 }, --Enchant Weapon - Minor Beastslayer / 120
+				{ 1,  1231128 }, -- Enchant Weapon - Grand Crusader
+				{ 2,  1231164 }, -- Enchant Weapon - Grand Sorcerer
+				{ 3,  23804 }, -- Enchant Weapon - Mighty Intellect / 320
+				{ 4,  20034 }, -- Enchant Weapon - Crusader / 320
+				{ 5,  20032 }, -- Enchant Weapon - Lifestealing / 320
+				{ 6,  22749 }, -- Enchant Weapon - Spell Power / 320
+				{ 7,  22750 }, -- Enchant Weapon - Healing Power / 320
+				{ 8,  23803 }, -- Enchant Weapon - Mighty Spirit / 320
+				{ 9,  20031 }, -- Enchant Weapon - Superior Striking / 320
+				{ 10, 20033 }, -- Enchant Weapon - Unholy Weapon / 315
+				{ 11, 23799 }, -- Enchant Weapon - Strength / 310
+				{ 12, 23800 }, -- Enchant Weapon - Agility / 310
+				{ 13, 20029 }, -- Enchant Weapon - Icy Chill / 305
+				{ 14, 13898 }, -- Enchant Weapon - Fiery Weapon / 285
+				{ 15, 13943 }, -- Enchant Weapon - Greater Striking / 265
+				{ 16, 13915 }, -- Enchant Weapon - Demonslaying / 250
+				{ 17, 435481 }, -- Enchant Weapon - Dismantle
+				{ 18, 13693 }, -- Enchant Weapon - Striking / 215
+				{ 19, 21931 }, -- Enchant Weapon - Winter / 210
+				{ 20, 13653 }, -- Enchant Weapon - Lesser Beastslayer / 195
+				{ 21, 13655 }, -- Enchant Weapon - Lesser Elemental Slayer / 195
+				{ 22, 13503 }, -- Enchant Weapon - Lesser Striking / 165
+				{ 23, 7788 }, -- Enchant Weapon - Minor Striking / 120
+				{ 24, 7786 }, -- Enchant Weapon - Minor Beastslayer / 120
 			}
 		},
 		{
 			name = ALIL["2H Weapon"].." - "..AL["Enhancements"],
 			[NORMAL_DIFF] = {
-				{ 1,  20035 }, --Enchant 2H Weapon - Major Spirit / 320
-				{ 2,  20036 }, --Enchant 2H Weapon - Major Intellect / 320
-				{ 3,  20030 }, --Enchant 2H Weapon - Superior Impact / 315
-				{ 4,  27837 }, --Enchant 2H Weapon - Agility / 310
-				{ 5,  13937 }, --Enchant 2H Weapon - Greater Impact / 260
-				{ 6,  13695 }, --Enchant 2H Weapon - Impact / 220
-				{ 7,  13529 }, --Enchant 2H Weapon - Lesser Impact / 170
-				{ 8,  13380 }, --Enchant 2H Weapon - Lesser Spirit / 135
-				{ 9,  7745 }, --Enchant 2H Weapon - Minor Impact / 130
-				{ 10, 7793 }, --Enchant 2H Weapon - Lesser Intellect / 130
+				{ 1,  1232172 }, -- Enchant 2H Weapon - Grand Inquisitor
+				{ 2,  1231139 }, -- Enchant 2H Weapon - Grand Arcanist
+				{ 3,  1219580 }, -- Enchant 2H Weapon - Spellblasting
+				{ 4,  20035 }, -- Enchant 2H Weapon - Major Spirit / 320
+				{ 5,  20036 }, -- Enchant 2H Weapon - Major Intellect / 320
+				{ 6,  20030 }, -- Enchant 2H Weapon - Superior Impact / 315
+				{ 7,  27837 }, -- Enchant 2H Weapon - Agility / 310
+				{ 8,  13937 }, -- Enchant 2H Weapon - Greater Impact / 260
+				{ 9,  13695 }, -- Enchant 2H Weapon - Impact / 220
+				{ 10, 13529 }, -- Enchant 2H Weapon - Lesser Impact / 170
+				{ 11, 13380 }, -- Enchant 2H Weapon - Lesser Spirit / 135
+				{ 12, 7745 }, -- Enchant 2H Weapon - Minor Impact / 130
+				{ 13, 7793 }, -- Enchant 2H Weapon - Lesser Intellect / 130
 			}
 		},
 		{
-			name = ALIL["Cloak"].." - "..AL["Enhancements"],
+			name = ALIL["Off Hand"].." - "..AL["Enhancements"],
 			[NORMAL_DIFF] = {
-				{ 1,  25086 }, --Enchant Cloak - Dodge / 320
-				{ 2,  25081 }, --Enchant Cloak - Greater Fire Resistance / 320
-				{ 3,  25082 }, --Enchant Cloak - Greater Nature Resistance / 320
-				{ 4,  25084 }, --Enchant Cloak - Subtlety / 320
-				{ 5,  25083 }, --Enchant Cloak - Stealth / 320
-				{ 6,  20015 }, --Enchant Cloak - Superior Defense / 305
-				{ 7,  20014 }, --Enchant Cloak - Greater Resistance / 285
-				{ 8,  13882 }, --Enchant Cloak - Lesser Agility / 245
-				{ 9,  13794 }, --Enchant Cloak - Resistance / 225
-				{ 10, 13746 }, --Enchant Cloak - Greater Defense / 225
-				{ 11, 13657 }, --Enchant Cloak - Fire Resistance / 195
-				{ 12, 13635 }, --Enchant Cloak - Defense / 175
-				{ 13, 13522 }, --Enchant Cloak - Lesser Shadow Resistance / 160
-				{ 14, 7861 }, --Enchant Cloak - Lesser Fire Resistance / 150
-				{ 15, 13421 }, --Enchant Cloak - Lesser Protection / 140
-				{ 16, 13419 }, --Enchant Cloak - Minor Agility / 135
-				{ 17, 7771 }, --Enchant Cloak - Minor Protection / 110
-				{ 18, 7454 }, --Enchant Cloak - Minor Resistance / 95
-			}
-		},
-		{
-			name = ALIL["Chest"].." - "..AL["Enhancements"],
-			[NORMAL_DIFF] = {
-				{ 1,  20025 }, --Enchant Chest - Greater Stats / 320
-				{ 2,  20028 }, --Enchant Chest - Major Mana / 310
-				{ 3,  20026 }, --Enchant Chest - Major Health / 295
-				{ 4,  13941 }, --Enchant Chest - Stats / 265
-				{ 5,  13917 }, --Enchant Chest - Superior Mana / 250
-				{ 6,  13858 }, --Enchant Chest - Superior Health / 240
-				{ 7,  13700 }, --Enchant Chest - Lesser Stats / 220
-				{ 8,  13663 }, --Enchant Chest - Greater Mana / 205
-				{ 9,  13640 }, --Enchant Chest - Greater Health / 180
-				{ 10, 13626 }, --Enchant Chest - Minor Stats / 175
-				{ 11, 13607 }, --Enchant Chest - Mana / 170
-				{ 12, 13538 }, --Enchant Chest - Lesser Absorption / 165
-				{ 13, 7857 }, --Enchant Chest - Health / 145
-				{ 14, 7776 }, --Enchant Chest - Lesser Mana / 115
-				{ 15, 7748 }, --Enchant Chest - Lesser Health / 105
-				{ 16, 7426 }, --Enchant Chest - Minor Absorption / 90
-				{ 17, 7443 }, --Enchant Chest - Minor Mana / 80
-				{ 18, 7420 }, --Enchant Chest - Minor Health / 70
-			}
-		},
-		{
-			name = ALIL["Feet"].." - "..AL["Enhancements"],
-			[NORMAL_DIFF] = {
-				{ 1,  20023 }, --Enchant Boots - Greater Agility / 315
-				{ 2,  20024 }, --Enchant Boots - Spirit / 295
-				{ 3,  20020 }, --Enchant Boots - Greater Stamina / 280
-				{ 4,  13935 }, --Enchant Boots - Agility / 255
-				{ 5,  13890 }, --Enchant Boots - Minor Speed / 245
-				{ 6,  13836 }, --Enchant Boots - Stamina / 235
-				{ 7,  13687 }, --Enchant Boots - Lesser Spirit / 210
-				{ 8,  13644 }, --Enchant Boots - Lesser Stamina / 190
-				{ 9,  13637 }, --Enchant Boots - Lesser Agility / 180
-				{ 10, 7867 }, --Enchant Boots - Minor Agility / 150
-				{ 11, 7863 }, --Enchant Boots - Minor Stamina / 150
-			}
-		},
-		{
-			name = ALIL["Hand"].." - "..AL["Enhancements"],
-			[NORMAL_DIFF] = {
-				{ 1,  25080 }, --Enchant Gloves - Superior Agility / 320
-				{ 2,  25073 }, --Enchant Gloves - Shadow Power / 320
-				{ 3,  25074 }, --Enchant Gloves - Frost Power / 320
-				{ 4,  25072 }, --Enchant Gloves - Threat / 320
-				{ 5,  25079 }, --Enchant Gloves - Healing Power / 320
-				{ 6,  25078 }, --Enchant Gloves - Fire Power / 320
-				{ 7,  20013 }, --Enchant Gloves - Greater Strength / 315
-				{ 8,  20012 }, --Enchant Gloves - Greater Agility / 290
-				{ 9,  13948 }, --Enchant Gloves - Minor Haste / 270
-				{ 10, 13947 }, --Enchant Gloves - Riding Skill / 270
-				{ 11, 13868 }, --Enchant Gloves - Advanced Herbalism / 245
-				{ 12, 13887 }, --Enchant Gloves - Strength / 245
-				{ 13, 13841 }, --Enchant Gloves - Advanced Mining / 235
-				{ 14, 13815 }, --Enchant Gloves - Agility / 230
-				{ 15, 13698 }, --Enchant Gloves - Skinning / 220
-				{ 16, 13617 }, --Enchant Gloves - Herbalism / 170
-				{ 17, 13620 }, --Enchant Gloves - Fishing / 170
-				{ 18, 13612 }, --Enchant Gloves - Mining / 170
+				{ 1, 1219577 }, -- Enchant Off-Hand - Superior Intellect
+				{ 2, 1219579 }, -- Enchant Off-Hand - Wisdom
+				{ 3, 1219578 }, -- Enchant Off-Hand - Excellent Spirit
 			}
 		},
 		{
 			name = ALIL["Shield"].." - "..AL["Enhancements"],
 			[NORMAL_DIFF] = {
-				{ 1,  20016 }, --Enchant Shield - Superior Spirit / 300
-				{ 2,  20017 }, --Enchant Shield - Greater Stamina / 285
-				{ 3,  13933 }, --Enchant Shield - Frost Resistance / 255
-				{ 4,  13905 }, --Enchant Shield - Greater Spirit / 250
-				{ 5,  13817 }, --Enchant Shield - Stamina / 230
-				{ 6,  13689 }, --Enchant Shield - Lesser Block / 215
-				{ 7,  13659 }, --Enchant Shield - Spirit / 200
-				{ 8,  13631 }, --Enchant Shield - Lesser Stamina / 175
-				{ 9,  13485 }, --Enchant Shield - Lesser Spirit / 155
-				{ 10, 13464 }, --Enchant Shield - Lesser Protection / 140
-				{ 11, 13378 }, --Enchant Shield - Minor Stamina / 130
+				{ 1,  1220623 }, -- Enchant Shield - Critical Strike
+				{ 2,  1219581 }, -- Enchant Shield - Excellent Stamina
+				{ 3,  463871 }, -- Enchant Shield - Law of Nature
+				{ 4,  20016 }, -- Enchant Shield - Superior Spirit / 300
+				{ 5,  20017 }, -- Enchant Shield - Greater Stamina / 285
+				{ 6,  13933 }, -- Enchant Shield - Frost Resistance / 255
+				{ 7,  13905 }, -- Enchant Shield - Greater Spirit / 250
+				{ 8,  13817 }, -- Enchant Shield - Stamina / 230
+				{ 9,  13689 }, -- Enchant Shield - Lesser Block / 215
+				{ 10, 13659 }, -- Enchant Shield - Spirit / 200
+				{ 11, 13631 }, -- Enchant Shield - Lesser Stamina / 175
+				{ 12, 13485 }, -- Enchant Shield - Lesser Spirit / 155
+				{ 13, 13464 }, -- Enchant Shield - Lesser Protection / 140
+				{ 14, 13378 }, -- Enchant Shield - Minor Stamina / 130
+			}
+		},
+		{
+			name = ALIL["Cloak"].." - "..AL["Enhancements"],
+			[NORMAL_DIFF] = {
+				{ 1,  1219587 }, -- Enchant Cloak - Agility
+				{ 2,  25086 }, -- Enchant Cloak - Dodge / 320
+				{ 3,  25081 }, -- Enchant Cloak - Greater Fire Resistance / 320
+				{ 4,  25082 }, -- Enchant Cloak - Greater Nature Resistance / 320
+				{ 5,  25084 }, -- Enchant Cloak - Subtlety / 320
+				{ 6,  25083 }, -- Enchant Cloak - Stealth / 320
+				{ 7,  20015 }, -- Enchant Cloak - Superior Defense / 305
+				{ 8,  20014 }, -- Enchant Cloak - Greater Resistance / 285
+				{ 9,  13882 }, -- Enchant Cloak - Lesser Agility / 245
+				{ 10, 13794 }, -- Enchant Cloak - Resistance / 225
+				{ 11, 13746 }, -- Enchant Cloak - Greater Defense / 225
+				{ 12, 13657 }, -- Enchant Cloak - Fire Resistance / 195
+				{ 13, 13635 }, -- Enchant Cloak - Defense / 175
+				{ 14, 13522 }, -- Enchant Cloak - Lesser Shadow Resistance / 160
+				{ 15, 7861 }, -- Enchant Cloak - Lesser Fire Resistance / 150
+				{ 16, 13421 }, -- Enchant Cloak - Lesser Protection / 140
+				{ 17, 13419 }, -- Enchant Cloak - Minor Agility / 135
+				{ 18, 7771 }, -- Enchant Cloak - Minor Protection / 110
+				{ 19, 7454 }, -- Enchant Cloak - Minor Resistance / 95
+			}
+		},
+		{
+			name = ALIL["Chest"].." - "..AL["Enhancements"],
+			[NORMAL_DIFF] = {
+				{ 1,  1213616 }, -- Enchant Chest - Living Stats
+				{ 2,  20025 }, -- Enchant Chest - Greater Stats / 320
+				{ 3,  20028 }, -- Enchant Chest - Major Mana / 310
+				{ 4,  20026 }, -- Enchant Chest - Major Health / 295
+				{ 5,  13941 }, -- Enchant Chest - Stats / 265
+				{ 6,  435903 }, -- Enchant Chest - Retricutioner
+				{ 7,  13917 }, -- Enchant Chest - Superior Mana / 250
+				{ 8,  13858 }, -- Enchant Chest - Superior Health / 240
+				{ 9,  13700 }, -- Enchant Chest - Lesser Stats / 220
+				{ 10, 13663 }, -- Enchant Chest - Greater Mana / 205
+				{ 11, 13640 }, -- Enchant Chest - Greater Health / 180
+				{ 12, 13626 }, -- Enchant Chest - Minor Stats / 175
+				{ 13, 13607 }, -- Enchant Chest - Mana / 170
+				{ 14, 13538 }, -- Enchant Chest - Lesser Absorption / 165
+				{ 15, 7857 }, -- Enchant Chest - Health / 145
+				{ 16, 7776 }, -- Enchant Chest - Lesser Mana / 115
+				{ 17, 7748 }, -- Enchant Chest - Lesser Health / 105
+				{ 18, 7426 }, -- Enchant Chest - Minor Absorption / 90
+				{ 19, 7443 }, -- Enchant Chest - Minor Mana / 80
+				{ 20, 7420 }, -- Enchant Chest - Minor Health / 70
+			}
+		},
+		{
+			name = ALIL["Feet"].." - "..AL["Enhancements"],
+			[NORMAL_DIFF] = {
+				{ 1,  20023 }, -- Enchant Boots - Greater Agility / 315
+				{ 2,  20024 }, -- Enchant Boots - Spirit / 295
+				{ 3,  20020 }, -- Enchant Boots - Greater Stamina / 280
+				{ 4,  13935 }, -- Enchant Boots - Agility / 255
+				{ 5,  13890 }, -- Enchant Boots - Minor Speed / 245
+				{ 6,  13836 }, -- Enchant Boots - Stamina / 235
+				{ 7,  13687 }, -- Enchant Boots - Lesser Spirit / 210
+				{ 8,  13644 }, -- Enchant Boots - Lesser Stamina / 190
+				{ 9,  13637 }, -- Enchant Boots - Lesser Agility / 180
+				{ 10, 7867 }, -- Enchant Boots - Minor Agility / 150
+				{ 11, 7863 }, -- Enchant Boots - Minor Stamina / 150
+			}
+		},
+		{
+			name = ALIL["Hand"].." - "..AL["Enhancements"],
+			[NORMAL_DIFF] = {
+				{ 1,  1219586 }, -- Enchant Gloves - Superior Strength
+				{ 2,  1213622 }, -- Enchant Gloves - Holy Power
+				{ 3,  1213626 }, -- Enchant Gloves - Arcane Power
+				{ 4,  25080 }, -- Enchant Gloves - Superior Agility / 320
+				{ 5,  25073 }, -- Enchant Gloves - Shadow Power / 320
+				{ 6,  25074 }, -- Enchant Gloves - Frost Power / 320
+				{ 7,  25072 }, -- Enchant Gloves - Threat / 320
+				{ 8,  25079 }, -- Enchant Gloves - Healing Power / 320
+				{ 9,  25078 }, -- Enchant Gloves - Fire Power / 320
+				{ 10, 20013 }, -- Enchant Gloves - Greater Strength / 315
+				{ 11, 20012 }, -- Enchant Gloves - Greater Agility / 290
+				{ 12, 13948 }, -- Enchant Gloves - Minor Haste / 270
+				{ 13, 13947 }, -- Enchant Gloves - Riding Skill / 270
+				{ 14, 13868 }, -- Enchant Gloves - Advanced Herbalism / 245
+				{ 15, 13887 }, -- Enchant Gloves - Strength / 245
+				{ 16, 13841 }, -- Enchant Gloves - Advanced Mining / 235
+				{ 17, 13815 }, -- Enchant Gloves - Agility / 230
+				{ 18, 13698 }, -- Enchant Gloves - Skinning / 220
+				{ 19, 13617 }, -- Enchant Gloves - Herbalism / 170
+				{ 20, 13620 }, -- Enchant Gloves - Fishing / 170
+				{ 21, 13612 }, -- Enchant Gloves - Mining / 170
 			}
 		},
 		{
 			name = ALIL["Wrist"].." - "..AL["Enhancements"],
 			[NORMAL_DIFF] = {
-				{ 1,  23802 }, --Enchant Bracer - Healing Power / 320
-				{ 2,  20011 }, --Enchant Bracer - Superior Stamina / 320
-				{ 3,  20010 }, --Enchant Bracer - Superior Strength / 315
-				{ 4,  23801 }, --Enchant Bracer - Mana Regeneration / 310
-				{ 5,  20009 }, --Enchant Bracer - Superior Spirit / 290
-				{ 6,  20008 }, --Enchant Bracer - Greater Intellect / 275
-				{ 7,  13945 }, --Enchant Bracer - Greater Stamina / 265
-				{ 8,  13939 }, --Enchant Bracer - Greater Strength / 260
-				{ 9,  13931 }, --Enchant Bracer - Deflection / 255
-				{ 10, 13846 }, --Enchant Bracer - Greater Spirit / 240
-				{ 11, 13822 }, --Enchant Bracer - Intellect / 230
-				{ 12, 13661 }, --Enchant Bracer - Strength / 200
-				{ 13, 13648 }, --Enchant Bracer - Stamina / 190
-				{ 14, 13646 }, --Enchant Bracer - Lesser Deflection / 190
-				{ 15, 13642 }, --Enchant Bracer - Spirit / 185
-				{ 16, 13622 }, --Enchant Bracer - Lesser Intellect / 175
-				{ 17, 13536 }, --Enchant Bracer - Lesser Strength / 165
-				{ 18, 13501 }, --Enchant Bracer - Lesser Stamina / 155
-				{ 19, 7859 }, --Enchant Bracer - Lesser Spirit / 145
-				{ 20, 7779 }, --Enchant Bracer - Minor Agility / 115
-				{ 21, 7782 }, --Enchant Bracer - Minor Strength / 115
-				{ 22, 7766 }, --Enchant Bracer - Minor Spirit / 105
-				{ 23, 7457 }, --Enchant Bracer - Minor Stamina / 100
-				{ 24, 7428 }, --Enchant Bracer - Minor Deflect / 80
-				{ 25, 7418 }, --Enchant Bracer - Minor Health / 70
+				{ 1,  1220624 }, -- Enchant Bracer - Greater Spellpower
+				{ 2,  1217189 }, -- Enchant Bracer - Spell Power
+				{ 3,  1217203 }, -- Enchant Bracer - Agility
+				{ 4,  23802 }, -- Enchant Bracer - Healing Power / 320
+				{ 5,  20011 }, -- Enchant Bracer - Superior Stamina / 320
+				{ 6,  20010 }, -- Enchant Bracer - Superior Strength / 315
+				{ 7,  23801 }, -- Enchant Bracer - Mana Regeneration / 310
+				{ 8,  20009 }, -- Enchant Bracer - Superior Spirit / 290
+				{ 9,  20008 }, -- Enchant Bracer - Greater Intellect / 275
+				{ 10, 13945 }, -- Enchant Bracer - Greater Stamina / 265
+				{ 11, 13939 }, -- Enchant Bracer - Greater Strength / 260
+				{ 12, 13931 }, -- Enchant Bracer - Deflection / 255
+				{ 13, 13846 }, -- Enchant Bracer - Greater Spirit / 240
+				{ 14, 13822 }, -- Enchant Bracer - Intellect / 230
+				{ 15, 13661 }, -- Enchant Bracer - Strength / 200
+				{ 16, 13648 }, -- Enchant Bracer - Stamina / 190
+				{ 17, 13646 }, -- Enchant Bracer - Lesser Deflection / 190
+				{ 18, 13642 }, -- Enchant Bracer - Spirit / 185
+				{ 19, 13622 }, -- Enchant Bracer - Lesser Intellect / 175
+				{ 20, 13536 }, -- Enchant Bracer - Lesser Strength / 165
+				{ 21, 13501 }, -- Enchant Bracer - Lesser Stamina / 155
+				{ 22, 7859 }, -- Enchant Bracer - Lesser Spirit / 145
+				{ 23, 7779 }, -- Enchant Bracer - Minor Agility / 115
+				{ 24, 7782 }, -- Enchant Bracer - Minor Strength / 115
+				{ 25, 7766 }, -- Enchant Bracer - Minor Spirit / 105
+				{ 26, 7457 }, -- Enchant Bracer - Minor Stamina / 100
+				{ 27, 7428 }, -- Enchant Bracer - Minor Deflect / 80
+				{ 28, 7418 }, -- Enchant Bracer - Minor Health / 70
 			}
 		},
 	}
@@ -840,217 +903,242 @@ data["Engineering"] = {
 		{
 			name = AL["Armor"],
 			[NORMAL_DIFF] = {
-				{ 1,  22797 }, --Force Reactive Disk / 65
-				{ 3,  12903 }, --Gnomish Harm Prevention Belt / 43
-				{ 5,  8895 }, --Goblin Rocket Boots / 45
-				{ 16, 19819 }, --Voice Amplification Modulator / 58
-				{ 18, 12616 }, --Parachute Cloak / 45
-				{ 20, 12905 }, --Gnomish Rocket Boots / 45
+				{ 1,  1213588 }, -- Tuned Force Reactive Disk
+				{ 2,  22797 }, -- Force Reactive Disk / 65
+				{ 4,  12903 }, -- Gnomish Harm Prevention Belt / 43
+				{ 6,  8895 }, -- Goblin Rocket Boots / 45
+				{ 8,  446236 }, -- Void-Powered Invoker's Vambraces
+				{ 9,  446238 }, -- Void-Powered Protector's Vambraces
+				{ 10, 446237 }, -- Void-Powered Slayer's Vambraces
+				{ 16, 19819 }, -- Voice Amplification Modulator / 58
+				{ 19, 12616 }, -- Parachute Cloak / 45
+				{ 21, 12905 }, -- Gnomish Rocket Boots / 45
+				{ 23, 435960 }, -- Hyperconductive Goldwrap
+				{ 25, 435958 }, -- Whirling Truesilver Gearwall
 			}
 		},
 		{
 			name = AL["Armor"].." - "..ALIL["Head"],
 			[NORMAL_DIFF] = {
-				{ 1,  24357 }, --Bloodvine Lens / 65
-				{ 2,  24356 }, --Bloodvine Goggles / 65
-				{ 3,  19825 }, --Master Engineer / 58
-				{ 4,  19794 }, --Spellpower Goggles Xtreme Plus / 54
-				{ 5,  12622 }, --Green Lens / 49
-				{ 6,  12758 }, --Goblin Rocket Helmet / 47
-				{ 7,  12907 }, --Gnomish Mind Control Cap / 47
-				{ 8,  12618 }, --Rose Colored Goggles / 46
-				{ 9,  12617 }, --Deepdive Helmet / 46
-				{ 10, 12607 }, --Catseye Ultra Goggles / 44
-				{ 11, 12615 }, --Spellpower Goggles Xtreme / 43
-				{ 12, 12897 }, --Gnomish Goggles / 42
-				{ 13, 12594 }, --Fire Goggles / 41
-				{ 14, 12717 }, --Goblin Mining Helmet / 41
-				{ 15, 12718 }, --Goblin Construction Helmet / 41
-				{ 16, 3966 }, --Craftsman / 37
-				{ 17, 12587 }, --Bright-Eye Goggles / 35
-				{ 18, 3956 }, --Green Tinted Goggles / 30
-				{ 19, 3940 }, --Shadow Goggles / 24
-				{ 20, 3934 }, --Flying Tiger Goggles / 20
+				{ 1,  1221012 }, -- Creepy Censor Sensors
+				{ 2,  24357 }, -- Bloodvine Lens / 65
+				{ 3,  24356 }, -- Bloodvine Goggles / 65
+				{ 4,  19825 }, -- Master Engineer / 58
+				{ 5,  19794 }, -- Spellpower Goggles Xtreme Plus / 54
+				{ 6,  12622 }, -- Green Lens / 49
+				{ 7,  12758 }, -- Goblin Rocket Helmet / 47
+				{ 8,  12907 }, -- Gnomish Mind Control Cap / 47
+				{ 9,  12618 }, -- Rose Colored Goggles / 46
+				{ 10, 12617 }, -- Deepdive Helmet / 46
+				{ 11, 12607 }, -- Catseye Ultra Goggles / 44
+				{ 12, 12615 }, -- Spellpower Goggles Xtreme / 43
+				{ 13, 12897 }, -- Gnomish Goggles / 42
+				{ 14, 12594 }, -- Fire Goggles / 41
+				{ 15, 12717 }, -- Goblin Mining Helmet / 41
+				{ 16, 12718 }, -- Goblin Construction Helmet / 41
+				{ 17, 3966 }, -- Craftsman / 37
+				{ 18, 12587 }, -- Bright-Eye Goggles / 35
+				{ 19, 3956 }, -- Green Tinted Goggles / 30
+				{ 20, 3940 }, -- Shadow Goggles / 24
+				{ 21, 3934 }, -- Flying Tiger Goggles / 20
 			}
 		},
 		{
 			name = AL["Armor"].." - "..ALIL["Trinket"],
 			[NORMAL_DIFF] = {
-				{ 1,  19830 }, --Arcanite Dragonling / 60
-				{ 2,  23082 }, --Ultra-Flash Shadow Reflector / 60
-				{ 3,  23081 }, --Hyper-Radiant Flame Reflector / 58
-				{ 4,  23486 }, --Dimensional Ripper - Everlook / 55
-				{ 5,  23079 }, --Major Recombobulator / 55
-				{ 6,  23078 }, --Goblin Jumper Cables XL / 53
-				{ 7,  23077 }, --Gyrofreeze Ice Reflector / 52
-				{ 8,  23489 }, --Ultrasafe Transporter: Gadgetzan / 52
-				{ 9,  12624 }, --Mithril Mechanical Dragonling / 50
-				{ 10, 12908 }, --Goblin Dragon Gun / 48
-				{ 11, 12759 }, --Gnomish Death Ray / 48
-				{ 12, 12906 }, --Gnomish Battle Chicken / 46
-				{ 13, 12755 }, --Goblin Bomb Dispenser / 46
-				{ 14, 12902 }, --Gnomish Net-o-Matic Projector / 42
-				{ 15, 12899 }, --Gnomish Shrink Ray / 41
-				{ 16, 3969 }, --Mechanical Dragonling / 40
-				{ 17, 3971 }, --Gnomish Cloaking Device / 40
-				{ 18, 9273 }, --Goblin Jumper Cables / 33
-				{ 19, 3952 }, --Minor Recombobulator / 28
-				{ 20, 9269 }, --Gnomish Universal Remote / 25
+				{ 1,  1226213 }, -- Semisafe Transporter: New Avalon
+				{ 2,  19830 }, -- Arcanite Dragonling / 60
+				{ 3,  23082 }, -- Ultra-Flash Shadow Reflector / 60
+				{ 4,  23081 }, -- Hyper-Radiant Flame Reflector / 58
+				{ 5,  23486 }, -- Dimensional Ripper - Everlook / 55
+				{ 6,  23079 }, -- Major Recombobulator / 55
+				{ 7,  23078 }, -- Goblin Jumper Cables XL / 53
+				{ 8,  23077 }, -- Gyrofreeze Ice Reflector / 52
+				{ 9,  23489 }, -- Ultrasafe Transporter: Gadgetzan / 52
+				{ 10, 12624 }, -- Mithril Mechanical Dragonling / 50
+				{ 11, 12908 }, -- Goblin Dragon Gun / 48
+				{ 12, 12759 }, -- Gnomish Death Ray / 48
+				{ 13, 12906 }, -- Gnomish Battle Chicken / 46
+				{ 14, 12755 }, -- Goblin Bomb Dispenser / 46
+				{ 15, 12902 }, -- Gnomish Net-o-Matic Projector / 42
+				{ 16, 12899 }, -- Gnomish Shrink Ray / 41
+				{ 17, 3969 }, -- Mechanical Dragonling / 40
+				{ 18, 3971 }, -- Gnomish Cloaking Device / 40
+				{ 19, 9273 }, -- Goblin Jumper Cables / 33
+				{ 20, 3952 }, -- Minor Recombobulator / 28
+				{ 21, 9269 }, -- Gnomish Universal Remote / 25
 			}
 		},
 		{
 			name = ALIL["Weapon"].." - "..AL["Enhancements"],
 			[NORMAL_DIFF] = {
-				{ 1, 22793 }, --Biznicks 247x128 Accurascope / 60
-				{ 2, 12620 }, --Sniper Scope / 48
-				{ 3, 12597 }, --Deadly Scope / 42
-				{ 4, 3979 }, --Accurate Scope / 36
-				{ 5, 3978 }, --Standard Scope / 22
-				{ 6, 3977 }, --Crude Scope / 12
+				{ 1, 1217207 }, -- Obsidian Scope
+				{ 2, 22793 }, -- Biznicks 247x128 Accurascope / 60
+				{ 3, 12620 }, -- Sniper Scope / 48
+				{ 4, 12597 }, -- Deadly Scope / 42
+				{ 5, 3979 }, -- Accurate Scope / 36
+				{ 6, 3978 }, -- Standard Scope / 22
+				{ 7, 3977 }, -- Crude Scope / 12
 			}
 		},
 		{
 			name = AL["Weapons"].." - "..ALIL["Guns"],
 			[NORMAL_DIFF] = {
-				{ 1,  22795 }, --Core Marksman Rifle / 65
-				{ 2,  19833 }, --Flawless Arcanite Rifle / 61
-				{ 3,  19796 }, --Dark Iron Rifle / 55
-				{ 4,  19792 }, --Thorium Rifle / 52
-				{ 5,  12614 }, --Mithril Heavy-bore Rifle / 44
-				{ 6,  12595 }, --Mithril Blunderbuss / 41
-				{ 7,  3954 }, --Moonsight Rifle / 29
-				{ 8,  3949 }, --Silver-plated Shotgun / 26
-				{ 9,  3939 }, --Lovingly Crafted Boomstick / 24
-				{ 10, 3936 }, --Deadly Blunderbuss / 21
-				{ 11, 3925 }, --Rough Boomstick / 10
+				{ 1,  1214145 }, -- Obsidian Shotgun
+				{ 2,  461710 }, -- Fiery Core Sharpshooter Rifle
+				{ 3,  19833 }, -- Flawless Arcanite Rifle / 61
+				{ 4,  19796 }, -- Dark Iron Rifle / 55
+				{ 5,  19792 }, -- Thorium Rifle / 52
+				{ 6,  12614 }, -- Mithril Heavy-bore Rifle / 44
+				{ 7,  12595 }, -- Mithril Blunderbuss / 41
+				{ 8,  3954 }, -- Moonsight Rifle / 29
+				{ 9,  3949 }, -- Silver-plated Shotgun / 26
+				{ 10, 3939 }, -- Lovingly Crafted Boomstick / 24
+				{ 11, 3936 }, -- Deadly Blunderbuss / 21
+				{ 12, 3925 }, -- Rough Boomstick / 10
 			}
 		},
 		{
 			name = ALIL["Projectile"].." - "..ALIL["Bullet"],
 			[NORMAL_DIFF] = {
-				{ 1, 19800 }, --Thorium Shells / 57
-				{ 2, 12621 }, --Mithril Gyro-Shot / 49
-				{ 3, 12596 }, --Hi-Impact Mithril Slugs / 42
-				{ 4, 3947 }, --Crafted Solid Shot / 35
-				{ 5, 3930 }, --Crafted Heavy Shot / 20
-				{ 6, 3920 }, --Crafted Light Shot / 10
+				{ 1, 19800 }, -- Thorium Shells / 57
+				{ 2, 12621 }, -- Mithril Gyro-Shot / 49
+				{ 3, 12596 }, -- Hi-Impact Mithril Slugs / 42
+				{ 4, 3947 }, -- Crafted Solid Shot / 35
+				{ 5, 3930 }, -- Crafted Heavy Shot / 20
+				{ 6, 3920 }, -- Crafted Light Shot / 10
 			}
 		},
 		{
 			name = ALIL["Parts"],
 			[NORMAL_DIFF] = {
-				{ 1,  19815 }, --Delicate Arcanite Converter / 58
-				{ 2,  19791 }, --Thorium Widget / 52
-				{ 3,  19788 }, --Dense Blasting Powder / 50
-				{ 4,  23071 }, --Truesilver Transformer / 50
-				{ 5,  12599 }, --Mithril Casing / 43
-				{ 6,  12591 }, --Unstable Trigger / 40
-				{ 7,  19795 }, --Thorium Tube / 39
-				{ 8,  12589 }, --Mithril Tube / 39
-				{ 9,  12585 }, --Solid Blasting Powder / 35
-				{ 10, 3961 }, --Gyrochronatom / 34
-				{ 11, 3958 }, --Iron Strut / 32
-				{ 12, 12584 }, --Gold Power Core / 30
-				{ 13, 3953 }, --Bronze Framework / 29
-				{ 14, 3945 }, --Heavy Blasting Powder / 25
-				{ 15, 3942 }, --Whirring Bronze Gizmo / 25
-				{ 16, 3938 }, --Bronze Tube / 21
-				{ 17, 3973 }, --Silver Contact / 18
-				{ 18, 3926 }, --Copper Modulator / 13
-				{ 19, 3929 }, --Coarse Blasting Powder / 15
-				{ 20, 3924 }, --Copper Tube / 10
-				{ 21, 3922 }, --Handful of Copper Bolts / 8
-				{ 22, 3918 }, --Rough Blasting Powder / 5
+				{ 1,  1226206 }, -- Tinkerbox
+				{ 2,  1213646 }, -- Obsidian Blasting Powder
+				{ 3,  19815 }, -- Delicate Arcanite Converter / 58
+				{ 4,  19791 }, -- Thorium Widget / 52
+				{ 5,  19788 }, -- Dense Blasting Powder / 50
+				{ 6,  23071 }, -- Truesilver Transformer / 50
+				{ 7,  12599 }, -- Mithril Casing / 43
+				{ 8,  12591 }, -- Unstable Trigger / 40
+				{ 9,  19795 }, -- Thorium Tube / 39
+				{ 10, 12589 }, -- Mithril Tube / 39
+				{ 11, 12585 }, -- Solid Blasting Powder / 35
+				{ 12, 3961 }, -- Gyrochronatom / 34
+				{ 13, 3958 }, -- Iron Strut / 32
+				{ 14, 12584 }, -- Gold Power Core / 30
+				{ 15, 3953 }, -- Bronze Framework / 29
+				{ 16, 3945 }, -- Heavy Blasting Powder / 25
+				{ 17, 3942 }, -- Whirring Bronze Gizmo / 25
+				{ 18, 3938 }, -- Bronze Tube / 21
+				{ 19, 3973 }, -- Silver Contact / 18
+				{ 20, 3926 }, -- Copper Modulator / 13
+				{ 21, 3929 }, -- Coarse Blasting Powder / 15
+				{ 22, 3924 }, -- Copper Tube / 10
+				{ 23, 3922 }, -- Handful of Copper Bolts / 8
+				{ 24, 3918 }, -- Rough Blasting Powder / 5
 			}
 		},
 		{
 			name = AL["Fireworks"],
 			[NORMAL_DIFF] = {
-				{ 16, 26443 }, --Cluster Launcher / 1
-				{ 1,  26442 }, --Firework Launcher / 1
-				{ 3,  26418 }, --Small Red Rocket / 1
-				{ 4,  26417 }, --Small Green Rocket / 1
-				{ 5,  26416 }, --Small Blue Rocket / 1
-				{ 7,  26425 }, --Red Rocket Cluster / 1
-				{ 8,  26424 }, --Green Rocket Cluster / 1
-				{ 9,  26423 }, --Blue Rocket Cluster / 1
-				{ 12, 23066 }, --Red Firework / 20
-				{ 13, 23068 }, --Green Firework / 20
-				{ 14, 23067 }, --Blue Firework / 20
-				{ 18, 26422 }, --Large Red Rocket / 1
-				{ 19, 26421 }, --Large Green Rocket / 1
-				{ 20, 26420 }, --Large Blue Rocket / 1
-				{ 22, 26428 }, --Large Red Rocket Cluster / 1
-				{ 23, 26427 }, --Large Green Rocket Cluster / 1
-				{ 24, 26426 }, --Large Blue Rocket Cluster / 1
-				{ 27, 23507 }, --Snake Burst Firework / 50
+				{ 16, 26443 }, -- Cluster Launcher / 1
+				{ 1,  26442 }, -- Firework Launcher / 1
+				{ 3,  26418 }, -- Small Red Rocket / 1
+				{ 4,  26417 }, -- Small Green Rocket / 1
+				{ 5,  26416 }, -- Small Blue Rocket / 1
+				{ 7,  26425 }, -- Red Rocket Cluster / 1
+				{ 8,  26424 }, -- Green Rocket Cluster / 1
+				{ 9,  26423 }, -- Blue Rocket Cluster / 1
+				{ 12, 23066 }, -- Red Firework / 20
+				{ 13, 23068 }, -- Green Firework / 20
+				{ 14, 23067 }, -- Blue Firework / 20
+				{ 18, 26422 }, -- Large Red Rocket / 1
+				{ 19, 26421 }, -- Large Green Rocket / 1
+				{ 20, 26420 }, -- Large Blue Rocket / 1
+				{ 22, 26428 }, -- Large Red Rocket Cluster / 1
+				{ 23, 26427 }, -- Large Green Rocket Cluster / 1
+				{ 24, 26426 }, -- Large Blue Rocket Cluster / 1
+				{ 27, 23507 }, -- Snake Burst Firework / 50
 			}
 		},
 		{
 			name = ALIL["Explosives"],
 			[NORMAL_DIFF] = {
-				{ 1,  19831 }, --Arcane Bomb / 60
-				{ 2,  19799 }, --Dark Iron Bomb / 57
-				{ 3,  19790 }, --Thorium Grenade / 55
-				{ 4,  23070 }, --Dense Dynamite / 45
-				{ 5,  12619 }, --Hi-Explosive Bomb / 47
-				{ 6,  12754 }, --The Big One / 45
-				{ 7,  3968 }, --Goblin Land Mine / 39
-				{ 8,  12603 }, --Mithril Frag Bomb / 43
-				{ 9,  12760 }, --Goblin Sapper Charge / 41
-				{ 10, 23069 }, --Ez-Thro Dynamite II / 40
-				{ 11, 3967 }, --Big Iron Bomb / 43
-				{ 12, 8243 }, --Flash Bomb / 37
-				{ 13, 3962 }, --Iron Grenade / 35
-				{ 14, 12586 }, --Solid Dynamite / 35
-				{ 15, 3955 }, --Explosive Sheep / 30
-				{ 16, 3950 }, --Big Bronze Bomb / 33
-				{ 17, 3946 }, --Heavy Dynamite / 30
-				{ 18, 3941 }, --Small Bronze Bomb / 29
-				{ 19, 8339 }, --Ez-Thro Dynamite / 25
-				{ 20, 3937 }, --Large Copper Bomb / 26
-				{ 21, 3931 }, --Coarse Dynamite / 20
-				{ 22, 3923 }, --Rough Copper Bomb / 14
-				{ 23, 3919 }, --Rough Dynamite / 10
+				{ 1,  1213573 }, -- Arcane Megabomb
+				{ 2,  1213576 }, -- The Fumigator
+				{ 3,  1213578 }, -- Obsidian Bomb
+				{ 4,  19831 }, -- Arcane Bomb / 60
+				{ 5,  19799 }, -- Dark Iron Bomb / 57
+				{ 6,  19790 }, -- Thorium Grenade / 55
+				{ 7,  23070 }, -- Dense Dynamite / 45
+				{ 8,  12619 }, -- Hi-Explosive Bomb / 47
+				{ 9,  12754 }, -- The Big One / 45
+				{ 10, 435966 }, -- Ez-Thro Radiation Bomb
+				{ 11, 435964 }, -- High-Yield Radiation Bomb
+				{ 12, 3968 }, -- Goblin Land Mine / 39
+				{ 13, 12603 }, -- Mithril Frag Bomb / 43
+				{ 14, 12760 }, -- Goblin Sapper Charge / 41
+				{ 15, 23069 }, -- Ez-Thro Dynamite II / 40
+				{ 16, 3967 }, -- Big Iron Bomb / 43
+				{ 17, 8243 }, -- Flash Bomb / 37
+				{ 18, 3962 }, -- Iron Grenade / 35
+				{ 19, 12586 }, -- Solid Dynamite / 35
+				{ 20, 3955 }, -- Explosive Sheep / 30
+				{ 21, 3950 }, -- Big Bronze Bomb / 33
+				{ 22, 3946 }, -- Heavy Dynamite / 30
+				{ 23, 3941 }, -- Small Bronze Bomb / 29
+				{ 24, 8339 }, -- Ez-Thro Dynamite / 25
+				{ 25, 3937 }, -- Large Copper Bomb / 26
+				{ 26, 3931 }, -- Coarse Dynamite / 20
+				{ 27, 3923 }, -- Rough Copper Bomb / 14
+				{ 28, 3919 }, -- Rough Dynamite / 10
 			}
 		},
 		{
 			name = AL["Pets"],
 			[NORMAL_DIFF] = {
-				{ 1, 19793 }, --Lifelike Mechanical Toad / 53
-				{ 2, 15633 }, --Lil / 41
-				{ 3, 15628 }, --Pet Bombling / 41
-				{ 4, 3928 }, --Mechanical Squirrel Box / 15
+				{ 1, 19793 }, -- Lifelike Mechanical Toad / 53
+				{ 2, 15633 }, -- Lil' Smoky / 41
+				{ 3, 15628 }, -- Pet Bombling / 41
+				{ 4, 3928 }, -- Mechanical Squirrel Box / 15
 			}
 		},
 		{
 			name = AL["Misc"],
 			[NORMAL_DIFF] = {
-				{ 1,  23080 }, --Powerful Seaforium Charge / 52
-				{ 2,  3972 }, --Large Seaforium Charge / 40
-				{ 3,  3933 }, --Small Seaforium Charge / 20
-				{ 5,  22704 }, --Field Repair Bot 74A / 60
-				{ 6,  15255 }, --Mechanical Repair Kit / 40
-				{ 8,  19814 }, --Masterwork Target Dummy / 55
-				{ 9,  3965 }, --Advanced Target Dummy / 37
-				{ 10, 3932 }, --Target Dummy / 17
-				{ 12, 28327 }, --Steam Tonk Controller / 55
-				{ 13, 9271 }, --Aquadynamic Fish Attractor / 30
-				{ 15, 12715 }, --Recipe: Goblin Rocket Fuel / 42
-				{ 16, 3957 }, --Ice Deflector / 31
-				{ 17, 3944 }, --Flame Deflector / 25
-				{ 19, 23129 }, --World Enlarger / 50
-				{ 20, 12590 }, --Gyromatic Micro-Adjustor / 35
-				{ 21, 3959 }, --Discombobulator Ray / 32
-				{ 22, 26011 }, --Tranquil Mechanical Yeti / 60
-				{ 23, 23096 }, --Gnomish Alarm-O-Bot / 53
-				{ 24, 19567 }, --Salt Shaker / 50
-				{ 25, 21940 }, --SnowMaster 9000 / 38
-				{ 26, 3963 }, --Compact Harvest Reaper Kit / 35
-				{ 27, 3960 }, --Portable Bronze Mortar / 33
-				{ 28, 6458 }, --Ornate Spyglass / 27
-				{ 29, 8334 }, --Practice Lock / 20
-				{ 30, 12895 }, --Plans: Inlaid Mithril Cylinder / 40
+				{ 1,   23080 }, -- Powerful Seaforium Charge / 52
+				{ 2,   3972 }, -- Large Seaforium Charge / 40
+				{ 3,   3933 }, -- Small Seaforium Charge / 20
+				{ 5,   22704 }, -- Field Repair Bot 74A / 60
+				{ 6,   15255 }, -- Mechanical Repair Kit / 40
+				{ 8,   19814 }, -- Masterwork Target Dummy / 55
+				{ 9,   3965 }, -- Advanced Target Dummy / 37
+				{ 10,  3932 }, -- Target Dummy / 17
+				{ 12,  28327 }, -- Steam Tonk Controller / 55
+				{ 13,  9271 }, -- Aquadynamic Fish Attractor / 30
+				{ 15,  12715 }, -- Recipe: Goblin Rocket Fuel / 42
+				{ 16,  3957 }, -- Ice Deflector / 31
+				{ 17,  3944 }, -- Flame Deflector / 25
+				{ 19,  23129 }, -- World Enlarger / 50
+				{ 20,  12590 }, -- Gyromatic Micro-Adjustor / 35
+				{ 21,  3959 }, -- Discombobulator Ray / 32
+				{ 22,  26011 }, -- Tranquil Mechanical Yeti / 60
+				{ 23,  23096 }, -- Gnomish Alarm-O-Bot / 53
+				{ 24,  19567 }, -- Salt Shaker / 50
+				{ 25,  21940 }, -- SnowMaster 9000 / 38
+				{ 26,  3963 }, -- Compact Harvest Reaper Kit / 35
+				{ 27,  3960 }, -- Portable Bronze Mortar / 33
+				{ 28,  6458 }, -- Ornate Spyglass / 27
+				{ 29,  8334 }, -- Practice Lock / 20
+				{ 30,  12895 }, -- Plans: Inlaid Mithril Cylinder / 40
+				{ 101, 1226207 }, -- Tinkerbox: Teleport
+				{ 102, 1226208 }, -- Tinkerbox: Nitro Boosts
+				{ 103, 1226209 }, -- Tinkerbox: Magnetic Displacement
+				{ 104, 1228088 }, -- Pup-Up Shrub
+				{ 106, 1213586 }, -- G00 DV-1B3 Generator
+				{ 108, 435956 }, -- Polished Truesilver Gears
+				{ 109, 431362 }, -- Soul Vessel
+				{ 111, 424641 }, -- Shredder Autosalvage Unit
 			}
 		},
 	}
