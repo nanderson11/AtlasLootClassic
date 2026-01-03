@@ -950,7 +950,7 @@ RECIPE_DATA.CLASSIC = {
 	-- SoD
 	[210709] = { 4, 90, 426607 }, -- Recipe: Elixir of Coalesced Regret
 	[211846] = { 2, 100, 430397 }, -- Plans: Blackfathom Sharpening Stone
-	[210779] = { 2, 150, 427063 }, -- Plans: Mantle of the Second War
+	[210779] = { 2, 150, 427061 }, -- Plans: Mantle of the Second War
 	[211849] = { 10, 100, 430409 }, -- Formula: Blackfathom Mana Oil
 	[210178] = { 9, 135, 424641 }, -- Schematic: Shredder Autosalvage Unit
 	[211247] = { 8, 125, 428424 }, -- Pattern: Phoenix Bindings
