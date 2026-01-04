@@ -1762,18 +1762,19 @@ data["Mining"] = {
 		{
 			name = AL["Smelting"],
 			[NORMAL_DIFF] = {
-				{ 1,  22967 }, --Smelt Elementium / 310
-				{ 2,  16153 }, --Smelt Thorium / 250
-				{ 3,  10098 }, --Smelt Truesilver / 230
-				{ 4,  14891 }, --Smelt Dark Iron / 230
-				{ 5,  10097 }, --Smelt Mithril / 175
-				{ 6,  3308 }, --Smelt Gold / 170
-				{ 7,  3569 }, --Smelt Steel / 165
-				{ 8,  3307 }, --Smelt Iron / 130
-				{ 9,  2658 }, --Smelt Silver / 100
-				{ 10, 2659 }, --Smelt Bronze / 65
-				{ 11, 3304 }, --Smelt Tin / 50
-				{ 12, 2657 }, --Smelt Copper / 25
+				{ 1,  22967 }, -- Smelt Elementium / 310
+				{ 2,  1213638 }, -- Smelt Obsidian-Infused Thorium Bar
+				{ 3,  16153 }, -- Smelt Thorium / 250
+				{ 4,  10098 }, -- Smelt Truesilver / 230
+				{ 5,  14891 }, -- Smelt Dark Iron / 230
+				{ 6,  10097 }, -- Smelt Mithril / 175
+				{ 7,  3308 }, -- Smelt Gold / 170
+				{ 8,  3569 }, -- Smelt Steel / 165
+				{ 9,  3307 }, -- Smelt Iron / 130
+				{ 10, 2658 }, -- Smelt Silver / 100
+				{ 11, 2659 }, -- Smelt Bronze / 65
+				{ 12, 3304 }, -- Smelt Tin / 50
+				{ 13, 2657 }, -- Smelt Copper / 25
 			}
 		},
 	}
@@ -1791,14 +1792,14 @@ data["Herbalism"] = {
 			[NORMAL_DIFF] = {
 				{ 1,  13467 }, -- Icecap
 				{ 2,  13466 }, -- Plaguebloom
-				{ 3,  13465 }, -- Mountain Silversage
-				{ 4,  13463 }, -- Dreamfoil
-				{ 5,  13464 }, -- Golden Sansam
+				{ 3,  13465, 234012 }, -- Mountain Silversage (Hive Thistle)
+				{ 4,  13463, 234012 }, -- Dreamfoil (Hive Thistle)
+				{ 5,  13464, 234012 }, -- Golden Sansam (Hive Thistle)
 				{ 6,  8846 }, -- Gromsblood
 				{ 7,  8845 }, -- Ghost Mushroom
 				{ 8,  8839 }, -- Blindweed
-				{ 9,  8838 }, -- Sungrass
-				{ 16, 13468 }, -- Black Lotus
+				{ 9,  8838,  234012 }, -- Sungrass (Hive Thistle)
+				{ 16, 13468, 234012 }, -- Black Lotus (Hive Thistle)
 				{ 18, 19727 }, -- Blood Scythe
 				{ 19, 19726 }, -- Bloodvine
 			}
@@ -1807,13 +1808,12 @@ data["Herbalism"] = {
 			name = AL["Expert"],
 			[NORMAL_DIFF] = {
 				{ 1, 8836 }, -- Arthas' Tears
-				{ 2, 8831, 8153 }, -- Purple Lotus
+				{ 2, 8831, 8153 }, -- Purple Lotus (Wildvine)
 				{ 3, 4625 }, -- Firebloom
 				{ 4, 3819 }, -- Wintersbite
 				{ 5, 3358 }, -- Khadgar's Whisker
 				{ 6, 3821 }, -- Goldthorn
 				{ 7, 3818 }, -- Fadeleaf
-				--{ 17, 8153 }, -- Wildvine
 			}
 		},
 		{
@@ -1830,12 +1830,11 @@ data["Herbalism"] = {
 		{
 			name = AL["Apprentice"],
 			[NORMAL_DIFF] = {
-				{ 1, 2450, 2452 }, -- Briarthorn
-				{ 2, 785,  2452 }, -- Mageroyal
+				{ 1, 2450, 2452 }, -- Briarthorn (Swiftthistle)
+				{ 2, 785,  2452 }, -- Mageroyal (Swiftthistle)
 				{ 3, 2449 }, -- Earthroot
 				{ 4, 765 }, -- Silverleaf
 				{ 5, 2447 }, -- Peacebloom
-				--{ 16,  2452 }, -- Swiftthistle
 			}
 		},
 	}
@@ -1851,132 +1850,136 @@ data["Cooking"] = {
 		{
 			name = ALIL["Stamina"],
 			[NORMAL_DIFF] = {
-				{ 1, 25659 }, --Dirge / 325
-				{ 2, 18246 }, --Mightfish Steak / 315
-				{ 3, 18239 }, --Cooked Glossy Mightfish / 265
+				{ 1, 25659 }, -- Dirge / 325
+				{ 2, 18246 }, -- Mightfish Steak / 315
+				{ 3, 18239 }, -- Cooked Glossy Mightfish / 265
 			},
 		},
 		{
 			name = ALIL["Intellect"],
 			[NORMAL_DIFF] = {
-				{ 1, 22761 }, --Runn Tum Tuber Surprise / 315
+				{ 1, 22761 }, -- Runn Tum Tuber Surprise / 315
 			},
 		},
 		{
 			name = ALIL["Agility"],
 			[NORMAL_DIFF] = {
-				{ 1, 18240 }, --Grilled Squid / 280
+				{ 1, 18240 }, -- Grilled Squid / 280
 			},
 		},
 		{
 			name = ALIL["Strength"],
 			[NORMAL_DIFF] = {
-				{ 1, 24801 }, --Smoked Desert Dumplings / 325
+				{ 1, 24801 }, -- Smoked Desert Dumplings / 325
 			},
 		},
 		{
 			name = ALIL["Spirit"],
 			[NORMAL_DIFF] = {
-				{ 1, 18242 }, --Hot Smoked Bass / 280
+				{ 1, 18242 }, -- Hot Smoked Bass / 280
 			},
 		},
 		{
 			name = ALIL["Stamina"].." + "..ALIL["Spirit"],
 			[NORMAL_DIFF] = {
-				{ 1,   15933 }, --Monster Omelet / 265
-				{ 2,   22480 }, --Tender Wolf Steak / 265
-				{ 3,   15915 }, --Spiced Chili Crab / 265
-				{ 4,   15910 }, --Heavy Kodo Stew / 240
-				{ 5,   21175 }, --Spider Sausage / 240
-				{ 6,   15855 }, --Roast Raptor / 215
-				{ 7,   15863 }, --Carrion Surprise / 215
-				{ 8,   4094 }, --Barbecued Buzzard Wing / 215
-				{ 9,   7213 }, --Giant Clam Scorcho / 215
-				{ 10,  15861 }, --Jungle Stew / 215
-				{ 11,  15856 }, --Hot Wolf Ribs / 215
-				{ 12,  3400 }, --Soothing Turtle Bisque / 215
-				{ 13,  15865 }, --Mystery Stew / 215
-				{ 14,  3399 }, --Tasty Lion Steak / 190
-				{ 15,  3398 }, --Hot Lion Chops / 175
-				{ 16,  3376 }, --Curiously Tasty Omelet / 170
-				{ 17,  15853 }, --Lean Wolf Steak / 165
-				{ 18,  6500 }, --Goblin Deviled Clams / 165
-				{ 19,  24418 }, --Heavy Crocolisk Stew / 160
-				{ 20,  3373 }, --Crocolisk Gumbo / 160
-				{ 21,  3397 }, --Big Bear Steak / 150
-				{ 22,  3377 }, --Gooey Spider Cake / 150
-				{ 23,  6419 }, --Lean Venison / 150
-				{ 24,  6418 }, --Crispy Lizard Tail / 140
-				{ 25,  2549 }, --Seasoned Wolf Kabob / 140
-				{ 26,  2547 }, --Redridge Goulash / 135
-				{ 27,  3372 }, --Murloc Fin Soup / 130
-				{ 28,  3370 }, --Crocolisk Steak / 120
-				{ 29,  2546 }, --Dry Pork Ribs / 120
-				{ 30,  2544 }, --Crab Cake / 115
-				{ 101, 3371 }, --Blood Sausage / 100
-				{ 102, 6416 }, --Strider Stew / 90
-				{ 103, 2542 }, --Goretusk Liver Pie / 90
-				{ 104, 2541 }, --Coyote Steak / 90
-				{ 105, 6499 }, --Boiled Clams / 90
-				{ 106, 6415 }, --Fillet of Frenzy / 90
-				{ 107, 21144 }, --Egg Nog / 75
-				{ 108, 6414 }, --Roasted Kodo Meat / 75
-				{ 109, 2795 }, --Beer Basted Boar Ribs / 60
-				{ 110, 2539 }, --Spiced Wolf Meat / 50
-				{ 111, 6412 }, --Kaldorei Spider Kabob / 50
-				{ 112, 15935 }, --Crispy Bat Wing / 45
-				{ 113, 8604 }, --Herb Baked Egg / 45
-				{ 114, 21143 }, --Gingerbread Cookie / 45
+				{ 1,   15933 }, -- Monster Omelet / 265
+				{ 2,   22480 }, -- Tender Wolf Steak / 265
+				{ 3,   15915 }, -- Spiced Chili Crab / 265
+				{ 4,   15910 }, -- Heavy Kodo Stew / 240
+				{ 5,   21175 }, -- Spider Sausage / 240
+				{ 6,   15855 }, -- Roast Raptor / 215
+				{ 7,   15863 }, -- Carrion Surprise / 215
+				{ 8,   4094 }, -- Barbecued Buzzard Wing / 215
+				{ 9,   7213 }, -- Giant Clam Scorcho / 215
+				{ 10,  15861 }, -- Jungle Stew / 215
+				{ 11,  15856 }, -- Hot Wolf Ribs / 215
+				{ 12,  3400 }, -- Soothing Turtle Bisque / 215
+				{ 13,  15865 }, -- Mystery Stew / 215
+				{ 14,  3399 }, -- Tasty Lion Steak / 190
+				{ 15,  3398 }, -- Hot Lion Chops / 175
+				{ 16,  3376 }, -- Curiously Tasty Omelet / 170
+				{ 17,  15853 }, -- Lean Wolf Steak / 165
+				{ 18,  6500 }, -- Goblin Deviled Clams / 165
+				{ 19,  24418 }, -- Heavy Crocolisk Stew / 160
+				{ 20,  3373 }, -- Crocolisk Gumbo / 160
+				{ 21,  3397 }, -- Big Bear Steak / 150
+				{ 22,  3377 }, -- Gooey Spider Cake / 150
+				{ 23,  6419 }, -- Lean Venison / 150
+				{ 24,  6418 }, -- Crispy Lizard Tail / 140
+				{ 25,  2549 }, -- Seasoned Wolf Kabob / 140
+				{ 26,  2547 }, -- Redridge Goulash / 135
+				{ 27,  3372 }, -- Murloc Fin Soup / 130
+				{ 28,  3370 }, -- Crocolisk Steak / 120
+				{ 29,  2546 }, -- Dry Pork Ribs / 120
+				{ 30,  2544 }, -- Crab Cake / 115
+				{ 101, 3371 }, -- Blood Sausage / 100
+				{ 102, 6416 }, -- Strider Stew / 90
+				{ 103, 2542 }, -- Goretusk Liver Pie / 90
+				{ 104, 2541 }, -- Coyote Steak / 90
+				{ 105, 6499 }, -- Boiled Clams / 90
+				{ 106, 6415 }, -- Fillet of Frenzy / 90
+				{ 107, 21144 }, -- Egg Nog / 75
+				{ 108, 6414 }, -- Roasted Kodo Meat / 75
+				{ 109, 2795 }, -- Beer Basted Boar Ribs / 60
+				{ 110, 2539 }, -- Spiced Wolf Meat / 50
+				{ 111, 6412 }, -- Kaldorei Spider Kabob / 50
+				{ 112, 15935 }, -- Crispy Bat Wing / 45
+				{ 113, 8604 }, -- Herb Baked Egg / 45
+				{ 114, 21143 }, -- Gingerbread Cookie / 45
 			},
 		},
 		{
 			name = ALIL["Mana Per 5 Sec."],
 			[NORMAL_DIFF] = {
-				{ 1, 18243 }, --Nightfin Soup / 290
-				{ 2, 25954 }, --Sagefish Delight / 215
-				{ 3, 25704 }, --Smoked Sagefish / 120
+				{ 1, 18243 }, -- Nightfin Soup / 290
+				{ 2, 25954 }, -- Sagefish Delight / 215
+				{ 3, 25704 }, -- Smoked Sagefish / 120
 			},
 		},
 		{
 			name = ALIL["Health Per 5 Sec."],
 			[NORMAL_DIFF] = {
-				{ 1, 18244 }, --Poached Sunscale Salmon / 290
+				{ 1, 18244 }, -- Poached Sunscale Salmon / 290
 			},
 		},
 		{
 			name = ALIL["Food"],
 			[NORMAL_DIFF] = {
-				{ 1,  18245 }, --Lobster Stew / 315
-				{ 2,  18238 }, --Spotted Yellowtail / 315
-				{ 3,  18247 }, --Baked Salmon / 265
-				{ 4,  6501 }, --Clam Chowder / 265
-				{ 5,  18241 }, --Filet of Redgill / 265
-				{ 6,  20916 }, --Mithril Headed Trout / 215
-				{ 7,  7828 }, --Rockscale Cod / 190
-				{ 8,  7755 }, --Bristle Whisker Catfish / 140
-				{ 9,  20626 }, --Undermine Clam Chowder / 130
-				{ 10, 2548 }, --Succulent Pork Ribs / 130
-				{ 11, 6417 }, --Dig Rat Stew / 130
-				{ 12, 2545 }, --Cooked Crab Claw / 125
-				{ 13, 2543 }, --Westfall Stew / 115
-				{ 14, 7827 }, --Rainbow Fin Albacore / 90
-				{ 15, 7754 }, --Loch Frenzy Delight / 90
-				{ 16, 7753 }, --Longjaw Mud Snapper / 90
-				{ 17, 8607 }, --Smoked Bear Meat / 80
-				{ 18, 6413 }, --Scorpid Surprise / 60
-				{ 19, 7752 }, --Slitherskin Mackerel / 45
-				{ 20, 2538 }, --Charred Wolf Meat / 45
-				{ 21, 7751 }, --Brilliant Smallfish / 45
-				{ 22, 2540 }, --Roasted Boar Meat / 45
+				{ 1,  18245 }, -- Lobster Stew / 315
+				{ 2,  18238 }, -- Spotted Yellowtail / 315
+				{ 3,  18247 }, -- Baked Salmon / 265
+				{ 4,  6501 }, -- Clam Chowder / 265
+				{ 5,  18241 }, -- Filet of Redgill / 265
+				{ 6,  20916 }, -- Mithril Headed Trout / 215
+				{ 7,  7828 }, -- Rockscale Cod / 190
+				{ 8,  7755 }, -- Bristle Whisker Catfish / 140
+				{ 9,  20626 }, -- Undermine Clam Chowder / 130
+				{ 10, 2548 }, -- Succulent Pork Ribs / 130
+				{ 11, 6417 }, -- Dig Rat Stew / 130
+				{ 12, 2545 }, -- Cooked Crab Claw / 125
+				{ 13, 2543 }, -- Westfall Stew / 115
+				{ 14, 7827 }, -- Rainbow Fin Albacore / 90
+				{ 15, 7754 }, -- Loch Frenzy Delight / 90
+				{ 16, 7753 }, -- Longjaw Mud Snapper / 90
+				{ 17, 8607 }, -- Smoked Bear Meat / 80
+				{ 18, 6413 }, -- Scorpid Surprise / 60
+				{ 19, 7752 }, -- Slitherskin Mackerel / 45
+				{ 20, 2538 }, -- Charred Wolf Meat / 45
+				{ 21, 7751 }, -- Brilliant Smallfish / 45
+				{ 22, 2540 }, -- Roasted Boar Meat / 45
 			},
 		},
 		{
 			name = AL["Special"],
 			[NORMAL_DIFF] = {
-				{ 1,  15906 }, --Dragonbreath Chili / 240
-				{ 2,  8238 }, --Savory Deviate Delight / 125
-				{ 3,  9513 }, --Thistle Tea / 100
-				{ 16, 13028 }, --Goldthorn Tea / 215
+				{ 1,  1225762 }, -- Smoked Redgill
+				{ 2,  1225763 }, -- Grand Lobster Banquet
+				{ 4,  470359 }, -- Darkclaw Bisque
+				{ 5,  470370 }, -- Smoked Redgill
+				{ 7,  15906 }, -- Dragonbreath Chili / 240
+				{ 8,  8238 }, -- Savory Deviate Delight / 125
+				{ 9,  9513 }, -- Thistle Tea / 100
+				{ 16, 13028 }, -- Goldthorn Tea / 215
 			},
 		},
 	}
@@ -1992,19 +1995,20 @@ data["FirstAid"] = {
 		{
 			name = ALIL["First Aid"],
 			[NORMAL_DIFF] = {
-				{ 1,  18630 }, --Heavy Runecloth Bandage / 290
-				{ 2,  18629 }, --Runecloth Bandage / 260
-				{ 3,  10841 }, --Heavy Mageweave Bandage / 240
-				{ 4,  10840 }, --Mageweave Bandage / 210
-				{ 5,  7929 }, --Heavy Silk Bandage / 180
-				{ 6,  7928 }, --Silk Bandage / 150
-				{ 7,  3278 }, --Heavy Wool Bandage / 115
-				{ 8,  3277 }, --Wool Bandage / 80
-				{ 9,  3276 }, --Heavy Linen Bandage / 50
-				{ 10, 3275 }, --Linen Bandage / 30
-				{ 16, 23787 }, --Powerful Anti-Venom / 300
-				{ 17, 7935 }, --Strong Anti-Venom / 130
-				{ 18, 7934 }, --Anti-Venom / 80
+				{ 1,  470349 }, -- Dense Runecloth Bandage / 300
+				{ 2,  18630 }, -- Heavy Runecloth Bandage / 290
+				{ 3,  18629 }, -- Runecloth Bandage / 260
+				{ 4,  10841 }, -- Heavy Mageweave Bandage / 240
+				{ 5,  10840 }, -- Mageweave Bandage / 210
+				{ 6,  7929 }, -- Heavy Silk Bandage / 180
+				{ 7,  7928 }, -- Silk Bandage / 150
+				{ 8,  3278 }, -- Heavy Wool Bandage / 115
+				{ 9,  3277 }, -- Wool Bandage / 80
+				{ 10, 3276 }, -- Heavy Linen Bandage / 50
+				{ 11, 3275 }, -- Linen Bandage / 30
+				{ 16, 23787 }, -- Powerful Anti-Venom / 300
+				{ 17, 7935 }, -- Strong Anti-Venom / 130
+				{ 18, 7934 }, -- Anti-Venom / 80
 			}
 		},
 	}
@@ -2020,11 +2024,11 @@ data["Fishing"] = {
 		{
 			name = ALIL["Fishing"],
 			[NORMAL_DIFF] = {
-				{ 1,  6533 }, --  Aquadynamic Fish Attractor
-				{ 2,  6532 }, --  Bright Baubles
-				{ 3,  7307 }, --  Flesh Eating Worm
-				{ 4,  6811 }, --  Aquadynamic Fish Lens
-				{ 5,  6530 }, --  Nightcrawlers
+				{ 1,  6533 }, -- Aquadynamic Fish Attractor
+				{ 2,  6532 }, -- Bright Baubles
+				{ 3,  7307 }, -- Flesh Eating Worm
+				{ 4,  6811 }, -- Aquadynamic Fish Lens
+				{ 5,  6530 }, -- Nightcrawlers
 				{ 16, 19971 }, -- High Test Eternium Fishing Line
 				{ 29, 16082 }, -- Artisan Fishing - The Way of the Lure
 				{ 30, 16083 }, -- Expert Fishing - The Bass and You
@@ -2091,15 +2095,20 @@ data["RoguePoisons"] = {
 				{ 10, 13228 }, -- Wound Poison II
 				{ 11, 13220 }, -- Wound Poison
 				{ 13, 3420 }, -- Crippling Poison
-				{ 17, 25347 }, -- Deadly Poison V
-				{ 18, 11358 }, -- Deadly Poison IV
-				{ 19, 11357 }, -- Deadly Poison III
-				{ 20, 2837 }, -- Deadly Poison II
-				{ 21, 2835 }, -- Deadly Poison
+				{ 14, 439503 }, -- Atrophic Poison
+				{ 15, 6510 }, -- Blinding Powder
+				{ 16, 1214168 }, -- Occult Poison II
+				{ 17, 458822 }, -- Occult Poison I
+				{ 18, 25347 }, -- Deadly Poison V
+				{ 19, 11358 }, -- Deadly Poison IV
+				{ 20, 11357 }, -- Deadly Poison III
+				{ 21, 2837 }, -- Deadly Poison II
+				{ 22, 2835 }, -- Deadly Poison
 				{ 24, 11400 }, -- Mind-numbing Poison III
 				{ 25, 8694 }, -- Mind-numbing Poison II
 				{ 26, 5763 }, -- Mind-numbing Poison
-				{ 28, 6510 }, -- Blinding Powder
+				{ 28, 439505 }, -- Numbing Poison
+				{ 29, 439500 }, -- Sebacious Poison
 			}
 		},
 	}

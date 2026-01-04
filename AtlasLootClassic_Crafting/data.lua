@@ -1668,13 +1668,12 @@ data["Herbalism"] = {
 			name = AL["Expert"],
 			[NORMAL_DIFF] = {
 				{ 1, 8836 }, -- Arthas' Tears
-				{ 2, 8831, 8153 }, -- Purple Lotus
+				{ 2, 8831, 8153 }, -- Purple Lotus (Wildvine)
 				{ 3, 4625 }, -- Firebloom
 				{ 4, 3819 }, -- Wintersbite
 				{ 5, 3358 }, -- Khadgar's Whisker
 				{ 6, 3821 }, -- Goldthorn
 				{ 7, 3818 }, -- Fadeleaf
-				--{ 17, 8153 }, -- Wildvine
 			}
 		},
 		{
@@ -1691,12 +1690,11 @@ data["Herbalism"] = {
 		{
 			name = AL["Apprentice"],
 			[NORMAL_DIFF] = {
-				{ 1, 2450, 2452 }, -- Briarthorn
-				{ 2, 785,  2452 }, -- Mageroyal
+				{ 1, 2450, 2452 }, -- Briarthorn (Swiftthistle)
+				{ 2, 785,  2452 }, -- Mageroyal (Swiftthistle)
 				{ 3, 2449 }, -- Earthroot
 				{ 4, 765 }, -- Silverleaf
 				{ 5, 2447 }, -- Peacebloom
-				--{ 16,  2452 }, -- Swiftthistle
 			}
 		},
 	}
