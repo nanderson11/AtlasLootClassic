@@ -1,7 +1,8 @@
 # Changelog
 
-## 3.6.1 -
+## 3.7.0 - January 4, 2026
 ### Added
+- SoD: Added items to Crafting
 - TBC: Added content phases to various sections
 - TBC: Added category and group to TOC
 ### Fixed
