@@ -124,8 +124,7 @@ AL["Left Click"] = "左鍵"
 AL["Lists"] = "清單"
 AL["Loatheb"] = "洛斯伯"
 AL["Loot"] = "戰利品"
---[[Translation missing --]]
---[[ AL["Lord Blackwood"] = "Lord Blackwood"--]]
+AL["Lord Blackwood"] = "黑木王"
 AL["Maexxna"] = "梅克絲娜"
 AL["Main"] = "主要"
 --[[Translation missing --]]
@@ -181,8 +180,7 @@ AL["Sapphiron"] = "薩菲隆"
 AL["Savage %s"] = "荒蠻 %s"
 --[[Translation missing --]]
 --[[ AL["Save"] = "Save"--]]
---[[Translation missing --]]
---[[ AL["Scorn"] = "Scorn"--]]
+AL["Scorn"] = "瑟克恩"
 AL["Select Module"] = "選擇主分類"
 AL["Select Subcategory"] = "選擇子分類"
 AL["Set Favourite"] = "加入最愛"
