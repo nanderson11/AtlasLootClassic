@@ -271,8 +271,7 @@ AL["Rethilgore"] = "雷希戈爾"
 AL["Revelosh"] = "魯維羅什"
 AL["Rhahk'Zor"] = "拉克佐"
 AL["Ribbly Screwspigot"] = "雷布里·斯庫比格特"
---[[Translation missing --]]
---[[ AL["Ring of Law"] = "Ring of Law"--]]
+AL["Ring of Law"] = "秩序競技場"
 AL["Rotgrip"] = "洛特格里普"
 AL["Sandarr Dunereaver"] = "杉達爾·沙掠者"
 AL["Sandfury Executioner"] = "沙怒劊子手"
