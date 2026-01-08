@@ -1749,10 +1749,9 @@ data["FishingBC"] = {
 				{ 16, 34109 }, -- Weather-Beaten Journal
 				{ 18, 19971 }, -- High Test Eternium Fishing Line
 				{ 19, 34836 }, -- Spun Truesilver Fishing Line
-				{ 27, 27532 }, -- Master Fishing - The Art of Angling
-				{ 28, 16082 }, -- Artisan Fishing - The Way of the Lure
-				{ 29, 16083 }, -- Expert Fishing - The Bass and You
-				{ 30, 46054 }, -- Journeyman Fishing - Fishing for Dummies
+				{ 28, 27532 }, -- Master Fishing - The Art of Angling
+				{ 29, 16082 }, -- Artisan Fishing - The Way of the Lure
+				{ 30, 16083 }, -- Expert Fishing - The Bass and You
 			}
 		},
 		{
