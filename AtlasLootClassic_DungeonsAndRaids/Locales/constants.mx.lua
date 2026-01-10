@@ -18,8 +18,7 @@ AL["Amnennar the Coldbringer"] = "Amnennar el Gélido"
 AL["Ancient Stone Keeper"] = "Vigilante de piedra anciano"
 AL["Antu'sul"] = "Antu'sul"
 AL["Anub'shiah"] = "Anub'shiah"
---[[Translation missing --]]
---[[ AL["Apothecary Hummel <Crown Chemical Co.>"] = "Apothecary Hummel <Crown Chemical Co.>"--]]
+AL["Apothecary Hummel <Crown Chemical Co.>"] = "Boticario Hummel <Químicos La Corona, S.L.>"
 AL["Arcanist Doan"] = "Arcanista Doan"
 AL["Archaedas"] = "Archaedas"
 AL["Archivist Galford"] = "Archivista Galford"
