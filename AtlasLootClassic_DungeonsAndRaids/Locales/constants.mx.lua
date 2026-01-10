@@ -527,7 +527,7 @@ AL["Zul'jin"] = "Zul'jin"
 if AtlasLoot:GameVersion_LT(AtlasLoot.WRATH_VERSION_NUM) then return end
 -- DungeonsAndRaidsWrath
 AL["%s Attempts left"] = "Quedan %s intentos"
-AL["Above Tier is iLVL 200"] = "El nivel superior es iLvl 200"
+AL["Above Tier is iLVL 200"] = "Conjunto por arriba es iLvl200"
 AL["Achievements"] = "Logros"
 AL["Algalon the Observer"] = "Algalon el Observador"
 AL["Amanitar"] = "Amanitar"
