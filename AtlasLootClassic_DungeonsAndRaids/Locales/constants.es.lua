@@ -526,182 +526,144 @@ AL["Zul'jin"] = "Zul'jin"
 
 if AtlasLoot:GameVersion_LT(AtlasLoot.WRATH_VERSION_NUM) then return end
 -- DungeonsAndRaidsWrath
-AL["%s Attempts left"] = "Quedan %s intentos"
---[[Translation missing --]]
---[[ AL["Above Tier is iLVL 200"] = "Above Tier is iLVL 200"--]]
-AL["Achievements"] = "Logros"
-AL["Algalon the Observer"] = "Algalon el Observador"
-AL["Amanitar"] = "Amanitar"
-AL["Anomalus"] = "Anomalus"
-AL["Anub'arak"] = "Anub'arak"
-AL["Archavon the Stone Watcher"] = "Archavon el Vigía de piedra"
-AL["Argent Confessor Paletress"] = "Confesora Argenta Cabelloclaro"
---[[Translation missing --]]
---[[ AL["Argent Crusade Tribute Chest"] = "Argent Crusade Tribute Chest"--]]
---[[Translation missing --]]
---[[ AL["AT"] = "AT"--]]
-AL["Auriaya"] = "Auriaya"
---[[Translation missing --]]
---[[ AL["Azjol"] = "Azjol"--]]
---[[Translation missing --]]
---[[ AL["Balance"] = "Balance"--]]
---[[Translation missing --]]
---[[ AL["Blood"] = "Blood"--]]
-AL["Blood Prince Council"] = "Consejo de Príncipes de Sangre"
-AL["Blood-Queen Lana'thel"] = "Reina de sangre Lana’thel"
---[[Translation missing --]]
---[[ AL["Bonus Loot"] = "Bonus Loot"--]]
-AL["Bronjahm"] = "Bronjahm"
-AL["Chrono-Lord Epoch"] = "Chrono-Lord Epoch"
---[[Translation missing --]]
---[[ AL["Class Item drops"] = "Class Item drops"--]]
---[[Translation missing --]]
---[[ AL["Click the > button down below"] = "Click the > button down below"--]]
-AL["Commander Kolurg"] = "Comandante Kolurg"
-AL["Commander Stoutbeard"] = "Comandante Barbarrecia"
-AL["Cyanigosa"] = "Cyanigosa"
---[[Translation missing --]]
---[[ AL["Damage Dealer"] = "Damage Dealer"--]]
-AL["Deathbringer Saurfang"] = "Libramorte Colmillosauro"
-AL["Devourer of Souls"] = "Devoradora de almas"
-AL["Drakkari Colossus"] = "Coloso Drakkari"
-AL["Drakos the Interrogator"] = "Drakos el interrogador"
-AL["Eadric the Pure"] = "Eadric el Puro"
-AL["Eck the Ferocious"] = "Eck the Ferocious"
-AL["Elder Nadox"] = "Ancestro Nadox"
---[[Translation missing --]]
---[[ AL["Elemental"] = "Elemental"--]]
-AL["Emalon the Storm Watcher"] = "Emalon el Vigía de la Tormenta"
-AL["Enhancement"] = "Mejora"
-AL["Erekem"] = "Erekem"
-AL["Faction Champions"] = "Campeones de la facción"
-AL["Falric"] = "Falric"
---[[Translation missing --]]
---[[ AL["Feral"] = "Feral"--]]
-AL["Festergut"] = "Panzachancro"
-AL["Flame Leviathan"] = "Leviatán de llamas"
-AL["Forgemaster Garfrost"] = "Maestro de forja Gargelus"
-AL["Freya"] = "Freya"
-AL["Gal'darah"] = "Gal'darah"
-AL["General Bjarngrim"] = "General Bjarngrim"
-AL["General Vezax"] = "General Vezax"
---[[Translation missing --]]
---[[ AL["Glory of the Icecrown Raider"] = "Glory of the Icecrown Raider"--]]
---[[Translation missing --]]
---[[ AL["Glory of the Raider"] = "Glory of the Raider"--]]
---[[Translation missing --]]
---[[ AL["Glory of the Ulduar Raider"] = "Glory of the Ulduar Raider"--]]
-AL["Gortok Palehoof"] = "Gortok Pezuña Pálida"
-AL["Grand Champions"] = "Grandes campeones"
-AL["Grand Magus Telestra"] = "Gran maga Telestra"
-AL["Hadronox"] = "Hadronox"
-AL["Halion"] = "Halion"
---[[Translation missing --]]
---[[ AL["Hard Mode"] = "Hard Mode"--]]
-AL["Herald Volazj"] = "Heraldo Volazj"
-AL["Hodir"] = "Hodir"
---[[Translation missing --]]
---[[ AL["Holy"] = "Holy"--]]
---[[Translation missing --]]
---[[ AL["ICC"] = "ICC"--]]
-AL["Icecrown Gunship Battle"] = "Batalla aérea "
-AL["Ichoron"] = "Icoron"
---[[Translation missing --]]
---[[ AL["Ick & Krick"] = "Ick & Krick"--]]
-AL["Ignis the Furnace Master"] = "Ignis el Maestro de la Caldera"
---[[Translation missing --]]
---[[ AL["Includes the loot from %s"] = "Includes the loot from %s"--]]
-AL["Infinite Corruptor"] = "Corruptor Infinito"
-AL["Ingvar the Plunderer"] = "Ingvar the Plunderer"
-AL["Ionar"] = "Ionar"
-AL["Jedoga Shadowseeker"] = "Jedoga Buscasombras"
-AL["Keristrasza"] = "Keristrasza"
-AL["King Dred"] = "Rey Dred"
-AL["King Ymiron"] = "Rey Ymiron"
-AL["Kologarn"] = "Kologarn"
-AL["Koralon the Flame Watcher"] = "Koralon el Vigía de las llamas"
-AL["Krik'thir the Gatewatcher"] = "Krik’thir el vígia de las puertas"
-AL["Krystallus"] = "Krystallus"
-AL["Lady Deathwhisper"] = "Lady Susurramuerte"
-AL["Lavanthor"] = "Lavanthor"
-AL["Ley-Guardian Eregos"] = "Guardian-Ley Eregos"
-AL["Loken"] = "Loken"
-AL["Lord Jaraxxus"] = "Lord Jaraxxus"
-AL["Lord Marrowgar"] = "Lord Tuétano"
-AL["Mage-Lord Urom"] = "Señor de la Magia Urom"
-AL["Maiden of Grief"] = "Doncella de Pena"
-AL["Mal'Ganis"] = "Mal'Ganis"
-AL["Malygos"] = "Malygos"
-AL["Marwyn"] = "Marwyn"
-AL["Meathook"] = "Meathook"
-AL["Mimiron"] = "Mimiron"
-AL["Moorabi"] = "Moorabi"
-AL["Moragg"] = "Moragg"
---[[Translation missing --]]
---[[ AL["Nexus"] = "Nexus"--]]
-AL["Novos the Summoner"] = "Novos el Invocador"
---[[Translation missing --]]
---[[ AL["One Drake Left"] = "One Drake Left"--]]
-AL["Ormorok the Tree-Shaper"] = "Ormorok el cortador de árboles"
-AL["Prince Keleseth"] = "Príncipe Keleseth"
-AL["Prince Taldaram"] = "Príncipe Taldaram"
-AL["Professor Putricide"] = "Profesor Putricidio"
---[[Translation missing --]]
---[[ AL["Protection"] = "Protection"--]]
---[[Translation missing --]]
---[[ AL["Raids"] = "Raids"--]]
-AL["Razorscale"] = "Tajoescama"
---[[Translation missing --]]
---[[ AL["Restoration"] = "Restoration"--]]
---[[Translation missing --]]
---[[ AL["Retribution"] = "Retribution"--]]
-AL["Rotface"] = "Carapútrea"
-AL["Salramm the Fleshcrafter"] = "Salramm el Modelador de carne"
-AL["Sartharion"] = "Sartharion"
-AL["Scourgelord Tyrannus"] = "Señor de la Plaga Tyrannus"
---[[Translation missing --]]
---[[ AL["Shadow"] = "Shadow"--]]
-AL["Sindragosa"] = "Sindragosa"
-AL["Sjonnir The Ironshaper"] = "Sjonnir el afilador"
-AL["Skadi the Ruthless"] = "Skadi el Despiadado"
---[[Translation missing --]]
---[[ AL["Skarvald the Constructor & Dalronn the Controller"] = "Skarvald the Constructor & Dalronn the Controller"--]]
-AL["Slad'ran"] = "Slad'ran"
-AL["Svala Sorrowgrave"] = "Svala Tumbapena"
-AL["The Beasts of Northrend"] = "Las bestias de Rasganorte"
-AL["The Black Knight"] = "El Caballero Negro"
-AL["The Iron Council"] = "La Asamblea de Hierro"
-AL["The Lich King"] = "El Rey Exánime"
-AL["The Prophet Tharon'ja"] = "El Profeta Tharon'ja"
-AL["The Tribunal of Ages"] = "Cofre del Tribunal"
-AL["The Twin Val'kyr"] = "Gemelas Val'kyr"
-AL["Thorim"] = "Thorim"
---[[Translation missing --]]
---[[ AL["Three Drakes Left"] = "Three Drakes Left"--]]
---[[Translation missing --]]
---[[ AL["Tier drops on next page"] = "Tier drops on next page"--]]
---[[Translation missing --]]
---[[ AL["Tier Token iLvl200"] = "Tier Token iLvl200"--]]
---[[Translation missing --]]
---[[ AL["Tier Token iLvl225"] = "Tier Token iLvl225"--]]
---[[Translation missing --]]
---[[ AL["Titan Rune Alpha"] = "Titan Rune Alpha"--]]
---[[Translation missing --]]
---[[ AL["Titan Rune Beta"] = "Titan Rune Beta"--]]
-AL["Toravon the Ice Watcher"] = "Toravon el Vigía de Hielo"
-AL["Trollgore"] = "Cuernotroll"
---[[Translation missing --]]
---[[ AL["Two Drakes Left"] = "Two Drakes Left"--]]
---[[Translation missing --]]
---[[ AL["Ulduar"] = "Ulduar"--]]
---[[Translation missing --]]
---[[ AL["Utgarde"] = "Utgarde"--]]
-AL["Valithria Dreamwalker"] = "Valithria Caminasueños"
-AL["Varos Cloudstrider"] = "Varos Cloudstrider"
-AL["Volkhan"] = "Volkhan"
---[[Translation missing --]]
---[[ AL["Wrath of the Lich King"] = "Wrath of the Lich King"--]]
-AL["Xevozz"] = "Xevozz"
-AL["XT-002 Deconstructor"] = "Desarmador XA-002"
-AL["Yogg-Saron"] = "Yogg-Saron"
-AL["Zuramat the Obliterator"] = "Zuramat el Obliterador"
+L["%s Attempts left"] = "Quedan %s intentos"
+L["Above Tier is iLVL 200"] = "Conjunto por arriba es iLvl200"
+L["Achievements"] = "Logros"
+L["Algalon the Observer"] = "Algalon el Observador"
+L["Amanitar"] = "Amanitar"
+L["Anomalus"] = "Anomalus"
+L["Anub'arak"] = "Anub'arak"
+L["Archavon the Stone Watcher"] = "Archavon el Vigía de piedra"
+L["Argent Confessor Paletress"] = "Confesora Argenta Cabelloclaro"
+L["Argent Crusade Tribute Chest"] = "Cofre de tributo de la Cruzada Argenta"
+L["AT"] = "TA"
+L["Auriaya"] = "Auriaya"
+L["Azjol"] = "Azjol"
+L["Balance"] = "Equilibrio"
+L["Blood"] = "Sangre"
+L["Blood Prince Council"] = "Consejo de Príncipes de Sangre"
+L["Blood-Queen Lana'thel"] = "Reina de sangre Lana’thel"
+L["Bonus Loot"] = "Botín adicional"
+L["Bronjahm"] = "Bronjahm"
+L["Chrono-Lord Epoch"] = "Chrono-Lord Epoch"
+L["Class Item drops"] = "Objetos de clase"
+L["Click the > button down below"] = "Haz clic en el botón > de abajo"
+L["Commander Kolurg"] = "Comandante Kolurg"
+L["Commander Stoutbeard"] = "Comandante Barbarrecia"
+L["Cyanigosa"] = "Cyanigosa"
+L["Damage Dealer"] = "Daño"
+L["Deathbringer Saurfang"] = "Libramorte Colmillosauro"
+L["Devourer of Souls"] = "Devoradora de almas"
+L["Drakkari Colossus"] = "Coloso Drakkari"
+L["Drakos the Interrogator"] = "Drakos el interrogador"
+L["Eadric the Pure"] = "Eadric el Puro"
+L["Eck the Ferocious"] = "Eck the Ferocious"
+L["Elder Nadox"] = "Ancestro Nadox"
+L["Elemental"] = "Elemental"
+L["Emalon the Storm Watcher"] = "Emalon el Vigía de la Tormenta"
+L["Enhancement"] = "Mejora"
+L["Erekem"] = "Erekem"
+L["Faction Champions"] = "Campeones de la facción"
+L["Falric"] = "Falric"
+L["Feral"] = "Feral"
+L["Festergut"] = "Panzachancro"
+L["Flame Leviathan"] = "Leviatán de llamas"
+L["Forgemaster Garfrost"] = "Maestro de forja Gargelus"
+L["Freya"] = "Freya"
+L["Gal'darah"] = "Gal'darah"
+L["General Bjarngrim"] = "General Bjarngrim"
+L["General Vezax"] = "General Vezax"
+L["Glory of the Icecrown Raider"] = "La gloria del asaltante de Corona de Hielo"
+L["Glory of the Raider"] = "Gloria del asaltante"
+L["Glory of the Ulduar Raider"] = "La gloria del asaltante de Ulduar"
+L["Gortok Palehoof"] = "Gortok Pezuña Pálida"
+L["Grand Champions"] = "Grandes campeones"
+L["Grand Magus Telestra"] = "Gran maga Telestra"
+L["Hadronox"] = "Hadronox"
+L["Halion"] = "Halion"
+L["Hard Mode"] = "Modo difícil"
+L["Herald Volazj"] = "Heraldo Volazj"
+L["Hodir"] = "Hodir"
+L["Holy"] = "Sagrado"
+L["ICC"] = "ICC"
+L["Icecrown Gunship Battle"] = "Batalla aérea"
+L["Ichoron"] = "Ícoron"
+L["Ick & Krick"] = "Ick y Krick"
+L["Ignis the Furnace Master"] = "Ignis el Maestro de la Caldera"
+L["Includes the loot from %s"] = "Incluye el botín de %s"
+L["Infinite Corruptor"] = "Corruptor Infinito"
+L["Ingvar the Plunderer"] = "Ingvar el Desvalijador"
+L["Ionar"] = "Ionar"
+L["Jedoga Shadowseeker"] = "Jedoga Buscasombras"
+L["Keristrasza"] = "Keristrasza"
+L["King Dred"] = "Rey Dred"
+L["King Ymiron"] = "Rey Ymiron"
+L["Kologarn"] = "Kologarn"
+L["Koralon the Flame Watcher"] = "Koralon el Vigía de las llamas"
+L["Krik'thir the Gatewatcher"] = "Krik’thir el vígia de las puertas"
+L["Krystallus"] = "Krystallus"
+L["Lady Deathwhisper"] = "Lady Susurramuerte"
+L["Lavanthor"] = "Lavanthor"
+L["Ley-Guardian Eregos"] = "Guardian-Ley Eregos"
+L["Loken"] = "Loken"
+L["Lord Jaraxxus"] = "Lord Jaraxxus"
+L["Lord Marrowgar"] = "Lord Tuétano"
+L["Mage-Lord Urom"] = "Señor de la Magia Urom"
+L["Maiden of Grief"] = "Doncella de Pena"
+L["Mal'Ganis"] = "Mal'Ganis"
+L["Malygos"] = "Malygos"
+L["Marwyn"] = "Marwyn"
+L["Meathook"] = "Gancho"
+L["Mimiron"] = "Mimiron"
+L["Moorabi"] = "Moorabi"
+L["Moragg"] = "Moragg"
+L["Nexus"] = "El Nexo"
+L["Novos the Summoner"] = "Novos el Invocador"
+L["One Drake Left"] = "Queda un draco"
+L["Ormorok the Tree-Shaper"] = "Ormorok el Talador"
+L["Prince Keleseth"] = "Príncipe Keleseth"
+L["Prince Taldaram"] = "Príncipe Taldaram"
+L["Professor Putricide"] = "Profesor Putricidio"
+L["Protection"] = "Protección"
+L["Raids"] = "Bandas"
+L["Razorscale"] = "Tajoescama"
+L["Restoration"] = "Restauración"
+L["Retribution"] = "Reprensión"
+L["Rotface"] = "Carapútrea"
+L["Salramm the Fleshcrafter"] = "Salramm el Modelador de carne"
+L["Sartharion"] = "Sartharion"
+L["Scourgelord Tyrannus"] = "Señor de la Plaga Tyrannus"
+L["Shadow"] = "Sombra"
+L["Sindragosa"] = "Sindragosa"
+L["Sjonnir The Ironshaper"] = "Sjonnir el Afilador"
+L["Skadi the Ruthless"] = "Skadi el Despiadado"
+L["Skarvald the Constructor & Dalronn the Controller"] = "Skarvald el Constructor y Dalronn el Controlador"
+L["Slad'ran"] = "Slad'ran"
+L["Svala Sorrowgrave"] = "Svala Tumbapena"
+L["The Beasts of Northrend"] = "Las bestias de Rasganorte"
+L["The Black Knight"] = "El Caballero Negro"
+L["The Iron Council"] = "La Asamblea de Hierro"
+L["The Lich King"] = "El Rey Exánime"
+L["The Prophet Tharon'ja"] = "El profeta Tharon'ja"
+L["The Tribunal of Ages"] = "Tribunal de las Eras"
+L["The Twin Val'kyr"] = "Gemelas Val'kyr"
+L["Thorim"] = "Thorim"
+L["Three Drakes Left"] = "Quedan tres dracos"
+L["Tier drops on next page"] = "El botín de conjunto aparece en la siguiente página"
+L["Tier Token iLvl200"] = "Ficha de conjunto iLvl200"
+L["Tier Token iLvl225"] = "Ficha de conjunto iLvl225"
+L["Titan Rune Alpha"] = "Runa titánica alfa"
+L["Titan Rune Beta"] = "Runa titánica beta"
+L["Toravon the Ice Watcher"] = "Toravon el Vigía de Hielo"
+L["Trollgore"] = "Cuernotroll"
+L["Two Drakes Left"] = "Quedan dos dracos"
+L["Ulduar"] = "Ulduar"
+L["Utgarde"] = "Utgarde"
+L["Valithria Dreamwalker"] = "Valithria Caminasueños"
+L["Varos Cloudstrider"] = "Varos Cloudstrider"
+L["Volkhan"] = "Volkhan"
+L["Wrath of the Lich King"] = "Wrath of the Lich King"
+L["Xevozz"] = "Xevozz"
+L["XT-002 Deconstructor"] = "Desarmador XA-002"
+L["Yogg-Saron"] = "Yogg-Saron"
+L["Zuramat the Obliterator"] = "Zuramat el Obliterador"
