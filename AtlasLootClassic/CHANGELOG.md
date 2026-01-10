@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.7.1 -
+### Changed
+- Updated libraries
+
 ## 3.7.0 - January 4, 2026
 ### Added
 - SoD: Added items to Crafting
