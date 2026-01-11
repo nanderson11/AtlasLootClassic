@@ -1,6 +1,8 @@
 # Changelog
 
-## 3.7.1 -
+## 3.7.1 - January 11, 2026
+### Added
+- TBC: Added content phase to items
 ### Changed
 - Updated libraries
 
