@@ -1,3 +1,7 @@
+Updated and maintained fork of [AtlasLoot Classic](https://www.curseforge.com/wow/addons/atlaslootclassic). It includes integration with [Atlas (fork)](https://www.curseforge.com/wow/addons/atlas-fork).
+
+This fork supports TBC Anniversary, Classic Anniversary, Classic Era, Hardcore and Season of Discovery (SoD).
+
 # AtlasLoot Classic
 
 [![AtlasLootClassic Discord](https://img.shields.io/badge/discord-atlaslootclassic-7289DA)](https://discord.gg/vMUwzPc)
