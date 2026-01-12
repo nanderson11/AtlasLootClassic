@@ -23,8 +23,7 @@ AL["Oil"] = "Aceite"
 AL["Pet"] = "Mascota"
 AL["Pets"] = "Mascotas"
 AL["Protection Potions"] = "Pociones de protección"
---[[Translation missing --]]
---[[ AL["Raw Gems"] = "Raw Gems"--]]
+AL["Raw Gems"] = "Gemas en bruto"
 AL["Resistance"] = "Resistencia"
 AL["Ring"] = "Anillo"
 AL["Secondary Professions"] = "Habilidades secundarias"
