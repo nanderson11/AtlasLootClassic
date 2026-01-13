@@ -1,4 +1,4 @@
-﻿local AL = _G.AtlasLoot.GetLocales("esES")
+local AL = _G.AtlasLoot.GetLocales("esES")
 
 if not AL then return end
 
@@ -554,7 +554,7 @@ AL["Damage Dealer"] = "Daño"
 AL["Deathbringer Saurfang"] = "Libramorte Colmillosauro"
 AL["Devourer of Souls"] = "Devoradora de almas"
 AL["Drakkari Colossus"] = "Coloso Drakkari"
-AL["Drakos the Interrogator"] = "Drakos el interrogador"
+AL["Drakos the Interrogator"] = "Drakos el Interrogador"
 AL["Eadric the Pure"] = "Eadric el Puro"
 AL["Eck the Ferocious"] = "Eck el Feroz"
 AL["Elder Nadox"] = "Ancestro Nadox"
