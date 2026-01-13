@@ -4,7 +4,7 @@ if not AL then return end
 
 AL["'%s %s' Vendor"] = "Vendedor de '%s %s'"
 AL["%s Sets"] = "Conjuntos de %s"
-AL["'%s' Vendor"] = "'%s' Vendedor"
+AL["'%s' Vendor"] = "Vendedor de '%s'"
 AL["Abyssal Dukes"] = "Duques abisales"
 AL["Abyssal Lords"] = "Lords abisales"
 AL["Abyssal Templars"] = "Templarios abisales"
