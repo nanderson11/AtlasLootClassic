@@ -4,49 +4,38 @@ if not AL then return end
 
 AL["'%s %s' Vendor"] = "Vendedor de '%s %s'"
 AL["%s Sets"] = "Conjuntos de %s"
-AL["'%s' Vendor"] = "'%s' Vendedor"
+AL["'%s' Vendor"] = "Vendedor de '%s'"
 AL["Abyssal Dukes"] = "Duques abisales"
 AL["Abyssal Lords"] = "Lords abisales"
 AL["Abyssal Templars"] = "Templarios abisales"
 AL["Ahune"] = "Ahune"
---[[Translation missing --]]
---[[ AL["Apothecary Hummel"] = "Apothecary Hummel"--]]
---[[Translation missing --]]
---[[ AL["Argent Tournament"] = "Argent Tournament"--]]
+AL["Apothecary Hummel"] = "Boticario Hummel"
+AL["Argent Tournament"] = "Torneo Argenta"
 AL["Avalanchion"] = "Avalanchion"
 AL["Azure Templar"] = "Templario azur"
 AL["Badge of Justice"] = "Distintivo de justicia"
 AL["Baron Charr"] = "Barón Charr"
 AL["Baron Kazum"] = "Barón Kazum"
---[[Translation missing --]]
---[[ AL["BC"] = "BC"--]]
+AL["BC"] = "BC"
 AL["Box of Chocolates"] = "Caja de bombones"
 AL["Brewfest"] = "Fiesta de la Cerveza"
 AL["Brightly Colored Egg"] = "Huevo de colores vivos"
 AL["Capitals"] = "Capitales"
---[[Translation missing --]]
---[[ AL["Card Game Tabards"] = "Card Game Tabards"--]]
+AL["Card Game Tabards"] = "Tabardos de juego de cartas"
 AL["Childrens Week"] = "Semana de los Niños"
 AL["Crimson Templar"] = "Templario Carmesí"
---[[Translation missing --]]
---[[ AL["Day of the Dead"] = "Day of the Dead"--]]
---[[Translation missing --]]
---[[ AL["Defiler's Scourgestone"] = "Defiler's Scourgestone"--]]
+AL["Day of the Dead"] = "Festividad de los Muertos"
+AL["Defiler's Scourgestone"] = "Piedra de la Plaga del rapiñador"
 AL["Drops"] = "Despoja"
 AL["Dungeon Set %s"] = "Conjunto de mazmorra %s"
 AL["Dungeon Sets"] = "Conjuntos de mazmorra"
 AL["Earthen Templar"] = "Templario terráneo"
 AL["Elemental Invasions"] = "Invasión elemental"
---[[Translation missing --]]
---[[ AL["Emblem of Conquest"] = "Emblem of Conquest"--]]
---[[Translation missing --]]
---[[ AL["Emblem of Frost"] = "Emblem of Frost"--]]
---[[Translation missing --]]
---[[ AL["Emblem of Heroism"] = "Emblem of Heroism"--]]
---[[Translation missing --]]
---[[ AL["Emblem of Triumph"] = "Emblem of Triumph"--]]
---[[Translation missing --]]
---[[ AL["Emblem of Valor"] = "Emblem of Valor"--]]
+AL["Emblem of Conquest"] = "Emblema de conquista"
+AL["Emblem of Frost"] = "Emblema de escarcha"
+AL["Emblem of Heroism"] = "Emblema de heroísmo"
+AL["Emblem of Triumph"] = "Emblema de triunfo"
+AL["Emblem of Valor"] = "Emblema de valor"
 AL["Equip"] = "Armadura"
 AL["Faction Mounts"] = "Monturas de facción"
 AL["Feast of Winter Veil"] = "El festín del Festival de Invierno"
@@ -73,8 +62,7 @@ AL["Masks"] = "Máscaras"
 AL["Midsummer Festival"] = "Festival de Fuego del Solsticio de Verano"
 AL["Noblegarden"] = "Jardín Noble"
 AL["One-Handed Weapons"] = "Armas de una mano"
---[[Translation missing --]]
---[[ AL["Pilgrim's Bounty"] = "Pilgrim's Bounty"--]]
+AL["Pilgrim's Bounty"] = "Generosidad del Peregrino"
 AL["Prince Skaldrenox"] = "Príncipe Skaldrenox"
 AL["Princess Tempestria"] = "Princesa Tempestria"
 AL["Ranged Weapons"] = "Armas a distancia"
@@ -82,10 +70,8 @@ AL["Rare Fish"] = "Pescados raros"
 AL["Rare Fish Rewards"] = "Recompensas raras de pesca"
 AL["Scarlet Monastery - Graveyard"] = "Monasterio Escarlata - Cementerio"
 AL["Scourge Invasion"] = "Invasión de la Plaga"
---[[Translation missing --]]
---[[ AL["Sidereal Essence"] = "Sidereal Essence"--]]
---[[Translation missing --]]
---[[ AL["Sidereal Essence: 1 for 1"] = "Sidereal Essence: 1 for 1"--]]
+AL["Sidereal Essence"] = "Esencia sideral"
+AL["Sidereal Essence: 1 for 1"] = "Esencia sideral: 1 de 1"
 AL["Silithus Abyssal"] = "Abisal Silithus"
 AL["Smokywood Pastures"] = "Pastos de Bosquehumeante"
 AL["Smokywood Pastures Special Gift"] = "Obsequio especial de Pastos de Bosquehumeante"
@@ -97,15 +83,12 @@ AL["The Duke of Shards"] = "Duque de las Esquirlas"
 AL["The Duke of Zephyrs"] = "Duque de los Céfiros"
 AL["The Windreaver"] = "El Atracavientos"
 AL["Tier Sets"] = "Conjuntos de Tier"
---[[Translation missing --]]
---[[ AL["Token"] = "Token"--]]
+AL["Token"] = "Ficha"
 AL["Totems"] = "Tótems"
 AL["Two-Handed Weapons"] = "Armas de dos manos"
 AL["Unobtainable"] = "Inobtenible"
---[[Translation missing --]]
---[[ AL["Unobtainable Tabards"] = "Unobtainable Tabards"--]]
+AL["Unobtainable Tabards"] = "Tabardos inobtenibles"
 AL["Wands"] = "Varitas"
-AL["World Epics"] = "Épicos del Mundo"
-AL["World Events"] = "Eventos del Mundo"
---[[Translation missing --]]
---[[ AL["Wrath"] = "Wrath"--]]
+AL["World Epics"] = "Épicos del mundo"
+AL["World Events"] = "Eventos del mundo"
+AL["Wrath"] = "Wrath"
