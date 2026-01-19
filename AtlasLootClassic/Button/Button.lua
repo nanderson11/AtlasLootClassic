@@ -113,7 +113,11 @@ function Button:AddChatLink(link)
 	if ChatFrameEditBox and ChatFrameEditBox:IsVisible() then
 		ChatFrameEditBox:Insert(link)
 	else
-		ChatEdit_InsertLink(link)
+		if ChatFrameUtil and ChatFrameUtil.InsertLink then
+			ChatFrameUtil.InsertLink(link)
+		else
+			ChatEdit_InsertLink(link)
+		end
 	end
 end
 

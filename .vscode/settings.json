@@ -151,7 +151,8 @@
 		"ATLAS_DROPDOWNS",
 		"AtlasFrameDropDownType_OnShow",
 		"AtlasFrameDropDown_OnShow",
-		"Atlas_Refresh"
+		"Atlas_Refresh",
+		"ChatFrameUtil"
 	],
 	"Lua.diagnostics.disable": [
 		"need-check-nil"

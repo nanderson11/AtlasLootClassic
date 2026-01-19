@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.7.2 - January 19, 2026
+### Fixed
+- TBC: Fixed shift clicking an item not working with the Auctionator Shopping tab
+
 ## 3.7.1 - January 11, 2026
 ### Added
 - TBC: Added content phase to items
