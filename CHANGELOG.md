@@ -1,6 +1,8 @@
 # Changelog
 
 ## 3.7.2 - January 19, 2026
+### Changed
+- Updated translations
 ### Fixed
 - TBC: Fixed shift clicking an item not working with the Auctionator Shopping tab
 
