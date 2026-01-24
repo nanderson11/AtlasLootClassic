@@ -256,6 +256,7 @@ local function FrameOnShow(self)
 	if (AtlasLoot.db.enableAutoSelect) then
 		local module, instance, boss = AtlasLoot.Data.AutoSelect:GetCurrrentPlayerData()
 		local pass = false
+		local gameVersionChanged = false
 		if module and module ~= db.selected[1] then
 			self.moduleSelect:SetSelected(module)
 			pass = true
@@ -267,11 +268,33 @@ local function FrameOnShow(self)
 				pass = false
 			end
 			self.subCatSelect:SetSelected(instance)
+			if pass then
+				local moduleData = AtlasLoot.ItemDB:Get(db.selected[1])
+				if moduleData and moduleData[instance] then
+					local newGameVersion = moduleData[instance].gameVersion
+					if newGameVersion ~= db.selectedGameVersion then
+						db.selectedGameVersion = newGameVersion
+						gameVersionChanged = true
+					end
+				end
+			end
 		end
 		if AtlasLoot.db.enableAutoSelectBoss and (pass or (boss and boss ~= db.selected[3])) then
 			self.boss:SetSelected(boss or 1)
 		elseif pass then
 			self.boss:SetSelected(1)
+		end
+		if gameVersionChanged then
+			local GAME_VERSION_TEXTURES = AtlasLoot.GAME_VERSION_TEXTURES
+			if db.selectedGameVersion and GAME_VERSION_TEXTURES[db.selectedGameVersion] then
+				self.gameVersionLogo:SetTexture(GAME_VERSION_TEXTURES[db.selectedGameVersion])
+				if self.gameVersionButton.selectionFrame then
+					self.gameVersionButton.selectionFrame:Hide()
+				end
+			end
+			if LoadAtlasLootModule then
+				LoadAtlasLootModule(db.selectedGameVersion)
+			end
 		end
 		UpdateFrames(false, true) -- force a update
 	end
