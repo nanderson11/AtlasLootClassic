@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.7.3 - January 24, 2026
+### Changed
+- Updated translations
+### Fixed
+- TBC: Fixed autoselect across game versions breaking the UI (thanks SqiChiu)
+
 ## 3.7.2 - January 19, 2026
 ### Changed
 - Updated translations
