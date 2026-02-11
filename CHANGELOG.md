@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.7.4 - February 11, 2026
+### Fixed
+- TBC: Fixed shift clicking into TSM
+
 ## 3.7.3 - January 24, 2026
 ### Changed
 - Updated translations
