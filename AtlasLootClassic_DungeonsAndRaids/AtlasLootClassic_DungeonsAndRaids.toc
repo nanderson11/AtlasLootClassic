@@ -3,7 +3,7 @@
 ## Title: AtlasLootClassic |cFF0099FF[Dungeons and Raids]|r
 ## Title-deDE: AtlasLootClassic |cFF0099FF[Instanzen und Raids]|r
 ## Title-esES: AtlasLootClassic |cFF0099FF[Mazmorras y Bandas]|r
-## Title-esMX: AtlasLootClassic |cFF0099FF[Mazmorras y Bandas]|r
+## Title-esMX: AtlasLootClassic |cFF0099FF[Calabozos y Bandas]|r
 ## Title-frFR: AtlasLoot Classic |cFF0099FF[Donjons et Raids]|r
 ## Title-itIT: AtlasLootClassic |cFF0099FF[Dungeons and Raids]|r
 ## Title-koKR: AtlasLoot 클래식 |cFF0099FF[던전과 공격대]|r
