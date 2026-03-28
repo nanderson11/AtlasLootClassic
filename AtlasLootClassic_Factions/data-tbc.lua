@@ -2,11 +2,6 @@
 -- Upvalued Lua API.
 -----------------------------------------------------------------------
 local _G = getfenv(0)
-local select = _G.select
-local string = _G.string
-local format = string.format
-
--- WoW
 
 -- ----------------------------------------------------------------------------
 -- AddOn namespace.
@@ -270,10 +265,26 @@ data["TheShatar"] = {
 			[NORMAL_DIFF] = {
 				{ 1,  "f935rep6" },
 				{ 2,  29195 }, -- Glyph of Arcane Warding
-				{ 17, 30826 }, -- Design: Ring of Arcane Shielding
-				{ 18, 33155 }, -- Design: Kailee's Rose
-				{ 20, 28273 }, -- Formula: Enchant Gloves - Major Healing
-				{ 22, 29717 }, -- Pattern: Drums of Battle
+				{ 4,  30826 }, -- Design: Ring of Arcane Shielding
+				{ 5,  33155 }, -- Design: Kailee's Rose
+				{ 7,  28273 }, -- Formula: Enchant Gloves - Major Healing
+				{ 9,  29717 }, -- Pattern: Drums of Battle
+				-- TBD: Pattern: Greater Drums of Battle
+				{ 16, 35330 }, -- Dreadweave Leggings
+				{ 17, 35333 }, -- Mooncloth Cowl
+				{ 18, 35341 }, -- Satin Mantle
+				{ 19, 35345 }, -- Evoker's Silk Handguards
+				{ 20, 35359 }, -- Dragonhide Spaulders
+				{ 21, 35362 }, -- Kodohide Helm
+				{ 22, 35375 }, -- Wyrmhide Robe
+				{ 23, 35368 }, -- Opportunist's Leather Legguards
+				{ 24, 35380 }, -- Stalker's Chain Spaulders
+				{ 25, 35381 }, -- Seer's Linked Armor
+				{ 26, 35388 }, -- Seer's Mail Helm
+				{ 27, 35395 }, -- Seer's Ringmail Shoulderpads
+				{ 28, 35404 }, -- Crusader's Ornamented Headguard
+				{ 29, 35416 }, -- Crusader's Scaled Shoulders
+				{ 30, 35407 }, -- Savage Plate Chestpiece
 			},
 		},
 		{ -- Friendly
@@ -324,9 +335,23 @@ data["LowerCity"] = {
 			[NORMAL_DIFF] = {
 				{ 1,  "f1011rep6" },
 				{ 2,  29199 }, -- Glyph of Shadow Warding
-				{ 17, 22538 }, -- Formula: Enchant Ring - Stats
-				{ 19, 30833 }, -- Pattern: Cloak of Arcane Evasion
-
+				{ 4,  22538 }, -- Formula: Enchant Ring - Stats
+				{ 6,  30833 }, -- Pattern: Cloak of Arcane Evasion
+				{ 16, 35331 }, -- Dreadweave Mantle
+				{ 17, 35335 }, -- Mooncloth Mitts
+				{ 18, 35340 }, -- Satin Leggings
+				{ 19, 35344 }, -- Evoker's Silk Cowl
+				{ 20, 35357 }, -- Dragonhide Helm
+				{ 21, 35361 }, -- Kodohide Gloves
+				{ 22, 35373 }, -- Wyrmhide Legguards
+				{ 23, 35370 }, -- Opportunist's Leather Tunic
+				{ 24, 35378 }, -- Stalker's Chain Helm
+				{ 25, 35382 }, -- Seer's Linked Gauntlets
+				{ 26, 35389 }, -- Seer's Mail Leggings
+				{ 27, 35391 }, -- Seer's Ringmail Chestguard
+				{ 28, 35405 }, -- Crusader's Ornamented Leggings
+				{ 29, 35412 }, -- Crusader's Scaled Chestpiece
+				{ 30, 35411 }, -- Savage Plate Shoulders
 			},
 		},
 		{ -- Friendly
@@ -374,11 +399,27 @@ data["KeepersOfTime"] = {
 			[NORMAL_DIFF] = {
 				{ 1,  "f989rep6" },
 				{ 2,  29198 }, -- Glyph of Frost Warding
-				{ 17, 28272 }, -- Formula: Enchant Gloves - Major Spellpower
-				{ 18, 22536 }, -- Formula: Enchant Ring - Spellpower
-				{ 20, 25910 }, -- Design: Enigmatic Skyfire Diamond
-				{ 21, 33160 }, -- Design: Facet of Eternity
-				{ 23, 29713 }, -- Pattern: Drums of Panic
+				{ 4,  28272 }, -- Formula: Enchant Gloves - Major Spellpower
+				{ 5,  22536 }, -- Formula: Enchant Ring - Spellpower
+				{ 7,  25910 }, -- Design: Enigmatic Skyfire Diamond
+				{ 8,  33160 }, -- Design: Facet of Eternity
+				{ 10, 29713 }, -- Pattern: Drums of Panic
+				-- TBD: Pattern: Greater Drums of Panic
+				{ 16, 35328 }, -- Dreadweave Gloves
+				{ 17, 35334 }, -- Mooncloth Legguards
+				{ 18, 35338 }, -- Satin Gloves
+				{ 19, 35346 }, -- Evoker's Silk Raiment
+				{ 20, 35356 }, -- Dragonhide Gloves
+				{ 21, 35363 }, -- Kodohide Legguards
+				{ 22, 35372 }, -- Wyrmhide Helm
+				{ 23, 35369 }, -- Opportunist's Leather Spaulders
+				{ 24, 35376 }, -- Stalker's Chain Armor
+				{ 25, 35384 }, -- Seer's Linked Leggings
+				{ 26, 35390 }, -- Seer's Mail Spaulders
+				{ 27, 35393 }, -- Seer's Ringmail Headpiece
+				{ 28, 35402 }, -- Crusader's Ornamented Chestplate
+				{ 29, 35414 }, -- Crusader's Scaled Helm
+				{ 30, 35410 }, -- Savage Plate Legguards
 			},
 		},
 	},
@@ -506,14 +547,29 @@ data["CenarionExpedition"] = {
 				{ 3,  25836 }, -- Preserver's Cudgel
 				{ 4,  25835 }, -- Explorer's Walking Stick
 				{ 6,  29194 }, -- Glyph of Nature Warding
-				{ 17, 25735 }, -- Pattern: Heavy Clefthoof Vest
-				{ 18, 25736 }, -- Pattern: Heavy Clefthoof Leggings
-				{ 19, 29720 }, -- Pattern: Clefthide Leg Armor
-				{ 21, 25869 }, -- Recipe: Transmute Earthstorm Diamond
-				{ 22, 32070 }, -- Recipe: Earthen Elixir
-				{ 24, 23618 }, -- Plans: Adamantite Sharpening Stone
-				{ 25, 28632 }, -- Plans: Adamantite Weightstone
-				{ 26, 25526 }, -- Plans: Greater Rune of Warding
+				{ 8,  25735 }, -- Pattern: Heavy Clefthoof Vest
+				{ 9,  25736 }, -- Pattern: Heavy Clefthoof Leggings
+				{ 10, 29720 }, -- Pattern: Clefthide Leg Armor
+				{ 11, 25869 }, -- Recipe: Transmute Earthstorm Diamond
+				{ 12, 32070 }, -- Recipe: Earthen Elixir
+				{ 13, 23618 }, -- Plans: Adamantite Sharpening Stone
+				{ 14, 28632 }, -- Plans: Adamantite Weightstone
+				{ 15, 25526 }, -- Plans: Greater Rune of Warding
+				{ 16, 35329 }, -- Dreadweave Hood
+				{ 17, 35336 }, -- Mooncloth Shoulderpads
+				{ 18, 35342 }, -- Satin Robe
+				{ 19, 35347 }, -- Evoker's Silk Trousers
+				{ 20, 35358 }, -- Dragonhide Legguards
+				{ 21, 35365 }, -- Kodohide Robe
+				{ 22, 35374 }, -- Wyrmhide Spaulders
+				{ 23, 35367 }, -- Opportunist's Leather Helm
+				{ 24, 35379 }, -- Stalker's Chain Leggings
+				{ 25, 35385 }, -- Seer's Linked Spaulders
+				{ 26, 35387 }, -- Seer's Mail Gauntlets
+				{ 27, 35394 }, -- Seer's Ringmail Legguards
+				{ 28, 35403 }, -- Crusader's Ornamented Gloves
+				{ 29, 35415 }, -- Crusader's Scaled Legguards
+				{ 30, 35408 }, -- Savage Plate Gauntlets
 			},
 		},
 		{ -- Friendly
@@ -1104,12 +1160,26 @@ data["Thrallmar"] = {
 				{ 2,  25824 }, -- Farseer's Band
 				{ 3,  25823 }, -- Grunt's Waraxe
 				{ 5,  29197 }, -- Glyph of Fire Warding
-
-				{ 17, 25739 }, -- Pattern: Felstalker Bracers
-				{ 18, 25740 }, -- Pattern: Felstalker Breastplate
-				{ 19, 31361 }, -- Pattern: Cobrahide Leg Armor
-				{ 21, 29232 }, -- Recipe: Transmute Skyfire Diamond
-				{ 22, 24001 }, -- Recipe: Elixir of Major Agility
+				{ 7,  25739 }, -- Pattern: Felstalker Bracers
+				{ 8,  25740 }, -- Pattern: Felstalker Breastplate
+				{ 9,  31361 }, -- Pattern: Cobrahide Leg Armor
+				{ 11, 29232 }, -- Recipe: Transmute Skyfire Diamond
+				{ 12, 24001 }, -- Recipe: Elixir of Major Agility
+				{ 16, 35332 }, -- Dreadweave Robe
+				{ 17, 35337 }, -- Mooncloth Vestments
+				{ 18, 35339 }, -- Satin Hood
+				{ 19, 35343 }, -- Evoker's Silk Amice
+				{ 20, 35360 }, -- Dragonhide Robe
+				{ 21, 35364 }, -- Kodohide Spaulders
+				{ 22, 35371 }, -- Wyrmhide Gloves
+				{ 23, 35366 }, -- Opportunist's Leather Gloves
+				{ 24, 35377 }, -- Stalker's Chain Gauntlets
+				{ 25, 35383 }, -- Seer's Linked Helm
+				{ 26, 35386 }, -- Seer's Mail Armor
+				{ 27, 35392 }, -- Seer's Ringmail Gloves
+				{ 28, 35406 }, -- Crusader's Ornamented Spaulders
+				{ 29, 35413 }, -- Crusader's Scaled Gauntlets
+				{ 30, 35409 }, -- Savage Plate Helm
 			},
 		},
 		{ -- Friendly
@@ -1223,12 +1293,26 @@ data["HonorHold"] = {
 				{ 2,  25826 }, -- Sage's Band
 				{ 3,  25825 }, -- Footman's Longsword
 				{ 5,  29196 }, -- Glyph of Fire Warding
-
-				{ 17, 29214 }, -- Pattern: Felstalker Bracers
-				{ 18, 29215 }, -- Pattern: Felstalker Breastplate
-				{ 19, 29719 }, -- Pattern: Cobrahide Leg Armor
-				{ 21, 25870 }, -- Recipe: Transmute Skyfire Diamond
-				{ 22, 22905 }, -- Recipe: Elixir of Major Agility
+				{ 7,  29214 }, -- Pattern: Felstalker Bracers
+				{ 8,  29215 }, -- Pattern: Felstalker Breastplate
+				{ 9,  29719 }, -- Pattern: Cobrahide Leg Armor
+				{ 11, 25870 }, -- Recipe: Transmute Skyfire Diamond
+				{ 12, 22905 }, -- Recipe: Elixir of Major Agility
+				{ 16, 35464 }, -- Dreadweave Robe
+				{ 17, 35467 }, -- Mooncloth Vestments
+				{ 18, 35466 }, -- Satin Hood
+				{ 19, 35465 }, -- Evoker's Silk Amice
+				{ 20, 35469 }, -- Dragonhide Robe
+				{ 21, 35470 }, -- Kodohide Spaulders
+				{ 22, 35471 }, -- Wyrmhide Gloves
+				{ 23, 35468 }, -- Opportunist's Leather Gloves
+				{ 24, 35475 }, -- Stalker's Chain Gauntlets
+				{ 25, 35474 }, -- Seer's Linked Helm
+				{ 26, 35472 }, -- Seer's Mail Armor
+				{ 27, 35473 }, -- Seer's Ringmail Gloves
+				{ 28, 35476 }, -- Crusader's Ornamented Spaulders
+				{ 29, 35477 }, -- Crusader's Scaled Gauntlets
+				{ 30, 35478 }, -- Savage Plate Helm
 			},
 		},
 		{ -- Friendly

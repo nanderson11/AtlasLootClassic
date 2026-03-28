@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.7.5 - March 27, 2026
+### Added
+- TBC: Added PvP items to dungeon faction vendors
+
 ## 3.7.4 - February 11, 2026
 ### Fixed
 - TBC: Fixed shift clicking into TSM
