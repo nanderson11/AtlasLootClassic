@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.7.6 - May 14, 2026
+### Changed
+- TBC: Updated to content phase 2
+
 ## 3.7.5 - March 27, 2026
 ### Added
 - TBC: Added PvP items to dungeon faction vendors
