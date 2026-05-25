@@ -834,7 +834,7 @@ function Proto:GetTypeFunctions()
 end
 
 function Proto:GetSecTypeFunctions()
-	return button_types[self.__atlaslootinfo.secType[1]]
+	return self.__atlaslootinfo.secType and button_types[self.__atlaslootinfo.secType[1]] or nil
 end
 
 --################################

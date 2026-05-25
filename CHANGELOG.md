@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.7.7 - May 24, 2026
+### Fixed
+- Speculative fix for occasional error
+
 ## 3.7.6 - May 14, 2026
 ### Changed
 - TBC: Updated to content phase 2
