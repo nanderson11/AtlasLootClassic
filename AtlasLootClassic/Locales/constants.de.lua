@@ -85,7 +85,6 @@ AL["Fist Weapon"] = "Faustwaffe"
 --[[ AL["Furious %s"] = "Furious %s"--]]
 AL["Global base list"] = "Globale Basisliste"
 AL["Global lists"] = "Globale Listen"
---[[Translation missing --]]
 AL["Gluth"] = "Gluth"
 AL["gold"] = "Gold"
 AL["Gothik the Harvester"] = "Gothik der Seelenjäger"
