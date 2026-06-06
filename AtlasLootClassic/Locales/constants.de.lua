@@ -52,7 +52,7 @@ AL["Chat Link"] = "Chatlink"
 --[[Translation missing --]]
 --[[ AL["Chat-Link"] = "Chat-Link"--]]
 --[[Translation missing --]]
---[[ AL["Classic"] = "Classic"--]]
+AL["Classic"] = "Classic"
 AL["Click to open Atlas instance map."] = "Klicke um die Atlas Instanzkarte zu öffnen."
 AL["Collections"] = "Sammlungen"
 AL["Command %s not found. Use '/al slash' for a full list of commands"] = "Befehl %s nicht gefunden. Verwende '/al slash' für eine Liste aller Befehle."
@@ -86,22 +86,18 @@ AL["Fist Weapon"] = "Faustwaffe"
 AL["Global base list"] = "Globale Basisliste"
 AL["Global lists"] = "Globale Listen"
 --[[Translation missing --]]
---[[ AL["Gluth"] = "Gluth"--]]
+AL["Gluth"] = "Gluth"
 AL["gold"] = "Gold"
---[[Translation missing --]]
---[[ AL["Gothik the Harvester"] = "Gothik the Harvester"--]]
---[[Translation missing --]]
---[[ AL["Grand Widow Faerlina"] = "Grand Widow Faerlina"--]]
---[[Translation missing --]]
---[[ AL["Grobbulus"] = "Grobbulus"--]]
+AL["Gothik the Harvester"] = "Gothik der Seelenjäger"
+AL["Grand Widow Faerlina"] = "Großwitwe Faerlina"
+AL["Grobbulus"] = "Grobbulus"
 AL["Gun"] = "Gewehr"
 AL["H"] = "H"
 --[[Translation missing --]]
 --[[ AL["Hateful %s"] = "Hateful %s"--]]
 --[[Translation missing --]]
 --[[ AL["Headless Horseman"] = "Headless Horseman"--]]
---[[Translation missing --]]
---[[ AL["Heigan the Unclean"] = "Heigan the Unclean"--]]
+AL["Heigan the Unclean"] = "Heigan der Unreine"
 --[[Translation missing --]]
 --[[ AL["Heirloom"] = "Heirloom"--]]
 --[[Translation missing --]]
@@ -121,8 +117,7 @@ AL["Honor Hold"] = "Ehrenfeste"
 --[[Translation missing --]]
 --[[ AL["ItemID:"] = "ItemID:"--]]
 AL["Items"] = "Items"
---[[Translation missing --]]
---[[ AL["Kel'Thuzad"] = "Kel'Thuzad"--]]
+AL["Kel'Thuzad"] = "Kel'Thuzad"
 AL["Key"] = "Schlüssel"
 AL["Keys"] = "Schlüssel"
 AL["Kurenai"] = "Kurenai"
@@ -132,13 +127,11 @@ AL["Left Click"] = "Linksklick"
 --[[Translation missing --]]
 --[[ AL["List received. Click link again to import!"] = "List received. Click link again to import!"--]]
 AL["Lists"] = "Listen"
---[[Translation missing --]]
---[[ AL["Loatheb"] = "Loatheb"--]]
+AL["Loatheb"] = "Loatheb"
 AL["Loot"] = "Beute"
+AL["Lord Blackwood"] = "Lord Blackwood"
 --[[Translation missing --]]
---[[ AL["Lord Blackwood"] = "Lord Blackwood"--]]
---[[Translation missing --]]
---[[ AL["Maexxna"] = "Maexxna"--]]
+AL["Maexxna"] = "Maexxna"
 AL["Main"] = "Haupt"
 --[[Translation missing --]]
 --[[ AL["Malformed link"] = "Malformed link"--]]
@@ -151,8 +144,7 @@ AL["N"] = "N"
 AL["New version available!"] = "Neue Version verfügbar!"
 AL["No module found."] = "Kein Modul gefunden."
 AL["Normal"] = "Normal"
---[[Translation missing --]]
---[[ AL["Noth the Plaguebringer"] = "Noth the Plaguebringer"--]]
+AL["Noth the Plaguebringer"] = "Noth der Seuchenfürst"
 AL["One-Hand, Axe"] = "Einhand, Axt"
 AL["One-Hand, Mace"] = "Einhand, Streitkolben"
 AL["One-Hand, Sword"] = "Einhand, Schwert"
@@ -161,8 +153,7 @@ AL["Open AtlasLoot"] = "AtlasLoot öffnen"
 AL["Open AtlasLoot without auto select"] = "Öffnet AtlasLoot ohne automatische Auswahl der Instanz."
 AL["Open Favourites"] = "Favoriten öffnen"
 AL["Open Options"] = "Optionen öffnen"
---[[Translation missing --]]
---[[ AL["Patchwerk"] = "Patchwerk"--]]
+AL["Patchwerk"] = "Flickwerk"
 AL["Plans"] = "Pläne"
 AL["Polearm"] = "Stangenwaffe"
 --[[Translation missing --]]
@@ -174,8 +165,7 @@ AL["Quest objective."] = "Questziel."
 AL["Reagent for..."] = "Reagenz für..."
 --[[Translation missing --]]
 --[[ AL["Received unexpected favourite list '%s' (expected '%s')"] = "Received unexpected favourite list '%s' (expected '%s')"--]]
---[[Translation missing --]]
---[[ AL["Recipe"] = "Recipe"--]]
+AL["Recipe"] = "Rezept"
 AL["Regen"] = "Regen"
 --[[Translation missing --]]
 --[[ AL["Relentless %s"] = "Relentless %s"--]]
@@ -197,7 +187,7 @@ AL["Sapphiron"] = "Saphiron"
 --[[Translation missing --]]
 --[[ AL["Save"] = "Save"--]]
 --[[Translation missing --]]
---[[ AL["Scorn"] = "Scorn"--]]
+AL["Scorn"] = "Der Verächter"
 AL["Select Module"] = "Modul auswählen"
 AL["Select Subcategory"] = "Unterkategorie auswählen"
 AL["Set Favourite"] = "Setze Favorit"
@@ -227,10 +217,8 @@ AL["Slash commands:"] = "Slash-Befehle:"
 AL["Sounds"] = "Sounds"
 AL["Special"] = "Spezial"
 AL["Staff"] = "Stab"
---[[Translation missing --]]
---[[ AL["Thaddius"] = "Thaddius"--]]
---[[Translation missing --]]
---[[ AL["The Four Horsemen"] = "The Four Horsemen"--]]
+AL["Thaddius"] = "Thaddius"
+AL["The Four Horsemen"] = "Die Vier Reiter"
 AL["The Mag'har"] = "Die Mag'har"
 --[[Translation missing --]]
 --[[ AL["The Silver Covenant"] = "The Silver Covenant"--]]
