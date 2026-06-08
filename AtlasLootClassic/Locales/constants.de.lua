@@ -16,15 +16,15 @@ AL["|cff00ff00Left-Click:|r %s"] = "|cff00ff00Linksklick:|r %s"
 AL["|cff00ff00Left-Click:|r Show reagents"] = "|cff00ff00Linksklick:|r Zeige Reagenzien"
 AL["|cff00ff00Right-Click:|r Change Class"] = "|cff00ff00Rechtsklick:|r Klasse wechseln"
 AL["|cff00ff00Set item:|r "] = "|cff00ff00Setgegenstand:|r"
-AL["10 Raid"] = "10 Raid"
-AL["10 Raid Heroic"] = "10 Raid Heroisch"
+AL["10 Raid"] = "10 Schlachtzug"
+AL["10 Raid Heroic"] = "10 Schlachtzug Heroisch"
 AL["10H"] = "10H"
 AL["10H / 25 / 25H"] = "10H / 25 / 25H"
-AL["20 Raid"] = "20 Raid"
-AL["25 Raid"] = "25 Raid"
-AL["25 Raid Heroic"] = "25 Raid Heroisch"
+AL["20 Raid"] = "20 Schlachtzug"
+AL["25 Raid"] = "25 Schlachtzug"
+AL["25 Raid Heroic"] = "25 Schlachtzug Heroisch"
 AL["25H"] = "25H"
-AL["40 Raid"] = "40 Raid"
+AL["40 Raid"] = "40 Schlachtzug"
 AL["Active list"] = "Aktive Liste"
 AL["Add item into chat"] = "Verlinke Gegenstand in den Chat"
 AL["Add ItemID"] = "ItemID hinzufügen"
@@ -51,7 +51,6 @@ AL["Cancel"] = "Abbrechen"
 AL["Chat Link"] = "Chatlink"
 --[[Translation missing --]]
 --[[ AL["Chat-Link"] = "Chat-Link"--]]
---[[Translation missing --]]
 AL["Classic"] = "Classic"
 AL["Click to open Atlas instance map."] = "Klicke um die Atlas Instanzkarte zu öffnen."
 AL["Collections"] = "Sammlungen"
@@ -94,8 +93,7 @@ AL["Gun"] = "Gewehr"
 AL["H"] = "H"
 --[[Translation missing --]]
 --[[ AL["Hateful %s"] = "Hateful %s"--]]
---[[Translation missing --]]
---[[ AL["Headless Horseman"] = "Headless Horseman"--]]
+AL["Headless Horseman"] = "Der kopflose Reiter"
 AL["Heigan the Unclean"] = "Heigan der Unreine"
 --[[Translation missing --]]
 --[[ AL["Heirloom"] = "Heirloom"--]]
@@ -105,12 +103,10 @@ AL["Heroic"] = "Heroisch"
 --[[Translation missing --]]
 --[[ AL["Heroic Sanctified %s"] = "Heroic Sanctified %s"--]]
 AL["Honor Hold"] = "Ehrenfeste"
---[[Translation missing --]]
---[[ AL["Horde Expedition"] = "Horde Expedition"--]]
+AL["Horde Expedition"] = "Expedition der Horde"
 --[[Translation missing --]]
 --[[ AL["Import done!"] = "Import done!"--]]
---[[Translation missing --]]
---[[ AL["Instructor Razuvious"] = "Instructor Razuvious"--]]
+AL["Instructor Razuvious"] = "Instrukteur Razuvious"
 --[[Translation missing --]]
 --[[ AL["Item level:"] = "Item level:"--]]
 --[[Translation missing --]]
@@ -129,7 +125,6 @@ AL["Lists"] = "Listen"
 AL["Loatheb"] = "Loatheb"
 AL["Loot"] = "Beute"
 AL["Lord Blackwood"] = "Lord Blackwood"
---[[Translation missing --]]
 AL["Maexxna"] = "Maexxna"
 AL["Main"] = "Haupt"
 --[[Translation missing --]]
@@ -174,8 +169,7 @@ AL["Reputation"] = "Ruf"
 --[[ AL["Requesting favorite list from %s ..."] = "Requesting favorite list from %s ..."--]]
 AL["Required module %s is currently disabled."] = "Benötigtes Modul %s ist derzeit deaktiviert."
 AL["Required module %s is not installed."] = "Benötigtes Modul %s ist nicht installiert."
---[[Translation missing --]]
---[[ AL["Revanchion"] = "Revanchion"--]]
+AL["Revanchion"] = "Revanchion"
 AL["Right Click"] = "Rechtsklick"
 AL["Right-click to close Atlas window."] = "Rechtsklick schließt das Atlas Fenster."
 --[[Translation missing --]]
@@ -219,10 +213,8 @@ AL["Staff"] = "Stab"
 AL["Thaddius"] = "Thaddius"
 AL["The Four Horsemen"] = "Die Vier Reiter"
 AL["The Mag'har"] = "Die Mag'har"
---[[Translation missing --]]
---[[ AL["The Silver Covenant"] = "The Silver Covenant"--]]
---[[Translation missing --]]
---[[ AL["The Sunreavers"] = "The Sunreavers"--]]
+AL["The Silver Covenant"] = "Der Silberbund"
+AL["The Sunreavers"] = "Die Sonnenhäscher"
 AL["Thrallmar"] = "Thrallmar"
 AL["Tier %s Sets"] = "Tier %s Sets"
 AL["Toggle AtlasLoot"] = "AtlasLoot anzeigen/ausblenden"
