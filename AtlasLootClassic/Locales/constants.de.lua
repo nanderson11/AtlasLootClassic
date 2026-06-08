@@ -67,8 +67,7 @@ AL["Ctrl + C to copy"] = "Strg + C zum Kopieren"
 AL["Ctrl + Left Click"] = "Strg + Linksklick"
 AL["Custom Modules"] = "Angepasste Module"
 AL["Dagger"] = "Dolch"
---[[Translation missing --]]
---[[ AL["Deadly %s"] = "Deadly %s"--]]
+AL["Deadly %s"] = "Tödlichen %s"
 AL["Dress up"] = "Anprobe"
 AL["Droprate:"] = "Droprate:"
 AL["Dungeons and Raids"] = "Instanzen und Schlachtzüge"
@@ -80,8 +79,7 @@ AL["Factions"] = "Fraktionen"
 AL["Favourites"] = "Favoriten"
 AL["Fishing Pole"] = "Angel"
 AL["Fist Weapon"] = "Faustwaffe"
---[[Translation missing --]]
---[[ AL["Furious %s"] = "Furious %s"--]]
+AL["Furious %s"] = "Wütenden %s"
 AL["Global base list"] = "Globale Basisliste"
 AL["Global lists"] = "Globale Listen"
 AL["Gluth"] = "Gluth"
@@ -91,14 +89,12 @@ AL["Grand Widow Faerlina"] = "Großwitwe Faerlina"
 AL["Grobbulus"] = "Grobbulus"
 AL["Gun"] = "Gewehr"
 AL["H"] = "H"
---[[Translation missing --]]
---[[ AL["Hateful %s"] = "Hateful %s"--]]
+AL["Hateful %s"] = "Hasserfüllten %s"
 AL["Headless Horseman"] = "Der kopflose Reiter"
 AL["Heigan the Unclean"] = "Heigan der Unreine"
 --[[Translation missing --]]
 --[[ AL["Heirloom"] = "Heirloom"--]]
---[[Translation missing --]]
---[[ AL["Heroes' %s"] = "Heroes' %s"--]]
+AL["Heroes' %s"] = Heldenhaften %s"
 AL["Heroic"] = "Heroisch"
 --[[Translation missing --]]
 --[[ AL["Heroic Sanctified %s"] = "Heroic Sanctified %s"--]]
@@ -160,8 +156,7 @@ AL["Reagent for..."] = "Reagenz für..."
 --[[ AL["Received unexpected favourite list '%s' (expected '%s')"] = "Received unexpected favourite list '%s' (expected '%s')"--]]
 AL["Recipe"] = "Rezept"
 AL["Regen"] = "Regen"
---[[Translation missing --]]
---[[ AL["Relentless %s"] = "Relentless %s"--]]
+AL["Relentless %s"] = "Unerbittlichen %s"
 AL["Remove item from list"] = "Gegenstand von Liste entfernen"
 AL["Reputation"] = "Ruf"
 --[[Translation missing --]]
@@ -171,14 +166,11 @@ AL["Required module %s is not installed."] = "Benötigtes Modul %s ist nicht ins
 AL["Revanchion"] = "Revanchion"
 AL["Right Click"] = "Rechtsklick"
 AL["Right-click to close Atlas window."] = "Rechtsklick schließt das Atlas Fenster."
---[[Translation missing --]]
---[[ AL["Sanctified %s"] = "Sanctified %s"--]]
+AL["Sanctified %s"] = "Geweihter %s"
 AL["Sapphiron"] = "Saphiron"
---[[Translation missing --]]
---[[ AL["Savage %s"] = "Savage %s"--]]
+AL["Savage %s"] = "Grausamen %s"
 --[[Translation missing --]]
 --[[ AL["Save"] = "Save"--]]
---[[Translation missing --]]
 AL["Scorn"] = "Der Verächter"
 AL["Select Module"] = "Modul auswählen"
 AL["Select Subcategory"] = "Unterkategorie auswählen"
@@ -220,17 +212,14 @@ AL["Toggle AtlasLoot"] = "AtlasLoot anzeigen/ausblenden"
 AL["Token for..."] = "Marke für..."
 AL["Tranquillien"] = "Tristessa"
 AL["Trash Mobs"] = "Trash Mobs"
---[[Translation missing --]]
---[[ AL["Triumphant %s"] = "Triumphant %s"--]]
+AL["Triumphant %s"] = "%s des Triumphs"
 AL["Two-Hand, Axe"] = "Zweihand, Axt"
 AL["Two-Hand, Mace"] = "Zweihand, Streitkolben"
 AL["Two-Hand, Sword"] = "Zweihand, Schwert"
 AL["Undress item"] = "Gegenstand ausziehen"
---[[Translation missing --]]
---[[ AL["Valorous %s"] = "Valorous %s"--]]
+AL["Valorous %s"] = "Tapferen %s"
 AL["Vendor"] = "Händler"
 AL["Wand"] = "Zauberstab"
 AL["Weapons"] = "Waffen"
 AL["Wintersaber Trainers"] = "Wintersäblerausbilder"
---[[Translation missing --]]
---[[ AL["Wrathful %s"] = "Wrathful %s"--]]
+AL["Wrathful %s"] = "Zornerfüllten %s"
