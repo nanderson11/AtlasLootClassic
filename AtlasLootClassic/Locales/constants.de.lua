@@ -150,8 +150,7 @@ AL["Open Options"] = "Optionen öffnen"
 AL["Patchwerk"] = "Flickwerk"
 AL["Plans"] = "Pläne"
 AL["Polearm"] = "Stangenwaffe"
---[[Translation missing --]]
---[[ AL["Prince Tenris Mirkblood"] = "Prince Tenris Mirkblood"--]]
+AL["Prince Tenris Mirkblood"] = "Prinz Tenris Mirkblut"
 AL["Profile base list"] = "Profil Basisliste"
 AL["PvP"] = "PvP"
 AL["Quest"] = "Quest"
