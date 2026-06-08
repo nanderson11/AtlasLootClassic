@@ -25,25 +25,18 @@ AL["Capitals"] = "Fraktionshauptstädte"
 --[[ AL["Card Game Tabards"] = "Card Game Tabards"--]]
 AL["Childrens Week"] = "Kinderwoche"
 AL["Crimson Templar"] = "Purpurroter Templer"
---[[Translation missing --]]
---[[ AL["Day of the Dead"] = "Day of the Dead"--]]
---[[Translation missing --]]
---[[ AL["Defiler's Scourgestone"] = "Defiler's Scourgestone"--]]
+AL["Day of the Dead"] = "Tag der Toten"
+AL["Defiler's Scourgestone"] = "Geißelstein des Entweihers"
 AL["Drops"] = "Drops"
 AL["Dungeon Set %s"] = "Dungeon-Set %s"
 AL["Dungeon Sets"] = "Dungeon-Sets"
 AL["Earthen Templar"] = "Irdener Templer"
 AL["Elemental Invasions"] = "Elementar-Invasionen"
---[[Translation missing --]]
---[[ AL["Emblem of Conquest"] = "Emblem of Conquest"--]]
---[[Translation missing --]]
---[[ AL["Emblem of Frost"] = "Emblem of Frost"--]]
---[[Translation missing --]]
---[[ AL["Emblem of Heroism"] = "Emblem of Heroism"--]]
---[[Translation missing --]]
---[[ AL["Emblem of Triumph"] = "Emblem of Triumph"--]]
---[[Translation missing --]]
---[[ AL["Emblem of Valor"] = "Emblem of Valor"--]]
+AL["Emblem of Conquest"] = "Emblem der Eroberung"
+AL["Emblem of Frost"] = "Emblem des Frosts"
+AL["Emblem of Heroism"] = "Emblem des Heldentums"
+AL["Emblem of Triumph"] = "Emblem des Triumphs"
+AL["Emblem of Valor"] = "Emblem der Ehre"
 AL["Equip"] = "Ausrüstung"
 AL["Faction Mounts"] = "Fraktionsreittiere"
 AL["Feast of Winter Veil"] = "Winterhauchfest"
@@ -70,8 +63,7 @@ AL["Masks"] = "Masken"
 AL["Midsummer Festival"] = "Sonnenwendfest"
 AL["Noblegarden"] = "Nobelgartenfest"
 AL["One-Handed Weapons"] = "Einhandwaffen"
---[[Translation missing --]]
---[[ AL["Pilgrim's Bounty"] = "Pilgrim's Bounty"--]]
+AL["Pilgrim's Bounty"] = "Pilgerfreudenfest"
 AL["Prince Skaldrenox"] = "Prinz Skaldrenox"
 AL["Princess Tempestria"] = "Prinzessin Tempestria"
 AL["Ranged Weapons"] = "Distanzwaffen"
@@ -79,10 +71,8 @@ AL["Rare Fish"] = "Seltener Fisch"
 AL["Rare Fish Rewards"] = "Belohnungen für seltene Fische"
 AL["Scarlet Monastery - Graveyard"] = "Scharlachrotes Kloster - Friedhof"
 AL["Scourge Invasion"] = "Invasion der Geißel"
---[[Translation missing --]]
---[[ AL["Sidereal Essence"] = "Sidereal Essence"--]]
---[[Translation missing --]]
---[[ AL["Sidereal Essence: 1 for 1"] = "Sidereal Essence: 1 for 1"--]]
+AL["Sidereal Essence"] = "Sternenessenz"
+AL["Sidereal Essence: 1 for 1"] = "Sternenessenz: eins zu eins"
 AL["Silithus Abyssal"] = "Silithus Abyssischer Rat"
 AL["Smokywood Pastures"] = "Kokelwälder"
 AL["Smokywood Pastures Special Gift"] = "Kokelwälder Spezialgeschenk"
@@ -104,5 +94,4 @@ AL["Unobtainable"] = "Nicht mehr verfügbar"
 AL["Wands"] = "Zauberstäbe"
 AL["World Epics"] = "Welt-Epics"
 AL["World Events"] = "Weltereignisse"
---[[Translation missing --]]
---[[ AL["Wrath"] = "Wrath"--]]
+AL["Wrath"] = "Wrath"
