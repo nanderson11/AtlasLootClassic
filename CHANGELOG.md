@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.7.8 - June 11, 2026
+### Changed
+- Updated translations (thanks anon1231823)
+
 ## 3.7.7 - May 24, 2026
 ### Fixed
 - Speculative fix for occasional error

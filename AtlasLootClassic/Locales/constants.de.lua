@@ -94,7 +94,7 @@ AL["Headless Horseman"] = "Der kopflose Reiter"
 AL["Heigan the Unclean"] = "Heigan der Unreine"
 --[[Translation missing --]]
 --[[ AL["Heirloom"] = "Heirloom"--]]
-AL["Heroes' %s"] = Heldenhaften %s"
+AL["Heroes' %s"] = "Heldenhaften %s"
 AL["Heroic"] = "Heroisch"
 --[[Translation missing --]]
 --[[ AL["Heroic Sanctified %s"] = "Heroic Sanctified %s"--]]
