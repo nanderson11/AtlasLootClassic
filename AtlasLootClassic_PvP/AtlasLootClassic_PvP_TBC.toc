@@ -1,4 +1,4 @@
-## Interface: 20505
+## Interface: 20506
 
 ## Title: AtlasLootClassic |cFF0099FF[PvP]|r
 ## Title-deDE: AtlasLootClassic |cFF0099FF[PvP]|r

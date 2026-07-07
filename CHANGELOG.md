@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.7.9 - July 7, 2026
+### Changed
+- TBC: Updated TOC to 2.5.6
+
 ## 3.7.8 - June 11, 2026
 ### Changed
 - Updated translations (thanks anon1231823)
@@ -88,7 +92,7 @@ I want this fork of AtlasLoot Classic to be accurate for all versions of Vanilla
 
 ## 3.2.15 - October 22, 2025
 ### Changed
-- Update TOC to 1.15.8
+- Updated TOC to 1.15.8
 ### Fixed
 - Changed the minimum level of Sunken Temple to 35 (if anyone can show that a character between 35 and 45 can't enter ST in pre-TBC WoW, please let me know)
 
@@ -112,7 +116,7 @@ I want this fork of AtlasLoot Classic to be accurate for all versions of Vanilla
 
 ## 3.2.10 - April 8, 2025
 ### Changed
-- Update TOC to 1.15.7
+- Updated TOC to 1.15.7
 
 ## 3.2.9 - April 3, 2025
 ### Changed
@@ -139,7 +143,7 @@ I want this fork of AtlasLoot Classic to be accurate for all versions of Vanilla
 
 ## 3.2.4 - January 28, 2025
 ### Changed
-- Update TOC to 1.15.6
+- Updated TOC to 1.15.6
 
 ## 3.2.3 - January 23, 2025
 ### Fixed
@@ -153,7 +157,7 @@ I want this fork of AtlasLoot Classic to be accurate for all versions of Vanilla
 ## 3.2.1 - January 16, 2025
 ### Changed
  - Updated Atlas integration to work with Atlas (fork)
- - Update TOC to 1.15.5
+ - Updated TOC to 1.15.5
  - Updated content phase to 2.5
 ### Fixed
 - Fixed various deprecations

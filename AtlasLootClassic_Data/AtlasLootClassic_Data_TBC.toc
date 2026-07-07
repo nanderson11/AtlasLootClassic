@@ -1,4 +1,4 @@
-## Interface: 20505
+## Interface: 20506
 
 ## Title: AtlasLootClassic |cFFFF0000[Data]|r
 ## Title-deDE: AtlasLootClassic |cFFFF0000[Daten]|r
