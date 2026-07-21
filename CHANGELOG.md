@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.7.10 - July 21, 2026
+### Changed
+- Era: Added category, group and icon to TOC
+- Era: Updated TOC to 1.15.9
+
 ## 3.7.9 - July 7, 2026
 ### Changed
 - TBC: Updated TOC to 2.5.6
