@@ -85,7 +85,9 @@ local PRICE_INFO_TT_START = format(TT_F.."  ", ICON_TEXTURE[3], AL["Vendor"]..":
 local DIFF_SPLIT_STRING = " / "
 
 local TooltipsHooked = false
-local TooltipCache, TooltipTextCache = {}, nil
+-- ItemSourcesUpdated() writes into TooltipTextCache unconditionally and VendorPrice.ScanShownVendor
+-- can reach it before Sources:UpdateDb() ever runs, so it must not start out nil.
+local TooltipCache, TooltipTextCache = {}, {}
 
 -- Addon
 Sources.DbDefaults = {
