@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.7.11 -
+### Added
+- TBC: Added Gyro-Balanced Khorium Destroyer
+
 ## 3.7.10 - July 21, 2026
 ### Changed
 - Era: Added category, group and icon to TOC

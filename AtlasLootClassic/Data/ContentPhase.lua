@@ -2391,6 +2391,7 @@ if AtlasLoot:GameVersion_EQ(AtlasLoot.BC_VERSION_NUM) then
 		[30046] = 2,
 		[30042] = 2,
 		[30040] = 2,
+		[32756] = 2,
 		[30871] = 3,
 		[30870] = 3,
 		[30863] = 3,
