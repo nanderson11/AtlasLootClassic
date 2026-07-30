@@ -678,10 +678,11 @@ data["EngineeringBC"] = {
 		{
 			name = AL["Weapons"].." - "..ALIL["Guns"],
 			[NORMAL_DIFF] = {
-				{ 1, 30315 }, -- Ornate Khorium Rifle (375)
-				{ 2, 30314 }, -- Felsteel Boomstick (360)
-				{ 3, 30313 }, -- Adamantite Rifle (350)
-				{ 4, 30312 }, -- Fel Iron Musket (330)
+				{ 1, 41307 }, -- Gyro-Balanced Khorium Destroyer (375)
+				{ 2, 30315 }, -- Ornate Khorium Rifle (375)
+				{ 3, 30314 }, -- Felsteel Boomstick (360)
+				{ 4, 30313 }, -- Adamantite Rifle (350)
+				{ 5, 30312 }, -- Fel Iron Musket (330)
 			}
 		},
 		{
