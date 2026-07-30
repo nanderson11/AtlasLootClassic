@@ -1,8 +1,11 @@
 # Changelog
 
-## 3.7.11 -
+## 3.7.11 - July 30, 2026
 ### Added
 - TBC: Added Gyro-Balanced Khorium Destroyer
+### Fixed
+- Fix errors and missing items in Tabards Collection
+- Fix possible error on login (thanks Spigot12)
 
 ## 3.7.10 - July 21, 2026
 ### Changed

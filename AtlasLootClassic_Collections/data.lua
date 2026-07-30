@@ -1046,32 +1046,31 @@ data["Tabards"] = {
 				{ 1, 23192 }, -- Tabard of the Scarlet Crusade
 			},
 		},
-		{ -- Faction
+		AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, {
 			name = AL["Capitals"],
 			CoinTexture = "Reputation",
 			[ALLIANCE_DIFF] = {
-				{ 1,  45579 },                                         -- Darnassus Tabard
-				{ 2,  45577 },                                         -- Ironforge Tabard
-				{ 3,  45578 },                                         -- Gnomeregan Tabard
-				{ 4,  45574 },                                         -- Stormwind Tabard
-				{ 16, 45580 },                                         -- Exodar Tabard
-				AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM, { 17, 64882 }), -- Gilneas Tabard
+				{ 1,  45579 }, -- Darnassus Tabard
+				{ 2,  45577 }, -- Ironforge Tabard
+				{ 3,  45578 }, -- Gnomeregan Tabard
+				{ 4,  45574 }, -- Stormwind Tabard
+				{ 16, 45580 }, -- Exodar Tabard
 			},
 			[HORDE_DIFF] = {
-				{ 1, 45582 },                                          -- Darkspear Tabard
-				{ 2, 45581 },                                          -- Orgrimmar Tabard
-				{ 3, 45584 },                                          -- Thunder Bluff Tabard
-				{ 4, 45583 },                                          -- Undercity Tabard
-				AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM, { 16, 45585 }), -- Silvermoon City Tabard
+				{ 1,  45582 }, -- Darkspear Tabard
+				{ 2,  45581 }, -- Orgrimmar Tabard
+				{ 3,  45584 }, -- Thunder Bluff Tabard
+				{ 4,  45583 }, -- Undercity Tabard
+				{ 16, 45585 }, -- Silvermoon City Tabard
 			},
-		},
-		{
+		}),
+		AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, {
 			name = format("%s - %s", AL["Factions"], AL["Classic"]),
 			CoinTexture = "Reputation",
 			[NORMAL_DIFF] = {
 				{ 1, 43154 }, -- Tabard of the Argent Crusade
 			},
-		},
+		}),
 		{ -- PvP
 			name = AL["PvP"],
 			[ALLIANCE_DIFF] = {
@@ -1089,31 +1088,42 @@ data["Tabards"] = {
 				{ 18, 20131 }, -- Battle Tabard of the Defilers
 			},
 		},
-		{ -- PvP
+		AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, {
 			name = AL["Arena"],
 			[NORMAL_DIFF] = {
 				{ 1, 45983 }, -- Furious Gladiator's Tabard
 				{ 2, 49086, }, -- Relentless Gladiator's Tabard
 				{ 3, 51534 }, -- Wrathful Gladiator's Tabard
 			},
-		},
-		{ -- Unobtainable Tabards
-			name = AL["Unobtainable"],
-			[NORMAL_DIFF] = {
-				{ 1,  19160 },                                        -- Contest Winner's Tabard
-				AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM, { 3, 36941 }), -- Competitor's Tabard
-				AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM, { 5, 28788 }), -- Tabard of the Protector
-				{ 16, "INV_Box_01", nil, AL["Card Game Tabards"], nil },
-				{ 17, 38312 },                                        -- Tabard of Brilliance
-				{ 18, 23705 },                                        -- Tabard of Flame
-				{ 19, 23709 },                                        -- Tabard of Frost
-				{ 20, 38313 },                                        -- Tabard of Fury
-				{ 21, 38309 },                                        -- Tabard of Nature
-				{ 22, 38310 },                                        -- Tabard of the Arcane
-				{ 23, 38314 },                                        -- Tabard of the Defender
-				{ 24, 38311 },                                        -- Tabard of the Void
+		}),
+		AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM,
+			{ -- Unobtainable Tabards
+				name = AL["Unobtainable"],
+				[NORMAL_DIFF] = {
+					{ 1,  19160 }, -- Contest Winner's Tabard
+					{ 3,  36941 }, -- Competitor's Tabard
+					{ 5,  28788 }, -- Tabard of the Protector
+					{ 16, "INV_Box_01", nil, AL["Card Game Tabards"], nil },
+					{ 17, 38312 }, -- Tabard of Brilliance
+					{ 18, 23705 }, -- Tabard of Flame
+					{ 19, 23709 }, -- Tabard of Frost
+					{ 20, 38313 }, -- Tabard of Fury
+					{ 21, 38309 }, -- Tabard of Nature
+					{ 22, 38310 }, -- Tabard of the Arcane
+					{ 23, 38314 }, -- Tabard of the Defender
+					{ 24, 38311 }, -- Tabard of the Void
+				},
 			},
-		},
+			{ -- Unobtainable Tabards
+				name = AL["Unobtainable"],
+				[NORMAL_DIFF] = {
+					{ 1,  19160 }, -- Contest Winner's Tabard
+					{ 16, "INV_Box_01", nil, AL["Card Game Tabards"], nil },
+					{ 17, 23705 }, -- Tabard of Flame
+					{ 18, 23709 }, -- Tabard of Frost
+				},
+			}
+		),
 	},
 }
 
