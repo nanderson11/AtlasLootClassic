@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.7.12 - August 27, 2026
+### Changed
+- TBC: Updated to content phase 3
+
 ## 3.7.11 - July 30, 2026
 ### Added
 - TBC: Added Gyro-Balanced Khorium Destroyer
