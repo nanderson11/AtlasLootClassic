@@ -1154,28 +1154,26 @@ data["Tailoring"] = {
 		{
 			name = AL["Armor"].." - "..ALIL["Cloak"],
 			[NORMAL_DIFF] = {
-				{ 1,  1224608 }, -- Scarlet Augur's Mantle
-				{ 2,  1213530 }, -- Vampiric Shawl
-				{ 3,  1213536 }, -- Qiraji Silk Cape
-				{ 4,  1213538 }, -- Qiraji Silk Cloak
-				{ 5,  1213540 }, -- Qiraji Silk Drape
-				{ 6,  1213534 }, -- Qiraji Silk Scarf
-				{ 7,  28208 }, -- Glacial Cloak / 80
-				{ 8,  28210 }, -- Gaea's Embrace / 70
-				{ 9,  22870 }, -- Cloak of Warding / 62
-				{ 10, 18418 }, -- Cindercloth Cloak / 55
-				{ 11, 18420 }, -- Brightcloth Cloak / 55
-				{ 12, 18422 }, -- Cloak of Fire / 55
-				{ 13, 18409 }, -- Runecloth Cloak / 53
-				{ 14, 3862 }, -- Icy Cloak / 40
-				{ 15, 439094 }, -- Long Silken Cloak / 37
-				{ 16, 8789 }, -- Crimson Silk Cloak / 36
-				{ 17, 8786 }, -- Azure Silk Cloak / 35
-				{ 18, 3844 }, -- Heavy Woolen Cloak / 21
-				{ 19, 6521 }, -- Pearl-clasped Cloak / 19
-				{ 20, 2402 }, -- Woolen Cape / 16
-				{ 21, 2397 }, -- Reinforced Linen Cape / 12
-				{ 22, 2387 }, -- Linen Cloak / 6
+				{ 1,  1213536 }, -- Qiraji Silk Cape
+				{ 2,  1213538 }, -- Qiraji Silk Cloak
+				{ 3,  1213540 }, -- Qiraji Silk Drape
+				{ 4,  1213534 }, -- Qiraji Silk Scarf
+				{ 5,  28208 }, -- Glacial Cloak / 80
+				{ 6,  28210 }, -- Gaea's Embrace / 70
+				{ 7,  22870 }, -- Cloak of Warding / 62
+				{ 8,  18418 }, -- Cindercloth Cloak / 55
+				{ 9,  18420 }, -- Brightcloth Cloak / 55
+				{ 10, 18422 }, -- Cloak of Fire / 55
+				{ 11, 18409 }, -- Runecloth Cloak / 53
+				{ 12, 3862 }, -- Icy Cloak / 40
+				{ 13, 439094 }, -- Long Silken Cloak / 37
+				{ 14, 8789 }, -- Crimson Silk Cloak / 36
+				{ 15, 8786 }, -- Azure Silk Cloak / 35
+				{ 16, 3844 }, -- Heavy Woolen Cloak / 21
+				{ 17, 6521 }, -- Pearl-clasped Cloak / 19
+				{ 18, 2402 }, -- Woolen Cape / 16
+				{ 19, 2397 }, -- Reinforced Linen Cape / 12
+				{ 20, 2387 }, -- Linen Cloak / 6
 			}
 		},
 		{
@@ -1204,25 +1202,27 @@ data["Tailoring"] = {
 		{
 			name = AL["Armor"].." - "..ALIL["Shoulder"],
 			[NORMAL_DIFF] = {
-				{ 1,  1213740 }, -- Sylvan Shoulders / 70 / 315
-				{ 2,  23663 }, -- Mantle of the Timbermaw / 64 / 315
-				{ 3,  23665 }, -- Argent Shoulders / 64 / 315
-				{ 4,  18453 }, -- Felcloth Shoulders / 62 / 315
-				{ 5,  20848 }, -- Flarecore Mantle / 61 / 315
-				{ 6,  18449 }, -- Runecloth Shoulders / 61 / 315
-				{ 7,  18448 }, -- Mooncloth Shoulders / 61 / 315\
-				{ 8,  446194 }, -- Mantle of Insanity
-				{ 9,  446195 }, -- Shoulderpads of the Deranged
-				{ 10, 446193 }, -- Fractured Mind Pauldrons
-				{ 11, 12078 }, -- Red Mageweave Shoulders / 47 / 250
-				{ 12, 12076 }, -- Shadoweave Shoulders / 47 / 250
-				{ 13, 12074 }, -- Black Mageweave Shoulders / 46 / 245
-				{ 14, 439093 }, -- Crimson Silk Shoulders / 38 / 210
-				{ 15, 8795 }, -- Azure Shoulders / 38 / 210
-				{ 16, 8774 }, -- Green Silken Shoulders / 36 / 200
-				{ 17, 435848 }, -- Invoker's Mantle
-				{ 18, 3849 }, -- Reinforced Woolen Shoulders / 24 / 145
-				{ 19, 3848 }, -- Double-stitched Woolen Shoulders / 22 / 135
+				{ 1,  1224608 }, -- Scarlet Augur's Mantle
+				{ 2,  1213530 }, -- Vampiric Shawl
+				{ 3,  1213740 }, -- Sylvan Shoulders / 70 / 315
+				{ 4,  23663 }, -- Mantle of the Timbermaw / 64 / 315
+				{ 5,  23665 }, -- Argent Shoulders / 64 / 315
+				{ 6,  18453 }, -- Felcloth Shoulders / 62 / 315
+				{ 7,  20848 }, -- Flarecore Mantle / 61 / 315
+				{ 8,  18449 }, -- Runecloth Shoulders / 61 / 315
+				{ 9,  18448 }, -- Mooncloth Shoulders / 61 / 315\
+				{ 10, 446194 }, -- Mantle of Insanity
+				{ 11, 446195 }, -- Shoulderpads of the Deranged
+				{ 12, 446193 }, -- Fractured Mind Pauldrons
+				{ 13, 12078 }, -- Red Mageweave Shoulders / 47 / 250
+				{ 14, 12076 }, -- Shadoweave Shoulders / 47 / 250
+				{ 15, 12074 }, -- Black Mageweave Shoulders / 46 / 245
+				{ 16, 439093 }, -- Crimson Silk Shoulders / 38 / 210
+				{ 17, 8795 }, -- Azure Shoulders / 38 / 210
+				{ 18, 8774 }, -- Green Silken Shoulders / 36 / 200
+				{ 19, 435848 }, -- Invoker's Mantle
+				{ 20, 3849 }, -- Reinforced Woolen Shoulders / 24 / 145
+				{ 21, 3848 }, -- Double-stitched Woolen Shoulders / 22 / 135
 			}
 		},
 		{
