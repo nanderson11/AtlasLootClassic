@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.7.14 - October 22, 2026
+### Changed
+- TBC: Updated to content phase 4
+
 ## 3.7.13 - October 9, 2026
 ### Fixed
 - SoD: Moved a couple Tailoring items from back to shoulder
