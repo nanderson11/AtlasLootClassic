@@ -988,6 +988,7 @@ data["Engineering"] = {
 				{ 15, 12715 }, --Recipe: Goblin Rocket Fuel / 42
 				{ 16, 3957 }, --Ice Deflector / 31
 				{ 17, 3944 }, --Flame Deflector / 25
+				{ 18, 12716 }, -- Goblin Mortar
 				{ 19, 23129 }, --World Enlarger / 50
 				{ 20, 12590 }, --Gyromatic Micro-Adjustor / 35
 				{ 21, 3959 }, --Discombobulator Ray / 32

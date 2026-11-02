@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.7.15 - November 1, 2026
+### Added
+- Era/SoD: Added Goblin Mortar to Engineering
+
 ## 3.7.14 - October 22, 2026
 ### Changed
 - TBC: Updated to content phase 4
